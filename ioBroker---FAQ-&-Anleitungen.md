@@ -1,8 +1,8 @@
-**FAQ & Anleitungen**
+# **FAQ & Anleitungen**
 
 In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen an einem Platz zu sammeln. Jeder von Euch der etwas beitragen möchte, kann dies sehr gerne tun. Ich hoffe, dass wir damit die [Installationsanleitung](https://forum.iobroker.net/topic/50888/sonoff-nspanel/612) um viele spezielle Konfigurationen ergänzen können.
 
-**Index:**
+# **Index:**
 
 **1.)** Button entkoppeln
 **2.)** Alarm Page
@@ -12,7 +12,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **6.)** Alias Definitionen
 **7.)** Hardware-Buttons im Multipress-Mode
 
-**Changelog**
+# **Changelog**
 
 [s=]
 01.09.2022 - Thread erstellt
@@ -29,4 +29,4 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 
 ~~****************************************************************************************************~~
 
-**1.) Button entkoppeln**
+# **1.) Button entkoppeln**
