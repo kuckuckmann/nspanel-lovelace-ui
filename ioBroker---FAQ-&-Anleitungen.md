@@ -210,12 +210,12 @@ Nachfolgend ein kurzes Emulationsskript für die Weiterverarbeitung. Diese Logik
 </xml>   
 ```
 </details>  
-(Bild & Blockly by @Armilar)
-
+(Bild & Blockly by @Armilar)  
+  
 Test-Blockly starten
-
-Alarm-Code in die cardAlarm eingeben --> Schutz auswählen --> aktiviert
-Alarm-Code in die cardAlarm eingeben --> Deaktivieren --> deaktiviert
+  
+Alarm-Code in die cardAlarm eingeben --> Schutz auswählen --> aktiviert  
+Alarm-Code in die cardAlarm eingeben --> Deaktivieren --> deaktiviert  
 
 
 * **Offene Punkte**: 
@@ -248,8 +248,8 @@ Dann habe ich mir ein Blockly gebaut, welches den Status des Hilfs-Datenpunktes 
 Das Skript füttert die beiden Datenpunkte für die NotifyPopupPage im ordner **0_userdata.0.NSPanel.1.ScreensaverInfo.**:
 **popupNotifyHeading** und **popupNotifyText**
 
-**Wichtig:**
-Die Info wird nur angezeigt, wenn der Screensaver wieder aktiv ist. Deshalb muss das erste Timeout im Skript etwas größer sein als **timeoutScreensaver** im Konfigurationsskript.
+  **Wichtig:**
+  Die Info wird nur angezeigt, wenn der Screensaver wieder aktiv ist. Deshalb muss das erste Timeout im Skript etwas größer sein als **timeoutScreensaver** im Konfigurationsskript.  
 
 ![image](https://user-images.githubusercontent.com/99131208/188515089-64d9a284-65bf-4561-91bf-47ecc215f2d9.png) 
 
@@ -393,8 +393,9 @@ Unter 0_userdata.0. einen Ordner Abfallkalender anlegen. Darunter vier Unterordn
 **Aliase**:
 Im Geräte Adapter oder Alias Adapter einen Ordner für die Aliase des Abfallkalenders anlegen. 
 Darunter dann 4 generische Einträge event1 - event4 vom **Typ Warnung**.  
+  
 ![image](https://user-images.githubusercontent.com/99131208/188515685-9c932e4b-fb02-4121-91fb-834c24985e3d.png)  
-(Bild by @Armilar )
+(Bild by @Armilar )  
 
 **Wichtig**:  
 **LEVEL** --> geht auf Datenpunkt **color**  
@@ -415,6 +416,7 @@ Java Skript:
 2 = Muss nur angepasst werden, wenn Eure Datenpunkte nicht unter **0_userdata.0.Abfallkalender.** liegen  
 3 = Die Bezeichnungen der Abfallbehälter in Eurem Kalender. Die Namen müssen passen, das mit das Parsen funktioniert. Tipp: Die Ziffern bei "setze Color auf ....." sind die Farbcodierungen im Dezimalsystem.  
 4 = Für's parsen wichtig. Bei funktioniert die 0, es kann sein dass dies bei euch anders ist.  
+  
 ![image](https://user-images.githubusercontent.com/99131208/188515648-9fe879b9-fe5c-402b-8924-47710f4baa95.png)  
 
 
