@@ -109,15 +109,15 @@ Die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** werden in ei
 * **Konfigurationsskript**  
 
   ```
-var Buero_Alarm: PageAlarm =
-{
-"type": "cardAlarm",
-"heading": "Alarm",
-"useColor": true,
-"subPage": false,
-"parent": undefined,
-"items": [<PageItem>{ id: "alias.0.NSPanel_1.Alarm" }]
-};
+  var Buero_Alarm: PageAlarm =
+  {
+  "type": "cardAlarm",
+  "heading": "Alarm",
+  "useColor": true,
+  "subPage": false,
+  "parent": undefined,
+  "items": [<PageItem>{ id: "alias.0.NSPanel_1.Alarm" }]
+  };
   ``` 
 
 
