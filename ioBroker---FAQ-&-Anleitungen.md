@@ -227,32 +227,32 @@ Ich habe dieses Grid nicht selbst getestet. Ich wäre dankbar für Zusatz Inform
 
 ***
 
-## **3.) Info Screensaver-Info auf Request**
+## **3.) Info Screensaver-Info auf Request**  
 
-* **Beschreibung**:
+* **Beschreibung**:  
 Gedanke war es, die Funktion der screensaver Notify zu nutzen um beim drücken eines Buttons eine bestimmte Ausgabe zurück zu bekommen. 
 
 
-* **Quelle**:
+* **Quelle**:  
 Als Vorlage und Beispiel diente mir der Post [288](https://forum.iobroker.net/topic/50888/sonoff-nspanel/288) hier im Forum
 
 
-* **IoBroker**
+* **IoBroker**  
 Wenn man so wie ich, das ganze über einen Button vom NSPanel aus Anfragen möchte, benötigt meinen Datenpunkt (Boolean) zur Steuerung.  Ich habe mir dafür im **0_userdata.0.NSPanel.1.** einen neuen Ordner angelegt mit einem entsprechenden Datenpunkt.
 
 
-* **Alias**
+* **Alias**  
 Im Geräte Adapter habe ich mir auf den Hilfs-Datenpunkt einen Alias vom Typ Taste gelegt, damit ich den Button auf dem NSPanel darauf ansteuern kann.
 
-* **Blockly**:
+* **Blockly**:  
 Dann habe ich mir ein Blockly gebaut, welches den Status des Hilfs-Datenpunktes ausliest. Sobald dieser durch drücken des Buttons auf dem NSPanel auf true wechselt, wird das Skript ausgeführt.
 Das Skript füttert die beiden Datenpunkte für die NotifyPopupPage im ordner **0_userdata.0.NSPanel.1.ScreensaverInfo.**:
-**popupNotifyHeading** und **popupNotifyText**
-
-  **Wichtig:**
+**popupNotifyHeading** und **popupNotifyText**  
+ 
+  **Wichtig:**  
   Die Info wird nur angezeigt, wenn der Screensaver wieder aktiv ist. Deshalb muss das erste Timeout im Skript etwas größer sein als **timeoutScreensaver** im Konfigurationsskript.  
 
-![image](https://user-images.githubusercontent.com/99131208/188515089-64d9a284-65bf-4561-91bf-47ecc215f2d9.png) 
+  ![image](https://user-images.githubusercontent.com/99131208/188515089-64d9a284-65bf-4561-91bf-47ecc215f2d9.png) 
 
 <details>
   <summary>Blockly Skript</summary> 
@@ -356,9 +356,9 @@ Das Skript füttert die beiden Datenpunkte für die NotifyPopupPage im ordner **
 </details>  
 
 
-Mein Blockly gibt hie einfach nur fest definierten Text zurück. Möglichkeiten dies nun dynamisch zu gestalten, gibt es viele. Tobt Euch aus!
+  Mein Blockly gibt hie einfach nur fest definierten Text zurück. Möglichkeiten dies nun dynamisch zu gestalten, gibt es viele. Tobt Euch aus!  
 
-* **Konfigurationsskript**:
+* **Konfigurationsskript**:  
 Im Konfigurationsskript habe ich mir nun einen Button definiert 
 
 ```
