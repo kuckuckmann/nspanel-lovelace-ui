@@ -880,3 +880,48 @@ var Abfall: PageEntities =
 * **Fazit**:
 Eine vermeintlich einfache Sache, die aber ziemlich knifflig werden kann. 
 
+
+***
+
+
+## **5.) QR-Code Page**
+* **Quelle**
+Die Anleitung kommt aus dem Post [620](https://forum.iobroker.net/topic/50888/sonoff-nspanel/620) hier im Forum.
+
+* **ioBroker**
+Legt Euch unter **0_userdata.0.** einen neuen Datenpunkt vom Typ String an. Dieser Datenpunkt erhält die Daten aus dem sich der QR Code erstellt. Außerdem werden SSID und das Passwort separat auf der Page angezeigt.  
+
+Bsp.: WIFI:**T**:WPA;**S**:Test-Guest-SSID;**P**:guest-accecess;**H**:;  
+
+T = Verschlüsselung  
+S = SSID  
+P = Password  
+H = Hidden (nur erforderlich wenn versteckt)  
+
+![image](https://user-images.githubusercontent.com/99131208/188515951-c5350270-de2f-4526-b337-9fd9c60bf6d8.png)  
+(Bild by @Armilar )
+
+* **Alias**
+Auf den erstellten Datenpunkt nun einen Alias vom Typ Info anlegen.
+![image](https://user-images.githubusercontent.com/99131208/188515935-344deccc-c00f-48c1-9770-83ab432c34d3.png)  
+(Bild by @Armilar )
+* **Konfigurationsskript**
+Auf der Konfigurationsseite müsst ihr nun eine OageQR hinzufügen:
+
+```
+var WLAN: PageQR = 
+{
+    "type": "cardQR",
+    "heading": "Gäste WLAN",
+    "useColor": true,
+    "subPage": false,
+    "parent": WLAN,
+    "items": [
+		<PageItem>{ id: "alias.0.NPanel_EMU.TestGuestWifi" }
+	
+	]
+};
+```
+
+* **Bekannte Probleme**
+Der QR Code funktioniert auf manchen Android Geräten nicht.
