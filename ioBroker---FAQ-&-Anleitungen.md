@@ -11,11 +11,12 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **5.)** QR-Code page  
 **6.)** Alias Definitionen  
 **7.)** Hardware-Buttons im Multipress-Mode  
-**8.)**Anleitung by Armilar  
+**8.)** Anleitung by Armilar  
 
 # **Changelog**
 <details>
-  <summary>Changelog</summary>  
+  <summary>Changelog</summary> 
+ 
 01.09.2022 - Thread erstellt  
 01.09.2022 - Button entkoppeln - erstellt  
 01.09.2022 - Alarm Page - erstellt  
@@ -26,7 +27,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 02.09.2022 - Alias Definitionen - erstellt  
 02.09.2022 - Hardware-Buttons im Multipress-Mode - erstellt  
 03.09.2022 - Alarm Page - kleine Korrektur / Reperatur Blockly Skript  
-05.09.2022 - Übertrag vom IoBroker Forum nach Github Wiki
+05.09.2022 - Übertrag vom IoBroker Forum nach Github Wiki  
 </details>  
 
 
