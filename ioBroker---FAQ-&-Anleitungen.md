@@ -121,11 +121,10 @@ Die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** werden in ei
   ``` 
 
 
-* **Blockly Testskript**
-
+* **Blockly Testskript**  
 Nachfolgend ein kurzes Emulationsskript für die Weiterverarbeitung. Diese Logik sollte auch in dein eigenes externes Alarm-Skript übernommen werden.
 
-![image](https://user-images.githubusercontent.com/99131208/188514613-8a5b356b-1c47-47aa-a80c-91f30edf1fe8.png)
+  ![image](https://user-images.githubusercontent.com/99131208/188514613-8a5b356b-1c47-47aa-a80c-91f30edf1fe8.png)
  
 
 <details>
@@ -212,11 +211,12 @@ Nachfolgend ein kurzes Emulationsskript für die Weiterverarbeitung. Diese Logik
 ```
 </details>  
 (Bild & Blockly by @Armilar)  
+
   
-Test-Blockly starten
+  Test-Blockly starten:
   
-Alarm-Code in die cardAlarm eingeben --> Schutz auswählen --> aktiviert  
-Alarm-Code in die cardAlarm eingeben --> Deaktivieren --> deaktiviert  
+  Alarm-Code in die cardAlarm eingeben --> Schutz auswählen --> aktiviert  
+  Alarm-Code in die cardAlarm eingeben --> Deaktivieren --> deaktiviert  
 
 
 * **Offene Punkte**: 
