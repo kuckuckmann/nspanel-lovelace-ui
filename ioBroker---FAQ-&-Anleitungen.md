@@ -44,27 +44,28 @@ Wenn man auf einen der beiden Buttons eine Funktion legen möchte, die eine Steu
 
 * **Tasmota**: 
 Über die Tasmota Konsole muss man für den Button oder beide Buttons eine Rule definieren und aktivieren, welche für die Entkopplung sorgt.
-Tasmota konsole:
+Tasmota konsole:  
 --> öffnen der Tasmota Konfigurationsoberfläche des Panels, dann auf Konsole und noch einmal auf Konsole 
---> Rule definieren
-```
-Rule2 on Button1#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button2"} endon
-```
-Dies ist die Rule für beide Buttons. Möchte man nur einen entkoppeln muss man "**on Button......**" bis zum nächsten "**...endon**" entfernen. **Button1 = der linke Button, Button2 = der rechte Button**.
-**Wichtig:** **%topic%**/**%prefix%**/RESULT gilt es dabei so anzupassen, dass der Struktur in Eurem MQTT Adapter entspricht:
+--> Rule definieren  
 
-mqtt.0.SmartHome.nspanel_7C14FC.tele.RESULT
+  ```
+  Rule2 on Button1#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button2"} endon
+  ```
+  Dies ist die Rule für beide Buttons. Möchte man nur einen entkoppeln muss man "**on Button......**" bis zum nächsten "**...endon**" entfernen. **Button1 = der linke Button, Button2 = der rechte Button**.  
+  **Wichtig:** **%topic%**/**%prefix%**/RESULT gilt es dabei so anzupassen, dass der Struktur in Eurem MQTT Adapter entspricht:  
 
-**%topic%** entspricht hier **nspanel_7C14FC** und **%prefix%**  entspricht **tele**
+  mqtt.0.SmartHome.nspanel_7C14FC.tele.RESULT  
 
---> Rule aktivieren: 
-```
-Rule2 1
-```
---> Rule deaktivieren: 
-```
-Rule2 0
-```
+  **%topic%** entspricht hier **nspanel_7C14FC** und **%prefix%**  entspricht **tele**  
+
+  --> Rule aktivieren: 
+  ```
+  Rule2 1
+  ```
+  --> Rule deaktivieren: 
+  ```
+  Rule2 0
+   ```
 
 * **Konfigurationsskript**:
 Im Konfigurationsskript benötigt Ihr nun unter der **pages** Definition **buttonxPage**: (x=Nummer des Buttons).
