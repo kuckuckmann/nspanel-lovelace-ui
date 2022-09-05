@@ -81,34 +81,34 @@ Hintergrund: Die Buttons geben keinen definierten Page-Index zurück, daher werd
 ## **2.) Alarm Page**
 
 
-* **Quelle**:
+* **Quelle**:  
 Post [1087](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1087) hier im Forum
 
 
-* **Im IoBroker**
+* **Im IoBroker**  
 Im IoBroker wird unter 0_userdata.0.NSPanel.1.Alarm die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** benötigt. Diese werden i.d.R. generisch erzeugt (Typ String).
 
-![image](https://user-images.githubusercontent.com/99131208/188514512-67b6400f-30db-4adc-b92c-9359d21d97d9.png)
-(Bild by @Armilar)
+  ![image](https://user-images.githubusercontent.com/99131208/188514512-67b6400f-30db-4adc-b92c-9359d21d97d9.png)
+  (Bild by @Armilar)
 
-Bei Aktivierung oder Deaktivierung der Alarmanlage wechselt der Status in "arming" oder "pending". Da die Verarbeitung der Alarmlogik außerhalb des Skriptes stattfindet, müssen die Datenpunkte auch entsprechend durch das externe Skript weiter getaktet werden
+  Bei Aktivierung oder Deaktivierung der Alarmanlage wechselt der Status in "arming" oder "pending". Da die Verarbeitung der Alarmlogik außerhalb des Skriptes stattfindet, müssen die Datenpunkte auch entsprechend durch das externe Skript weiter getaktet werden
 
 
-* **Aliase**:
+* **Aliase**:  
 Die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** werden in einem Alias vom Typ Feueralarm im Gerätemanager oder Alias Adapter angelet und dieser Alias wird dann im Konfigurationsskript auf der Alarm-Page verwendet.
 
-![image](https://user-images.githubusercontent.com/99131208/188514578-43f08178-b8f0-4d09-8e76-02cbe55d5557.png)
+  ![image](https://user-images.githubusercontent.com/99131208/188514578-43f08178-b8f0-4d09-8e76-02cbe55d5557.png)
 
-Alias-Typ Feueralarm:  
-ACTUAL = 0_userdata.0.NSXXXX.Alarm.AlarmState  
-PIN = 0_userdata.0.NSXXXX.Alarm.PIN  
-TYPE = 0_userdata.0.NSXXXX.Alarm.AlarmType  
+  Alias-Typ Feueralarm:  
+  ACTUAL = 0_userdata.0.NSXXXX.Alarm.AlarmState  
+  PIN = 0_userdata.0.NSXXXX.Alarm.PIN  
+  TYPE = 0_userdata.0.NSXXXX.Alarm.AlarmType  
 
-Falls ein Wert im Alias nicht vorhanden ist, dann separat hinzufügen
+  Falls ein Wert im Alias nicht vorhanden ist, dann separat hinzufügen
 
-* **Konfigurationsskript**
+* **Konfigurationsskript**  
 
-```
+  ```
 var Buero_Alarm: PageAlarm =
 {
 "type": "cardAlarm",
@@ -118,7 +118,7 @@ var Buero_Alarm: PageAlarm =
 "parent": undefined,
 "items": [<PageItem>{ id: "alias.0.NSPanel_1.Alarm" }]
 };
-``` 
+  ``` 
 
 
 * **Blockly Testskript**
