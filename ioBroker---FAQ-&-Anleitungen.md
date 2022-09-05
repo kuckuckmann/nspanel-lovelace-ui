@@ -36,17 +36,17 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 
 ## **1.) Button entkoppeln**
 
-* **Quellen**: 
+* **Quellen**:  
 Post [884](https://forum.iobroker.net/topic/50888/sonoff-nspanel/884) und Post [754](https://forum.iobroker.net/topic/50888/sonoff-nspanel/754) hier im Forum
 
-* **Zusammenfassung**: 
+* **Zusammenfassung**:  
 Wenn man auf einen der beiden Buttons eine Funktion legen möchte, die eine Steuerung in der Oberfläche übernimmt und dabei nicht das Relay geschaltet werden soll, dann muss man das Relay vom Button entkoppeln. 
 
-* **Tasmota**: 
+* **Tasmota**:  
 Über die Tasmota Konsole muss man für den Button oder beide Buttons eine Rule definieren und aktivieren, welche für die Entkopplung sorgt.
 Tasmota konsole:  
---> öffnen der Tasmota Konfigurationsoberfläche des Panels, dann auf Konsole und noch einmal auf Konsole 
---> Rule definieren  
+--> öffnen der Tasmota Konfigurationsoberfläche des Panels, dann auf Konsole und noch einmal auf Konsole  
+--> Rule definieren   
 
   ```
   Rule2 on Button1#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button2"} endon
@@ -67,12 +67,12 @@ Tasmota konsole:
   Rule2 0
    ```
 
-* **Konfigurationsskript**:
+* **Konfigurationsskript**:  
 Im Konfigurationsskript benötigt Ihr nun unter der **pages** Definition **buttonxPage**: (x=Nummer des Buttons).
 Entweder gebt Ihr hier nun den var/const Name eines bestehenden Grid mit, damit kann man einen Button quasi als Home-Button nutzen, oder man legt einen eigenen Grid auf den Button, welcher dann zuvor definiert werden muss.
 
 
-* **FAQ**: 
+* **FAQ**:  
 Hintergrund: Die Buttons geben keinen definierten Page-Index zurück, daher werden im Skript negative Page-Indizes verwendet (damit man weiß, dass es ein externer Button war). Dieser Seiten-Button (nach oben zeigend) führt auf die Page 0 (also immer auf die erste Seite)
 
 
