@@ -27,9 +27,9 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 
 
 ***
+# Anleitungen
 
-
-# **1.) Button entkoppeln**
+## **1.) Button entkoppeln**
 
 * **Quellen**: 
 Post [884](https://forum.iobroker.net/topic/50888/sonoff-nspanel/884) und Post [754](https://forum.iobroker.net/topic/50888/sonoff-nspanel/754) hier im Forum
@@ -72,7 +72,7 @@ Hintergrund: Die Buttons geben keinen definierten Page-Index zurück, daher werd
 
 ***
 
-# **2.) Alarm Page**
+## **2.) Alarm Page**
 
 
 * **Quelle**:
@@ -218,4 +218,143 @@ Ich habe dieses Grid nicht selbst getestet. Ich wäre dankbar für Zusatz Inform
 --> Wo definiert man den PIN der verwendet wird?  
 --> Wie ist das mit den Aliasen  
 --> gibt es eine Karenzzeitspanne nach dem Aktivieren oder bis zum Deaktivieren?  
+
+***
+
+## **3.) Info Screensaver-Info auf Request**
+
+* **Beschreibung**:
+Gedanke war es, die Funktion der screensaver Notify zu nutzen um beim drücken eines Buttons eine bestimmte Ausgabe zurück zu bekommen. 
+
+
+* **Quelle**:
+Als Vorlage und Beispiel diente mir der Post [288](https://forum.iobroker.net/topic/50888/sonoff-nspanel/288) hier im Forum
+
+
+* **IoBroker**
+Wenn man so wie ich, das ganze über einen Button vom NSPanel aus Anfragen möchte, benötigt meinen Datenpunkt (Boolean) zur Steuerung.  Ich habe mir dafür im **0_userdata.0.NSPanel.1.** einen neuen Ordner angelegt mit einem entsprechenden Datenpunkt.
+
+
+* **Alias**
+Im Geräte Adapter habe ich mir auf den Hilfs-Datenpunkt einen Alias vom Typ Taste gelegt, damit ich den Button auf dem NSPanel darauf ansteuern kann.
+
+* **Blockly**:
+Dann habe ich mir ein Blockly gebaut, welches den Status des Hilfs-Datenpunktes ausliest. Sobald dieser durch drücken des Buttons auf dem NSPanel auf true wechselt, wird das Skript ausgeführt.
+Das Skript füttert die beiden Datenpunkte für die NotifyPopupPage im ordner **0_userdata.0.NSPanel.1.ScreensaverInfo.**:
+**popupNotifyHeading** und **popupNotifyText**
+
+**Wichtig:**
+Die Info wird nur angezeigt, wenn der Screensaver wieder aktiv ist. Deshalb muss das erste Timeout im Skript etwas größer sein als **timeoutScreensaver** im Konfigurationsskript.
+
+![image](https://user-images.githubusercontent.com/99131208/188515089-64d9a284-65bf-4561-91bf-47ecc215f2d9.png) 
+
+<details>
+  <summary>Blockly Skript</summary>
+ ```
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="on" id="^D-c/jQ8.N);=7Ic~rAw" x="-238" y="-237">
+    <field name="OID">0_userdata.0.NSPanel.1.DP_RQ.NSPanel_InfoRQ</field>
+    <field name="CONDITION">ne</field>
+    <field name="ACK_CONDITION"></field>
+    <statement name="STATEMENT">
+      <block type="controls_if" id="NA-Iy%xl.-1qP}_ntm-K">
+        <value name="IF0">
+          <block type="logic_compare" id="xU6_pkIHp:+an:llYxO7">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="get_value" id="zt-oj}9|^lz$y0Y+uX{z">
+                <field name="ATTR">val</field>
+                <field name="OID">0_userdata.0.NSPanel.1.DP_RQ.NSPanel_InfoRQ</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_boolean" id="W*,0+F8r{1lGvOZRLqR!">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="timeouts_wait" id="PWh;}}r)zb#ugpv6*sj|">
+            <field name="DELAY">20</field>
+            <field name="UNIT">sec</field>
+            <next>
+              <block type="control" id="oiUfnP)ms6:HeZU2e|;u">
+                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                <field name="OID">0_userdata.0.NSPanel.1.ScreensaverInfo.popupNotifyHeading</field>
+                <field name="WITH_DELAY">FALSE</field>
+                <value name="VALUE">
+                  <block type="text" id="k:,q%UL1r6loKc@D}r+(">
+                    <field name="TEXT">INFO</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="control" id="Ma4m/8_a28*A7/`%`*0X">
+                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                    <field name="OID">0_userdata.0.NSPanel.1.ScreensaverInfo.popupNotifyText</field>
+                    <field name="WITH_DELAY">FALSE</field>
+                    <value name="VALUE">
+                      <block type="text" id="ng-xB),UUycdg4GI2|K{">
+                        <field name="TEXT">Heute ist es ganz schön heiß!</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="toggle" id="qUH1D!wwJXiYr[KQ,.}A">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                        <field name="OID">0_userdata.0.NSPanel.1.DP_RQ.NSPanel_InfoRQ</field>
+                        <field name="WITH_DELAY">FALSE</field>
+                        <next>
+                          <block type="timeouts_wait" id=";93SSUfV69!-h_CWkA.@">
+                            <field name="DELAY">20</field>
+                            <field name="UNIT">sec</field>
+                            <next>
+                              <block type="control" id="}fxN7f3*x$HF9#ePhL3i">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                <field name="OID">0_userdata.0.NSPanel.1.ScreensaverInfo.popupNotifyHeading</field>
+                                <field name="WITH_DELAY">FALSE</field>
+                                <value name="VALUE">
+                                  <block type="text" id="b0jBsnk@!YwX~cuxkgOi">
+                                    <field name="TEXT"></field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="control" id="C}QMk;?Qtx^ZviUKh-}9">
+                                    <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                    <field name="OID">0_userdata.0.NSPanel.1.ScreensaverInfo.popupNotifyText</field>
+                                    <field name="WITH_DELAY">FALSE</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="m;bIZ!Y7H`e|BikGQ$%S">
+                                        <field name="TEXT"></field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
+```
+</details>  
+
+Mein Blockly gibt hie einfach nur fest definierten Text zurück. Möglichkeiten dies nun dynamisch zu gestalten, gibt es viele. Tobt Euch aus!
+
+* **Konfigurationsskript**:
+Im Konfigurationsskript habe ich mir nun einen Button definiert 
+
+```
+<PageItem>{ id: "alias.0.InfoRQ", icon: "comment-question" ,name: "InfoScreen"},
+```
+
 
