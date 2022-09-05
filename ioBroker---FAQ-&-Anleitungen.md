@@ -210,16 +210,16 @@ Nachfolgend ein kurzes Emulationsskript für die Weiterverarbeitung. Diese Logik
 </xml>   
 ```
 </details>  
-(Bild & Blockly by @Armilar)  
+  (Bild & Blockly by @Armilar)  
 
   
-  Test-Blockly starten:
+  Test-Blockly starten:  
   
   Alarm-Code in die cardAlarm eingeben --> Schutz auswählen --> aktiviert  
   Alarm-Code in die cardAlarm eingeben --> Deaktivieren --> deaktiviert  
-
-
-* **Offene Punkte**: 
+  
+  
+* **Offene Punkte**:  
 Ich habe dieses Grid nicht selbst getestet. Ich wäre dankbar für Zusatz Informationen.  
 --> Wo definiert man den PIN der verwendet wird?  
 --> Wie ist das mit den Aliasen  
