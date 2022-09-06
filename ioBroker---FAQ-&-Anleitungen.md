@@ -11,7 +11,8 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **5.)** QR-Code page  
 **6.)** Alias Definitionen  
 **7.)** Hardware-Buttons im Multipress-Mode  
-**8.)** Anleitung by Armilar  
+**8.)** Rolladen / Jalousie / Shutter
+**X.)** Anleitung by Armilar  
 
 # **Changelog**
 <details>
@@ -28,6 +29,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 02.09.2022 - Hardware-Buttons im Multipress-Mode - erstellt  
 03.09.2022 - Alarm Page - kleine Korrektur / Reperatur Blockly Skript  
 05.09.2022 - Übertrag vom IoBroker Forum nach Github Wiki  
+06.09.2022 - Rolladen / Jalousie / Shutter - In erstellung
 </details>  
 
 
@@ -1488,5 +1490,17 @@ Falls du diese Funktion nutzen möchtest, kannst du das nachfolgende Blockly (si
 
 ***
 
+## **8.) Rolladen / Jalousie / Shutter**  
+* **Quelle**  
 
-**8.) Für Armilar :-)**
+* **Voraussetzung**  
+
+* **Alias**  
+
+* **Konfigurationsskript**  
+
+
+***
+
+
+## **X.) Für Armilar :-)**
