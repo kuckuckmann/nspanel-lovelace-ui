@@ -225,31 +225,60 @@ Nachfolgend ein kurzes Emulationsskript für die Weiterverarbeitung. Diese Logik
 **Ablauf**:  
 1. Ablauf Alarm Aktivierung:  
 PIN eingeben und dann Alarm-Modus (Vollschutz, Zuhause, Nacht oder Besuch) auswählen. Im Datenpunkt AlarmType wird das als A1, A2, A3 oder A4 interpretiert und kann extern weiterverarbeitet werden.  
+
 ![image](https://user-images.githubusercontent.com/99131208/188736479-e56f574b-5ab3-442b-90d1-384672779ec9.png)  
+
 Das Panel wechselt in den Status (AlarmState) "arming" (Icon = gelbes blinkendes Schild/Keine Tastatur)  
+
 ![image](https://user-images.githubusercontent.com/99131208/188736544-3a3e7e12-b28d-476a-bb97-3b2e9a1cc1e0.png)  
+
 Wenn durch das externe Skript (oder Emulator) der Status "armed" in den Datenpunkt AlarmState eingetragen wird (vorausgesetzt das externe Skript findet z.B, keine offenen Fenster) wird das Icon rot:  
+
 ![image](https://user-images.githubusercontent.com/99131208/188736580-0a8c8a8d-5c6c-40d5-ab64-a305a05da70e.png)  
+
 Der AlarmType ist jetzt D1, die Tastatur ist wieder eingeblendet und die card Alarm bereit für die Deaktivierung.  
   
 2. Ablauf Alarm Deaktivierung:  
-PIN-Eingabe zur Deaktivierung und Bestätigung durch den Button "Deaktivieren".  
+PIN-Eingabe zur Deaktivierung und Bestätigung durch den Button "Deaktivieren". 
+ 
 ![image](https://user-images.githubusercontent.com/99131208/188736732-324c0cb7-f638-4bf7-80cb-b5b631bc1360.png)  
+
 Das Panel vergleicht jetzt den Aktivierungs-PIN mit dem Deaktivierungs-PIN. Stimmen die PIN's überein, dann wird der AlarmState auf "pending" gesetzt.  
+
 ![image](https://user-images.githubusercontent.com/99131208/188736794-73d106c4-263a-4e4b-9b41-cb53ca1e457f.png)  
+
 Das externe Alarm-Skript macht seine restlichen Aufgaben und setzt dann den Status auf "disarmed"  
-![image](https://user-images.githubusercontent.com/99131208/188736826-ba9c0373-248e-4762-8b11-c5c66d540d8a.png)  
+
+![image](https://user-images.githubusercontent.com/99131208/188736826-ba9c0373-248e-4762-8b11-c5c66d540d8a.png) 
+ 
 Sollte der Pin nicht übereinstimmen, so setzt das Panel den AlarmState "triggered" (Icon blinkt)  
+
 ![image](https://user-images.githubusercontent.com/99131208/188736871-5d91b8b3-83bf-435b-9346-07c419aee21c.png) 
+
 
 **Neues**:
 Neu ist in diesem Zusammenhang der Alias "PIN_Failed" (state/number)
 Das TS-Skript zählt die missglückten Anmeldeversuche und trägt sie hier ein. Könnte man also auch für einen Trigger mit Meldung an Telegram nutzen. Außerdem wird bei Fehlerhaften PIN-Eingaben der Datenpunkt AlarmState auf "triggered" gesetzt. Im Panel sieht das dann so aus (das Icon blinkt):  
+
 ![image](https://user-images.githubusercontent.com/99131208/188736871-5d91b8b3-83bf-435b-9346-07c419aee21c.png) 
   
 Status "triggered":  
 Durch das externe Skript (alternativ der Alarm-Emulator) kann ein Status "triggered" gesetzt werden.  
 Zum Beispiel wenn der Alarm ausgelöst wurde, Die Deaktivierung der cardAlarm funktioniert somit auch bei dem Status "triggered".  
+
+**Erweitertes Blockly mit popupNotify Page**:  
+Voraussetzung: Ein neuer Datepunkt mit einer vodefinierten PIN.  
+Definieren der Basiseinstellungen in der gleichnamigen Funktion:  
+ 
+![image](https://user-images.githubusercontent.com/99131208/188738657-6e322211-b5d8-4528-9623-747813c5780f.png)  
+
+ Es gibt fünf Basiseinstellungen:  
+* Datenpunkt AlarmPIN: 
+* Anzahl_NSPanles: 
+* Notifay_OnOff: 
+* Notify_Interaktion:
+* Notify_Event:
+
 ***
 
 ## **3.) Info Screensaver-Info auf Request**  
