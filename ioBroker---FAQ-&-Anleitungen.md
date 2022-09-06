@@ -1511,7 +1511,7 @@ Im Konfigurationsskript kann man ein PageItem auf einer cardEntities oder cardGr
   
 Auf einer cardEntities hat man dqann direkt links drei Symbole für OPEN, STOP und CLOSE. Mit Klick auf den Text gelangt man in eine Subpage (popupShutter Page) die zusätzlich einen Slider hat um eine prozentuale Position zu fahren.  
   
-Auf der cardGrid hingegen,
+Auf der cardGrid hingegen, sieht man das konfigurierte Icon und man gelangt beim Öffnen auf die popupShutter Page zur Steuerung.
 
 ***
 
