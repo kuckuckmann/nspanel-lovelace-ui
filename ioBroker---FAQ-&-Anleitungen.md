@@ -85,20 +85,23 @@ Hintergrund: Die Buttons geben keinen definierten Page-Index zurück, daher werd
 
 
 * **Quelle**:  
-Post [1087](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1087) hier im Forum
+Post [1087](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1087), [1265](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1265)+[1270](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1270) im ioBroker Forum.  
 
+* **Voraussetzung**:  
+Konfigurationsskript **NsPanelTs.ts** mindestens in der Version: _04.09.2022 - V3.3.1 - Überarbeitung und BugFix für cardAlarm_
 
 * **Im IoBroker**  
-Im IoBroker wird unter 0_userdata.0.NSPanel.1.Alarm die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** benötigt. Diese werden i.d.R. generisch erzeugt (Typ String).
+Im IoBroker wird unter **0_userdata.0.NSPanel.Alarm** die Datenpunkte **AlarmPin**, **AlarmState**, **AlarmType**, **PANEL** und **PIN_Failed** benötigt. Diese werden i.d.R. generisch erzeugt (Typ String), sobald der Code der Alarm Page das erste Mal geladen wird.
 
-  ![image](https://user-images.githubusercontent.com/99131208/188514512-67b6400f-30db-4adc-b92c-9359d21d97d9.png)
-  (Bild by @Armilar)
+  ![image](https://user-images.githubusercontent.com/99131208/188733210-7bb901dd-0246-4c3b-b5b9-5d02deb6a00c.png)  
+  
+  **Wichtig**: Mit der Version v3.3.1 hat sich der Default-Pfad von der Ebene **0_userdata.0.NSPanel.1.Alarm** nach **0_userdata.0.NSPanel.Alarm** geändert. Da wir im Alarmverhalten / Informations-Popup unterscheiden wollen zwischen Meldung an alle NSPanel oder nur an ein speziefisches, ist es logisch den Alarm Ordner aus dem Ordner des NSPanel Nr. 1 auf die nächst höhere globalere Ebene darüber zu verschieben.
 
-  Bei Aktivierung oder Deaktivierung der Alarmanlage wechselt der Status in "arming" oder "pending". Da die Verarbeitung der Alarmlogik außerhalb des Skriptes stattfindet, müssen die Datenpunkte auch entsprechend durch das externe Skript weiter getaktet werden
+  Bei Aktivierung oder Deaktivierung der Alarmanlage wechselt der Status in **arming** oder **pending**. Im Falle einer PIN Falscheingabe gibt es nun auch **triggered**. Da die Verarbeitung der Alarmlogik außerhalb des Skriptes stattfindet, müssen die Datenpunkte auch entsprechend durch das externe Skript weiter getaktet werden
 
 
 * **Aliase**:  
-Die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** werden in einem Alias vom Typ Feueralarm im Gerätemanager oder Alias Adapter angelet und dieser Alias wird dann im Konfigurationsskript auf der Alarm-Page verwendet.
+Die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** werden in einem Alias vom Typ Feueralarm im Gerätemanager oder Alias Adapter angelegt und dieser Alias wird dann im Konfigurationsskript auf der Alarm-Page verwendet.
 
   ![image](https://user-images.githubusercontent.com/99131208/188514578-43f08178-b8f0-4d09-8e76-02cbe55d5557.png)
 
@@ -110,7 +113,17 @@ Die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** werden in ei
   Falls ein Wert im Alias nicht vorhanden ist, dann separat hinzufügen
 
 * **Konfigurationsskript**  
+**Allgemeine Einstellung**:  
+Es gibt nun eine neue Konstante, die den Pfad definiert, in dem der Ordner Alarm angelgt wird. Default wie wir schon zuvor gelernt haben ist **0_userdata.0.NSPanel.**  
 
+`
+const NSPanel_Alarm_Path = '0_userdata.0.NSPanel.'; 
+//Neuer Pfad für gemeinsame Nutzung durch mehrere Panels
+`
+
+**Page Type**: Die Alarmfunktion kann nur auf einer **PageAlarm** verwendet werden  
+
+**Beispiel**:  
   ```
   var Buero_Alarm: PageAlarm =
   {
@@ -127,90 +140,78 @@ Die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** werden in ei
 * **Blockly Testskript**  
 Nachfolgend ein kurzes Emulationsskript für die Weiterverarbeitung. Diese Logik sollte auch in dein eigenes externes Alarm-Skript übernommen werden.
 
-  ![image](https://user-images.githubusercontent.com/99131208/188514613-8a5b356b-1c47-47aa-a80c-91f30edf1fe8.png)
+  ![image](https://user-images.githubusercontent.com/99131208/188735860-880e0a81-407e-454e-b7d2-05cf8f57acfb.png)  
  
 
 <details>
   <summary>Blockly</summary>
 
- ```
+```
 <xml xmlns="https://developers.google.com/blockly/xml">
- <block type="on_ext" id="q!?(x}z/f~TClQnNmbyU" x="113" y="38">
-   <mutation xmlns="http://www.w3.org/1999/xhtml" items="1"></mutation>
-   <field name="CONDITION">ne</field>
-   <field name="ACK_CONDITION"></field>
-   <value name="OID0">
-     <shadow type="field_oid" id="]~f@4kO$zmxdg=}/810C">
-       <field name="oid">0_userdata.0.NSPanel.1.Alarm.AlarmState</field>
-     </shadow>
-   </value>
-   <statement name="STATEMENT">
-     <block type="controls_if" id="=_e7bf!`Q]$tg*0U1_2F">
-       <mutation elseif="1"></mutation>
-       <value name="IF0">
-         <block type="logic_compare" id="0_9gv(MmSSJ{2a$j{}(P">
-           <field name="OP">EQ</field>
-           <value name="A">
-             <block type="on_source" id="H$WWrxxX|NaWkT%W]g!Z">
-               <field name="ATTR">state.val</field>
-             </block>
-           </value>
-           <value name="B">
-             <block type="text" id="_TnyjJ5x!)JY~rQ:Opj)">
-               <field name="TEXT">arming</field>
-             </block>
-           </value>
-         </block>
-       </value>
-       <statement name="DO0">
-         <block type="control" id="eO}0c$0s~08Di)?sMM0(">
-           <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="true"></mutation>
-           <field name="OID">0_userdata.0.NSPanel.1.Alarm.AlarmState</field>
-           <field name="WITH_DELAY">TRUE</field>
-           <field name="DELAY_MS">1000</field>
-           <field name="UNIT">ms</field>
-           <field name="CLEAR_RUNNING">TRUE</field>
-           <value name="VALUE">
-             <block type="text" id="J(va8~n[/dogNBn!W].I">
-               <field name="TEXT">armed</field>
-             </block>
-           </value>
-         </block>
-       </statement>
-       <value name="IF1">
-         <block type="logic_compare" id="]p3s+ouB~BJkfd:e)G:(">
-           <field name="OP">EQ</field>
-           <value name="A">
-             <block type="on_source" id=":n]Z,t6+q#-l_hP+MEI@">
-               <field name="ATTR">state.val</field>
-             </block>
-           </value>
-           <value name="B">
-             <block type="text" id="([Ep{MPBu5s.C-lOdHgr">
-               <field name="TEXT">pending</field>
-             </block>
-           </value>
-         </block>
-       </value>
-       <statement name="DO1">
-         <block type="control" id="s77gpG^9o0A)T{f}{#,c">
-           <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="true"></mutation>
-           <field name="OID">0_userdata.0.NSPanel.1.Alarm.AlarmState</field>
-           <field name="WITH_DELAY">TRUE</field>
-           <field name="DELAY_MS">1000</field>
-           <field name="UNIT">ms</field>
-           <field name="CLEAR_RUNNING">TRUE</field>
-           <value name="VALUE">
-             <block type="text" id="4DC5l(?mcdlhZ/jIumty">
-               <field name="TEXT">disarmed</field>
-             </block>
-           </value>
-         </block>
-       </statement>
-     </block>
-   </statement>
-  </block>
-</xml>   
+<variables>
+<variable id="LwJJoNeQC4K?A;BW5:o">nspanelAlarmPath</variable>
+<variable id=".d{cc!R.4y2U9N+gLY1K">dpAlarmState</variable>
+</variables>
+<block type="comment" id="I^BpP.H=p^7Vj|-sy!%" x="-937" y="-162"> <field name="COMMENT">Bitte nspanelAlarmPath anpassen</field> <next> <block type="comment" id="JL[C{;Q}PF[TQ_BfpN$c"> <field name="COMMENT">Der Rest wird dynamisch für das jeweilige Panel ermittelt</field> <next> <block type="variables_set" id="2}X9[s}b1IDUV{6QPzh?"> <field name="VAR" id="LwJJoNeQC4K?A;BW5:_o">nspanelAlarmPath</field> <value name="VALUE"> <block type="text" id="in2z;TR0jhq1QI85qO8">
+<field name="TEXT">0_userdata.0.NSPanel.Alarm.</field>
+</block>
+</value>
+<next>
+<block type="variables_set" id="+tlGEcYI17~KL5S%%1O">
+<field name="VAR" id=".d{cc!R.4y2U9N+gLY1K">dpAlarmState</field>
+<value name="VALUE">
+<block type="text_join" id="PWihVQn3v+ef7aPA%zyx">
+<mutation items="2"></mutation>
+<value name="ADD0">
+<block type="variables_get" id="v2AT~!{!0Qc0BI2!SgN"> <field name="VAR" id="LwJJoNeQC4K?A;BW5:_o">nspanelAlarmPath</field> </block> </value> <value name="ADD1"> <block type="text" id="78{g[~wI2yQXnYZvL4}t"> <field name="TEXT">AlarmState</field> </block> </value> </block> </value> <next> <block type="on_ext" id="q!?(x}z/f~TClQnNmbyU"> <mutation xmlns="http://www.w3.org/1999/xhtml" items="1"></mutation> <field name="CONDITION">ne</field> <field name="ACK_CONDITION"></field> <value name="OID0"> <shadow type="field_oid" id="]~f@4kO$zmxdg=}/810C"> <field name="oid">0_userdata.0.NSPanel.Alarm.AlarmState</field> </shadow> <block type="variables_get" id="vCPAx:V[ZG~6IkkFu/r">
+<field name="VAR" id=".d{cc!R.4y2U9N+gLY1K">dpAlarmState</field>
+</block>
+</value>
+<statement name="STATEMENT">
+<block type="controls_if" id="=e7bf!Q]$tg*0U1_2F"> <mutation elseif="2"></mutation> <value name="IF0"> <block type="logic_compare" id="0_9gv(MmSSJ{2a$j{}(P"> <field name="OP">EQ</field> <value name="A"> <block type="on_source" id="H$WWrxxX|NaWkT%W]g!Z"> <field name="ATTR">state.val</field> </block> </value> <value name="B"> <block type="text" id="_TnyjJ5x!)JY~rQ:Opj)"> <field name="TEXT">arming</field> </block> </value> </block> </value> <statement name="DO0"> <block type="comment" id="=w_/N]5Tu)B)NwyTbxSp"> <field name="COMMENT">weitere ioBroker-Überprüfung - z.B. Fenster offen</field> <next> <block type="control_ex" id="FGZ}]#=@X?IJ3ddc[9rP" inline="true"> <field name="TYPE">false</field> <field name="CLEAR_RUNNING">TRUE</field> <value name="OID"> <shadow type="field_oid" id="=EKIKVg=5v+fyd:5J3]B"> <field name="oid">Object ID</field> </shadow> <block type="variables_get" id="Y,]v4(aeLZ~(@alJ-8;D"> <field name="VAR" id=".d{cc!R.4y2U9N+gLY1K">dpAlarmState</field> </block> </value> <value name="VALUE"> <shadow type="logic_boolean" id="2A;g]]ox]cFCoGeBOge">
+<field name="BOOL">TRUE</field>
+</shadow>
+<block type="text" id="WOt(NkkB-R9/-Xho,6}-">
+<field name="TEXT">armed</field>
+</block>
+</value>
+<value name="DELAY_MS">
+<shadow type="math_number" id="M@|2SGg8%@2nZdqU51f">
+<field name="NUM">0</field>
+</shadow>
+<block type="math_number" id=".e9qh.?F@m)/t(HM7|M"> <field name="NUM">1000</field> </block> </value> </block> </next> </block> </statement> <value name="IF1"> <block type="logic_compare" id="]p3s+ouB~BJkfd:e)G:("> <field name="OP">EQ</field> <value name="A"> <block type="on_source" id=":n]Z,t6+q#-l_hP+MEI@"> <field name="ATTR">state.val</field> </block> </value> <value name="B"> <block type="text" id="([Ep{MPBu5s.C-lOdHgr"> <field name="TEXT">pending</field> </block> </value> </block> </value> <statement name="DO1"> <block type="control_ex" id="FI3q9?nQ|FDT]dY;djZz" inline="true"> <field name="TYPE">false</field> <field name="CLEAR_RUNNING">TRUE</field> <value name="OID"> <shadow type="field_oid"> <field name="oid">Object ID</field> </shadow> <block type="variables_get" id=":8ls:Akgxi%bWPgrIJT}"> <field name="VAR" id=".d{cc!R.4y2U9N+gLY1K">dpAlarmState</field> </block> </value> <value name="VALUE"> <shadow type="logic_boolean"> <field name="BOOL">TRUE</field> </shadow> <block type="text" id="MH!9j:G.S:mOaq31i!aM"> <field name="TEXT">disarmed</field> </block> </value> <value name="DELAY_MS"> <shadow type="math_number"> <field name="NUM">0</field> </shadow> <block type="math_number" id="zO=:KFH/FH-zc4ob5b7^"> <field name="NUM">1000</field> </block> </value> </block> </statement> <value name="IF2"> <block type="logic_compare" id="pHUmm^o8GqFji*VULm*Z"> <field name="OP">EQ</field> <value name="A"> <block type="on_source" id="ques8D:5Hge-)^s,XBR!"> <field name="ATTR">state.val</field> </block> </value> <value name="B"> <block type="text" id="3Hd)Fn4g#;XPXSWwe-$">
+<field name="TEXT">triggered</field>
+</block>
+</value>
+</block>
+</value>
+<statement name="DO2">
+<block type="comment" id="c%VR#jE+K$AoZ2m%HuY_">
+<field name="COMMENT">Wenn der PIN bei der Deaktivierung falsch war</field>
+<next>
+<block type="comment" id="I-Iasuh.K$wmTE`(e!;K">
+<field name="COMMENT">Zum Beispiel MEldung an Telegram oder popupNotify </field>
+<next>
+<block type="comment" id="j_U/cfS;e3c]-j}Bie,7">
+<field name="COMMENT">an Panel senden</field>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</statement>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</next>
+</block>
+</xml>  
 ```
 </details>  
   (Bild & Blockly by @Armilar)  
@@ -221,13 +222,34 @@ Nachfolgend ein kurzes Emulationsskript für die Weiterverarbeitung. Diese Logik
   Alarm-Code in die cardAlarm eingeben --> Schutz auswählen --> aktiviert  
   Alarm-Code in die cardAlarm eingeben --> Deaktivieren --> deaktiviert  
   
+**Ablauf**:  
+1. Ablauf Alarm Aktivierung:  
+PIN eingeben und dann Alarm-Modus (Vollschutz, Zuhause, Nacht oder Besuch) auswählen. Im Datenpunkt AlarmType wird das als A1, A2, A3 oder A4 interpretiert und kann extern weiterverarbeitet werden.  
+![image](https://user-images.githubusercontent.com/99131208/188736479-e56f574b-5ab3-442b-90d1-384672779ec9.png)  
+Das Panel wechselt in den Status (AlarmState) "arming" (Icon = gelbes blinkendes Schild/Keine Tastatur)  
+![image](https://user-images.githubusercontent.com/99131208/188736544-3a3e7e12-b28d-476a-bb97-3b2e9a1cc1e0.png)  
+Wenn durch das externe Skript (oder Emulator) der Status "armed" in den Datenpunkt AlarmState eingetragen wird (vorausgesetzt das externe Skript findet z.B, keine offenen Fenster) wird das Icon rot:  
+![image](https://user-images.githubusercontent.com/99131208/188736580-0a8c8a8d-5c6c-40d5-ab64-a305a05da70e.png)  
+Der AlarmType ist jetzt D1, die Tastatur ist wieder eingeblendet und die card Alarm bereit für die Deaktivierung.  
   
-* **Offene Punkte**:  
-Ich habe dieses Grid nicht selbst getestet. Ich wäre dankbar für Zusatz Informationen.  
---> Wo definiert man den PIN der verwendet wird?  
---> Wie ist das mit den Aliasen  
---> gibt es eine Karenzzeitspanne nach dem Aktivieren oder bis zum Deaktivieren?  
+2. Ablauf Alarm Deaktivierung:  
+PIN-Eingabe zur Deaktivierung und Bestätigung durch den Button "Deaktivieren".  
+![image](https://user-images.githubusercontent.com/99131208/188736732-324c0cb7-f638-4bf7-80cb-b5b631bc1360.png)  
+Das Panel vergleicht jetzt den Aktivierungs-PIN mit dem Deaktivierungs-PIN. Stimmen die PIN's überein, dann wird der AlarmState auf "pending" gesetzt.  
+![image](https://user-images.githubusercontent.com/99131208/188736794-73d106c4-263a-4e4b-9b41-cb53ca1e457f.png)  
+Das externe Alarm-Skript macht seine restlichen Aufgaben und setzt dann den Status auf "disarmed"  
+![image](https://user-images.githubusercontent.com/99131208/188736826-ba9c0373-248e-4762-8b11-c5c66d540d8a.png)  
+Sollte der Pin nicht übereinstimmen, so setzt das Panel den AlarmState "triggered" (Icon blinkt)  
+![image](https://user-images.githubusercontent.com/99131208/188736871-5d91b8b3-83bf-435b-9346-07c419aee21c.png) 
 
+**Neues**:
+Neu ist in diesem Zusammenhang der Alias "PIN_Failed" (state/number)
+Das TS-Skript zählt die missglückten Anmeldeversuche und trägt sie hier ein. Könnte man also auch für einen Trigger mit Meldung an Telegram nutzen. Außerdem wird bei Fehlerhaften PIN-Eingaben der Datenpunkt AlarmState auf "triggered" gesetzt. Im Panel sieht das dann so aus (das Icon blinkt):  
+![image](https://user-images.githubusercontent.com/99131208/188736871-5d91b8b3-83bf-435b-9346-07c419aee21c.png) 
+  
+Status "triggered":  
+Durch das externe Skript (alternativ der Alarm-Emulator) kann ein Status "triggered" gesetzt werden.  
+Zum Beispiel wenn der Alarm ausgelöst wurde, Die Deaktivierung der cardAlarm funktioniert somit auch bei dem Status "triggered".  
 ***
 
 ## **3.) Info Screensaver-Info auf Request**  
