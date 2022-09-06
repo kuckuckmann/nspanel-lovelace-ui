@@ -1495,23 +1495,27 @@ Falls du diese Funktion nutzen möchtest, kannst du das nachfolgende Blockly (si
 Post [1214](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1214) oder [1301](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1301) und ggf. noch andere im ioBroker Forum.
 
 * **Voraussetzung**  
-Ein Bindeglied wie z.B. ein Shelly 2.5 (Pro) ist bereits mit dem ioBroker verbunden un die Datenpunkte dafür sind vorhanden.
-Zusätzlich & wichtig: Der Rolladen lässt sich manuell über die Datenpunkte im ioBroker bereits steuern (siehe Bsp. [1306](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1306)).
+Ein Bindeglied wie z.B. ein Shelly 2.5 (Pro) ist bereits mit dem ioBroker verbunden un die Datenpunkte dafür sind vorhanden.  
+Man findet hierfür diverse Videos, die einem helfen eine Aktor vorzubereiten und mit dem ioBroker zu verbinden.
+**Zusätzlich & wichtig**: Der Rolladen lässt sich manuell über die Datenpunkte im ioBroker bereits steuern (siehe Bsp. [1306](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1306)).
 
 * **Alias**  
-Wir benötigen einen Alias vom Typ Jalousie mit den Punkten ACTUAL, CLOSE, OPEN, SET und STOP.
+Wir benötigen einen Alias vom Typ Jalousie mit den Punkten **ACTUAL**, **CLOSE**, **OPEN**, **SET** und **STOP**.
 ![image](https://user-images.githubusercontent.com/99131208/188631199-7bd4f44c-4992-4e19-8cb2-90e7ef4aab95.png)  
 (Bild by @tklein)  
 
 
 * **Konfigurationsskript**  
-Im Konfigurationsskript kann man ein PageItem auf einer cardEntities oder cardGrid hinzufügen.  
+Im Konfigurationsskript kann man ein PageItem auf einer **cardEntities** oder **cardGrid hinzufügen**.  
   
-`<PageItem>{ id: "alias.0.Shelly.ShellyShutterTest", icon: "window-shutter", name: "Rolladen test", interpolateColor: true},`  
+  `<PageItem>{ id: "alias.0.Shelly.ShellyShutterTest", icon: "window-shutter", name: "Rolladen test", interpolateColor: true},`  
+
   
-Auf einer cardEntities hat man dqann direkt links drei Symbole für OPEN, STOP und CLOSE. Mit Klick auf den Text gelangt man in eine Subpage (popupShutter Page) die zusätzlich einen Slider hat um eine prozentuale Position zu fahren.  
+  Auf einer **cardEntities** hat man dqann direkt links drei Symbole für **OPEN**, **STOP** und **CLOSE**. Mit Klick auf den Text gelangt man in eine Subpage (**popupShutter Page***) die zusätzlich einen Slider hat um eine prozentuale Position zu fahren.  
+
   
-Auf der cardGrid hingegen, sieht man das konfigurierte Icon und man gelangt beim Öffnen auf die popupShutter Page zur Steuerung.
+  Auf der **cardGrid** hingegen, sieht man das konfigurierte Icon und man gelangt beim Öffnen auf die **popupShutter Page** zur Steuerung.  
+
 
 ***
 
