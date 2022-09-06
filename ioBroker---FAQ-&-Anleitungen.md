@@ -30,6 +30,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 03.09.2022 - Alarm Page - kleine Korrektur / Reperatur Blockly Skript  
 05.09.2022 - Übertrag vom IoBroker Forum nach Github Wiki  
 06.09.2022 - Rolladen / Jalousie / Shutter - In erstellung
+06.09.2022 - Abfallkalender - Überarbeitetes JS und neuen Screenshot + Textanpassungen
 </details>  
 
 
@@ -410,10 +411,10 @@ Darunter dann 4 generische Einträge event1 - event4 vom **Typ Warnung**.
 
 
 
-* JS / Blockly (Alle Skripte by @Armilar):
+* JS / Blockly:
 Es steht für die Umsetzung / Aufbereitung der Kalenderdaten nach NSPanel ein JS und ein Blockly zur Verfügung. Man benötigt nur eines davon. Es spricht aber nichts dagegen, beide mal zu testen ;-)
 
-Java Skript:
+Java Skript (by @TT-Tom):
 
 1 = Hier muss der Pfad zum ICal Adapter zum Punkt **ical.0.data.table** eigestellt werden. Achtet auf die Instanznummer beim Adapter  
 2 = Muss nur angepasst werden, wenn Eure Datenpunkte nicht unter **0_userdata.0.Abfallkalender.** liegen (jede Stelle im Skript)  
@@ -507,7 +508,7 @@ on({ id: idAbfalliCal + '.data.table', change: "ne" }, async function () {
 
 
 
-Blockly Skript:  
+Blockly Skript (by @Armilar):  
   
 1 = Hier muss der Pfad zum ICal Adapter zum Punkt **ical.0.data.table** eigestellt werden. Achtet auf die Instanznummer beim Adapter  
 2 = Muss nur angepasst werden, wenn Eure Datenpunkte nicht unter **0_userdata.0.Abfallkalender.** liegen  
