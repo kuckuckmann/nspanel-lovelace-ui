@@ -2237,17 +2237,17 @@ Für viele ist es DAS Hinderniss, wenn Sie mit der Installtion des NSPanels und 
   Genau letzteres hoffe ich hier zu erschließen. Wir haben im ioBroker von Haus aus Datenpunkte unter den Objekten. Diese kann man aus dem Konfigurationsskript aber nicht direkt ansteuern. Bei dieser Übergabe geht es um eine Art Einheitlichkeit, nennen wir es Standadisierung und Übersetzung. Ein Alias ist im Sinne des ioBroker ein neuer Datenpunkt, unter dem man sogar teilweise mehrere Datenpunkte zusammenfassen kann. Jeder Datenpunkt wird in einem Alias einem Indikator zugewiesen. So liest man immer wieder von beispielsweise SET oder ACTUAL und noch ein paar mehr. Diese Indikatoren werden dann vom Konfigurationsskript verstanden und unter einem PageItem dann angzeigt.  
   
   Wollen wir das ganze mal am Bsp. einer Rolladensteuerung darstellen:
-  * Wir haben im ioBroker z.B. einen Shelly 2.5, mit wir einen Rolladen schon steuern können. Dort gibt es Datenpunkte wie z.B. CLOSE, OPEN, PAUSE und POSITION und noch ein paar mehr.
-  * Aus der unten aufgeführten Definitionsliste (oder aus dem Konfigurationsskript) müssen wir nun einen passenden Alias Typ suchen. In dem Fall 
+* Wir haben im ioBroker z.B. einen Shelly 2.5, mit wir einen Rolladen schon steuern können. Dort gibt es Datenpunkte wie z.B. CLOSE, OPEN, PAUSE und POSITION und noch ein paar mehr.
+* Aus der unten aufgeführten Definitionsliste (oder aus dem Konfigurationsskript) müssen wir nun einen passenden Alias Typ suchen. In dem Fall 
   Jalousie. 
-  * Man beachte die Spalte required, das sind die Datenpunkte, die man mindestens füllen muss.
-  * Unter Jalousie finden wir Begriffe wie ACTUAL, CLOSE, OPEN, SET und STOP. Diese müssen nun mit den passenden Datenpunkte aus den Shelly Objekten verknüpft werden
-  * Voila, haben einen konfigurierten Alias
+* Man beachte die Spalte required, das sind die Datenpunkte, die man mindestens füllen muss.
+* Unter Jalousie finden wir Begriffe wie ACTUAL, CLOSE, OPEN, SET und STOP. Diese müssen nun mit den passenden Datenpunkte aus den Shelly Objekten verknüpft werden
+* Voila, haben einen konfigurierten Alias
 
   Schauen wir uns noch den Alias Wettervorhersage an. Diesen benötigen wir ja bei der Installation, damit auf dem Screensaver auch Wetterinfos angezeigt werden. Die Definitionsliste gibt hier ja nur ICON und TEMP an. Wenn man die Wettervorhersage auf dem Screensaver aber aktiviert, gibt es noch viel mehr, was angezeigt werden kann wie: Windgeschwindigkeit, Luftdruck, Regen, UV,.....  
   **Wichtig**: Man kan auch mehr konfigurieren, da wo unterstützt werden die zusätzlichen Datenpunkte dann auch verwendet.
 
-**Fazit**:  
+  **Fazit**:  
 1. Anhand meines Vorhabens den richtigen Alias-Typ definieren
 2. In der Definitionsliste und/oder im Konfigurartionsskript nach dem richtigen Alias suchen
 3. Alias anlagen und Datenpunkte verknüpfen, ggf. zusätzliche hinzufügen
