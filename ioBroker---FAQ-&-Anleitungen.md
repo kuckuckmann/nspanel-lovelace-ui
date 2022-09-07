@@ -32,6 +32,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 06.09.2022 - Rolladen / Jalousie / Shutter - In erstellung  
 06.09.2022 - Abfallkalender - Überarbeitetes JS und neuen Screenshot + Textanpassungen  
 06.09.2022 - Alarm Page - Neuerungen v3.3.1 eingepflegt  
+07.09.2022 - QR Code Page - Beschreibung erweitert
 </details>  
 
 
