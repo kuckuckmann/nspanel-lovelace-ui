@@ -30,8 +30,8 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 03.09.2022 - Alarm Page - kleine Korrektur / Reperatur Blockly Skript  
 05.09.2022 - Übertrag vom IoBroker Forum nach Github Wiki  
 06.09.2022 - Rolladen / Jalousie / Shutter - In erstellung
-06.09.2022 - Abfallkalender - Überarbeitetes JS und neuen Screenshot + Textanpassungen
-06.09.2022 - Alarm Page - Neuerungen v3.3.1 eingepflegt
+06.09.2022 - Abfallkalender - Überarbeitetes JS und neuen Screenshot + Textanpassungen  
+06.09.2022 - Alarm Page - Neuerungen v3.3.1 eingepflegt  
 </details>  
 
 
