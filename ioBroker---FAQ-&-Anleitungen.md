@@ -1658,6 +1658,7 @@ Java Skript (by @TT-Tom):
 
 1 = Hier muss der Pfad zum ICal Adapter zum Punkt **ical.0.data.table** eigestellt werden. Achtet auf die Instanznummer beim Adapter  
 2 = Muss nur angepasst werden, wenn Eure Datenpunkte nicht unter **0_userdata.0.Abfallkalender.** liegen (jede Stelle im Skript)  
+2.1 = Script prüft die Existenz der Datenpunkte unter **0_userdata.0** und legt sie ggf. selber an    
 3 = Die Bezeichnungen der Abfallbehälter in Eurem Kalender. Die Namen müssen passen, das mit das Parsen funktioniert. Tipp: Die Ziffern bei "setze Color auf ....." sind die Farbcodierungen im Dezimalsystem.  
 4 = Zeichen links vom String abziehen, wenn vor dem Eventname noch Text steht z.B. Strassenname; Standard = 0.  
   
@@ -1668,7 +1669,7 @@ Java Skript (by @TT-Tom):
 <details>
   <summary>Java Skript</summary>  
 
- `
+```
 const idAbfalliCal = 'ical.1'; // iCal Instanz zum Abfallkalender
 const idZeichenLoeschen = 14; // x Zeichen links vom String abziehen, wenn vor dem Eventname noch Text steht z.B. Strassenname; Standard = 0
 const idRestmuellName ='Hausmüll'; // Schwarze Tonne
@@ -1743,7 +1744,7 @@ on({ id: idAbfalliCal + '.data.table', change: "ne" }, async function () {
         setStateDelayed((['0_userdata.0.Abfallkalender.', parseFloat(i) + 1, '.color'].join('')), Color, false, parseInt(((0) || "").toString(), 10), false);
     }
 });
-`
+```
 </details>  
 
 
