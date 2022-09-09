@@ -13,7 +13,7 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **2.)** [NSPanel mit Tasmota flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#2-panel-mit-tasmota-flashen)  
  **3.)** [Berry-Treiber installieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#3-berry-treiber-installieren)  
  **4.)** [MQTT (Tasmota) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#4-mqtt-tasmota-config)
- **5.)** [TFT-Firmware flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#5-tft-firmware-auf-das-panel-flashen)  
+ **5.)** [TFT-Firmware flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#5-tft-firmware-flashen)  
  **6.)** MQTT im ioBroker installieren und konfigurieren  
  **7.)** CustomSend anlegen  
  **8.)** Icon „TypeScript“ unter „Skripte“ im Verzeichnis „global“ anlegen  
@@ -86,7 +86,7 @@ f) Speichern klicken und Einstellungen verlassen
 
 ***
 
-## **5.) TFT-Firmware auf das Panel flashen**
+## **5.) TFT-Firmware flashen**
 Tasmota „Konsolen/Konsole“ öffnen und in die Kommandozeile  
 `FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.2.3.tft`  
 eingeben, mit Enter bestätigen. Das Panel installiert jetzt die TFT-Firmware (Kann beim ersten Mal ein paar Minuten dauern – Fortschritt beobachten – am Ende erfolgt ein Reboot und das Panel wechselt in einen Screen – „Waiting for Content“
