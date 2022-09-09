@@ -9,15 +9,15 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
 
 # **Index**
 
-**1.)** [Voraussetzungen für den ioBroker](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#1-voraussetzungen-f%C3%BCr-den-iobroker)  
-**2.)** NSPanel mit Tasmota flashen  
-**3.)** Berry-Treiber installieren  
-**4.)** MQTT im Tasmota konfigurieren  
-**5.)** TFT-Firmware auf das Panel flashen  
-**6.)** MQTT im ioBroker installieren und konfigurieren  
-**7.)** CustomSend anlegen  
-**8.)** Icon „TypeScript“ unter „Skripte“ im Verzeichnis „global“ anlegen  
-**9.)** TypeScript „NSPanelTs.ts“ anlegen  
+ **1.)** [Voraussetzungen für den ioBroker](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#1-voraussetzungen-f%C3%BCr-den-iobroker)  
+ **2.)** NSPanel mit Tasmota flashen  
+ **3.)** Berry-Treiber installieren  
+ **4.)** MQTT im Tasmota konfigurieren  
+ **5.)** TFT-Firmware auf das Panel flashen  
+ **6.)** MQTT im ioBroker installieren und konfigurieren  
+ **7.)** CustomSend anlegen  
+ **8.)** Icon „TypeScript“ unter „Skripte“ im Verzeichnis „global“ anlegen  
+ **9.)** TypeScript „NSPanelTs.ts“ anlegen  
 **10.)** TypeScript konfigurieren  
 **11.)** Aliase Anlegen  
 **12.)** Seitengestaltung  
@@ -38,4 +38,17 @@ Es werden zwei Type-Skripte (TS = das etwas mächtigere Javascript) benötigt. Z
 Spielt in erster Linie eine Rolle beim Screensaver-Wetter, da zum Ersten die Icons und die Temperatur-Informationen für den Forecast ausgelesen werden (falls genutzt) und zum Zweiten das aktuelle Wettericon für den Screensaver benötigt wird. Wer keine Wetterstation oder Außentemperatursensor hat, kann auch die Temperatur aus Accu-Weather importieren --> später mehr …
 * ### Alexa2-Adapter, Spotify-Adapter oder Sonos-Adapter
 Zur Visualisierung des Media-Player‘s sollte der Alexa2-Adapter installiert sein. Wenn du statt Alexa-Devices andere Hersteller wie z.B. Google-Home-Geräte oder in erster Linie der Spotify-Premium-Adapter im Einsatz hast, so ist es auch möglich mit einem entsprechend, alternativen Media-Adapter den Media-Player zu betreiben --> später mehr …
+***
+
+## **2.) Panel mit Tasmota flashen**
+Hierzu eignet sich für den "Hardwareteil" die Anleitung von [haus-automatisierung.com](http://haus-automatisierung.com/)
+
+(https://www.youtube.com/watch?v=uqPz08ZpFW8). Video bis 11 Minuten und 30 Sekunden befolgen!
+
+Die Beschreibung, wie man das Panel mit Tasmota flashen kann, ohne einen Kurzschluss zu erzeugen, ist schon sehr gut erklärt.
+Du installierst gleich einen „abweichenden“ Berry-Treiber ([autoexec.be](http://autoexec.be/)) als in der Video-Beschreibung genannt. Wenn du Tasmota und „noch nicht der Berry-Treiber“ installiert hast, bitte mit der Youtube-Video-Anleitung von Matthias ab Zeit=11:30 aufhören. Ich verwende in meinen Panels die Version „tasmota32-DE.bin“. Du kannst aber auch die „tasmota32-nspanel.bin“ verwenden.
+Zur MQTT-Konfiguration kommen wir im Punkt 4
+An dieser Stelle solltest du aber bereits die grundsätzliche Tasmota Konfiguration vornehmen:
+
+
 ***
