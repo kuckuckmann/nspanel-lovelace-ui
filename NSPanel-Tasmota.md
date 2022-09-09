@@ -21,7 +21,14 @@
 
 ## 1.3  Switchmode
 
-Um die Tasmota-Switchmode (momentary switch) Funktion für die Hardware-Buttons zu nutzen müssen die Button GPIO's in Tasmota zu Switch GPIO's umkonfiguriert werden:  
+Die Hardware Buttons sind im Blakadder-Template als "Buttons" konfiguriert.  
+![image](https://user-images.githubusercontent.com/102996011/189384620-7bd59a70-d807-451b-84d3-bf40b9b0c1d8.png)
+
+> **SwitchMode gilt, wie der Name schon sagt, NUR für GPIO, das in Tasmota als Switch<x>-Komponente konfiguriert ist. SwitchMode hat KEINEN Einfluss auf das Verhalten von GPIO, das als Button<x>-Komponenten konfiguriert ist.**
+
+**Der GPIO14 und der GPIO27 sind "Button<x>" (x=1 und 2)**
+
+Um die Tasmota-Switchmode-Funktion für die Hardware-Buttons zu nutzen, müssen die Button GPIO's in Tasmota zu Switch GPIO's umkonfiguriert werden:  
 ![image](https://user-images.githubusercontent.com/102996011/189382319-3830b438-2e4c-40c8-930e-46177d48b146.png)  
 
 ![image](https://user-images.githubusercontent.com/102996011/189382449-5d870f37-10b8-4f59-8ea1-8a38aa8d3a0b.png)  
