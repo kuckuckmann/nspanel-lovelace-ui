@@ -46,7 +46,7 @@ Hierzu eignet sich für den "Hardwareteil" die Anleitung von [haus-automatisieru
 (https://www.youtube.com/watch?v=uqPz08ZpFW8). Video bis 11 Minuten und 30 Sekunden befolgen!
 
 Die Beschreibung, wie man das Panel mit Tasmota flashen kann, ohne einen Kurzschluss zu erzeugen, ist schon sehr gut erklärt.
-Du installierst gleich einen „abweichenden“ Berry-Treiber ([autoexec.be](http://autoexec.be/)) als in der Video-Beschreibung genannt. Wenn du Tasmota und „noch nicht der Berry-Treiber“ installiert hast, bitte mit der Youtube-Video-Anleitung von Matthias ab Zeit=11:30 aufhören. Ich verwende in meinen Panels die Version „tasmota32-DE.bin“. Du kannst aber auch die „tasmota32-nspanel.bin“ verwenden.
+Du installierst gleich einen „abweichenden“ Berry-Treiber ([autoexec.be](https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/tasmota/autoexec.be)) als in der Video-Beschreibung genannt. Wenn du Tasmota und „noch nicht der Berry-Treiber“ installiert hast, bitte mit der Youtube-Video-Anleitung von Matthias ab Zeit=11:30 aufhören. Ich verwende in meinen Panels die Version „tasmota32-DE.bin“. Du kannst aber auch die „tasmota32-nspanel.bin“ verwenden.
 Zur MQTT-Konfiguration kommen wir im Punkt 4
 An dieser Stelle solltest du aber bereits die grundsätzliche Tasmota Konfiguration vornehmen:
 
