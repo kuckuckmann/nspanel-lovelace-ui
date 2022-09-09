@@ -2845,6 +2845,7 @@ Im Konfigurationsskript kann man ein PageItem auf einer **cardEntities** oder **
 
 Hier im Beispiel über den Alexa2-Adapter:
 
+Anlegen des Alias:
 ![image](https://user-images.githubusercontent.com/102996011/189340405-93b83fc7-991b-4098-be2c-eff3ef55b4dd.png)
 
 Es wird im Geräte-Manager ein Alias "Taste erstellt:
@@ -2852,3 +2853,8 @@ Es wird im Geräte-Manager ein Alias "Taste erstellt:
 
 Im Reiter Zustände wird der .SET mit einem Command-Datenpunkt aus dem Alexa2-Adapter verknüpft (XXXXXX für dein Alexa-Device)
 ![image](https://user-images.githubusercontent.com/102996011/189339841-f26384fe-029c-40af-b233-4b1313185196.png)
+Im Anschluss klickst du auf fx (am Ende des Eintrags) und trägst den Sender ein:
+![image](https://user-images.githubusercontent.com/102996011/189340836-0027269d-7f1c-47c3-90cf-ca23ef8dfc06.png)
+
+Einbindung in das TS-Skript:
+
