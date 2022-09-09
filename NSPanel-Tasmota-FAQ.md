@@ -34,6 +34,7 @@ Zum Ausschalten der Rule
 
 **Nutzung in ioBroker:**  
 Die Seiten können über die button1Page und/oder button2Page definiert werden (Hier im Beispiel eine Schnell-Auswahl an Radiosendern oder Playlists):  
+ 
 ![image](https://user-images.githubusercontent.com/102996011/189394576-f470cba5-0fe6-4a46-97f6-0cd6c48a613b.png)
 
 
