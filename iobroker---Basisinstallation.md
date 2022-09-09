@@ -136,17 +136,18 @@ Danach sollte im MQTT-Adapter unter Objekte ein Datenpunkt: „SmartHome/NSPanel
 
 Wie bereits in der Einleitung erwähnt, werden zwei TypeScripts (TS) benötigt. Das erste ist das Icon-Skript. Das Icon-Skript dient zur Übersetzung von Schriftzeichensymbolen zwischen dem Skript und der TFT-Firmware.  
 Unter dem grünen Vezeichnisbaum „global“ im ioBroker-Menüpunkt Skripte erzeugst du ein Skript mit dem Namen „IconsSelector“ vom Typ: TypeScript (TS). Dort fügst du den Inhalt der Datei:  
-**https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/icon_mapping.ts**  
+**https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.ts**  
 ein und startest das Skript.
 
 > **Achtung:**  
 > **In speiellen Konstellationen zwischen JS-Adapter und js-Controller kann es zu Fehlern in der Ausführung von globalem TypeSkript kommen!**  
 > Für diesem Fall die:  
-> https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.js  
+> **https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.js**  
 > in ein globales "JavaScript" (nicht TS) einfügen
 
-Nur zur Info: Du kannst die einzelnen Icon-Symbolnamen (aktuell 6896 unterschiedliche Icon-Symbole) auf  
-https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html  
+Nur zur Info:  
+Du kannst die einzelnen Icon-Symbolnamen (aktuell 6896 unterschiedliche Icon-Symbole) auf  
+**https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html  **
 einsehen und später (kommen wir bei der Alias-Erstellung noch zu) auch jedes Icon in deinem Panel an entsprechender Stelle verwenden. Für die Einbindung sind die „Namen“ der Icons wichtig.  
 
 ***
