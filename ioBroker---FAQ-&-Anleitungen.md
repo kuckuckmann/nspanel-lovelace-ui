@@ -2844,6 +2844,9 @@ Im Konfigurationsskript kann man ein PageItem auf einer **cardEntities** oder **
 
 ## **9.) Alias "Taste" für Auswahl eines Radiosenders**
 
+![image](https://user-images.githubusercontent.com/102996011/189345241-471ad500-58ef-4d02-a9c5-90f06d177d39.png)
+
+
 Hier im Beispiel über den Alexa2-Adapter:
 
 **Anlegen des Alias:**
