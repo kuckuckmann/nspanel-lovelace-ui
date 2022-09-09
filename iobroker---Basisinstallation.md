@@ -20,7 +20,7 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **9.)** [„NSPanelTs.ts“ anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-anlegen)  
 **10.)** [„NSPanelTs.ts“ konfigurieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-konfigurieren)  
 **11.)** [Aliase anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#11--aliase-anlegen)  
-**12.)** Seitengestaltung  
+**12.)** [Seitengestaltung](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#12--seitengestaltung) 
 
 ## **1.) ioBroker Voraussetzungen**
 
