@@ -12,7 +12,7 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **1.)** [ioBroker Voraussetzungen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#1-voraussetzungen-f%C3%BCr-den-iobroker)  
  **2.)** [NSPanel mit Tasmota flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#2-panel-mit-tasmota-flashen)  
  **3.)** [Berry-Treiber installieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#3-berry-treiber-installieren)  
- **4.)** MQTT (Tasmota) Config  
+ **4.)** [MQTT (Tasmota) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#4-mqtt-tasmota-config)
  **5.)** TFT-Firmware auf das Panel flashen  
  **6.)** MQTT im ioBroker installieren und konfigurieren  
  **7.)** CustomSend anlegen  
@@ -76,13 +76,12 @@ Wenn das Panel bereits unter einer anderen Variante (z.B. [haus-automatisierung.
 ## **4.) MQTT (Tasmota) Config**
 
 Im Tasmota unter „Einstellungen/MQTT konfigurieren“:
-a) Host deines ioBrokers vergeben
-b) Den Port deiner ioBroker-MQTT-Adapter-Instanz eingeben (für mqtt.0.). Wenn du noch keinen MQTT-Adapter installiert hast, dann verwende bitte nicht unbedingt den Standard-Port 1883. Dieser Port wird auch von anderen Pseudo-MQTT-Adaptern (Sonoff/Shelly/etc.) ebenfalls verwendet und führt im parallelen Betrieb mit anderen MQTT-Devices später unweigerlich zu Komplikationen. Ich verwende für die MQTT-Instanzen gerne einen Port ab 1886 oder 1887 oder 1888 oder höher. Das Problem zeigt sich in der Regel ab dem Zeitpunkt, an dem der „CustomSend“ nicht von deiner mqtt.0.-Instanz abonniert wird.
-c) Benutzer und Passwort aus der ioBroker-MQTT-Instanz eintragen
-d) Bei Client und topic trage ich in der Regel „NSPanel_X“ ein. (X = 1, 2, 3 oder WZ für Wohnzimmer, etc.)
-e) Für den full topic verwende ich in der Regel „SmartHome/%topic%/%prefix%/“.
-f) Speichern klicken und Einstellungen verlassen
-![image](https://user-images.githubusercontent.com/102996011/189357302-39068cae-94c9-4c5d-a9b4-fc399cea04f7.png)
-
+a) Host deines ioBrokers vergeben  
+b) Den Port deiner ioBroker-MQTT-Adapter-Instanz eingeben (für mqtt.0.). Wenn du noch keinen MQTT-Adapter installiert hast, dann verwende bitte nicht unbedingt den Standard-Port 1883. Dieser Port wird auch von anderen Pseudo-MQTT-Adaptern (Sonoff/Shelly/etc.) ebenfalls verwendet und führt im parallelen Betrieb mit anderen MQTT-Devices später unweigerlich zu Komplikationen. Ich verwende für die MQTT-Instanzen gerne einen Port ab 1886 oder 1887 oder 1888 oder höher. Das Problem zeigt sich in der Regel ab dem Zeitpunkt, an dem der „CustomSend“ nicht von deiner mqtt.0.-Instanz abonniert wird.  
+c) Benutzer und Passwort aus der ioBroker-MQTT-Instanz eintragen  
+d) Bei Client und topic trage ich in der Regel „NSPanel_X“ ein. (X = 1, 2, 3 oder WZ für Wohnzimmer, etc.)  
+e) Für den full topic verwende ich in der Regel „SmartHome/%topic%/%prefix%/“.  
+f) Speichern klicken und Einstellungen verlassen  
+![image](https://user-images.githubusercontent.com/102996011/189357302-39068cae-94c9-4c5d-a9b4-fc399cea04f7.png)  
 
 ***
