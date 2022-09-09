@@ -1,5 +1,6 @@
 # Index
 
+## Alarm - cardAlarm
 ## Dimmer
 ## Farbtemperatur
 ## Fenster 
@@ -7,11 +8,11 @@
 ## HUE-Licht
 ## Info
 ## Jalousien
-## Klimaanlage
+## Klimaanlage - cardThermo
 ## Lautstärke
 ## Lautstärke-Gruppe
 ## Licht
-## Medien
+## Medien - cardMedia
 ## RGB-Licht 
 ## RGB-Licht-einzeln
 ## Schieberegler
@@ -19,7 +20,7 @@
 ## Taste
 ## Tastensensor
 ## Temperatur
-## Thermostat
+## Thermostat - cardThermo
 ## Tür
 ## Verschluss
 ## Wettervorhersage
