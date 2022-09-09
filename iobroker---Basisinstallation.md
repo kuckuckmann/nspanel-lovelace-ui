@@ -140,14 +140,37 @@ Unter dem grünen Vezeichnisbaum „global“ im ioBroker-Menüpunkt Skripte erz
 ein und startest das Skript.
 
 > **Achtung:**  
-> **In speiellen Konstellationen zwischen JS-Adapter und js-Controller kann es zu Fehlern in der Ausführung von globalem TypeSkript kommen!**  
+> **In speziellen Konstellationen zwischen JS-Adapter und js-Controller kann es zu Fehlern in der Ausführung von globalem TypeScript kommen!**  
 > Für diesem Fall die:  
 > **https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.js**  
 > in ein globales "JavaScript" (nicht TS) einfügen
 
-Nur zur Info:  
+**Nur zur Info:**  
 Du kannst die einzelnen Icon-Symbolnamen (aktuell 6896 unterschiedliche Icon-Symbole) auf  
-**https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html  **
+**https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html**  
 einsehen und später (kommen wir bei der Alias-Erstellung noch zu) auch jedes Icon in deinem Panel an entsprechender Stelle verwenden. Für die Einbindung sind die „Namen“ der Icons wichtig.  
+
+***
+
+## **9.)  „NSPanelTs.ts“ anlegen**
+Unter dem regulären Vezeichnisbaum „common“ im ioBroker-Menüpunkt Skripte erzeugst du (gerne auch in weiteren Unterverzeichnissen) ein weiteres TypeScript (Aktuell in für die TFT-Version 3.2.3) mit dem Inhalt:  
+**https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts**  
+
+Für jedes einzelne NSPanel das du konfigurieren möchtest, musst du dieses Skript anlegen und speziell für dieses jeweilige NSPanel entsprechende Einstellungen vornehmen. Für den Skriptnamen verwende ich in der Regel eine Kombination aus Panel und Skriptversion, wie z.B.: NSPANEL_1_3.2.3
+
+(Es kommen in regelmäßigen Abständen weitere NSPanel-Features und Bug-Fixes in das GitHub-Skript in denen dann nur noch der untere Teil (--- ab hier keine Konfiguration mehr ---) ausgetauscht werden muss und die NSPanel-Parameter erhalten bleiben)
+
+Im oberen Teil des Skripts sind die grundsätzlichen Teile der zu erstellenden Aliase, Konstanten und Variablen (auch Seiten) enthalten. An dieser Stelle ist zunächst wichtig, die Kommunikationsparameter für die MQTT-Kommunikation zu parametrieren (ab ca. Zeile 400) beginnend mit
+
+`**export const config: Config = {**`  
+
+Hier musst du die beiden nachfolgenden Kommunikations-Datenpunkte aus dem MQTT-Adapter eintragen:  
+
+`**panelRecvTopic: "mqtt.0.SmartHome.NSPanel_1.tele.RESULT",       //bitte anpassen**`  
+`**panelSendTopic: "mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend",   //bitte anpassen**`  
+
+Falls abweichend, dann am besten direkt unter Objekte herauskopieren  
+
+Bitte starte das Skript. Alle weiteren Parameter stellen wir später ein. Ab jetzt sollte der Startup-Screen „Waiting for Connection“ in den Sreensaver wechseln und minütlich die Uhrzeit an den Screensaver übertragen und das Datum aktualisiert werden.
 
 ***
