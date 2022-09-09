@@ -2857,4 +2857,8 @@ Im Anschluss klickst du auf fx (am Ende des Eintrags) und trägst den Sender ein
 ![image](https://user-images.githubusercontent.com/102996011/189340836-0027269d-7f1c-47c3-90cf-ca23ef8dfc06.png)
 
 Einbindung in das TS-Skript:
+![image](https://user-images.githubusercontent.com/102996011/189341548-252b4e6a-5888-4811-b564-d5e07290e43f.png)
+
+![image](https://user-images.githubusercontent.com/102996011/189342043-83ad8834-9326-4fd9-846b-2147f33da723.png)
+`<PageItem>{ id: "alias.0.NSPanel_1.Radio.WDR2", icon: "radio", name: "WDR2", onColor: colorRadio}`
 
