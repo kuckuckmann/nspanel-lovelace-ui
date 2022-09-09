@@ -5,6 +5,10 @@ Fortsetzung folgt...
 # Index
 
 ## Alarm - cardAlarm
+
+siehe auch das Beispiel zur vollständigen Integration der cardAlarm in den ioBroker:  
+https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#2-alarm-page
+   
 ![image](https://user-images.githubusercontent.com/102996011/189404542-81735372-7bbd-4c1a-8cad-73d1a62bd735.png)
 
 ***
