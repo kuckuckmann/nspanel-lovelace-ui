@@ -1,9 +1,9 @@
 
 # Index
 **1.)** Hardware-Buttons  
-**1.1)**    Rules  
-**1.2)**    Multipress Mode  
-**1.4)**    Switchmode
+  **1.1)**    Rules  
+  **1.2)**    Multipress Mode  
+  **1.4)**    Switchmode
 
 
 ## 1. Hardware-Buttons
@@ -11,6 +11,7 @@
 ***
 
 ### 1.1  Rules
+#### 1.1.1    Rule2
 
 ***
 
