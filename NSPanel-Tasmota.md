@@ -1,8 +1,7 @@
 # NSPanel Tasmota Configs
 
 # Index
-
-**  Hardware-Buttons
-***  Rule
-***  Multipress
-***  Switchmode
+## Hardware-Buttons
+## Rules
+## Multipress Mode
+## Switchmode
