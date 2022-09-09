@@ -38,8 +38,10 @@ Für einen ganz normalen Taster (gedrückt an/loslassen aus) wären optional fol
 Alternativ folgendes Template aktivieren  
 `{"NAME":"NSPanel_1","GPIO":[0,0,0,0,3872,0,0,0,0,0,160,0,0,0,0,225,0,480,224,1,0,0,0,161,0,0,0,0,0,0,0,0,0,0,4736,0],"FLAG":0,"BASE":1}`  
 
+Danach in der Tasmota-Konsole  
 > `switchmode1 2`  
 > `switchmode2 2`
+ausführen  
 
 ***
 
