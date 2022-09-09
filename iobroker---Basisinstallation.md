@@ -68,6 +68,12 @@ Im Tasmota findest du unter „Konsolen“ den Button „Verwalte Dateisystem“
 Danach klickst du auf „Speichern“ und dann solltest du Tasmota rebooten.
 
 Wenn das Panel bereits unter einer anderen Variante (z.B. [haus-automatisierung.com](http://haus-automatisierung.com/)) installiert war, dann bitte alle Dateien (insbesondere [autoexec.be](http://autoexec.be/) und autoexec.bec) vorher über das Flammensymbol hinter dem Dateinamen löschen. Und von vorne mit dem Punkt 3 beginnen
+
 ![image](https://user-images.githubusercontent.com/102996011/189356257-6b84c45e-1d00-4039-96b4-6787c3d2f671.png)
+
+***
+
+## **4.) MQTT im Tasmota konfigurieren**
+
 
 ***
