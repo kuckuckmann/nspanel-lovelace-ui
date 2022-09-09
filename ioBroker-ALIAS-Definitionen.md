@@ -1,3 +1,7 @@
+Ziel dieser Seite ist, jeden Alias-Typen zu  beschreiben
+
+Fortsetzung folgt...
+
 # Index
 
 ## Alarm - cardAlarm
