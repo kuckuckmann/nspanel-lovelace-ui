@@ -15,8 +15,8 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **4.)** [MQTT (Tasmota) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#4-mqtt-tasmota-config)  
  **5.)** [TFT-Firmware flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#5-tft-firmware-flashen)  
  **6.)** [MQTT (ioBroker) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#6-mqtt-iobroker-config)  
- **7.)** [CustomSend anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#6-customsend-anlegen)  
- **8.)** [Icon "TypeSkript" anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#7--icon-typescript-anlegen)  
+ **7.)** [CustomSend anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#7-customsend-anlegen)  
+ **8.)** [Icon "TypeSkript" anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#8--icon-typescript-anlegen)  
  **9.)** TypeScript „NSPanelTs.ts“ anlegen  
 **10.)** TypeScript konfigurieren  
 **11.)** Aliase Anlegen  
@@ -138,6 +138,12 @@ Wie bereits in der Einleitung erwähnt, werden zwei TypeScripts (TS) benötigt. 
 Unter dem grünen Vezeichnisbaum „global“ im ioBroker-Menüpunkt Skripte erzeugst du ein Skript mit dem Namen „IconsSelector“ vom Typ: TypeScript (TS). Dort fügst du den Inhalt der Datei:  
 **https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/icon_mapping.ts**  
 ein und startest das Skript.
+
+**Achtung:  **
+**In speiellen Konstellationen zwischen JS-Adapter und js-Controller kann es zu Fehlern in der Ausführung von globalem TypeSkript kommen!  **
+Für diesem Fall die:  
+
+in ein globales "JavaScript" (nicht TS) einfügen
 
 Nur zur Info: Du kannst die einzelnen Icon-Symbolnamen (aktuell 6896 unterschiedliche Icon-Symbole) auf  
 https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html  
