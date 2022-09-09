@@ -1,0 +1,25 @@
+# Index
+
+## Dimmer
+## Farbtemperatur
+## Fenster 
+## Feuchtigkeit
+## HUE-Licht
+## Info
+## Jalousien
+## Klimaanlage
+## Lautstärke
+## Lautstärke-Gruppe
+## Licht
+## Medien
+## RGB-Licht 
+## RGB-Licht-einzeln
+## Schieberegler
+## Steckdose
+## Taste
+## Tastensensor
+## Temperatur
+## Thermostat
+## Tür
+## Verschluss
+## Wettervorhersage
