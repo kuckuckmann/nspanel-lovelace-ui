@@ -11,11 +11,8 @@
 ***
 
 ### 1.1  Tasmota Rules
+In der Tasmota-Konsole eine Rule definieren
 #### 1.1.1    Rule2 - Favoriten Seiten
-
-**Favoriten Seiten einbinden**
-
-In der Tasmota-Konsole eine Rule definieren  
 
 **Beide Buttons als Dialog**  
 `Rule2 on Button1#state do Publish SmartHome%topic%/%prefix%/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bPrev"} endon on Button2#state do Publish SmartHome%topic%/%prefix%/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bNext"} endon`  
