@@ -40,7 +40,7 @@ Spielt in erster Linie eine Rolle beim Screensaver-Wetter, da zum Ersten die Ico
 Zur Visualisierung des Media-Player‘s sollte der Alexa2-Adapter installiert sein. Wenn du statt Alexa-Devices andere Hersteller wie z.B. Google-Home-Geräte oder in erster Linie der Spotify-Premium-Adapter im Einsatz hast, so ist es auch möglich mit einem entsprechend, alternativen Media-Adapter den Media-Player zu betreiben --> später mehr …
 ***
 
-## **2.) Panel mit Tasmota flashen**
+## **2.) [Panel mit Tasmota flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#2-panel-mit-tasmota-flashen)**
 Hierzu eignet sich für den "Hardwareteil" die Anleitung von [haus-automatisierung.com](http://haus-automatisierung.com/)
 
 (https://www.youtube.com/watch?v=uqPz08ZpFW8). Video bis 11 Minuten und 30 Sekunden befolgen!
@@ -49,6 +49,10 @@ Die Beschreibung, wie man das Panel mit Tasmota flashen kann, ohne einen Kurzsch
 Du installierst gleich einen „abweichenden“ Berry-Treiber ([autoexec.be](http://autoexec.be/)) als in der Video-Beschreibung genannt. Wenn du Tasmota und „noch nicht der Berry-Treiber“ installiert hast, bitte mit der Youtube-Video-Anleitung von Matthias ab Zeit=11:30 aufhören. Ich verwende in meinen Panels die Version „tasmota32-DE.bin“. Du kannst aber auch die „tasmota32-nspanel.bin“ verwenden.
 Zur MQTT-Konfiguration kommen wir im Punkt 4
 An dieser Stelle solltest du aber bereits die grundsätzliche Tasmota Konfiguration vornehmen:
+
+* * * a. Unter „Sonstige Einstellungen“ trägst du im Feld Vorlage
+`{"NAME":"NSPanel","GPIO":[0,0,0,0,3872,0,0,0,0,0,32,0,0,0,0,225,0,480,224,1,0,0,0,33,0,0,0,0,0,0,0,0,0,0,4736,0],"FLAG":0,"BASE":1}`
+ein, hakst Aktivieren "an" und klickst auf Speichern. Du kannst natürlich auch noch Device und Friendly Name vergeben
 
 
 ***
