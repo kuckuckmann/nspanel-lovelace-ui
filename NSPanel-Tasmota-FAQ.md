@@ -1,4 +1,3 @@
-# NSPanel Tasmota Configs
 
 # Index
 **1.)** Hardware-Buttons  
