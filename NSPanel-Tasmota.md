@@ -40,7 +40,7 @@ Alternativ folgendes Template aktivieren
 
 Danach in der Tasmota-Konsole  
 > `switchmode1 2`  
-> `switchmode2 2`
+> `switchmode2 2`  
 ausführen  
 
 ***
