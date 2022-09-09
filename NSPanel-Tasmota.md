@@ -2,24 +2,24 @@
 
 # Index
 **1.)** Hardware-Buttons  
-**2.)** Rules  
-**3.)** Multipress Mode  
-**4.)** Switchmode
+**1.1)**    Rules  
+**1.2)**    Multipress Mode  
+**1.3)**    Switchmode
 
 
 ## 1. Hardware-Buttons
 
 ***
 
-## 2. Rules
+## 1.1  Rules
 
 ***
 
-## 3. Multipress Mode
+## 1.2  Multipress Mode
 
 ***
 
-## 4. Switchmode
+## 1.3  Switchmode
 
 Um die Tasmota-Switchmode (momentary switch) Funktion für die Hardware-Buttons zu nutzen müssen die Button GPIO's in Tasmota zu Switch GPIO's umkonfiguriert werden:  
 ![image](https://user-images.githubusercontent.com/102996011/189382319-3830b438-2e4c-40c8-930e-46177d48b146.png)  
