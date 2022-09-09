@@ -1,12 +1,16 @@
 # Index
 
 ## Alarm - cardAlarm
+![image](https://user-images.githubusercontent.com/102996011/189404542-81735372-7bbd-4c1a-8cad-73d1a62bd735.png)
+
 ***
 ## Dimmer
 ***
 ## Farbtemperatur
 ***
 ## Fenster 
+![image](https://user-images.githubusercontent.com/102996011/189404690-69e61c60-88f3-4ea7-b5ad-0c423094eb11.png)
+
 ![image](https://user-images.githubusercontent.com/102996011/189403796-ab118db1-fb38-49ae-bbdf-199717e77bbe.png)
 
 ***
@@ -21,6 +25,8 @@
 ***
 ## Info
 ![image](https://user-images.githubusercontent.com/102996011/189403645-a9511303-c873-469c-9e92-136809162728.png)
+![image](https://user-images.githubusercontent.com/102996011/189404981-bbd544b0-1019-48d7-a5eb-8f38616bb8b4.png)
+
 ***
 ## Jalousien
 ![image](https://user-images.githubusercontent.com/102996011/189403904-914ff6ad-a7df-4859-a523-ff5ec02f2381.png)
@@ -38,6 +44,8 @@
 ## Licht
 ***
 ## Medien - cardMedia
+![image](https://user-images.githubusercontent.com/102996011/189404434-6a5da814-fd1e-4ca7-8f42-4e03461b8675.png)
+
 ***
 ## RGB-Licht 
 ***
@@ -48,6 +56,8 @@
 ## Steckdose
 ***
 ## Taste
+![image](https://user-images.githubusercontent.com/102996011/189404781-7fe9c2b0-e81d-446f-9aab-50865cc39a40.png)
+
 ***
 ## Tastensensor
 ***
