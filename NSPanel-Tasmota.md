@@ -35,6 +35,10 @@ Falls du diese Funktion nutzen möchtest, kannst du das nachfolgende Blockly (si
 
 ![image](https://user-images.githubusercontent.com/102996011/189388435-a3c7177b-29ca-4808-a2a5-abde22ff4209.png) 
 
+<details>
+  <summary>Blockly Skript</summary>  
+
+ ```
 <xml xmlns="https://developers.google.com/blockly/xml">
   <variables>
     <variable id="$%h)IyP*A]i!w|o;@^u~">PanelResult</variable>
@@ -521,7 +525,8 @@ Falls du diese Funktion nutzen möchtest, kannst du das nachfolgende Blockly (si
     </statement>
   </block>
 </xml>
-
+```
+</details>  
 
 
 In der ersten Zeile musst du lediglich deine stat/RESULT anpassen und an den entsprechenden Kommentaren deine Aktoren einbauen.  
