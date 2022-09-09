@@ -17,8 +17,8 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **6.)** [MQTT (ioBroker) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#6-mqtt-iobroker-config)  
  **7.)** [CustomSend anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#7-customsend-anlegen)  
  **8.)** [Icon "TypeSkript" anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#8--icon-typescript-anlegen)  
- **9.)** [„NSPanelTs.ts“ anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-anlegen)
-**10.)** TypeScript konfigurieren  
+ **9.)** [„NSPanelTs.ts“ anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-anlegen)  
+**10.)** [„NSPanelTs.ts“ konfigurieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-konfigurieren) 
 **11.)** Aliase Anlegen  
 **12.)** Seitengestaltung  
 
@@ -172,5 +172,34 @@ Hier musst du die beiden nachfolgenden Kommunikations-Datenpunkte aus dem MQTT-A
 Falls abweichend, dann am besten direkt unter Objekte herauskopieren  
 
 Bitte starte das Skript. Alle weiteren Parameter stellen wir später ein. Ab jetzt sollte der Startup-Screen „Waiting for Connection“ in den Sreensaver wechseln und minütlich die Uhrzeit an den Screensaver übertragen und das Datum aktualisiert werden.
+
+***
+
+## **9.)  „NSPanelTs.ts“ konfigurieren**
+
+Im Punkt 9 haben wir zunächst die nur Kommunikation zwischen Panel und Skript über MQTT hergestellt. Jetzt kommen wir zum Inhalt des Panels:  
+
+**a) Die 4 kleineren Icons**  
+Hier kannst du dich entscheiden, ob du die Wettervorhersage oder eigene Werte visualisieren möchtest. Wenn du dich für den Forecast entscheidest, dann muss die Variable:  
+`var weatherForecast`  
+auf „true“ stehen. Ebenfalls sollte die Adapter-Instanz von Accu-Weather funktionsfähig eingerichtet sein. Für diese Werte ist kein Alias notwendig, da diese zur Laufzeit direkt aus dem Adapter ausgelesen werden.  
+Möchtest du an dieser Stelle eigene Werte visualisieren, dann muss die Variable:  
+`var weatherForecast` 
+auf „false“ stehen. Jetzt kannst du im Block beginnend mit  
+`export const config: Config = {`  
+die Datenpunkte firstScreensaverEntity bis fourthScreensaverEntity mit eigenen Datenpunkten füllen.
+Eine Ausnahme stellt das große Wetter-Icon und der Wert für die aktuelle Temperatur im Screensaver dar. Hierfür benötigen wir einen Alias (im nächsten Punkt).
+
+> **Achtung!**  
+> **Für die Anzeige der 4 kleinen Icons muss der Alias Wettervorhersage erstellt und konfiguriert sein**
+
+**b) Diverse Datenpunkte**  
+Beim ersten Start des Scripts erzeugt das Skript unter 0_userdata diverse Datenpunkte für Screensaver Dimmode, interne Sensoren, Tasmota-Statuswerte, etc.  
+Der Pfad kann im Skript unter „NSPanel_Path“ angepasst werden.
+
+**c) Alexa**  
+Wenn du Alexa-Devices mit dem Media-Player nutzen möchtest, dann stelle noch das Standard-Alexa-Device (Seriennummer unter „var alexaDevice“) ein.
+Ebenso kannst du unter alexaSpeakerList eine Liste mit vorhandenen Alexa-Devices (und/oder Gruppen) anlegen, die von diesem NSPanel-MediaPlayer aus bedient werden sollen. Bleibt diese Liste leer, werden automatisch alle Devices aus dem Alexa2-Adapter importiert.  
+
 
 ***
