@@ -18,7 +18,7 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **7.)** [CustomSend anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#7-customsend-anlegen)  
  **8.)** [Icon "TypeSkript" anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#8--icon-typescript-anlegen)  
  **9.)** [„NSPanelTs.ts“ anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-anlegen)  
-**10.)** [„NSPanelTs.ts“ konfigurieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-konfigurieren) 
+**10.)** [„NSPanelTs.ts“ konfigurieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-konfigurieren)  
 **11.)** [Aliase anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#11--aliase-anlegen)  
 **12.)** Seitengestaltung  
 
@@ -222,5 +222,61 @@ und etwas tiefer:
 c) Wenn du einen Alias für den Media-Player benötigst, dann erstelle die diesen Alias besser über den Adapter „Alias-Manager“,  
 ![image](https://user-images.githubusercontent.com/102996011/189371038-33316b7e-fb9e-4cf4-adfb-3f899ab51278.png)  
 da der Adapter „Geräte verwalten“ bei diesem Alias nicht ordentlich arbeitet. Jedoch ist der auch so Komplex, das es für Alias-Anfänger schwer ist, einen Alias mit den korrekten Datenpunkten zu füllen.  
+
+***
+
+## **12.)  Seitengestaltung**
+Am Besten benutzt ihr die Beispiele im Skript und legt entsprechende Aliase hierzu an, die auch in diesem ioBroker-Community-Topic innerhalb der letzten Wochen beschrieben wurden.
+
+cardEntities mit Alias Lampe/Dimmer/Switch  
+![image](https://user-images.githubusercontent.com/102996011/189372243-fceb8f9d-d020-4640-a064-3f8134fef24b.png)  
+
+cardEntities mit RGB und HUE Aliasen (Color)  
+![image](https://user-images.githubusercontent.com/102996011/189372280-67b05750-2e2d-4093-b708-542363d8e56f.png)    
+
+popupLight mit Farbtemperatur und Brightness  
+![image](https://user-images.githubusercontent.com/102996011/189372471-f0abcade-8c00-46fc-9aa3-f445ea4764b1.png)  
+
+popupLight mit ColorWheel  
+![image](https://user-images.githubusercontent.com/102996011/189372558-cf411bba-5143-4c1f-b27c-4b64f22ca834.png)  
+
+cardGrid mit Radiosendern/Playlists (Alias Taste)  
+![image](https://user-images.githubusercontent.com/102996011/189372592-de0962ee-9015-4ce8-80e9-126669c61d97.png)  
+
+cardEntities mit Aliasen Lautstärke und Info  
+![image](https://user-images.githubusercontent.com/102996011/189372790-c6f1ea6f-1f24-4ba8-8bde-0459da1f2ab7.png)  
+
+cardEntities mit Fenster, Tür, Jalousie und Verschluss  
+![image](https://user-images.githubusercontent.com/102996011/189372858-3232a079-e4f1-4077-b947-6ba50fdfeb09.png)  
+
+cardEntities mit Abfallkalender  
+![image](https://user-images.githubusercontent.com/102996011/189372953-51ded00a-68ad-4cb8-b8c3-c85b0f8d3da5.png)  
+
+cardMedia  
+![image](https://user-images.githubusercontent.com/102996011/189373030-31692512-f934-418a-9c2f-e7624c8cb09f.png)  
+
+cardAlarm  
+![image](https://user-images.githubusercontent.com/102996011/189373105-e46f8872-3b3c-4365-8113-0a44570a03a7.png)  
+
+cardGrid  
+![image](https://user-images.githubusercontent.com/102996011/189373286-c5ad72d0-5e10-4c59-b691-f4bfd1ba354f.png)  
+
+cardEntities  
+![image](https://user-images.githubusercontent.com/102996011/189373401-42696c89-0d65-48f8-9cdf-a4c9a84073d6.png)  
+
+cardEntities als Subpage unter cardEntities (verschachtelt)  
+![image](https://user-images.githubusercontent.com/102996011/189373454-c6aa9236-1fad-47ef-915f-fb6356a4a613.png)  
+
+cardNotify  
+![image](https://user-images.githubusercontent.com/102996011/189373507-41a10711-afc0-4186-b94b-690bc1805a7f.png)  
+
+Steuerung von Klimageräten/Klimaanlagen  
+![image](https://user-images.githubusercontent.com/102996011/189373662-1aade2a6-3ccd-4cff-831c-c6c0a90ce999.png)  
+
+QR-Code für z.B. Gäste WLAN  
+![image](https://user-images.githubusercontent.com/102996011/189373730-1ceecc65-e503-47dc-8639-c29bb93b8eb1.png)  
+
+Neues Design für Thermostate  
+![image](https://user-images.githubusercontent.com/102996011/189373785-6d1870ef-4544-4099-8fc5-fd4b7f546d74.png)  
 
 ***
