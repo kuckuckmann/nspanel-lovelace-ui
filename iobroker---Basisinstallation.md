@@ -85,3 +85,12 @@ f) Speichern klicken und Einstellungen verlassen
 ![image](https://user-images.githubusercontent.com/102996011/189357302-39068cae-94c9-4c5d-a9b4-fc399cea04f7.png)  
 
 ***
+
+## **5.) TFT-Firmware auf das Panel flashen**
+Tasmota „Konsolen/Konsole“ öffnen und in die Kommandozeile  
+`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.2.3.tft`  
+eingeben, mit Enter bestätigen. Das Panel installiert jetzt die TFT-Firmware (Kann beim ersten Mal ein paar Minuten dauern – Fortschritt beobachten – am Ende erfolgt ein Reboot und das Panel wechselt in einen Screen – „Waiting for Content“
+
+## Achtung !!! Die aktuellsten Versionen (3.2.3 könnte nicht mehr aktuell sein) befinden sich "immer" im ioBroker TypeScript Header (TS-Skript) unter:
+https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs.ts
+***
