@@ -19,7 +19,7 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **8.)** [Icon "TypeSkript" anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#8--icon-typescript-anlegen)  
  **9.)** [„NSPanelTs.ts“ anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-anlegen)  
 **10.)** [„NSPanelTs.ts“ konfigurieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-konfigurieren) 
-**11.)** Aliase Anlegen  
+**11.)** [Aliase anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#11--aliase-anlegen)  
 **12.)** Seitengestaltung  
 
 ## **1.) ioBroker Voraussetzungen**
@@ -208,8 +208,11 @@ Jetzt kommt der eigentliche Teil der Seitengestaltung. Es werden keine Datenpunk
 Ein Alias ist „kein“ Datenpunkt, sondern ein Objekt mit mehreren Datenpunkten.  
 Das Skript setzt entsprechende Trigger auf die Alias-Datenpunkte .SET, .GET, .ACTUAL usw. Deshalb werden deine Steuerelemente im Panel nicht greifen, wenn du mit einzelnen Datenpunkten aus den verschiedenen Adaptern arbeitest.  
 Ich habe im Verlauf diverse Aliase erzeugt und auch in den ChangeLogs der jeweiligen Skript-Version sind die möglichen Aliase aufgeführt, daher gehe ich hier nicht (würde die Anleitung auch sprengen) im Detail auf die Aliase ein.  
-Was brauche ich für einen Alias:  
+
+**Was brauche ich für einen Alias:  **
+
 a) Zunächst installierst du dir eine Instanz des Adapters „Geräte verwalten“  
+
 b) Dann erstellst du dir einen Alias (Beispiel Wetter-Icon und aktueller Wert der Außentemperatur) Dieser Alias muss nur einmalig angelegt werden und funktioniert somit auch in jedem weiteren Panel.  
 
 ![image](https://user-images.githubusercontent.com/102996011/189370897-e27566e6-11dd-4b9e-867f-4074953cf7ba.png)  
