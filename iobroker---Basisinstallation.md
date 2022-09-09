@@ -9,7 +9,7 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
 
 # **Index**
 
-**1.)** Voraussetzungen für den ioBroker  
+**1.)** [Voraussetzungen für den ioBroker](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#1-voraussetzungen-f%C3%BCr-den-iobroker)  
 **2.)** NSPanel mit Tasmota flashen  
 **3.)** Berry-Treiber installieren  
 **4.)** MQTT im Tasmota konfigurieren  
