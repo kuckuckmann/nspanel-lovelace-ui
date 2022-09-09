@@ -14,7 +14,7 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **3.)** [Berry-Treiber installieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#3-berry-treiber-installieren)  
  **4.)** [MQTT (Tasmota) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#4-mqtt-tasmota-config)  
  **5.)** [TFT-Firmware flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#5-tft-firmware-flashen)  
- **6.)** MQTT (ioBroker) Config  
+ **6.)** [MQTT (ioBroker) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#6-mqtt-iobroker-config)
  **7.)** CustomSend anlegen  
  **8.)** Icon „TypeScript“ unter „Skripte“ im Verzeichnis „global“ anlegen  
  **9.)** TypeScript „NSPanelTs.ts“ anlegen  
@@ -109,28 +109,6 @@ c) IP Adresse des ioBrokers (wahrscheinlich eth0 oder eth1) auswählen
 d) Port 1886 (analog Port aus Tasmota/MQTT)  
 e) Benutzer (analog Benutzer aus Tasmota/MQTT)  
 f) Kennwort + Kennwort wiederholen (analog Passwort aus Tasmota/MQTT)  
-
-Wenn du bereits eine Instanz des MQTT-Adapters (z.B. mqtt.0.) nutzt, dann bitte den Port der MQTT-Adapter-Instanz auch im Tasmota-MQTT verwenden. Bitte auch hier den Hinweis aus Punkt 4b beachten und ggf. einen anderen Port für die Kommunikation eintragen.
-Ansonsten wählst du im ioBroker-Menü unter „Adapter“ den mqtt-Adapter aus und erstellst wie gewohnt eine Instanz des Adapters. Du kannst dir natürlich auch eine zusätzliche Instanz (z.B. mqtt.1. oder mqtt.2. etc.) erstellen.
-
-Meine Einstellungen im Reiter Verbindung sind z.B.:
-a) IP = Server/Broker
-b) WebSockets benutzen (angehakt)
-c) IP Adresse des ioBrokers (wahrscheinlich eth0 oder eth1) auswählen
-d) Port 1886 (analog Port aus Tasmota/MQTT)
-e) Benutzer (analog Benutzer aus Tasmota/MQTT)
-f) Kennwort + Kennwort wiederholen (analog Passwort aus Tasmota/MQTT)
-
-Wenn du bereits eine Instanz des MQTT-Adapters (z.B. mqtt.0.) nutzt, dann bitte den Port der MQTT-Adapter-Instanz auch im Tasmota-MQTT verwenden. Bitte auch hier den Hinweis aus Punkt 4b beachten und ggf. einen anderen Port für die Kommunikation eintragen.
-Ansonsten wählst du im ioBroker-Menü unter „Adapter“ den mqtt-Adapter aus und erstellst wie gewohnt eine Instanz des Adapters. Du kannst dir natürlich auch eine zusätzliche Instanz (z.B. mqtt.1. oder mqtt.2. etc.) erstellen.
-
-Meine Einstellungen im Reiter Verbindung sind z.B.:
-a) IP = Server/Broker
-b) WebSockets benutzen (angehakt)
-c) IP Adresse des ioBrokers (wahrscheinlich eth0 oder eth1) auswählen
-d) Port 1886 (analog Port aus Tasmota/MQTT)
-e) Benutzer (analog Benutzer aus Tasmota/MQTT)
-f) Kennwort + Kennwort wiederholen (analog Passwort aus Tasmota/MQTT)
 
 ![image](https://user-images.githubusercontent.com/102996011/189360666-24c33c5a-64f2-4992-b957-2bba75c5768b.png)
 
