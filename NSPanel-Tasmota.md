@@ -4,7 +4,7 @@
 **1.)** Hardware-Buttons  
 **1.1)**    Rules  
 **1.2)**    Multipress Mode  
-**1.3)**    Switchmode
+**1.4)**    Switchmode
 
 
 ## 1. Hardware-Buttons
@@ -19,7 +19,31 @@
 
 ***
 
-## 1.3  Switchmode
+## 1.2  Shuttermode
+
+Um die zwei Hardware-Buttons direkt in eine Rolladensteuerung umzuwandeln sind folgende Schritte erforderlich 
+
+In der Tasmota-Konsole folgende Konfigurationen einstellen:
+> `**SetOption80 1**`  
+> `**ShutterRelay1 1**`  
+> `**Interlock 1,2**`  
+> `**Interlock ON**`  
+
+![image](https://user-images.githubusercontent.com/102996011/189386244-7d4fa7d3-de96-4608-975d-8c5853e2e721.png)
+
+Für Shutter mode 1:
+> `**Rule2 0**`  
+> `**SetOption73 0**`  
+> `**SetOption114 0**`  
+
+Wenn du einen anderen brauchst, dann entsprechend der Anleitung vorgehen:
+https://tasmota.github.io/docs/Blinds-and-Shutters/
+
+Da kann man die auch kalibrieren.
+
+***
+
+## 1.4  Switchmode
 
 Die Hardware Buttons sind im Blakadder-Template als "Buttons" konfiguriert.  
 ![image](https://user-images.githubusercontent.com/102996011/189384620-7bd59a70-d807-451b-84d3-bf40b9b0c1d8.png)
