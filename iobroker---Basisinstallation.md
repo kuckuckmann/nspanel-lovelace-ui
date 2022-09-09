@@ -14,9 +14,9 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **3.)** [Berry-Treiber installieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#3-berry-treiber-installieren)  
  **4.)** [MQTT (Tasmota) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#4-mqtt-tasmota-config)  
  **5.)** [TFT-Firmware flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#5-tft-firmware-flashen)  
- **6.)** [MQTT (ioBroker) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#6-mqtt-iobroker-config)
+ **6.)** [MQTT (ioBroker) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#6-mqtt-iobroker-config)  
  **7.)** CustomSend anlegen  
- **8.)** Icon „TypeScript“ unter „Skripte“ im Verzeichnis „global“ anlegen  
+ **8.)** Icon „TypeScript“ anlegen  
  **9.)** TypeScript „NSPanelTs.ts“ anlegen  
 **10.)** TypeScript konfigurieren  
 **11.)** Aliase Anlegen  
@@ -109,15 +109,29 @@ c) IP Adresse des ioBrokers (wahrscheinlich eth0 oder eth1) auswählen
 d) Port 1886 (analog Port aus Tasmota/MQTT)  
 e) Benutzer (analog Benutzer aus Tasmota/MQTT)  
 f) Kennwort + Kennwort wiederholen (analog Passwort aus Tasmota/MQTT)  
-
 ![image](https://user-images.githubusercontent.com/102996011/189360666-24c33c5a-64f2-4992-b957-2bba75c5768b.png)
-
 Meine Einstellungen im Reiter MQTT-Einstellungen sind:  
 a) Maske zum Bekanntgeben eigener States: mqtt.0.* (Bei zusätzlicher Instanz entsprechend höher (mqtt.1.* etc.)  
 b) Eigene States beim Verbinden publizieren (angehakt)  
 c) States bei subscribe publizieren (angehakt)  
 d) Leere Session erzwingen: Client-Einstellungen verwenden  
-
 ![image](https://user-images.githubusercontent.com/102996011/189360742-6b1f39c6-64b0-4744-b4ee-3205666b1852.png)
+
+***
+
+## **6.) CustomSend anlegen**
+
+Der MQTT Datenpunkt wird benötigt und muss vom MQTT-Adapter angelegt werden. Ein manuelles Anlegen unter „Objekte“ oder „createState“ ist im ioBroker „nicht mehr“ möglich. Um den Datenpunkt zu erzeugen, öffnest du im Tasmota die Konsole und gibst ohne die Anführungszeichen  
+`„CustomSend time~12:00“`  
+ein.  
+Alternativ kann auch der MQTT-Explorer (http://mqtt-explorer.com/) genutzt werden und ein payload unter .../cmnd abgesendet werden.  
+![image](https://user-images.githubusercontent.com/102996011/189361956-3fb08b4a-edd7-4845-a9c9-4a685738c9f6.png)
+Danach sollte im MQTT-Adapter unter Objekte ein Datenpunkt: „SmartHome/NSPanel_X/cmnd/CustomSend“ erscheinen. Falls nicht, solange wiederholen bis dieser Datenpunkt abonniert wurde, oder ggfs. Nochmals die MQTT-Einstellungen überprüfen. In den Vergangenen Fragen dieses Topics ging es häufiger um diesen Punkt.
+
+> Im Video wird noch eine weitere Variante direkt in den Objekten des mqtt.0. gezeigt
+
+***
+
+## **7.)  Icon „TypeScript“ anlegen**
 
 ***
