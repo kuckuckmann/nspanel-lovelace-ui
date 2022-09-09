@@ -25,7 +25,9 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
 ## **1.) Voraussetzungen für den ioBroker**
 
 Für den Betrieb benötigst du „keinen“ ioBroker-lovelace-Adapter. Die komplette lovelace-Integration erfolgt über die TFT-Firmware und die nachfolgenden ioBroker-Adapter.
-* MQTT-Adapter
+* ### MQTT-Adapter
 ![image](https://user-images.githubusercontent.com/102996011/189351691-41cfbd56-cd3d-4340-9ab3-8a9d514eace7.png)
 Die Kommunikation zwischen dem NSPanel und ioBroker erfolgt mittels MQTT über Tasmota. Da der Datenpunkt „CustomSend“ erforderlich ist und dieser nicht im Sonoff-Adapter vorhanden ist und auch nicht durch das Skript angelegt werden kann, erfolgt die Kommunikation „nicht“ über den Sonoff-Adapter --> später mehr …
+* ### Javascript-Adapter
+Es werden zwei Type-Skripte (TS = das etwas mächtigere Javascript) benötigt. Zum Einen ein Icon-Skript, da alle verwendeten Icons nicht als „echte Grafiken“ im Panel hinterlegt sind, sondern als Schriftzeichen-Symbole. Des Weiteren ein TS-Skript mit dem eigentlichen Laufzeit-Code, welches für jedes eingesetzte NSPanel vorhanden und konfiguriert sein sollte --> später mehr …
 ***
