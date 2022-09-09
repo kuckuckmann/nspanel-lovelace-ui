@@ -13,6 +13,25 @@
 ### 1.1  Rules
 #### 1.1.1    Rule2
 
+**Favoriten Seiten einbinden**
+
+In der Tasmota-Konsole eine Rule definieren  
+
+**Beide Buttons als Dialog**  
+`Rule2 on Button1#state do Publish SmartHome%topic%/%prefix%/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bPrev"} endon on Button2#state do Publish SmartHome%topic%/%prefix%/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bNext"} endon`  
+
+**Rechter Button Dialog - Linker Button Schalter**  
+`Rule2 on Button1#state do Publish SmartHome%topic%/%prefix%/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bPrev"} endon`  
+
+**Rechter Button Schalter - Linker Button Dialog**  
+`Rule2 on Button2#state do Publish SmartHome%topic%/%prefix%/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bPrev"} endon`  
+
+Zum Anschalten der Rule  
+`Rule2` 1 oder `Rule2 On`  
+
+Zum Ausschalten der Rule  
+`Rule2` 0 oder `Rule2 Off`  
+
 ***
 
 ### 1.2  Multipress Mode
