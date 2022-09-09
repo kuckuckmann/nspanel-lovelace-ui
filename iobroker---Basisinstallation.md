@@ -10,7 +10,7 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
 # **Index**
 
  **1.)** [ioBroker Voraussetzungen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#1-voraussetzungen-f%C3%BCr-den-iobroker)  
- **2.)** [NSPanel mit Tasmota flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#2-panel-mit-tasmota-flashen) 
+ **2.)** [NSPanel mit Tasmota flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#2-panel-mit-tasmota-flashen)  
  **3.)** Berry-Treiber installieren  
  **4.)** MQTT im Tasmota konfigurieren  
  **5.)** TFT-Firmware auf das Panel flashen  
@@ -58,5 +58,16 @@ ein, hakst Aktivieren "an" und klickst auf Speichern. Du kannst natürlich auch 
 b) Unter Logging fügst du die IP von deinem ioBroker unter Sys-Log Host () ein und klickst auf Speichern.
 
 c) Unter Konsolen/Konsole kannst du natürlich auch noch weitere Einstellungen vornehmen (ipaddress1 192.168.X.X für statische IP’s, setOption’s, etc.)
+
+***
+
+## **3.) Berry-Treiber installieren**
+Im Tasmota findest du unter „Konsolen“ den Button „Verwalte Dateisystem“. Wenn du diesen anklickst, siehst du einen weiteren Button „Datei erstellen und bearbeiten“. Du änderst den Dateinamen „neue-datei.txt“ in „autoexec.be“ und fügst den Inhalt aus dem folgenden Link ein:
+**https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/tasmota/autoexec.be**
+![image](https://user-images.githubusercontent.com/102996011/189356139-54888313-987c-47dd-86c5-3cac7a8b5e88.png)
+Danach klickst du auf „Speichern“ und dann solltest du Tasmota rebooten.
+
+Wenn das Panel bereits unter einer anderen Variante (z.B. [haus-automatisierung.com](http://haus-automatisierung.com/)) installiert war, dann bitte alle Dateien (insbesondere [autoexec.be](http://autoexec.be/) und autoexec.bec) vorher über das Flammensymbol hinter dem Dateinamen löschen. Und von vorne mit dem Punkt 3 beginnen
+![image](https://user-images.githubusercontent.com/102996011/189356257-6b84c45e-1d00-4039-96b4-6787c3d2f671.png)
 
 ***
