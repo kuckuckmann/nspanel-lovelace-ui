@@ -11,7 +11,7 @@
 ***
 
 ### 1.1  Tasmota Rules
-#### 1.1.1    Rule2
+#### 1.1.1    Rule2 - Favoriten Seiten
 
 **Favoriten Seiten einbinden**
 
@@ -31,6 +31,11 @@ Zum Anschalten der Rule
 
 Zum Ausschalten der Rule  
 `Rule2` 0 oder `Rule2 Off`  
+
+**Nutzung in ioBroker:**
+Die Seiten können über die button1Page und/oder button2Page definiert werden
+![image](https://user-images.githubusercontent.com/102996011/189394576-f470cba5-0fe6-4a46-97f6-0cd6c48a613b.png)
+
 
 #### 1.1.2    Weitere Rules
 
