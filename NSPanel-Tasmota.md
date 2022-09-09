@@ -11,15 +11,15 @@
 
 ***
 
-## 1.1  Rules
+### 1.1  Rules
 
 ***
 
-## 1.2  Multipress Mode
+### 1.2  Multipress Mode
 
 ***
 
-## 1.2  Shuttermode
+### 1.3  Shuttermode
 
 Um die zwei Hardware-Buttons direkt in eine Rolladensteuerung umzuwandeln sind folgende Schritte erforderlich 
 
@@ -43,7 +43,7 @@ Da kann man die auch kalibrieren.
 
 ***
 
-## 1.4  Switchmode
+### 1.4  Switchmode
 
 Die Hardware Buttons sind im Blakadder-Template als "Buttons" konfiguriert.  
 ![image](https://user-images.githubusercontent.com/102996011/189384620-7bd59a70-d807-451b-84d3-bf40b9b0c1d8.png)
