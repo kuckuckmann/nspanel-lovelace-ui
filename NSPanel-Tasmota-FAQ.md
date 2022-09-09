@@ -10,7 +10,7 @@
 
 ***
 
-### 1.1  Rules
+### 1.1  Tasmota Rules
 #### 1.1.1    Rule2
 
 **Favoriten Seiten einbinden**
