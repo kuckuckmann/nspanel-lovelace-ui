@@ -17,11 +17,25 @@
 
 ### 1.2  Multipress Mode
 
+Man kann die physische Hardware-Buttons auch im (Multi-Press Functions) betreiben.  
+
+`SetOption73 1`  
+
+![image](https://user-images.githubusercontent.com/102996011/189387787-664790aa-6db2-4322-98e3-6de77f4062fe.png)  
+
+Jeder Button sendet per /stat/RESULT "SINGLE", "DOUBLE", "TRIPLE", "QUAD" oder "PENTA". Somit hat man 5 mögliche Schaltzustände pro Button.  
+
+Da ein sechster Klick das WifiConfig 2 ausführt, sollte dabei ebenfalls  
+`SetOption1 1`  
+ausgeführt werden, um zu verhindern, dass der Wifi Manager ausgeführt wird.  
+
+> **(Rule2 dabei ausschalten)**
+
 ***
 
 ### 1.3  Shuttermode
 
-Um die zwei Hardware-Buttons direkt in eine Rolladensteuerung umzuwandeln sind folgende Schritte erforderlich 
+Um die zwei Hardware-Buttons direkt in eine Rollladensteuerung umzuwandeln sind folgende Schritte erforderlich 
 
 In der Tasmota-Konsole folgende Konfigurationen einstellen:
 > `SetOption80 1`  
