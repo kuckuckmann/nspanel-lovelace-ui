@@ -11,9 +11,9 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **5.)** QR-Code page  
 **6.)** Alias Definitionen  
 **7.)** Hardware-Buttons im Multipress-Mode  
-**8.)** Rolladen / Jalousie / Shutter
-**9.)** Alias "Taste" für Auswahl eines Radiosenders
-**10.)** Alias "Media" für cardMedia
+**8.)** Rolladen / Jalousie / Shutter  
+**9.)** Alias "Taste" für Auswahl eines Radiosenders  
+**10.)** Alias "Media" für cardMedia  
 
 # **Changelog**
 <details>
