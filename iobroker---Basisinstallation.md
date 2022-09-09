@@ -11,7 +11,7 @@ zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
 **2.)** NSPanel mit Tasmota flashen  
 **3.)** Berry-Treiber installieren  
 **4.)** MQTT im Tasmota konfigurieren  
-**5.)** TFT-Firmware auf das Panel flashen  https://github.com/joBr99/nspanel-lovelace-ui/wiki/_new
+**5.)** TFT-Firmware auf das Panel flashen  
 **6.)** MQTT im ioBroker installieren und konfigurieren  
 **7.)** CustomSend anlegen  
 **8.)** Icon „TypeScript“ unter „Skripte“ im Verzeichnis „global“ anlegen  
