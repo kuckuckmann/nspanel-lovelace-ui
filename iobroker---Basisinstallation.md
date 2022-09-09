@@ -119,7 +119,7 @@ d) Leere Session erzwingen: Client-Einstellungen verwenden
 
 ***
 
-## **6.) CustomSend anlegen**
+## **7.) CustomSend anlegen**
 
 Der MQTT Datenpunkt wird benötigt und muss vom MQTT-Adapter angelegt werden. Ein manuelles Anlegen unter „Objekte“ oder „createState“ ist im ioBroker „nicht mehr“ möglich. Um den Datenpunkt zu erzeugen, öffnest du im Tasmota die Konsole und gibst ohne die Anführungszeichen  
 `„CustomSend time~12:00“`  
@@ -132,6 +132,15 @@ Danach sollte im MQTT-Adapter unter Objekte ein Datenpunkt: „SmartHome/NSPanel
 
 ***
 
-## **7.)  Icon „TypeScript“ anlegen**
+## **8.)  Icon „TypeScript“ anlegen**
+
+Wie bereits in der Einleitung erwähnt, werden zwei TypeScripts (TS) benötigt. Das erste ist das Icon-Skript. Das Icon-Skript dient zur Übersetzung von Schriftzeichensymbolen zwischen dem Skript und der TFT-Firmware.  
+Unter dem grünen Vezeichnisbaum „global“ im ioBroker-Menüpunkt Skripte erzeugst du ein Skript mit dem Namen „IconsSelector“ vom Typ: TypeScript (TS). Dort fügst du den Inhalt der Datei:  
+**https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/icon_mapping.ts**  
+ein und startest das Skript.
+
+Nur zur Info: Du kannst die einzelnen Icon-Symbolnamen (aktuell 6896 unterschiedliche Icon-Symbole) auf  
+https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html  
+einsehen und später (kommen wir bei der Alias-Erstellung noch zu) auch jedes Icon in deinem Panel an entsprechender Stelle verwenden. Für die Einbindung sind die „Namen“ der Icons wichtig.  
 
 ***
