@@ -12,7 +12,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **6.)** Alias Definitionen  
 **7.)** Hardware-Buttons im Multipress-Mode  
 **8.)** Rolladen / Jalousie / Shutter
-**X.)** Anleitung by Armilar  
+**9.)** Alias "Taste" für Auswahl eines Radiosenders
 
 # **Changelog**
 <details>
@@ -2841,4 +2841,14 @@ Im Konfigurationsskript kann man ein PageItem auf einer **cardEntities** oder **
 ***
 
 
-## **X.) Für Armilar :-)**
+## **9.) Alias "Taste" für Auswahl eines Radiosenders**
+
+Hier im Beispiel über den Alexa2-Adapter:
+
+![image](https://user-images.githubusercontent.com/102996011/189340405-93b83fc7-991b-4098-be2c-eff3ef55b4dd.png)
+
+Es wird im Geräte-Manager ein Alias "Taste erstellt:
+![image](https://user-images.githubusercontent.com/102996011/189339115-ed87baba-4893-4ffd-9ae4-cac8f2a8a493.png)
+
+Im Reiter Zustände wird der .SET mit einem Command-Datenpunkt aus dem Alexa2-Adapter verknüpft (XXXXXX für dein Alexa-Device)
+![image](https://user-images.githubusercontent.com/102996011/189339841-f26384fe-029c-40af-b233-4b1313185196.png)
