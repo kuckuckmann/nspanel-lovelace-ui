@@ -17,7 +17,7 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **6.)** [MQTT (ioBroker) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#6-mqtt-iobroker-config)  
  **7.)** [CustomSend anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#7-customsend-anlegen)  
  **8.)** [Icon "TypeSkript" anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#8--icon-typescript-anlegen)  
- **9.)** TypeScript „NSPanelTs.ts“ anlegen  
+ **9.)** [„NSPanelTs.ts“ anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-anlegen)
 **10.)** TypeScript konfigurieren  
 **11.)** Aliase Anlegen  
 **12.)** Seitengestaltung  
