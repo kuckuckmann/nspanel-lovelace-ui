@@ -139,8 +139,8 @@ Unter dem grünen Vezeichnisbaum „global“ im ioBroker-Menüpunkt Skripte erz
 **https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/icon_mapping.ts**  
 ein und startest das Skript.
 
-> **Achtung:  **
-> **In speiellen Konstellationen zwischen JS-Adapter und js-Controller kann es zu Fehlern in der Ausführung von globalem TypeSkript kommen!  **
+> **Achtung:**  
+> **In speiellen Konstellationen zwischen JS-Adapter und js-Controller kann es zu Fehlern in der Ausführung von globalem TypeSkript kommen!**  
 > Für diesem Fall die:  
 > https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.js  
 > in ein globales "JavaScript" (nicht TS) einfügen
