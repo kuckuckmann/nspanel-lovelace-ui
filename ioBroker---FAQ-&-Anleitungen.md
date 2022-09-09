@@ -2846,7 +2846,8 @@ Im Konfigurationsskript kann man ein PageItem auf einer **cardEntities** oder **
 
 Hier im Beispiel über den Alexa2-Adapter:
 
-Anlegen des Alias:
+**Anlegen des Alias:**
+
 ![image](https://user-images.githubusercontent.com/102996011/189340405-93b83fc7-991b-4098-be2c-eff3ef55b4dd.png)
 
 Es wird im Geräte-Manager ein Alias "Taste erstellt:
@@ -2857,10 +2858,12 @@ Im Reiter Zustände wird der .SET mit einem Command-Datenpunkt aus dem Alexa2-Ad
 Im Anschluss klickst du auf fx (am Ende des Eintrags) und trägst den Sender ein:
 ![image](https://user-images.githubusercontent.com/102996011/189340836-0027269d-7f1c-47c3-90cf-ca23ef8dfc06.png)
 
-Einbindung in das TS-Skript:
+**Einbindung in das TS-Skript:**
 ![image](https://user-images.githubusercontent.com/102996011/189342043-83ad8834-9326-4fd9-846b-2147f33da723.png)
 `<PageItem>{ id: "alias.0.NSPanel_1.Radio.WDR2", icon: "radio", name: "WDR2", onColor: colorRadio}`
 
 ***
 
 ## **10.) Alias "Media" für cardMedia**
+Platzhalter
+***
