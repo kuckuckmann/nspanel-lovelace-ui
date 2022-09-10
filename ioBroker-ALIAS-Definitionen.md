@@ -83,6 +83,7 @@ Der Dimmer kann in einer cardEntities oder in einer cardGrid platziert werden. (
 Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ Dimmer an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des DeConz-Adapters zu:  
 ![image](https://user-images.githubusercontent.com/102996011/189492261-48519b87-3210-4bb9-a039-489e57bc21de.png)  
 
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte siehst du jetzt folgende Darstellung.
 ![image](https://user-images.githubusercontent.com/102996011/189492446-1c530407-cac3-4f3e-ab06-258dcd88629c.png)  
 
 Der Schaltzustand (Lampe an/aus) kann direkt aus der cardEntities oder carGrid erfolgen. Für die Regelung der Helligkeit hat der Alias-Gerätetyp "Dimmer" bereits eine Unterseite (siehe nachfolgende Abb.). Diese kann über einen Klick auf den Dimmer-Bezeichner (in diesem Fall "Deckenbeleuchtung") aufgeschaltet werden:  
