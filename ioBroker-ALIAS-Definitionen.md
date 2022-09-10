@@ -152,6 +152,14 @@ Darstellung in einer "cardGrid"
 Darstellung in einer "cardEntities"  
 ![image](https://user-images.githubusercontent.com/102996011/189403796-ab118db1-fb38-49ae-bbdf-199717e77bbe.png)
 
+Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **Fenster** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt den Datenpunkt des Adapters zu:  
+![image](https://user-images.githubusercontent.com/102996011/189498976-965bae49-3643-4c23-820f-e1540b3b28a2.png)  
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:  
+![image](https://user-images.githubusercontent.com/102996011/189499063-f0fa5d5a-4302-46ec-802c-0c99626f908a.png)  
+
+Das zugehörige PageItem im TypeScript:  
+![image](https://user-images.githubusercontent.com/102996011/189498910-6d64cfdd-faa6-448c-9542-43410866dfa2.png)
+
 ***
 
 ### Feuchtigkeit
