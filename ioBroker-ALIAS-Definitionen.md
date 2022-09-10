@@ -11,7 +11,7 @@ Der "Geräte verwalten"-Adapter für die meisten Alias-Typen:
 Der "Alias-Manager"-Adapter für spezielle Alias-Typen, wie dem Alias "Media":  
 ![image](https://user-images.githubusercontent.com/102996011/189475471-26f0ed04-4715-4eed-8924-cf6d7be879a9.png)  
 
-Ich habe die zwei Adapter installiert. Wie bekomme ich die in das ioBroker-Menü:
+**Ich habe die zwei Adapter installiert. Wie bekomme ich die in das ioBroker-Menü:**  
 Über das Stift-Symbol im ioBroker-Hauptmenü lassen sich die Adapter individuell für jeden Benutzer ein- oder ausschalten.
 ![image](https://user-images.githubusercontent.com/102996011/189476871-85b18ead-f032-4bd0-b8a4-310742b778fc.png)
 ![image](https://user-images.githubusercontent.com/102996011/189476923-59ef3397-543f-43ef-9ab9-e839b9eba9cb.png)
