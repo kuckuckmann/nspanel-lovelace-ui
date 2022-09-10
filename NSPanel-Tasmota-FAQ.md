@@ -11,7 +11,10 @@
 ***
 
 ### 1.1  Tasmota Rules
-In der Tasmota-Konsole eine Rule definieren
+Tasmota verfügt über optional zu definierende Regeln (rules), die das System besonders flexibel einsetzbar machen.
+
+https://tasmota.github.io/docs/Rules/
+
 #### 1.1.1    Rule2 - Favoriten Seiten
 
 **Beide Buttons als Dialog**  
