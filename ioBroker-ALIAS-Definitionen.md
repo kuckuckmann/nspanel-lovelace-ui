@@ -142,3 +142,11 @@ https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#
 ***
 ### Wettervorhersage
 ![image](https://user-images.githubusercontent.com/102996011/189405373-8ea44dd3-a073-40e8-8379-faab8a836d12.png)
+
+![image](https://user-images.githubusercontent.com/102996011/189480728-116bd2fb-f23a-4158-85cc-0a9bed85024c.png)
+und die Temperatur (etwas tiefer)
+![image](https://user-images.githubusercontent.com/102996011/189480739-3d10df44-c7dc-43d2-af0d-58e492579d32.png)
+In diesem Fall wird die Temperatur aus einem Datenpunkt einer Wetterstation visualisiert. Es kann natürlich auch ein Datenpunkt mit der aktuellen Außentemperatur aus einem anderen Adapter daswetter.0.xxxxx, accuweather.0.xxxxx, openweathermap.0.xxxxx, etc. ausgewählt werden.
+
+> **Achtung:**  
+> **Dieser Alias muss erstellt werden, damit die 4 kleineren Icons (Weather-Forecast und/oder 4 Sensordatenpunkte) im unteren Screensaver visualisiert werden können.**  
