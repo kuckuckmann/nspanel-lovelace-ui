@@ -91,9 +91,17 @@ Der Schaltzustand (Lampe an/aus) kann direkt aus der cardEntities oder carGrid e
 
 ![image](https://user-images.githubusercontent.com/102996011/189493396-b94fdccb-61ee-4c1d-97d2-8732e7c1d9ae.png)  
 
-Das zugehörige PageItem im TypeScript:
-![image](https://user-images.githubusercontent.com/102996011/189493609-51ebffec-c119-4a58-bb85-bdf253383548.png)
-Mit dem Parameter "interpolateColor" (optional), soll die abgebildete Lampe den An/Aus und die Helligkeit emulieren
+Das zugehörige PageItem im TypeScript:  
+![image](https://user-images.githubusercontent.com/102996011/189493609-51ebffec-c119-4a58-bb85-bdf253383548.png)  
+Mit dem Parameter "name" legen wir den Anzeigenamen fest.  
+Mit dem Parameter "interpolateColor" (optional), soll die abgebildete Lampe (Icon) den An/Aus und die Helligkeit emulieren.  
+  
+Es können noch weitere Parameter übergeben werden:
+* icon  
+* onColor  
+* offColor  
+* minValueBrightness (im Beispiel mit dem Datenpunkt "bri" also 255)
+* maxValueBrightness   
 
 ***
 ### Farbtemperatur
