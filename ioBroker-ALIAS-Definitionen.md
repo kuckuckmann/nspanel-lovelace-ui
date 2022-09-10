@@ -26,7 +26,7 @@ Beispiel:
 
 > Innerhalb der Licht-Adapter wird das noch deutlicher
 
-Der Alias benötigt also anstatt * .Power oder * .Switch nur einen **.SET**, damit der Zustand des Sensors oder Aktors unabhängig von installierten Adapter geschaltet werden kann.
+Der Alias benötigt also anstatt **.Power** oder **.Switch** nur einen **.SET**, damit der Zustand des Sensors oder Aktors unabhängig von installierten Adapter geschaltet werden kann.
 
 # Index
 
