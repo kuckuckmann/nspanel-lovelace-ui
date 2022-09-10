@@ -116,12 +116,27 @@ Der Alias "Farbtemperatur" kann in einer cardEntities oder in einer cardGrid pla
 
 Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **Farbtemperatur** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
 
-![image](https://user-images.githubusercontent.com/102996011/189498366-2d0d8e4c-e161-4f57-a084-c2377da001c3.png)
-Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung.
-![image](https://user-images.githubusercontent.com/102996011/189492446-1c530407-cac3-4f3e-ab06-258dcd88629c.png)  
+![image](https://user-images.githubusercontent.com/102996011/189498366-2d0d8e4c-e161-4f57-a084-c2377da001c3.png)  
 
-Der Schaltzustand (Lampe an/aus) kann direkt aus der cardEntities oder carGrid erfolgen. Für die Regelung der Helligkeit hat der Alias-Gerätetyp "Farbtemperatur" bereits eine Unterseite (siehe nachfolgende Abb.). Diese kann über einen Klick auf den Bezeichner (in diesem Fall "Farbtemperatur") aufgeschaltet werden: 
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung.
+![image](https://user-images.githubusercontent.com/102996011/189498497-989cc054-812a-4c58-8995-5c4ccf39f4b9.png)  
+
+Der Schaltzustand (Lampe an/aus) kann direkt aus der cardEntities oder carGrid erfolgen. Für die Regelung der Helligkeit und CT hat der Alias-Gerätetyp "Farbtemperatur" bereits eine Unterseite (siehe nachfolgende Abb.). Diese kann über einen Klick auf den Bezeichner (in diesem Fall "Farbtemperatur") aufgeschaltet werden: 
 ![image](https://user-images.githubusercontent.com/102996011/189497755-b3bbc89a-8b36-451e-add2-ba6c12e94330.png)  
+
+Das zugehörige PageItem im TypeScript:  
+![image](https://user-images.githubusercontent.com/102996011/189498614-4aa1dc89-cf5e-48f5-a0be-f2b0e11cc8d0.png)  
+Mit dem Parameter "name" legen wir den Anzeigenamen fest.  
+Mit dem Parameter "interpolateColor" (optional), soll die abgebildete Lampe (Icon) den An/Aus und die Helligkeit emulieren.  
+  
+Es können noch weitere Parameter übergeben werden:
+* icon  
+* onColor  
+* offColor  
+* minValueBrightness (Default = 0)
+* maxValueBrightness (Default = 100; im Beispiel mit dem Datenpunkt "bri" also 255)
+* minValueColorTemp  (z.B. 500  - in Abhängigkeit des jeweiligen Adapters) 
+* maxValueColorTemp: (z.B. 6500 - in Abhängigkeit des jeweiligen Adapters)
 
 > Hinweis: Es kann auch der HUE-CT verwendet werden
 
