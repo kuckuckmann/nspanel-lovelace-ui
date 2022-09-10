@@ -29,11 +29,14 @@ Beispiel:
 * MQTT-Adapter: **Power** (aus Tasmota übertragen) 
 * Shelly-Adapter: **Switch**
 * KNX-Adapter: **Switch**
+* Deconz-Adapter: **On**
 * etc.  
+
+Also immer der Wunsch, einen Zustand eines Aktors mit true/false zu verändern.  
 
 > Innerhalb der Licht-Adapter wird das später noch deutlicher
 
-Der Alias benötigt also anstatt **.Power** oder **.Switch** nur einen **.SET**, damit der Zustand des Sensors oder Aktors unabhängig von installierten Adapter geschaltet werden kann.
+Der Alias benötigt also anstatt **.Power** oder **.Switch** oder **.On** immer nur ein **.SET**, damit der Zustand des Schalt-Aktor's unabhängig vom installierten Adapter geschaltet werden kann. In diesem Fall meldet der im Skript eingebundene Alias ein true oder false in den Alias-Datenpunkt .SET und reicht den Zustandswert an den zugewiesenen spezifischen Adapter-Datenpunkt (ganz egal welcher Typ erwartet wird) weiter.
 
 # Index
 
