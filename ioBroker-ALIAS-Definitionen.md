@@ -176,6 +176,17 @@ Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichni
 
 ![image](https://user-images.githubusercontent.com/102996011/189499885-ace4b001-0c9c-4d0d-9667-d7c808d1f8fc.png)  
 
+Das zugehörige PageItem im TypeScript:  
+![image](https://user-images.githubusercontent.com/102996011/189499885-ace4b001-0c9c-4d0d-9667-d7c808d1f8fc.png)
+
+Folgende Parameter können verwendet werden:  
+* name: legt den Anzeigenamen fest
+* icon: Symbol
+* unit: Einheit der Luftfeuchte
+* onColor: Farbe de Icons
+
+`<PageItem>{ id: "alias.0.NSPanel_1.TestFeuchtigkeit", name: "Luftfeuchte außen", icon: "water-percent", unit: "%H", onColor: White}`  
+
 ***
 
 ### HUE-Licht
