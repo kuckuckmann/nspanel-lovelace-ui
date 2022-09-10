@@ -1,6 +1,31 @@
 Ziel dieser Seite ist, jeden Alias-Typen zu  beschreiben
 
-Fortsetzung folgt...
+#Einleitung: 
+
+## Alias-Hilfsmittel
+**Welche Hilfsmittel werden zur Erstellung eines Alias benötigt?:**
+
+Der "Geräte verwalten"-Adapter für die meisten Alias-Typen:  
+![image](https://user-images.githubusercontent.com/102996011/189475521-07d78146-e49d-406a-95bc-804b3302caa2.png)
+
+Der "Alias-Manager"-Adapter für spezielle Alias-Typen, wie dem Alias "Media":  
+![image](https://user-images.githubusercontent.com/102996011/189475471-26f0ed04-4715-4eed-8924-cf6d7be879a9.png)  
+
+**Was sind Aliase:**  
+Aliase (Pseudonyme) sind die virtuellen Zustandsobjekte, die mit realen Zuständen (Datenpunkten) verknüpft sind.  
+
+**Warum benötige ich im TS-Skript überhaupt Aliase und keine Datenpunkte?**
+Das TS-Script für das Sonoff NSPanel ist so aufgebaut, dass eigentlich jeder Adapter zur Steuerung benutzt werden kann. Hierbei haben die Entwickler von Adaptern für gleiche Funktionen unterschiedliche Namen verwendet:
+
+Beispiel: 
+* Sonoff-Adapter: **Power** (aus Tasmota übertragen)
+* MQTT-Adapter: **Power** (aus Tasmota übertragen) 
+* Shelly-Adapter: **Switch**
+* KNX-Adapter: **Switch**
+* etc.
+In speziellen Licht-Adaptern wird das noch deutlicher
+
+Der Alias benötigt also anstatt * .Power oder * .Switch nur einen **.SET**, damit der Zustand des Sensors oder Aktors unabhängig von installierten Adapter geschaltet werden kann.
 
 # Index
 
