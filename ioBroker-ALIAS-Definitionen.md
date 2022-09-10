@@ -206,7 +206,7 @@ Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovela
 Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:  
 ![image](https://user-images.githubusercontent.com/102996011/189500907-e527fc9b-b8d2-49d0-bc89-ba729cfe65b4.png)
 
-
+Der Schaltzustand (Lampe an/aus) kann direkt aus der cardEntities oder carGrid erfolgen. Für die Regelung der Helligkeit, Farbtemperatur und (wenn vorhanden) Farbe hat der Alias-Gerätetyp "HUE-Licht" bereits eine Unterseite (siehe nachfolgende Abb.). Diese kann über einen Klick auf den Bezeichner  aufgeschaltet werden:
 ![image](https://user-images.githubusercontent.com/102996011/189402777-0937bfbf-6695-4768-9123-d61546175726.png)
 ![image](https://user-images.githubusercontent.com/102996011/189402911-7a9edf50-bb22-4211-9117-5b55e4ecba56.png)
 
