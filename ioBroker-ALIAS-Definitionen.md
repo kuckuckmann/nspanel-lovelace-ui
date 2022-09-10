@@ -75,7 +75,7 @@ Der Dimmer hat 2 relevante Eigenschaften.
 **Im Beispiel ist eine dimmbare Deckenbeleuchtung über den DeConz-Adapter (Zigbee)**  
 
 Der Schalter im DeConz wird über den Datenpunkt On (true/false), d.h Datentyp "boolean" gesteuert.
-Die Helligkeit wird im Deconz-Adapter über "level" 0-100 oder "bri" 0-255 gesteuert. Für uns bietet sich also der Datenpunkt level an, da dieser bereits die Helligkeit in % von 0% bis 100% beinhaltet. Jedoch könnten wir auch mit dem Datentyp bri arbeiten und im TypeScript die Umrechnung von 255 (absolut) auf 100 (%) parametrieren.  
+Die Helligkeit wird im Deconz-Adapter über "level" 0-100 oder "bri" 0-255 gesteuert. Für uns bietet sich also der Datenpunkt **level** an, da dieser bereits die Helligkeit in % von 0% bis 100% beinhaltet. Jedoch könnten wir auch mit dem Datentyp **bri** arbeiten und im TypeScript die Umrechnung von 255 (absolut) auf 100 (%) parametrieren.  
 
 Der Dimmer kann in einer cardEntities oder in einer cardGrid platziert werden. (Nachfolgende Abb. cardEntities):   
 ![image](https://user-images.githubusercontent.com/102996011/189492309-e678414a-21b9-417f-b6a5-bdd769db7fc4.png)  
@@ -87,10 +87,13 @@ Zunächst legen wir analog "Schritt 1" (Tab Allgemein) einen Alias vom Typ Dimme
 
 ![image](https://user-images.githubusercontent.com/102996011/189492446-1c530407-cac3-4f3e-ab06-258dcd88629c.png)  
 
-Der Schaltzustand (Lampe an/aus) kann direkt aus der cardEntities oder carGrid erfolgen. Für die Regelung der Helligkeit hat der Alias-Gerätetyp "Dimmer" bereits eine Unterseite (siehe nachfolgende Abb.). Diese kann über einen Klick auf den Dimmer-Bezeichner aufgeschaltet werden:  
+Der Schaltzustand (Lampe an/aus) kann direkt aus der cardEntities oder carGrid erfolgen. Für die Regelung der Helligkeit hat der Alias-Gerätetyp "Dimmer" bereits eine Unterseite (siehe nachfolgende Abb.). Diese kann über einen Klick auf den Dimmer-Bezeichner (in diesem Fall "Deckenbeleuchtung") aufgeschaltet werden:  
 
 ![image](https://user-images.githubusercontent.com/102996011/189493396-b94fdccb-61ee-4c1d-97d2-8732e7c1d9ae.png)  
 
+Das zugehörige PageItem im TypeScript:
+![image](https://user-images.githubusercontent.com/102996011/189493609-51ebffec-c119-4a58-bb85-bdf253383548.png)
+Mit dem Parameter "interpolateColor" (optional), soll die abgebildete Lampe den An/Aus und die Helligkeit emulieren
 
 ***
 ### Farbtemperatur
