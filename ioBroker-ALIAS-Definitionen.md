@@ -1,6 +1,6 @@
 Ziel dieser Seite ist, jeden Alias-Typen zu  beschreiben
 
-#Einleitung: 
+# Einleitung: 
 
 ## Alias-Hilfsmittel
 **Welche Hilfsmittel werden zur Erstellung eines Alias benötigt?:**
