@@ -142,9 +142,14 @@ Es können noch weitere Parameter übergeben werden:
 
 ***
 
-### Fenster 
-![image](https://user-images.githubusercontent.com/102996011/189404690-69e61c60-88f3-4ea7-b5ad-0c423094eb11.png)
+### Fenster (channel window)
 
+Der Alias "Fenster" hat 1 relevante Eigenschaft.   
+* Zustand (offen/geschlossen) über Adapter-Datenpunkte open, etc.  
+
+Darstellung in einer "cardGrid"  
+![image](https://user-images.githubusercontent.com/102996011/189404690-69e61c60-88f3-4ea7-b5ad-0c423094eb11.png)
+Darstellung in einer "cardEntities"  
 ![image](https://user-images.githubusercontent.com/102996011/189403796-ab118db1-fb38-49ae-bbdf-199717e77bbe.png)
 
 ***
