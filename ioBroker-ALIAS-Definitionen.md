@@ -68,7 +68,7 @@ https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#
 ***
 ### Dimmer (channel dimmer)
 
-Der Dimmer hat 2 relevante Eigenschaften.   
+Der Alias "Dimmer" hat 2 relevante Eigenschaften.   
 * Schalter (an/aus) über Adapter-Datenpunkte on, switch, power, etc.  
 * Helligkeit (dunkel/hell) über Adapter-Datenpunkte level, brightness, bri, etc.  
 
@@ -105,14 +105,19 @@ Es können noch weitere Parameter übergeben werden:
 ***
 
 ### Farbtemperatur (channel ct)  
-Der Dimmer hat 3 relevante Eigenschaften.   
+
+Der Alias "Farbtemperatur" hat 3 relevante Eigenschaften.   
 * Schalter (an/aus) über Adapter-Datenpunkte on, switch, power, etc.  
-* Helligkeit (dunkel/hell) über Adapter-Datenpunkte level, brightness, bri, etc.  
+* Helligkeit (dunkel/hell) über Adapter-Datenpunkte level, brightness, bri, etc. 
+* Farbtemperatur (K = Kelvin) über Adapter-Datenpunkte ct, colortemp, etc.  
 
 ![image](https://user-images.githubusercontent.com/102996011/189497667-0362a360-ef6b-4d7a-98ea-de55e6b42535.png)  
 
 ![image](https://user-images.githubusercontent.com/102996011/189497755-b3bbc89a-8b36-451e-add2-ba6c12e94330.png)
 
+![image](https://user-images.githubusercontent.com/102996011/189497815-506286d9-aab9-4fac-b0b4-9fc19420acd3.png)
+
+> Hinweis: Es kann auch der HUE-CT verwendet werden
 
 ***
 
