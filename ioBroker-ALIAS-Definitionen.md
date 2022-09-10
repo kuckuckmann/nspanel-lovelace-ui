@@ -185,7 +185,7 @@ Folgende Parameter können verwendet werden:
 * name: legt den Anzeigenamen fest
 * icon: Symbol
 * unit: Einheit der Luftfeuchte
-* onColor: Farbe de Icons
+* onColor: Farbe des Icons
 
 `<PageItem>{ id: "alias.0.NSPanel_1.TestFeuchtigkeit", name: "Luftfeuchte außen", icon: "water-percent", unit: "%H", onColor: White}`  
 
