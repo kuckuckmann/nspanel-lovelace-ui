@@ -67,6 +67,17 @@ https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#
 
 ***
 ### Dimmer
+Der Dimmer hat 2 Zustände. 
+* Schalter (an/aus)
+* Helligkeit (dunkel/hell)
+
+Im Beispiel ist eine dimmbare Deckenbeleuchtung über den DeConz-Adapter (Zigbee)
+
+![image](https://user-images.githubusercontent.com/102996011/189492309-e678414a-21b9-417f-b6a5-bdd769db7fc4.png)  
+![image](https://user-images.githubusercontent.com/102996011/189492261-48519b87-3210-4bb9-a039-489e57bc21de.png)  
+
+![image](https://user-images.githubusercontent.com/102996011/189492446-1c530407-cac3-4f3e-ab06-258dcd88629c.png)
+
 ***
 ### Farbtemperatur
 ***
