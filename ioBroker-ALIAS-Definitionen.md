@@ -111,8 +111,10 @@ Der Alias "Farbtemperatur" hat 3 relevante Eigenschaften.
 * Helligkeit (dunkel/hell) über Adapter-Datenpunkte level, brightness, bri, etc. 
 * Farbtemperatur (K = Kelvin) über Adapter-Datenpunkte ct, colortemp, etc.  
 
+Der Alias "Farbtemperatur" kann in einer cardEntities oder in einer cardGrid platziert werden. (Nachfolgende Abb. cardEntities):
 ![image](https://user-images.githubusercontent.com/102996011/189497667-0362a360-ef6b-4d7a-98ea-de55e6b42535.png)  
 
+Der Schaltzustand (Lampe an/aus) kann direkt aus der cardEntities oder carGrid erfolgen. Für die Regelung der Helligkeit hat der Alias-Gerätetyp "Farbtemperatur" bereits eine Unterseite (siehe nachfolgende Abb.). Diese kann über einen Klick auf den Bezeichner (in diesem Fall "Farbtemperatur") aufgeschaltet werden: 
 ![image](https://user-images.githubusercontent.com/102996011/189497755-b3bbc89a-8b36-451e-add2-ba6c12e94330.png)
 
 ![image](https://user-images.githubusercontent.com/102996011/189497815-506286d9-aab9-4fac-b0b4-9fc19420acd3.png)
