@@ -74,7 +74,7 @@ Der Dimmer hat 2 relevante Eigenschaften.
 
 **Im Beispiel ist eine dimmbare Deckenbeleuchtung über den DeConz-Adapter (Zigbee)**  
 
-Der Schalter im DeConz wird über den Datenpunkt On (true/false), d.h Datentyp "boolean" gesteuert.
+Der Schalter im DeConz wird über den Datenpunkt "on" (true/false), d.h Datentyp "boolean" gesteuert.
 Die Helligkeit wird im Deconz-Adapter über "level" 0-100 oder "bri" 0-255 gesteuert. Für uns bietet sich also der Datenpunkt **level** an, da dieser bereits die Helligkeit in % von 0% bis 100% beinhaltet. Jedoch könnten wir auch mit dem Datentyp **bri** arbeiten und im TypeScript die Umrechnung von 255 (absolut) auf 100 (%) parametrieren.  
 
 Der Dimmer kann in einer cardEntities oder in einer cardGrid platziert werden. (Nachfolgende Abb. cardEntities):   
@@ -82,8 +82,6 @@ Der Dimmer kann in einer cardEntities oder in einer cardGrid platziert werden. (
  
 Zunächst legen wir analog "Schritt 1" (Tab Allgemein) einen Alias vom Typ Dimmer an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des DeConz-Adapters zu:  
 ![image](https://user-images.githubusercontent.com/102996011/189492261-48519b87-3210-4bb9-a039-489e57bc21de.png)  
-
-
 
 ![image](https://user-images.githubusercontent.com/102996011/189492446-1c530407-cac3-4f3e-ab06-258dcd88629c.png)  
 
