@@ -68,7 +68,7 @@ https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#
 ***
 ### Dimmer
 
-Der Dimmer hat 2 Zustände.   
+Der Dimmer hat 2 relevante Eigenschaften.   
 * Schalter (an/aus) über Adapter-Datenpunkte on, switch, power, etc.  
 * Helligkeit (dunkel/hell) über Adapter-Datenpunkte level, brightness, bri, etc.  
 
@@ -80,11 +80,17 @@ Die Helligkeit wird im Deconz-Adapter über "level" 0-100 oder "bri" 0-255 geste
 Der Dimmer kann in einer cardEntities oder in einer cardGrid platziert werden. (Nachfolgende Abb. cardEntities):   
 ![image](https://user-images.githubusercontent.com/102996011/189492309-e678414a-21b9-417f-b6a5-bdd769db7fc4.png)  
  
-Zunächst legen wir analog Schritt 1 einen Alias vom Typ Dimmer aus. Im zweiten Schritt weisen wir jetzt die Datenpunkte des DeConz-Adapters zu:  
+Zunächst legen wir analog "Schritt 1" (Tab Allgemein) einen Alias vom Typ Dimmer an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des DeConz-Adapters zu:  
 ![image](https://user-images.githubusercontent.com/102996011/189492261-48519b87-3210-4bb9-a039-489e57bc21de.png)  
 
 
+
 ![image](https://user-images.githubusercontent.com/102996011/189492446-1c530407-cac3-4f3e-ab06-258dcd88629c.png)  
+
+Der Schaltzustand (Lampe an/aus) kann direkt aus der cardEntities oder carGrid erfolgen. Für die Regelung der Helligkeit hat der Alias-Gerätetyp "Dimmer" bereits eine Unterseite (siehe nachfolgende Abb.). Diese kann über einen Klick auf den Dimmer-Bezeichner aufgeschaltet werden:  
+
+![image](https://user-images.githubusercontent.com/102996011/189493396-b94fdccb-61ee-4c1d-97d2-8732e7c1d9ae.png)  
+
 
 ***
 ### Farbtemperatur
