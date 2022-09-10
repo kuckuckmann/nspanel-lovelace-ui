@@ -192,7 +192,9 @@ Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichni
 ***
 
 ### Jalousien
-![image](https://user-images.githubusercontent.com/102996011/189403904-914ff6ad-a7df-4859-a523-ff5ec02f2381.png)
+![image](https://user-images.githubusercontent.com/102996011/189403904-914ff6ad-a7df-4859-a523-ff5ec02f2381.png)  
+  
+Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#8-rolladen--jalousie--shutter
 
 ***
 
