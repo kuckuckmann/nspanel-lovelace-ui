@@ -162,7 +162,11 @@ Das zugehörige PageItem im TypeScript:
 
 ***
 
-### Feuchtigkeit
+### Feuchtigkeit (channel humidity)
+
+Der Alias "Feuchtigkeit" hat 1 relevante Eigenschaft.   
+* Zustand (Sensorwert) 
+
 ![image](https://user-images.githubusercontent.com/102996011/189403392-4ba6c9b6-5d33-4bdb-abfb-36c85e99eebf.png)
 
 **Im Beispiel ist ein Homatic IP Sensor über den hmip-Adapter (Funk).** Es kann aber auch jeder andere Sensor (z.B. Zigbee oder WLAN) oder ein Datenpunkt aus einem Wetter-Adapter verwendet werden.  
@@ -174,8 +178,6 @@ Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichni
 
 ![image](https://user-images.githubusercontent.com/102996011/189499784-2b3dc3c5-3196-4b8e-93d0-cf1c57452f8a.png)  
 
-![image](https://user-images.githubusercontent.com/102996011/189499885-ace4b001-0c9c-4d0d-9667-d7c808d1f8fc.png)  
-
 Das zugehörige PageItem im TypeScript:  
 ![image](https://user-images.githubusercontent.com/102996011/189499885-ace4b001-0c9c-4d0d-9667-d7c808d1f8fc.png)
 
@@ -186,6 +188,9 @@ Folgende Parameter können verwendet werden:
 * onColor: Farbe de Icons
 
 `<PageItem>{ id: "alias.0.NSPanel_1.TestFeuchtigkeit", name: "Luftfeuchte außen", icon: "water-percent", unit: "%H", onColor: White}`  
+
+> **Hinweis**  
+> **Alternativ kann auch der Alias-Typ "Info" verwendet werden.**  
 
 ***
 
