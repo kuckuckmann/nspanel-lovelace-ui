@@ -165,6 +165,8 @@ Das zugehörige PageItem im TypeScript:
 ### Feuchtigkeit
 ![image](https://user-images.githubusercontent.com/102996011/189403392-4ba6c9b6-5d33-4bdb-abfb-36c85e99eebf.png)
 
+**Im Beispiel ist ein Homatic IP Sensor über den hmip-Adapter (Funk).** Es kann aber auch jeder andere Sensor (z.B. Zigbee oder WLAN) oder ein Datenpunkt aus einem Wetter-Adapter verwendet werden.  
+
 Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **Feuchtigkeit** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
 ![image](https://user-images.githubusercontent.com/102996011/189499807-aba39d1c-5a83-4e50-ba04-8cc972f76208.png)  
 
