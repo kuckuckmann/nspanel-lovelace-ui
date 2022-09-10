@@ -196,7 +196,7 @@ Folgende Parameter können verwendet werden:
 
 ### HUE-Licht (channel hue)
 
-Der Alias Geräte-Typ HUE-Licht funktioniert mit und ohne dem Wert ".HUE". Wenn der Datenpunkt HUE nicht vorhanden ist, wird durch das TypeScript automatisch eine CT (ColorTemperature-Steuerung emuliert)  
+> Der Alias Geräte-Typ **HUE-Licht** funktioniert **mit und ohne** dem Wert **"HUE"**. Wenn der Datenpunkt **.HUE** nicht vorhanden ist, wird durch das TypeScript automatisch eine CT (ColorTemperature-Steuerung emuliert)  
 
 ![image](https://user-images.githubusercontent.com/102996011/189403062-a5fed1f9-8c6b-49b5-ad94-82c344603d5a.png)
 
