@@ -3,7 +3,7 @@ Ziel dieser Seite ist, jeden Alias-Typen zu  beschreiben
 # Einleitung: 
 
 ## Alias-Hilfsmittel
-**Welche Hilfsmittel werden zur Erstellung eines Alias benötigt?:**
+**Welche Hilfsmittel werden zur Erstellung eines Alias benötigt?:**  
 
 Der "Geräte verwalten"-Adapter für die meisten Alias-Typen:  
 ![image](https://user-images.githubusercontent.com/102996011/189475521-07d78146-e49d-406a-95bc-804b3302caa2.png)
@@ -14,7 +14,7 @@ Der "Alias-Manager"-Adapter für spezielle Alias-Typen, wie dem Alias "Media":
 **Was sind Aliase:**  
 Aliase (Pseudonyme) sind die virtuellen Zustandsobjekte, die mit realen Zuständen (Datenpunkten) verknüpft sind.  
 
-**Warum benötige ich im TS-Skript überhaupt Aliase und keine Datenpunkte?**
+**Warum benötige ich im TS-Skript überhaupt Aliase und keine Datenpunkte?**  
 Das TS-Script für das Sonoff NSPanel ist so aufgebaut, dass eigentlich jeder Adapter zur Steuerung benutzt werden kann. Hierbei haben die Entwickler von Adaptern für gleiche Funktionen unterschiedliche Namen verwendet:
 
 Beispiel: 
