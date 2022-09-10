@@ -194,7 +194,10 @@ Folgende Parameter können verwendet werden:
 
 ***
 
-### HUE-Licht
+### HUE-Licht (channel hue)
+
+Der Alias Geräte-Typ HUE-Licht funktioniert mit und ohne dem Wert ".HUE"  
+
 ![image](https://user-images.githubusercontent.com/102996011/189403062-a5fed1f9-8c6b-49b5-ad94-82c344603d5a.png)
 ![image](https://user-images.githubusercontent.com/102996011/189402777-0937bfbf-6695-4768-9123-d61546175726.png)
 ![image](https://user-images.githubusercontent.com/102996011/189402911-7a9edf50-bb22-4211-9117-5b55e4ecba56.png)
