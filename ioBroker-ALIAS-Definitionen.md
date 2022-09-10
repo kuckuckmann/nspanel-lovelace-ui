@@ -199,8 +199,17 @@ Folgende Parameter können verwendet werden:
 Der Alias Geräte-Typ HUE-Licht funktioniert mit und ohne dem Wert ".HUE". Wenn der Datenpunkt HUE nicht vorhanden ist, wird durch das TypeScript automatisch eine CT (ColorTemperature-Steuerung emuliert)  
 
 ![image](https://user-images.githubusercontent.com/102996011/189403062-a5fed1f9-8c6b-49b5-ad94-82c344603d5a.png)
+
+Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **HUE-Licht** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
+![image](https://user-images.githubusercontent.com/102996011/189500932-7d2f043a-f279-4525-ba98-3fe11cece1d5.png)
+
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:  
+![image](https://user-images.githubusercontent.com/102996011/189500907-e527fc9b-b8d2-49d0-bc89-ba729cfe65b4.png)
+
+
 ![image](https://user-images.githubusercontent.com/102996011/189402777-0937bfbf-6695-4768-9123-d61546175726.png)
 ![image](https://user-images.githubusercontent.com/102996011/189402911-7a9edf50-bb22-4211-9117-5b55e4ecba56.png)
+
 
 ***
 
