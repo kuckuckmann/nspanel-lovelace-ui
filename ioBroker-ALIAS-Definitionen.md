@@ -99,8 +99,8 @@ Es können noch weitere Parameter übergeben werden:
 * icon  
 * onColor  
 * offColor  
-* minValueBrightness (im Beispiel mit dem Datenpunkt "bri" also 255)
-* maxValueBrightness   
+* minValueBrightness (Default = 0)
+* maxValueBrightness (Default = 100; im Beispiel mit dem Datenpunkt "bri" also 255)
 
 ***
 ### Farbtemperatur
