@@ -68,11 +68,14 @@ https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#
 ***
 ### Dimmer
 Der Dimmer hat 2 Zustände. 
-* Schalter (an/aus)
-* Helligkeit (dunkel/hell)
+* Schalter (an/aus) über Adapter-Datenpunkte on, switch, power, etc.
+* Helligkeit (dunkel/hell) über Adapter-Datenpunkte level, brightness, bri, etc.
 
 Im Beispiel ist eine dimmbare Deckenbeleuchtung über den DeConz-Adapter (Zigbee)
 
+Der Schalter im DeConz wird über den Datenpunkt On (true/false), d.h Datentyp "boolean" gesteuert.
+Die Helligkeit wird im Deconz-Adapter über "level" 0-100 oder "bri" 0-255 gesteuert. Für uns bietet sich also der Datenpunkt level an, da dieser bereits die Helligkeit in % von 0% bis 100% beinhaltet. Jedoch könnten wir auch mit dem Datentyp bri arbeiten und im TypeScript die Umrechnung von 255 (absolut) auf 100 (%) parametrieren.
+ 
 ![image](https://user-images.githubusercontent.com/102996011/189492309-e678414a-21b9-417f-b6a5-bdd769db7fc4.png)  
 ![image](https://user-images.githubusercontent.com/102996011/189492261-48519b87-3210-4bb9-a039-489e57bc21de.png)  
 
