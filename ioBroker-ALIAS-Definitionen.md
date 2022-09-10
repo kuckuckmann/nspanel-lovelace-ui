@@ -22,8 +22,9 @@ Beispiel:
 * MQTT-Adapter: **Power** (aus Tasmota übertragen) 
 * Shelly-Adapter: **Switch**
 * KNX-Adapter: **Switch**
-* etc.
-In speziellen Licht-Adaptern wird das noch deutlicher
+* etc.  
+
+> Innerhalb der Licht-Adapter wird das noch deutlicher
 
 Der Alias benötigt also anstatt * .Power oder * .Switch nur einen **.SET**, damit der Zustand des Sensors oder Aktors unabhängig von installierten Adapter geschaltet werden kann.
 
