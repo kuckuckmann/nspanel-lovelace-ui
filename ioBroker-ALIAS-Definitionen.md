@@ -164,6 +164,14 @@ Das zugehörige PageItem im TypeScript:
 
 ### Feuchtigkeit
 ![image](https://user-images.githubusercontent.com/102996011/189403392-4ba6c9b6-5d33-4bdb-abfb-36c85e99eebf.png)
+
+![image](https://user-images.githubusercontent.com/102996011/189499807-aba39d1c-5a83-4e50-ba04-8cc972f76208.png)
+
+![image](https://user-images.githubusercontent.com/102996011/189499746-f16f9da5-47cf-4b63-a0bb-24de8ffdcfe3.png)
+
+![image](https://user-images.githubusercontent.com/102996011/189499784-2b3dc3c5-3196-4b8e-93d0-cf1c57452f8a.png)
+
+
 ***
 
 ### HUE-Licht
