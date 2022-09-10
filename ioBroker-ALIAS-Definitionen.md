@@ -25,11 +25,11 @@ Aliase (Pseudonyme) sind die virtuellen Zustandsobjekte, die mit realen Zuständ
 Das TS-Script für das Sonoff NSPanel ist so aufgebaut, dass eigentlich jeder Adapter zur Steuerung benutzt werden kann. Hierbei haben die Entwickler von Adaptern für gleiche Funktionen unterschiedliche Namen verwendet:
 
 Beispiel: 
-* Sonoff-Adapter: **Power** (aus Tasmota übertragen)
-* MQTT-Adapter: **Power** (aus Tasmota übertragen) 
-* Shelly-Adapter: **Switch**
-* KNX-Adapter: **Switch**
-* Deconz-Adapter: **On**
+* Sonoff-Adapter: **.power** (aus Tasmota übertragen)
+* MQTT-Adapter: **.power** (aus Tasmota übertragen) 
+* Shelly-Adapter: **.switch**
+* KNX-Adapter: **.switch**
+* Deconz-Adapter: **.on**
 * etc.  
 
 Also immer der Wunsch, einen Zustand eines Aktors mit true/false zu verändern.  
