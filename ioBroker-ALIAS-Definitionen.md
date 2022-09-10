@@ -43,11 +43,11 @@ Zunächst sollt man sich überlegen, welche Aliase nur für ein bestimmtes NSPan
 ![image](https://user-images.githubusercontent.com/102996011/189477432-2c814d56-7c37-41c2-b371-31b06e6fe2aa.png)
 
 ## Alias erzeugen - Schritt 1 - Tab "Allgemein"
-Der 1erste Schritt in der Alias Erstellung mit dem "Geräte verwalten"-Adapter ist fast immer der gleiche
+Der erste Schritt in der Alias Erstellung mit dem "Geräte verwalten"-Adapter ist fast immer der gleiche.
 
 Es wird über die "+" Schaltfläche folgender Dialog aufgeschaltet:  
 ![image](https://user-images.githubusercontent.com/102996011/189480182-02d50b01-53ba-4c83-baa6-9bd5f10bc671.png)  
-Jetzt gibst vergibst du einen "sprechenden Namen" für den Alias in der Zeile "Gerätename" und wählst einen der nachfolgenden "Alias-Typen" unter Gerätetyp aus (Auswahlliste wird aufgeschaltet):     
+Jetzt gibst vergibst du einen "sprechenden Namen" für den Alias in der Zeile "Gerätename" und wählst einen der nachfolgenden "Alias-Typen" unter Gerätetyp aus (Auswahlliste wird aufgeschaltet und beinhaltet auch noch weitere Typen als im Bild gezeigt (Momentaufnahme)):     
 
 ![image](https://user-images.githubusercontent.com/102996011/189480322-0441c5b7-fc7e-4fd4-9920-72915753a802.png)  
 
