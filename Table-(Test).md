@@ -174,9 +174,9 @@
     <td></td>
   </tr>
   <tr>
-    <td rowspan="10">8</td>
-    <td rowspan="10">Klimaanlage</td>
-    <td rowspan="10">airCondition</td>
+    <td rowspan="9">8</td>
+    <td rowspan="9">Klimaanlage</td>
+    <td rowspan="9">airCondition</td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>number</td>
