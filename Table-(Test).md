@@ -1,17 +1,31 @@
 <table>
-  <tr>
-    <th>Berlin</th>
-    <th>Hamburg</th>
-    <th>München</th>
-  </tr>
-  <tr>
-    <td>Miljöh</td>
-    <td>Kiez</td>
-    <td>Bierdampf</td>
-   </tr>
-   <tr>
-     <td>Buletten</td>
-     <td>Frikadellen</td>
-     <td>Fleischpflanzerl</td>
-   </tr>
+    <thead>
+        <tr>
+          <th></th>
+          <th>Haus A</th>
+          <th>Haus B</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <th>Wohnfläche</th>
+          <td>100</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <th>Gartenfläche</th>
+          <td>50</td>
+          <td>100</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+          <th>Gesamtfläche</th>
+          <td>150</td>
+          <td>250</td>
+        </tr>
+        <tr>
+          <td colspan="3">Alle Angaben in Quadratmetern.</td>
+        </tr>
+    </tfoot>
 </table>
