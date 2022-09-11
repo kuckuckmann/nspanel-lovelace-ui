@@ -1,7 +1,7 @@
 <table>
 <thead>
   <tr>
-    <th background-color="666666">Nr.</th>
+    <th>Nr.</th>
     <th>Alias-Type (german)</th>
     <th>Rolle (channel)</th>
     <th>Alias Datenpunkt</th>
