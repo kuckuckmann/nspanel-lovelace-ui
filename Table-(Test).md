@@ -392,9 +392,9 @@
     <td>alexa2.0.Player.volume</td>
   </tr>
   <tr>
-    <td>13</td>
-    <td>RGB-Licht</td>
-    <td>rgb</td>
+    <td rowspan="8">13</td>
+    <td rowspan="8">RGB-Licht</td>
+    <td rowspan="8">rgb</td>
     <td>BLUE</td>
     <td>X</td>
     <td>number</td>
@@ -402,9 +402,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>DIMMER</td>
     <td>X</td>
     <td>number</td>
@@ -412,9 +409,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>GREEN</td>
     <td>X</td>
     <td>number</td>
@@ -422,9 +416,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ON</td>
     <td>X</td>
     <td>boolean</td>
@@ -432,9 +423,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ON_ACTUAL</td>
     <td>X</td>
     <td>boolean</td>
@@ -442,9 +430,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>RED</td>
     <td>X</td>
     <td>number</td>
@@ -452,9 +437,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>TEMPERATURE</td>
     <td>X</td>
     <td>number</td>
@@ -462,9 +444,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>WHITE</td>
     <td></td>
     <td>number</td>
@@ -472,9 +451,9 @@
     <td></td>
   </tr>
   <tr>
-    <td>14</td>
-    <td>RGB-Licht-einzeln</td>
-    <td>rgbSingle</td>
+    <td rowspan="5">14</td>
+    <td rowspan="5">RGB-Licht-einzeln</td>
+    <td rowspan="5">rgbSingle</td>
     <td>DIMMER</td>
     <td>X</td>
     <td>number</td>
@@ -482,9 +461,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ON</td>
     <td>X</td>
     <td>boolean</td>
@@ -492,9 +468,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ON_ACTUAL</td>
     <td>X</td>
     <td>boolean</td>
@@ -502,9 +475,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>RGB</td>
     <td>X</td>
     <td>string</td>
@@ -512,9 +482,6 @@
     <td>HEX Color like #da43ff</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>TEMPERATURE</td>
     <td>X</td>
     <td>number</td>
@@ -522,9 +489,9 @@
     <td></td>
   </tr>
   <tr>
-    <td>15</td>
-    <td>Schieberegler</td>
-    <td>slider</td>
+    <td rowspan="2">15</td>
+    <td rowspan="2">Schieberegler</td>
+    <td rowspan="2">slider</td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>number</td>
@@ -532,9 +499,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>SET</td>
     <td>X</td>
     <td>number</td>
@@ -542,9 +506,9 @@
     <td></td>
   </tr>
   <tr>
-    <td>16</td>
-    <td>Steckdose</td>
-    <td>socket</td>
+    <td rowspan="2">16</td>
+    <td rowspan="2">Steckdose</td>
+    <td rowspan="2">socket</td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>boolean</td>
@@ -552,9 +516,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>SET</td>
     <td>X</td>
     <td>boolean</td>
@@ -582,9 +543,9 @@
     <td></td>
   </tr>
   <tr>
-    <td>19</td>
-    <td>Temperatur</td>
-    <td>temperature</td>
+    <td rowspan="2">19</td>
+    <td rowspan="2">Temperatur</td>
+    <td rowspan="2">temperature</td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>number</td>
@@ -592,9 +553,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>SECOND</td>
     <td></td>
     <td>number</td>
