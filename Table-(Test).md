@@ -1,856 +1,856 @@
-<table class="tg">
+<table>
 <thead>
   <tr>
-    <th class="tg-0pky">Nr.</th>
-    <th class="tg-0pky">Alias-Type (german)</th>
-    <th class="tg-0pky">Rolle (channel)</th>
-    <th class="tg-0pky">Alias Datenpunkt</th>
-    <th class="tg-0pky">required</th>
-    <th class="tg-0pky">Datentyp</th>
-    <th class="tg-0pky">Rolle (state)</th>
-    <th class="tg-0pky">Datenpunkt (typisch)</th>
+    <th>Nr.</th>
+    <th>Alias-Type (german)</th>
+    <th>Rolle (channel)</th>
+    <th>Alias Datenpunkt</th>
+    <th>required</th>
+    <th>Datentyp</th>
+    <th>Rolle (state)</th>
+    <th>Datenpunkt (typisch)</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">Dimmer</td>
-    <td class="tg-0pky">dimmer</td>
-    <td class="tg-0pky">SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.dimmer</td>
-    <td class="tg-0pky">Level/Brightness</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.dimmer</td>
-    <td class="tg-0pky">Level/Brightness</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ON_SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">switch.light</td>
-    <td class="tg-0pky">On/Switch/Power (Tasmota)</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ON_ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">switch.light</td>
-    <td class="tg-0pky">On/Switch/Power (Tasmota)</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">2</td>
-    <td class="tg-0pky">Farbtemperatur</td>
-    <td class="tg-0pky">ct</td>
-    <td class="tg-0pky">DIMMER</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.dimmer</td>
-    <td class="tg-0pky">Level/Brightness</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ON</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">On/Switch/Power (Tasmota)</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">TEMPERATURE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.color.temperature</td>
-    <td class="tg-0pky">Level/Color</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">3</td>
-    <td class="tg-0pky">Fenster</td>
-    <td class="tg-0pky">window</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">sensor.window</td>
-    <td class="tg-0pky">Open</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">4</td>
-    <td class="tg-0pky">Feuchtigkeit</td>
-    <td class="tg-0pky">humidity</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.humidity</td>
-    <td class="tg-0pky">Humidity</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">5</td>
-    <td class="tg-0pky">HUE-Licht</td>
-    <td class="tg-0pky">hue</td>
-    <td class="tg-0pky">DIMMER</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.dimmer</td>
-    <td class="tg-0pky">Level/Brightness</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">HUE</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.color.hue</td>
-    <td class="tg-0pky">Hue</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ON</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">switch.light</td>
-    <td class="tg-0pky">On/Switch/Power (Tasmota)</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ON_ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">state.light</td>
-    <td class="tg-0pky">On/Switch/Power (Tasmota)</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">TEMPERATURE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.color.temperature</td>
-    <td class="tg-0pky">Level/Color</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">6</td>
-    <td class="tg-0pky">Info</td>
-    <td class="tg-0pky">info</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">string</td>
-    <td class="tg-0pky">state</td>
-    <td class="tg-0pky">Alle Werte</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">7</td>
-    <td class="tg-0pky">Jalousien</td>
-    <td class="tg-0pky">blind</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.blind</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">CLOSE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">button.close.blind</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">OPEN</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">button.open.blind</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.blind</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">STOP</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">button.stop.blind</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">8</td>
-    <td class="tg-0pky">Klimaanlage</td>
-    <td class="tg-0pky">airCondition</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.temperature</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">BOOST</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">switch.boost</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ERROR</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">indicator.error</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">HUMIDUÝTY</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.humidity</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">MAINTAIN</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">indicator.maintainance</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">MODE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.mode.aircondition</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">POWER</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">state</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.temperatur</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">SPEED</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.mode.fan</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">SWING</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">sitch.mode.swing</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">UNREACH</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">indicator.maintainance</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">9</td>
-    <td class="tg-0pky">LautstŐrke</td>
-    <td class="tg-0pky">volume</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.volume</td>
-    <td class="tg-0pky">alexa2.0╔.Player.volume</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">MUTE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">media.mute</td>
-    <td class="tg-0pky">alexa2.0╔.Player.muted</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.volume</td>
-    <td class="tg-0pky">alexa2.0╔.Player.volume</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">10</td>
-    <td class="tg-0pky">LautstŐrkegruppe</td>
-    <td class="tg-0pky">volumeGroup</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.volume</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">MUTE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">media.mute</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.volume</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">11</td>
-    <td class="tg-0pky">Licht</td>
-    <td class="tg-0pky">light</td>
-    <td class="tg-0pky">SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">switch.light</td>
-    <td class="tg-0pky">On/Switch/Power (Tasmota)</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">12</td>
-    <td class="tg-0pky">Medien</td>
-    <td class="tg-0pky">media</td>
-    <td class="tg-0pky">ALBUM</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">string</td>
-    <td class="tg-0pky">media.album</td>
-    <td class="tg-0pky">alexa2.0╔.Player.currentAlbum</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ARTIST</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">string</td>
-    <td class="tg-0pky">media.artist</td>
-    <td class="tg-0pky">alexa2.0╔.Player.currentArtist</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">NEXT</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">button.next</td>
-    <td class="tg-0pky">alexa2.0╔.Player.controlNext</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">PAUSE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">button.pause</td>
-    <td class="tg-0pky">alexa2.0╔.Player.controlPause</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">PLAY</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">button.play</td>
-    <td class="tg-0pky">alexa2.0╔.Player.controlPlay</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">PREV</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">button.prev</td>
-    <td class="tg-0pky">alexa2.0╔.Player.controlPrevious</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">STATE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">media.state</td>
-    <td class="tg-0pky">alexa2.0╔.Player.currentState</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">STOP</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">button.stop</td>
-    <td class="tg-0pky">alexa2.0╔.Commands.deviceStop</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">TITLE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">string</td>
-    <td class="tg-0pky">media.title</td>
-    <td class="tg-0pky">alexa2.0╔.Player.currentTitle</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">VOLUME</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.volume</td>
-    <td class="tg-0pky">alexa2.0╔.Player.volume</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">VOLUME_ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.volume</td>
-    <td class="tg-0pky">alexa2.0╔.Player.volume</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">13</td>
-    <td class="tg-0pky">RGB-Licht</td>
-    <td class="tg-0pky">rgb</td>
-    <td class="tg-0pky">BLUE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.color.blue</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">DIMMER</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.dimmer</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">GREEN</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.color.green</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ON</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">switch.light</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ON_ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">state.light</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">RED</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.color.red</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">TEMPERATURE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.color.temperature</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">WHITE</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.color.white</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">14</td>
-    <td class="tg-0pky">RGB-Licht-einzeln</td>
-    <td class="tg-0pky">rgbSingle</td>
-    <td class="tg-0pky">DIMMER</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.dimmer</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ON</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">switch.light</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">ON_ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">state.light</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">RGB</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">string</td>
-    <td class="tg-0pky">level.color.rgb</td>
-    <td class="tg-0pky">HEX Color like #da43ff</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">TEMPERATURE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.color.temperature</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">15</td>
-    <td class="tg-0pky">Schieberegler</td>
-    <td class="tg-0pky">slider</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">16</td>
-    <td class="tg-0pky">Steckdose</td>
-    <td class="tg-0pky">socket</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">switch</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">switch</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">17</td>
-    <td class="tg-0pky">Taste</td>
-    <td class="tg-0pky">button</td>
-    <td class="tg-0pky">SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">button</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">18</td>
-    <td class="tg-0pky">Tastensensor</td>
-    <td class="tg-0pky">buttonSensor</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">state</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">19</td>
-    <td class="tg-0pky">Temperatur</td>
-    <td class="tg-0pky">temperature</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.temperature</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">SECOND</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.humidity</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">20</td>
-    <td class="tg-0pky">Thermostat</td>
-    <td class="tg-0pky">thermostat</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.temperature</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">HUMIDITY</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.humidity</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">LOWBAT</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">indicator.maintainance</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">MODE</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.mode.thermostat</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">level.temperature</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">UNREACH</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">indicator.maintainance</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Weitere Indikatoren</td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">21</td>
-    <td class="tg-0pky">Tčr</td>
-    <td class="tg-0pky">door</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">sensor.door</td>
-    <td class="tg-0pky">Open</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">22</td>
-    <td class="tg-0pky">Verschluss</td>
-    <td class="tg-0pky">lock</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">state</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">OPEN</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">button</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">SET</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">boolean</td>
-    <td class="tg-0pky">switch.lock</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">23</td>
-    <td class="tg-0pky">Wettervorhersage</td>
-    <td class="tg-0pky">weatherforecast</td>
-    <td class="tg-0pky">ICON</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">weather.icon.forecast.0</td>
-    <td class="tg-0pky">accuweather.0.Current.WeatherIcon</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">TEMP</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">number</td>
-    <td class="tg-0pky">value.temperature.forecast.0</td>
-    <td class="tg-0pky">accuweather.0.Current.Temperature</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">24</td>
-    <td class="tg-0pky">Wifi</td>
-    <td class="tg-0pky">info</td>
-    <td class="tg-0pky">ACTUAL</td>
-    <td class="tg-c3ow">X</td>
-    <td class="tg-0pky">string</td>
-    <td class="tg-0pky">state</td>
-    <td class="tg-0pky">Example 0_userdata.0.Datapoint: "WIFI:T:WPA;S:Test-SSID-Guest;P:guestaccess;H:;"</td>
+    <td>1</td>
+    <td>Dimmer</td>
+    <td>dimmer</td>
+    <td>SET</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.dimmer</td>
+    <td>Level/Brightness</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>number</td>
+    <td>value.dimmer</td>
+    <td>Level/Brightness</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ON_SET</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>switch.light</td>
+    <td>On/Switch/Power (Tasmota)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ON_ACTUAL</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>switch.light</td>
+    <td>On/Switch/Power (Tasmota)</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Farbtemperatur</td>
+    <td>ct</td>
+    <td>DIMMER</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.dimmer</td>
+    <td>Level/Brightness</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ON</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td></td>
+    <td>On/Switch/Power (Tasmota)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>TEMPERATURE</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.color.temperature</td>
+    <td>Level/Color</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Fenster</td>
+    <td>window</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>sensor.window</td>
+    <td>Open</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Feuchtigkeit</td>
+    <td>humidity</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>number</td>
+    <td>value.humidity</td>
+    <td>Humidity</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>HUE-Licht</td>
+    <td>hue</td>
+    <td>DIMMER</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.dimmer</td>
+    <td>Level/Brightness</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>HUE</td>
+    <td></td>
+    <td>number</td>
+    <td>level.color.hue</td>
+    <td>Hue</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ON</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>switch.light</td>
+    <td>On/Switch/Power (Tasmota)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ON_ACTUAL</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>state.light</td>
+    <td>On/Switch/Power (Tasmota)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>TEMPERATURE</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.color.temperature</td>
+    <td>Level/Color</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Info</td>
+    <td>info</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>string</td>
+    <td>state</td>
+    <td>Alle Werte</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Jalousien</td>
+    <td>blind</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>number</td>
+    <td>value.blind</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>CLOSE</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>button.close.blind</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>OPEN</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>button.open.blind</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SET</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.blind</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>STOP</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>button.stop.blind</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Klimaanlage</td>
+    <td>airCondition</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>number</td>
+    <td>value.temperature</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BOOST</td>
+    <td></td>
+    <td>boolean</td>
+    <td>switch.boost</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ERROR</td>
+    <td></td>
+    <td>boolean</td>
+    <td>indicator.error</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>HUMIDUÝTY</td>
+    <td></td>
+    <td>number</td>
+    <td>value.humidity</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MAINTAIN</td>
+    <td></td>
+    <td>boolean</td>
+    <td>indicator.maintainance</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MODE</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.mode.aircondition</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>POWER</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>state</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SET</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.temperatur</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SPEED</td>
+    <td></td>
+    <td>number</td>
+    <td>level.mode.fan</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SWING</td>
+    <td></td>
+    <td>boolean</td>
+    <td>sitch.mode.swing</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>UNREACH</td>
+    <td></td>
+    <td>boolean</td>
+    <td>indicator.maintainance</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>LautstŐrke</td>
+    <td>volume</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>number</td>
+    <td>value.volume</td>
+    <td>alexa2.0╔.Player.volume</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MUTE</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>media.mute</td>
+    <td>alexa2.0╔.Player.muted</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SET</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.volume</td>
+    <td>alexa2.0╔.Player.volume</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>LautstŐrkegruppe</td>
+    <td>volumeGroup</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>number</td>
+    <td>value.volume</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MUTE</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>media.mute</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SET</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.volume</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Licht</td>
+    <td>light</td>
+    <td>SET</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>switch.light</td>
+    <td>On/Switch/Power (Tasmota)</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Medien</td>
+    <td>media</td>
+    <td>ALBUM</td>
+    <td>X</td>
+    <td>string</td>
+    <td>media.album</td>
+    <td>alexa2.0╔.Player.currentAlbum</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ARTIST</td>
+    <td>X</td>
+    <td>string</td>
+    <td>media.artist</td>
+    <td>alexa2.0╔.Player.currentArtist</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NEXT</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>button.next</td>
+    <td>alexa2.0╔.Player.controlNext</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PAUSE</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>button.pause</td>
+    <td>alexa2.0╔.Player.controlPause</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLAY</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>button.play</td>
+    <td>alexa2.0╔.Player.controlPlay</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PREV</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>button.prev</td>
+    <td>alexa2.0╔.Player.controlPrevious</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>STATE</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>media.state</td>
+    <td>alexa2.0╔.Player.currentState</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>STOP</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>button.stop</td>
+    <td>alexa2.0╔.Commands.deviceStop</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>TITLE</td>
+    <td>X</td>
+    <td>string</td>
+    <td>media.title</td>
+    <td>alexa2.0╔.Player.currentTitle</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>VOLUME</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.volume</td>
+    <td>alexa2.0╔.Player.volume</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>VOLUME_ACTUAL</td>
+    <td>X</td>
+    <td>number</td>
+    <td>value.volume</td>
+    <td>alexa2.0╔.Player.volume</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>RGB-Licht</td>
+    <td>rgb</td>
+    <td>BLUE</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.color.blue</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>DIMMER</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.dimmer</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>GREEN</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.color.green</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ON</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>switch.light</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ON_ACTUAL</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>state.light</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>RED</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.color.red</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>TEMPERATURE</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.color.temperature</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>WHITE</td>
+    <td></td>
+    <td>number</td>
+    <td>level.color.white</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>RGB-Licht-einzeln</td>
+    <td>rgbSingle</td>
+    <td>DIMMER</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.dimmer</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ON</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>switch.light</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ON_ACTUAL</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>state.light</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>RGB</td>
+    <td>X</td>
+    <td>string</td>
+    <td>level.color.rgb</td>
+    <td>HEX Color like #da43ff</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>TEMPERATURE</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.color.temperature</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Schieberegler</td>
+    <td>slider</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>number</td>
+    <td>value</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SET</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Steckdose</td>
+    <td>socket</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>switch</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SET</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>switch</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Taste</td>
+    <td>button</td>
+    <td>SET</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>button</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Tastensensor</td>
+    <td>buttonSensor</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>state</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Temperatur</td>
+    <td>temperature</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>number</td>
+    <td>value.temperature</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SECOND</td>
+    <td></td>
+    <td>number</td>
+    <td>value.humidity</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Thermostat</td>
+    <td>thermostat</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>number</td>
+    <td>value.temperature</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>HUMIDITY</td>
+    <td></td>
+    <td>number</td>
+    <td>value.humidity</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>LOWBAT</td>
+    <td></td>
+    <td>boolean</td>
+    <td>indicator.maintainance</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MODE</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.mode.thermostat</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SET</td>
+    <td>X</td>
+    <td>number</td>
+    <td>level.temperature</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>UNREACH</td>
+    <td></td>
+    <td>boolean</td>
+    <td>indicator.maintainance</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Weitere Indikatoren</td>
+    <td></td>
+    <td>boolean</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Tčr</td>
+    <td>door</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>sensor.door</td>
+    <td>Open</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Verschluss</td>
+    <td>lock</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>state</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>OPEN</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>button</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SET</td>
+    <td>X</td>
+    <td>boolean</td>
+    <td>switch.lock</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Wettervorhersage</td>
+    <td>weatherforecast</td>
+    <td>ICON</td>
+    <td>X</td>
+    <td>number</td>
+    <td>weather.icon.forecast.0</td>
+    <td>accuweather.0.Current.WeatherIcon</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>TEMP</td>
+    <td>X</td>
+    <td>number</td>
+    <td>value.temperature.forecast.0</td>
+    <td>accuweather.0.Current.Temperature</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Wifi</td>
+    <td>info</td>
+    <td>ACTUAL</td>
+    <td>X</td>
+    <td>string</td>
+    <td>state</td>
+    <td>Example 0_userdata.0.Datapoint: "WIFI:T:WPA;S:Test-SSID-Guest;P:guestaccess;H:;"</td>
   </tr>
 </tbody>
 </table>
