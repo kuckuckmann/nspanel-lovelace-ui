@@ -14,8 +14,8 @@
 <tbody>
   <tr>
     <td rowspan="4">1</td>
-    <td>Dimmer</td>
-    <td>dimmer</td>
+    <td rowspan="4">Dimmer</td>
+    <td rowspan="4">dimmer</td>
     <td>SET</td>
     <td>X</td>
     <td>number</td>
@@ -23,9 +23,6 @@
     <td>Level/Brightness</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>number</td>
@@ -33,9 +30,6 @@
     <td>Level/Brightness</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ON_SET</td>
     <td>X</td>
     <td>boolean</td>
@@ -43,9 +37,6 @@
     <td>On/Switch/Power (Tasmota)</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ON_ACTUAL</td>
     <td>X</td>
     <td>boolean</td>
