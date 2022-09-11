@@ -1,3 +1,7 @@
+.markdown-body table tr:nth-child(2n) {
+    background-color: #ffffff;
+}
+
 <table>
 <thead>
   <tr>
