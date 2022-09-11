@@ -174,9 +174,9 @@
     <td></td>
   </tr>
   <tr>
-    <td rowspan="9">8</td>
-    <td rowspan="9">Klimaanlage</td>
-    <td rowspan="9">airCondition</td>
+    <td rowspan="11">8</td>
+    <td rowspan="11">Klimaanlage</td>
+    <td rowspan="11">airCondition</td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>number</td>
@@ -331,7 +331,7 @@
     <td>X</td>
     <td>string</td>
     <td>media.album</td>
-    <td>alexa2.0╔.Player.currentAlbum</td>
+    <td>alexa2.0.Player.currentAlbum</td>
   </tr>
   <tr>
     <td></td>
