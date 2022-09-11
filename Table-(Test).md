@@ -254,9 +254,9 @@
     <td></td>
   </tr>
   <tr>
-    <td>9</td>
-    <td>Lautstärke</td>
-    <td>volume</td>
+    <td rowspan="3">9</td>
+    <td rowspan="3">Lautstärke</td>
+    <td rowspan="3">volume</td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>number</td>
@@ -264,9 +264,6 @@
     <td>alexa2.0╔.Player.volume</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>MUTE</td>
     <td>X</td>
     <td>boolean</td>
@@ -274,9 +271,6 @@
     <td>alexa2.0╔.Player.muted</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>SET</td>
     <td>X</td>
     <td>number</td>
@@ -284,9 +278,9 @@
     <td>alexa2.0╔.Player.volume</td>
   </tr>
   <tr>
-    <td>10</td>
-    <td>LautstŐrkegruppe</td>
-    <td>volumeGroup</td>
+    <td rowspan="3">10</td>
+    <td rowspan="3">Lautstärkegruppe</td>
+    <td rowspan="3">volumeGroup</td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>number</td>
@@ -294,9 +288,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>MUTE</td>
     <td>X</td>
     <td>boolean</td>
@@ -304,9 +295,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>SET</td>
     <td>X</td>
     <td>number</td>
@@ -341,7 +329,7 @@
     <td>X</td>
     <td>string</td>
     <td>media.artist</td>
-    <td>alexa2.0╔.Player.currentArtist</td>
+    <td>alexa2.0.Player.currentArtist</td>
   </tr>
   <tr>
     <td></td>
@@ -351,7 +339,7 @@
     <td>X</td>
     <td>boolean</td>
     <td>button.next</td>
-    <td>alexa2.0╔.Player.controlNext</td>
+    <td>alexa2.0.Player.controlNext</td>
   </tr>
   <tr>
     <td></td>
@@ -361,7 +349,7 @@
     <td>X</td>
     <td>boolean</td>
     <td>button.pause</td>
-    <td>alexa2.0╔.Player.controlPause</td>
+    <td>alexa2.0.Player.controlPause</td>
   </tr>
   <tr>
     <td></td>
@@ -371,7 +359,7 @@
     <td>X</td>
     <td>boolean</td>
     <td>button.play</td>
-    <td>alexa2.0╔.Player.controlPlay</td>
+    <td>alexa2.0.Player.controlPlay</td>
   </tr>
   <tr>
     <td></td>
@@ -381,7 +369,7 @@
     <td>X</td>
     <td>boolean</td>
     <td>button.prev</td>
-    <td>alexa2.0╔.Player.controlPrevious</td>
+    <td>alexa2.0.Player.controlPrevious</td>
   </tr>
   <tr>
     <td></td>
@@ -391,7 +379,7 @@
     <td>X</td>
     <td>boolean</td>
     <td>media.state</td>
-    <td>alexa2.0╔.Player.currentState</td>
+    <td>alexa2.0.Player.currentState</td>
   </tr>
   <tr>
     <td></td>
@@ -401,7 +389,7 @@
     <td>X</td>
     <td>boolean</td>
     <td>button.stop</td>
-    <td>alexa2.0╔.Commands.deviceStop</td>
+    <td>alexa2.0.Commands.deviceStop</td>
   </tr>
   <tr>
     <td></td>
@@ -411,7 +399,7 @@
     <td>X</td>
     <td>string</td>
     <td>media.title</td>
-    <td>alexa2.0╔.Player.currentTitle</td>
+    <td>alexa2.0.Player.currentTitle</td>
   </tr>
   <tr>
     <td></td>
@@ -421,7 +409,7 @@
     <td>X</td>
     <td>number</td>
     <td>level.volume</td>
-    <td>alexa2.0╔.Player.volume</td>
+    <td>alexa2.0.Player.volume</td>
   </tr>
   <tr>
     <td></td>
@@ -431,7 +419,7 @@
     <td>X</td>
     <td>number</td>
     <td>value.volume</td>
-    <td>alexa2.0╔.Player.volume</td>
+    <td>alexa2.0.Player.volume</td>
   </tr>
   <tr>
     <td>13</td>
