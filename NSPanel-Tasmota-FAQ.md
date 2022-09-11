@@ -37,12 +37,12 @@ Die Seiten können über die button1Page und/oder button2Page definiert werden (
  
 ![image](https://user-images.githubusercontent.com/102996011/189394576-f470cba5-0fe6-4a46-97f6-0cd6c48a613b.png)
 
-#### 1.1.2    ESP-Buzzer 
+#### 1.1.2    Rule3 - ESP-Buzzer 
 
 Der eingebaute Buzzer des ESP32 kann auch Geräusche zur Unterstützung der Tastenbetätigung erzeugen Hierzu muss folgende Rule angelegt und aktiviert werden:  
 
-`rule3 on CustomRecv do Buzzer 1 endon`
-`rule3 1`
+`rule3 on CustomRecv do Buzzer 1 endon`  
+`rule3 1`  
 
 ***
 
