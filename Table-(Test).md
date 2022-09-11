@@ -1,4 +1,4 @@
-<table background-color="fff">
+<table>
 <thead>
   <tr>
     <th style="color: red; font-size: 40px;">Nr.</th>
