@@ -2871,5 +2871,14 @@ Im Anschluss klickst du auf fx (am Ende des Eintrags) und trägst den Sender ein
 ***
 
 ## **10.) Alias "Media" für cardMedia**
-Platzhalter
+Platzhalter  
+  
+  
+Spalte 1 | Spalte 2 | Spalte 3
+-------- | -------- | --------
+Inhalt   | Inhalt   | Inhalt
+Inhalt   | Inhalt   | Inhalt  
+  
+  
+
 ***
