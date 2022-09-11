@@ -88,7 +88,7 @@
     <td>Humidity</td>
   </tr>
   <tr>
-    <td>5</td>
+    <td rowspan="5">5</td>
     <td>HUE-Licht</td>
     <td>hue</td>
     <td>DIMMER</td>
@@ -98,9 +98,6 @@
     <td>Level/Brightness</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>HUE</td>
     <td></td>
     <td>number</td>
@@ -108,9 +105,6 @@
     <td>Hue</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ON</td>
     <td>X</td>
     <td>boolean</td>
@@ -118,9 +112,6 @@
     <td>On/Switch/Power (Tasmota)</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ON_ACTUAL</td>
     <td>X</td>
     <td>boolean</td>
@@ -128,9 +119,6 @@
     <td>On/Switch/Power (Tasmota)</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>TEMPERATURE</td>
     <td>X</td>
     <td>number</td>
