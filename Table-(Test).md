@@ -89,8 +89,8 @@
   </tr>
   <tr>
     <td rowspan="5">5</td>
-    <td>HUE-Licht</td>
-    <td>hue</td>
+    <td rowspan="5">HUE-Licht</td>
+    <td rowspan="5">hue</td>
     <td>DIMMER</td>
     <td>X</td>
     <td>number</td>
