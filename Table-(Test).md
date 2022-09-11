@@ -174,9 +174,9 @@
     <td></td>
   </tr>
   <tr>
-    <td>8</td>
-    <td>Klimaanlage</td>
-    <td>airCondition</td>
+    <td rowspan="10">8</td>
+    <td rowspan="10">Klimaanlage</td>
+    <td rowspan="10">airCondition</td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>number</td>
@@ -184,9 +184,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>BOOST</td>
     <td></td>
     <td>boolean</td>
@@ -194,9 +191,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ERROR</td>
     <td></td>
     <td>boolean</td>
@@ -204,9 +198,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>HUMIDUÝTY</td>
     <td></td>
     <td>number</td>
@@ -214,9 +205,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>MAINTAIN</td>
     <td></td>
     <td>boolean</td>
@@ -224,9 +212,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>MODE</td>
     <td>X</td>
     <td>number</td>
@@ -234,9 +219,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>POWER</td>
     <td>X</td>
     <td>boolean</td>
@@ -244,9 +226,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>SET</td>
     <td>X</td>
     <td>number</td>
@@ -254,9 +233,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>SPEED</td>
     <td></td>
     <td>number</td>
@@ -264,9 +240,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>SWING</td>
     <td></td>
     <td>boolean</td>
@@ -274,9 +247,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>UNREACH</td>
     <td></td>
     <td>boolean</td>
@@ -285,7 +255,7 @@
   </tr>
   <tr>
     <td>9</td>
-    <td>LautstŐrke</td>
+    <td>Lautstärke</td>
     <td>volume</td>
     <td>ACTUAL</td>
     <td>X</td>
