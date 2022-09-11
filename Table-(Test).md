@@ -1,6 +1,6 @@
-<table>
+<table background-color="666">
 <thead>
-  <tr background-color="666">
+  <tr>
     <th>Nr.</th>
     <th>Alias-Type (german)</th>
     <th>Rolle (channel)</th>
