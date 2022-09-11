@@ -13,7 +13,7 @@
 </thead>
 <tbody>
   <tr>
-    <td>1</td>
+    <td rowspan="4">1</td>
     <td>Dimmer</td>
     <td>dimmer</td>
     <td>SET</td>
