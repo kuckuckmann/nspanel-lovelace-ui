@@ -261,21 +261,21 @@
     <td>X</td>
     <td>number</td>
     <td>value.volume</td>
-    <td>alexa2.0╔.Player.volume</td>
+    <td>alexa2.0.Player.volume</td>
   </tr>
   <tr>
     <td>MUTE</td>
     <td>X</td>
     <td>boolean</td>
     <td>media.mute</td>
-    <td>alexa2.0╔.Player.muted</td>
+    <td>alexa2.0.Player.muted</td>
   </tr>
   <tr>
     <td>SET</td>
     <td>X</td>
     <td>number</td>
     <td>level.volume</td>
-    <td>alexa2.0╔.Player.volume</td>
+    <td>alexa2.0.Player.volume</td>
   </tr>
   <tr>
     <td rowspan="3">10</td>
