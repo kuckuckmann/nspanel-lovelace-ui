@@ -1,6 +1,6 @@
 <table>
 <thead>
-  <tr>
+  <th>
     <th>Nr.</th>
     <th>Alias-Type (german)</th>
     <th>Rolle (channel)</th>
@@ -9,7 +9,7 @@
     <th>Datentyp</th>
     <th>Rolle (state)</th>
     <th>Datenpunkt (typisch)</th>
-  </tr>
+  </th>
 </thead>
 <tbody>
   <tr>
@@ -44,9 +44,9 @@
     <td>On/Switch/Power (Tasmota)</td>
   </tr>
   <tr>
-    <td>2</td>
-    <td>Farbtemperatur</td>
-    <td>ct</td>
+    <td rowspan="3">2</td>
+    <td rowspan="3">Farbtemperatur</td>
+    <td rowspan="3">ct</td>
     <td>DIMMER</td>
     <td>X</td>
     <td>number</td>
@@ -54,9 +54,6 @@
     <td>Level/Brightness</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ON</td>
     <td>X</td>
     <td>boolean</td>
@@ -64,9 +61,6 @@
     <td>On/Switch/Power (Tasmota)</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>TEMPERATURE</td>
     <td>X</td>
     <td>number</td>
