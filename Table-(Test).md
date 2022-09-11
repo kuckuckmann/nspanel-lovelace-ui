@@ -1,5 +1,5 @@
 .markdown-body table tr:nth-child(2n) {
-    background-color: #ffffff;
+    background-color: #ffffff impotant!;
 }
 
 <table>
