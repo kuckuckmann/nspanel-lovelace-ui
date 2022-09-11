@@ -136,9 +136,9 @@
     <td>Alle Werte</td>
   </tr>
   <tr>
-    <td>7</td>
-    <td>Jalousien</td>
-    <td>blind</td>
+    <td rowspan="5">7</td>
+    <td rowspan="5">Jalousien</td>
+    <td rowspan="5">blind</td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>number</td>
@@ -146,9 +146,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>CLOSE</td>
     <td>X</td>
     <td>boolean</td>
@@ -156,9 +153,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>OPEN</td>
     <td>X</td>
     <td>boolean</td>
@@ -166,9 +160,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>SET</td>
     <td>X</td>
     <td>number</td>
@@ -176,9 +167,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>STOP</td>
     <td>X</td>
     <td>boolean</td>
