@@ -1,6 +1,6 @@
 <table>
 <thead>
-  <th>
+  <tr>
     <th>Nr.</th>
     <th>Alias-Type (german)</th>
     <th>Rolle (channel)</th>
@@ -9,7 +9,7 @@
     <th>Datentyp</th>
     <th>Rolle (state)</th>
     <th>Datenpunkt (typisch)</th>
-  </th>
+  </tr>
 </thead>
 <tbody>
   <tr>
