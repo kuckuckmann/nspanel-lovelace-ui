@@ -312,9 +312,9 @@
     <td>On/Switch/Power (Tasmota)</td>
   </tr>
   <tr>
-    <td>12</td>
-    <td>Medien</td>
-    <td>media</td>
+    <td rowspan="11">12</td>
+    <td rowspan="11">Medien</td>
+    <td rowspan="11">media</td>
     <td>ALBUM</td>
     <td>X</td>
     <td>string</td>
@@ -322,9 +322,6 @@
     <td>alexa2.0.Player.currentAlbum</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>ARTIST</td>
     <td>X</td>
     <td>string</td>
@@ -332,9 +329,6 @@
     <td>alexa2.0.Player.currentArtist</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>NEXT</td>
     <td>X</td>
     <td>boolean</td>
@@ -342,9 +336,6 @@
     <td>alexa2.0.Player.controlNext</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>PAUSE</td>
     <td>X</td>
     <td>boolean</td>
@@ -352,9 +343,6 @@
     <td>alexa2.0.Player.controlPause</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>PLAY</td>
     <td>X</td>
     <td>boolean</td>
@@ -362,9 +350,6 @@
     <td>alexa2.0.Player.controlPlay</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>PREV</td>
     <td>X</td>
     <td>boolean</td>
@@ -372,9 +357,6 @@
     <td>alexa2.0.Player.controlPrevious</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>STATE</td>
     <td>X</td>
     <td>boolean</td>
@@ -382,9 +364,6 @@
     <td>alexa2.0.Player.currentState</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>STOP</td>
     <td>X</td>
     <td>boolean</td>
@@ -392,9 +371,6 @@
     <td>alexa2.0.Commands.deviceStop</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>TITLE</td>
     <td>X</td>
     <td>string</td>
@@ -402,9 +378,6 @@
     <td>alexa2.0.Player.currentTitle</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>VOLUME</td>
     <td>X</td>
     <td>number</td>
@@ -412,9 +385,6 @@
     <td>alexa2.0.Player.volume</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>VOLUME_ACTUAL</td>
     <td>X</td>
     <td>number</td>
