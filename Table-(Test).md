@@ -560,9 +560,9 @@
     <td></td>
   </tr>
   <tr>
-    <td>20</td>
-    <td>Thermostat</td>
-    <td>thermostat</td>
+    <td rowspan="7">20</td>
+    <td rowspan="7">Thermostat</td>
+    <td rowspan="7">thermostat</td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>number</td>
@@ -570,9 +570,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>HUMIDITY</td>
     <td></td>
     <td>number</td>
@@ -580,9 +577,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>LOWBAT</td>
     <td></td>
     <td>boolean</td>
@@ -590,9 +584,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>MODE</td>
     <td>X</td>
     <td>number</td>
@@ -600,9 +591,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>SET</td>
     <td>X</td>
     <td>number</td>
@@ -610,9 +598,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>UNREACH</td>
     <td></td>
     <td>boolean</td>
@@ -620,9 +605,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>Weitere Indikatoren</td>
     <td></td>
     <td>boolean</td>
@@ -631,7 +613,7 @@
   </tr>
   <tr>
     <td>21</td>
-    <td>Tčr</td>
+    <td>Tür</td>
     <td>door</td>
     <td>ACTUAL</td>
     <td>X</td>
@@ -640,9 +622,9 @@
     <td>Open</td>
   </tr>
   <tr>
-    <td>22</td>
-    <td>Verschluss</td>
-    <td>lock</td>
+    <td rowspan="3">22</td>
+    <td rowspan="3">Verschluss</td>
+    <td rowspan="3">lock</td>
     <td>ACTUAL</td>
     <td>X</td>
     <td>boolean</td>
@@ -650,9 +632,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>OPEN</td>
     <td>X</td>
     <td>boolean</td>
@@ -660,9 +639,6 @@
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>SET</td>
     <td>X</td>
     <td>boolean</td>
@@ -670,9 +646,9 @@
     <td></td>
   </tr>
   <tr>
-    <td>23</td>
-    <td>Wettervorhersage</td>
-    <td>weatherforecast</td>
+    <td rowspan="2">23</td>
+    <td rowspan="2">Wettervorhersage</td>
+    <td rowspan="2">weatherforecast</td>
     <td>ICON</td>
     <td>X</td>
     <td>number</td>
@@ -680,9 +656,6 @@
     <td>accuweather.0.Current.WeatherIcon</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>TEMP</td>
     <td>X</td>
     <td>number</td>
