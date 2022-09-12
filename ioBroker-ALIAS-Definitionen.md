@@ -307,6 +307,14 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', s
 ```
 </details> 
 
+> Anleitung:  
+> * Neues Skript (JavaScript JS) anlegen   
+> * Code kopieren und einfügen  
+> * Skript aktivieren und ausführen  
+> * Danach wieder Deaktivieren  
+
+****
+
 #### Alexa2-Adpter  
 ![image](https://user-images.githubusercontent.com/102996011/189404434-6a5da814-fd1e-4ca7-8f42-4e03461b8675.png)
 
