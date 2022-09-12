@@ -246,7 +246,11 @@ Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lo
 ### Medien - cardMedia
 
 **Skript zum Anlegen eines Spotify-Premium - media-Alias (ab Version 3.3.2)**
-`
+
+<details>
+  <summary>Blockly</summary>
+
+```
 const aliasPath = 'alias.0.NSPanel_1.Media';
 const aliasDevice = 'PlayerSpotifyPremium';
 //Ergibt alias.0.NSPanel_1.Media.PlayerSpotifyPremium.
@@ -298,7 +302,8 @@ createAlias(aliasPath + '.' + aliasDevice + '.STOP', 'STOP', spotifyPremiumInsta
 createAlias(aliasPath + '.' + aliasDevice + '.STATE', 'STATE', spotifyPremiumInstanz + 'player.isPlaying', '', 'state', 'media.state', 'boolean');
 createAlias(aliasPath + '.' + aliasDevice + '.VOLUME', 'VOLUME', spotifyPremiumInstanz + 'player.volume', '', 'state', 'level.volume', 'boolean');
 createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', spotifyPremiumInstanz + 'player.volume', '', 'state', 'value.volume', 'boolean');
-`
+```
+</details> 
 
 ![image](https://user-images.githubusercontent.com/102996011/189404434-6a5da814-fd1e-4ca7-8f42-4e03461b8675.png)
 
