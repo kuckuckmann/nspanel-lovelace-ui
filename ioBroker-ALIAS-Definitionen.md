@@ -313,18 +313,18 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', s
 > * Skript aktivieren und ausführen  
 > * Danach wieder Deaktivieren  
 
-<hr style="border:2px solid gray">
+<hr style="border:1px solid gray">
 
 #### Alexa2-Adpter  
 ![image](https://user-images.githubusercontent.com/102996011/189404434-6a5da814-fd1e-4ca7-8f42-4e03461b8675.png)  
 Anleitung folgt...  
 
-<hr style="border:2px solid gray">
+<hr style="border:1px solid gray">
 
 #### Sonos-Adpter
 Anleitung folgt...  
 
-<hr style="border:2px solid gray">
+<hr style="border:1px solid gray">
 
 #### Chromecast-Adpter (Google home)
 Anleitung folgt...  
