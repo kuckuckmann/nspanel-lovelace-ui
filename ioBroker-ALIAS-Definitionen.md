@@ -247,7 +247,7 @@ Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lo
 #### Spotify-Premium-Adapter  
 **Skript zum Anlegen eines Spotify-Premium - media-Alias (ab Version 3.3.2)**
 
-![image](https://user-images.githubusercontent.com/102996011/189687827-e95892e3-e6c3-415b-9b6f-94904bd22839.png)
+![image](https://user-images.githubusercontent.com/102996011/189699416-70ca5726-5bd5-49ca-9771-d9d0f41fb414.png)
 
 <details>
   <summary><b>Spoiler:</b> JavaScript Code für Erstellung eines Spotify-Premium-Alias</summary>
