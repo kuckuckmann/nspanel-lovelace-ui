@@ -248,7 +248,7 @@ Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lo
 **Skript zum Anlegen eines Spotify-Premium - media-Alias (ab Version 3.3.2)**
 
 <details>
-  <summary>Blockly</summary>
+  <summary>JavaScript Code</summary>
 
 ```
 const aliasPath = 'alias.0.NSPanel_1.Media';
