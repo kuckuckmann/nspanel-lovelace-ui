@@ -18,13 +18,13 @@ https://tasmota.github.io/docs/Rules/
 #### 1.1.1    Rule2 - Favoriten Seiten
 
 **Beide Hardware-Buttons als Dialog - Die internen Relais werden dabei nicht geschaltet**  
-`Rule2 on Button1#state do Publish SmartHome%topic%/%prefix%/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bPrev"} endon on Button2#state do Publish SmartHome%topic%/%prefix%/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bNext"} endon`  
+`Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon`  
 
 **Rechter Button Dialog - Linker Button Schalter**  
-`Rule2 on Button1#state do Publish SmartHome%topic%/%prefix%/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bPrev"} endon`  
+`on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon`  
 
 **Rechter Button Schalter - Linker Button Dialog**  
-`Rule2 on Button2#state do Publish SmartHome%topic%/%prefix%/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bPrev"} endon`  
+`Rule2 on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon`  
 
 Zum Anschalten der Rule  
 `Rule2` 1 oder `Rule2 On`  
