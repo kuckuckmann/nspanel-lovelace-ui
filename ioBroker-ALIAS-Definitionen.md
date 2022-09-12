@@ -250,7 +250,7 @@ Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lo
 ![image](https://user-images.githubusercontent.com/102996011/189687827-e95892e3-e6c3-415b-9b6f-94904bd22839.png)
 
 <details>
-  <summary>JavaScript Code</summary>
+  <summary>JavaScript Code für Erstellung eines Spotify-Premium-Alias</summary>
 
 ```
 const aliasPath = 'alias.0.NSPanel_1.Media';
