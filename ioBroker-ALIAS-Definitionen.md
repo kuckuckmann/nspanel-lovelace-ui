@@ -320,7 +320,8 @@ Anleitung folgt...
 #### Sonos-Adpter
 **Skript zum Anlegen eines Sonos - media-Alias (ab Version 3.3.2)**
 
-![image](https://user-images.githubusercontent.com/102996011/189699416-70ca5726-5bd5-49ca-9771-d9d0f41fb414.png)
+![image](https://user-images.githubusercontent.com/102996011/189748619-02961946-c9e1-42d4-90fc-54d8344b87e3.png)
+
 
 <details>
   <summary><b>Spoiler:</b> JavaScript Code für Erstellung eines Sonos-Alias</summary>
