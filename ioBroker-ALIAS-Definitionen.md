@@ -312,14 +312,14 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', s
 > * Code kopieren und einfügen  
 > * Skript aktivieren und ausführen  
 > * Danach wieder Deaktivieren  
-![image](https://user-images.githubusercontent.com/102996011/189694477-91d61500-6f4e-4cb4-b795-62390f5821d6.png)
-#### Alexa2-Adpter  
-![image](https://user-images.githubusercontent.com/102996011/189404434-6a5da814-fd1e-4ca7-8f42-4e03461b8675.png)  
+
+![image](https://user-images.githubusercontent.com/102996011/189694477-91d61500-6f4e-4cb4-b795-62390f5821d6.png)  
+#### Alexa2-Adpter
 Anleitung folgt...  
-![image](https://user-images.githubusercontent.com/102996011/189694495-9dadac4e-9e02-4ec5-97b3-ab05951488be.png)
+![image](https://user-images.githubusercontent.com/102996011/189694477-91d61500-6f4e-4cb4-b795-62390f5821d6.png)  
 #### Sonos-Adpter
 Anleitung folgt...  
-![image](https://user-images.githubusercontent.com/102996011/189694513-e05d61a2-d89e-4fe1-bb63-0e414f99f549.png)
+![image](https://user-images.githubusercontent.com/102996011/189694477-91d61500-6f4e-4cb4-b795-62390f5821d6.png)  
 #### Chromecast-Adpter (Google home)
 Anleitung folgt...  
 
