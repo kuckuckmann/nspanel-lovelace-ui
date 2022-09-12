@@ -244,8 +244,10 @@ Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lo
 ***
 
 ### Medien - cardMedia
-
+#### Spotify-Premium-Adapter  
 **Skript zum Anlegen eines Spotify-Premium - media-Alias (ab Version 3.3.2)**
+
+![image](https://user-images.githubusercontent.com/102996011/189687827-e95892e3-e6c3-415b-9b6f-94904bd22839.png)
 
 <details>
   <summary>JavaScript Code</summary>
@@ -305,7 +307,12 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', s
 ```
 </details> 
 
+#### Alexa2-Adpter  
 ![image](https://user-images.githubusercontent.com/102996011/189404434-6a5da814-fd1e-4ca7-8f42-4e03461b8675.png)
+
+#### Sonos-Adpter
+
+#### Chromecast-Adpter (Google home)
 
 ***
 
