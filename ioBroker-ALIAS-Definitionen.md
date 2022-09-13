@@ -244,12 +244,12 @@ Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lo
 ***
 
 ### Medien - cardMedia
-Der Alias-Medien für die cardMedia lässt sich mit dem Geräte-Manager nicht erstellen. Auch mit dem Alias-Manager unter "Automatisch erstellen" aus einem Player-Pfad ist das je nach Adapter eher eine Zufallsproduktion.
+Der Alias-Medien für die cardMedia lässt sich mit dem Geräte-Manager nicht erstellen. Auch mit dem Alias-Manager unter "Automatisch erstellen" aus einem Player-Pfad ist das je nach Adapter eher eine Zufallsproduktion.  
 > Es gibt von britzelpuf bereits einen noch offenen github-Issue: https://github.com/ioBroker/ioBroker.devices/issues/152 seit dem 17.03.2022  
 
-Der Alias gibt aktuell nur einen .ACTUAL her. Das ist jedoch für einen Media-Player definitiv zu wenig.
+Der Alias gibt aktuell nur einen .ACTUAL her. Das ist jedoch für einen Media-Player definitiv zu wenig.  
 
-> **Daher bitte die eines der nachfolgenden Skripte (je eingesetzten Adaptertyp) nutzen. Die Struktur sieht im Gerätemanager danach etwa so aus und sollte vernachlässigt werden, da der ALIAS dennoch funktioniert!**
+> **Daher bitte eines der nachfolgenden Skripte (je eingesetzten Adaptertyp) nutzen. Die Struktur sieht im Gerätemanager danach etwa so aus und sollte vernachlässigt werden, da der ALIAS dennoch funktioniert!**  
 
 ![image](https://user-images.githubusercontent.com/102996011/189842715-75f9d554-3395-42f6-903b-b92b0828143c.png)
 Obwohl das alles Aliase vom Typ Medien sind, sehen bis auf zwei alle anderen nicht korrekt aus, sind aber in der Objektstruktur korrekt und funktionieren auch mit dem NSPanel
