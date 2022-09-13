@@ -467,9 +467,6 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', s
 #### Chromecast-Adpter (Google home)
 **Skript zum Anlegen eines Chromecast - media-Alias (ab Version 3.3.2)**
 
-![image](https://user-images.githubusercontent.com/102996011/189748619-02961946-c9e1-42d4-90fc-54d8344b87e3.png)
-
-
 <details>
   <summary><b>Spoiler:</b> JavaScript Code für Erstellung eines Chrome-Alias</summary>
 
