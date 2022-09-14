@@ -50,6 +50,22 @@ var Sprechender_eindeutiger_Seitenname: PageGrid =
 # cardAlarm
 ![image](https://user-images.githubusercontent.com/102996011/190120272-82c6b418-c9dc-4338-a0a3-53da8bec0bac.png)
 
+(Erstellung des alias.0.Alarm siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
+
+```
+var Sprechender_eindeutiger_Seitenname: PageAlarm =
+{
+    "type": "cardAlarm",
+    "heading": "Deine Überschrift",
+    "useColor": true,
+    "subPage": false,
+    "parent": undefined,
+    "items": [
+        <PageItem>{ id: alias.0.Alarm}
+    ]
+};
+```
+
 # cardMedia
 ![image](https://user-images.githubusercontent.com/102996011/190122037-00514a10-513f-42a6-b81b-fd57c0ea3381.png)
 
