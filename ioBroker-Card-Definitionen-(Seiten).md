@@ -1,5 +1,3 @@
-Hier werden demnächst die Card's beschrieben
-
 # cardEntities
 ![image](https://user-images.githubusercontent.com/102996011/190120141-13da0024-261d-4cd9-a104-13416c224004.png)  
 
