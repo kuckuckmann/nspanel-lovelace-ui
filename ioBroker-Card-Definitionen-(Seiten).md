@@ -3,6 +3,23 @@ Hier werden demnächst die Card's beschrieben
 # cardEntities
 ![image](https://user-images.githubusercontent.com/102996011/190120141-13da0024-261d-4cd9-a104-13416c224004.png)
 
+4 vertikal angeordnete Steuerelemente
+
+`var Sprechender_Seitenname: PageEntities =`
+`{`
+    `"type": "cardEntities",`
+    `"heading": "Deine Überschrift",`
+    `"useColor": true,`
+    `"subPage": false,`
+    `"parent": undefined,`
+    `"items": [`
+        `<PageItem>{ id: "Dein_Erstellter_Alias_1", Weitere Parameter siehe Alias Definition },`
+        `<PageItem>{ id: "Dein_Erstellter_Alias_2", Weitere Parameter siehe Alias Definition },`
+        `<PageItem>{ id: "Dein_Erstellter_Alias_3", Weitere Parameter siehe Alias Definition },`
+        `<PageItem>{ id: "Dein_Erstellter_Alias_4", Weitere Parameter siehe Alias Definition }`
+    `]`
+`};`
+
 # cardGrid
 ![image](https://user-images.githubusercontent.com/102996011/190120023-c9e0477c-0d06-4484-af27-be2f6fe810d3.png)
 
