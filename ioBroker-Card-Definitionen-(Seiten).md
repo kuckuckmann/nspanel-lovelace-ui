@@ -137,8 +137,10 @@ var Sprechender_eindeutiger_Seitenname: PageQR =
 **Parameter:**  
 keine
 
-# cardThermo
-
+# cardThermo  
+  
+(Erstellung der "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen)) 
+  
 > Für Thermostat und Klimaanlage (Unterschied im zu erstellenden Alias)
 
 ![image](https://user-images.githubusercontent.com/102996011/190120470-f0b84f87-dc46-4cf2-8e08-598331168aab.png)  
