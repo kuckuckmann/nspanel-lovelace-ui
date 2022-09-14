@@ -121,8 +121,8 @@ var Sprechender_eindeutiger_Seitenname: PageMedia =
 # cardQR
 ![image](https://user-images.githubusercontent.com/102996011/190121115-436dc34d-3a89-4809-a3c6-2c6132938fd1.png)
 
-(Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))
-
+(Beispiel: Erstellung des "PageItem" siehe (https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#5-qr-code-page))
+```
 var Sprechender_eindeutiger_Seitenname: PageQR = 
 {
     "type": "cardQR",
@@ -132,6 +132,7 @@ var Sprechender_eindeutiger_Seitenname: PageQR =
     "parent": undefined,
     "items": [<PageItem>{ id: "alias.0.NSPanel_1.Guest_Wifi" }] // Beispiel
 };
+```
 
 # cardThermo
 ## Thermostat
