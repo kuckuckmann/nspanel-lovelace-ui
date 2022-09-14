@@ -238,6 +238,12 @@ Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lo
 ***
 
 ### Lautstärke-Gruppe
+![image](https://user-images.githubusercontent.com/102996011/189403220-a2540eb2-4b47-4947-9258-a7687403710c.png)
+
+Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **HUE-Licht** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
+![image](https://user-images.githubusercontent.com/102996011/190144094-a13df619-fe45-4c92-a43a-e6a4e653083e.png)  
+
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:
 
 ***
 
