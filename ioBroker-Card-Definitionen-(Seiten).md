@@ -138,9 +138,24 @@ var Sprechender_eindeutiger_Seitenname: PageQR =
 keine
 
 # cardThermo
-## Thermostat
-![image](https://user-images.githubusercontent.com/102996011/190120470-f0b84f87-dc46-4cf2-8e08-598331168aab.png)
 
-## Klimaanlage
-![image](https://user-images.githubusercontent.com/102996011/190120711-59097159-847e-49d7-9545-a460dc271d13.png)
+> Für Thermostat und Klimaanlage (Unterschied im zu erstellenden Alias)
 
+![image](https://user-images.githubusercontent.com/102996011/190120470-f0b84f87-dc46-4cf2-8e08-598331168aab.png)  
+![image](https://user-images.githubusercontent.com/102996011/190120711-59097159-847e-49d7-9545-a460dc271d13.png)  
+
+```  
+var Sprechender_eindeutiger_Seitenname: PageThermo = 
+{
+    "type": "cardThermo",
+    "heading": "Deine Überschrift",
+    "useColor": true,
+    "subPage": false,
+    "parent": undefined,
+    "items": [<PageItem>{ id: "alias.0.NSPanel_1.TestKlimaanlage", minValue: 170, maxValue: 250}]
+};
+```  
+
+**Parameter:**  
+minValue: Minimale einzustellende Temperatur (Beispiel: 17°C entspricht 170)  
+maxValue: Maximale einzustellende Temperatur (Beispiel: 30,5°C entspricht 305)  
