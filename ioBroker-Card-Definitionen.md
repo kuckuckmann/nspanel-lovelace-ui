@@ -1,13 +1,13 @@
 Hier werden demnächst die Card's beschrieben
 
-#cardEntities
+# cardEntities
 
-#cardGrid
+# cardGrid
 
-#cardAlarm
+# cardAlarm
 
-#cardMedia
+# cardMedia
 
-#cardQR
+# cardQR
 
-#cardThermo
+# cardThermo
