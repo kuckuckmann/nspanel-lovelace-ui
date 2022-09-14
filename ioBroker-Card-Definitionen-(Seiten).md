@@ -121,6 +121,18 @@ var Sprechender_eindeutiger_Seitenname: PageMedia =
 # cardQR
 ![image](https://user-images.githubusercontent.com/102996011/190121115-436dc34d-3a89-4809-a3c6-2c6132938fd1.png)
 
+(Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))
+
+var Sprechender_eindeutiger_Seitenname: PageQR = 
+{
+    "type": "cardQR",
+    "heading": "Deine Überschrift",
+    "useColor": true,
+    "subPage": false,
+    "parent": undefined,
+    "items": [<PageItem>{ id: "alias.0.NSPanel_1.Guest_Wifi" }] // Beispiel
+};
+
 # cardThermo
 ## Thermostat
 ![image](https://user-images.githubusercontent.com/102996011/190120470-f0b84f87-dc46-4cf2-8e08-598331168aab.png)
