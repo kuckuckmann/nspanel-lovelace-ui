@@ -244,6 +244,9 @@ Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovela
 ![image](https://user-images.githubusercontent.com/102996011/190144094-a13df619-fe45-4c92-a43a-e6a4e653083e.png)  
 
 Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:
+![image](https://user-images.githubusercontent.com/102996011/190144755-8b2c2ae6-c9d4-4fa2-9139-c430b8385114.png)
+
+Das zugehörige PageItem im TypeScript:  
 
 ***
 
