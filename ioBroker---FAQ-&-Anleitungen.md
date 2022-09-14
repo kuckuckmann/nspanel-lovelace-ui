@@ -36,7 +36,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 07.09.2022 - QR Code Page - Beschreibung erweitert  
 09.09.2022 - Alias "Taste" für Auswahl eines Radiosenders - Erstellt  
 09.09.2022 - Alias "Media" für cardMedia - in Erstellung  
-
+14.09.2022 - bug im js-script Abfall behoben
 </details>  
 
 
@@ -1712,7 +1712,7 @@ for (i = 1; i <= 4; i++) {
     };
     if (!existsState('0_userdata.0.Abfallkalender.' + parseFloat(i) + '.color')) {
         log(i + '.color nicht vorhanden, wurde erstellt');
-        createState('0_userdata.0.Abfallkalender.' + parseFloat(i) + '.color', '',
+        createState('0_userdata.0.Abfallkalender.' + parseFloat(i) + '.color', 0,
             {
                 name: parseFloat(i) + '.color',
                 role: 'state',
