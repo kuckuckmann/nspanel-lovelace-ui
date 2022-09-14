@@ -65,7 +65,7 @@ var Sprechender_eindeutiger_Seitenname: PageAlarm =
 ```
 
 # cardMedia
-![image](https://user-images.githubusercontent.com/102996011/190122037-00514a10-513f-42a6-b81b-fd57c0ea3381.png)
+![image](https://user-images.githubusercontent.com/102996011/190164192-27491246-8e49-4c27-ba06-6cc711dd04c9.png)
 
 (Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
