@@ -71,7 +71,7 @@ var Sprechender_eindeutiger_Seitenname: PageAlarm =
 
 (Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
-> **Definition ab Version 3.1.1.3** (Breaking Changes)
+> **Definition ab TS-Version 3.1.1.3** (Breaking Changes)
 ```
 var Sprechender_eindeutiger_Seitenname: PageMedia = 
 {
@@ -105,7 +105,7 @@ var Sprechender_eindeutiger_Seitenname: PageMedia =
 * für "spotify-premium.0.": Alle SmartDevice-Namen aus Spotify möglich (Im Gegensatz zu Alexa auch Smartphones und Rechner)
 * für "chromecast.0.": Zeile kann gelöscht werden, da GoogleHome keine Funktionalitäten zum Wechseln von Lautsprechern zur Verfügung stellt 
 
-> **Definition bis Version 3.1.1.3**
+> **Definition bis TS-Version 3.1.1.3**
 ```
 var Sprechender_eindeutiger_Seitenname: PageMedia = 
 {
