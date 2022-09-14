@@ -262,6 +262,8 @@ maxValue: Minimale Lautstärkewert (Default 100)
 
 ### Licht
 
+> Beschreibung für den Alias Licht folgt...
+
 ***
 
 ### Medien - cardMedia
@@ -555,17 +557,25 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', c
 
 ### RGB-Licht 
 
+> Beschreibung für den Alias RGB-Licht folgt...
+
 ***
 
 ### RGB-Licht-einzeln
+
+> Beschreibung für den Alias RGB-Licht-einzeln folgt...
 
 ***
 
 ### Schieberegler
 
+> Beschreibung für den Alias Schieberegler folgt...
+
 ***
 
 ### Steckdose
+
+> Beschreibung für den Alias Steckdose folgt...
 
 ***
 
@@ -573,9 +583,13 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', c
 
 ![image](https://user-images.githubusercontent.com/102996011/189404781-7fe9c2b0-e81d-446f-9aab-50865cc39a40.png)
 
+> Beschreibung für den Alias Taste folgt...
+
 ***
 
 ### Tastensensor
+
+> Beschreibung für den Alias Tastensenso folgt...
 
 ***
 
@@ -583,20 +597,28 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', c
 
 ![image](https://user-images.githubusercontent.com/102996011/189403527-4a94e690-9a5d-4121-8dcb-5636951a7df6.png)
 
+> Beschreibung für den Alias Temperatur folgt...
+
 ***
 
 ### Thermostat - cardThermo
 ![image](https://user-images.githubusercontent.com/102996011/189402503-c25994b5-d16d-46f7-b34b-0620122f07fc.png)
+
+> Beschreibung für den Alias Thermostat folgt...
 
 ***
 
 ### Tür
 ![image](https://user-images.githubusercontent.com/102996011/189403985-7eed8829-ea85-4785-88f9-610edaeb9485.png)
 
+> Beschreibung für den Alias Tür folgt...
+
 ***
 
 ### Verschluss
 ![image](https://user-images.githubusercontent.com/102996011/189404088-9a2cd3ea-5c43-4c3f-9bd9-e58eac2e6fd6.png)
+
+> Beschreibung für den Alias Verschluss folgt...
 
 ***
 
