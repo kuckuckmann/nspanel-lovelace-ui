@@ -5,6 +5,7 @@ Hier werden demnächst die Card's beschrieben
 
 4 vertikal angeordnete Steuerelemente
 
+<details>
 `var Sprechender_Seitenname: PageEntities =`
 `{`
     `"type": "cardEntities",`
@@ -19,6 +20,7 @@ Hier werden demnächst die Card's beschrieben
         `<PageItem>{ id: "Dein_Erstellter_Alias_4", Weitere Parameter siehe Alias Definition }`
     `]`
 `};`
+</details>
 
 # cardGrid
 ![image](https://user-images.githubusercontent.com/102996011/190120023-c9e0477c-0d06-4484-af27-be2f6fe810d3.png)
