@@ -235,6 +235,8 @@ Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lo
 ### Lautstärke
 ![image](https://user-images.githubusercontent.com/102996011/189403220-a2540eb2-4b47-4947-9258-a7687403710c.png)
 
+> **Analog zum Alias "Lautstärkegruppe", jedoch mit dem Alias-Gerätetypen "Lautstärke**"
+
 ***
 
 ### Lautstärke-Gruppe
@@ -247,6 +249,14 @@ Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichni
 ![image](https://user-images.githubusercontent.com/102996011/190144755-8b2c2ae6-c9d4-4fa2-9139-c430b8385114.png)
 
 Das zugehörige PageItem im TypeScript:  
+![image](https://user-images.githubusercontent.com/102996011/190146010-ab51fa66-a8bc-4a2c-8f79-98425e19eabd.png)  
+
+**Parameter:**  
+name: Vom Alias abweichender Name  
+offColor: wenn Muted  
+onColor: wenn nicht Muted  
+minValue: Minimale Lautstärkewert (Default 0)  
+maxValue: Minimale Lautstärkewert (Default 100)  
 
 ***
 
