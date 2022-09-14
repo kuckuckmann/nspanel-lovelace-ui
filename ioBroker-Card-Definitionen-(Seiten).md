@@ -6,20 +6,20 @@ Hier werden demnächst die Card's beschrieben
 4 vertikal angeordnete Steuerelemente
 
 <details>
-`var Sprechender_Seitenname: PageEntities =`
-`{`
-    `"type": "cardEntities",`
-    `"heading": "Deine Überschrift",`
-    `"useColor": true,`
-    `"subPage": false,`
-    `"parent": undefined,`
-    `"items": [`
-        `<PageItem>{ id: "Dein_Erstellter_Alias_1", Weitere Parameter siehe Alias Definition },`
-        `<PageItem>{ id: "Dein_Erstellter_Alias_2", Weitere Parameter siehe Alias Definition },`
-        `<PageItem>{ id: "Dein_Erstellter_Alias_3", Weitere Parameter siehe Alias Definition },`
-        `<PageItem>{ id: "Dein_Erstellter_Alias_4", Weitere Parameter siehe Alias Definition }`
-    `]`
-`};`
+var Sprechender_Seitenname: PageEntities =
+{
+    "type": "cardEntities",
+    "heading": "Deine Überschrift",
+    "useColor": true,
+    "subPage": false,
+    "parent": undefined,
+    "items": [
+        <PageItem>{ id: "Dein_Erstellter_Alias_1", Weitere Parameter siehe Alias Definition },
+        <PageItem>{ id: "Dein_Erstellter_Alias_2", Weitere Parameter siehe Alias Definition },
+        <PageItem>{ id: "Dein_Erstellter_Alias_3", Weitere Parameter siehe Alias Definition },
+        <PageItem>{ id: "Dein_Erstellter_Alias_4", Weitere Parameter siehe Alias Definition }
+    ]
+};
 </details>
 
 # cardGrid
