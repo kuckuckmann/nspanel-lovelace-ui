@@ -99,7 +99,7 @@ var Sprechender_eindeutiger_Seitenname: PageMedia =
 * für "spotify-premium.0.": Zeile kann gelöscht werden, da Spotify immer nur einen Speaker oder Gruppe steuern kann (automatische Ermittlung)
 * für "chromecast.0.": Zeile kann gelöscht werden, da GoogleHome keine Funktionalitäten zum Wechseln von Lautsprechern zur Verfügung stellt 
 
-**speakerList:**
+**speakerList:** (Namen und Reihenfolge der Speaker selbst bestimmen)
 * für "alexa.0.": Device-Namen aus alexa2 möglich. Wenn leer [] , dann alle Devices des alexa2-Adapter 
 * für "sonos.0.": Zeile kann gelöscht werden, da Funktionalität zum schieben auf andere Devices im Sonos-Adapter nicht möglich  
 * für "spotify-premium.0.": Alle SmartDevice-Namen aus Spotify möglich (Im Gegensatz zu Alexa auch Smartphones und Rechner)
