@@ -89,11 +89,11 @@ var Sprechender_eindeutiger_Seitenname: PageMedia =
 };
 ```  
 
-### Parameter 
-
-adapterPlayerInstance: "alexa.0." oder "spotify-premium.0." oder "sonos.0." oder "chromecast.0."
-
-**mediaDevice: **
+### Parameter  
+  
+**adapterPlayerInstance:** "alexa.0." oder "spotify-premium.0." oder "sonos.0." oder "chromecast.0."  
+  
+**mediaDevice:**
 * für "alexa.0.": Seriennummer oder Gruppennummer des primären Alexa-Device
 * für "sonos.0.": IP-Adresse des Sonsos primären Sonos-Device (getrennt mit "_") --> Beispiel: 192_168_1_250  
 * für "spotify-premium.0.": Zeile kann gelöscht werden, da Spotify immer nur einen Speaker oder Gruppe steuern kann (automatische Ermittlung)
