@@ -6,6 +6,7 @@ Hier werden demnächst die Card's beschrieben
 4 vertikal angeordnete Steuerelemente
 
 <details>
+  <summary><b>Spoiler:</b> TypeScript Variable Erstellung eine cardEntities</summary>
 var Sprechender_Seitenname: PageEntities =
 {
     "type": "cardEntities",
