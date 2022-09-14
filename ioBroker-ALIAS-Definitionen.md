@@ -1,4 +1,5 @@
-> **Sollte aktuell ein Alias nicht vollständig beschrieben werden, dann gerne eine Frage am Ende des nachfolgenden Thread stellen:**
+> **Seite befindet sich noch im Aufbau  
+> Sollte aktuell ein Alias nicht vollständig beschrieben werden, dann gerne eine Frage am Ende des nachfolgenden Thread stellen:**
 > https://forum.iobroker.net/topic/50888/sonoff-nspanel
 
 # Einleitung: 
