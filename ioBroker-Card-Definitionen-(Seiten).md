@@ -121,7 +121,7 @@ var Sprechender_eindeutiger_Seitenname: PageMedia =
 # cardQR
 ![image](https://user-images.githubusercontent.com/102996011/190121115-436dc34d-3a89-4809-a3c6-2c6132938fd1.png)
 
-(Beispiel: Erstellung des "PageItem" siehe (https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#5-qr-code-page))
+> Beispiel: Erstellung des "PageItem" siehe (https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#5-qr-code-page) by Kuckuckmann
 ```
 var Sprechender_eindeutiger_Seitenname: PageQR = 
 {
