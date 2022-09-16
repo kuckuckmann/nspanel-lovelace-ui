@@ -89,7 +89,7 @@ const swWindy:          RGB = { red: 150, green: 150, blue: 150};
 
 ![image](https://user-images.githubusercontent.com/102996011/190625454-181092a5-83ea-4ac7-bff5-10274ec98ad5.png)
 
-**Folgende Einstellungen sind möglich:**
+**Folgende 4 Einstellungs-Varianten sind möglich:**
 
 **1. Die Icons visualisieren den Relais-Zustand der Hardware-Buttons:**  
 ```
