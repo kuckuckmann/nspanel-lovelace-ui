@@ -119,4 +119,6 @@ export const config: Config = {
 
 **4. Beliebig im Mix der 3 Varianten**
 
+> ScreensaverEntityIcon kann frei gewählt werden: siehe https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html
+
 ## Entity-Status Icons
