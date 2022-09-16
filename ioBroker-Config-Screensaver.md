@@ -124,14 +124,16 @@ export const config: Config = {
 
 
 ## Entity-Status Icons  
-  
+
+![image](https://user-images.githubusercontent.com/102996011/190629284-16c66463-52e0-4a45-b5ed-caa10b1ed443.png)  
+
 > **Achtung: neuer Parameter "ScreensaverEntityIconColor"**  
   
 ```
 export const config: Config = {
     ...
     firstScreensaverEntity: { ScreensaverEntity: "accuweather.0.Daily.Day1.Day.PrecipitationProbability", ScreensaverEntityIcon: "weather-pouring", ScreensaverEntityText: "Regen", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: undefined  },
-    secondScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.WindSpeed", ScreensaverEntityIcon: "weather-windy", ScreensaverEntityText: "Wind", ScreensaverEntityUnitText: "km/h", ScreensaverEntityIconColor: MSYellow },
+    secondScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.WindSpeed", ScreensaverEntityIcon: "weather-windy", ScreensaverEntityText: "Wind", ScreensaverEntityUnitText: "km/h", ScreensaverEntityIconColor: MSRed},
     thirdScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.UVIndex", ScreensaverEntityIcon: "solar-power", ScreensaverEntityText: "UV", ScreensaverEntityUnitText: "", ScreensaverEntityIconColor: undefined  },
     fourthScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.RelativeHumidity", ScreensaverEntityIcon: "water-percent", ScreensaverEntityText: "Luft", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: getState('accuweather.0.Current.RelativeHumidity').val >> 70 ? MSRed : MSGreen },
 ```  
