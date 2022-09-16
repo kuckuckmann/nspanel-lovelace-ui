@@ -6,7 +6,7 @@ Der überarbeitete Screensaver **ab v3.4.0**
 
 # Screensaver Layout (Alternativ)
 ![image](https://user-images.githubusercontent.com/102996011/190611031-c2d5e638-dd45-42d3-9dfc-e058e1b0140f.png)
-
+![image](https://user-images.githubusercontent.com/102996011/190611272-c3bf9f34-c9c0-400d-ae03-c05bdfa8071b.png)
 
 # Screensaver Colors
 
