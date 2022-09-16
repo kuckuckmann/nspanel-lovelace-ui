@@ -6,6 +6,7 @@ Der überarbeitete Screensaver **ab v3.4.0**
 export const config: Config = {
     ...
     alternativeScreensaverLayout: false,
+    autoWeatherColorScreensaverLayout: true,
 ```
 
 Ansicht Weather-Forecast:  
@@ -19,6 +20,7 @@ Ansicht Screensaver-Entities:
 export const config: Config = {
     ...
     alternativeScreensaverLayout: true,
+    autoWeatherColorScreensaverLayout: true,
 ```
   
 Ansicht Weather-Forecast:  
