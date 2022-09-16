@@ -132,10 +132,10 @@ export const config: Config = {
 ```
 export const config: Config = {
     ...
-    firstScreensaverEntity: { ScreensaverEntity: "accuweather.0.Daily.Day1.Day.PrecipitationProbability", ScreensaverEntityIcon: "weather-pouring", ScreensaverEntityText: "Regen", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: undefined  },
-    secondScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.WindSpeed", ScreensaverEntityIcon: "weather-windy", ScreensaverEntityText: "Wind", ScreensaverEntityUnitText: "km/h", ScreensaverEntityIconColor: MSRed},
-    thirdScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.UVIndex", ScreensaverEntityIcon: "solar-power", ScreensaverEntityText: "UV", ScreensaverEntityUnitText: "", ScreensaverEntityIconColor: undefined  },
-    fourthScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.RelativeHumidity", ScreensaverEntityIcon: "water-percent", ScreensaverEntityText: "Luft", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: getState('accuweather.0.Current.RelativeHumidity').val >= 70 ? MSRed : MSGreen },
+    firstScreensaverEntity: { ScreensaverEntity: "accuweather.0.Daily.Day1.Day.PrecipitationProbability", ScreensaverEntityIcon: "weather-pouring", ScreensaverEntityText: "Regen", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100} },
+    secondScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.WindSpeed", ScreensaverEntityIcon: "weather-windy", ScreensaverEntityText: "Wind", ScreensaverEntityUnitText: "km/h", ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 180}},
+    thirdScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.UVIndex", ScreensaverEntityIcon: "solar-power", ScreensaverEntityText: "UV", ScreensaverEntityUnitText: "", ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 9} },
+    fourthScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.RelativeHumidity", ScreensaverEntityIcon: "water-percent", ScreensaverEntityText: "Luft", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100} },
 ```  
 
 Der letzte Parameter **ScreensaverEntityIconColor** der first- fourthScreensaverEntity
@@ -152,9 +152,7 @@ ScreensaverEntityIconColor: MSGreen  //Eine definierte Farbe wird gewählt.
 ```
 
 ```
-getState('accuweather.0.Current.RelativeHumidity').val >= 70 ? MSRed : MSGreen  //Eine Farbe wird dynamisch gewählt.
+ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100}
 ```  
-Hier im Beispiel: Wenn der Wert des Datenpunktes accuweather.0.Current.RelativeHumidity größer als 70 ist, dann setzte die Icon-Farbe rot, ansonsten setzte die Icon-Farbe grün.
-
 
 > **Im Alternativen Layout können nur 3 Entities visualisiert werden. Für die Darstellung  der Luftfeuchte wird die fourthScreensaverEntity verwendet!**
