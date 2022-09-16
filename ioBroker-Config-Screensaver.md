@@ -123,4 +123,15 @@ export const config: Config = {
 > ScreensaverEntityIcon kann für alle 4 Varianten frei gewählt werden: siehe https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html
 
 
-## Entity-Status Icons
+## Entity-Status Icons  
+  
+> **Achtung: neuer Parameter "ScreensaverEntityIconColor"**  
+  
+```
+export const config: Config = {
+    ...
+    firstScreensaverEntity: { ScreensaverEntity: "accuweather.0.Daily.Day1.Day.PrecipitationProbability", ScreensaverEntityIcon: "weather-pouring", ScreensaverEntityText: "Regen", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: undefined  },
+    secondScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.WindSpeed", ScreensaverEntityIcon: "weather-windy", ScreensaverEntityText: "Wind", ScreensaverEntityUnitText: "km/h", ScreensaverEntityIconColor: MSYellow },
+    thirdScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.UVIndex", ScreensaverEntityIcon: "solar-power", ScreensaverEntityText: "UV", ScreensaverEntityUnitText: "", ScreensaverEntityIconColor: undefined  },
+    fourthScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.RelativeHumidity", ScreensaverEntityIcon: "water-percent", ScreensaverEntityText: "Luft", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: getState('accuweather.0.Current.RelativeHumidity').val >> 70 ? MSRed : MSGreen },
+```  
