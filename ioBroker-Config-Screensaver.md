@@ -91,16 +91,16 @@ const swWindy:          RGB = { red: 150, green: 150, blue: 150};
 
 **Folgende Einstellungen sind möglich:**
 
-**Die Icons visualisieren den Relais-Zustand der Hardware-Buttons:**
+**1. Die Icons visualisieren den Relais-Zustand der Hardware-Buttons:**  
 ```
 export const config: Config = {
     ...
     mrIcon1ScreensaverEntity: { ScreensaverEntity: "mqtt.0.SmartHome.NSPanel_1.stat.POWER1", ScreensaverEntityIcon: "light-switch" },
     mrIcon2ScreensaverEntity: { ScreensaverEntity: "mqtt.0.SmartHome.NSPanel_1.stat.POWER2", ScreensaverEntityIcon: "lightbulb" },
 ```
-Die mqtt.0. Datenpunkte entsprechend deiner mqtt-Komfiguration anpassen
-
-**Die Icons sind nicht sichtbar:**
+Die mqtt.0. Datenpunkte entsprechend deiner mqtt-Komfiguration anpassen  
+  
+**2. Die Icons sind nicht sichtbar:**  
 ```
 export const config: Config = {
     ...
@@ -109,4 +109,14 @@ export const config: Config = {
 ```
 
 
-## Ebtitiy-Status Icons
+**3. Die Icons werden mit anderen Datenpunkten vom Typ "boolean" (true/false) belegt:**  
+```
+export const config: Config = {
+    ...
+    mrIcon1ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN1", ScreensaverEntityIcon: "light-switch" },
+    mrIcon2ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN2", ScreensaverEntityIcon: "lightbulb" },
+```
+
+**4. Oder beliebig im Mix der 3 Varianten
+
+## Entity-Status Icons
