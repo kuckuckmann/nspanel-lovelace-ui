@@ -64,7 +64,7 @@ export const config: Config = {
 
 ![image](https://user-images.githubusercontent.com/102996011/190623367-70ebe988-f467-49cf-8e81-2275a8db259b.png)
 
-Ansonsten greifen die Farben
+Ansonsten greifen diese Farben
 ```
 //Auto-Weather-Colors
 const swClearNight:     RGB = { red: 150, green: 150, blue: 100};
