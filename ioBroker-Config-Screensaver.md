@@ -1,5 +1,11 @@
 Der überarbeitete Screensaver **ab v3.4.0**
 
+'''
+export const config: Config = {
+    ...
+    alternativeScreensaverLayout: true,
+'''
+
 # Screensaver Layout (Standard)  
 Ansicht Weather-Forecast:  
 ![image](https://user-images.githubusercontent.com/102996011/190608554-a5719dfa-076c-46f5-9b01-30234493b035.png)  
