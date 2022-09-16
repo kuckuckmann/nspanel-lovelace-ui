@@ -1,18 +1,26 @@
 Der überarbeitete Screensaver **ab v3.4.0**
 
+# Screensaver Layout (Standard)  
+
 ```
 export const config: Config = {
     ...
-    alternativeScreensaverLayout: true,
+    alternativeScreensaverLayout: false,
 ```
 
-# Screensaver Layout (Standard)  
 Ansicht Weather-Forecast:  
 ![image](https://user-images.githubusercontent.com/102996011/190608554-a5719dfa-076c-46f5-9b01-30234493b035.png)  
 Ansicht Screensaver-Entities:  
 ![image](https://user-images.githubusercontent.com/102996011/190608902-6cf53114-3fb8-453f-bf87-f13731d9a71f.png)  
   
-# Screensaver Layout (Alternativ)  
+# Screensaver Layout (Alternativ)
+
+```
+export const config: Config = {
+    ...
+    alternativeScreensaverLayout: true,
+```
+  
 Ansicht Weather-Forecast:  
 ![image](https://user-images.githubusercontent.com/102996011/190611272-c3bf9f34-c9c0-400d-ae03-c05bdfa8071b.png)  
 Ansicht Screensaver-Entities:  
