@@ -125,7 +125,8 @@ export const config: Config = {
 
 ## Entity-Status Icons  
 
-![image](https://user-images.githubusercontent.com/102996011/190629284-16c66463-52e0-4a45-b5ed-caa10b1ed443.png)  
+![image](https://user-images.githubusercontent.com/102996011/190727328-175a5a2d-48ba-4370-911e-c6e2029ef9cc.png)  
+
 
 > **Achtung: neuer Parameter "ScreensaverEntityIconColor"**. Bei Bestehenden Skripten (Migration) **unbedingt analog der nachfolgenden Zeilen erweitern!**
   
