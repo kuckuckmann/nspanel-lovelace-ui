@@ -152,7 +152,7 @@ ScreensaverEntityIconColor: MSGreen  //Eine definierte Farbe wird gewählt.
 ```
 
 ```
-ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100}  //Berechnung über Skala
+ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100}  //Berechnung einer Farbe über über Skala
 ```  
 
 > **Im Alternativen Layout können nur 3 Entities visualisiert werden. Für die Darstellung  der Luftfeuchte wird die fourthScreensaverEntity verwendet!**
