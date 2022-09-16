@@ -117,8 +117,10 @@ export const config: Config = {
     mrIcon2ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN2", ScreensaverEntityIcon: "lightbulb" },
 ```
 
-**4. Beliebig im Mix der 3 Varianten**
+**4. Beliebig im Mix der 3 Varianten**  
 
-> ScreensaverEntityIcon kann frei gewählt werden: siehe https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html
+  
+> ScreensaverEntityIcon kann für alle 4 Varianten frei gewählt werden: siehe https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html
+
 
 ## Entity-Status Icons
