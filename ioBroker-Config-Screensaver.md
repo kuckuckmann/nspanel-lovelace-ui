@@ -127,7 +127,7 @@ export const config: Config = {
 
 ![image](https://user-images.githubusercontent.com/102996011/190629284-16c66463-52e0-4a45-b5ed-caa10b1ed443.png)  
 
-> **Achtung: neuer Parameter "ScreensaverEntityIconColor"**  
+> **Achtung: neuer Parameter "ScreensaverEntityIconColor"**. Bei Bestehenden Skripten (Migration) **unbedingt analog der nachfolgenden Zeilen erweitern!**
   
 ```
 export const config: Config = {
@@ -137,3 +137,21 @@ export const config: Config = {
     thirdScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.UVIndex", ScreensaverEntityIcon: "solar-power", ScreensaverEntityText: "UV", ScreensaverEntityUnitText: "", ScreensaverEntityIconColor: undefined  },
     fourthScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.RelativeHumidity", ScreensaverEntityIcon: "water-percent", ScreensaverEntityText: "Luft", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: getState('accuweather.0.Current.RelativeHumidity').val >> 70 ? MSRed : MSGreen },
 ```  
+
+Der letzte Parameter **ScreensaverEntityIconColor** der first- fourthScreensaverEntity
+
+**Wie kann ich die Farben definieren?**
+Folgende Varianten stehen zur Verfügung:
+
+```
+ScreensaverEntityIconColor: undefined //Die Default-Farbe wird gewählt.
+```
+
+```
+ScreensaverEntityIconColor: MSGreen  //Eine definierte Farbe wird gewählt.
+```
+
+```
+getState('accuweather.0.Current.RelativeHumidity').val >> 70 ? MSRed : MSGreen  //Eine Farbe wird dynamisch gewählt.
+```
+Hier im Beispiel: Wenn der Wert des Datenpunktes accuweather.0.Current.RelativeHumidity größer als 70 ist, dann setzte die Icon-Farbe rot, ansonsten setzte die Icon-Farbe grün.
