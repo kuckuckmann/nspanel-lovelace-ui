@@ -117,6 +117,6 @@ export const config: Config = {
     mrIcon2ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN2", ScreensaverEntityIcon: "lightbulb" },
 ```
 
-**4. Oder beliebig im Mix der 3 Varianten
+**4. Beliebig im Mix der 3 Varianten**
 
 ## Entity-Status Icons
