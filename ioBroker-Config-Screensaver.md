@@ -84,3 +84,7 @@ const swWindy:          RGB = { red: 150, green: 150, blue: 150};
 ```
 
 # Screensaver Icons
+
+## Relais-Status Icons
+
+## Ebtitiy-Status Icons
