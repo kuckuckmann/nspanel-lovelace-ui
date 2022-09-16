@@ -153,5 +153,8 @@ ScreensaverEntityIconColor: MSGreen  //Eine definierte Farbe wird gewählt.
 
 ```
 getState('accuweather.0.Current.RelativeHumidity').val >> 70 ? MSRed : MSGreen  //Eine Farbe wird dynamisch gewählt.
-```
+```  
 Hier im Beispiel: Wenn der Wert des Datenpunktes accuweather.0.Current.RelativeHumidity größer als 70 ist, dann setzte die Icon-Farbe rot, ansonsten setzte die Icon-Farbe grün.
+
+
+> **Im Alternativen Layout können nur 3 Entities visualisiert werden. Für die Darstellung  der Luftfeuchte wird die fourthScreensaverEntity verwendet!**
