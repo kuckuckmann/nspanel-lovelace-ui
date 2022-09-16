@@ -135,7 +135,7 @@ export const config: Config = {
     firstScreensaverEntity: { ScreensaverEntity: "accuweather.0.Daily.Day1.Day.PrecipitationProbability", ScreensaverEntityIcon: "weather-pouring", ScreensaverEntityText: "Regen", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: undefined  },
     secondScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.WindSpeed", ScreensaverEntityIcon: "weather-windy", ScreensaverEntityText: "Wind", ScreensaverEntityUnitText: "km/h", ScreensaverEntityIconColor: MSRed},
     thirdScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.UVIndex", ScreensaverEntityIcon: "solar-power", ScreensaverEntityText: "UV", ScreensaverEntityUnitText: "", ScreensaverEntityIconColor: undefined  },
-    fourthScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.RelativeHumidity", ScreensaverEntityIcon: "water-percent", ScreensaverEntityText: "Luft", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: getState('accuweather.0.Current.RelativeHumidity').val >> 70 ? MSRed : MSGreen },
+    fourthScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.RelativeHumidity", ScreensaverEntityIcon: "water-percent", ScreensaverEntityText: "Luft", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: getState('accuweather.0.Current.RelativeHumidity').val >= 70 ? MSRed : MSGreen },
 ```  
 
 Der letzte Parameter **ScreensaverEntityIconColor** der first- fourthScreensaverEntity
@@ -152,7 +152,7 @@ ScreensaverEntityIconColor: MSGreen  //Eine definierte Farbe wird gewählt.
 ```
 
 ```
-getState('accuweather.0.Current.RelativeHumidity').val >> 70 ? MSRed : MSGreen  //Eine Farbe wird dynamisch gewählt.
+getState('accuweather.0.Current.RelativeHumidity').val >= 70 ? MSRed : MSGreen  //Eine Farbe wird dynamisch gewählt.
 ```  
 Hier im Beispiel: Wenn der Wert des Datenpunktes accuweather.0.Current.RelativeHumidity größer als 70 ist, dann setzte die Icon-Farbe rot, ansonsten setzte die Icon-Farbe grün.
 
