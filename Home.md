@@ -1,1 +1,0 @@
-The main documentation for NSPanel Lovelace UI is here: https://docs.nspanel.pky.eu/
