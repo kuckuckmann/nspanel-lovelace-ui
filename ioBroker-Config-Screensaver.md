@@ -159,6 +159,7 @@ ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100}  //Berechnung einer F
 ```
 ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100, 'val_best': 65}  //Berechnung einer Farbe über über Skala mit Idealwert
 ```  
+z.B. für Luftfeuchte: Der Idealwert liegt zwischen 0 und 100 hier im Beispiel bei 65% (also grün). Die Abschwächung geht zu beiden Seiten (65 zu 0) und (65 zu 100) über gelb nach rot.
 
 
 > **Im Alternativen Layout können nur 3 Entities visualisiert werden. Für die Darstellung  der Luftfeuchte wird die fourthScreensaverEntity verwendet!**
