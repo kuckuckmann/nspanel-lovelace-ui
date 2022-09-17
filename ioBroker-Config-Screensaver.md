@@ -26,7 +26,7 @@ export const config: Config = {
 Ansicht Weather-Forecast:  
 ![image](https://user-images.githubusercontent.com/102996011/190611272-c3bf9f34-c9c0-400d-ae03-c05bdfa8071b.png)  
 Ansicht Screensaver-Entities:  
-![image](https://user-images.githubusercontent.com/102996011/190611031-c2d5e638-dd45-42d3-9dfc-e058e1b0140f.png)  
+![image](https://user-images.githubusercontent.com/102996011/190849999-48ed259b-7c1b-4a4f-887d-f354d7bab07d.png)  
 
 
 # Screensaver Colors
