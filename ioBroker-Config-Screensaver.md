@@ -145,19 +145,28 @@ Der letzte Parameter **ScreensaverEntityIconColor** der first- fourthScreensaver
 Folgende Varianten stehen zur Verfügung:
 
 ```
-ScreensaverEntityIconColor: undefined //Die Default-Farbe wird gewählt.
+ScreensaverEntityIconColor: undefined 
+//Die Default-Farbe wird gewählt.
 ```
 
 ```
-ScreensaverEntityIconColor: MSGreen  //Eine definierte Farbe wird gewählt.
+ScreensaverEntityIconColor: MSGreen  
+//Eine definierte Farbe wird gewählt.
 ```
 
 ```
-ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100}  //Berechnung einer Farbe über über Skala
+ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100}  
+//Berechnung einer Farbe über über Skala z.B. Regenwahrscheinlichkeit
 ```  
 
 ```
-ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100, 'val_best': 65}  //Berechnung einer Farbe über über Skala mit Idealwert
+ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 9}  
+//Berechnung einer Farbe über über Skala z.B. UV-Skala
+```  
+
+```
+ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100, 'val_best': 65}  
+//Berechnung einer Farbe über über Skala mit Idealwert
 ```  
 z.B. für Luftfeuchte: Der Idealwert liegt zwischen 0 und 100 hier im Beispiel bei 65% (also grün). Die Abschwächung geht zu beiden Seiten (65 zu 0) und (65 zu 100) über gelb nach rot.
 
