@@ -184,10 +184,10 @@ Das zugehörige PageItem im TypeScript:
 ![image](https://user-images.githubusercontent.com/102996011/189499885-ace4b001-0c9c-4d0d-9667-d7c808d1f8fc.png)
 
 Folgende Parameter können verwendet werden:  
-* name: legt den Anzeigenamen fest
-* icon: Symbol
-* unit: Einheit der Luftfeuchte
-* onColor: Farbe des Icons
+* name: legt den Anzeigenamen fest  
+* icon: Symbol  
+* unit: Einheit der Luftfeuchte  
+* onColor: Farbe des Icons  
 
 `<PageItem>{ id: "alias.0.NSPanel_1.TestFeuchtigkeit", name: "Luftfeuchte außen", icon: "water-percent", unit: "%H", onColor: White}`  
 
@@ -280,9 +280,16 @@ maxValue: Minimale Lautstärkewert (Default 100)
 
 ***
 
-### Licht (channel light)
+### Licht (channel light)  
+![image](https://user-images.githubusercontent.com/102996011/191105535-ae08921a-6608-4a8c-94c1-2846b2535f9b.png)
 
-> Beschreibung für den Alias Licht folgt...
+**Zur Steuerung von Leuchtmitteln ohne Farbtemperatur oder Farbeffekten (Alternativ kann auch Socket verwendet werden)**.  
+
+Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **Licht** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
+![image](https://user-images.githubusercontent.com/102996011/191105077-428ba7d0-f62f-43e4-a829-ba42f260d727.png)
+ 
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:  
+![image](https://user-images.githubusercontent.com/102996011/191105279-aae89e95-cb4f-46d1-91b9-0fcd7e1385c2.png)
 
 ***
 
