@@ -635,13 +635,16 @@ Die Datenpunkte AUTOMATIC, MANUAL und VACATION können nicht sofort zugewiesen w
 Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:
 ![image](https://user-images.githubusercontent.com/102996011/191056980-98c196cf-7991-4d33-978b-b19b31403477.png)  
 
+> Es müssen nicht alle 5 Modi vorhanden sein. Das Skript liest die vorhandenen Modi ein und verarbeitet auch nur diese  
+
 Das zugehörige PageItem im TypeScript:  
 ![image](https://user-images.githubusercontent.com/102996011/191057213-18660084-dd69-4af9-9cfd-c677002eb017.png)
 
 **Parameter:**  
 name: Vom Alias abweichender Name  
-minValue: Minimaltemperatur Beispiel 5°C = 50 
-maxValue: Minimaltemperatur Beispiel 30°C = 300
+minValue: Minimaltemperatur Beispiel 5°C = 50  
+maxValue: Minimaltemperatur Beispiel 30°C = 300  
+
 
 ***
 
