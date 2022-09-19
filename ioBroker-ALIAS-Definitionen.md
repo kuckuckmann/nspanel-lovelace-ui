@@ -572,8 +572,6 @@ Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichni
 Das zugehörige PageItem im TypeScript:  
 ![image](https://user-images.githubusercontent.com/102996011/191095621-cb705027-32ae-4443-b21a-913dfcd9663b.png)  
 
-<PageItem>{ id: "alias.0.NSPanel_1.TestRGBLicht", name: "RGB-Licht", minValueBrightness: 0, maxValueBrightness: 100, interpolateColor: true},
-
 **Parameter:**  
 name: Vom Alias abweichender Name  
 offColor: abweichende Farbe für aus  
@@ -593,7 +591,34 @@ Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 
 ### RGB-Licht-einzeln
 
-> Beschreibung für den Alias RGB-Licht-einzeln folgt...
+![image](https://user-images.githubusercontent.com/102996011/191097789-1ffe592e-6316-4311-87cc-e0f0ed41a8ef.png)
+
+> Der Alias RGB-Licht wird verwendet, wenn als **Datenpunkte RGB im Hexadezimal-Format (z.B. #7dff7e)** vorliegen.
+
+Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **RGB-Licht** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
+![image](https://user-images.githubusercontent.com/102996011/191098059-280232ca-5d69-432e-a32d-f85984ce68f7.png)  
+> Für das Beispiel standen leider keine echten Adapter-Datenpunkte zur Verfügung, daher die Darstellung in 0_userdata.0...
+
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:
+![image](https://user-images.githubusercontent.com/102996011/191097931-113a507e-e52a-4a6f-a695-6e5eedb2d383.png)
+
+Das zugehörige PageItem im TypeScript:  
+![image](https://user-images.githubusercontent.com/102996011/191098487-bd09249b-56a2-4253-b6f3-74b21f8a20f5.png)  
+
+**Parameter:**  
+name: Vom Alias abweichender Name  
+offColor: abweichende Farbe für aus  
+onColor: abweichende Farbe für an  
+minValueBrightness: Minimale Helligkeit (Default 0)  
+maxValueBrightness: Minimale Maxiamale Helligkeit (Default 100)
+minValueColorTemp: Minimale Farbtemperatur je nach Leuchtmittel/Adapter (z.B. 500K) 
+maxValueColorTemp: Maximale Farbtemperatur je nach Leuchtmittel/Adapter (z.B. 6500K)
+interpolateColor: Errechnet den Farbton und weist diesen dem Icon zu (Beispiel Grün)
+
+Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
+![image](https://user-images.githubusercontent.com/102996011/191096635-91bdab6c-e88f-459a-9699-9d2e6804c86a.png)  
+
+![image](https://user-images.githubusercontent.com/102996011/191096702-a0b2c5a2-f19e-4e61-9831-09b88b589332.png) 
 
 ***
 
