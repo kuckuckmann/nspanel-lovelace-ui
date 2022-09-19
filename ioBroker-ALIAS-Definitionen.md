@@ -651,7 +651,7 @@ maxValue: Minimaltemperatur Beispiel 30°C = 300
 ### Tür
 ![image](https://user-images.githubusercontent.com/102996011/189403985-7eed8829-ea85-4785-88f9-610edaeb9485.png)
 
-> Beschreibung für den Alias Tür folgt...
+> Analog Alias Fenster. Im "Schritt 1" wird jedoch der Alias-Gerätetyp Tür gewählt  
 
 ***
 
