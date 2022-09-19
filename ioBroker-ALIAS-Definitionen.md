@@ -557,7 +557,39 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', c
 
 ### RGB-Licht 
 
-> Beschreibung für den Alias RGB-Licht folgt...
+![image](https://user-images.githubusercontent.com/102996011/191094426-3c86ce5a-3d95-4e95-ba68-aefb09a6e9c3.png)
+
+> Der Alias RGB-Licht wird verwendet, wenn als Datenpunkte **RED, GREEN, BLUE und WHITE** vorliegen.
+
+Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **RGB-Licht** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
+![image](https://user-images.githubusercontent.com/102996011/191094851-cbd29a38-1cb7-400f-89b4-c647ca1f03eb.png)  
+![image](https://user-images.githubusercontent.com/102996011/191094933-317204e0-01ab-43eb-83ab-c2efce8bbb91.png)
+> Für das Beispiel standen leider keine echten Adapter-Datenpunkte zur Verfügung, daher die Darstellung in 0_userdata.0...
+
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:
+![image](https://user-images.githubusercontent.com/102996011/191095305-86bbdbdd-220d-4f9a-a85f-b74cf934f422.png)  
+
+Das zugehörige PageItem im TypeScript:  
+![image](https://user-images.githubusercontent.com/102996011/191095621-cb705027-32ae-4443-b21a-913dfcd9663b.png)  
+
+<PageItem>{ id: "alias.0.NSPanel_1.TestRGBLicht", name: "RGB-Licht", minValueBrightness: 0, maxValueBrightness: 100, interpolateColor: true},
+
+**Parameter:**  
+name: Vom Alias abweichender Name  
+offColor: abweichende Farbe für aus  
+onColor: abweichende Farbe für an  
+minValueBrightness: Minimale Helligkeit (Default 0)  
+maxValueBrightness: Minimale Maxiamale Helligkeit (Default 100)
+interpolateColor: Errechnet den Farbton und weist diesen dem Icon zu (Beispiel Pink)
+
+Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
+![image](https://user-images.githubusercontent.com/102996011/191096635-91bdab6c-e88f-459a-9699-9d2e6804c86a.png)  
+
+![image](https://user-images.githubusercontent.com/102996011/191096702-a0b2c5a2-f19e-4e61-9831-09b88b589332.png)  
+
+
+
+
 
 ***
 
