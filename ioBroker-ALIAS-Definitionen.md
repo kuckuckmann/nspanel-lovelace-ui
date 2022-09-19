@@ -219,6 +219,26 @@ Der Schaltzustand (Lampe an/aus) kann direkt aus der cardEntities oder carGrid e
 ![image](https://user-images.githubusercontent.com/102996011/189403645-a9511303-c873-469c-9e92-136809162728.png)
 ![image](https://user-images.githubusercontent.com/102996011/189404981-bbd544b0-1019-48d7-a5eb-8f38616bb8b4.png)
 
+Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **Info** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
+![image](https://user-images.githubusercontent.com/102996011/191102534-cd77c638-a947-46b7-a2c4-dafd4ba1380a.png)
+
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:  
+![image](https://user-images.githubusercontent.com/102996011/191102721-3a6a5ab6-792c-4274-8ff3-227c61d4a949.png)
+
+Beispiel für den PageItem  
+`<PageItem>{ id: "alias.0.NSPanel_1.TestInfo", name: "Windstärke", icon: "wind-power-outline", offColor: MSRed, onColor: MSGreen, unit: "bft", minValue: 0, maxValue: 12, interpolateColor: true, useColor: true }`
+
+**Parameter**
+name:
+icon:
+offcolor:
+oncolor:
+unit:
+minValue:
+maxValue:
+interpolateColor:
+useColor:
+
 ***
 
 ### Jalousien (channel blind)
