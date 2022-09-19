@@ -599,6 +599,9 @@ Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovela
 ![image](https://user-images.githubusercontent.com/102996011/191098059-280232ca-5d69-432e-a32d-f85984ce68f7.png)  
 > Für das Beispiel standen leider keine echten Adapter-Datenpunkte zur Verfügung, daher die Darstellung in 0_userdata.0...
 
+Alternativ kann dieser Alias auch via CIE, d.h über den XY Parameter (z.B. beim deConz-Adapter) gesteuert werden:  
+![image](https://user-images.githubusercontent.com/102996011/191099845-2d9364a1-52db-40c1-9e83-876a1a251e41.png)  
+
 Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:
 ![image](https://user-images.githubusercontent.com/102996011/191097931-113a507e-e52a-4a6f-a695-6e5eedb2d383.png)
 
@@ -614,6 +617,7 @@ maxValueBrightness: Minimale Maxiamale Helligkeit (Default 100)
 minValueColorTemp: Minimale Farbtemperatur je nach Leuchtmittel/Adapter (z.B. 500K) 
 maxValueColorTemp: Maximale Farbtemperatur je nach Leuchtmittel/Adapter (z.B. 6500K)
 interpolateColor: Errechnet den Farbton und weist diesen dem Icon zu (Beispiel Grün)
+colormode: "xy" oder "rgb" (default) zur Steuerung der CIE XY Color-Datenpunkte
 
 Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 ![image](https://user-images.githubusercontent.com/102996011/191096635-91bdab6c-e88f-459a-9699-9d2e6804c86a.png)  
