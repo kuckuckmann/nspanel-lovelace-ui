@@ -559,7 +559,7 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', c
 
 ![image](https://user-images.githubusercontent.com/102996011/191094426-3c86ce5a-3d95-4e95-ba68-aefb09a6e9c3.png)
 
-> Der Alias RGB-Licht wird verwendet, wenn als Datenpunkte **RED, GREEN, BLUE und WHITE** vorliegen.
+> Der Alias RGB-Licht wird verwendet, wenn als Color Datenpunkte **RED, GREEN, BLUE und WHITE** vorliegen.
 
 Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **RGB-Licht** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
 ![image](https://user-images.githubusercontent.com/102996011/191094851-cbd29a38-1cb7-400f-89b4-c647ca1f03eb.png)  
@@ -593,7 +593,7 @@ Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 
 ![image](https://user-images.githubusercontent.com/102996011/191097789-1ffe592e-6316-4311-87cc-e0f0ed41a8ef.png)
 
-> Der Alias RGB-Licht wird verwendet, wenn als **Datenpunkte RGB im Hexadezimal-Format (z.B. #7dff7e)** vorliegen.
+> Der Alias RGB-Licht wird verwendet, wenn als **Color Datenpunkt (RGB) im Hexadezimal-Format (z.B. #7dff7e)** vorliegt.
 
 Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **RGB-Licht** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
 ![image](https://user-images.githubusercontent.com/102996011/191098059-280232ca-5d69-432e-a32d-f85984ce68f7.png)  
