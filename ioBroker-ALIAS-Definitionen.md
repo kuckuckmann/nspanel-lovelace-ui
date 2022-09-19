@@ -281,7 +281,8 @@ maxValue: Minimale Lautstärkewert (Default 100)
 ***
 
 ### Licht (channel light)  
-![image](https://user-images.githubusercontent.com/102996011/191105535-ae08921a-6608-4a8c-94c1-2846b2535f9b.png)
+![image](https://user-images.githubusercontent.com/102996011/191106464-5ce4597e-fa4b-4e48-89e0-40d1cd9653d2.png)  
+![image](https://user-images.githubusercontent.com/102996011/191106556-aa7dc0e8-00a5-4b09-90c5-9266e524567f.png)  
 
 **Zur Steuerung von Leuchtmitteln ohne Farbtemperatur oder Farbeffekten (Alternativ kann auch Socket verwendet werden)**.  
 
