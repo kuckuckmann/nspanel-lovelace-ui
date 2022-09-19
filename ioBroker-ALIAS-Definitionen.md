@@ -580,16 +580,14 @@ offColor: abweichende Farbe für aus
 onColor: abweichende Farbe für an  
 minValueBrightness: Minimale Helligkeit (Default 0)  
 maxValueBrightness: Minimale Maxiamale Helligkeit (Default 100)
+minValueColorTemp: Minimale Farbtemperatur je nach Leuchtmittel/Adapter (z.B. 500K) 
+maxValueColorTemp: Maximale Farbtemperatur je nach Leuchtmittel/Adapter (z.B. 6500K)
 interpolateColor: Errechnet den Farbton und weist diesen dem Icon zu (Beispiel Pink)
 
 Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 ![image](https://user-images.githubusercontent.com/102996011/191096635-91bdab6c-e88f-459a-9699-9d2e6804c86a.png)  
 
 ![image](https://user-images.githubusercontent.com/102996011/191096702-a0b2c5a2-f19e-4e61-9831-09b88b589332.png)  
-
-
-
-
 
 ***
 
