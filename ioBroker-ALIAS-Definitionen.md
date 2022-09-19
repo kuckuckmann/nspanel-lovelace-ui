@@ -655,12 +655,16 @@ Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 ***
 
 ### Schieberegler (channel slider)
+![image](https://user-images.githubusercontent.com/102996011/191107077-4ad6e4e8-7b59-4427-9a69-25a4ef3c755d.png)
+
 
 > Beschreibung für den Alias Schieberegler folgt...
 
 ***
 
-### Steckdose (channel socket)
+### Steckdose (channel socket)  
+
+![image](https://user-images.githubusercontent.com/102996011/191107198-298d0b94-dcc2-49f9-bcbb-92b926c7ae3a.png)  
 
 > Beschreibung für den Alias Steckdose folgt...
 
@@ -668,7 +672,7 @@ Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 
 ### Taste (channel button)
 
-![image](https://user-images.githubusercontent.com/102996011/189404781-7fe9c2b0-e81d-446f-9aab-50865cc39a40.png)
+![image](https://user-images.githubusercontent.com/102996011/189404781-7fe9c2b0-e81d-446f-9aab-50865cc39a40.png)  
 
 > Beschreibung für den Alias Taste folgt...
 
@@ -743,13 +747,14 @@ maxValue: Minimaltemperatur Beispiel 30°C = 300
 ***
 
 ### Verschluss (channel lock)
+
 ![image](https://user-images.githubusercontent.com/102996011/189404088-9a2cd3ea-5c43-4c3f-9bd9-e58eac2e6fd6.png)
 
 > Beschreibung für den Alias Verschluss folgt...
 
 ***
 
-### Warnung (channel warning)
+### Warnung (channel warning)  
 
 Dieser Alias dient nur der Einbindung des dynamischen Abfallkalenders. Dieser ist hier ausführlich beschrieben:  
 https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#4-abfallkalender
