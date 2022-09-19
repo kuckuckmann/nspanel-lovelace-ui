@@ -215,31 +215,31 @@ Der Schaltzustand (Lampe an/aus) kann direkt aus der cardEntities oder carGrid e
 
 ***
 
-### Info
+### Info (channel info)
 ![image](https://user-images.githubusercontent.com/102996011/189403645-a9511303-c873-469c-9e92-136809162728.png)
 ![image](https://user-images.githubusercontent.com/102996011/189404981-bbd544b0-1019-48d7-a5eb-8f38616bb8b4.png)
 
 ***
 
-### Jalousien
+### Jalousien (channel blind)
 ![image](https://user-images.githubusercontent.com/102996011/189403904-914ff6ad-a7df-4859-a523-ff5ec02f2381.png)  
   
 Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#8-rolladen--jalousie--shutter
 
 ***
 
-### Klimaanlage - cardThermo
+### Klimaanlage - cardThermo - (channel airCondition)
 ![image](https://user-images.githubusercontent.com/102996011/189401952-86b47d90-69f2-4229-909c-8d4c2ee84d20.png)
 ***
 
-### Lautstärke
+### Lautstärke (channel volume)
 ![image](https://user-images.githubusercontent.com/102996011/189403220-a2540eb2-4b47-4947-9258-a7687403710c.png)
 
 > **Analog zum Alias "Lautstärkegruppe", jedoch mit dem Alias-Gerätetypen "Lautstärke**"
 
 ***
 
-### Lautstärke-Gruppe
+### Lautstärke-Gruppe (channel volumeGroup)
 ![image](https://user-images.githubusercontent.com/102996011/189403220-a2540eb2-4b47-4947-9258-a7687403710c.png)
 
 Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **HUE-Licht** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
@@ -260,7 +260,7 @@ maxValue: Minimale Lautstärkewert (Default 100)
 
 ***
 
-### Licht
+### Licht (channel light)
 
 > Beschreibung für den Alias Licht folgt...
 
@@ -555,7 +555,7 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', c
 
 ***
 
-### RGB-Licht 
+### RGB-Licht (channel rgb)
 
 ![image](https://user-images.githubusercontent.com/102996011/191094426-3c86ce5a-3d95-4e95-ba68-aefb09a6e9c3.png)
 
@@ -589,7 +589,7 @@ Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 
 ***
 
-### RGB-Licht-einzeln
+### RGB-Licht-einzeln (channel rgbSingle)
 
 ![image](https://user-images.githubusercontent.com/102996011/191097789-1ffe592e-6316-4311-87cc-e0f0ed41a8ef.png)
 
@@ -626,19 +626,19 @@ Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 
 ***
 
-### Schieberegler
+### Schieberegler (channel slider)
 
 > Beschreibung für den Alias Schieberegler folgt...
 
 ***
 
-### Steckdose
+### Steckdose (channel socket)
 
 > Beschreibung für den Alias Steckdose folgt...
 
 ***
 
-### Taste
+### Taste (channel button)
 
 ![image](https://user-images.githubusercontent.com/102996011/189404781-7fe9c2b0-e81d-446f-9aab-50865cc39a40.png)
 
@@ -646,13 +646,13 @@ Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 
 ***
 
-### Tastensensor
+### Tastensensor (channel buttonSensor)
 
 > Beschreibung für den Alias Tastensenso folgt...
 
 ***
 
-### Temperatur
+### Temperatur (channel temperature)
 
 ![image](https://user-images.githubusercontent.com/102996011/189403527-4a94e690-9a5d-4121-8dcb-5636951a7df6.png)
 
@@ -660,7 +660,7 @@ Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 
 ***
 
-### Thermostat - cardThermo
+### Thermostat - cardThermo - (channel thermostat)
 ![image](https://user-images.githubusercontent.com/102996011/191052850-06276337-1000-4eb6-b010-5f6d49fd0e24.png)
 
 Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **Thermostat** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
@@ -707,21 +707,21 @@ maxValue: Minimaltemperatur Beispiel 30°C = 300
 
 ***
 
-### Tür
+### Tür (channel door)
 ![image](https://user-images.githubusercontent.com/102996011/189403985-7eed8829-ea85-4785-88f9-610edaeb9485.png)
 
 > Analog Alias Fenster. Im "Schritt 1" wird jedoch der Alias-Gerätetyp Tür gewählt  
 
 ***
 
-### Verschluss
+### Verschluss (channel lock)
 ![image](https://user-images.githubusercontent.com/102996011/189404088-9a2cd3ea-5c43-4c3f-9bd9-e58eac2e6fd6.png)
 
 > Beschreibung für den Alias Verschluss folgt...
 
 ***
 
-### Warnung
+### Warnung (channel warning)
 
 Dieser Alias dient nur der Einbindung des dynamischen Abfallkalenders. Dieser ist hier ausführlich beschrieben:  
 https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#4-abfallkalender
