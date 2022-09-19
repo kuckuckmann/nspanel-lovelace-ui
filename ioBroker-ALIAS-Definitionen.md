@@ -602,9 +602,46 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', c
 ***
 
 ### Thermostat - cardThermo
-![image](https://user-images.githubusercontent.com/102996011/189402503-c25994b5-d16d-46f7-b34b-0620122f07fc.png)
+![image](https://user-images.githubusercontent.com/102996011/191052850-06276337-1000-4eb6-b010-5f6d49fd0e24.png)
 
-> Beschreibung für den Alias Thermostat folgt...
+Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **Thermostat** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
+
+![image](https://user-images.githubusercontent.com/102996011/191053643-75545e7e-995e-4a28-88c3-87268dcbb44d.png)  
+
+Im unteren Teil können ebenfalls Indikatoren eingeblendet werden:  
+![image](https://user-images.githubusercontent.com/102996011/191053914-f617f264-d7e4-4726-9a09-e332c36c2d92.png)  
+z.B.  
+![image](https://user-images.githubusercontent.com/102996011/191054046-4d3279f1-6dc8-484d-b70f-9dd65ae9929b.png)  
+oder  
+![image](https://user-images.githubusercontent.com/102996011/191054242-dc679425-592e-490a-9383-73030a9e20e5.png)  
+etc.  
+
+Wenn der Thermostat über Mode verfügt und dieser auch genutzt werden soll:  
+![image](https://user-images.githubusercontent.com/102996011/191054557-89060dca-825a-4d38-b756-c67eb2fbe7ea.png)  
+
+Mode wird über externe Datenpunkte gesteuert. Hierzu legst du dir unter 0_userdate.0. einen Ordner deiner Wahl an. In diesem Ordner können jetzt bis zu 5 Datenpunkte (Alle vom Typ boolean (true/false)) angelegt werden:
+* AUTOMATIC  
+* MANUAL  
+* PARTY  
+* VACATION  
+* BOOST  
+
+Im Alias können "BOOST" und "PARTY" (sofern gewünscht) bereits den neu erstellten Datenpunkten zugewiesen werden:  
+![image](https://user-images.githubusercontent.com/102996011/191055917-bf05d8a1-fc3f-4c4e-a4a8-da5aafcf1317.png)  
+
+Die Datenpunkte AUTOMATIC, MANUAL und VACATION können nicht sofort zugewiesen werden, da die ALIAS-Definition diese Objekte nicht vorsieht. In diesem Fall kannst du diese selbst hinzufügen und im Anschluss deine erstellten Datenpunkten zuordnen:  
+![image](https://user-images.githubusercontent.com/102996011/191056534-c33656e6-178c-4f95-a47a-4c609f5236f1.png)  
+
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:
+![image](https://user-images.githubusercontent.com/102996011/191056980-98c196cf-7991-4d33-978b-b19b31403477.png)  
+
+Das zugehörige PageItem im TypeScript:  
+![image](https://user-images.githubusercontent.com/102996011/191057213-18660084-dd69-4af9-9cfd-c677002eb017.png)
+
+**Parameter:**  
+name: Vom Alias abweichender Name  
+minValue: Minimaltemperatur Beispiel 5°C = 50 
+maxValue: Minimaltemperatur Beispiel 30°C = 300
 
 ***
 
