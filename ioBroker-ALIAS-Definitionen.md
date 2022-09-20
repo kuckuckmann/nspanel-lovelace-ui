@@ -681,7 +681,22 @@ usecolor:
 
 ![image](https://user-images.githubusercontent.com/102996011/191107198-298d0b94-dcc2-49f9-bcbb-92b926c7ae3a.png)  
 
-> Beschreibung für den Alias Steckdose folgt...
+Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **Steckdose** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
+![image](https://user-images.githubusercontent.com/102996011/191347586-e04414dd-7a87-4821-9c31-913874f9a5c3.png)  
+ 
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:  
+![image](https://user-images.githubusercontent.com/102996011/191347855-92667d50-93ce-46fe-9d4a-3fb26bc99db2.png)  
+
+Das zugehörige PageItem im TypeScript:  
+`<PageItem>{ id: "alias.0.NSPanel_1.Luftreiniger", icon: "power", icon2: "power",offColor: MSRed, onColor: MSGreen}`  
+
+**Parameter:**  
+name: Vom Alias abweichender Name  
+offColor: abweichende Farbe für aus  
+onColor: abweichende Farbe für an  
+icon: zu visualisierendes Icon für On  
+icon2: zu visualisierendes Icon für Off
+
 
 ***
 
