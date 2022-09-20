@@ -657,8 +657,23 @@ Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 ### Schieberegler (channel slider)
 ![image](https://user-images.githubusercontent.com/102996011/191107077-4ad6e4e8-7b59-4427-9a69-25a4ef3c755d.png)
 
+Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **Schieberegler** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
+![image](https://user-images.githubusercontent.com/102996011/191345106-68981bc1-f083-4a35-b0b9-3fc46fe459b5.png)  
+ 
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:  
+![image](https://user-images.githubusercontent.com/102996011/191345261-2f138190-2de3-4bef-80ba-d1c24833619b.png)  
 
-> Beschreibung für den Alias Schieberegler folgt...
+Das zugehörige PageItem im TypeScript:  
+`<PageItem>{ id: "alias.0.NSPanel_1.Dimmode_BrightnessDay", name: "Brightness Tag", icon: "brightness-5", offColor: MSYellow, onColor: MSYellow, useColor: true, minValue: 5, maxValue: 10}`  
+
+**Parameter:**  
+name: Vom Alias abweichender Name  
+offColor: abweichende Farbe für aus  
+onColor: abweichende Farbe für an  
+icon: zu visualisierendes Icon  
+minValue: Minimaler Sliderwert  
+maxValue: Maximaler Sliderwert  
+usecolor:  
 
 ***
 
