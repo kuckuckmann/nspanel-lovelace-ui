@@ -700,7 +700,7 @@ Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovela
 ![image](https://user-images.githubusercontent.com/102996011/191053643-75545e7e-995e-4a28-88c3-87268dcbb44d.png)  
 
 Im unteren Teil können ebenfalls Indikatoren eingeblendet werden:  
-![image](https://user-images.githubusercontent.com/102996011/191053914-f617f264-d7e4-4726-9a09-e332c36c2d92.png)  
+![image](https://user-images.githubusercontent.com/102996011/191338688-e5cf4b91-2385-4f09-8523-e52ed797b9be.png)  
 z.B.  
 ![image](https://user-images.githubusercontent.com/102996011/191054046-4d3279f1-6dc8-484d-b70f-9dd65ae9929b.png)  
 oder  
@@ -727,6 +727,8 @@ Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichni
 ![image](https://user-images.githubusercontent.com/102996011/191056980-98c196cf-7991-4d33-978b-b19b31403477.png)  
 
 > Es müssen nicht alle 5 Modi vorhanden sein. Das Skript liest die vorhandenen Modi ein und verarbeitet auch nur diese  
+
+> Insgesamt stehen Icons im unteren Bereich zur Verfügung. Somit ist es nicht möglich 5 Modi-Icons und 7 Indikatoren-Icons gleichzeitig zu visualisieren. Die Modi (falls im Alias definiert) werden zuerst visualisiert (vorne) und dann, falls verfügbar mit Indikatoren (sofern im Alias definiert) auf insgesamt 8 Icons aufgefüllt.
 
 Das zugehörige PageItem im TypeScript:  
 ![image](https://user-images.githubusercontent.com/102996011/191057213-18660084-dd69-4af9-9cfd-c677002eb017.png)
