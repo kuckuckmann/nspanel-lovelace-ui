@@ -681,6 +681,8 @@ usecolor:
 
 ![image](https://user-images.githubusercontent.com/102996011/191107198-298d0b94-dcc2-49f9-bcbb-92b926c7ae3a.png)  
 
+> Alternativ kann der Alias Licht verwendet werden!
+
 Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **Steckdose** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
 ![image](https://user-images.githubusercontent.com/102996011/191347586-e04414dd-7a87-4821-9c31-913874f9a5c3.png)  
  
