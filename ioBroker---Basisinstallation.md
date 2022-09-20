@@ -153,10 +153,10 @@ einsehen und später (kommen wir bei der Alias-Erstellung noch zu) auch jedes Ic
 ***
 
 ## **9.)  „NSPanelTs.ts“ anlegen**
-Unter dem regulären Vezeichnisbaum „common“ im ioBroker-Menüpunkt Skripte erzeugst du (gerne auch in weiteren Unterverzeichnissen) ein weiteres TypeScript (Aktuell in für die TFT-Version 3.2.3) mit dem Inhalt:  
+Unter dem regulären Vezeichnisbaum „common“ im ioBroker-Menüpunkt Skripte erzeugst du (gerne auch in weiteren Unterverzeichnissen) ein weiteres TypeScript (Aktuell in für die TFT-Version 3.4.0.5) mit dem Inhalt:  
 **https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts**  
 
-Für jedes einzelne NSPanel das du konfigurieren möchtest, musst du dieses Skript anlegen und speziell für dieses jeweilige NSPanel entsprechende Einstellungen vornehmen. Für den Skriptnamen verwende ich in der Regel eine Kombination aus Panel und Skriptversion, wie z.B.: NSPANEL_1_3.2.3
+Für jedes einzelne NSPanel das du konfigurieren möchtest, musst du dieses Skript anlegen und speziell für dieses jeweilige NSPanel entsprechende Einstellungen vornehmen. Für den Skriptnamen verwende ich in der Regel eine Kombination aus Panel und Skriptversion, wie z.B.: NSPANEL_1_3.4.0
 
 (Es kommen in regelmäßigen Abständen weitere NSPanel-Features und Bug-Fixes in das GitHub-Skript in denen dann nur noch der untere Teil (--- ab hier keine Konfiguration mehr ---) ausgetauscht werden muss und die NSPanel-Parameter erhalten bleiben)
 
