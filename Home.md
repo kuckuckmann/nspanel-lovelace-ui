@@ -13,3 +13,5 @@ The main documentation for NSPanel Lovelace UI is here: https://docs.nspanel.pky
 
 LG  
 Die Crew
+
+![image](https://user-images.githubusercontent.com/102996011/191578765-fca188e1-6b16-4a8f-8e10-63224d2145c2.png)
