@@ -44,6 +44,12 @@ Der eingebaute Buzzer des ESP32 kann auch Geräusche zur Unterstützung der Tast
 `rule3 on CustomRecv do Buzzer 1 endon`  
 `rule3 1`  
 
+Alternativ gibt Tasmota noch folgende Befehle per Default mit:  
+
+`Buzzer 1`
+oder  
+`Buzzer 1,2,3,0xF54`  
+
 > Weitere Infos:  
 > https://tasmota.github.io/docs/Buzzer/
 
