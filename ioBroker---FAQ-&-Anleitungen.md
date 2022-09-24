@@ -14,6 +14,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **8.)** Rolladen / Jalousie / Shutter  
 **9.)** Alias "Taste" für Auswahl eines Radiosenders  
 **10.)** DWD Daten an verschiedene NSPanels schicken  
+**11.)** PV-Daten Info Seite
 
 # **Changelog**
 <details>
@@ -38,6 +39,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 09.09.2022 - Alias "Media" für cardMedia - in Erstellung  
 14.09.2022 - bug im js-script Abfall behoben
 24.09.2022 - DWD Blockly - erstellt  
+24.09.2022 - PV-Daten Info Seite - erstellt  
 </details>  
 
 
@@ -2872,7 +2874,8 @@ Im Anschluss klickst du auf fx (am Ende des Eintrags) und trägst den Sender ein
 ***
 
 ## **10.) DWD Daten an verschiedene NSPanels schicken**
-
+* **Quelle:**  
+Post [1407](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1407) im ioBroker Forum.
 * **Voraussetzung:**  
 Adapter DWD muss installiert sein.    
 
@@ -3018,5 +3021,25 @@ Adapter DWD muss installiert sein.
 </xml>
 `
 </details>   
+
+***
+
+**11.) PV-Daten Info Seite**  
+
+* **Quelle:**  
+Post [1435](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1435?_=1663104710126#) im ioBroker Forum.
+
+* **Die Idee:**
+Mit einer PageEntitie eine Infoseite bauen auf der die Daten eine PV-Anlage / Balkonkraftwerk abgebildert werden können.  
+
+* **ioBroker**  
+Die Datenpunkte, in der die Daten der PV-Anlage abgegriffen werden können müssen vorhanden sein.  
+
+* **Alias:**  
+
+
+* ****  
+
+* ****  
 
 ***
