@@ -2877,6 +2877,9 @@ Im Anschluss klickst du auf fx (am Ende des Eintrags) und trägst den Sender ein
 Adapter DWD muss installiert sein.    
 
 * **Blockly:**  
+
+![image](https://user-images.githubusercontent.com/99131208/192108541-d7ad26de-7086-40b7-95e8-c4272f76a4b4.png)  
+
   
 <details>
   <summary>Blockly Skript</summary>  
