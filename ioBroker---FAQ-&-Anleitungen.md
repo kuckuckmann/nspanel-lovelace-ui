@@ -3043,9 +3043,9 @@ Für jeden Wert, der auf der Card angezeigt werden soll muss ein Alias vom Typ I
 ![1663099722144-a97c0755-8cee-4456-9602-dcb1d5dfc977-image](https://user-images.githubusercontent.com/99131208/192109326-a69db521-9f00-4912-84c9-164bc482ae76.png)  
   
 * **Konfigurationsskript:**  
-Hier das beispiel, wie die Card dann im Konfigurationsskript hinzugefügt werden muss. Man beachte hier die Besonderheit "**unit: "<Wert der Einheit>"**", welche dann am Ende der zeile angezeigt wird:  
+Hier das beispiel, wie die Card dann im Konfigurationsskript hinzugefügt werden muss. Man beachte hier die Besonderheit "**unit: "Wert der Einheit"**", welche dann am Ende der zeile angezeigt wird:  
   
-`
+``` 
 var PV_Anlage: PageEntities =
 {
     "type": "cardEntities",
@@ -3060,7 +3060,7 @@ var PV_Anlage: PageEntities =
         <PageItem>{ id: "alias.0.NSPanel_1.VierterWertderPVAnlage", name: "Mein PV Wert", icon: "solar-power", unit: "W", offColor: MSYellow, onColor: MSYellow, useColor: true}
     ]
 };
-`
+``` 
   
 ![image](https://user-images.githubusercontent.com/99131208/192109664-af10660d-923b-4706-b1d4-78431162730a.png)  
   
