@@ -14,7 +14,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **8.)** Rolladen / Jalousie / Shutter  
 **9.)** Alias "Taste" für Auswahl eines Radiosenders  
 **10.)** DWD Daten an verschiedene NSPanels schicken  
-**11.)** PV-Daten Info Seite
+**11.)** PV-Daten Info Seite  
 
 # **Changelog**
 <details>
@@ -3036,6 +3036,12 @@ Mit einer PageEntitie eine Infoseite bauen auf der die Daten eine PV-Anlage / Ba
 Die Datenpunkte, in der die Daten der PV-Anlage abgegriffen werden können müssen vorhanden sein.  
 
 * **Alias:**  
+Für jeden Wert, der auf der Card angezeigt werden soll muss ein Alias vom Typ Info angelgt werden.  
+  
+![1663099652639-a4dd55ec-79d8-4adb-be2f-5085d7e516aa-image](https://user-images.githubusercontent.com/99131208/192109306-d4683cc4-b6cf-4ca2-9c1e-2c47368bfb40.png)  
+  
+![1663099722144-a97c0755-8cee-4456-9602-dcb1d5dfc977-image](https://user-images.githubusercontent.com/99131208/192109326-a69db521-9f00-4912-84c9-164bc482ae76.png)  
+  
 
 
 * ****  
