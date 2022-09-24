@@ -15,6 +15,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **9.)** Alias "Taste" für Auswahl eines Radiosenders  
 **10.)** DWD Daten an verschiedene NSPanels schicken  
 **11.)** PV-Daten Info Seite  
+**12.)** Platzhalter  
  
 # **Changelog**
 <details>
@@ -2887,7 +2888,7 @@ Adapter DWD muss installiert sein.
 <details>
   <summary>Blockly Skript</summary>  
 
-`
+``` 
 <xml xmlns="https://developers.google.com/blockly/xml">
 <variables>
 <variable id="VC{%szTBZ]@G*_Z1kd=p">NSPanel_Path</variable>
@@ -3019,7 +3020,7 @@ Adapter DWD muss installiert sein.
 </next>
 </block>
 </xml>
-`
+``` 
 </details>   
 
 ***
