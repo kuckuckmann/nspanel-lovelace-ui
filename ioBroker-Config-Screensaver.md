@@ -95,8 +95,8 @@ const swWindy:          RGB = { red: 150, green: 150, blue: 150};
 ```
 export const config: Config = {
     ...
-    mrIcon1ScreensaverEntity: { ScreensaverEntity: "mqtt.0.SmartHome.NSPanel_1.stat.POWER1", ScreensaverEntityIcon: "light-switch" },
-    mrIcon2ScreensaverEntity: { ScreensaverEntity: "mqtt.0.SmartHome.NSPanel_1.stat.POWER2", ScreensaverEntityIcon: "lightbulb" },
+    mrIcon1ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER1', ScreensaverEntityIcon: 'light-switch', ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
+    mrIcon2ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER2', ScreensaverEntityIcon: 'lightbulb', ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
 ```
 Die mqtt.0. Datenpunkte entsprechend deiner mqtt-Komfiguration anpassen  
   
@@ -104,8 +104,8 @@ Die mqtt.0. Datenpunkte entsprechend deiner mqtt-Komfiguration anpassen
 ```
 export const config: Config = {
     ...
-    mrIcon1ScreensaverEntity: { ScreensaverEntity: null, ScreensaverEntityIcon: null },
-    mrIcon2ScreensaverEntity: { ScreensaverEntity: null, ScreensaverEntityIcon: null },
+    mrIcon1ScreensaverEntity: { ScreensaverEntity: null, ScreensaverEntityIcon: null, ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
+    mrIcon2ScreensaverEntity: { ScreensaverEntity: null, ScreensaverEntityIcon: null, ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
 ```
 
 
@@ -113,8 +113,8 @@ export const config: Config = {
 ```
 export const config: Config = {
     ...
-    mrIcon1ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN1", ScreensaverEntityIcon: "light-switch" },
-    mrIcon2ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN2", ScreensaverEntityIcon: "lightbulb" },
+    mrIcon1ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN1", ScreensaverEntityIcon: "light-switch", ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
+    mrIcon2ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN2", ScreensaverEntityIcon: "lightbulb", ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
 ```
 
 **4. Beliebig im Mix der 3 Varianten**  
