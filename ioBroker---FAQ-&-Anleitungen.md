@@ -283,7 +283,7 @@ Definieren der Basiseinstellungen in der gleichnamigen Funktion:
 ![image](https://user-images.githubusercontent.com/99131208/188738657-6e322211-b5d8-4528-9623-747813c5780f.png)  
 
  Es gibt fünf Basiseinstellungen:  
-* Datenpunkt AlarmPIN: Hier muss der Pfad zu dem Datenpunkt konfiguriert werden, der die original PIN enthält. Gegen diese wird bei der Eingabe vom Skript verglichen.  
+* Datenpunkt AlarmPIN: Hier muss der Pfad zu dem Datenpunkt konfiguriert werden, der die original PIN enthält. Gegen diese wird bei der Eingabe vom Skript verglichen.  **Wichtig**: Dieser Datenpunkt muss manuell im ioBroker erzeugt werden. Es handelt sich nicht um den Datenpunkt **0_userdata.0.NSPanel.Alarm.AlarmPin** **!!!**
 * Anzahl_NSPanles: Die Anzahl der NSPanels, die mit dem ioBroker verbunden sind  
 * Notifay_OnOff: Soll es eine Information mit der **popupNotify Page** geben? wahr=an und falsch=aus.  
 * Notify_Interaktion: An einem Panel wird eine Eigabe gemacht, manipulation versucht o.ä. Wer soll eine **popupNotify Page** erhalten? jeweils=nur das Panel an dem gerade eine Eingabe erfolgt oder global=alle angeschlossenen Panels  
