@@ -161,3 +161,11 @@ var Sprechender_eindeutiger_Seitenname: PageThermo =
 **Parameter:**  
 minValue: Minimale einzustellende Temperatur (Beispiel: 17°C entspricht 170)  
 maxValue: Maximale einzustellende Temperatur (Beispiel: 30,5°C entspricht 305)  
+
+# cardPower  
+  
+![image](https://user-images.githubusercontent.com/102996011/194293110-0181995d-a6c8-45c8-a9a1-1eeba275598f.png)
+
+Beschreibung folgt!
+
+**Parameter:**  
