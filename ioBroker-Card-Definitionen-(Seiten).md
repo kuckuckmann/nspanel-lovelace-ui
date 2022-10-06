@@ -248,6 +248,8 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
 ```  
 
 **cardPower Emulator (Blockly)**
+<details>
+  <summary><b>Spoiler:</b> JavaScript Code für Erstellung eines Spotify-Premium-Alias</summary>
 ``` 
 <xml xmlns="https://developers.google.com/blockly/xml">
   <variables>
@@ -2215,3 +2217,4 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
   </block>
 </xml>
 ``` 
+</details>
