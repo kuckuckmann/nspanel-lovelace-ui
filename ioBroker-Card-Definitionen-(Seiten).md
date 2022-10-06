@@ -186,6 +186,8 @@ var CardPowerExample: PagePower =
 
 
 **Parameter:**  
+Es gibt nur einen einzigen externen Datenpunkt (anzulegen in 0_userdata.0.)auf den ein Alias vom Typ "Info" zugreift. Dieser muss mit einem JSON-Objekt in nachfolgender Struktur befüllt werden. Der Alias-Datenpunkt "ACTUAL" sollte hierbei auf den Datenpunkt in "0_userdata.0.) gebunden sein.  
+  
 ```  
 [
   {
