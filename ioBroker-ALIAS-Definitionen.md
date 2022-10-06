@@ -596,12 +596,12 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', c
   <summary><b>Spoiler:</b> JavaScript Code für Erstellung eines SqueezeBoxRPC -Alias</summary>
 
 ```
-const aliasPath = 'alias.0.NSPanel_1.Media';
-const aliasDevice = 'PlayerSonos';
-//Ergibt alias.0.NSPanel_1.Media.PlayerSonos.
+const aliasPath = 'alias.0.Media.LMS';  // ggfs. Anpassen
+const aliasDevice = 'SqueezePlay';       // ggfs. Anpassen
+//Ergibt alias.0.NSPanel_1.Media.SqueezeBoxRPC
 
-const sonosInstanz = 'sonos.0.root.';
-const sonosIP = '192_168_1_212';
+const squeezeBoxInstanz = 'squeezeboxrpc.0.Players.'; // Anpasssen, wenn nicht Instanz 0
+const squeezeBoxDevice = 'SqueezePlay'; // Anpassen an dein eigenes Device
 
 var typeAlias, read, write, nameAlias, role, desc, min, max, unit, states, custom;
 
@@ -610,14 +610,16 @@ function createAlias(idDst, idName,idSrc, idRd, idType, idRole, idAliasType) {
   else {
      var obj = {};
      obj.type = idType;
-     obj.common = getObject(idSrc).common;
+     obj.common = getObject(idSrc).common
      obj.common.alias = {};
      if(idRd) {
          obj.common.alias.id = {};
          obj.common.alias.id.read = idRd;
          obj.common.alias.id.write = idSrc;
          obj.common.read = true;
-     } else obj.common.alias.id = idSrc;
+     } else {
+         obj.common.alias.id = idSrc;
+     }
      obj.common.type = idAliasType;
      if(obj.common.read !== false && read) obj.common.alias.read = read;
      if(obj.common.write !== false && write) obj.common.alias.write = write;
@@ -634,19 +636,17 @@ function createAlias(idDst, idName,idSrc, idRd, idType, idRole, idAliasType) {
   } 
 }
 
-createAlias(aliasPath + '.' + aliasDevice, '', sonosInstanz + sonosIP, '', 'channel', 'media', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.ALBUM', 'ALBUM',  sonosInstanz + sonosIP + '.current_album', '', 'state', 'media.album', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.ARTIST', 'ARTIST', sonosInstanz + sonosIP + '.current_artist', '', 'state', 'media.artist', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.TITLE', 'TITLE', sonosInstanz + sonosIP + '.current_title', '', 'state', 'media.title', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.CONTEXT_DESCRIPTION', 'CONTEXT_DESCRIPTION', sonosInstanz + sonosIP + '.current_station', '', 'state', 'media.station', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.NEXT', 'NEXT', sonosInstanz + sonosIP + '.next', '', 'state', 'button.next', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PREV', 'PREV', sonosInstanz + sonosIP + '.prev', '', 'state', 'button.prev', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PLAY', 'PLAY', sonosInstanz + sonosIP + '.play', '', 'state', 'button.play', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PAUSE', 'PAUSE', sonosInstanz + sonosIP + '.pause', '', 'state', 'button.pause', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.STOP', 'STOP', sonosInstanz + sonosIP + '.stop', '', 'state', 'button.stop', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.STATE', 'STATE', sonosInstanz + sonosIP + '.state_simple', '', 'state', 'media.state', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.VOLUME', 'VOLUME', sonosInstanz + sonosIP + '.volume', '', 'state', 'level.volume', 'number');
-createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', sonosInstanz + sonosIP + '.volume', '', 'state', 'value.volume', 'number');
+createAlias(aliasPath + '.' + aliasDevice + '.ALBUM', 'ALBUM',  squeezeBoxInstanz + squeezeBoxDevice + '.Album', '', 'state', 'media.album', 'string');
+createAlias(aliasPath + '.' + aliasDevice + '.ARTIST', 'ARTIST', squeezeBoxInstanz + squeezeBoxDevice + '.Artist', '', 'state', 'media.artist', 'string');
+createAlias(aliasPath + '.' + aliasDevice + '.TITLE', 'TITLE', squeezeBoxInstanz + squeezeBoxDevice + '.Title', '', 'state', 'media.title', 'string');
+createAlias(aliasPath + '.' + aliasDevice + '.NEXT', 'NEXT', squeezeBoxInstanz + squeezeBoxDevice + '.btnForward', '', 'state', 'button.forward', 'boolean');
+createAlias(aliasPath + '.' + aliasDevice + '.PREV', 'PREV', squeezeBoxInstanz + squeezeBoxDevice + '.btnRewind', '', 'state', 'button.reverse', 'boolean');
+createAlias(aliasPath + '.' + aliasDevice + '.PLAY', 'PLAY', squeezeBoxInstanz + squeezeBoxDevice + '.state', '', 'state', 'media.state', 'boolean');
+createAlias(aliasPath + '.' + aliasDevice + '.PAUSE', 'PAUSE', squeezeBoxInstanz + squeezeBoxDevice + '.state', '', 'state', 'media.state', 'boolean');
+createAlias(aliasPath + '.' + aliasDevice + '.STOP', 'STOP', squeezeBoxInstanz + squeezeBoxDevice + '.state', '', 'state', 'media.state', 'boolean');
+createAlias(aliasPath + '.' + aliasDevice + '.STATE', 'STATE', squeezeBoxInstanz + squeezeBoxDevice + '.Power', '', 'state', 'switch', 'number');
+createAlias(aliasPath + '.' + aliasDevice + '.VOLUME', 'VOLUME', squeezeBoxInstanz + squeezeBoxDevice + '.Volume', '', 'state', 'level.volume', 'number');
+createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', squeezeBoxInstanz + squeezeBoxDevice + '.Volume', '', 'state', 'value.volume', 'number');
 ```
 </details> 
 
@@ -655,6 +655,21 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', s
 > * Code kopieren und einfügen  
 > * Skript aktivieren und ausführen  
 > * Danach wieder Deaktivieren  
+
+Jetzt kommt der spezielle Teil für diesen Adapter. Hierfür sind noch weitere Einstellungen erforderlich:  
+* Alias Manager öffnen, den neu erstellten Alias auswählen und unter "common.role" **media** eingeben  
+![image](https://user-images.githubusercontent.com/102996011/194288676-c329fa66-8a87-4d07-bc44-91367a334b5f.png)  
+
+![image](https://user-images.githubusercontent.com/102996011/194288476-38251d04-3656-44bc-b4d3-bb43f42f4ae2.png)  
+
+* unter Objekte zu den Aliasen (alias.0.) gehen:  
+![image](https://user-images.githubusercontent.com/102996011/194288944-f30822c7-c911-480d-a93a-8b9e8e71dbe0.png)  
+![image](https://user-images.githubusercontent.com/102996011/194289119-175acf67-4136-48ac-935c-984ce72e740b.png)  
+Bei **PAUSE **und **PLAY **mit dem Stiftsymbol am Ende der Zeile den Dialog aufschalten und 3. Tab Alias die Konvertierungsfunktionen einschalten und analog der nachfolgenden Bilder anpassen (Konverter beim Lesen):  
+![image](https://user-images.githubusercontent.com/102996011/194289939-8ae781cb-deb0-4205-9f7a-30f282ee1510.png)  
+![image](https://user-images.githubusercontent.com/102996011/194290059-fc28e452-fa49-47d3-9b4d-729ee48a66e7.png)  
+
+Jetzt sollte der spueezeboxrpc korrekt arbeiten  
  
 ![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png)  
 
@@ -663,7 +678,7 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', s
 
 ![image](https://user-images.githubusercontent.com/102996011/191094426-3c86ce5a-3d95-4e95-ba68-aefb09a6e9c3.png)
 
-> Der Alias RGB-Licht wird verwendet, wenn als Color Datenpunkte **RED, GREEN, BLUE und WHITE** vorliegen.
+> Der Alias RGB-Licht wird verwendet, wenn als Color Datenpunkte **RED, GREEN, BLUE und WHITE** vorliegen
 
 Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **RGB-Licht** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
 ![image](https://user-images.githubusercontent.com/102996011/191094851-cbd29a38-1cb7-400f-89b4-c647ca1f03eb.png)  
