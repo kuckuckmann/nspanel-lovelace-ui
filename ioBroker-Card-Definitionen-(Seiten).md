@@ -168,4 +168,21 @@ maxValue: Maximale einzustellende Temperatur (Beispiel: 30,5°C entspricht 305)
 
 Beschreibung folgt!
 
+Beispiel: Erstellung des "PageItem" und Alias vom Typ "Info"
+
+```  
+var CardPowerExample: PagePower =
+{
+    "type": "cardPower",
+    "heading": "cardPower Emulator",
+    "useColor": true,
+    "subPage": false,
+    "parent": undefined,
+    "items": [
+        <PageItem>{ id: "alias.0.NSPanel_1.Power.PowerCard.ACTUAL" },
+    ]
+};
+```  
+
+
 **Parameter:**  
