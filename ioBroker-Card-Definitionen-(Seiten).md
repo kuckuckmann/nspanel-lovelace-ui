@@ -89,19 +89,21 @@ var Sprechender_eindeutiger_Seitenname: PageMedia =
 
 ### Parameter  
   
-**adapterPlayerInstance:** "alexa.0." oder "spotify-premium.0." oder "sonos.0." oder "chromecast.0."  
+**adapterPlayerInstance:** "alexa.0." oder "spotify-premium.0." oder "sonos.0." oder "chromecast.0." oder "squeezeboxrpc.0.Players.DeinPlayer. 
   
 **mediaDevice:**
 * für "alexa.0.": Seriennummer oder Gruppennummer des primären Alexa-Device
 * für "sonos.0.": IP-Adresse des Sonsos primären Sonos-Device (getrennt mit "_") --> Beispiel: 192_168_1_250  
 * für "spotify-premium.0.": Zeile kann gelöscht werden, da Spotify immer nur einen Speaker oder Gruppe steuern kann (automatische Ermittlung)
 * für "chromecast.0.": Zeile kann gelöscht werden, da GoogleHome keine Funktionalitäten zum Wechseln von Lautsprechern zur Verfügung stellt 
+* für "squeezeboxrpc.0.": Zeile kann gelöscht werden, da squeezeboxrpc keine Funktionalitäten zum Wechseln von Lautsprechern zur Verfügung stellt  
 
 **speakerList:** (Namen und Reihenfolge der Speaker selbst bestimmen)
 * für "alexa.0.": Device-Namen aus alexa2 möglich. Wenn leer [] , dann alle Devices des alexa2-Adapter 
 * für "sonos.0.": Zeile kann gelöscht werden, da Funktionalität zum schieben auf andere Devices im Sonos-Adapter nicht möglich  
 * für "spotify-premium.0.": Alle SmartDevice-Namen aus Spotify möglich (Im Gegensatz zu Alexa auch Smartphones und Rechner)
 * für "chromecast.0.": Zeile kann gelöscht werden, da GoogleHome keine Funktionalitäten zum Wechseln von Lautsprechern zur Verfügung stellt 
+* für "squeezeboxrpc.0.": "Bekannte Player unter Players (aktuell keine Funktion)
 
 > **Definition bis TS-Version 3.1.1.3**
 ```
