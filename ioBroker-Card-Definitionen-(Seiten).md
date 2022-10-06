@@ -251,7 +251,8 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
 
 <details>  
   <summary>Blockly</summary>  
-```  
+``` 
+ 
 <xml xmlns="https://developers.google.com/blockly/xml">
   <variables>
     <variable id="N(P#!imDf$+p`U1atsq-">Debug</variable>
@@ -2217,5 +2218,6 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
     </next>
   </block>
 </xml>
+
 ```  
 </details>  
