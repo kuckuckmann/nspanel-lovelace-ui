@@ -250,7 +250,7 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
 **cardPower Emulator (Blockly)**  
 
 <details>
-  <summary>Example</summary>
+  <summary>ioBroker Blockly Script</summary>
 
   ```
 <xml xmlns="https://developers.google.com/blockly/xml">
@@ -2221,3 +2221,17 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
 
   ```
 </details>  
+
+**Kurze Anleitung:**  
+Der Code dient nur der Orientierung und stellt keine Lösung für die eigene Visualisierung dar. Somit soll z.B. der Aufbau des JSON-Objektes verdeutlicht werden.
+
+Für dieses Beispiel sind in 0_userdata für die 6 Werte in der cardPower entsprechende Datenpunkte (number) angelegt worden:  
+![image](https://user-images.githubusercontent.com/102996011/194373014-3dfc240c-ce7a-42ca-8d95-925b0a01b19f.png)  
+
+Im oberen Teil des Blocklys wird lediglich eine Emulation auf 4 von 6 Datenpunkten je Minute erzeugt. Bei Produktivnutzung sollte dieses Codeobjekt gelöscht (deaktiviert) werden.
+
+![image](https://user-images.githubusercontent.com/102996011/194373795-e3d5e889-10fd-48e6-8a51-cc56c9eadc35.png)
+
+**Produktivnutzung:**  
+> Das Skript stellt nur eine Möglichkeit der Befüllung dar. Es kann frei definiert und auf eigene Bedürfnisse angepasst werden, soll aber keine finale Lösung für jede Darstellung abbilden!
+> Ebenso kann natürlich auch über JavaScript oder TypeScript erfolgen.
