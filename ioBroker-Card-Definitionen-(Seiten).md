@@ -164,7 +164,7 @@ maxValue: Maximale einzustellende Temperatur (Beispiel: 30,5°C entspricht 305)
 
 # cardPower (ab TS-Script v.3.4.1) 
   
-![Nextion_Editor_zpO7WtDdas-output](https://user-images.githubusercontent.com/102996011/194546963-e0893ed3-61d2-4f44-b08c-645f69318904.gif)  
+![Nextion_Editor_9AYbpowjZS](https://user-images.githubusercontent.com/102996011/194641145-660e1218-f559-4f25-83ca-984cc677e0d8.gif)  
 
 Beispiel: Erstellung des "PageItem" und Alias vom Typ "Info"
 
