@@ -3027,7 +3027,7 @@ Adapter DWD muss installiert sein.
 
 ***
 
-**11.) PV-Daten Info Seite**  
+## **11.) PV-Daten Info Seite**  
 
 * **Quelle:**  
 Post [1435](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1435?_=1663104710126#) im ioBroker Forum.
