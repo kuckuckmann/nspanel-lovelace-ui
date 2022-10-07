@@ -2231,5 +2231,5 @@ Im oberen Teil des Blocklys wird lediglich eine Emulation auf 4 von 6 Datenpunkt
 ![image](https://user-images.githubusercontent.com/102996011/194373795-e3d5e889-10fd-48e6-8a51-cc56c9eadc35.png)
 
 **Produktivnutzung:**  
-> Das Skript stellt nur eine Möglichkeit der Befüllung dar. Es kann frei definiert und auf eigene Bedürfnisse angepasst werden, soll aber keine finale Lösung für jede Darstellung abbilden!
-> Ebenso kann natürlich auch über JavaScript oder TypeScript erfolgen.
+> Das Skript stellt nur eine exemplarische Möglichkeit der Befüllung dar. Es kann frei definiert und auf eigene Bedürfnisse angepasst werden, soll aber keine finale Lösung für jede Smart Home Situation abbilden!
+> Ebenso kann die Erstellung des JSON natürlich auch über JavaScript oder TypeScript erfolgen.
