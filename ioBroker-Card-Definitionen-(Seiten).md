@@ -2234,9 +2234,9 @@ Im oberen Teil des Blocklys wird lediglich eine Emulation auf 4 von 6 Datenpunkt
 
 Die Datenpunkte zu den entsprechenden Piktogrammen (id's) sollten mit den jeweiligen eigenen Adapter-Datenpunkten ersetzt werden. Im Beispiel werden folgende Datenpunkte zugewiesen:
 
-1 - Batteriespeicher (Akku)  
-2 - Photovoltaik  
-3 - Windenergieanlage  
+1 - Batteriespeicher (Einspeisung/Bezug) 
+2 - Photovoltaik Ertrag
+3 - Windenergieanlage Ertrag 
 4 - Sämtliche aktiven Verbraucher des Hauses  
 5 - Energielieferant (Netz-Einspeisung/Netz-Bezug)  
 6 - Ladestation (E-Car)  
