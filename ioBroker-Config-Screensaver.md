@@ -172,3 +172,7 @@ z.B. für Luftfeuchte: Der Idealwert liegt zwischen 0 und 100 hier im Beispiel b
 
 
 > **Im Alternativen Layout können nur 3 Entities visualisiert werden. Für die Darstellung  der Luftfeuchte wird die fourthScreensaverEntity verwendet!**
+
+## Wechsel zwischen ScreensaverEntity1-4 und WeatherForcast
+
+ 
