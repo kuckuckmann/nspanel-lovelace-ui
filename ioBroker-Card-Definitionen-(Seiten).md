@@ -2231,5 +2231,17 @@ Im oberen Teil des Blocklys wird lediglich eine Emulation auf 4 von 6 Datenpunkt
 ![image](https://user-images.githubusercontent.com/102996011/194373795-e3d5e889-10fd-48e6-8a51-cc56c9eadc35.png)
 
 **Produktivnutzung:**  
+
+Die Datenpunkte zu den entsprechenden Piktogrammen (id's) sollten mit den jeweiligen eigenen Adapter-Datenpunkten ersetzt werden. Im Beispiel werden folgende Datenpunkte zugewiesen:
+
+1 - Batteriespeicher (Akku)
+2 - Photovoltaik
+3 - Windenergieanlage
+4 - Sämtliche aktiven Verbraucher des Hauses
+5 - Energielieferant (Netz-Einspeisung/Netz-Bezug)
+6 - Ladestation (E-Car)
+  
+Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn eine Entität nicht visualisiert werden soll, so sollte im Wert zur id **null** übergeben werden.
+
 > Das Skript stellt nur eine exemplarische Möglichkeit der Befüllung dar. Es kann frei definiert und auf eigene Bedürfnisse angepasst werden, soll aber keine finale Lösung für jede Smart Home Situation abbilden!
 > Ebenso kann die Erstellung des JSON natürlich auch über JavaScript oder TypeScript erfolgen.
