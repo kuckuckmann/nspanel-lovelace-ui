@@ -164,6 +164,9 @@ maxValue: Maximale einzustellende Temperatur (Beispiel: 30,5°C entspricht 305)
 
 # cardPower (ab TS-Script v.3.4.1) 
   
+![Nextion_Editor_zpO7WtDdas-output](https://user-images.githubusercontent.com/102996011/194546963-e0893ed3-61d2-4f44-b08c-645f69318904.gif)  
+
+
 ![image](https://user-images.githubusercontent.com/102996011/194293110-0181995d-a6c8-45c8-a9a1-1eeba275598f.png)
 
 Beschreibung folgt!
