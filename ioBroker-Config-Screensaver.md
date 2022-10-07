@@ -173,6 +173,23 @@ z.B. für Luftfeuchte: Der Idealwert liegt zwischen 0 und 100 hier im Beispiel b
 
 > **Im Alternativen Layout können nur 3 Entities visualisiert werden. Für die Darstellung  der Luftfeuchte wird die fourthScreensaverEntity verwendet!**
 
-## Wechsel zwischen ScreensaverEntity1-4 und WeatherForcast
+## Wechsel zwischen Entity-Status-Icons und WeatherForecast  
 
- 
+Es lässt sich über 2 Datenpunkte in 0_userdata.0. steuern ob:  
+* nur die 4 Entity-Status-Icons visualisiert wird  
+* nur die Wettervorhersage visualisiert wird  
+* die 4 Entity-Status-Icons und die Wettervorhersage (60 Sekunden abwechselnd) visualisiert wird  
+
+Wenn ein Wechsel stattfinden soll, dann muss:  
+**0_userdata.0.NSPanel.X.ScreensaverInfo.weatherForecastTimer** den Wert **true** haben  
+
+In diesem Fall ist keine weitere Einstellung erforderlich. Es wird ein Wechsel über das TS-Skript initiiert.  
+
+Wenn kein Wechsel stattfinden soll, dann muss:  
+**0_userdata.0.NSPanel.X.ScreensaverInfo.weatherForecastTimer** den Wert **false** haben  
+
+Wenn die 4 Wetter Icons sichtbar sein sollen (Timer für Wechsel deaktiviert)  
+**0_userdata.0.NSPanel.X.ScreensaverInfo.weatherForecast** den Wert **true** haben  
+
+Wenn die 4 Entity Icons sichtbar sein sollen (Timer für Wechsel deaktiviert)  
+**0_userdata.0.NSPanel.X.ScreensaverInfo.weatherForecast** den Wert **false** haben  
