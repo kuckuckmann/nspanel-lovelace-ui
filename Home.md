@@ -15,6 +15,7 @@ LG
 Die Crew
 
 ![image](https://user-images.githubusercontent.com/102996011/191578765-fca188e1-6b16-4a8f-8e10-63224d2145c2.png)  
-![image](https://user-images.githubusercontent.com/102996011/194638389-77e6c250-bcd9-4655-96a7-fb14edc94806.png)  
+![image](https://user-images.githubusercontent.com/102996011/194638565-6defa534-bae4-43fc-9b38-70149d414d05.png)
+
 
 
