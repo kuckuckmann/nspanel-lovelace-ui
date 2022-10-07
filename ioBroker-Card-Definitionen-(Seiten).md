@@ -2239,7 +2239,7 @@ Die Datenpunkte zu den entsprechenden Piktogrammen (id's) sollten mit den jeweil
 3 - Windenergieanlage Ertrag  
 4 - Sämtliche aktiven Verbraucher des Hauses  
 5 - Energielieferant (Netz-Einspeisung/Netz-Bezug)  
-6 - Ladestation (E-Car)  
+6 - Ladestation Verbrauch (E-Car)  
   
 Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn eine Entität nicht visualisiert werden soll, so sollte im Wert zur id **null** übergeben werden.  
 
