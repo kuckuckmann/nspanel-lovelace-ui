@@ -225,7 +225,7 @@ Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovela
 Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung:  
 ![image](https://user-images.githubusercontent.com/102996011/191102721-3a6a5ab6-792c-4274-8ff3-227c61d4a949.png)
 
-Beispiel für den PageItem  
+Beispiel für das PageItem  
 `<PageItem>{ id: "alias.0.NSPanel_1.TestInfo", name: "Windstärke", icon: "wind-power-outline", offColor: MSRed, onColor: MSGreen, unit: "bft", minValue: 0, maxValue: 12, interpolateColor: true, useColor: true }`
 
 **Parameter**
@@ -252,6 +252,9 @@ Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovela
 
 Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung: 
 ![image](https://user-images.githubusercontent.com/102996011/194716899-3064db6c-8516-46c0-857a-1126cae78783.png)  
+
+Beispiel für das PageItem:  
+`<PageItem>{ id: "alias.0.NSPanel_1.TestBlind", onColor: White, name: "IKEA Fyrtur", secondRow: "Hier Text für 2. Zeile"},`  
 
 Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#8-rolladen--jalousie--shutter
 
