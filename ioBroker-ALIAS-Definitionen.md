@@ -244,13 +244,14 @@ useColor:
 ### Jalousien (channel blind)
 ![image](https://user-images.githubusercontent.com/102996011/189403904-914ff6ad-a7df-4859-a523-ff5ec02f2381.png)  
 
-Und die zugehörige Detailseite
-![image](https://user-images.githubusercontent.com/102996011/194716743-81b81575-b7b6-475a-9cbf-5332561bec46.png)
+Und die zugehörige Detailseite  
+![image](https://user-images.githubusercontent.com/102996011/194716743-81b81575-b7b6-475a-9cbf-5332561bec46.png)  
 
 Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **Jalousie** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
-![image](https://user-images.githubusercontent.com/102996011/194716982-6470580e-b8eb-4be0-8c45-c60dd9220a9c.png)
+![image](https://user-images.githubusercontent.com/102996011/194716982-6470580e-b8eb-4be0-8c45-c60dd9220a9c.png)  
 
-![image](https://user-images.githubusercontent.com/102996011/194716899-3064db6c-8516-46c0-857a-1126cae78783.png)
+Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung: 
+![image](https://user-images.githubusercontent.com/102996011/194716899-3064db6c-8516-46c0-857a-1126cae78783.png)  
 
 Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#8-rolladen--jalousie--shutter
 
