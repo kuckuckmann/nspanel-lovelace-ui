@@ -2241,7 +2241,19 @@ Die Datenpunkte zu den entsprechenden Piktogrammen (id's) sollten mit den jeweil
 5 - Energielieferant (Netz-Einspeisung/Netz-Bezug)  
 6 - Ladestation Verbrauch (E-Car)  
   
-Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn eine Entität nicht visualisiert werden soll, so sollte im Wert zur id **null** übergeben werden.  
+Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn eine Entität nicht visualisiert werden soll, so sollte in allen Werten zur id **''** übergeben werden. Beispiel:
+
+```
+  {
+    "id": 3,
+    "value": "",
+    "unit": "",
+    "direction": "",
+    "icon": "",
+    "iconColor": "",
+    "speed": ""
+  },
+```
 
 > Das Skript stellt nur eine exemplarische Möglichkeit der Befüllung dar. Es kann frei definiert und auf eigene Bedürfnisse angepasst werden, soll aber keine finale Lösung für jede Smart Home Situation abbilden!
 > Ebenso kann die Erstellung des JSON natürlich auch über JavaScript oder TypeScript erfolgen.
