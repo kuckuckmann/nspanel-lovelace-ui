@@ -2241,7 +2241,7 @@ Die Datenpunkte zu den entsprechenden Piktogrammen (id's) sollten mit den jeweil
 5 - Energielieferant (Netz-Einspeisung/Netz-Bezug)  
 6 - Ladestation Verbrauch (E-Car)  
   
-Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn eine Entität nicht visualisiert werden soll, so sollte in allen Werten zur id **''** übergeben werden. Beispiel:
+Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn eine Entität nicht visualisiert werden soll, so sollte in allen Werten zur id ein leerer String **""** übergeben werden. Beispiel:
 
 ```
   {
