@@ -94,7 +94,7 @@ siehe https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definiti
 > **Achtung:**  
 > **Dieser Alias muss erstellt werden, damit die 4 kleineren Entity-Status-Icons (Weather-Forecast und/oder 4 Sensordatenpunkte) im unteren Screensaver visualisiert werden können.**  
 
-Weitere Hinweise zur Installation des Accuweather Adapters hier: https://github.com/iobroker-community-adapters/ioBroker.accuweather
+Die Dargestellten Wetter-Icons (groß und klein) werden im NSPanel TS-Script ermittelt. Daher ist die Installation von Accuweather zwingend erforderlich.  Weitere Hinweise zur Installation des Accuweather Adapters hier: https://github.com/iobroker-community-adapters/ioBroker.accuweather
 
 ## Relais-Status Icons
 
