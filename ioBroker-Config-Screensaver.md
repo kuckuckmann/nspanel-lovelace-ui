@@ -85,6 +85,15 @@ const swWindy:          RGB = { red: 150, green: 150, blue: 150};
 
 # Screensaver Icons
 
+## Großes Wetter Icon
+
+![image](https://user-images.githubusercontent.com/102996011/189405373-8ea44dd3-a073-40e8-8379-faab8a836d12.png)  
+
+siehe https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#wettervorhersage
+
+> **Achtung:**  
+> **Dieser Alias muss erstellt werden, damit die 4 kleineren Icons (Weather-Forecast und/oder 4 Sensordatenpunkte) im unteren Screensaver visualisiert werden können.**  
+
 ## Relais-Status Icons
 
 ![image](https://user-images.githubusercontent.com/102996011/190625454-181092a5-83ea-4ac7-bff5-10274ec98ad5.png)
