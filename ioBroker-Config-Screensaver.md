@@ -92,7 +92,7 @@ const swWindy:          RGB = { red: 150, green: 150, blue: 150};
 siehe https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#wettervorhersage
 
 > **Achtung:**  
-> **Dieser Alias muss erstellt werden, damit die 4 kleineren Icons (Weather-Forecast und/oder 4 Sensordatenpunkte) im unteren Screensaver visualisiert werden können.**  
+> **Dieser Alias muss erstellt werden, damit die 4 kleineren Entity-Status-Icons (Weather-Forecast und/oder 4 Sensordatenpunkte) im unteren Screensaver visualisiert werden können.**  
 
 ## Relais-Status Icons
 
