@@ -1,7 +1,7 @@
 
 # Index
 **1.)** Hardware-Buttons  
-  **1.1)**    Rules  
+  **   1.1)**    Rules  
   **1.2)**    Multipress Mode  
   **1.3)**    Shutter Mode  
   **1.4)**    Switchmode  
