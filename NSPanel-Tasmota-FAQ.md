@@ -642,8 +642,8 @@ oder
 
 > siehe auch: https://tasmota.github.io/docs/ADC/  
 
-> Das größte Problem ist die Hitzeentwicklung durch das Display selbst. Wenn es auf volle Helligkeit eingestellt ist, ist der Sensormesswert 2-4°C höher oder sogar mehr. Bei einem Dimmwert von 8 relativiert sich der Temperaturunterschied.  
-Ansonsten bietet es sich an, einen zentralen, externen Raumtemperatur-Sensor zu verwenden.  
+> Das größte Problem ist die Hitzeentwicklung durch das Display selbst. Wenn das Display auf volle Helligkeit eingestellt ist, ist der Sensormesswert 2-4°C höher (oder sogar noch höher). Bei einem Dimmwert von 8 relativiert sich der Temperaturunterschied.  
+Ansonsten bietet es sich an, für eine exaktere Raumtemperatur einen zentralen, externen Raumtemperatur-Sensor (z.B. Zigbee) zu verwenden und den Datenpunkt über einen Alias vom Gerätetyp "Info" in z.B. einer cardEntities zu visualisieren.  
 
 ***  
 
