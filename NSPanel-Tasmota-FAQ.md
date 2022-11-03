@@ -627,7 +627,9 @@ Das NSPanel verfügt über interne Temperatur-Sensoren:
   
 ***  
 ### 2.1  Interner Raum-Temperatursensor  
-
+  
+![image](https://user-images.githubusercontent.com/102996011/199742686-8d1e6575-7407-4f4f-a1bd-aa0e68882792.png)  
+  
 Um den internen Temperatursensor benutzen zu können, muss dieser in der Regel zuerst kalibriert werden. Hierzu benötigst du ein Thermometer, welches dir die Referenztemperatur liefert.  
 
 Die Werte können in der Tasmota-Console mit AdcParam<x> justiert werden. Folgende Einstellungen konnten bisher brauchbare Ergebnisse liefern (ggfs. weiter anpassen):  
