@@ -634,13 +634,16 @@ Um den internen Temperatursensor benutzen zu können, muss dieser in der Regel z
 
 Die Werte können in der Tasmota-Console mit AdcParam<x> justiert werden. Folgende Einstellungen konnten bisher brauchbare Ergebnisse liefern (ggfs. weiter anpassen):  
 
-`adcparam 2,14600,10000,3950`  
+`AdcParam 2,14600,10000,3950`  
 
 oder  
 
-`adcparam 2,15880,10000,3950`  
+`AdcParam 2,15880,10000,3950`  
 
 > siehe auch: https://tasmota.github.io/docs/ADC/  
+
+> Das größte Problem ist die Hitzeentwicklung durch das Display selbst. Wenn es auf volle Helligkeit eingestellt ist, ist der Sensormesswert 2-4°C höher oder sogar mehr. Bei einem Dimmwert von 8 relativiert sich der Temperaturunterschied.  
+Ansonsten bietet es sich an, einen zentralen, externen Raumtemperatur-Sensor zu verwenden.  
 
 ***  
 
