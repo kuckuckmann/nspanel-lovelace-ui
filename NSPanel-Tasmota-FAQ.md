@@ -623,5 +623,32 @@ Danach in der Tasmota-Konsole
 > `switchmode2 2`  
 ausführen  
 
-***
+***  
+
+### 1.5  Interner Raum-Temperatursensor  
+
+Um den internen Temperatursensor benutzen zu können, muss dieser in der Regel zuerst kalibriert werden. Hierzu benötigst du ein Thermometer, welches dir die Referenztemperatur liefert.  
+
+Die Werte können in der Tasmota-Console mit AdcParam<x> justiert werden. Folgende Einstellungen konnten bisher brauchbare Ergebnisse liefern (ggfs. weiter anpassen):  
+
+`adcparam 2,14600,10000,3950`  
+
+oder  
+
+`adcparam 2,15880,10000,3950`  
+
+> siehe auch: https://tasmota.github.io/docs/ADC/  
+
+***  
+
+### 1.6  Interner ESP-Temperatursensor  
+
+Der interne ESP-Temperatursensor war bis zur Tasmota Version < 12.2.0 noch per "default" angeschaltet.  
+
+Um diese Temperatur mit den Sensordaten zu übertragen ist jetzt eine zusätzliche Konfiguration über die Tasmota-Console erforderlich:  
+
+`setOption146 1`  
+
+***  
+
 
