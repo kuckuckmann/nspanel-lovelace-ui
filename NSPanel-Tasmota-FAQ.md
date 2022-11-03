@@ -4,7 +4,7 @@
   **1.1)**    Rules  
   **1.2)**    Multipress Mode  
   **1.3)**    Shutter Mode  
-  **1.4)**    Switchmode
+  **1.4)**    Switchmode  
 **2.)** Sensoren  
   **2.1)**    Analoger Raum-Temperatur-Sensor  
   **2.2)**    ESP-Temperartur-Sensor  
