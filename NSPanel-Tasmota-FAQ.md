@@ -647,7 +647,7 @@ Ansonsten bietet es sich an, für eine exaktere Raumtemperatur einen zentralen, 
 
 ***  
 
-### 2.2  Interner ESP-Temperatursensor  
+### 2.2  Interner ESP32-Temperatursensor  
 
 Der interne ESP-Temperatursensor war bis zur Tasmota Version < 12.2.0 noch per "default" angeschaltet.  
 
