@@ -618,13 +618,13 @@ ausführen
 ***  
 
 ## 2. Sensoren  
-
-Das NSPanel verfügt über interne Temperatur-Sensoren:
-![image](https://user-images.githubusercontent.com/102996011/199740914-acabb5b8-1684-449a-aab3-a9a0790a5c27.png)
-
-* Die Analog1 Temperatur ist die gemessene Raumtemperatur über den verbauten Temperatursensor an der Unterseite des NSPanel's.
-* ESP32 Temperature ist die Temperatur des ESP32-Prozessor
-
+  
+Das NSPanel verfügt über interne Temperatur-Sensoren:  
+![image](https://user-images.githubusercontent.com/102996011/199740914-acabb5b8-1684-449a-aab3-a9a0790a5c27.png)  
+  
+* Die Analog1 Temperatur ist die gemessene Raumtemperatur über den verbauten Temperatursensor an der Unterseite des NSPanel's.  
+* ESP32 Temperature ist die Temperatur des ESP32-Prozessor  
+  
 ***  
 ### 2.1  Interner Raum-Temperatursensor  
 
