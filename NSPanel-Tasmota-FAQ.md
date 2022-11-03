@@ -3,7 +3,11 @@
 **1.)** Hardware-Buttons  
   **1.1)**    Rules  
   **1.2)**    Multipress Mode  
+  **1.3)**    Shutter Mode  
   **1.4)**    Switchmode
+**2.)** Sensoren  
+  **2.1)**    Analoger Raum-Temperatur-Sensor  
+  **2.2)**    ESP-Temperartur-Sensor  
 
 
 ## 1. Hardware-Buttons
@@ -625,7 +629,10 @@ ausführen
 
 ***  
 
-### 1.5  Interner Raum-Temperatursensor  
+## 2. Sensoren  
+
+***  
+### 2.1  Interner Raum-Temperatursensor  
 
 Um den internen Temperatursensor benutzen zu können, muss dieser in der Regel zuerst kalibriert werden. Hierzu benötigst du ein Thermometer, welches dir die Referenztemperatur liefert.  
 
@@ -641,7 +648,7 @@ oder
 
 ***  
 
-### 1.6  Interner ESP-Temperatursensor  
+### 2.2  Interner ESP-Temperatursensor  
 
 Der interne ESP-Temperatursensor war bis zur Tasmota Version < 12.2.0 noch per "default" angeschaltet.  
 
