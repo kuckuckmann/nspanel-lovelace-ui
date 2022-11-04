@@ -312,7 +312,7 @@ Der Alias-Medien für die cardMedia lässt sich mit dem Geräte-Manager nicht er
 
 Der Alias gibt aktuell nur einen .ACTUAL her. Das ist jedoch für einen Media-Player definitiv zu wenig.  
 
-> **Daher bitte eines der nachfolgenden Skripte (je eingesetzten Adaptertyp) nutzen. In der Javascript Instanz muss "Kommando SetOpject erlauben" aktiviert werden. Die Struktur sieht im Gerätemanager danach etwa so aus und sollte vernachlässigt werden, da der ALIAS dennoch funktioniert!**  
+> **Daher bitte eines der nachfolgenden Skripte (je eingesetzten Adaptertyp) nutzen. In der Javascript Instanz muss "Kommando SetObject erlauben" aktiviert werden. Die Struktur sieht im Gerätemanager danach etwa so aus und sollte vernachlässigt werden, da der ALIAS dennoch funktioniert!**  
 
 ![image](https://user-images.githubusercontent.com/102996011/189842715-75f9d554-3395-42f6-903b-b92b0828143c.png)
 Obwohl das alles Aliase vom Typ Medien sind, sehen bis auf zwei alle anderen nicht korrekt aus, sind aber in der Objektstruktur korrekt und funktionieren auch mit dem NSPanel
