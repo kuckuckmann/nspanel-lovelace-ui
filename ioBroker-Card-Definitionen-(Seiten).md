@@ -2296,7 +2296,15 @@ Layout 2 bringt neue Funktionen mit sich wie Schriftgröße, Schriftfarbe, ein I
 **Neue Datenpunkte**:  
 Die neuen Datenpunkte werden automatisch beim Starten des Skriptes angelegt. Zur Übersicht hier die neuen Datenpunkte aufgelistet:  
   
-*
+*popupNotifyHeadingColor
+*popupNotifyTextColor
+*popupNotifyButton1TextColor
+*popupNotifyButton2TextColor
+*popupNotifyLayout
+*popupNotifyFontIdText
+*popupNotifyIcon
+*popupNotifyIconColor
+  
   
 **Nutzung**:  
 Ab der Version **v3.5.0** bleibt die alte Version erstmal per Default nutzbar.  Stellt man den Datenpunkt **popupNotifyLayout** auf 2 erhält man das neue popUpNotify, zur Nutzung des alten muss man dann den Wert 1 hinterlegen.  
