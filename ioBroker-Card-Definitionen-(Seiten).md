@@ -2282,6 +2282,10 @@ Die alte Variante kennt man am ehesten von Info-Popus zur Tasmota oder TFT Versi
 * popupNotifySleepTimeout
 * popupNotifyAction
   
+**Zuordnung Datenpunkte**:  
+  
+![popupnotify_v2](https://user-images.githubusercontent.com/99131208/200187724-33c3b72c-d575-4d88-927d-08b226cc0293.jpg)
+  
 **Nutzung**:  
 Vor der Version **v3.5.0** per Default nutzbar. Ab der Version **v3.5.0** bleibt die alte Version erstmal per Default nutzbar. Stellt man den Datenpunkt **popupNotifyLayout** auf 2 erhält man das neue popUpNotify, zur Nutzung des alten muss man dann den Wert 1 hinterlegen.  
   
@@ -2306,9 +2310,13 @@ Die neuen Datenpunkte werden automatisch beim Starten des Skriptes angelegt. Zur
 * popupNotifyButton1TextColor
 * popupNotifyButton2TextColor
 * popupNotifyLayout
-* popupNotifyFontIdText
+* popupNotifyFontIdText (Schriftgröße)
 * popupNotifyIcon
 * popupNotifyIconColor
+  
+**Zuordnung Datenpunkte**:  
+  
+![popupnotify_v1](https://user-images.githubusercontent.com/99131208/200187685-b5c5de2c-8461-4ee3-8dad-8a63e4ee1f19.jpg)  
   
   
 **Nutzung**:  
