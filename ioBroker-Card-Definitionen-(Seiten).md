@@ -2285,6 +2285,11 @@ Die alte Variante kennt man am ehesten von Info-Popus zur Tasmota oder TFT Versi
 **Nutzung**:  
 Vor der Version **v3.5.0** per Default nutzbar. Ab der Version **v3.5.0** bleibt die alte Version erstmal per Default nutzbar. Stellt man den Datenpunkt **popupNotifyLayout** auf 2 erhält man das neue popUpNotify, zur Nutzung des alten muss man dann den Wert 1 hinterlegen.  
   
+**Beispiel**:  
+  
+Bei der [Anleitung der AlarmCard](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#2-alarm-page) gibt es zwei verschiedene Beispiele für die Nutzung der popUpNotify Page.  
+  
+  
 ## popUpNotify - Layout 2
   
 **Beschreibung**:  
