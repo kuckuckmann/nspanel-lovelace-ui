@@ -2261,8 +2261,46 @@ Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn e
 
 # popUpNotify  
 
-Beschreibung folgt  
+Status: in Erstellung:
+ 
+Das ganze LUI Thema ist am Wachsen. Nun gibt es von der popUpNotify Page schon zwei verschiedene Varianten.
+Diese wollen wir hier beschreiben:
 
+## popUpNotify - alte Variante
+
+**Beschreibung**:  
+Die alte Variante kennt man am ehesten von Info-Popus zur Tasmota oder TFT Version.  
+  
+![image](https://user-images.githubusercontent.com/102996011/189373507-41a10711-afc0-4186-b94b-690bc1805a7f.png)
+  
+**Datenpunkte**:  
+* popupNotifyHeading
+* popupNotifyText
+* popupNotifyInternalName
+* popupNotifyButton1Text
+* popupNotifyButton2Text
+* popupNotifySleepTimeout
+* popupNotifyAction
+  
+**Nutzung**:  
+Vor der Version **v3.5.0** per Default nutzbar. Ab der Version **v3.5.0** bleibt die alte Version erstmal per Default nutzbar. Stellt man den Datenpunkt **popupNotifyLayout** auf 2 erhält man das neue popUpNotify, zur Nutzung des alten muss man dann den Wert 1 hinterlegen.  
+  
+## popUpNotify - Layout 2
+  
+**Beschreibung**:  
+Ab Version **v3.5.0** verfügbar.  
+Layout 2 bringt neue Funktionen mit sich wie Schriftgröße, Schriftfarbe, ein Icon mit definierbarer Farbe, etc.
+
+![image](https://user-images.githubusercontent.com/99131208/200184667-88d4104c-5e6c-453b-8eb5-3f27183ef85a.png)  
+    
+**Neue Datenpunkte**:  
+Die neuen Datenpunkte werden automatisch beim Starten des Skriptes angelegt. Zur Übersicht hier die neuen Datenpunkte aufgelistet:  
+  
+*
+  
+**Nutzung**:  
+Ab der Version **v3.5.0** bleibt die alte Version erstmal per Default nutzbar.  Stellt man den Datenpunkt **popupNotifyLayout** auf 2 erhält man das neue popUpNotify, zur Nutzung des alten muss man dann den Wert 1 hinterlegen.  
+  
 ## Emulator (Layout 2)    
 
 <details>
