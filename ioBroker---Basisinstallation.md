@@ -1,9 +1,7 @@
 **Neues Video Tutorial** von [haus-automatisierung.com](http://haus-automatisierung.com/)
 https://www.youtube.com/watch?v=ZPLJk2ZLo_8 - NSPanel mit Lovelace UI - so habe ich mir das vorgestellt!
 
-**Aktuelle Anleitung auch unter**: https://forum.iobroker.net/post/807730:
-
-# Step für Step - Anleitung 
+## Step für Step - Anleitung 
 Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
 ![image](https://user-images.githubusercontent.com/102996011/189348764-ab78fb87-942f-4c8a-a8e6-bc9240e6a74b.png)
 
@@ -88,12 +86,12 @@ f) Speichern klicken und Einstellungen verlassen
 
 ## **5.) TFT-Firmware flashen**
 Tasmota „Konsolen/Konsole“ öffnen und in die Kommandozeile  
-`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.4.0.tft`  
+`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.5.0.tft`  
 eingeben, mit Enter bestätigen. Das Panel installiert jetzt die TFT-Firmware (Kann beim ersten Mal ein paar Minuten dauern – Fortschritt beobachten – am Ende erfolgt ein Reboot und das Panel wechselt in einen Screen – „Waiting for Content“
 
 ![image](https://user-images.githubusercontent.com/102996011/189360485-1941baa7-c10a-4fb3-9dad-9c91124c47ad.png)
 
-> **Achtung !!! Die aktuellsten Versionen (3.4.0.5 könnte nicht mehr aktuell sein) befinden sich "immer" im ioBroker TypeScript Header (TS-Skript) unter:**
+> **Achtung !!! Die aktuellsten Versionen (3.5.0.5 könnte nicht mehr aktuell sein) befinden sich "immer" im ioBroker TypeScript Header (TS-Skript) unter:**
 > https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs.ts
 
 ***
@@ -116,6 +114,9 @@ b) Eigene States beim Verbinden publizieren (angehakt)
 c) States bei subscribe publizieren (angehakt)  
 d) Leere Session erzwingen: Client-Einstellungen verwenden  
 ![image](https://user-images.githubusercontent.com/102996011/189360742-6b1f39c6-64b0-4744-b4ee-3205666b1852.png)
+
+> **!!! ACHTUNG: !!!**
+> Der haken bei "**Nur bei Änderungen publizieren**" darf nicht aktiv sein, da es sonst zu Problemen in der Navigation kommen kann!
 
 ***
 
