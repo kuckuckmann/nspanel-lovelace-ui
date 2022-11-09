@@ -204,7 +204,7 @@ die Datenpunkte firstScreensaverEntity bis fourthScreensaverEntity mit eigenen D
 Eine Ausnahme stellt das große Wetter-Icon und der Wert für die aktuelle Temperatur im Screensaver dar. Hierfür benötigen wir einen Alias (im nächsten Punkt).
 
 > **Achtung!**  
-> **Für die Anzeige der 4 kleinen Icons muss der Alias Wettervorhersage erstellt und konfiguriert sein**
+> **Für die Anzeige der 4 kleinen Icons muss der Alias Wettervorhersage erstellt und konfiguriert sein**. Ab TS-Script-Version 3.5.0.5 und mit installiertem JavaScript-Adapter ab Version v6.1.3 kann dieser Alias u.a. automatisch erzeugt werden, wenn die Konstante **autoCereateAlias** auf **true** steht. 
 
 **b) Diverse Datenpunkte**  
 Beim ersten Start des Scripts erzeugt das Skript unter 0_userdata diverse Datenpunkte für Screensaver Dimmode, interne Sensoren, Tasmota-Statuswerte, etc.  
