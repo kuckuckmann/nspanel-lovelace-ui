@@ -115,21 +115,31 @@ c) States bei subscribe publizieren (angehakt)
 d) Leere Session erzwingen: Client-Einstellungen verwenden  
 ![image](https://user-images.githubusercontent.com/102996011/189360742-6b1f39c6-64b0-4744-b4ee-3205666b1852.png)
 
-> **!!! ACHTUNG: !!!**
+> **!!! ACHTUNG: !!!**  
 > Der haken bei "**Nur bei Änderungen publizieren**" darf nicht aktiv sein, da es sonst zu Problemen in der Navigation kommen kann!
 
 ***
 
 ## **7.) CustomSend anlegen**
 
-Der MQTT Datenpunkt wird benötigt und muss vom MQTT-Adapter angelegt werden. Ein manuelles Anlegen unter „Objekte“ oder „createState“ ist im ioBroker „nicht mehr“ möglich. Um den Datenpunkt zu erzeugen, öffnest du im Tasmota die Konsole und gibst ohne die Anführungszeichen  
+Der MQTT Datenpunkt wird benötigt und muss vom MQTT-Adapter angelegt werden. Ein manuelles Anlegen unter „Objekte“ oder „createState“ ist im ioBroker „nicht mehr“ möglich. 
+
+**Es gibt drei Varianten um diesen Datenpunkt zu erzeugen:**
+
+Variante 1:  
+Du gehst in das Objeckt-Verzeichnis "**mqtt.0.SmartHome.NSPanel_1.cmnd**" und legst in diesem Verzeichnis mit Hilfe des "Expertenmodus" einen Datenpunkt **CustomSend** (Achtung auf korrekte Schreibweise achten) an. Nachdem der Datenpunkt angelegt wurde, sollte der Expertenmodus wieder deaktiviert werden.
+
+Variante 2:
+Um den Datenpunkt zu erzeugen, öffnest du im Tasmota die Konsole und gibst ohne die Anführungszeichen  
 `„CustomSend time~12:00“`  
 ein.  
+
+Variante 3:
 Alternativ kann auch der MQTT-Explorer (http://mqtt-explorer.com/) genutzt werden und ein payload unter .../cmnd abgesendet werden.  
 ![image](https://user-images.githubusercontent.com/102996011/189361956-3fb08b4a-edd7-4845-a9c9-4a685738c9f6.png)
 Danach sollte im MQTT-Adapter unter Objekte ein Datenpunkt: „SmartHome/NSPanel_X/cmnd/CustomSend“ erscheinen. Falls nicht, solange wiederholen bis dieser Datenpunkt abonniert wurde, oder ggfs. Nochmals die MQTT-Einstellungen überprüfen. In den Vergangenen Fragen dieses Topics ging es häufiger um diesen Punkt.
 
-> Im Video wird noch eine weitere Variante direkt in den Objekten des mqtt.0. gezeigt
+> Im Video wird die Variante 1 direkt in den Objekten des mqtt.0. gezeigt!
 
 ***
 
@@ -145,6 +155,8 @@ ein und startest das Skript.
 > Für diesem Fall die:  
 > **https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.js**  
 > in ein globales "JavaScript" (nicht TS) einfügen
+
+> **Falls du das Skript in der Version ab 3.5.0.5 benutzt, muss der JavaScript-Adapter ab v6.1.3 installiert sein**. Das TS-Script kann mittlerweile eine Vielzahl an Aliasen selbstständig erzeugen und benötigt die dort enthaltenen Funktionen. 
 
 **Nur zur Info:**  
 Du kannst die einzelnen Icon-Symbolnamen (aktuell 6896 unterschiedliche Icon-Symbole) auf  
