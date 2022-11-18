@@ -40,7 +40,8 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 09.09.2022 - Alias "Media" für cardMedia - in Erstellung  
 14.09.2022 - bug im js-script Abfall behoben
 24.09.2022 - DWD Blockly - erstellt  
-24.09.2022 - PV-Daten Info Seite - erstellt  
+24.09.2022 - PV-Daten Info Seite - erstellt
+18.11.2022 - Abfallkalender - Beispielpage für TS-Scrpit angepasst 
 </details>  
 
 
