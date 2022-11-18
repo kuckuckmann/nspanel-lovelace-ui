@@ -2168,18 +2168,18 @@ Blockly Skript (by @Armilar):
 * **Konfigurationsskript**
 Im Konfigurationsskript muss ein Grid passend zu den Aliasen angelegt werden. Hier das Bsp. aus dem Default:
 ```
-var Abfall: PageEntities =
+let Abfall: PageEntities =
 {
     "type": "cardEntities",
     "heading": "Abfallkalender",
     "useColor": true,
     "subPage": false,
-    "parent": Abfall,
+    "parent": undefined,
     "items": [
-        <PageItem>{ id: "alias.0.NSPanel_1.Abfall.event1",icon: "trash-can"},  
-        <PageItem>{ id: "alias.0.NSPanel_1.Abfall.event2",icon: "trash-can"},  
-        <PageItem>{ id: "alias.0.NSPanel_1.Abfall.event3",icon: "trash-can"},  
-        <PageItem>{ id: "alias.0.NSPanel_1.Abfall.event4",icon: "trash-can"}  
+        <PageItem>{ id: AliasPath + 'Abfall.event1',icon: 'trash-can'},  
+        <PageItem>{ id: AliasPath + 'Abfall.event2',icon: 'trash-can'},  
+        <PageItem>{ id: AliasPath + 'Abfall.event3',icon: 'trash-can'},  
+        <PageItem>{ id: AliasPath + 'Abfall.event4',icon: 'trash-can'}  
     ]
 };
 ```
