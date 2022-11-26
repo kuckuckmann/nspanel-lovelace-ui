@@ -2258,6 +2258,11 @@ Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn e
 > Das Skript stellt nur eine exemplarische Möglichkeit der Befüllung dar. Es kann frei definiert und auf eigene Bedürfnisse angepasst werden, soll aber keine finale Lösung für jede Smart Home Situation abbilden!
 > Ebenso kann die Erstellung des JSON natürlich auch über JavaScript oder TypeScript erfolgen.
 
+# cardChart (ab TS-Script v.3.6.1)  
+
+![image](https://user-images.githubusercontent.com/102996011/204111318-3fc72215-dbb8-4eea-a424-61ad1de710cd.png)  
+> Beschreibung folgt  
+
 
 # popUpNotify  
 
