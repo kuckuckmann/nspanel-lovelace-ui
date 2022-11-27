@@ -65,7 +65,7 @@ var Sprechender_eindeutiger_Seitenname: PageAlarm =
 ```
 
 # cardMedia
-![image](https://user-images.githubusercontent.com/102996011/190164192-27491246-8e49-4c27-ba06-6cc711dd04c9.png)
+![image](https://user-images.githubusercontent.com/102996011/204136831-afe5bde8-5046-495b-8ea7-68bc91e3a57c.png)  
 
 (Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
@@ -84,6 +84,26 @@ var Sprechender_eindeutiger_Seitenname: PageMedia =
                 mediaDevice: "G0XXXXXXXXXXXXXXXX", 
                 speakerList: ['Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche','Echo Spot Buero']
              }]
+};
+```  
+oder
+```  
+let SpotifyPremium: PageMedia = 
+{
+    "type": "cardMedia",
+    "heading": "Spotify-Premium",
+    "useColor": true,
+    "subPage": false,
+    "parent": undefined,
+    "items": [<PageItem>{ 
+                id: AliasPath + 'Media.PlayerSpotifyPremium', 
+                adapterPlayerInstance: "spotify-premium.0.",
+                speakerList: ['LENOVO-W11-JB','Terrasse','Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche','Echo Spot Buero'],
+                colorMediaIcon: colorSpotify,
+                colorMediaArtist: Yellow,
+                colorMediaTitle: Yellow,
+                autoCreateALias : true
+             }] 
 };
 ```  
 
