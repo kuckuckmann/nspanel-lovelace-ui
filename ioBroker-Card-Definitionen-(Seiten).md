@@ -163,9 +163,15 @@ keine
   
 > Für Thermostat und Klimaanlage (Unterschied im zu erstellenden Alias)
 
-![image](https://user-images.githubusercontent.com/102996011/190120470-f0b84f87-dc46-4cf2-8e08-598331168aab.png)  
-![image](https://user-images.githubusercontent.com/102996011/190120711-59097159-847e-49d7-9545-a460dc271d13.png)  
+![image](https://user-images.githubusercontent.com/102996011/204626750-bbeffe48-c9cd-44bf-8dfd-b90c6c3b7422.png)  
+  
 
+![image](https://user-images.githubusercontent.com/102996011/204623942-ca5a1e74-23f7-4b10-a65a-d2397ab67c72.png)  
+  
+![image](https://user-images.githubusercontent.com/102996011/204626323-a5df2e57-378f-4939-8a45-1a83277e23a2.png)  
+  
+![image](https://user-images.githubusercontent.com/102996011/204627014-03173d87-22ba-44fb-b07c-40b7be6366ac.png)  
+  
 ```  
 var Sprechender_eindeutiger_Seitenname: PageThermo = 
 {
