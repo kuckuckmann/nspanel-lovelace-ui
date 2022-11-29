@@ -2297,9 +2297,9 @@ Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn e
 
 # cardChart (ab TS-Script v.3.6.1)  
 
-![image](https://user-images.githubusercontent.com/102996011/204111318-3fc72215-dbb8-4eea-a424-61ad1de710cd.png)  
-> Beschreibung folgt  
-
+![image](https://user-images.githubusercontent.com/102996011/204631969-dfd8b8e9-09d0-45c2-a243-5e047f09ab05.png)  
+   
+> Beschreibung folgt mit v3.6.1  
 
 # popUpNotify  
 
