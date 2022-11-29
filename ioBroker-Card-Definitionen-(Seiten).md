@@ -176,11 +176,22 @@ keine
 var Sprechender_eindeutiger_Seitenname: PageThermo = 
 {
     "type": "cardThermo",
-    "heading": "Deine Überschrift",
+    "heading": "Test Klimaanlage",
     "useColor": true,
     "subPage": false,
     "parent": undefined,
-    "items": [<PageItem>{ id: "alias.0.NSPanel_1.TestKlimaanlage", minValue: 170, maxValue: 250}]
+    "items": [<PageItem>{   
+                id: "alias.0.NSPanel_1.TestKlimaanlage", 
+                minValue: 50, 
+                maxValue: 250,
+                popupThermoMode1: ['Auto','0','1','2','3'],
+                popupThermoMode2: ['Auto','0','1','2','3','4','5'],
+                popupThermoMode3: ['Auto','Manual','Boost',],
+                popUpThermoName: ["Schwenk-Modus", 'Speed', 'Temperatur'],
+                icon: 'fan',
+                setThermoAlias: ['MODE1','MODE2','MODE3'],
+                setThermoDestTemp2: 'ACTUAL2'
+             }]
 };
 ```  
 
