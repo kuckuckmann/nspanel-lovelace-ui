@@ -1177,8 +1177,8 @@ Der Timer wird über dieses Script-Beispiel (separates und Blockly) gesteuert
 ![image](https://user-images.githubusercontent.com/102996011/208997021-c2d73a14-0590-4992-922d-92ff14f83b94.png)  
 ![image](https://user-images.githubusercontent.com/102996011/208997301-6b625a45-a977-4343-8689-5daab04963c1.png)  
   
-Alias erstellen:  
-Direkt im Objektverzeichnis unter alias.0. (ggfs. noch Verzeichnisse anlegen) einen Kanal anlegen  
+**Alias erstellen:  **
+Direkt im Objektverzeichnis unter alias.0. (ggfs. noch Verzeichnisse anlegen) einen Kanal anlegen ("+" in der Menüleiste):  
 ![image](https://user-images.githubusercontent.com/102996011/208997977-3cd0f99d-81e5-414d-b2d3-de0d17cfc737.png)  
 und die Rolle **level.mode.fan** zuweisen:  
 ![image](https://user-images.githubusercontent.com/102996011/208998518-13f71962-59af-43e8-bfdf-7b60e6ffeabc.png)  
