@@ -63,8 +63,20 @@ var Sprechender_eindeutiger_Seitenname: PageAlarm =
     ]
 };
 ```
+# cardMedia v2.0 (ab Release v3.7.0)
+![image](https://user-images.githubusercontent.com/102996011/209011472-eb23b182-2f36-4f35-8aaa-b2a3e6b1f7ec.png)  
 
-# cardMedia
+Neue Elemente
+* Shuffle
+* Neue Auswahl für Speakerauswahl/-wechsel
+* Playlist
+* Tracklist
+* Equalizer-Profile
+* Repeat
+
+> Beschreibung folgt
+
+# cardMedia v1.0 (bis Release v3.6.0)
 ![image](https://user-images.githubusercontent.com/102996011/204136831-afe5bde8-5046-495b-8ea7-68bc91e3a57c.png)  
 
 (Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
