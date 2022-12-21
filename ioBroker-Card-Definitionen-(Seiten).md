@@ -2302,7 +2302,8 @@ Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn e
 > ab Release v3.7.0
 
 Blockly für Influx 2.0
-![image](https://user-images.githubusercontent.com/102996011/209006084-514c3564-71ee-4cd4-b8f0-750a51d56552.png)
+![image](https://user-images.githubusercontent.com/102996011/209006326-c8036709-2235-4ef8-aa14-00798e09fce7.png)
+
 
   
 
