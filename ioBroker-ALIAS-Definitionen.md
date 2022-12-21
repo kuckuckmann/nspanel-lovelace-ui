@@ -1175,7 +1175,26 @@ Der Timer wird über dieses Script-Beispiel (separates und Blockly) gesteuert
 > ab Release 3.7.0
 
 ![image](https://user-images.githubusercontent.com/102996011/208997021-c2d73a14-0590-4992-922d-92ff14f83b94.png)  
-![image](https://user-images.githubusercontent.com/102996011/208997301-6b625a45-a977-4343-8689-5daab04963c1.png)
+![image](https://user-images.githubusercontent.com/102996011/208997301-6b625a45-a977-4343-8689-5daab04963c1.png)  
+  
+Alias erstellen:  
+Direkt im Objektverzeichnis unter alias.0. (ggfs. noch Verzeichnisse anlegen) einen Kanal anlegen  
+![image](https://user-images.githubusercontent.com/102996011/208997977-3cd0f99d-81e5-414d-b2d3-de0d17cfc737.png)  
+und die Rolle **level.mode.fan** zuweisen:  
+![image](https://user-images.githubusercontent.com/102996011/208998518-13f71962-59af-43e8-bfdf-7b60e6ffeabc.png)  
+
+Danach folgende States unter dem Kanal (channel) anlegen:  
+* .SET --> Verweist auf An/Aus Datenpunkt des Ventilators (true/false)
+* .ACTUAL --> Verweist ebenfalls auf An/Aus Datenpunkt des Ventilators (true/false)
+* .SPEED --> Verweist auf Geschwindigkeit des Vetilators (Default 100%. und kann über maxValue im pageItem begrenzt werden)
+* .MODE --> Falls der Ventilator über unterschiedliche Modes zur Einstellung verfügt. Ansonsten kann der auch über einen Datenpunkt unter 0_userdata erstellt werden und mittels Blockly Modes erzeugen bzw. steuern.  
+
+![image](https://user-images.githubusercontent.com/102996011/209000232-4f326a18-3b8f-4129-a9fa-4b338b32561a.png)  
+
+**Das PageItem:**  
+<PageItem>{ id: "alias.0.NSPanel_1.Ventilator.Fan_1",name: "Ventilator", icon: "fan", onColor: On, offColor: HMIOff, modeList: ['Low', 'Medium', 'High', 'Move', 'Sleep', 'Auto', 'Manual']}  
+
+modeList enthält die Werte des Datenpunktes (im Beispiel nur exemplarisch) zum Schalten der Modes.
 
 ***
 
