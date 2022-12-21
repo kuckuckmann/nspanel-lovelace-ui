@@ -2297,11 +2297,37 @@ Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn e
 
 # cardChart (ab TS-Script v.3.7.0)  
 
-![image](https://user-images.githubusercontent.com/102996011/204631969-dfd8b8e9-09d0-45c2-a243-5e047f09ab05.png)  
-   
 > ab Release v3.7.0
 
-Blockly für Influx 2.0
+![image](https://user-images.githubusercontent.com/102996011/204631969-dfd8b8e9-09d0-45c2-a243-5e047f09ab05.png)  
+   
+> Für das unten abgebildete Blockly-Script wurden die Werte eines Datenpunktes "sonoff.0.DZG_DWSB20_2H.DZG_Leistung_Aktuell" in einer Influx 2.0 Datenbank gespeichert.  
+
+Es wird für das Skript ein Datenpunkt (hier im Beispiel "0_userdata.0.Test.cardChart.txt") benötigt, um das Chart für die cardChart aufzubereiten.
+
+**Alias-Erstellung:**  
+Es wird lediglich ein Alias vom Gerätetyp "Info" benötigt:
+![image](https://user-images.githubusercontent.com/102996011/209008594-36da27fb-cde2-4964-bcd8-3b406f4656cb.png)
+
+**PageItem Beispiel:**
+```
+let CardChartExample: PageChart =
+{
+    "type": "cardChart",
+    "heading": "Stromzähler L1+L2+L3",
+    "useColor": true,
+    "subPage": false,
+    "parent": undefined,
+    "items": [<PageItem>{ 
+                id: 'alias.0.NSPanel_1.cardChart', 
+                yAxis: 'Leistung [kW]', 
+                yAxisTicks: [2,4,6,8,10,2,4,6,8,20,2], 
+                onColor: Yellow
+             }]
+};
+```
+
+**Blockly für Influx 2.0**
 ![image](https://user-images.githubusercontent.com/102996011/209006326-c8036709-2235-4ef8-aa14-00798e09fce7.png)
 
 <details>
