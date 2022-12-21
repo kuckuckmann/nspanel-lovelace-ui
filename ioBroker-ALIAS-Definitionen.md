@@ -897,24 +897,26 @@ Der Timer greift auf selbsterstellte Datenpunkte zurück, welche (analog Beispie
 Korrekte Erstellung des ALIAS level.timer
 ![image](https://user-images.githubusercontent.com/102996011/208917886-2c84cb2c-dee6-456d-8222-1a76f0cb3782.png)  
 
-Direkt unter Objekte --> alias.0. mit dem "+" entsprechende Verzeichnisstruktur erzeugen und mit dem "+" in der Menüleiste den Channel erzeugen:
-![image](https://user-images.githubusercontent.com/102996011/208925037-79f14c3d-d660-4ac0-b08a-3639416484d6.png)
+Direkt unter Objekte --> alias.0. mit dem "+" die gewünschte Verzeichnisstruktur erzeugen 
 
-Dann die States für ACTUAL dazu anlegen:
-![image](https://user-images.githubusercontent.com/102996011/208925276-5b7bd82a-e864-4a16-a8f7-667f02ea7018.png)
-![image](https://user-images.githubusercontent.com/102996011/208925413-da9c47be-5166-42f6-9f9b-a2cdea0c2d94.png)
+Dann mit dem "+" in der Menüleiste den Channel erzeugen:
+![image](https://user-images.githubusercontent.com/102996011/208925037-79f14c3d-d660-4ac0-b08a-3639416484d6.png)  
 
-und die States für STATE anlegen:
-![image](https://user-images.githubusercontent.com/102996011/208925774-f156de0b-82b3-4603-95f9-328fe650c02d.png)
-![image](https://user-images.githubusercontent.com/102996011/208925863-93b631b9-abd6-45ee-b488-d33a2291b4a1.png)
-
-PageItem zum Beispiel:
-<PageItem>{ id: "alias.0.NSPanel_1.Countdown", icon: "timer-outline", name: "Timer", onColor: White}
-
+Dann die States für ACTUAL dazu anlegen:  
+![image](https://user-images.githubusercontent.com/102996011/208925276-5b7bd82a-e864-4a16-a8f7-667f02ea7018.png)  
+![image](https://user-images.githubusercontent.com/102996011/208925413-da9c47be-5166-42f6-9f9b-a2cdea0c2d94.png)  
+  
+und die States für STATE anlegen:  
+![image](https://user-images.githubusercontent.com/102996011/208925774-f156de0b-82b3-4603-95f9-328fe650c02d.png)  
+![image](https://user-images.githubusercontent.com/102996011/208925863-93b631b9-abd6-45ee-b488-d33a2291b4a1.png)  
+  
+PageItem zum Beispiel:  
+<PageItem>{ id: "alias.0.NSPanel_1.Countdown", icon: "timer-outline", name: "Timer", onColor: White}  
+  
 
 **Blockly**  
 Der Timer wird über dieses Script-Beispiel (separates und Blockly) gesteuert  
-![image](https://user-images.githubusercontent.com/102996011/208922045-9bd46a61-4c8a-490b-b999-5e12dc911854.png)
+![image](https://user-images.githubusercontent.com/102996011/208922045-9bd46a61-4c8a-490b-b999-5e12dc911854.png)  
 
 <details>
   <summary><b>Spoiler:</b> Blockly Script</summary>  
