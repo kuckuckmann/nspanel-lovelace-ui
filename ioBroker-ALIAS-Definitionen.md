@@ -876,7 +876,9 @@ maxValue: Minimaltemperatur Beispiel 30°C = 300
 ***
 
 ### Timer - popUpTimer - (level.timer)  
-
+  
+> Ab Release 3.7.0
+  
 ![image](https://user-images.githubusercontent.com/102996011/208918067-65174b22-a7b6-4a81-a11b-cdca44c947e2.png)  
   
 ![image](https://user-images.githubusercontent.com/102996011/208920490-e000b054-dc6b-4583-a501-0c684a9de43f.png)  
