@@ -1170,6 +1170,15 @@ Der Timer wird über dieses Script-Beispiel (separates und Blockly) gesteuert
 
 ***
 
+### Ventilator - Fan - (channel level.mode.fan)  
+
+> ab Release 3.7.0
+
+![image](https://user-images.githubusercontent.com/102996011/208997021-c2d73a14-0590-4992-922d-92ff14f83b94.png)  
+![image](https://user-images.githubusercontent.com/102996011/208997301-6b625a45-a977-4343-8689-5daab04963c1.png)
+
+***
+
 ### Verschluss (channel lock)
 
 ![image](https://user-images.githubusercontent.com/102996011/189404088-9a2cd3ea-5c43-4c3f-9bd9-e58eac2e6fd6.png)
