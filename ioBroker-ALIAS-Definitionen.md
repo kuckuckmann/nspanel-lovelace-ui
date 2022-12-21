@@ -898,7 +898,8 @@ Blockly
 ![image](https://user-images.githubusercontent.com/102996011/208922045-9bd46a61-4c8a-490b-b999-5e12dc911854.png)
 
 <details>
-  <summary>Blockly</summary>
+  <summary><b>Spoiler:</b> Blockly Script</summary>  
+
 ```
 <xml xmlns="https://developers.google.com/blockly/xml">
   <variables>
@@ -1138,7 +1139,7 @@ Blockly
 </xml>
 ```
 </details>  
-  (Bild & Blockly by @Armilar)  
+  
 
 ***
 
