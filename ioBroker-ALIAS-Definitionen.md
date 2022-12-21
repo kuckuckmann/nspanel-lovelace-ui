@@ -881,6 +881,10 @@ maxValue: Minimaltemperatur Beispiel 30°C = 300
   
 ![image](https://user-images.githubusercontent.com/102996011/208918067-65174b22-a7b6-4a81-a11b-cdca44c947e2.png)  
   
+![Nextion_Editor_DyyGoz044r](https://user-images.githubusercontent.com/102996011/208929333-0be6783c-aca8-453c-92fb-5d83861da21a.gif)
+
+
+
 ![image](https://user-images.githubusercontent.com/102996011/208920490-e000b054-dc6b-4583-a501-0c684a9de43f.png)  
 ![image](https://user-images.githubusercontent.com/102996011/208920708-4dac1e8f-9e21-4809-b5d8-e5f1a03fb048.png)  
   
