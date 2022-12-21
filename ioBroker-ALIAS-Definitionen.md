@@ -873,6 +873,26 @@ name: Vom Alias abweichender Name
 minValue: Minimaltemperatur Beispiel 5°C = 50  
 maxValue: Minimaltemperatur Beispiel 30°C = 300  
 
+***
+
+### Timer (level.timer)
+
+![image](https://user-images.githubusercontent.com/102996011/208918067-65174b22-a7b6-4a81-a11b-cdca44c947e2.png)  
+
+Für den Timer (Stopp-Uhr) gibt es weder im Geräte-Manager, noch im Alias-Manager einen vorgefertigten ALIAS Gerätetypen. Daher muss dieser eigenhändig erstellt werden.
+
+
+
+Objekte
+![image](https://user-images.githubusercontent.com/102996011/208917886-2c84cb2c-dee6-456d-8222-1a76f0cb3782.png)  
+
+Der Timer greift auf selbsterstellte Datenpunkte zurück, welche (analog Beispiel) wie folgt angelegt werden müssen.
+
+* 0_userdata.0...Timer_1.ACTUAL --> number --> Nimmt die eingestellte Zeit aus dem NSPanel in Sekunden auf und wird bei Ausführung durch das externe Script dekrementiert.
+* 0_userdata.0...Timer_1.STATE --> string --> Erhält den Status vom Blockly und vom NSPanel
+Blockly
+![image](https://user-images.githubusercontent.com/102996011/208917343-3bdcd7f9-fdc4-44a5-9e76-e77d36c88132.png)  
+
 
 ***
 
