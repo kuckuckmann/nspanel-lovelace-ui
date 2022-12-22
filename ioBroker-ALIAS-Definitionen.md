@@ -813,9 +813,14 @@ icon2: zu visualisierendes Icon für Off
 
 ***
 
-### Tastensensor (channel buttonSensor)
+### Tastensensor --> popupInSel (channel buttonSensor)
 
-> Beschreibung für den Alias Tastensenso folgt...
+> ab Release 3.7.0
+
+Das popupInSel dient der Auswahl von Werten in einer Aufzählung (Array)
+
+![image](https://user-images.githubusercontent.com/102996011/209156239-7978d5d4-e0c4-4507-a249-1879f9fe674b.png)
+
 
 ***
 
