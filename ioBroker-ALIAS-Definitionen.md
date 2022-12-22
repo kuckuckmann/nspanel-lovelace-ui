@@ -817,10 +817,23 @@ icon2: zu visualisierendes Icon für Off
 
 > ab Release 3.7.0
 
-Das popupInSel dient der Auswahl von Werten in einer Aufzählung (Array)
+Das **popupInSel** dient der Auswahl von Werten in einer Aufzählung (Liste/Array) und wird in einer **cardGrid** platziert
 
-![image](https://user-images.githubusercontent.com/102996011/209156239-7978d5d4-e0c4-4507-a249-1879f9fe674b.png)
+![image](https://user-images.githubusercontent.com/102996011/209156239-7978d5d4-e0c4-4507-a249-1879f9fe674b.png)  
 
+**ALIAS:**
+über das '+' Icon im Gerätemanager wird ein DP ".VALUE" angelegt. Dieser verweist auf eine numerische-Aufzählung oder einen numerischen Datenpunkt zur Weiterverarbeitung. Zurückgegeben wird der Wert aus dem Parameter "modeList" beginnend mit 0 (analog Array).
+![image](https://user-images.githubusercontent.com/102996011/209159430-864ab683-9a9d-4e6c-bbdf-b26091279afe.png)  
+
+**PageItem:**
+```
+<PageItem>{ id:     "alias.0.NSPanel_EMU.TestButtonSensor", 
+            icon:   "select-color", 
+            name:   "WLED Effekte", 
+            onColor: White, 
+            modeList: [ 'Solid', 'Android', 'Aurora', 'Blends', 'Blink', 'Bpm', 'Breathe', 
+                        'Candle', 'Candle Multi', 'Candy Cane', 'Chase', 'Chase 1', 'Chase 2', 'usw.']},
+```
 
 ***
 
