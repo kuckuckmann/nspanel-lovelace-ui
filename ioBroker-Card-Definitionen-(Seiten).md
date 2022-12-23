@@ -80,7 +80,7 @@ var Sprechender_eindeutiger_Seitenname: PageAlarm =
   ![image](https://user-images.githubusercontent.com/102996011/209347405-f33dbd6d-ce7d-4dba-9744-73835f7c1c81.png)
 
 * Equalizer-Profile  
-  ![image](https://user-images.githubusercontent.com/102996011/209347576-809eaabe-c853-476f-82f8-6536694ba404.png)
+  ![image](https://user-images.githubusercontent.com/102996011/209347576-809eaabe-c853-476f-82f8-6536694ba404.png)  
   [Link: Blockly für Klangsteuerung in der cardMedia](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#12-equalizer-f%C3%BCr-cardmedia)
 
 * Repeat (nach Verfügbarkeit des Adapters)  
