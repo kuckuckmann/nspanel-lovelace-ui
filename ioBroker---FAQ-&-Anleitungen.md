@@ -3076,7 +3076,7 @@ var PV_Anlage: PageEntities =
 
 ![image](https://user-images.githubusercontent.com/102996011/209372488-1960898c-03a5-4bda-baae-f95e5a0100bd.png)
 
-Die cardMedia ab Release 3.7.0 verfügt über eine Liste zur Steuerung der Klangprofile. Folgendes Beispiel soll verdeutlichen, wie die EQ Steuerung bei Alexa Echo-Devices erfolgen kann:
+Die cardMedia ab Release 3.7.0 verfügt über eine Liste zur Steuerung der Klangprofile. Folgendes Beispiel soll verdeutlichen, wie die EQ Steuerung bei Alexa Echo-Devices erfolgen kann. Da jeder ein unterschiedliches Klangverständnis hat oder die Klangkarakteristik der einelnen Speaker sehr unterschiedlich sein kann, sollte der entsprechende Wert für bass/mid/treble je Speaker und Profil entsprechend eingestellt bzw. angepasst werden:
 
 ![image](https://user-images.githubusercontent.com/102996011/209371972-5d515c8a-d4f2-407c-8cf7-0364d3fc3528.png)
 
