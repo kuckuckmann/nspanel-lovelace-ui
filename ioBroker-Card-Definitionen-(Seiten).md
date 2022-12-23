@@ -77,6 +77,7 @@ Neue Elemente
 (Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))   
 
 > **Definition ab TS-Version 3.7.0** (Breaking Changes)  
+
 **alexa2-Adapter**
 ```
 let Alexa: PageMedia = 
