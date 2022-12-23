@@ -71,7 +71,9 @@ Neue Elemente
 * Neue Auswahl für Speakerauswahl/-wechsel  
   ![image](https://user-images.githubusercontent.com/102996011/209346590-f265353e-a35a-42d4-9d1f-48426e47eb44.png)
 
-* Playlist
+* Playlist  
+  ![image](https://user-images.githubusercontent.com/102996011/209347004-5d20ac06-b5c2-472e-aeb8-4e9bbb0082e9.png)
+
 * Tracklist
 * Equalizer-Profile
 * Repeat
