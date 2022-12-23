@@ -66,8 +66,9 @@ var Sprechender_eindeutiger_Seitenname: PageAlarm =
 # cardMedia v2.0 (ab Release v3.7.0)
 ![image](https://user-images.githubusercontent.com/102996011/209344233-c7d700c4-eb87-4c51-9441-b51368c88096.png)
 
-Neue Elemente
-* Shuffle
+**Neue Elemente**
+* Shuffle  
+  ![image](https://user-images.githubusercontent.com/102996011/209348879-59575912-b9c6-452f-885c-0cbb2791f750.png)
 
 * Neue Auswahl für Speakerauswahl/-wechsel  
   ![image](https://user-images.githubusercontent.com/102996011/209346590-f265353e-a35a-42d4-9d1f-48426e47eb44.png)
@@ -75,13 +76,13 @@ Neue Elemente
 * Playlist  
   ![image](https://user-images.githubusercontent.com/102996011/209347004-5d20ac06-b5c2-472e-aeb8-4e9bbb0082e9.png)
 
-* Tracklist (Bei Playlist und falls verfügbar)
+* Tracklist (Bei Playlist und falls verfügbar)  
   ![image](https://user-images.githubusercontent.com/102996011/209347405-f33dbd6d-ce7d-4dba-9744-73835f7c1c81.png)
 
-* Equalizer-Profile
+* Equalizer-Profile  
   ![image](https://user-images.githubusercontent.com/102996011/209347576-809eaabe-c853-476f-82f8-6536694ba404.png)
 
-* Repeat (je nach Verfügbarkeit des Adapters)
+* Repeat (je nach Verfügbarkeit des Adapters)  
   ![image](https://user-images.githubusercontent.com/102996011/209348242-264737e4-7b31-488e-a4db-10e0f6bd6e08.png)
 
 (Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))   
