@@ -68,7 +68,7 @@ var Sprechender_eindeutiger_Seitenname: PageAlarm =
 
 Neue Elemente
 * Shuffle
-* Neue Auswahl für Speakerauswahl/-wechsel
+* Neue Auswahl für Speakerauswahl/-wechsel  
   ![image](https://user-images.githubusercontent.com/102996011/209346590-f265353e-a35a-42d4-9d1f-48426e47eb44.png)
 
 * Playlist
