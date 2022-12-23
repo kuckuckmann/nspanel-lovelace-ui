@@ -67,7 +67,7 @@ var Sprechender_eindeutiger_Seitenname: PageAlarm =
 ![image](https://user-images.githubusercontent.com/102996011/209344233-c7d700c4-eb87-4c51-9441-b51368c88096.png)
 
 **Neue Elemente**
-* Shuffle (nach verfügbarkeit des Adapters)
+* Shuffle (nach verfügbarkeit des Adapters)  
   ![image](https://user-images.githubusercontent.com/102996011/209348879-59575912-b9c6-452f-885c-0cbb2791f750.png)
 
 * Neue Auswahl für Speakerauswahl/-wechsel  
