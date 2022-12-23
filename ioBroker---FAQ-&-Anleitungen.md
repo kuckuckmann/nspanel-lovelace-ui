@@ -3074,7 +3074,11 @@ var PV_Anlage: PageEntities =
 
 ## **12.) Equalizer für cardMedia**
 
-![image](https://user-images.githubusercontent.com/102996011/209372488-1960898c-03a5-4bda-baae-f95e5a0100bd.png)
+![image](https://user-images.githubusercontent.com/102996011/209372488-1960898c-03a5-4bda-baae-f95e5a0100bd.png)  
+
+Über das Panel werden die in der Liste enthaltenen Werte in einen Datenpunkt (wird durch das TS-Script erzeugt) in 0_userdata geschrieben:
+![image](https://user-images.githubusercontent.com/102996011/209374619-c34daff7-5564-4239-a857-f417231bde36.png)  
+Das nachfolgende Blockly wertet die Änderungen in diesem Datenpunkt aus und steuert das entsprechende Device.
 
 Die cardMedia ab Release 3.7.0 verfügt über eine Liste zur Steuerung der Klangprofile. Folgendes Beispiel soll verdeutlichen, wie die EQ Steuerung bei Alexa Echo-Devices erfolgen kann. Da jeder ein unterschiedliches Klangverständnis hat oder die Klangkarakteristik der einelnen Speaker sehr unterschiedlich sein kann, sollte der entsprechende Wert für bass/mid/treble je Speaker und Profil entsprechend eingestellt bzw. angepasst werden:
 
