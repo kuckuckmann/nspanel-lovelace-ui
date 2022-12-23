@@ -74,9 +74,9 @@ Neue Elemente
 * Equalizer-Profile
 * Repeat
 
-(Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
+(Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))   
 
-> **Definition ab TS-Version 3.7.0** (Breaking Changes)
+> **Definition ab TS-Version 3.7.0** (Breaking Changes)  
 **alexa2-Adapter**
 ```
 let Alexa: PageMedia = 
