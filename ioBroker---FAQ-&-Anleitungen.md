@@ -154,13 +154,8 @@ Nachfolgend ein kurzes Emulationsskript für die Weiterverarbeitung. Diese Logik
   ![image](https://user-images.githubusercontent.com/99131208/188735860-880e0a81-407e-454e-b7d2-05cf8f57acfb.png)  
  
 
-<details>
-  <summary>Blockly</summary>
-
-```
-[https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/Alarm_Page_Testskript.xml](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/Alarm_Page_Testskript.xml)
-```
-</details>  
+[Download Blocky](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/Alarm_Page_Testskript.xml)  
+   
   (Bild & Blockly by @Armilar)  
 
   
