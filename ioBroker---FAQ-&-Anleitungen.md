@@ -771,20 +771,19 @@ Hierzu gibt es mehrere Beiträge im ioBroker Forum. U.a. in den Posts [116](http
 * **Erklärung:**  
 Das TS-Script benutzt so manche Umrechnung von Farben aller Art. Die von euch benötigte ist aber diese Funktion und es stimmt - es ist nicht "decimal", sondern "decimal 565". Siehe auch [https://nextion.tech/instruction-set/#s5](https://nextion.tech/instruction-set/#s5).  
   
-`function rgb_dec565(rgb: RGB): number {
+  `function rgb_dec565(rgb: RGB): number {
     return ((Math.floor(rgb.red / 255 * 31) << 11) | (Math.floor(rgb.green / 255 * 63) << 5) | (Math.floor(rgb.blue / 255 * 31)));
 }`  
   
 * **Blockly farbrechner:**  
 Für alle die mit dem Coding nicht klarkommen - habe ich es mal in ein Blockly geschoben. Ihr könnt es nach belieben verformen, verändern oder sonst etwas machen. Es wird aber in diesem Fall nur aus rot, grün und blau eine dec565 erzeugen (als Warnung 😉 im Log)  
   
-Farbe aussuchen in z.B. [www.rapidtables.com](https://www.rapidtables.com/web/color/RGB_Color.html), dann die Decimal Code
-R,G,B in die Variablen red, green, blue übertragen (Hier im Beispiel für weiß - 255 255 255).  
-![image](https://user-images.githubusercontent.com/99131208/209830455-134355bc-39e8-4fcb-a0d9-ce48be3a83e6.png)  
-[Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/RGB_Dec565_rechner.xml)
+  Farbe aussuchen in z.B. [www.rapidtables.com](https://www.rapidtables.com/web/color/RGB_Color.html), dann die Decimal Code R,G,B in die Variablen red, green, blue übertragen (Hier im Beispiel für weiß - 255 255 255).  
+  ![image](https://user-images.githubusercontent.com/99131208/209830455-134355bc-39e8-4fcb-a0d9-ce48be3a83e6.png)  
+  [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/RGB_Dec565_rechner.xml)
   
-Ergebnis ![image](https://user-images.githubusercontent.com/99131208/209830527-da443317-0717-4145-9dec-774c7371a72e.png)  
-16-bit 565 Colors are in decimal values from 0 to 65535  
+  Ergebnis ![image](https://user-images.githubusercontent.com/99131208/209830527-da443317-0717-4145-9dec-774c7371a72e.png)  
+  16-bit 565 Colors are in decimal values from 0 to 65535  
  
 * **ColorPicker:**
 @Jobr99 war so nett und hat einen ColorPicker gebaut, den man [hier](https://docs.nspanel.pky.eu/notifications/#color-picker) finden kann.   
