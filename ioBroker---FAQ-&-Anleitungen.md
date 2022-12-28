@@ -637,6 +637,9 @@ Die cardMedia ab Release 3.7.0 verfügt über eine Liste zur Steuerung der Klang
   
 ### **13a)Blätterprobleme**  
   
+* **Quelle:**  
+Gefunden beispielsweise im ioBroker Forum in den Posts [507](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/507) und [610](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/610).
+  
 * **Problemstellung:**  
 Beim durchblättern der Seiten kommt man über die Seite zwei nicht hinaus und man kann auch nicht mehr zurück auf die Seite 1. Man muss immer warten bis der Screensaver aktiv wird und dann kann man mit Glück weiter blättern auf eine andere Unterseite. beim zurückblättern bleibt man aber wieder auf der Seite 2 hängen.  
   
