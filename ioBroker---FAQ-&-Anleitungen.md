@@ -18,6 +18,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **12.)** Platzhalter  
 **13.)** Blätterprobleme & direkter Seitenaufruf  
 **14.)** NSPanel Temperatursensor für MQTT  
+**15.)** Zeiteinstellung Host System  
  
 # **Changelog**
 <details>
@@ -46,7 +47,8 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 18.11.2022 - Abfallkalender - Beispielpage für TS-Scrpit angepasst 
 27.12.2022 - Skripte (Blocklys und JS) wurde in Repository ausgelagert und sind nun in der Wiki nur noch verlinkt
 28.12.2022 - Blätterprobleme & Direkter Seitenaufruf - Erstellt  
-28.12.2022 - NSPanel Temperatursensor für MQTT - Erstellt  
+28.12.2022 - NSPanel Temperatursensor für MQTT - Erstellt 
+28.12.2022 - Zeiteinstellung Host System - Erstellt   
 </details>  
 
 
@@ -693,4 +695,19 @@ Post [536](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui
   `Rule1 ON ANALOG#Temperature1!=%Var1% DO backlog publish %topic%/stat/Temperature %value%; Var1 %value% ENDON`  
   
   **Aber:** Per Default ist der Temperatursensor bereits in den ursprünglichen Anlage in den Objekten verfügbar:  
-  **0_userdata.0.NSPanel.1.Sensor.ANALOG.Temperature**
+  **0_userdata.0.NSPanel.1.Sensor.ANALOG.Temperature**  
+  
+***
+  
+## **15.) Zeiteinstellung Host System**  
+  
+* **Quelle:**  
+Post [498](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/498) im ioBroker Forum.  
+  
+* **FAQ:**  
+  * Raspberry:  
+    `sudo raspi-config`  
+    Punkt 1 und Punkt 3. kann auch [hier](https://www.elektronik-kompendium.de/sites/raspberry-pi/1906291.htm) nachgesehen werden.  
+  
+***
+  
