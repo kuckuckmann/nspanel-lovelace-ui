@@ -699,9 +699,23 @@ Es gibt im ioBroker Forum verschiedene Posts die auf das Thema eingehen. Zum Bei
     `Rule1 on Button1#state do Publish %topic%/tele/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bPrev"} endon on Button2#state do Publish %topic%/tele/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bNext"} endon`  
   * Mindestvoraussetzung TS-Skript in der Version: **v3.4.0.3**  
   
-  
 *** 
   
+### **13e) Seite bei ScreensaverOFF**  
+  
+* **Quelle:**  
+Basierend auf den Post [1493](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1493) des ioBroker Forums.  
+  
+* **Beschreibung:**  
+Wenn der Screensaver nach einer bestimmten Zeit aus geht oder durch eine Aktion beendet wird, so soll die definierte Seite 1 oder eine andere definierte Seite angezeigt werden.  
+  
+* **Lösung:**
+Im Datenpunkt **0_userdata.0.NSPanel.1.ScreensaverInfo.bExitPage** die Seiten ID der gewünschten Seite angeben.  
+Die Ermittlung der Seiten ID ist in Artikel [13b](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#13b-seitenaufruf-im-alarmfall) beschrieben.  
+
+  
+***
+    
 ## **14.) NSPanel Temperatursensor für MQTT**    
   
 * **Quelle:**  
