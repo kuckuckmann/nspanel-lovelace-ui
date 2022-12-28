@@ -16,7 +16,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **10.)** DWD Daten an verschiedene NSPanels schicken  
 **11.)** PV-Daten Info Seite  
 **12.)** Platzhalter  
-**13.)** Blätterprobleme & direkter Seitenaufruf 
+**13.)** Blätterprobleme & direkter Seitenaufruf  
 **14.)** NSPanel Temperatursensor für MQTT  
  
 # **Changelog**
@@ -45,7 +45,8 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 24.09.2022 - PV-Daten Info Seite - erstellt  
 18.11.2022 - Abfallkalender - Beispielpage für TS-Scrpit angepasst 
 27.12.2022 - Skripte (Blocklys und JS) wurde in Repository ausgelagert und sind nun in der Wiki nur noch verlinkt
-28.12.2022 - Blätterprobleme & Direkter Seitenaufruf - @Work
+28.12.2022 - Blätterprobleme & Direkter Seitenaufruf - Erstellt  
+28.12.2022 - NSPanel Temperatursensor für MQTT - Erstellt  
 </details>  
 
 
