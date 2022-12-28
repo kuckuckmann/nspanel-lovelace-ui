@@ -19,6 +19,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **13.)** Blätterprobleme & direkter Seitenaufruf  
 **14.)** NSPanel Temperatursensor für MQTT  
 **15.)** Zeiteinstellung Host System  
+**16.)** NSPanel Relais via Skript steuern  
  
 # **Changelog**
 <details>
@@ -49,6 +50,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 28.12.2022 - Blätterprobleme & Direkter Seitenaufruf - Erstellt  
 28.12.2022 - NSPanel Temperatursensor für MQTT - Erstellt 
 28.12.2022 - Zeiteinstellung Host System - Erstellt   
+28.12.2022 - NSPanel Relais via Skript steuern - Erstellt  
 </details>  
 
 
@@ -710,4 +712,37 @@ Post [498](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui
     Punkt 1 und Punkt 3. kann auch [hier](https://www.elektronik-kompendium.de/sites/raspberry-pi/1906291.htm) nachgesehen werden.  
   
 ***
+  
+## **16.) NSPanel Relais via Skript steuern**  
+  
+* **Quelle:**  
+Post [424](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/424) im ioBroker Forum.  
+  
+* **Problemstellung:**
+Wie kann man vom ioBroker aus die/das Relais des NSPanel (via Skript) schalten?  
+  
+* **Lösungsvorschlag:**  
+  * Zunächst das/die Relais über die Rule 2 entkoppeln (Anleitung [hier](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#1-button-entkoppeln) zu finden)  
+  * Das anschalten des Relais kann über einen Steuere-Blockly-Block  
+    ![image](https://user-images.githubusercontent.com/99131208/209823415-e3607773-3878-4d09-9185-449eb874e632.png)  
+    oder alternativ über setState (JS) erfolgen  
+    ![image](https://user-images.githubusercontent.com/99131208/209823475-46b0f6f6-a818-41ca-9223-f610d00b39b8.png)  
+    Kann je nach Konfiguration auch POWER1 oder POWER2 sein.
+  
+* **Erklärungen:**  
+  Die Tasmota Rule2 ist dafür da, die Buttons als Favoritenseiten zu benutzen. In diesem Zusammenhang werden keine Relays genutzt. Natürlich kann man das auch auftrennen, in dem man eine ButtonPage benutzt und einen physischen Hardware-Button.  
+  
+  Stat ist nur der Status des Buttons - den kannst du über stat nicht verändern. Wenn der POWER1 oder/und POWER2 aktiv gesteuert werden soll, muss dass über cmnd erfolgen.  
+  
+  ![image](https://user-images.githubusercontent.com/99131208/209823303-08a09126-6a22-4ea7-b0c2-f49d78bddef9.png)  
+  
+* **Zusätzliche Infos:**  
+  **Panel:** über ALIAS Thermostat  
+    * Über eine Thermostatpage wird ein Setpoint (Solltemperatur) in einem Datenpunkt in 0_userdata.0... gesteuert.
+    * Ebenfalls gibt es entweder den internen oder den externen Raumsensor, der die aktuelle Raumtemperatur beinhaltet.
+  
+  **Externes Script:**  
+    * Eventuell ist ein weiterer Datenpunkt erforderlich, der einen Offset zur Temperatur beinhaltet.  
+    * Wenn Ist-Raumtemperatur +- Offset < Setpoint-Temperatur --> Relay auf 1 (an)  
+    * Wenn Ist-Raumtemperatur +- Offset > Setpoint-Temperatur --> Relay auf 0 (aus)  
   
