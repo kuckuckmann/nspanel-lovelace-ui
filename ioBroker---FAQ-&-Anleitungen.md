@@ -675,5 +675,11 @@ Wenn man dieses JSON nun so zusammenbaut und in den Datenpunkt schreibt, dann wi
   
 ***
   
+### **13c) Seitenaufruf mit einem Hardwarebutton**  
   
+Dies wurde bereits im [Punkt 1 - Button entkoppeln](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#1-button-entkoppeln) erklärt.  
+  
+***  
+  
+    
   
