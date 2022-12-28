@@ -16,6 +16,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **10.)** DWD Daten an verschiedene NSPanels schicken  
 **11.)** PV-Daten Info Seite  
 **12.)** Platzhalter  
+**13.)** Blätterprobleme & direkter Seitenaufruf  
  
 # **Changelog**
 <details>
@@ -42,6 +43,8 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 24.09.2022 - DWD Blockly - erstellt  
 24.09.2022 - PV-Daten Info Seite - erstellt  
 18.11.2022 - Abfallkalender - Beispielpage für TS-Scrpit angepasst 
+27.12.2022 - Skripte (Blocklys und JS) wurde in Repository ausgelagert und sind nun in der Wiki nur noch verlinkt
+28.12.2022 - Blätterprobleme & Direkter Seitenaufruf - @Work
 </details>  
 
 
@@ -625,4 +628,20 @@ Die cardMedia ab Release 3.7.0 verfügt über eine Liste zur Steuerung der Klang
 
 ![image](https://user-images.githubusercontent.com/102996011/209371972-5d515c8a-d4f2-407c-8cf7-0364d3fc3528.png)  
 
-[Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/CardMedia_Equalizer.xml)
+[Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/CardMedia_Equalizer.xml)  
+  
+  
+***
+
+## **13.) Blätterprobleme & direkter Seitenaufruf**  
+  
+### **13a)Blätterprobleme**  
+  
+* **Problemstellung:**  
+Beim durchblättern der Seiten kommt man über die Seite zwei nicht hinaus und man kann auch nicht mehr zurück auf die Seite 1. Man muss immer warten bis der Screensaver aktiv wird und dann kann man mit Glück weiter blättern auf eine andere Unterseite. beim zurückblättern bleibt man aber wieder auf der Seite 2 hängen.  
+  
+* **Lösung:**  
+ 
+Im MQTT Adapter des ioBroker prüfen, ob der Haken bei "Nur bei Änderungen publizieren" gesetzt ist oder nicht.  
+![mqtt_publizieren_setting](https://user-images.githubusercontent.com/99131208/209814386-9d5b1f8c-bc71-4b39-80d8-07df1edc4713.png)  
+Der haken darf **nicht** gesetzt sein!
