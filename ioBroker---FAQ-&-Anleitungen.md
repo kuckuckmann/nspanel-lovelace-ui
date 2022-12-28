@@ -46,13 +46,13 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 14.09.2022 - bug im js-script Abfall behoben  
 24.09.2022 - DWD Blockly - erstellt  
 24.09.2022 - PV-Daten Info Seite - erstellt  
-18.11.2022 - Abfallkalender - Beispielpage für TS-Scrpit angepasst 
-27.12.2022 - Skripte (Blocklys und JS) wurde in Repository ausgelagert und sind nun in der Wiki nur noch verlinkt
+18.11.2022 - Abfallkalender - Beispielpage für TS-Skrpit angepasst  
+27.12.2022 - Skripte (Blocklys und JS) wurde in Repository ausgelagert und sind nun in der Wiki nur noch verlinkt  
 28.12.2022 - Blätterprobleme & Direkter Seitenaufruf - Erstellt  
-28.12.2022 - NSPanel Temperatursensor für MQTT - Erstellt 
-28.12.2022 - Zeiteinstellung Host System - Erstellt   
+28.12.2022 - NSPanel Temperatursensor für MQTT - Erstellt  
+28.12.2022 - Zeiteinstellung Host System - Erstellt  
 28.12.2022 - NSPanel Relais via Skript steuern - Erstellt  
-28.12.2022 - Farben für das TS-Skript - Erstellt
+28.12.2022 - Farben für das TS-Skript - Erstellt  
 </details>  
 
 
