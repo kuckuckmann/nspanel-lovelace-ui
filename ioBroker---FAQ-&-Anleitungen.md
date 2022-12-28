@@ -16,7 +16,8 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **10.)** DWD Daten an verschiedene NSPanels schicken  
 **11.)** PV-Daten Info Seite  
 **12.)** Platzhalter  
-**13.)** Blätterprobleme & direkter Seitenaufruf  
+**13.)** Blätterprobleme & direkter Seitenaufruf 
+**14.)** NSPanel Temperatursensor für MQTT  
  
 # **Changelog**
 <details>
@@ -681,5 +682,14 @@ Dies wurde bereits im [Punkt 1 - Button entkoppeln](https://github.com/joBr99/ns
   
 ***  
   
-    
+## **14.) NSPanel Temperatursensor für MQTT**    
   
+* **Quelle:**  
+Post [536](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/536) im ioBroker Forum.  
+  
+* **FAQ:**  
+  Falls jemand den internen Sensor nutzen möchte, mit dieser Regel kann man ihn als MQTT-Objekt anzeigen lassen und im Alias zuordnen:  
+  `Rule1 ON ANALOG#Temperature1!=%Var1% DO backlog publish %topic%/stat/Temperature %value%; Var1 %value% ENDON`  
+  
+  **Aber:** Per Default ist der Temperatursensor bereits in den ursprünglichen Anlage in den Objekten verfügbar:  
+  **0_userdata.0.NSPanel.1.Sensor.ANALOG.Temperature**
