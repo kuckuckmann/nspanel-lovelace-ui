@@ -645,6 +645,12 @@ Beim durchblättern der Seiten kommt man über die Seite zwei nicht hinaus und m
   
 * **Lösung:**  
  
-Im MQTT Adapter des ioBroker prüfen, ob der Haken bei "Nur bei Änderungen publizieren" gesetzt ist oder nicht.  
-![mqtt_publizieren_setting](https://user-images.githubusercontent.com/99131208/209814386-9d5b1f8c-bc71-4b39-80d8-07df1edc4713.png)  
-Der haken darf **nicht** gesetzt sein!
+  Im MQTT Adapter des ioBroker prüfen, ob der Haken bei "Nur bei Änderungen publizieren" gesetzt ist oder nicht.  
+    
+  ![mqtt_publizieren_setting](https://user-images.githubusercontent.com/99131208/209814386-9d5b1f8c-bc71-4b39-80d8-07df1edc4713.png) 
+     
+  Der haken darf **nicht** gesetzt sein!
+  
+  
+***  
+  
