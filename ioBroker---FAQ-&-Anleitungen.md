@@ -654,3 +654,26 @@ Beim durchblättern der Seiten kommt man über die Seite zwei nicht hinaus und m
   
 ***  
   
+### **13b)Seitenaufruf im Alarmfall**  
+  
+* **Anfrage und Quelle:**  
+Aus dem Post [643](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/643) des ioBroker Forums die Anfrage ob es eine Möglichkeit gibt die Seite CardAlarm mit der Pin Eingabe auf dem Panel einzublenden, wenn es zu einem Alarmfall kommt.  
+  
+* **Lösungsmöglichkeit**  
+  
+* Es wird ein Datenpunkt benötigt, in den man via ioBroker eine Anweosung schreiben kann:  
+  ![1668112813553-85f91472-8033-4197-a007-99dba1a2d362-image](https://user-images.githubusercontent.com/99131208/209816688-9cc99664-c96e-4929-96b6-36ee650defe2.png)  
+* Ein externes Script muss eine Zeile zusammenbauen (JSON), wobei die 14 im Beispiel eine pageID ist.  
+  `{"pagetype": "page", "pageId": 14}`  
+  das ganze geht auch für Subpages:  
+  `{"pagetype": "subpage","pageId": 2}`  
+* Wie findest du die pageID der z.B. cardAlarm? Du zählst in deiner "export const Config" die Seiten ab 0 beginnend.  
+  ![1668113129126-b0a095f5-fab8-48ca-a38d-3483f5949e44-image](https://user-images.githubusercontent.com/99131208/209816873-4f1061a1-abd3-4cf5-b56c-e8a3f6e75af9.png)  
+  
+Wenn man dieses JSON nun so zusammenbaut und in den Datenpunkt schreibt, dann wird die gewünschte Seite auf dem Panel angezeigt.  
+  
+  
+***
+  
+  
+  
