@@ -687,6 +687,19 @@ Dies wurde bereits im [Punkt 1 - Button entkoppeln](https://github.com/joBr99/ns
   
 ***  
   
+### **13d) Mit den Hardwarebuttons Vor und Zurück navigieren**  
+  
+* **Quelle:**  
+Es gibt im ioBroker Forum verschiedene Posts die auf das Thema eingehen. Zum Beispiel erstmals in Post [1445](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1445), aber auch dann Später noch einmal in Post [1490](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1490).  
+  
+* **Lösung**:  
+  * Tasmota Rule 1 anlegen:  
+    `Rule1 on Button1#state do Publish %topic%/tele/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bPrev"} endon on Button2#state do Publish %topic%/tele/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bNext"} endon`  
+  * Mindestvoraussetzung TS-Skript in der Version: **v3.4.0.3**  
+  
+  
+*** 
+  
 ## **14.) NSPanel Temperatursensor für MQTT**    
   
 * **Quelle:**  
