@@ -669,7 +669,7 @@ Aus dem Post [643](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lov
   
 * **Lösungsmöglichkeit**  
   
-  * Es wird ein Datenpunkt benötigt, in den man via ioBroker eine Anweosung schreiben kann:  
+  * Es wird ein Datenpunkt benötigt, in den man via ioBroker eine Anweisung schreiben kann. Hierzu wurde der Datenpunkt **0_userdata.0.NSPanel.1.PageNavi** geschaffen:  
     ![1668112813553-85f91472-8033-4197-a007-99dba1a2d362-image](https://user-images.githubusercontent.com/99131208/209816688-9cc99664-c96e-4929-96b6-36ee650defe2.png)  
   * Ein externes Script muss eine Zeile zusammenbauen (JSON), wobei die 14 im Beispiel eine pageID ist.  
     `{"pagetype": "page", "pageId": 14}`  
