@@ -675,9 +675,13 @@ Aus dem Post [643](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lov
     `{"pagetype": "page", "pageId": 14}`  
     das ganze geht auch für Subpages:  
     `{"pagetype": "subpage","pageId": 2}`  
-  * Wie findest du die pageID der z.B. cardAlarm? Du zählst in deiner "export const Config" die Seiten ab 0 beginnend.  
+  * Wie findest du die pageID der z.B. cardAlarm?  
+    Du zählst in deiner "export const Config" die Seiten ab 0 beginnend.  
     ![209816873-4f1061a1-abd3-4cf5-b56c-e8a3f6e75af9](https://user-images.githubusercontent.com/99131208/210172380-4e58e917-20aa-4f97-8a44-015c2222afee.png)  
-    Hier im Beispiel in rot die Ziffern 0 bis 14 zeigen die zu verwendenden PageIDs an.  
+    Hier im Beispiel in rot die Ziffern 0 bis 14 zeigen die zu verwendenden PageIDs für **pagetype=page** an. Die cardAlarm (hier Buero_Alarm) hat dann die PageID 14.   
+    Folgend dann noch das Beispiel für  **pagetype=subpage**:  
+    ![2023-01-01 15_00_31-Window](https://user-images.githubusercontent.com/99131208/210173369-2b299a8d-5f36-4fe5-bed4-7f85ccbcb157.png)  
+    **Wichtig**: Die Subpages fangen wieder bei 0 an.
   
 Wenn man dieses JSON nun so zusammenbaut und in den Datenpunkt schreibt, dann wird die gewünschte Seite auf dem Panel angezeigt.  
   
