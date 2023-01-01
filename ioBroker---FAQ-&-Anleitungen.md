@@ -22,6 +22,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **16.)** NSPanel Relais via Skript steuern  
 **17.)** Farben für das TS-Skript  
 **18.)** Tasmota Datenpunkte im ioBroker werden nicht gefüllt  
+**19.)** Abweichende Uhrzeit  
  
 # **Changelog**
 <details>
@@ -55,6 +56,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 28.12.2022 - NSPanel Relais via Skript steuern - Erstellt  
 28.12.2022 - Farben für das TS-Skript - Erstellt  
 01.01.2023 - Tasmota Datenpunkte im ioBroker werden nicht gefüllt - Erstellt  
+01.01.2023 - Abweichende Uhrzeit - Erstellt
 </details>  
 
 
@@ -835,6 +837,27 @@ Bis dahin kann man im Skript die Zeile
 durch mit folgendem ersetzen:  
 `http://${get_current_tasmota_ip_address()}/cm?user=admin&PASSWORD&cmnd=Status0`  
 Dabei ist admin = gesetzter Username und PASSWORT = das gesetzte Passwort.
+  
+***
+  
+## **19.) Abweichende Uhrzeit**  
+  
+* **Quelle:**  
+Im ioBroker Forum Post [1428](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1428)  
+  
+* **Problem:**  
+Die Uhrzeit auf dem Display weicht von der Uhrzeit in der Tasmota Console ab.  
+  
+* **Ursache:**  
+Es wird nicht die Tasmotazeit verwendet, sondern die ioBroker-Zeit. Wenn diese anders ist, dann ist im ioBroker wahrscheinlich kein NTP-Server aktiv/eingestellt.  
+Sollte keine automatische Zeitsynchronisation (NTP) gewollt sein, kann man die Betriebssystem (System) Zeit auch manuell einstellen.  
+  
+* **Hilfestellung:**  
+![image](https://user-images.githubusercontent.com/99131208/210181801-214169c1-3923-4bed-8b47-498711da3cd3.png)  
+[Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/tree/main/ioBroker/Blockly/Uhrzeit_Logging.xml)  
+  
+* **Lösung:**  
+Noch offen  
   
 ***
   
