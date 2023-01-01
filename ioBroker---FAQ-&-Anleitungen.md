@@ -828,9 +828,10 @@ Die vom TS-Skript angelegten Datenpunkte im ioBroker werden nicht mit den erwart
   
 * **Ursache:**  
   Im NSPanel ist für den Tasmotazugriff ein Webpasswort gesetzt  
+![image](https://user-images.githubusercontent.com/99131208/210184629-6658c17e-6bc9-43f3-bc6f-f94f6d87f0aa.png)  
   
 * **Lösung:**  
-In einer neuen version wird es für Username und Passwort neue Datenpunkte geben.  
+In einer neuen Version wird es für Username und Passwort neue Datenpunkte geben.  
 Bis dahin kann man im Skript die Zeile  
 **url: `http://${get_current_tasmota_ip_address()}/cm?cmnd=Status0` **  
 ![image](https://user-images.githubusercontent.com/99131208/210181498-47b761a8-388c-479c-9b1a-ca74f9c71b3e.png)  
@@ -838,6 +839,10 @@ durch mit folgendem ersetzen:
 `http://${get_current_tasmota_ip_address()}/cm?user=admin&PASSWORD&cmnd=Status0`  
 Dabei ist admin = gesetzter Username und PASSWORT = das gesetzte Passwort.
   
+* **DEV Status:**  
+In der aktuellen Dev version schon drin:  
+`const tasmota_web_admin_user = 'admin'; // ändern, falls der User im Tasmota umbenannt wurde  
+const tasmota_web_admin_password = '';  // setzten, falls "Web Admin Password" in Tasmote vergeben`
 ***
   
 ## **19.) Abweichende Uhrzeit**  
