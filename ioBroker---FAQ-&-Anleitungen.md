@@ -829,10 +829,12 @@ Die vom TS-Skript angelegten Datenpunkte im ioBroker werden nicht mit den erwart
   
 * **Lösung:**  
 In einer neuen version wird es für Username und Passwort neue Datenpunkte geben.  
-Bis dahin kann man im Skript die Zeile **url: `http://${get_current_tasmota_ip_address()}/cm?cmnd=Status0` **  
+Bis dahin kann man im Skript die Zeile  
+**url: `http://${get_current_tasmota_ip_address()}/cm?cmnd=Status0` **  
 ![image](https://user-images.githubusercontent.com/99131208/210181498-47b761a8-388c-479c-9b1a-ca74f9c71b3e.png)  
 durch mit folgendem ersetzen:  
 `http://${get_current_tasmota_ip_address()}/cm?user=admin&PASSWORD&cmnd=Status0`  
+Dabei ist admin = gesetzter Username und PASSWORT = das gesetzte Passwort.
   
 ***
   
