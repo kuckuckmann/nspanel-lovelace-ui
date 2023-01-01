@@ -841,8 +841,8 @@ Dabei ist admin = gesetzter Username und PASSWORT = das gesetzte Passwort.
   
 * **DEV Status:**  
 In der aktuellen Dev version schon drin:  
-`const tasmota_web_admin_user = 'admin'; // ändern, falls der User im Tasmota umbenannt wurde  
-const tasmota_web_admin_password = '';  // setzten, falls "Web Admin Password" in Tasmote vergeben`
+`const tasmota_web_admin_user = 'admin'; // ändern, falls der User im Tasmota umbenannt wurde
+ const tasmota_web_admin_password = '';  // setzten, falls "Web Admin Password" in Tasmote vergeben`
 ***
   
 ## **19.) Abweichende Uhrzeit**  
