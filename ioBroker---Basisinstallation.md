@@ -87,7 +87,7 @@ f) Speichern klicken und Einstellungen verlassen
 
 ## **5.) TFT-Firmware flashen**
 Tasmota „Konsolen/Konsole“ öffnen und in die Kommandozeile  
-`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.6.0.tft`  
+`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.7.3.tft`  
 eingeben, mit Enter bestätigen. Das Panel installiert jetzt die TFT-Firmware (Kann beim ersten Mal ein paar Minuten dauern – Fortschritt beobachten – am Ende erfolgt ein Reboot und das Panel wechselt in einen Screen – „Waiting for Content“
 
 ![image](https://user-images.githubusercontent.com/102996011/189360485-1941baa7-c10a-4fb3-9dad-9c91124c47ad.png)
