@@ -21,6 +21,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **15.)** Zeiteinstellung Host System  
 **16.)** NSPanel Relais via Skript steuern  
 **17.)** Farben für das TS-Skript  
+**18.)** Tasmota Datenpunkte im ioBroker werden nicht gefüllt  
  
 # **Changelog**
 <details>
@@ -53,6 +54,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 28.12.2022 - Zeiteinstellung Host System - Erstellt  
 28.12.2022 - NSPanel Relais via Skript steuern - Erstellt  
 28.12.2022 - Farben für das TS-Skript - Erstellt  
+01.01.2023 - Tasmota Datenpunkte im ioBroker werden nicht gefüllt - Erstellt  
 </details>  
 
 
@@ -812,4 +814,26 @@ Für alle die mit dem Coding nicht klarkommen - habe ich es mal in ein Blockly g
 Um herauszufinden, welche Farbe der Dezimal-Code hat kannst du [nodtem66.github.io](https://nodtem66.github.io/nextion-hmi-color-convert/index.html) verwenden  
   
 ***  
+  
+##**18.) Tasmota Datenpunkte im ioBroker werden nicht gefüllt**  
+  
+* **Quelle**  
+ioBroker Forum Posts ab [1412](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1412)  
+  
+* **Problem:**  
+Die vom TS-Skript angelegten Datenpunkte im ioBroker werden nicht mit den erwarteten Werten gefüllt.  
+![image](https://user-images.githubusercontent.com/99131208/210181378-28df19bb-aba9-4769-84f5-4d8f2519b05a.png)  
+  
+* **Ursache:**  
+  Im NSPanel ist für den Tasmotazugriff ein Webpasswort gesetzt  
+  
+* **Lösung:**  
+In einer neuen version wird es für Username und Passwort neue Datenpunkte geben.  
+Bis dahin kann man im Skript die Zeile  
+![image](https://user-images.githubusercontent.com/99131208/210181498-47b761a8-388c-479c-9b1a-ca74f9c71b3e.png)  
+durch mit folgendem ersetzen:  
+`http://${get_current_tasmota_ip_address()}/cm?user=admin&PASSWORD&cmnd=Status0`  
+  
+***
+  
   
