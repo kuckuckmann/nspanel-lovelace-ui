@@ -662,7 +662,7 @@ Beim durchblättern der Seiten kommt man über die Seite zwei nicht hinaus und m
   
 ***  
   
-### **13b) Seitenaufruf im Alarmfall**  
+### **13b) Aus dem ioBroker eine bestimmte Seite auf dem NSPanel öffnen**  
   
 * **Anfrage und Quelle:**  
 Aus dem Post [643](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/643) des ioBroker Forums die Anfrage ob es eine Möglichkeit gibt die Seite CardAlarm mit der Pin Eingabe auf dem Panel einzublenden, wenn es zu einem Alarmfall kommt.  
