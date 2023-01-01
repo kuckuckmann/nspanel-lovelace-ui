@@ -815,7 +815,7 @@ Um herauszufinden, welche Farbe der Dezimal-Code hat kannst du [nodtem66.github.
   
 ***  
   
-##**18.) Tasmota Datenpunkte im ioBroker werden nicht gefüllt**  
+## **18.) Tasmota Datenpunkte im ioBroker werden nicht gefüllt**  
   
 * **Quelle**  
 ioBroker Forum Posts ab [1412](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1412)  
