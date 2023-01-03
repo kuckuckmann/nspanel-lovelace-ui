@@ -850,7 +850,7 @@ In der aktuellen Dev version schon drin:
 ## **19.) Abweichende Uhrzeit**  
   
 * **Quelle:**  
-Im ioBroker Forum Post [1428](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1428)  
+Im ioBroker Forum Post [1428](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1428)  und ab Post [1491](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1491)  
   
 * **Problem:**  
 Die Uhrzeit auf dem Display weicht von der Uhrzeit in der Tasmota Console ab.  
@@ -900,14 +900,15 @@ Weiterhin im ALIAS unter ![image](https://user-images.githubusercontent.com/9913
   > 3 = BOOST  
   
 * **TS-Skript:**  
-`let WZ_Heizung: PageThermo = 
-{
-    "type": "cardThermo",
-    "heading": "WZ Thermostat",
-    "useColor": true,
-    "subPage": false,
-    "parent": undefined,
-    "items": [<PageItem>{ id: "alias.0.NSPanel1.HeizungWZ", minValue: 50, maxValue: 300 }]
+  
+`let WZ_Heizung: PageThermo =   
+{  
+    "type": "cardThermo",  
+    "heading": "WZ Thermostat",  
+    "useColor": true,  
+    "subPage": false,  
+    "parent": undefined,  
+    "items": [<PageItem>{ id: "alias.0.NSPanel1.HeizungWZ", minValue: 50, maxValue: 300 }]  
 };`  
     
 * **Blocky Skript:**  
