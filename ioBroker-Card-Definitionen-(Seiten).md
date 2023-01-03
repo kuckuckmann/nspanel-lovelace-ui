@@ -151,8 +151,30 @@ let SpotifyPremium: PageMedia =
                 autoCreateALias : true
              }]
 };
+```  
+**Volumio-Player**  
+  
 ```
-
+let VolumioBoss: PageMedia = 
+{
+    'type': 'cardMedia',
+    'heading': 'Volumio-Büro',
+    'useColor': true,
+    'subPage': false,
+    'parent': undefined,
+    'items': [<PageItem>{   
+                id: 'alias.0.NSPanel.Volumio-Boss', 
+                adapterPlayerInstance: 'volumio.0.',
+                speakerList: [], /* this must, no function */
+                playList: [],    /* empty for dynamic reading */
+                colorMediaIcon: colorSpotify,
+                colorMediaTitle: colorSpotify,
+                colorMediaArtist: Yellow,
+                autoCreateALias : true
+             }]
+};
+```  
+  
 # cardMedia v1.0 (bis Release v3.6.0)
 ![image](https://user-images.githubusercontent.com/102996011/204136831-afe5bde8-5046-495b-8ea7-68bc91e3a57c.png)  
 
