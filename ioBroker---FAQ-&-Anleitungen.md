@@ -875,28 +875,28 @@ Post [1220](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-u
   
 * **Datenpunkte:**  
 Es werden mehrere Datenpunkte benötigt, um diese dann später in einem Alias zu verknüpfen. Die Datenpunkte sehen beispielsweise so aus:  
-> (DP 01) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Automatic (boolean)  
-> (DP 02) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Manual (boolean)  
-> (DP 03) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Boost (boolean)  
-> (DP 04) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Setpoint (number)  
-> (DP 05) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Lowbat (boolean)  
-> (DP 06) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Maintain (boolean)  
+  > (DP 01) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Automatic (boolean)  
+  > (DP 02) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Manual (boolean)  
+  > (DP 03) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Boost (boolean)  
+  > (DP 04) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Setpoint (number)  
+  > (DP 05) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Lowbat (boolean)  
+  > (DP 06) 0_userdata.0.Homatic.Thermostate.OEQ0667828.4.Maintain (boolean)  
   
 * **Alias:**  
 Es wird ein Alias vom Typ Thermostat benötigt. Dabei müssen die zuvor erstellten Datenpunkte folgendermaßen verknüpft werden:  
   * SET auf DP 04
   * ACTUAL auf auf den bevorzugten Raumtemperatursensor
   * BOOST auf DP 03  
-  Zusätzlich muss angelegt werden:  
+Zusätzlich muss angelegt werden:  
   * LOWBAT auf DP 05
   * MAINTAIN auf DP 06  
   
 Weiterhin im ALIAS unter ![image](https://user-images.githubusercontent.com/99131208/210432321-10fdc06c-0675-48b2-88ff-f674d2444f64.png) auf **Control_Mode** im Adapter mappen:  
 ![image](https://user-images.githubusercontent.com/99131208/210432487-198cf58a-5174-4cee-af65-3b67d37d0ae4.png)  
-> 0 = AUTO  
-> 1 = MANUAL  
-> 2 = PARTY  
-> 3 = BOOST  
+  > 0 = AUTO  
+  > 1 = MANUAL  
+  > 2 = PARTY  
+  > 3 = BOOST  
   
   
 
