@@ -865,16 +865,16 @@ Sollte keine automatische Zeitsynchronisation (NTP) gewollt sein, kann man die B
   
 * **Lösung:**  
   
-* NTP Zeitsynchronisation konfigurieren  
-* Bei der Verwendung einer VM (z.B. Proxmox), die Systemzeit (und Standort auf Berlin) korrigieren. In der Regel sollte danach ein Neustart des Betriebssystems erfolgen  
-* Eine veraltete nodeJS-Version könnte das Problem sein... Sollte in der Konsole mit `node -v` keine `16.19.0` herauskommen, dann sollte in jedem Fall gehandelt werden.  
-  * Das Release beginnt mit 16.X.X, dann einfach durchführen:  
-    1. sudo apt-get update  
-    2. sudo apt-get dist-upgrade  
-    3. sudo reboot  
-  * Das Release beginnt mit 14.X.X oder noch kleiner:  
-    Jetzt ist zwingend das nodeJS auf einen neuen Stand zu bringen:
-    Anleitung siehe hier: [https://forum.iobroker.net/topic/35090/howto-nodejs-installation-und-upgrades-unter-debian](https://forum.iobroker.net/topic/35090/howto-nodejs-installation-und-upgrades-unter-debian)  
+  * NTP Zeitsynchronisation konfigurieren  
+  * Bei der Verwendung einer VM (z.B. Proxmox), die Systemzeit (und Standort auf Berlin) korrigieren. In der Regel sollte danach ein Neustart des Betriebssystems erfolgen  
+  * Eine veraltete nodeJS-Version könnte das Problem sein... Sollte in der Konsole mit `node -v` keine `16.19.0` herauskommen, dann sollte in jedem Fall gehandelt werden.  
+    * Das Release beginnt mit 16.X.X, dann einfach durchführen:  
+      1. sudo apt-get update  
+      2. sudo apt-get dist-upgrade  
+      3. sudo reboot  
+    * Das Release beginnt mit 14.X.X oder noch kleiner:  
+      Jetzt ist zwingend das nodeJS auf einen neuen Stand zu bringen:
+      Anleitung siehe hier: [https://forum.iobroker.net/topic/35090/howto-nodejs-installation-und-upgrades-unter-debian](https://forum.iobroker.net/topic/35090/howto-nodejs-installation-und-upgrades-unter-debian)  
   
 ***
   
