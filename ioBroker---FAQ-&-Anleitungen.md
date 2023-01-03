@@ -850,7 +850,7 @@ In der aktuellen Dev version schon drin:
 ## **19.) Abweichende Uhrzeit**  
   
 * **Quelle:**  
-Im ioBroker Forum Post [1428](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1428)  und ab Post [1491](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1491)  
+Im ioBroker Forum Post [1428](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1428)  und ab Post [1491](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1491), Post [1500](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1500)  
   
 * **Problem:**  
 Die Uhrzeit auf dem Display weicht von der Uhrzeit in der Tasmota Console ab.  
@@ -864,7 +864,17 @@ Sollte keine automatische Zeitsynchronisation (NTP) gewollt sein, kann man die B
 [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/tree/main/ioBroker/Blockly/Uhrzeit_Logging.xml)  
   
 * **Lösung:**  
-Noch offen  
+  
+* NTP Zeitsynchronisation konfigurieren  
+* Bei der Verwendung einer VM (z.B. Proxmox), die Systemzeit (und Standort auf Berlin) korrigieren. In der Regel sollte danach ein Neustart des Betriebssystems erfolgen  
+* Eine veraltete nodeJS-Version könnte das Problem sein... Sollte in der Konsole mit `node -v` keine `16.19.0` herauskommen, dann sollte in jedem Fall gehandelt werden.  
+  * Das Release beginnt mit 16.X.X, dann einfach durchführen:  
+    1. sudo apt-get update  
+    2. sudo apt-get dist-upgrade  
+    3. sudo reboot  
+  * Das Release beginnt mit 14.X.X oder noch kleiner:  
+    Jetzt ist zwingend das nodeJS auf einen neuen Stand zu bringen:
+    Anleitung siehe hier: [https://forum.iobroker.net/topic/35090/howto-nodejs-installation-und-upgrades-unter-debian](https://forum.iobroker.net/topic/35090/howto-nodejs-installation-und-upgrades-unter-debian)  
   
 ***
   
