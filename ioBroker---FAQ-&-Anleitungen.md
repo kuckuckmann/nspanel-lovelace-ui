@@ -900,9 +900,19 @@ Weiterhin im ALIAS unter ![image](https://user-images.githubusercontent.com/9913
   > 3 = BOOST  
   
 * **TS-Skript:**  
-Steht noch aus  
+`let WZ_Heizung: PageThermo = 
+{
+    "type": "cardThermo",
+    "heading": "WZ Thermostat",
+    "useColor": true,
+    "subPage": false,
+    "parent": undefined,
+    "items": [<PageItem>{ id: "alias.0.NSPanel1.HeizungWZ", minValue: 50, maxValue: 300 }]
+};`  
     
 * **Blocky Skript:**  
+  
+![image](https://user-images.githubusercontent.com/99131208/210435220-bcccdc92-d348-4f1b-9a67-e5ee0f5c0ba8.png)  
   
 [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/Homatic_nonIP_Thermostate.xml)  
   
