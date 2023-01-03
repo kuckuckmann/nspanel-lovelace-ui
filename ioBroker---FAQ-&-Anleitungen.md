@@ -898,6 +898,9 @@ Weiterhin im ALIAS unter ![image](https://user-images.githubusercontent.com/9913
   > 2 = PARTY  
   > 3 = BOOST  
   
+* **Blocky Skript:**  
   
-
-
+[Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/Homatic_nonIP_Thermostate.xml)  
+  
+***  
+  
