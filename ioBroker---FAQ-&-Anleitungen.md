@@ -872,6 +872,7 @@ Noch offen
   
 * **Quelle:**  
 Post [1220](https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/1220) im ioBroker Forum.  
+Hier geht es um Homatic Homematic HM-CC-RT-DN.  
   
 * **Datenpunkte:**  
 Es werden mehrere Datenpunkte benötigt, um diese dann später in einem Alias zu verknüpfen. Die Datenpunkte sehen beispielsweise so aus:  
@@ -898,6 +899,9 @@ Weiterhin im ALIAS unter ![image](https://user-images.githubusercontent.com/9913
   > 2 = PARTY  
   > 3 = BOOST  
   
+* **TS-Skript:**  
+Steht noch aus  
+    
 * **Blocky Skript:**  
   
 [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/Homatic_nonIP_Thermostate.xml)  
