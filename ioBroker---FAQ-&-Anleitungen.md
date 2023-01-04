@@ -968,24 +968,30 @@ WLED bietet eine Vielzahl an Konfigurations- und Einstellungsmöglichkeiten. Vie
     **Hinweis**: Bitte darauf achten, das die Anzahl der Zeichen innerhalb der eckigen Klammern nicht mehr als 900 Zeichen sind.  
   
   * **TS-Skript**  
-  Im NSPanelTS.ts ist eine Beispielseite für WLED enthalten. Diese haben wir in unserer Konfiguration geringfügig abgeändert. Das Beispiel beinhaltet eine Konfiguration für verschiedene Segmente, diese haben wir erstmal durch den Timer ersetzt. Segmente folgt in einem weiteren Schritt und wird dann auch hier in der Wiki hinzugefügt. Aus dem grund geht es mit der Konfig aus dem beispiel hier weiter:  
-    ```let WLED: PageGrid =
-{
-    "type": "cardGrid",
-    "heading": "WLED",
-    "useColor": true,
-    "subPage": false,
-    "parent": Index01,
-    "items": [
-        <PageItem>{ id: "alias.0.WLED.POWER", name: "Power", icon: "power", onColor: Blue, offColor: HMIOff},
-        <PageItem>{ id: "alias.0.WLED.Synch", name: "Sync", icon: "sync", onColor: Blue, offColor: White},
+  Im NSPanelTS.ts ist eine Beispielseite für WLED enthalten. Diese haben wir in unserer Konfiguration geringfügig abgeändert. Das Beispiel beinhaltet eine Konfiguration für verschiedene Segmente, diese haben wir erstmal durch den Timer ersetzt. Segmente folgt in einem weiteren Schritt und wird dann auch hier in der Wiki hinzugefügt. Aus dem Grund geht es mit der Konfiguration aus dem Beispiel hier weiter:  
+  ```
+  let WLED: PageGrid =
+  {
+      "type": "cardGrid",
+        "heading": "WLED",
+      "useColor": true,
+      "subPage": false,
+      "parent": Index01,
+      "items": [
+          <PageItem>{ id: "alias.0.WLED.POWER", name: "Power", icon: "power", onColor: Blue, offColor: HMIOff},
+          <PageItem>{ id: "alias.0.WLED.Synch", name: "Sync", icon: "sync", onColor: Blue, offColor: White},
 		<PageItem>{ id: "alias.0.WLED.Timer", name: "Timer", icon: "moon-waxing-crescent", onColor: Blue, offColor: White},
-        <PageItem>{ id: "alias.0.WLED.Presets", icon: "heart-outline", name: "Presets", onColor: White, modeList: ['Preset 0', 'Add Preset']},
-        <PageItem>{ id: "alias.0.WLED.Colors", icon: "palette", name: "Colors", onColor: White, 
-                    modeList: ['Default', '* Color 1', '* Color Gradient', '* Colors 1&2', '* Colors Only', '* Random Cycle', 'Analogus','April Night', 'Aqua Flash', 'Atlantica', 'Aurora', 'Beach', 'Beech', 'Blink Red', 'Breeze', 'C9', 'C9 New', 'Candy', 'Candy2', 'Cloud', 'Cyane', 'Departure', 'Drywet', 'Fairy Reaf', 'Fire', 'Forest', 'etc']},
-        <PageItem>{ id: "alias.0.WLED.Effects", icon: "emoticon-outline", name: "Effects", onColor: White, 
-                    modeList: ['Solid', 'Android', 'Aurora', 'Blends', 'Blink', 'Blink Rainbow', 'Bouncing Balls','Bpm', 'Breathe', 'Candle', 'Candle Multi', 'Candy Cane', 'Chase', 'Chase 1', 'Chase 2', 'Chase 3', 'Chase Flash', 'Chase Flash Rnd', 'Chase Rainbow', 'Chase Random', 'Chunchun', 'Colorful', 'Colorloop', 'Colortwinkles', 'Colorwaves', 'Dancing Shadows', 'etc']},
-        //<PageItem>{ id: "alias.0.NSPanel_1.WLED.Example.Segments", icon: "layers", name: "Segments", onColor: White, modeList: ['Segment 0', 'Add Segment']},
-    ]
-};```
+          <PageItem>{ id: "alias.0.WLED.Presets", icon: "heart-outline", name: "Presets", onColor: White, modeList: ['Preset 0', 'Add Preset']},
+          <PageItem>{ id: "alias.0.WLED.Colors", icon: "palette", name: "Colors", onColor: White, 
+                      modeList: ['Default', '* Color 1', '* Color Gradient', '* Colors 1&2', '* Colors Only', '* Random Cycle', 'Analogus','April Night', 'Aqua Flash', 'Atlantica', 'Aurora', 'Beach', 'Beech', 'Blink Red', 'Breeze', 'C9', 'C9 New', 'Candy', 'Candy2', 'Cloud', 'Cyane', 'Departure', 'Drywet', 'Fairy Reaf', 'Fire', 'Forest', 'etc']},
+          <PageItem>{ id: "alias.0.WLED.Effects", icon: "emoticon-outline", name: "Effects", onColor: White, 
+                      modeList: ['Solid', 'Android', 'Aurora', 'Blends', 'Blink', 'Blink Rainbow', 'Bouncing Balls','Bpm', 'Breathe', 'Candle', 'Candle Multi', 'Candy Cane', 'Chase', 'Chase 1', 'Chase 2', 'Chase 3', 'Chase Flash', 'Chase Flash Rnd', 'Chase Rainbow', 'Chase Random', 'Chunchun', 'Colorful', 'Colorloop', 'Colortwinkles', 'Colorwaves', 'Dancing Shadows', 'etc']},
+          //<PageItem>{ id: "alias.0.NSPanel_1.WLED.Example.Segments", icon: "layers", name: "Segments", onColor: White, modeList: ['Segment 0', 'Add Segment']},
+      ]
+  };
+  ```  
+  
+***
+  
+  
 
