@@ -963,9 +963,11 @@ WLED bietet eine Vielzahl an Konfigurations- und Einstellungsmöglichkeiten. Vie
     [Hier](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/WLED.js) findet Ihr ein JS-Skript, welches Ihr im ioBroker unter Skripte als JS anlegen müsst. In dem Skript gibt es zwei zu konfigurierende Datenpunkte:  
     * **Pfad zum WLED-Modul**: Entspricht in unserem Beispiel hier **wled.0.2cf43212d23c.**, also dem Pfad zur WLED Objekt-Instanz.  
     * **Pfad zu 0_userdata Datenpunkten**: Der Pfad zum Ordner unter **0_userdata.0** in dem die drei Hilfs-Datenpunkte im Ordner WLED **0_userdata.0.NSPanelOwn.WLED.** angelegt wurden.  
+      ![image](https://user-images.githubusercontent.com/99131208/210668387-ba3a8759-46c1-4895-ab76-ca5f2095659c.png)  
   
     Weiterhin gibt es noch die **presetList**, **colorsList** und **effectsList**, welche in den eckigen Klammern eingefasst die Werte aus WLED für die verschiedenen Funktionen beherbergt. **Wichtig**: Die Werte in den eckigen Klammern müssen hier genau denen im PageItem des TS-Skriptes entsprechen!  
     **Hinweis**: Bitte darauf achten, das die Anzahl der Zeichen innerhalb der eckigen Klammern nicht mehr als 900 Zeichen sind.  
+    ![image](https://user-images.githubusercontent.com/99131208/210668543-6c12f1da-9828-4646-9f39-68c3c0326f41.png)  
   
   * **TS-Skript**  
   Im NSPanelTS.ts ist eine Beispielseite für WLED enthalten. Diese haben wir in unserer Konfiguration geringfügig abgeändert. Das Beispiel beinhaltet eine Konfiguration für verschiedene Segmente, diese haben wir erstmal durch den Timer ersetzt. Segmente folgt in einem weiteren Schritt und wird dann auch hier in der Wiki hinzugefügt. Aus dem Grund geht es mit der Konfiguration aus dem Beispiel hier weiter:  
@@ -991,6 +993,9 @@ WLED bietet eine Vielzahl an Konfigurations- und Einstellungsmöglichkeiten. Vie
   };
   ```  
   
+  * **Ausblick**  
+    Dies ist er erste Schritt. Wir werden noch weitere Funktion versuchen abzubilden und ein nächster Meilenstein wäre eine Unterseite mit anzubauen, in der man zum Beispiel die Helligkeit, Farbtiefe, etc. einstellen kann. Eventuell auch noch eine erweiterte Farbauswahl. Also ab und an hier mal einen Blick rein werfen ;-)
+    
 ***
   
   
