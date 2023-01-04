@@ -24,7 +24,8 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **18.)** Tasmota Datenpunkte im ioBroker werden nicht gefüllt  
 **19.)** Abweichende Uhrzeit  
 **20.)** Homatic nonIP Thermostate mit der CardThermo  
- 
+**21.)** WLED  
+  
 # **Changelog**
 <details>
   <summary>Changelog</summary> 
@@ -57,8 +58,9 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 28.12.2022 - NSPanel Relais via Skript steuern - Erstellt  
 28.12.2022 - Farben für das TS-Skript - Erstellt  
 01.01.2023 - Tasmota Datenpunkte im ioBroker werden nicht gefüllt - Erstellt  
-01.01.2023 - Abweichende Uhrzeit - Erstellt
-03.01.2023 - Homatic nonIP Thermostate mit der CardThermo - Erstellt
+01.01.2023 - Abweichende Uhrzeit - Erstellt  
+03.01.2023 - Homatic nonIP Thermostate mit der CardThermo - Erstellt  
+04.03.2023 - WLED Konfiguration - Erstellt   
 </details>  
 
 
@@ -929,3 +931,27 @@ Weiterhin im ALIAS unter ![image](https://user-images.githubusercontent.com/9913
   
 ***  
   
+## **21.) WLED**  
+  
+* **Beschreibung:**  
+Hier geht es Darum die im Beispiel TS-Skript schon aufgeführte Seite **WLED**  einmal Beispielsweise zu konfigurieren.  Wer Hilfe bei der Einrichtung von WLED benötigt, der kann sich zum Beispiel an den Videos von @klein0r @haus-automatisierung  >>[Zum Youtube Kanal](https://www.youtube.com/@haus_automation/featured)<< Anregungen holen, er hat zu dem Thema schon drei Videos produziert.  
+  
+* **Voraussetzungen:**  
+* Funktionierender WLED Adapter im ioBroker  
+* Funktionierende WLED Leuchten, die bereits verbunden sind und sich schon über die APP, die Webseite und den ioBroker steuern lassen
+* Hilfs-Datenpunkte
+* Mehrere Aliase  
+* Ein neues JS-Skript (statt Blockly)  
+* Eine TS-Skript Seite  
+  
+* **Konfiguration:**  
+WLD bietet eine Vielzahl an Konfigurationsund Einstellungsmöglichkeiten. Viele lassen sich auch auf dem NSPanel abbilden, aber nicht alle. Für unser Konfigurationsbeispiel haben wir uns die Funktionen **ON / Off**, **Timer**, **Synch**, **Presets**, **Effects** und **Colors** ausgesucht. Dabei werden Presets, Effects und Colors auf Grund der Möglichen Auswahl an unterschiedlichen Funktionen mit einem inselPopup realisiert.  
+  
+  * **Hilfs-Datenpunkte:**  
+    Für die drei inselPopup Lösungen benötigen wir jeweils einen Datenpunkt. Diese werden unter dem Hauptordner **0_userdata.<Euer Pfad>.WLED** angelegt. 
+    Wir benötigen einen Datenpunkt **Colors**, **Effects** und **Presets** als nummerisch.  
+    ![image](https://user-images.githubusercontent.com/99131208/210663827-fcf32d02-6971-42b0-840e-e5a4b136870b.png)  
+
+  * **Aliase:**  
+    
+
