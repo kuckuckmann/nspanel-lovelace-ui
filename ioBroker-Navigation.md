@@ -86,12 +86,14 @@ Es gibt jetzt 3 Varianten, um ein Icon für Subpages anzulegen.
 
 ##### Variante 3 dynamische Icon (neue Notation)  
 
-**Was heißt dynamische Icon? **  
+**Was heißt dynamische Icon?**  
 
 Das Icon auf eurem Panel kann die Farbe und das Icon selbst ändern, je nach Status des Alias (ture/false).
 Ich nutze es für meine Fenster- und Türkontakte, die ich in Subpages gebündelt habe. Auf der Übersichtspage habe ich Icons für die einzelnen Subpages, diese Icon ändern ihr Aussehen, wenn auf der Subpage sich ein Kontakt ändert. Somit sehe ich auf der Übersichtseite, dass alle Fenster und Türen geschlossen sind. Sollte ein Fenster offen sein, ändert sich auf der Überichtseite das Icon auf "offenes Fenster und wird Rot". Jetzt kann ich auf das Icon drücken und sehe in der Subpage welches Fenster noch offen ist.
 
 Um dieses Verhalten zu nutzen, benötigt ihr ein Alias vom Typ "Info", einen Datenpunkt unter "0_userdata.0." welcher mit dem Alias verknüpft ist und ein kleines Skript, welches eure Kontakte überwacht und den Datenpunkt unter 0_userdata.0. auf true bzw. false setzt.
+
+> PageItem-Beispiel mit Alias folgt
 
 Hier ein Beispiel als Blockly, welches alle Fenster in einem Aliasordner überwacht und den Datenpunkt entsprechend setzt.
 
