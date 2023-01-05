@@ -34,7 +34,7 @@ Subpages haben verschiedene Navigationsmöglichkeiten, diese definiert Ihr im Be
 * **next**: <Seitenname der nächsten Seite> -> definiert welche Seite aufgerufen wird beim Drücken auf den Pfeil nach rechts
 * **home**: <Seitenname der Übersichtsseite> -> definiert welche Seite aufgerufen wird beim Drücken auf das Haus-Symbol
 
-> **Wichtig!** 
+> **Wichtig!**  
 > Wenn **„prev“** eine Seite zugewiesen wurde, wird **„parent“** nicht ausgewertet. Das gleiche gilt auch für **„next“** und **„home“**. 
  
 ```
@@ -74,13 +74,32 @@ Es gibt jetzt 3 Varianten, um ein Icon für Subpages anzulegen.
   Die Eigenschaft "navigate: true" macht aus einem normalen Steuerelement, ein Icon, um eine Subpage zu öffnen. Des Weiteren wird die Eigenschaft "id:" benötigt. Sie enthält den Namen der Subpage. Diese beiden Angaben sind Pflicht, mit "icon: und onColor:" kann man von dem Standardicon und Farbe abweichen und Eigene definieren.  
 
 ##### Variante 2 (neue Notation)  
-* Die neue Variante mit dynamischem Icon und dynamischer Farbe:
+* Die neue Variante:
   ```
   <PageItem>{ navigate: true, id: null, targetPage: 'WlanDaten', onColor: White, name: 'Gäste WLAN Daten'}
   ```
   Bei der neuen Schreibweise bleibt das Verhalten zu der Alten gleich. Hier ist nur die Schreibweise für das Ziel (Subpage) angepasst. Wobei meiner Meinung nach es die richtige Schreibweise ist. Pflicht sind folgende Eigenschaften: "naigate: true",  "id: null" und (neu) "tagetPage:" hier kommt jetzt der Name der Subpage ran, der bei der alten Schreibweise hinter "id:" stand.
 
-> Wichtiger Hinweis: 
-> Ihr müsst euer Icon für die Subpage nicht umschreiben, es funktionieren beide Schreibweisen. Die User, die auch die Variante 3 (dynamische) einsetzen wollen, sollten auch die neue Schreibweise für die statischen Icon nutzen.
+> Wichtiger Hinweis:  
+> Ihr müsst euer Icon für die Subpage nicht umschreiben, es funktionieren beide Schreibweisen. Die User, die auch die Variante 3 (dynamische) einsetzen wollen, sollten auch die neue Schreibweise für die statischen Icon nutzen.  
+
+##### Variante 3 dynamische Icon (neue Notation)  
+
+**Was heißt dynamische Icon? **  
+
+Das Icon auf eurem Panel kann die Farbe und das Icon selbst ändern, je nach Status des Alias (ture/false).
+Ich nutze es für meine Fenster- und Türkontakte, die ich in Subpages gebündelt habe. Auf der Übersichtspage habe ich Icons für die einzelnen Subpages, diese Icon ändern ihr Aussehen, wenn auf der Subpage sich ein Kontakt ändert. Somit sehe ich auf der Übersichtseite, dass alle Fenster und Türen geschlossen sind. Sollte ein Fenster offen sein, ändert sich auf der Überichtseite das Icon auf "offenes Fenster und wird Rot". Jetzt kann ich auf das Icon drücken und sehe in der Subpage welches Fenster noch offen ist.
+
+Um dieses Verhalten zu nutzen, benötigt ihr ein Alias vom Typ "Info", einen Datenpunkt unter "0_userdata.0." welcher mit dem Alias verknüpft ist und ein kleines Skript, welches eure Kontakte überwacht und den Datenpunkt unter 0_userdata.0. auf true bzw. false setzt.
+
+Hier ein Beispiel als Blockly, welches alle Fenster in einem Aliasordner überwacht und den Datenpunkt entsprechend setzt.
+
+> Blockly folgt  
+
+Wie Ihr den Datenpunkt unter 0_userdata.0. setzen wollt, könnt ihr selbst entscheiden und ist auch ganz von der Anzahl der Kontakte abhängig. Auf einer cardGrid könnt ihr maximal 6 Icon / Kontakte darstellen. Deshalb kann es notwendig sein, noch eine Subpage dazwischen zu setzen und diese nach Stockwerken aufzuteilen.
 
 ## Navigation mit den Hardware-Buttons  
+
+es gibt mehrere Möglichkeiten die Tasten mit Funktionen zur Steuerung des Panels zu belegen. Standardmäßig steuern diese Tasten die Relais im Panel. Durch Aktivierung einer Regel in der Tasmota Konsole (Info zu Tasmota link) können die Tasten von den Relais entkoppelt werden und softwareseitig genutzt werden.
+
+
