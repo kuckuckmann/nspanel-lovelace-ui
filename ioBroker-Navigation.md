@@ -33,5 +33,26 @@ Subpages haben verschiedene Navigationsmöglichkeiten, diese definiert Ihr im Be
 > **Wichtig!** 
 > Wenn „prev“ eine Seite zugewiesen wurde, wird „parent“ nicht ausgewertet. Das gleiche gilt auch für „next“ und „home“. 
  
+```
+let Level_2_Erdgeschoss_1: PageGrid =
+    {
+        'type': 'cardGrid',
+        'heading': 'Erdgeschoss (1)',
+        'useColor': true,
+        'subPage': true,
+        'parent': Level_1_Haus,
+        'prev': undefined,
+        'next': 'Level_2_Erdgeschoss_2',
+        'home': 'Level_1_Haus',
+        'items': [
+                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Wohnzimmer', name: 'Wohnzimmer' , icon: 'sofa-outline', offColor: MSRed, onColor: MSGreen},
+                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Esszimmer', name: 'Esszimmer' , icon: 'table-chair', offColor: MSRed, onColor: MSGreen},
+                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Buero', name: 'Büro' , icon: 'desk', offColor: MSRed, onColor: MSGreen},
+                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Kueche', name: 'Küche' , icon: 'silverware-variant', offColor: MSRed, onColor: MSGreen},
+                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Bad', name: 'Bad' , icon: 'bathtub-outline', offColor: MSRed, onColor: MSGreen},
+                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Kaminzimmer', name: "Kaminzimmer" , icon: "fireplace", offColor: MSRed, onColor: MSGreen},
+                    ]
+                };
+```
 
 ## Navigation mit den Hardware-Buttons  
