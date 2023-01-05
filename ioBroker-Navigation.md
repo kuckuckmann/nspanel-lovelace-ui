@@ -53,6 +53,17 @@ let Level_2_Erdgeschoss_1: PageGrid =
                     <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Kaminzimmer', name: "Kaminzimmer" , icon: "fireplace", offColor: MSRed, onColor: MSGreen},
                     ]
                 };
-```
+```  
 
+![image](https://user-images.githubusercontent.com/102996011/210829375-90ab3d40-b3a4-4794-816d-dcc60f2e7271.png)
+
+
+#### Icons für Subpages (ab v3.7.3.2)  
+
+Es gibt jetzt 3 Varianten, um ein Icon für Subpages anzulegen.
+
+* Die alte Variante mit festem Icon und Farbe.
+```
+<PageItem>{ navigate: true, id: 'NSPanel_Einstellungen', icon: 'wrench-outline', onColor: White, name: 'Screensaver'}  
+```
 ## Navigation mit den Hardware-Buttons  
