@@ -21,9 +21,7 @@ Es bewährt sich ebenfalls, dass Schema in einer Excel-Tabelle niederzuschreiben
  
 In der ersten Ebene befinden sich die Hauptseiten / Pages, welche im Skript im Bereich „Config -> Pages [...]“ deklariert werden. Hier werden die Namen der Seiten eingetragen, die Ihr an Anfang des Skripts definiert habt. Dabei ist die Reihenfolge zwischen den beiden eckigen Klammern wichtig, diese spiegelt auch die Reihenfolge auf dem Panel wider. Eine Besonderheit hat der erste Eintrag, dass ist die Startseite / Page 0. Diese hat auch den Status der Homeseite und wird aufgerufen, wenn ihr auf das Haus Symbol bei den Subpages drückt. Die Subpages könnt ihr von den Hauptseiten / Pages öffnen, wenn ihr die Eigenschaften naviagte:true und tagetPage: in Kombination nutzt.  
 
-Wie so etwas in den Seiten definiert wird, steht im Abschnitt "Icon für Subpages"  
-
-> Link folgt  
+Wie so etwas in den Seiten definiert wird, steht im Abschnitt: ["Icon für Subpages"](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation#icons-f%C3%BCr-subpages-ab-v3732)  
 
 Um durch die Hauptseiten / Pages zu blättern, habt Ihr oben links und rechts jeweils ein Pfeil. Die Seiten sind als Endlosschleife angelegt, das heißt, wenn ihr bei der letzten Seite weiter nach rechts blättert, kommt ihr wieder zur ersten Seite und umgekehrt.
 
