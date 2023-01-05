@@ -2,7 +2,7 @@ by TT-Tom
 
 # Einleitung:  
 
-> ab TS-Script v3.8.0
+> **ab TS-Script v3.8.0**
 
 **Es gibt zwei Möglichkeiten durch die Seiten des Panels zu navigieren. Zum einen gibt es die Navigation auf dem Panel mit den Symbolen Pfeil Rechts, Links und Pfeil nach oben und Haus-Symbol. Die Zweite und etwas schwierige Variante ist über die Tasten unter dem Panel, dazu aber später mehr. Zuerst sehen wir uns die Struktur der Seiten und ihre Aufteilung an.**  
 
