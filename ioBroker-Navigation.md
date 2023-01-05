@@ -16,6 +16,9 @@ Bevor Ihr eure Seiten definiert, sollte ihr euch Gedanken über die Menüstruktu
 
 ![image](https://user-images.githubusercontent.com/102996011/210839808-5d1c9531-1db4-41f2-88f3-ced3b59a4943.png)
 
+Es bewährt sich ebenfalls, dass Schema in einer Excel-Tabelle niederzuschreiben. Nachfolgend ein Beispiel:  
+![image](https://user-images.githubusercontent.com/102996011/210841168-46f76dc4-6755-4728-80f5-05f55992f21a.png)
+ 
 In der ersten Ebene befinden sich die Hauptseiten / Pages, welche im Skript im Bereich „Config -> Pages [...]“ deklariert werden. Hier werden die Namen der Seiten eingetragen, die Ihr an Anfang des Skripts definiert habt. Dabei ist die Reihenfolge zwischen den beiden eckigen Klammern wichtig, diese spiegelt auch die Reihenfolge auf dem Panel wider. Eine Besonderheit hat der erste Eintrag, dass ist die Startseite / Page 0. Diese hat auch den Status der Homeseite und wird aufgerufen, wenn ihr auf das Haus Symbol bei den Subpages drückt. Die Subpages könnt ihr von den Hauptseiten / Pages öffnen, wenn ihr die Eigenschaften naviagte:true und tagetPage: in Kombination nutzt.  
 
 Wie so etwas in den Seiten definiert wird, steht im Abschnitt "Icon für Subpages"  
