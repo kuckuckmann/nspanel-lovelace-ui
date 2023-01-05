@@ -62,8 +62,11 @@ let Level_2_Erdgeschoss_1: PageGrid =
 
 Es gibt jetzt 3 Varianten, um ein Icon für Subpages anzulegen.
 
-* Die alte Variante mit festem Icon und Farbe.
-```
-<PageItem>{ navigate: true, id: 'NSPanel_Einstellungen', icon: 'wrench-outline', onColor: White, name: 'Screensaver'}  
-```
+* Die ursprüngliche Variante mit festem Icon und fester Farbe.
+  ```
+  <PageItem>{ navigate: true, id: 'NSPanel_Einstellungen', icon: 'wrench-outline', onColor: White, name: 'Screensaver'}  
+  ```  
+  Die Eigenschaft "navigate: true" macht aus einem normalen Steuerelement, ein Icon, um eine Subpage zu öffnen. Des Weiteren wird die Eigenschaft "id:" benötigt. Sie enthält den Namen der Subpage. Diese beiden Angaben sind Pflicht, mit "icon: und onColor:" kann man von dem Standardicon und Farbe abweichen und Eigene definieren.  
+
+
 ## Navigation mit den Hardware-Buttons  
