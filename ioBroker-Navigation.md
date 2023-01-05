@@ -109,4 +109,17 @@ es gibt mehrere Möglichkeiten die Tasten mit Funktionen zur Steuerung des Panel
 Rule2 on Button1#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button2"} endon
 Rule2 1 (Rule aktivieren)
 Rule2 0 (Rule deaktivieren)
-```
+```  
+
+Um die Tasten mit festen Seiten zu belegen, müssen im Skript im Bereich „Config“ die Parameter „button1Page bzw. button2Page“ die Seiten definiert werden. Beispiel:
+
+```  
+button1Page: null, // keine Seite definiert
+button2Page: Thermostat_WZ // CardThermo für Wohnzimmer
+```  
+
+Wenn die Seiten zum Blättern durch die Seiten genutzt werden sollen, müssen folgende Änderungen durchgeführt werden. Mit dieser Rule kann die linke Taste eine Seite nach oben springen (Eigenschaft parent: ) und die rechte Taste zur Startseite bzw. auf die Seite die durch die Eigenschaft home: definiert wurde.
+
+``` 
+Rule1 on Button1#state do Publish %topic%/tele/RESULT {"CustomRecv":"event,buttonPress1,hwbtn,bUp"} endon on Button2#state do Publish %topic%/tele/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bHome"} endon
+``` 
