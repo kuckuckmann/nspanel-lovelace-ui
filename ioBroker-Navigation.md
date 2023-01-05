@@ -66,11 +66,21 @@ let Level_2_Erdgeschoss_1: PageGrid =
 
 Es gibt jetzt 3 Varianten, um ein Icon für Subpages anzulegen.
 
-* Die ursprüngliche Variante mit festem Icon und fester Farbe.
+##### Variante 1 (ursprüngliche Notation)  
+* Die ursprüngliche Variante mit festem Icon und fester Farbe:
   ```
   <PageItem>{ navigate: true, id: 'NSPanel_Einstellungen', icon: 'wrench-outline', onColor: White, name: 'Screensaver'}  
   ```  
   Die Eigenschaft "navigate: true" macht aus einem normalen Steuerelement, ein Icon, um eine Subpage zu öffnen. Des Weiteren wird die Eigenschaft "id:" benötigt. Sie enthält den Namen der Subpage. Diese beiden Angaben sind Pflicht, mit "icon: und onColor:" kann man von dem Standardicon und Farbe abweichen und Eigene definieren.  
 
+##### Variante 2 (neue Notation)  
+* Die neue Variante mit dynamischem Icon und dynamischer Farbe:
+  ```
+  <PageItem>{ navigate: true, id: null, targetPage: 'WlanDaten', onColor: White, name: 'Gäste WLAN Daten'}
+  ```
+  Bei der neuen Schreibweise bleibt das Verhalten zu der Alten gleich. Hier ist nur die Schreibweise für das Ziel (Subpage) angepasst. Wobei meiner Meinung nach es die richtige Schreibweise ist. Pflicht sind folgende Eigenschaften: "naigate: true",  "id: null" und (neu) "tagetPage:" hier kommt jetzt der Name der Subpage ran, der bei der alten Schreibweise hinter "id:" stand.
+
+> Wichtiger Hinweis: 
+> Ihr müsst euer Icon für die Subpage nicht umschreiben, es funktionieren beide Schreibweisen. Die User, die auch die Variante 3 (dynamische) einsetzen wollen, sollten auch die neue Schreibweise für die statischen Icon nutzen.
 
 ## Navigation mit den Hardware-Buttons  
