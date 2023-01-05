@@ -8,8 +8,6 @@ by TT-Tom
 
 ## Navigation mit den TFT-Icons (Pfeil rechts, -links, -oben und Haus)  
 
-![image](https://user-images.githubusercontent.com/102996011/210832636-750fee62-ec5f-455b-9be0-b73c70fb6eb8.png)  
-
 [![image](https://user-images.githubusercontent.com/102996011/210832636-750fee62-ec5f-455b-9be0-b73c70fb6eb8.png)](https://user-images.githubusercontent.com/102996011/210832636-750fee62-ec5f-455b-9be0-b73c70fb6eb8.png)
 
 ### Vorbereitung und Gedanken zur Menüstruktur  
