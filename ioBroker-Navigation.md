@@ -99,9 +99,11 @@ Um dieses Verhalten zu nutzen, benötigt ihr ein Alias vom Typ "Info", einen Dat
   ```
 
 Hier ein Beispiel als Blockly, welches alle Fenster in einem Aliasordner überwacht und den Datenpunkt entsprechend setzt.
-
-> Blockly folgt  
-
+  
+  
+![Blockly_dynamische _Srungmarke](https://user-images.githubusercontent.com/101348966/210888849-35b34ea7-86b1-4c3f-814a-b98873d6d158.png)
+  
+  
 Wie Ihr den Datenpunkt unter 0_userdata.0. setzen wollt, könnt ihr selbst entscheiden und ist auch ganz von der Anzahl der Kontakte abhängig. Auf einer cardGrid könnt ihr maximal 6 Icon / Kontakte darstellen. Deshalb kann es notwendig sein, noch eine Subpage dazwischen zu setzen und diese nach Stockwerken aufzuteilen.
 
 ## Navigation mit den Hardware-Buttons  
