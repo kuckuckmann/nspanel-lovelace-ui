@@ -102,4 +102,11 @@ Wie Ihr den Datenpunkt unter 0_userdata.0. setzen wollt, könnt ihr selbst entsc
 
 es gibt mehrere Möglichkeiten die Tasten mit Funktionen zur Steuerung des Panels zu belegen. Standardmäßig steuern diese Tasten die Relais im Panel. Durch Aktivierung einer Regel in der Tasmota Konsole (Info zu Tasmota link) können die Tasten von den Relais entkoppelt werden und softwareseitig genutzt werden.
 
+> **Bitte nicht verwenden, wenn Rule 2 mit ButtonXPages belegt ist**
 
+**In der Tasmota Konsole:**
+```
+Rule2 on Button1#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button2"} endon
+Rule2 1 (Rule aktivieren)
+Rule2 0 (Rule deaktivieren)
+```
