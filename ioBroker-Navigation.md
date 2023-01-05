@@ -93,7 +93,10 @@ Ich nutze es für meine Fenster- und Türkontakte, die ich in Subpages gebündel
 
 Um dieses Verhalten zu nutzen, benötigt ihr ein Alias vom Typ "Info", einen Datenpunkt unter "0_userdata.0." welcher mit dem Alias verknüpft ist und ein kleines Skript, welches eure Kontakte überwacht und den Datenpunkt unter 0_userdata.0. auf true bzw. false setzt.
 
-> PageItem-Beispiel mit Alias folgt
+* Die neue Variante mit dynamischem Icon und dynamischer Farbe:
+  ```
+  <PageItem>{ navigate: true, id: alias.0.haus.fenster, targetPage: 'Fenster', onColor: MSGreen, offColor: MSRed, name: 'Fenster'}
+  ```
 
 Hier ein Beispiel als Blockly, welches alle Fenster in einem Aliasordner überwacht und den Datenpunkt entsprechend setzt.
 
