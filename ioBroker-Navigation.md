@@ -10,6 +10,8 @@ by TT-Tom
 
 ![image](https://user-images.githubusercontent.com/102996011/210832636-750fee62-ec5f-455b-9be0-b73c70fb6eb8.png)  
 
+[![image](https://user-images.githubusercontent.com/102996011/210832636-750fee62-ec5f-455b-9be0-b73c70fb6eb8.png)](https://user-images.githubusercontent.com/102996011/210832636-750fee62-ec5f-455b-9be0-b73c70fb6eb8.png)
+
 ### Vorbereitung und Gedanken zur Menüstruktur  
 
 Bevor Ihr eure Seiten definiert, sollte ihr euch Gedanken über die Menüstruktur eures Panels machen. Hier ein Beispiel wie so etwas aussehen kann. Es ist auch nützlich, seine Alias Struktur genauso anzulegen mit Ordner und Unterordnern, wie sie im Panel existiert. So behaltet ihr den Überblick welcher Alias zu welcher Page gehört.
