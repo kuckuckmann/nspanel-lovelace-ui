@@ -31,7 +31,7 @@ Subpages haben verschiedene Navigationsmöglichkeiten, diese definiert Ihr im Be
 * **home**: <Seitenname der Übersichtsseite> -> definiert welche Seite aufgerufen wird beim Drücken auf das Haus-Symbol
 
 > **Wichtig!** 
-> Wenn „prev“ eine Seite zugewiesen wurde, wird „parent“ nicht ausgewertet. Das gleiche gilt auch für „next“ und „home“. 
+> Wenn **„prev“** eine Seite zugewiesen wurde, wird **„parent“** nicht ausgewertet. Das gleiche gilt auch für **„next“** und **„home“**. 
  
 ```
 let Level_2_Erdgeschoss_1: PageGrid =
