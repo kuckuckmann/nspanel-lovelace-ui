@@ -108,9 +108,8 @@ Wie Ihr den Datenpunkt unter 0_userdata.0. setzen wollt, könnt ihr selbst entsc
 
 ## Navigation mit den Hardware-Buttons  
 
-es gibt mehrere Möglichkeiten die Tasten mit Funktionen zur Steuerung des Panels zu belegen. Standardmäßig steuern diese Tasten die Relais im Panel. Durch Aktivierung einer Regel in der Tasmota Konsole (Info zu Tasmota link) können die Tasten von den Relais entkoppelt werden und softwareseitig genutzt werden.
+es gibt mehrere Möglichkeiten die Tasten mit Funktionen zur Steuerung des Panels zu belegen. Standardmäßig steuern diese Tasten die Relais im Panel. Durch Aktivierung einer Regel in der Tasmota Konsole können die Tasten von den Relais entkoppelt werden und softwareseitig genutzt werden.
 
-> **Bitte nicht verwenden, wenn Rule 2 mit buttonXPages belegt ist**
 
 **In der Tasmota Konsole:**
 ```
@@ -119,12 +118,15 @@ Rule2 1 (Rule aktivieren)
 Rule2 0 (Rule deaktivieren)
 ```  
 
-Um die Tasten mit festen Seiten zu belegen, müssen im Skript im Bereich „Config“ die Parameter „button1Page bzw. button2Page“ die Seiten definiert werden. Beispiel:
+Um die Tasten mit festen Seiten zu belegen, müssen im Skript am Ende von „export const config: Config“ die Parameter „button1Page bzw. button2Page“ die Seiten definiert werden. Beispiel:
 
 ```  
 button1Page: null, // keine Seite definiert
 button2Page: Thermostat_WZ // CardThermo für Wohnzimmer
 ```  
+
+
+> **Bitte nicht verwenden, wenn Rule 2 mit buttonXPages belegt ist**  
 
 Wenn die Tasten zum Blättern durch die Seiten genutzt werden sollen, müssen folgende Änderungen durchgeführt werden. Mit dieser Rule kann die linke Taste eine Seite nach oben springen (Eigenschaft parent: ) und die rechte Taste zur Startseite bzw. auf die Seite die durch die Eigenschaft home: definiert wurde.
 
