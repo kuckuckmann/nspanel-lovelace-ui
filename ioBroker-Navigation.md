@@ -110,6 +110,7 @@ Wie Ihr den Datenpunkt unter 0_userdata.0. setzen wollt, könnt ihr selbst entsc
 
 es gibt mehrere Möglichkeiten die Tasten mit Funktionen zur Steuerung des Panels zu belegen. Standardmäßig steuern diese Tasten die Relais im Panel. Durch Aktivierung einer Regel in der Tasmota Konsole können die Tasten von den Relais entkoppelt werden und softwareseitig genutzt werden.
 
+### Tasten mit Seiten belegen
 
 **In der Tasmota Konsole:**
 ```
@@ -125,11 +126,13 @@ button1Page: null, // keine Seite definiert
 button2Page: Thermostat_WZ // CardThermo für Wohnzimmer
 ```  
 
-
+### Tasten zum navigieren nutzen
 > **Bitte nicht verwenden, wenn Rule 2 mit buttonXPages belegt ist**  
 
 Wenn die Tasten zum Blättern durch die Seiten genutzt werden sollen, müssen folgende Änderungen durchgeführt werden. Mit dieser Rule kann die linke Taste eine Seite nach oben springen (Eigenschaft parent: ) und die rechte Taste zur Startseite bzw. auf die Seite die durch die Eigenschaft home: definiert wurde.
 
+**In der Tasmota Konsole:**
 ``` 
 Rule1 on Button1#state do Publish %topic%/tele/RESULT {"CustomRecv":"event,buttonPress1,hwbtn,bUp"} endon on Button2#state do Publish %topic%/tele/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bHome"} endon
+Rule1 1
 ``` 
