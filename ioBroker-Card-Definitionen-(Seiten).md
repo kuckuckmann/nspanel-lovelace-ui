@@ -337,6 +337,13 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
 ```  
 [
   {
+    "id": 0,
+    "value": 13,
+    "unit": "kW",
+    "icon": "emoticon-happy-outline",
+    "iconColor": 0
+  },
+  {
     "id": 1,
     "value": 3,
     "unit": "kW",
@@ -347,25 +354,25 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
   },
   {
     "id": 2,
-    "value": 6.1,
+    "value": 4.7,
     "unit": "kW",
     "direction": "in",
     "icon": "solar-power-variant",
+    "iconColor": 3,
+    "speed": 2
+  },
+  {
+    "id": 3,
+    "value": 4.3,
+    "unit": "kW",
+    "direction": "in",
+    "icon": "wind-turbine",
     "iconColor": 1,
     "speed": 3
   },
   {
-    "id": 3,
-    "value": 4.9,
-    "unit": "kW",
-    "direction": "in",
-    "icon": "wind-turbine",
-    "iconColor": 0,
-    "speed": 3
-  },
-  {
     "id": 4,
-    "value": 1.6,
+    "value": 3.4,
     "unit": "kW",
     "direction": "in",
     "icon": "shape",
@@ -374,7 +381,7 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
   },
   {
     "id": 5,
-    "value": 6.4,
+    "value": 0.1,
     "unit": "kW",
     "direction": "in",
     "icon": "transmission-tower",
@@ -383,12 +390,12 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
   },
   {
     "id": 6,
-    "value": 0,
+    "value": 2.5,
     "unit": "kW",
     "direction": "in",
     "icon": "car",
-    "iconColor": 0,
-    "speed": 3
+    "iconColor": 5,
+    "speed": 2
   }
 ]
 ```  
