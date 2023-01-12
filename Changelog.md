@@ -139,6 +139,8 @@ durchführen...
 
 # v3.7.3.1
 
+![image](https://user-images.githubusercontent.com/102996011/212192718-d7f8ca7b-5bc5-4fc4-ba1f-a81028da1f50.png)
+
 **Hotfix**
 
 Unteren Teil ersetzen:
