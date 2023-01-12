@@ -139,7 +139,7 @@ durchführen...
 
 # v3.7.3.1
 
-## Hotfix
+**Hotfix**
 
 Unteren Teil ersetzen:
 https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts
@@ -154,3 +154,7 @@ EDIT: Funktioniert natürlich auch mit der eu Version. Nur da ist es nicht wirkl
 
 
 ***
+
+# v3.7.3.0
+
+![image](https://user-images.githubusercontent.com/102996011/212191982-f4ad562f-3451-4427-bd6d-01c10bfe70b4.png)
