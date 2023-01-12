@@ -221,21 +221,8 @@ Ebenso kannst du unter alexaSpeakerList eine Liste mit vorhandenen Alexa-Devices
 Jetzt kommt der eigentliche Teil der Seitengestaltung. Es werden keine Datenpunkte benötigt, sondern Aliase.  
 Ein Alias ist „kein“ Datenpunkt, sondern ein Objekt mit mehreren Datenpunkten.  
 Das Skript setzt entsprechende Trigger auf die Alias-Datenpunkte .SET, .GET, .ACTUAL usw. Deshalb werden deine Steuerelemente im Panel nicht greifen, wenn du mit einzelnen Datenpunkten aus den verschiedenen Adaptern arbeitest.  
-Ich habe im Verlauf diverse Aliase erzeugt und auch in den ChangeLogs der jeweiligen Skript-Version sind die möglichen Aliase aufgeführt, daher gehe ich hier nicht (würde die Anleitung auch sprengen) im Detail auf die Aliase ein.  
-
-**Was brauche ich für einen Alias:  **
-
-a) Zunächst installierst du dir eine Instanz des Adapters „Geräte verwalten“  
-
-b) Dann erstellst du dir einen Alias (Beispiel Wetter-Icon und aktueller Wert der Außentemperatur) Dieser Alias muss nur einmalig angelegt werden und funktioniert somit auch in jedem weiteren Panel.  
-
-![image](https://user-images.githubusercontent.com/102996011/189370897-e27566e6-11dd-4b9e-867f-4074953cf7ba.png)  
-und etwas tiefer:  
-![image](https://user-images.githubusercontent.com/102996011/189370948-36747f6c-d9a1-4958-89e3-249dca8f80bc.png)
-
-c) Wenn du einen Alias für den Media-Player benötigst, dann erstelle die diesen Alias besser über den Adapter „Alias-Manager“,  
-![image](https://user-images.githubusercontent.com/102996011/189371038-33316b7e-fb9e-4cf4-adfb-3f899ab51278.png)  
-da der Adapter „Geräte verwalten“ bei diesem Alias nicht ordentlich arbeitet. Jedoch ist der auch so Komplex, das es für Alias-Anfänger schwer ist, einen Alias mit den korrekten Datenpunkten zu füllen.  
+Ich habe im Verlauf diverse Aliase erzeugt und auch in den ChangeLogs der jeweiligen Skript-Version sind die möglichen Aliase aufgeführt, daher gehe ich hier nicht (würde die Anleitung hier auch sprengen) im Detail auf die Aliase ein. Eine genaue Beschreibung für die diversen Pages und Möglichkeiten findest du [hier.](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen) 
+ 
 
 ***
 
