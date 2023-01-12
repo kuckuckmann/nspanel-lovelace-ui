@@ -500,19 +500,17 @@ on({id: sourceDP, change: "any"}, async function (obj) {
             aggregate: 'average'
         }
     }, function (result) {
-        var cardChartString = ""
-
+        var cardChartString = "";
         var stepXAchsis = rangeHours / maxXAchsisTicks;
 
         for (var i = 0; i < rangeHours; i++){
-            var deltaHour = rangeHours - i
-
+            var deltaHour = rangeHours - i;
             var targetDate = new Date(Date.now() - (deltaHour * 60 * 60 * 1000));
 
             //Check history items for requested hours
             for (var j = 0, targetValue = 0; j < result.result.length; j++) {
                 var valueDate = new Date(result.result[j].ts);
-                var value = (Math.round(result.result[j].val * 10) / 10 )
+                var value = (Math.round(result.result[j].val * 10) / 10);
 
                 if (valueDate > targetDate){                        
                     if ((targetDate.getHours() % stepXAchsis) == 0){
