@@ -560,21 +560,31 @@ let CardLChartExample = <PageChart>
 };
 ```  
 
+Erklärung zum nachfolgenden Beispiel-JS-Script:
+
+> **Wichtiger Hinweis und Voraussetzungen:**  
+>Für das Beispiel muss der InfluxDB Adapter installiert sein. Ebenfalls sollte über einen Zeitraum X bereits Sensordaten an eine Infux 2.X DB übertragen worden sein, welche jetzt zum Abruf bereit stehen!
+
+Zu definieren ist der Pfad für den Datenpunkt (im Beispiel 0.userdata.0.NSPanel.Influx2NSPanel.buero_temperature) in den das u.a. JS-Script die aufbereiteten Daten für das NSPanel schreiben kann. Für das Beispiel wurde ein Datenpunkt (deconz.0.Sensors.65.temperature) aus dem DeConz-Adapter mit einem Zigbee-Temperatursensor gewählt.
+
+**Bei Bedarf kann das Query angepasst werden:**
+Es ist darauf zu achten, die Anzahl an Werten aus der Datenbank möglichst gering zu halten. Im nachfolgenden Beispiel wurden diese nochmals aggregiert. Die Summe an Zeichen für das Payload an die HMI des NSPanels ist begrenzt. Falls zu viele Werte verarbeitet werden, wird der Payload von der HMI gekürzt und die folge wäre eine schwarze Seite resultierend aus einem Fehlerzustand.
+
 **Javascript für Influx2**
 ```  
-const Debug = true;
+const Debug = false;  //Bei Bedarf auf true stellen, um der Datenverarbeitung zur folgen 
 
 const NSPanel_Path = '0_userdata.0.NSPanel.'
 const Path = NSPanel_Path + "Influx2NSPanel.cardLChart.";
 const PathSensor = Path + "buero_temperature";
 
-const Sensor = 'deconz.0.Sensors.65.temperature' 
+const Sensor = 'deconz.0.Sensors.65.temperature'    //Datenpunkt, der gespeicherte Daten in der Influx 2.X enthält
 
-const numberOfHoursAgo = 24;
-const xAxisTicksEveryM = 60;
-const xAxisLabelEveryM = 240;
+const numberOfHoursAgo = 24;   // Zeitraum in Stunden in dem die Daten visualisiert werden
+const xAxisTicksEveryM = 60;   // Striche der Skala an der X-Achse (In diesem Fall alle 60 Minuten)
+const xAxisLabelEveryM = 240;  // Uhrzeit-Label der x-Achse (In diesem Fall alle 4 Stunden = 240 Minuten)
 
-const InfluxInstance = 'influxdb.1'
+const InfluxInstance = 'influxdb.0'  //Die Instanz des InfluxDB-Adapters
 
 let coordinates = ''; 
 
@@ -590,7 +600,7 @@ on({ id: Sensor, change: 'any' }, async function (obj) {
     let query =[
         'from(bucket: "iobroker")',
         '|> range(start: -' + numberOfHoursAgo + 'h)',
-        '|> filter(fn: (r) => r["_measurement"] == "' + Sensor+ '")',
+        '|> filter(fn: (r) => r["_measurement"] == "' + Sensor + '")',
         '|> filter(fn: (r) => r["_field"] == "value")',
         '|> drop(columns: ["from", "ack", "q"])',
         '|> aggregateWindow(every: 1h, fn: last, createEmpty: false)',
@@ -604,7 +614,7 @@ on({ id: Sensor, change: 'any' }, async function (obj) {
             console.error(result.error);
         } else {
             // show result
-            console.log(result);
+            if (Debug) console.log(result);
             var numResults = result.result.length;
             for (var r = 0; r < numResults; r++) 
             {
