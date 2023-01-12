@@ -158,3 +158,42 @@ EDIT: Funktioniert natürlich auch mit der eu Version. Nur da ist es nicht wirkl
 # v3.7.3.0
 
 ![image](https://user-images.githubusercontent.com/102996011/212191982-f4ad562f-3451-4427-bd6d-01c10bfe70b4.png)
+
+
+***
+
+# v3.7.0
+
+![image](https://user-images.githubusercontent.com/102996011/212192231-a9052edf-3d16-44a5-be10-6a01a6639b12.png)
+
+Es gibt ein paar Änderungen im oberen Teil des Scriptes (Bitte entsprechend einfügen): 
+
+Neue Konstanten:
+```
+const weatherAdapterInstance: string = 'accuweather.0.';  //Möglich 'accuweather.0.' oder 'daswetter.0.'
+const weatherScreensaverTempMinMax: string = 'MinMax';      // Mögliche Werte: 'Min', 'Max' oder 'MinMax'
+...
+const HMIOn:            RGB = { red:   3, green: 169, blue: 244 };     // Blau-On
+```
+
+Bitte folgende Parameter (Zeilen) aus der Config löschen:
+ ```
+    dimmode: 20,
+    active: 100, //Standard-Brightness TFT
+    ...
+    timeFormat: '%H:%M',                // currently not used 
+    dateFormat: '%A, %d. %B %Y',        // currently not used
+``` 
+
+Die Aliase für die cardMedia haben jetzt Repeat und Shuffle als zusätzliche Datenpunkte. Den alten bei alexa2, spotify-premium oder sonos einfach löschen. Das Script wird die wieder neu anlegen.
+
+Version mit Beispielen:
+https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs.ts
+
+Version ohne Beispiele:
+https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs_without_Examples.ts
+
+```
+FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.7.0.tft
+```
+
