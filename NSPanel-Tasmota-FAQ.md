@@ -7,7 +7,19 @@ Tasmota verfügt über optional zu definierende Regeln (rules), die das System b
 
 https://tasmota.github.io/docs/Rules/
 
-#### 1.1.1    Rule2 - Favoriten Seiten
+
+### 1.1.1 Rule1 - Tasten zum navigieren nutzen
+> **Bitte nicht verwenden, wenn Rule 2 mit buttonXPages belegt ist**  
+
+Wenn die Tasten zum Blättern durch die Seiten genutzt werden sollen, müssen folgende Änderungen durchgeführt werden. Mit dieser Rule kann die linke Taste eine Seite nach oben springen (Eigenschaft parent: ) und die rechte Taste zur Startseite bzw. auf die Seite die durch die Eigenschaft home: definiert wurde.
+
+**In der Tasmota Konsole:**
+``` 
+Rule1 on Button1#state do Publish %topic%/tele/RESULT {"CustomRecv":"event,buttonPress1,hwbtn,bUp"} endon on Button2#state do Publish %topic%/tele/RESULT {"CustomRecv":"event,buttonPress2,hwbtn,bHome"} endon
+Rule1 1
+``` 
+
+#### 1.1.2    Rule2 - Favoriten Seiten
 
 **Beide Hardware-Buttons als Dialog - Die internen Relais werden dabei nicht geschaltet**  
 `Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon`  
@@ -29,7 +41,7 @@ Die Seiten können über die button1Page und/oder button2Page definiert werden (
  
 ![image](https://user-images.githubusercontent.com/102996011/189394576-f470cba5-0fe6-4a46-97f6-0cd6c48a613b.png)
 
-#### 1.1.2    Rule3 - ESP-Buzzer 
+#### 1.1.3    Rule3 - ESP-Buzzer 
 
 Der eingebaute Buzzer des ESP32 kann auch Geräusche zur Unterstützung der Tastenbetätigung erzeugen Hierzu muss folgende Rule angelegt und aktiviert werden:  
 
