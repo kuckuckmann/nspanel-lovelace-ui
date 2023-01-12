@@ -541,6 +541,123 @@ on({id: sourceDP, change: "any"}, async function (obj) {
 
 ![image](https://user-images.githubusercontent.com/102996011/212094993-b78f6a38-aab7-43fd-a6c7-fa4add274b75.png)  
 
+**Seitendefinition**
+
+> Der Alias unter der PageItem.id ist ein Alias vom Gerätetyp: Info
+
+``` 
+let CardLChartExample = <PageChart>
+{
+    "type": "cardLChart",
+    "heading": "Büro Temperatur",
+    "useColor": true,
+    'items': [<PageItem>{ 
+                id: 'alias.0.Haus.Erdgeschoss.Buero.Charts.Temperatur',
+                yAxis: 'Temperatur [°C]',
+                yAxisTicks: [160,170,180,190,200,210,220,230],
+                onColor: Yellow
+             }]
+};
+```  
+
+**Javascript für Influx2**
+```  
+const Debug = true;
+
+const NSPanel_Path = '0_userdata.0.NSPanel.'
+const Path = NSPanel_Path + "Influx2NSPanel.cardLChart.";
+const PathSensor = Path + "buero_temperature";
+
+const Sensor = 'deconz.0.Sensors.65.temperature' 
+
+const numberOfHoursAgo = 24;
+const xAxisTicksEveryM = 60;
+const xAxisLabelEveryM = 240;
+
+const InfluxInstance = 'influxdb.1'
+
+let coordinates = ''; 
+
+createState(PathSensor, 0, {
+        name: 'SensorGrid',
+        desc: 'Sensor Values [~<time>:<value>]*',
+        type: 'string',
+        role: 'value',
+    });
+
+on({ id: Sensor, change: 'any' }, async function (obj) {
+
+    let query =[
+        'from(bucket: "iobroker")',
+        '|> range(start: -' + numberOfHoursAgo + 'h)',
+        '|> filter(fn: (r) => r["_measurement"] == "' + Sensor+ '")',
+        '|> filter(fn: (r) => r["_field"] == "value")',
+        '|> drop(columns: ["from", "ack", "q"])',
+        '|> aggregateWindow(every: 1h, fn: last, createEmpty: false)',
+        '|> map(fn: (r) => ({ r with _rtime: int(v: r._time) - int(v: r._start)}))',
+        '|> yield(name: "_result")'].join('');
+
+    if (Debug) console.log('Query: ' + query);
+
+    sendTo(InfluxInstance, 'query', query, function (result) {
+        if (result.error) {
+            console.error(result.error);
+        } else {
+            // show result
+            console.log(result);
+            var numResults = result.result.length;
+            for (var r = 0; r < numResults; r++) 
+            {
+                let list = []
+                var numValues = result.result[r].length;
+
+                for (var i = 0; i < numValues; i++) 
+                {
+                    var time = Math.round(result.result[r][i]._rtime/1000/1000/1000/60)
+                    var value = Math.round(result.result[r][i]._value * 10)
+                    list.push(time + ":" + value)
+                }
+
+                coordinates = list.join("~");
+
+                if (Debug) console.log(coordinates);
+            }
+        }
+    });
+
+    let timeOut = setTimeout (
+        function () {
+                let ticksAndLabelsList = []
+            var date = new Date();
+            date.setMinutes(0, 0, 0);
+            var ts = Math.round(date.getTime() / 1000);
+            var tsYesterday = ts - (numberOfHoursAgo * 3600);
+            if (Debug) console.log("Iterate from " + tsYesterday + " to " + ts + " stepsize=" + (xAxisTicksEveryM * 60));
+            for (var x = tsYesterday, i = 0; x < ts; x += (xAxisTicksEveryM * 60), i += xAxisTicksEveryM)
+            {
+                if ((i % xAxisLabelEveryM))
+                    ticksAndLabelsList.push(i);
+                else
+                {
+                    var currentDate = new Date(x * 1000);
+                    // Hours part from the timestamp
+                    var hours = "0" + currentDate.getHours();
+                    // Minutes part from the timestamp
+                    var minutes = "0" + currentDate.getMinutes();
+                    // Seconds part from the timestamp
+                    var seconds = "0" + currentDate.getSeconds();
+                    var formattedTime = hours.substr(-2) + ':' + minutes.substr(-2);
+                    ticksAndLabelsList.push(String(i) + "^" + formattedTime);
+                }
+            }
+            if (Debug) console.log("Ticks & Label: " + ticksAndLabelsList);
+            if (Debug) console.log("Coordinates: " + coordinates)
+            setState(PathSensor, ticksAndLabelsList.join("+") + '~' + coordinates, true);
+        }, 
+    1500
+    ) ;
+});
+```  
 
 # popUpNotify  
 
