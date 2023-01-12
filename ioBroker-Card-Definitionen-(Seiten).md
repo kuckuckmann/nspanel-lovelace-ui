@@ -486,8 +486,8 @@ let CardChartExample: PageChart =
 var sourceDP = 'alias.0.Wohnzimmer.Heizung.ACTUAL';
 var targetDP = '0_userdata.0.Test.chartTest';
 var rangeHours = 24;
-var maxXAchsisTicks = 4;
-var storeInstance = 'history.0';
+var maxXAchsisTicks = 6;
+var historyInstance = 'history.0';
 
 on({id: sourceDP, change: "any"}, async function (obj) {
     sendTo(historyInstance, 'getHistory', {
@@ -524,10 +524,14 @@ on({id: sourceDP, change: "any"}, async function (obj) {
                 }
             }
         }
+        
         cardChartString = cardChartString.substring(0,cardChartString.length-1);
-        setState(targetDP, cardChartString, true);
-    });
-    
+        if (existsState(targetDP) == false ) { 
+            createState(targetDP, cardChartString, true, { type: 'string' });
+        } else {
+            setState(targetDP, cardChartString, true);
+        }
+    });    
 });
 ```  
 
