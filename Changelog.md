@@ -4,7 +4,7 @@
 FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.8.3.tft
 ```
 
-Diese Release beinhaltet: 
+**Diese Release beinhaltet:**  
 * neue Funktionen des Volumio-Media-Players
 * die Vorbereitung für die carLCharts (Linien Diagramme siehe Vorschau unten)
 * Funktionen für den "echten Taster" (Mono-Button)
@@ -12,7 +12,7 @@ Diese Release beinhaltet:
 * Das €-Zeichen in Strings
 * Individuelle Navigations-Icons bei parent/prev/next/home
 
-Update-Anleitung (von v3.8.1 ausgehend):
+**Update-Anleitung (von v3.8.1 ausgehend):**
 * Unteren Teil (ab hier keine Änderungen...) komplett ersetzen.
 * In den Variablen muss eine Änderung vorgenommen werden
   * die 1 Zeile der Variable jeder Seite muss von:
@@ -68,7 +68,7 @@ Update-Anleitung (von v3.8.1 ausgehend):
             };
     ```
 
-Das TS-Script v3.8.3 findet ihr hier:
+Das TS-Script findet ihr hier:
 https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs.ts
 
 Mit v3.9.0 kommt demnächst die carLChart hinzu (aktuell noch nicht in der stable TFT):
