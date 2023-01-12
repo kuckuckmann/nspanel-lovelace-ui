@@ -201,7 +201,7 @@ Im Punkt 9 haben wir zunächst die nur Kommunikation zwischen Panel und Skript �
 
 **a) Screensaver einstellen**  
 
-das Aussehen des Screensaver kannst du ganz nach deinen Wüschen gestallten. Dafür haben wir im Wiki ein eigenes Thema erstellt, da sich im Laufe der Zeit die Möglichkeiten immer erweitert haben.  [Hier lang zu den Einstellungen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver#screensaver-layout-standard)  
+das Aussehen des Screensaver kannst du ganz nach deinen Wüschen gestallten. Dafür haben wir im Wiki ein eigenes Thema erstellt, da sich im Laufe der Zeit die Möglichkeiten immer erweitert haben.  [Hier lang zu den Einstellungen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver)  
 
  
 **b) Diverse Datenpunkte**  
