@@ -545,6 +545,12 @@ on({id: sourceDP, change: "any"}, async function (obj) {
 
 > Der Alias unter der PageItem.id ist ein Alias vom Gerätetyp: Info
 
+* type: Für Liniendiagramme muss der Seiten-Typ "cardLChart" sein.  
+* id: Es wird ein Alias vom Gerätetyp "Info" erstellt, der auf den erzeugenden Datenpunkt des unten aufgeführten Beispiel-Scriptes zeigt.  
+* yAxis: Bezeichner der Y-Achse
+* yAxisTicks: Skala des Wertebereiches der Y-Achse
+* onColor: Farbe des Graphen
+
 ``` 
 let CardLChartExample = <PageChart>
 {
