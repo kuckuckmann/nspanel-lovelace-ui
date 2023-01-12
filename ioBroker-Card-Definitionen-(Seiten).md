@@ -541,15 +541,15 @@ on({id: sourceDP, change: "any"}, async function (obj) {
 
 ![image](https://user-images.githubusercontent.com/102996011/212094993-b78f6a38-aab7-43fd-a6c7-fa4add274b75.png)  
 
-**Seitendefinition**
+**Seitendefinition**  
 
-> Der Alias unter der PageItem.id ist ein Alias vom Gerätetyp: Info
+> Der Alias unter der PageItem.id ist ein Alias vom Gerätetyp: **Info**  
 
 * type: Für Liniendiagramme muss der Seiten-Typ "cardLChart" sein.  
 * id: Es wird ein Alias vom Gerätetyp "Info" erstellt, der auf den erzeugenden Datenpunkt des unten aufgeführten Beispiel-Scriptes zeigt.  
-* yAxis: Bezeichner der Y-Achse
-* yAxisTicks: Skala des Wertebereiches der Y-Achse
-* onColor: Farbe des Graphen
+* yAxis: Bezeichner der Y-Achse  
+* yAxisTicks: Skala des Wertebereiches der Y-Achse  
+* onColor: Farbe des Graphen  
 
 ``` 
 let CardLChartExample = <PageChart>
@@ -566,14 +566,14 @@ let CardLChartExample = <PageChart>
 };
 ```  
 
-Erklärung zum nachfolgenden Beispiel-JS-Script:
+Erklärung zum nachfolgenden Beispiel-JS-Script:  
 
 > **Wichtiger Hinweis und Voraussetzungen:**  
 >Für das Beispiel muss der InfluxDB Adapter installiert sein. Ebenfalls sollte über einen Zeitraum X bereits Sensordaten an eine Infux 2.X DB übertragen worden sein, welche jetzt zum Abruf bereit stehen!
 
 Zu definieren ist der Pfad für den Datenpunkt (im Beispiel 0.userdata.0.NSPanel.Influx2NSPanel.buero_temperature) in den das u.a. JS-Script die aufbereiteten Daten für das NSPanel schreiben kann. Für das Beispiel wurde ein Datenpunkt (deconz.0.Sensors.65.temperature) aus dem DeConz-Adapter mit einem Zigbee-Temperatursensor gewählt.
 
-**Bei Bedarf kann das Query angepasst werden:**
+**Bei Bedarf kann das Query angepasst werden:**  
 Es ist darauf zu achten, die Anzahl an Werten aus der Datenbank möglichst gering zu halten. Im nachfolgenden Beispiel wurden diese nochmals aggregiert. Die Summe an Zeichen für das Payload an die HMI des NSPanels ist begrenzt. Falls zu viele Werte verarbeitet werden, wird der Payload von der HMI gekürzt und die folge wäre eine schwarze Seite resultierend aus einem Fehlerzustand.
 
 **Javascript für Influx2**
