@@ -464,8 +464,8 @@ Für viele ist es DAS Hinderniss, wenn Sie mit der Installtion des NSPanels und 
 
   Wenn ich was vergessen habe, gerne berichten (Kuckuck).
 
-* **Definitionsliste**
-[Hier ist die aktuelle Definitionsliste](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Table), sie wird tätig erweitert.
+* **Definitionsliste**  
+[Hier ist die aktuelle Definitionsliste](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Table), sie wird stetig erweitert.
 
 
 ***
