@@ -1,4 +1,5 @@
-Der überarbeitete Screensaver **ab v3.4.0**
+Der überarbeitete Screensaver **ab v3.4.0**  
+
 
 # Screensaver Layout (Standard)  
 
@@ -93,6 +94,8 @@ siehe https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definiti
 
 > **Achtung:**  
 > **Dieser Alias "muss" korrekt erstellt werden, damit die 4 kleineren Entity-Status-Icons (Weather-Forecast und/oder 4 Sensordatenpunkte) im unteren Screensaver visualisiert werden können.**  
+ 
+> Ab TS-Script-Version 3.5.0.5 und mit installiertem JavaScript-Adapter ab Version v6.1.3 kann dieser Alias u.a. automatisch erzeugt werden, wenn die Konstante **autoCreateAlias** auf **true** steht.
 
 Die Dargestellten Wetter-Icons (groß und klein) werden im NSPanel TS-Script ermittelt. Daher ist die Installation von Accuweather zwingend erforderlich.  Weitere Hinweise zur Installation des Accuweather Adapters hier: https://github.com/iobroker-community-adapters/ioBroker.accuweather
 
