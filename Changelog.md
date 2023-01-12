@@ -105,16 +105,16 @@ let Test_Licht1: PageEntities =
 
 Was kann man mit der neuen Navigation anstellen? :
 @TT-Tom hat eine **ausführliche Anleitung** geschrieben :+1: . Ihr findet Sie in der gestern noch erweiterten Wiki:
-https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation
-![ea00f217-d220-4d72-a5f9-a37f475a1f01-image.png](/assets/uploads/files/1673007025441-ea00f217-d220-4d72-a5f9-a37f475a1f01-image.png) 
+https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation  
+![image](https://user-images.githubusercontent.com/102996011/212190944-abfe4a8f-d31c-4dde-aa25-5c49718277dc.png)  
 
 Im oberen Teil des Skriptes sind zwei Konstanten enthalten. 
 ```
 const tasmota_web_admin_user: string = 'admin'; // ändern, falls der User im Tasmota vor dem Kompilieren umbenannt wurde (Standard Tasmota: admin)
 const tasmota_web_admin_password: string = '';  // setzten, falls "Web Admin Password" in Tasmote vergeben
 ```
-Bitte nicht vergessen, diese bei der Erweiterung zu berücksichtigen. Wer möchte, kann im Tasmota dann ein Kennwort für den Web Admin vergeben. 
-![c574d8f4-56a3-452f-9328-1c12e8c9a794-image.png](/assets/uploads/files/1673005668537-c574d8f4-56a3-452f-9328-1c12e8c9a794-image.png) 
+Bitte nicht vergessen, diese bei der Erweiterung zu berücksichtigen. Wer möchte, kann im Tasmota dann ein Kennwort für den Web Admin vergeben.   
+![image](https://user-images.githubusercontent.com/102996011/212191091-cd3cff39-1e81-45e0-aac8-84d72ac7a6fb.png)  
 
 Darüber hinaus hat @egal den **Volumio-Player** implementiert :+1: 
 Dieser ist ebenfalls in der Wiki enthalten.
