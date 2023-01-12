@@ -133,3 +133,24 @@ Sollte der BerryDriver noch nicht auf Version 8 sein, dann vorher:
 Backlog UpdateDriverVersion https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/tasmota/autoexec.be; Restart 1
 ```
 durchführen...
+
+
+***
+
+# v3.7.3.1
+
+## Hotfix
+
+Unteren Teil ersetzen:
+https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts
+
+Das TS-Script legt 2 neue Datenpunkte an:
+![image](https://user-images.githubusercontent.com/102996011/212191694-4f80f1e8-f6b6-4fe4-aad1-efb71afb0182.png)
+
+
+In Weekday oder Month short eintragen. Dann sollte es ein kurzes Datumsformat geben.
+
+EDIT: Funktioniert natürlich auch mit der eu Version. Nur da ist es nicht wirklich erforderlich...
+
+
+***
