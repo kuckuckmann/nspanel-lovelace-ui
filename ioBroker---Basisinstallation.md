@@ -2,7 +2,8 @@
 https://www.youtube.com/watch?v=ZPLJk2ZLo_8 - NSPanel mit Lovelace UI - so habe ich mir das vorgestellt!
 
 ## Step für Step - Anleitung 
-Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
+Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker  
+  
 ![image](https://user-images.githubusercontent.com/102996011/204623453-78d15235-136f-4c7b-96dc-4eeda0dace70.png)  
 
 
@@ -62,8 +63,10 @@ c) Unter Konsolen/Konsole kannst du natürlich auch noch weitere Einstellungen v
 
 ## **3.) Berry-Treiber installieren**
 Im Tasmota findest du unter „Konsolen“ den Button „Verwalte Dateisystem“. Wenn du diesen anklickst, siehst du einen weiteren Button „Datei erstellen und bearbeiten“. Du änderst den Dateinamen „neue-datei.txt“ in „autoexec.be“ und fügst den Inhalt aus dem folgenden Link ein:
-**https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/tasmota/autoexec.be**
-![image](https://user-images.githubusercontent.com/102996011/189356139-54888313-987c-47dd-86c5-3cac7a8b5e88.png)
+**https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/tasmota/autoexec.be**  
+  
+![image](https://user-images.githubusercontent.com/102996011/189356139-54888313-987c-47dd-86c5-3cac7a8b5e88.png)  
+
 Danach klickst du auf „Speichern“ und dann solltest du Tasmota rebooten.
 
 Wenn das Panel bereits unter einer anderen Variante (z.B. [haus-automatisierung.com](http://haus-automatisierung.com/)) installiert war, dann bitte alle Dateien (insbesondere [autoexec.be](http://autoexec.be/) und autoexec.bec) vorher über das Flammensymbol hinter dem Dateinamen löschen. Und von vorne mit dem Punkt 3 beginnen
@@ -157,8 +160,6 @@ ein und startest das Skript.
 > **https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.js**  
 > in ein globales "JavaScript" (nicht TS) einfügen
 
-> **Falls du das Skript in der Version ab 3.5.0.5 benutzt, muss der JavaScript-Adapter ab v6.1.3 installiert sein**. Das TS-Script kann mittlerweile eine Vielzahl an Aliasen selbstständig erzeugen und benötigt die dort enthaltenen Funktionen. 
-
 **Nur zur Info:**  
 Du kannst die einzelnen Icon-Symbolnamen (aktuell 6896 unterschiedliche Icon-Symbole) auf  
 **https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html**  
@@ -167,21 +168,26 @@ einsehen und später (kommen wir bei der Alias-Erstellung noch zu) auch jedes Ic
 ***
 
 ## **9.)  „NSPanelTs.ts“ anlegen**
-Unter dem regulären Vezeichnisbaum „common“ im ioBroker-Menüpunkt Skripte erzeugst du (gerne auch in weiteren Unterverzeichnissen) ein weiteres TypeScript (Aktuell in für die TFT-Version 3.4.0.5) mit dem Inhalt:  
+Unter dem regulären Vezeichnisbaum „common“ im ioBroker-Menüpunkt Skripte erzeugst du (gerne auch in weiteren Unterverzeichnissen) ein weiteres TypeScript mit dem Inhalt:  
 **https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts**  
 
+> **Falls du das Skript in der Version ab 3.5.0.5 benutzt, muss der JavaScript-Adapter ab v6.1.3 installiert sein**. Das TS-Script kann mittlerweile eine Vielzahl an Aliasen selbstständig erzeugen und benötigt die dort enthaltenen Funktionen. 
+  
 Für jedes einzelne NSPanel das du konfigurieren möchtest, musst du dieses Skript anlegen und speziell für dieses jeweilige NSPanel entsprechende Einstellungen vornehmen. Für den Skriptnamen verwende ich in der Regel eine Kombination aus Panel und Skriptversion, wie z.B.: NSPANEL_1_3.4.0
 
 (Es kommen in regelmäßigen Abständen weitere NSPanel-Features und Bug-Fixes in das GitHub-Skript in denen dann nur noch der untere Teil (--- ab hier keine Konfiguration mehr ---) ausgetauscht werden muss und die NSPanel-Parameter erhalten bleiben)
 
 Im oberen Teil des Skripts sind die grundsätzlichen Teile der zu erstellenden Aliase, Konstanten und Variablen (auch Seiten) enthalten. An dieser Stelle ist zunächst wichtig, die Kommunikationsparameter für die MQTT-Kommunikation zu parametrieren (ab ca. Zeile 400) beginnend mit
 
-`**export const config: Config = {**`  
+`export const config: Config = {`
 
-Hier musst du die beiden nachfolgenden Kommunikations-Datenpunkte aus dem MQTT-Adapter eintragen:  
+Hier musst du die nachfolgenden Kommunikations-Datenpunkte aus dem MQTT-Adapter eintragen:  
 
-`**panelRecvTopic: "mqtt.0.SmartHome.NSPanel_1.tele.RESULT",       //bitte anpassen**`  
-`**panelSendTopic: "mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend",   //bitte anpassen**`  
+`panelRecvTopic: "mqtt.0.SmartHome.NSPanel_1.tele.RESULT",       //bitte anpassen`  
+`panelSendTopic: "mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend",   //bitte anpassen` 
+   
+`mrIcon1ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER1', ScreensaverEntityIcon: .....},`  
+`mrIcon2ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER2', ScreensaverEntityIcon: .....},`  
 
 Falls abweichend, dann am besten direkt unter Objekte herauskopieren  
 
