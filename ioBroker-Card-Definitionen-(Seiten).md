@@ -535,9 +535,9 @@ on({id: sourceDP, change: "any"}, async function (obj) {
 });
 ```  
 
-# cardLChart (Line Charts ab TS-Script v.3.8.4)  
+# cardLChart (Line Charts ab TS-Script v.3.9.0)  
 
-> ab TS-Script Release v3.8.4
+> ab TS-Script Release v3.9.0
 
 ![image](https://user-images.githubusercontent.com/102996011/212094993-b78f6a38-aab7-43fd-a6c7-fa4add274b75.png)  
 
