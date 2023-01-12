@@ -83,6 +83,8 @@ Mit v3.9.0 kommt demnächst die carLChart hinzu (aktuell noch nicht in der stabl
 
 # v3.8.1
 
+![image](https://user-images.githubusercontent.com/102996011/212193039-2a5503b6-cb25-4110-af76-90d9e2b1d8f3.png)
+
 **Achtung Breaking Changes:**
 Um die Menüstruktur derart zu flexibilisieren, mussten in die Seitendeklaration weitere Parameter eingeführt werden. Es ist daher zwingend erforderlich, folgende Erweiterung je Seite vorzunehmen ( **prev**, **next**, **home** ) :
 
