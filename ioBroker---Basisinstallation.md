@@ -199,23 +199,17 @@ Bitte starte das Skript. Alle weiteren Parameter stellen wir später ein. Ab jet
 
 Im Punkt 9 haben wir zunächst die nur Kommunikation zwischen Panel und Skript über MQTT hergestellt. Jetzt kommen wir zum Inhalt des Panels:  
 
-**a) Die 4 kleineren Icons**  
-Hier kannst du dich entscheiden, ob du die Wettervorhersage oder eigene Werte visualisieren möchtest. Wenn du dich für den Forecast entscheidest, dann muss die Variable:  
-`var weatherForecast`  
-auf „true“ stehen. Ebenfalls sollte die Adapter-Instanz von Accu-Weather funktionsfähig eingerichtet sein. Für diese Werte ist kein Alias notwendig, da diese zur Laufzeit direkt aus dem Adapter ausgelesen werden.  
-Möchtest du an dieser Stelle eigene Werte visualisieren, dann muss die Variable:  
-`var weatherForecast` 
-auf „false“ stehen. Jetzt kannst du im Block beginnend mit  
-`export const config: Config = {`  
-die Datenpunkte firstScreensaverEntity bis fourthScreensaverEntity mit eigenen Datenpunkten füllen.
-Eine Ausnahme stellt das große Wetter-Icon und der Wert für die aktuelle Temperatur im Screensaver dar. Hierfür benötigen wir einen Alias (im nächsten Punkt).
+**a) Screensaver einstellen**  
 
-> **Achtung!**  
-> **Für die Anzeige der 4 kleinen Icons muss der Alias Wettervorhersage erstellt und konfiguriert sein**. Ab TS-Script-Version 3.5.0.5 und mit installiertem JavaScript-Adapter ab Version v6.1.3 kann dieser Alias u.a. automatisch erzeugt werden, wenn die Konstante **autoCreateAlias** auf **true** steht. 
+das Aussehen des Screensaver kannst du ganz nach deinen Wüschen gestallten. Dafür haben wir im Wiki ein eigenes Thema erstellt, da sich im Laufe der Zeit die Möglichkeiten immer erweitert haben.  [Hier lang zu den Einstellungen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver#screensaver-layout-standard)  
 
+ 
 **b) Diverse Datenpunkte**  
 Beim ersten Start des Scripts erzeugt das Skript unter 0_userdata diverse Datenpunkte für Screensaver Dimmode, interne Sensoren, Tasmota-Statuswerte, etc.  
 Der Pfad kann im Skript unter „NSPanel_Path“ angepasst werden.
+
+> **Achtung!**  
+> Ab TS-Script-Version 3.5.0.5 und mit installiertem JavaScript-Adapter ab Version v6.1.3 können auch weitere Alias automatisch erzeugt werden, wenn die Konstante **autoCreateAlias** auf **true** steht.
 
 **c) Alexa**  
 Wenn du Alexa-Devices mit dem Media-Player nutzen möchtest, dann stelle noch das Standard-Alexa-Device (Seriennummer unter „var alexaDevice“) ein.
