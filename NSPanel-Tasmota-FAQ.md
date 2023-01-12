@@ -8,7 +8,7 @@ Tasmota verfügt über optional zu definierende Regeln (rules), die das System b
 https://tasmota.github.io/docs/Rules/
 
 
-### 1.1.1 Rule1 - Tasten zum navigieren nutzen
+#### 1.1.1 Rule1 - Tasten zum navigieren nutzen
 > **Bitte nicht verwenden, wenn Rule 2 mit buttonXPages belegt ist**  
 
 Wenn die Tasten zum Blättern durch die Seiten genutzt werden sollen, müssen folgende Änderungen durchgeführt werden. Mit dieser Rule kann die linke Taste eine Seite nach oben springen (Eigenschaft parent: ) und die rechte Taste zur Startseite bzw. auf die Seite die durch die Eigenschaft home: definiert wurde.
