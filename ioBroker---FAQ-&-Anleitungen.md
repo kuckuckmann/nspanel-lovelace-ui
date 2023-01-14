@@ -356,7 +356,7 @@ Blockly Skript (by @Armilar):
 * **Konfigurationsskript**
 Im Konfigurationsskript muss ein Grid passend zu den Aliasen angelegt werden. Hier das Bsp. aus dem Default:
 ```
-let Abfall: PageEntities =
+let Abfall = <PageEntities>
 {
     "type": "cardEntities",
     "heading": "Abfallkalender",
@@ -405,7 +405,7 @@ Für den erstellten Datenpunkt nun einen Alias vom Typ Info anlegen.
 Im Script müsst ihr im Konfigurationsbereich nun eine PageQR hinzufügen. 
 
 ```
-var WLAN: PageQR = 
+var WLAN = <PageQR> 
 {
     "type": "cardQR",
     "heading": "Gäste WLAN",
@@ -609,7 +609,7 @@ Für jeden Wert, der auf der Card angezeigt werden soll muss ein Alias vom Typ I
 Hier das beispiel, wie die Card dann im Konfigurationsskript hinzugefügt werden muss. Man beachte hier die Besonderheit "**unit: "Wert der Einheit"**", welche dann am Ende der zeile angezeigt wird:  
   
 ``` 
-var PV_Anlage: PageEntities =
+var PV_Anlage = <PageEntities>
 {
     "type": "cardEntities",
     "heading": "PV Anlage",
@@ -912,7 +912,7 @@ Weiterhin im ALIAS unter ![image](https://user-images.githubusercontent.com/9913
   
 * **TS-Skript:**  
   
-`let WZ_Heizung: PageThermo =   
+`let WZ_Heizung = <PageThermo>   
 {  
     "type": "cardThermo",  
     "heading": "WZ Thermostat",  
@@ -971,7 +971,7 @@ WLED bietet eine Vielzahl an Konfigurations- und Einstellungsmöglichkeiten. Vie
   * **TS-Skript**  
   Im NSPanelTS.ts ist eine Beispielseite für WLED enthalten. Diese haben wir in unserer Konfiguration geringfügig abgeändert. Das Beispiel beinhaltet eine Konfiguration für verschiedene Segmente, diese haben wir erstmal durch den Timer ersetzt. Segmente folgt in einem weiteren Schritt und wird dann auch hier in der Wiki hinzugefügt. Aus dem Grund geht es mit der Konfiguration aus dem Beispiel hier weiter:  
   ```
-  let WLED: PageGrid =
+  let WLED = <PageGrid>
   {
       "type": "cardGrid",
         "heading": "WLED",
