@@ -4,7 +4,7 @@
 4 vertikal angeordnete Steuerelemente (Erstellung der "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
 ```
-var Sprechender_eindeutiger_Seitenname: PageEntities =
+var Sprechender_eindeutiger_Seitenname = <PageEntities>
 {
     "type": "cardEntities",
     "heading": "Deine Überschrift",
@@ -27,7 +27,7 @@ var Sprechender_eindeutiger_Seitenname: PageEntities =
 6 horizontal angeordnete Steuerelemente (in 2 Reihen je 3 Steuerelemente) (Erstellung der "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
 ```
-var Sprechender_eindeutiger_Seitenname: PageGrid =
+var Sprechender_eindeutiger_Seitenname = <PageGrid>
 {
     "type": "cardGrid",
     "heading": "Deine Überschrift",
@@ -51,7 +51,7 @@ var Sprechender_eindeutiger_Seitenname: PageGrid =
 (Erstellung des alias.0.Alarm siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
 ```
-var Sprechender_eindeutiger_Seitenname: PageAlarm =
+var Sprechender_eindeutiger_Seitenname = <PageAlarm>
 {
     "type": "cardAlarm",
     "heading": "Deine Überschrift",
