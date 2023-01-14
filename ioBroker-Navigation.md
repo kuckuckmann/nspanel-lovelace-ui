@@ -25,7 +25,7 @@ let CardPowerExample = <PagePower>
    ]};
 ```
 d.h. alle optionalen Seitenparameter mit undefined oder false können entfallen.  
-Zusätzlich können weitere Typen verwendet werden, diese werden hier beschrieben
+Zusätzlich können weitere Typen verwendet werden, diese werden [hier](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation#subpages) beschrieben.
 
 ```
 let CardPowerExample = <PagePower>
