@@ -84,30 +84,28 @@ Subpages haben verschiedene Navigationsmöglichkeiten, diese definiert Ihr im Be
 > Wenn **'prev'** eine Seite zugewiesen wurde, wird **'parent'** nicht ausgewertet. Das gleiche gilt auch für **'next'** und **'home'**. 
  
 ```
-let Test_Licht_Sub = <PageEntities>
-{
-    'type': 'cardEntities',
-    'heading': 'Color Aliase 1',
-    'useColor': true,
-    'subPage': true,
-    'parent': Test_Licht_Main,
-    'parentIcon': 'arrow-up-bold',
-    'prev': undefined,
-    'prevIcon': undefined,
-    'next': undefined,
-    'nextIcon': undefined,
-    'home': 'HomePage',
-    'homeIcon': 'home',
-    'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestRGBLichteinzeln', name: 'RGB-Licht Hex-Color', interpolateColor: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestRGBLicht', name: 'RGB-Licht', minValueBrightness: 0, maxValueBrightness: 100, interpolateColor: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestCTmitHUE', name: 'HUE-Licht-CT', minValueBrightness: 0, maxValueBrightness: 70, minValueColorTemp: 500, maxValueColorTemp: 6500, interpolateColor: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestHUELicht', name: 'HUE-Licht-Color', minValueColorTemp: 500, maxValueColorTemp: 6500, interpolateColor: true}
-    ]
-};
+et Level_2_Erdgeschoss_2 = <PageGrid>
+                {
+                    'type': 'cardGrid',
+                    'heading': 'Erdgeschoss (2)',
+                    'useColor': true,
+                    'subPage': true,
+                    'parent': Level_1_Haus,
+                    'prev': 'Level_2_Erdgeschoss_1',
+                    'prevIcon': 'home-group-minus',
+                    'home': 'Level_1_Haus',
+                    'homeIcon': 'play-pause',
+                    'items': [
+                        <PageItem>{ navigate: true, id: 'alias.0.Haus.Erdgeschoss.Gaeste_WC.Indikator', targetPage: 'Level_3_GaesteWC', name: 'Gäste WC' , icon: 'toilet', offColor: MSGreen, onColor: MSRed},
+                        <PageItem>{ navigate: true, id: 'alias.0.Haus.Erdgeschoss.Hauswirtschaftsraum.Indikator', targetPage: 'Level_3_Hauswirtschaftsraum', name: 'Hauswirtschaft' , icon: 'floor-plan', offColor: MSGreen, onColor: MSRed},
+                        <PageItem>{ navigate: true, id: 'alias.0.Haus.Erdgeschoss.Flur_vorne.Indikator', targetPage: 'Level_3_EG_FlurVorne', name: 'Flur vorne' , icon: 'floor-plan', offColor: MSGreen, onColor: MSRed},
+                        <PageItem>{ navigate: true, id: 'alias.0.Haus.Erdgeschoss.Flur_hinten.Indikator', targetPage: 'Level_3_EG_FlurHinten', name: 'Flur hinten' , icon: 'floor-plan', offColor: MSGreen, onColor: MSRed},
+                    ]
+                };
 ```  
 
-![image](https://user-images.githubusercontent.com/102996011/210829375-90ab3d40-b3a4-4794-816d-dcc60f2e7271.png)
+![screenPanelNavi](https://user-images.githubusercontent.com/101348966/212483124-5c3c4f67-2a54-469a-a514-7aef78ff02d8.png)
+
 
 
 #### Icons für Subpages (ab v3.7.3.2)  
