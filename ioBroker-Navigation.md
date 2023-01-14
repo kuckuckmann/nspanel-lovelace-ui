@@ -6,9 +6,52 @@ by TT-Tom
 
 **Es gibt zwei Möglichkeiten durch die Seiten des Panels zu navigieren. Zum einen gibt es die Navigation auf dem Panel mit den Symbolen Pfeil Rechts, Links und Pfeil nach oben und Haus-Symbol. Die Zweite und etwas schwierige Variante ist über die Tasten unter dem Panel, dazu aber später mehr. Zuerst sehen wir uns die Struktur der Seiten und ihre Aufteilung an.**  
 
+> ab TS-Script v3.8.3  
+**Die Definition der Seiten hat sich geändert.**  
+```
+let Variablenname = <Seitentyp>
+```
+
+Daraus ergeben sich folgende Vorteile:  
+
+Es müssen nicht mehr alle Seitenparameter angegeben werden, wie z.B  
+```
+let CardPowerExample = <PagePower>  
+  {
+  'type': 'cardPower',
+  'heading': 'cardPower Emulator',
+  'items': [
+  <PageItem>{ id: 'alias.0.NSPanel_1.Power.PowerCard' },
+   ]};
+```
+d.h. alle optionalen Seitenparameter mit undefined oder false können entfallen.  
+Zusätzlich können weitere Typen verwendet werden, diese werden hier beschrieben
+
+```
+let CardPowerExample = <PagePower>
+   {
+   'type': 'cardPower',
+   'heading': 'cardPower Emulator',
+   'useColor': true oder false
+   'subPage': true oder false
+   'parent': undefined oder Page
+   'parentIcon': undefined oder Icon als String, z.B. 'alert'
+   'prev': undefined oder 'Page'
+   'prevIcon': undefined oder Icon als String
+   'next': undefined oder 'Page'
+   'nextIcon': undefined oder Icon als String
+   'home': undefined oder 'Page'
+   'homeIcon': undefined oder Icon als String
+   'items': [
+   <PageItem>{ id: 'alias.0.NSPanel_1.Power.PowerCard' },
+   ]
+   };
+```
+
+
 ## Navigation mit den TFT-Icons (Pfeil rechts, -links, -oben und Haus)  
 
-[![image](https://user-images.githubusercontent.com/102996011/210832636-750fee62-ec5f-455b-9be0-b73c70fb6eb8.png)](https://user-images.githubusercontent.com/102996011/210832636-750fee62-ec5f-455b-9be0-b73c70fb6eb8.png)
+![Grafik Navi](https://user-images.githubusercontent.com/101348966/212481713-b1122be0-0138-4c30-a41c-69565b258f9d.png)
 
 ### Vorbereitung und Gedanken zur Menüstruktur  
 
@@ -27,7 +70,7 @@ Um durch die Hauptseiten / Pages zu blättern, habt Ihr oben links und rechts je
 
 ### Subpages  
 
-Subpages haben verschiedene Navigationsmöglichkeiten, diese definiert Ihr im Bereich der Page-Definition. Damit definiert ihr auch, welche der vier Navi-Symbole in den oberen Ecken angezeigt werden.
+Subpages haben verschiedene Navigationsmöglichkeiten, diese definiert Ihr im Bereich der Page-Definition. Damit definiert ihr auch, welche der vier Navi-Symbole in den oberen Ecken angezeigt werden. Zusätzlich könnt ihr ab **Version 3.8.3** auch optional Icon definieren.
 
 * **'subPage'**: true -> Seite wird als Unterseite definiert
 * **'parent'**: <Seitenname der übergeordneten Seite> -> definiert welche Seite aufgerufen wird beim Drücken auf den Pfeil nach oben
@@ -35,29 +78,33 @@ Subpages haben verschiedene Navigationsmöglichkeiten, diese definiert Ihr im Be
 * **'next'**: <Seitenname der nächsten Seite> -> definiert welche Seite aufgerufen wird beim Drücken auf den Pfeil nach rechts
 * **'home'**: <Seitenname der Übersichtsseite> -> definiert welche Seite aufgerufen wird beim Drücken auf das Haus-Symbol
 
+* **'parentIcon', 'prevIcon', 'nextIcon' und 'homeIcon'**: als Parameter gelten ->  undefined oder Icon als String, z.B. 'alert'
+
 > **Wichtig!**  
 > Wenn **'prev'** eine Seite zugewiesen wurde, wird **'parent'** nicht ausgewertet. Das gleiche gilt auch für **'next'** und **'home'**. 
  
 ```
-let Level_2_Erdgeschoss_1: PageGrid =
-    {
-        'type': 'cardGrid',
-        'heading': 'Erdgeschoss (1)',
-        'useColor': true,
-        'subPage': true,
-        'parent': 'Level_1_Haus',
-        'prev': undefined,
-        'next': 'Level_2_Erdgeschoss_2',
-        'home': 'Level_1_Haus',
-        'items': [
-                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Wohnzimmer', name: 'Wohnzimmer' , icon: 'sofa-outline', offColor: MSRed, onColor: MSGreen},
-                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Esszimmer', name: 'Esszimmer' , icon: 'table-chair', offColor: MSRed, onColor: MSGreen},
-                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Buero', name: 'Büro' , icon: 'desk', offColor: MSRed, onColor: MSGreen},
-                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Kueche', name: 'Küche' , icon: 'silverware-variant', offColor: MSRed, onColor: MSGreen},
-                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Bad', name: 'Bad' , icon: 'bathtub-outline', offColor: MSRed, onColor: MSGreen},
-                    <PageItem>{ navigate: true, id: null, targetPage: 'Level_3_Kaminzimmer', name: "Kaminzimmer" , icon: "fireplace", offColor: MSRed, onColor: MSGreen},
-                    ]
-                };
+let Test_Licht_Sub = <PageEntities>
+{
+    'type': 'cardEntities',
+    'heading': 'Color Aliase 1',
+    'useColor': true,
+    'subPage': true,
+    'parent': Test_Licht_Main,
+    'parentIcon': 'arrow-up-bold',
+    'prev': undefined,
+    'prevIcon': undefined,
+    'next': undefined,
+    'nextIcon': undefined,
+    'home': 'HomePage',
+    'homeIcon': 'home',
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestRGBLichteinzeln', name: 'RGB-Licht Hex-Color', interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestRGBLicht', name: 'RGB-Licht', minValueBrightness: 0, maxValueBrightness: 100, interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestCTmitHUE', name: 'HUE-Licht-CT', minValueBrightness: 0, maxValueBrightness: 70, minValueColorTemp: 500, maxValueColorTemp: 6500, interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestHUELicht', name: 'HUE-Licht-Color', minValueColorTemp: 500, maxValueColorTemp: 6500, interpolateColor: true}
+    ]
+};
 ```  
 
 ![image](https://user-images.githubusercontent.com/102996011/210829375-90ab3d40-b3a4-4794-816d-dcc60f2e7271.png)
