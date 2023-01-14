@@ -92,7 +92,7 @@ var Sprechender_eindeutiger_Seitenname = <PageAlarm>
 
 **alexa2-Adapter**
 ```
-let Alexa: PageMedia = 
+let Alexa = <PageMedia> = 
 {
     'type': 'cardMedia',
     'heading': 'Alexa',
@@ -128,7 +128,7 @@ let Alexa: PageMedia =
 
 **spotify-premium Adapter**
 ```
-let SpotifyPremium: PageMedia = 
+let SpotifyPremium = <PageMedia> 
 {
     "type": "cardMedia",
     "heading": "Spotify-Premium",
@@ -155,7 +155,7 @@ let SpotifyPremium: PageMedia =
 **Volumio-Player**  
   
 ```
-let VolumioBoss: PageMedia = 
+let VolumioBoss = <PageMedia> 
 {
     'type': 'cardMedia',
     'heading': 'Volumio-Büro',
@@ -182,7 +182,7 @@ let VolumioBoss: PageMedia =
 
 > **Definition ab TS-Version 3.1.1.3** (Breaking Changes)
 ```
-var Sprechender_eindeutiger_Seitenname: PageMedia = 
+var Sprechender_eindeutiger_Seitenname = <PageMedia> 
 {
     "type": "cardMedia",
     "heading": "Deine Überschrift",
@@ -199,7 +199,7 @@ var Sprechender_eindeutiger_Seitenname: PageMedia =
 ```  
 oder
 ```  
-let SpotifyPremium: PageMedia = 
+let SpotifyPremium = <PageMedia> 
 {
     "type": "cardMedia",
     "heading": "Spotify-Premium",
@@ -238,7 +238,7 @@ let SpotifyPremium: PageMedia =
 
 > **Definition bis TS-Version 3.1.1.3**
 ```
-var Sprechender_eindeutiger_Seitenname: PageMedia = 
+var Sprechender_eindeutiger_Seitenname = <PageMedia> 
 {
     "type": "cardMedia",
     "heading": "Deine Überschrift",
@@ -254,7 +254,7 @@ var Sprechender_eindeutiger_Seitenname: PageMedia =
 
 > Beispiel: Erstellung des "PageItem" und Alias vom Typ "Info" siehe (https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#5-qr-code-page) by Kuckuckmann
 ```
-var Sprechender_eindeutiger_Seitenname: PageQR = 
+var Sprechender_eindeutiger_Seitenname = <PageQR> 
 {
     "type": "cardQR",
     "heading": "Deine Überschrift",
@@ -284,7 +284,7 @@ keine
 ![image](https://user-images.githubusercontent.com/102996011/204627014-03173d87-22ba-44fb-b07c-40b7be6366ac.png)  
   
 ```  
-var Sprechender_eindeutiger_Seitenname: PageThermo = 
+var Sprechender_eindeutiger_Seitenname = <PageThermo> 
 {
     "type": "cardThermo",
     "heading": "Test Klimaanlage",
@@ -317,7 +317,7 @@ maxValue: Maximale einzustellende Temperatur (Beispiel: 30,5°C entspricht 305)
 Beispiel: Erstellung des "PageItem" und Alias vom Typ "Info"
 
 ```  
-var CardPowerExample: PagePower =
+var CardPowerExample = <PagePower>
 {
     "type": "cardPower",
     "heading": "cardPower Emulator",
@@ -458,7 +458,7 @@ Es wird lediglich ein Alias vom Gerätetyp "Info" benötigt:
 
 **PageItem Beispiel:**
 ```
-let CardChartExample: PageChart =
+let CardChartExample = <PageChart>
 {
     "type": "cardChart",
     "heading": "Stromzähler L1+L2+L3",
