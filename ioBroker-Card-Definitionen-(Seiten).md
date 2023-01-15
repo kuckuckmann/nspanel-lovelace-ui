@@ -266,7 +266,9 @@ var Sprechender_eindeutiger_Seitenname = <PageQR>
 ```  
   
 **Parameter:**  
-keine
+``` 
+hidePassword: true/false
+``` 
 
 # cardThermo  
   
