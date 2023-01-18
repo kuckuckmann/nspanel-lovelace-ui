@@ -1,18 +1,18 @@
-# Servicemenü
+# Servicemenü  
 
-ab v3.9.0
+> ab v3.9.0  
 
-## Menü-Beispiel aus dem TS-Script
-![Nextion_Editor_nK462BYmWw](https://user-images.githubusercontent.com/102996011/213283615-860de2a8-1e1b-4d09-892c-c2119aba234c.gif)
+## Menü-Beispiel aus dem TS-Script  
+![Nextion_Editor_nK462BYmWw](https://user-images.githubusercontent.com/102996011/213283615-860de2a8-1e1b-4d09-892c-c2119aba234c.gif)  
 
-Das Menü ist in den Variablendefinitionen des TS-Script enthalten, dient als Beispiel für eine Subpage-Gestaltung und kann beliebig angepasst werden. Die Aliase für dieses Beispiel legt das TS-Script, sofern setOption in der JavaScript-Adapter-Instanz angehakt ist, automatisch an.
+Das Menü ist in den Variablendefinitionen des TS-Script enthalten, dient als Beispiel für eine Subpage-Gestaltung und kann beliebig angepasst werden. Die Aliase für dieses Beispiel legt das TS-Script, sofern setOption in der JavaScript-Adapter-Instanz angehakt ist, automatisch an.  
 
-## Menüaufbau
+## Menüaufbau  
+
+![image](https://user-images.githubusercontent.com/102996011/213286379-77811706-33b5-4e45-92ab-bc3d4815676e.png)  
 
 
-
-
-## Variablendefinition des Beispiel-Service Menüs
+## Variablendefinition des Beispiel-Service Menüs  
 ```
 /********************************************************************************************************** */
 //Service Pages mit Auto-Alias (Nachfolgende Seiten werden mit Alias automatisch angelegt)
