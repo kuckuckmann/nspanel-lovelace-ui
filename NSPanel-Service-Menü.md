@@ -3,7 +3,7 @@
 > ab v3.9.0  
 
 **Das Menü ist in den Variablendefinitionen des TS-Script v3.9.0 enthalten, dient als Beispiel für eine Subpage-Gestaltung und kann beliebig angepasst werden. Die Aliase für dieses Beispiel legt das TS-Script, sofern setOption in der JavaScript-Adapter-Instanz angehakt ist, automatisch an.**  
-Im Zuge der weiteren Releases wird es sukzessive um künftige Funktionalitäten Erweitert
+Im Zuge der weiteren Releases wird es sukzessive um künftige Funktionalitäten erweitert
 
 ## Service-Menü-Beispiel aus dem TS-Script  
 ![Nextion_Editor_nK462BYmWw](https://user-images.githubusercontent.com/102996011/213283615-860de2a8-1e1b-4d09-892c-c2119aba234c.gif)  
