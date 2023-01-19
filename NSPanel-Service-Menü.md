@@ -306,6 +306,7 @@ let NSPanel_Service = <PageEntities>
                 };
 ```
 
+# TS-Script Config
 ```
 export const config: Config = {
     
