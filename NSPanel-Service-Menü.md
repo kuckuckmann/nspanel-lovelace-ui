@@ -9,7 +9,7 @@ Das Menü ist in den Variablendefinitionen des TS-Script enthalten, dient als Be
 
 ## Aufbau des Service-Menüs  
 
-![image](https://user-images.githubusercontent.com/102996011/213286379-77811706-33b5-4e45-92ab-bc3d4815676e.png)  
+![image](https://user-images.githubusercontent.com/102996011/213419344-19579017-2eb1-49b9-b798-0de3dbf1dcef.png)  
 
 
 ## Variablendefinition
