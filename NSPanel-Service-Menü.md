@@ -305,3 +305,43 @@ let NSPanel_Service = <PageEntities>
                     ]
                 };
 ```
+
+```
+export const config: Config = {
+    
+    ...
+    Diverse Top Level Pages
+    ...
+    
+    pages: [
+            ...
+            
+            NSPanel_Service         //Auto-Alias Service Page
+    ],
+    subPages: [
+                ...
+                Diverse Subpages
+                ...
+
+                NSPanel_Infos,                          //Auto-Alias Service Page
+                    NSPanel_Wifi_Info_1,                //Auto-Alias Service Page
+                    NSPanel_Wifi_Info_2,                //Auto-Alias Service Page
+                    NSPanel_Sensoren,                   //Auto-Alias Service Page
+                    NSPanel_Hardware,                   //Auto-Alias Service Page
+                NSPanel_Einstellungen,                  //Auto-Alias Service Page
+                    NSPanel_Screensaver,                //Auto-Alias Service Page
+                        NSPanel_ScreensaverDimmode,     //Auto-Alias Service Page
+                        NSPanel_ScreensaverBrightness,  //Auto-Alias Service Page
+                        NSPanel_Weather,                //Auto-Alias Service Page
+                        NSPanel_Dateformat,             //Auto-Alias Service Page
+                        NSPanel_Indicators,             //Auto-Alias Service Page
+                        NSPanel_Relays,                 //Auto-Alias Service Page
+                NSPanel_Firmware,                       //Auto-Alias Service Page
+                    NSPanel_FirmwareTasmota,            //Auto-Alias Service Page
+                    NSPanel_FirmwareBerry,              //Auto-Alias Service Page
+                    NSPanel_FirmwareNextion,            //Auto-Alias Service Page
+    ],
+    button1Page: button1Page,   //Beispiel-Seite auf Button 1, wenn Rule2 definiert - Wenn nicht definiert --> button1Page: null, 
+    button2Page: button2Page    //Beispiel-Seite auf Button 2, wenn Rule2 definiert - Wenn nicht definiert --> button1Page: null,
+};
+```
