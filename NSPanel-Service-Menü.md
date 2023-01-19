@@ -310,10 +310,12 @@ let NSPanel_Service = <PageEntities>
 export const config: Config = {
     
     ...
-    Diverse Top Level Pages
+    Config Parameter
     ...
     
     pages: [
+            ...
+            Diverse Top Level Pages
             ...
             
             NSPanel_Service         //Auto-Alias Service Page
