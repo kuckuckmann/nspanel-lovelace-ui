@@ -10,7 +10,7 @@ Im Zuge der weiteren Releases wird es sukzessive um künftige Funktionalitäten 
 
 ## Aufbau des Service-Menüs  
 
-![image](https://user-images.githubusercontent.com/102996011/213419607-e8110f60-532d-42ad-83a8-2228bd570672.png)  
+![image](https://user-images.githubusercontent.com/102996011/213421892-3a479c82-2d2d-4145-9c39-722f7911e560.png)  
 
 ## Variablendefinition
 
