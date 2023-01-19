@@ -5,12 +5,11 @@
 ## Service-Menü-Beispiel aus dem TS-Script  
 ![Nextion_Editor_nK462BYmWw](https://user-images.githubusercontent.com/102996011/213283615-860de2a8-1e1b-4d09-892c-c2119aba234c.gif)  
 
-Das Menü ist in den Variablendefinitionen des TS-Script enthalten, dient als Beispiel für eine Subpage-Gestaltung und kann beliebig angepasst werden. Die Aliase für dieses Beispiel legt das TS-Script, sofern setOption in der JavaScript-Adapter-Instanz angehakt ist, automatisch an.  
+Das Menü ist in den Variablendefinitionen des TS-Script v3.9.0 enthalten, dient als Beispiel für eine Subpage-Gestaltung und kann beliebig angepasst werden. Die Aliase für dieses Beispiel legt das TS-Script, sofern setOption in der JavaScript-Adapter-Instanz angehakt ist, automatisch an.  
 
 ## Aufbau des Service-Menüs  
 
-![image](https://user-images.githubusercontent.com/102996011/213419344-19579017-2eb1-49b9-b798-0de3dbf1dcef.png)  
-
+![image](https://user-images.githubusercontent.com/102996011/213419607-e8110f60-532d-42ad-83a8-2228bd570672.png)  
 
 ## Variablendefinition
 
