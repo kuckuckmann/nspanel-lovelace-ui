@@ -342,7 +342,7 @@ export const config: Config = {
                 NSPanel_Einstellungen,                  //Auto-Alias Service Page
                     NSPanel_Screensaver,                //Auto-Alias Service Page
                         NSPanel_ScreensaverDimmode,     //Auto-Alias Service Page
-                        NSPanel_ScreensaverBrightness,  //Auto-Alias Service Page
+                        NSPanel_ScreensaverOther,       //Auto-Alias Service Page
                         NSPanel_Weather,                //Auto-Alias Service Page
                         NSPanel_Dateformat,             //Auto-Alias Service Page
                         NSPanel_Indicators,             //Auto-Alias Service Page
