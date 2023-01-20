@@ -580,19 +580,19 @@ Es ist darauf zu achten, die Anzahl an Werten aus der Datenbank möglichst gerin
 
 **Javascript für Influx2**
 ```  
-const Debug = false;  //Bei Bedarf auf true stellen, um der Datenverarbeitung zur folgen 
+const Debug = true;
 
-const NSPanel_Path = '0_userdata.0.NSPanel.'
-const Path = NSPanel_Path + "Influx2NSPanel.cardLChart.";
-const PathSensor = Path + "buero_temperature";
+const NSPanel_Path = '0_userdata.0.NSPanel.';
+const Path = NSPanel_Path + 'Influx2NSPanel.cardLChart.';
+const PathSensor = Path + 'buero_temperature';
 
-const Sensor = 'deconz.0.Sensors.65.temperature'    //Datenpunkt, der gespeicherte Daten in der Influx 2.X enthält
+const Sensor = 'deconz.0.Sensors.65.temperature';
 
-const numberOfHoursAgo = 24;   // Zeitraum in Stunden in dem die Daten visualisiert werden
-const xAxisTicksEveryM = 60;   // Striche der Skala an der X-Achse (In diesem Fall alle 60 Minuten)
-const xAxisLabelEveryM = 240;  // Uhrzeit-Label der x-Achse (In diesem Fall alle 4 Stunden = 240 Minuten)
+const numberOfHoursAgo = 24;
+const xAxisTicksEveryM = 60;
+const xAxisLabelEveryM = 240;
 
-const InfluxInstance = 'influxdb.0'  //Die Instanz des InfluxDB-Adapters
+const InfluxInstance = 'influxdb.0';
 
 let coordinates = ''; 
 
@@ -608,7 +608,7 @@ on({ id: Sensor, change: 'any' }, async function (obj) {
     let query =[
         'from(bucket: "iobroker")',
         '|> range(start: -' + numberOfHoursAgo + 'h)',
-        '|> filter(fn: (r) => r["_measurement"] == "' + Sensor + '")',
+        '|> filter(fn: (r) => r["_measurement"] == "' + Sensor+ '")',
         '|> filter(fn: (r) => r["_field"] == "value")',
         '|> drop(columns: ["from", "ack", "q"])',
         '|> aggregateWindow(every: 1h, fn: last, createEmpty: false)',
@@ -623,17 +623,17 @@ on({ id: Sensor, change: 'any' }, async function (obj) {
         } else {
             // show result
             if (Debug) console.log(result);
-            var numResults = result.result.length;
-            for (var r = 0; r < numResults; r++) 
+            let numResults = result.result.length;
+            for (let r = 0; r < numResults; r++) 
             {
                 let list = []
-                var numValues = result.result[r].length;
+                let numValues = result.result[r].length;
 
-                for (var i = 0; i < numValues; i++) 
+                for (let i = 0; i < numValues; i++) 
                 {
-                    var time = Math.round(result.result[r][i]._rtime/1000/1000/1000/60)
-                    var value = Math.round(result.result[r][i]._value * 10)
-                    list.push(time + ":" + value)
+                    let time = Math.round(result.result[r][i]._rtime/1000/1000/1000/60);
+                    let value = Math.round(result.result[r][i]._value * 10);
+                    list.push(time + ":" + value);
                 }
 
                 coordinates = list.join("~");
@@ -645,31 +645,30 @@ on({ id: Sensor, change: 'any' }, async function (obj) {
 
     let timeOut = setTimeout (
         function () {
-                let ticksAndLabelsList = []
-            var date = new Date();
+            let ticksAndLabelsList = []
+            let date = new Date();
             date.setMinutes(0, 0, 0);
-            var ts = Math.round(date.getTime() / 1000);
-            var tsYesterday = ts - (numberOfHoursAgo * 3600);
-            if (Debug) console.log("Iterate from " + tsYesterday + " to " + ts + " stepsize=" + (xAxisTicksEveryM * 60));
-            for (var x = tsYesterday, i = 0; x < ts; x += (xAxisTicksEveryM * 60), i += xAxisTicksEveryM)
+            let ts = Math.round(date.getTime() / 1000);
+            let tsYesterday = ts - (numberOfHoursAgo * 3600);
+            if (Debug) console.log('Iterate from ' + tsYesterday + ' to ' + ts + ' stepsize=' + (xAxisTicksEveryM * 60));
+            for (let x = tsYesterday, i = 0; x < ts; x += (xAxisTicksEveryM * 60), i += xAxisTicksEveryM)
             {
                 if ((i % xAxisLabelEveryM))
                     ticksAndLabelsList.push(i);
                 else
                 {
-                    var currentDate = new Date(x * 1000);
+                    let currentDate = new Date(x * 1000);
                     // Hours part from the timestamp
-                    var hours = "0" + currentDate.getHours();
+                    let hours = "0" + String(currentDate.getHours());
                     // Minutes part from the timestamp
-                    var minutes = "0" + currentDate.getMinutes();
-                    // Seconds part from the timestamp
-                    var seconds = "0" + currentDate.getSeconds();
-                    var formattedTime = hours.substr(-2) + ':' + minutes.substr(-2);
+                    let minutes = "0" + String(currentDate.getMinutes());
+                    let formattedTime = hours.slice(-2) + ':' + minutes.slice(-2);
+
                     ticksAndLabelsList.push(String(i) + "^" + formattedTime);
                 }
             }
-            if (Debug) console.log("Ticks & Label: " + ticksAndLabelsList);
-            if (Debug) console.log("Coordinates: " + coordinates)
+            if (Debug) console.log('Ticks & Label: ' + ticksAndLabelsList);
+            if (Debug) console.log('Coordinates: ' + coordinates);
             setState(PathSensor, ticksAndLabelsList.join("+") + '~' + coordinates, true);
         }, 
     1500
