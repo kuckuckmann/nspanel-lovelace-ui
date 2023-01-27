@@ -6,7 +6,7 @@
 Im Zuge der weiteren Releases wird es sukzessive um künftige Funktionalitäten erweitert
 
 ## Service-Menü-Beispiel aus dem TypeScript (NSPanel.ts)   
-![Nextion_Editor_C2NV6zMKIn](https://user-images.githubusercontent.com/102996011/213807668-c59210aa-5d9f-4c97-93ed-5f7401422925.gif)  
+![Nextion_Editor_jc3M2TasjY](https://user-images.githubusercontent.com/102996011/215077776-20e7a3f8-3a87-43c4-ae24-7e237e0a9646.gif) 
 
 ## Aufbau des Service-Menüs  
 
