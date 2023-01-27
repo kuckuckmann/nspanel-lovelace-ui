@@ -11,7 +11,8 @@ export const config: Config = {
 ```
 
 Ansicht Weather-Forecast:  
-![image](https://user-images.githubusercontent.com/102996011/190608554-a5719dfa-076c-46f5-9b01-30234493b035.png)  
+![image](https://user-images.githubusercontent.com/102996011/215202503-b4a407a9-c44e-4c05-8bb5-e4525db48ae3.png)  
+
 Ansicht Screensaver-Entities:  
 ![image](https://user-images.githubusercontent.com/102996011/190849281-0ef61e4f-3d92-4959-a66b-92dd292ec407.png)  
   
@@ -26,6 +27,7 @@ export const config: Config = {
   
 Ansicht Weather-Forecast:  
 ![image](https://user-images.githubusercontent.com/102996011/190611272-c3bf9f34-c9c0-400d-ae03-c05bdfa8071b.png)  
+
 Ansicht Screensaver-Entities:  
 ![image](https://user-images.githubusercontent.com/102996011/190849999-48ed259b-7c1b-4a4f-887d-f354d7bab07d.png)  
 
