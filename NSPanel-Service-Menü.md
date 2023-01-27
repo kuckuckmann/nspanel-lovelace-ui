@@ -12,7 +12,9 @@ Im Zuge der weiteren Releases wird es sukzessive um künftige Funktionalitäten 
 
 ![image](https://user-images.githubusercontent.com/102996011/213807909-c7d3ce47-4f0d-48af-b3e9-437c44b2f95b.png)  
 
-## TypeScript (NSPanel.ts) Konstanten
+## TypeScript (NSPanel.ts) Konstanten  
+
+nachfolgende Konstante ist für die Menüfarbe reserviert und kann individuell durch eigene RGB-Farbwerte angepasst werden.
 ```
 //Menu Icon Colors
 const Menu:             RGB = { red: 150, green: 150, blue: 100 };
