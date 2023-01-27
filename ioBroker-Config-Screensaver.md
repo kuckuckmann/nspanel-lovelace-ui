@@ -131,6 +131,28 @@ export const config: Config = {
     mrIcon2ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN2", ScreensaverEntityIcon: "lightbulb", ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
 ```
 
+## Erweiterung der Relay/Status Icons (ab v3.9.0)  
+```  
+    // Indikator Icons im oberen Teil des Screensavers
+    // Mit 3.9.0 neue Parameter - Bitte anpassen - siehe auch Wiki
+    mrIcon1ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER1', 
+                                ScreensaverEntityIconOn: 'lightbulb',                           //Rename
+                                ScreensaverEntityIconOff: null, 
+                                ScreensaverEntityValue: null,                                   //New
+                                ScreensaverEntityValueDecimalPlace : 0,                         //New
+                                ScreensaverEntityValueUnit: null,                               //New
+                                ScreensaverEntityOnColor: On, 
+                                ScreensaverEntityOffColor: HMIOff },
+    mrIcon2ScreensaverEntity: { ScreensaverEntity: 'deconz.0.Sensors.5.open', 
+                                ScreensaverEntityIconOn: 'heat-wave',
+                                ScreensaverEntityIconOff: null, 
+                                ScreensaverEntityValue: 'deconz.0.Sensors.65.temperature',
+                                ScreensaverEntityValueDecimalPlace : 1,
+                                ScreensaverEntityValueUnit: '°', 
+                                ScreensaverEntityOnColor: MSRed, 
+                                ScreensaverEntityOffColor: Yellow },
+```  
+
 **4. Beliebig im Mix der 3 Varianten**  
 
   
