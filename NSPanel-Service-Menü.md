@@ -23,11 +23,11 @@ const Menu:             RGB = { red: 150, green: 150, blue: 100 };
 ## PageItem - Parameter  
 ### colorScale  
 innerhalb des PageItems kann das Icon im Alias des Gerätetypen "info" ebenfalls einen Indikatorwert annehmen:  
-> _**Ist colorScale im PageItem vorhenden, werden gesetzte `offColor` und `onColor` dabei ignoriert. Es wird dann auschließlich der Parameter colorScale ausgewertet.**_
+> _**Wenn colorScale im PageItem vorhanden ist, werden gesetzte `offColor` und `onColor` dabei ignoriert. Es wird dann auschließlich der Parameter colorScale ausgewertet.**_
 ```
 colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 50 } },  
 ```
-> _**val_best ist hierbei Optional und stellt den Idealwert dar! **_ 
+> _**val_best ist hierbei Optional und stellt den Idealwert dar!**_ 
 
 weiter Beispiele:
 ```
