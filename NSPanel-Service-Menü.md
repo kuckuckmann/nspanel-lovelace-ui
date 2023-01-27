@@ -12,7 +12,13 @@ Im Zuge der weiteren Releases wird es sukzessive um künftige Funktionalitäten 
 
 ![image](https://user-images.githubusercontent.com/102996011/213807909-c7d3ce47-4f0d-48af-b3e9-437c44b2f95b.png)  
 
-##  TypeScript (NSPanel.ts) Variablendefinition
+## TypeScript (NSPanel.ts) Konstanten
+```
+//Menu Icon Colors
+const Menu:             RGB = { red: 150, green: 150, blue: 100 };
+```
+
+## TypeScript (NSPanel.ts) Variablendefinition
 
 nachfolgend die Seiten- und Menüdefinition aus dem TS-Script ab v3.9.0 
 ```
