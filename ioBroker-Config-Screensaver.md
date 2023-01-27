@@ -141,7 +141,7 @@ export const config: Config = {
 
 Ab v3.9.0 ist es möglich auch Werte (z.B. Temoperatur-Sensor) in den Status-Icons anzuzeigen Nachfolgende Beispiele zeigen:
 1. eine Einstellung zur Nutzung der Relais
-2. eine Einstellung zur Nutzung individueller Datetenpunkte
+2. eine Einstellung zur Nutzung individueller Datenpunkte mit Nachkommastelle und Einheit des Wertes
 
 ```  
     // Indikator Icons im oberen Teil des Screensavers
