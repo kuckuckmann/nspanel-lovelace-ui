@@ -26,8 +26,13 @@ innerhalb des PageItems kann das Icon im Alias des Gerätetypen "info" ebenfalls
 ```
 colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 50 } },  
 ```
-val_best ist hierbei Optional und stellt den Idealwert dar!  
+> val_best ist hierbei Optional und stellt den Idealwert dar!  
 
+weiter Beispiele:
+```
+<PageItem>{ id: AliasPath + 'Tasmota.Wifi.RSSI', name: 'RSSI', icon: 'signal', unit: '%', colorScale: {'val_min': 100, 'val_max': 0} },
+<PageItem>{ id: AliasPath + 'Tasmota.Wifi.Signal', name: 'Wifi-Signal', icon: 'signal-distance-variant', unit: 'dBm', colorScale: {'val_min': 0, 'val_max': -100} },
+```
 
 ## TypeScript (NSPanel.ts) Variablendefinition
 
