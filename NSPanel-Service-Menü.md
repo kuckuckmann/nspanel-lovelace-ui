@@ -20,6 +20,15 @@ nachfolgende Konstante ist für die Menüfarbe reserviert und kann individuell d
 const Menu:             RGB = { red: 150, green: 150, blue: 100 };
 ```
 
+## PageItem - Parameter  
+### colorScale  
+innerhalb des PageItems kann das Icon im Alias des Gerätetypen "info" ebenfalls einen Indikatorwert annehmen:  
+```
+colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 50 } },  
+```
+val_best ist hierbei Optional und stellt den Idealwert dar!  
+
+
 ## TypeScript (NSPanel.ts) Variablendefinition
 
 nachfolgend die Seiten- und Menüdefinition aus dem TS-Script ab v3.9.0 
