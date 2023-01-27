@@ -131,7 +131,18 @@ export const config: Config = {
     mrIcon2ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN2", ScreensaverEntityIcon: "lightbulb", ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
 ```
 
+**4. Beliebig im Mix der 3 Varianten**   
+> ScreensaverEntityIcon kann für alle 4 Varianten frei gewählt werden: siehe https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html
+---
+
 ## Erweiterung der Relay/Status Icons (ab v3.9.0)  
+
+![image](https://user-images.githubusercontent.com/102996011/215198305-3c1d7b6d-18bc-481c-86ed-c30eabb46f23.png)  
+
+Ab v3.9.0 ist es möglich auch Werte (z.B. Temoperatur-Sensor) in den Status-Icons anzuzeigen Nachfolgende Beispiele zeigen:
+1. eine Einstellung zur Nutzung der Relais
+2. eine Einstellung zur Nutzung individueller Datetenpunkte
+
 ```  
     // Indikator Icons im oberen Teil des Screensavers
     // Mit 3.9.0 neue Parameter - Bitte anpassen - siehe auch Wiki
@@ -152,11 +163,7 @@ export const config: Config = {
                                 ScreensaverEntityOnColor: MSRed, 
                                 ScreensaverEntityOffColor: Yellow },
 ```  
-
-**4. Beliebig im Mix der 3 Varianten**  
-
-  
-> ScreensaverEntityIcon kann für alle 4 Varianten frei gewählt werden: siehe https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html
+In Beispiel 2 wird statt des Relais, ein Fenstersensor (open = true/false) als Indikator verwendet. Der Wert kann über `ScreensaverEntityValue` eingeblendet werden. Darüber hinaus ist es möglich, die Nachkommastelle mit `ScreensaverEntityValueDecimalPlace` anzugeben und eine Einheit des Wertes mit `ScreensaverEntityValueUnit` zu visualisieren.  
 
 
 ## Entity-Status Icons  
