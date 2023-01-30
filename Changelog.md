@@ -1,5 +1,10 @@
 ioBroker Changelog (TypeScript)
 
+# v3.9.0  
+
+![image](https://user-images.githubusercontent.com/102996011/215470528-f4a9581a-9973-49a9-b472-3153d91f2c89.png)
+
+
 # v3.8.3
 
 ![image](https://user-images.githubusercontent.com/102996011/212193107-c2e88e5d-43d0-4727-bacf-38d13d9e2dcd.png)
