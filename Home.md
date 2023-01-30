@@ -1,7 +1,7 @@
 # ioBroker Wiki
 ## Herzlich willkommen!
 
-![image](https://user-images.githubusercontent.com/102996011/191578340-e7ee378c-5da2-45c3-8cdd-3b047f65adf0.png)
+![image](https://user-images.githubusercontent.com/102996011/215601019-1e10bacd-8f7f-49a0-8bbf-ab7a38b58743.png)
 
 Hier findest Du die Dokumentation des lovelace-ui für das NSPanel, wenn Du als Hausautomatisierungssystem den ioBroker verwendest.
 Die Wiki ist untergliedert in verschiedene Bereiche und sie erfüllt nicht den Anspruch der Vollständigkeit.
