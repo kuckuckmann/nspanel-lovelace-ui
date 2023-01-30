@@ -10,6 +10,18 @@ ioBroker Changelog (TypeScript)
 FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.9.0.tft
 ```
 
+Im oberen Konfigurationsbereich sind diverse Änderungen entstanden. Die einfachste Methode für ein Upgrade ist auf ein TS-Script ohne Beispiele aufzusetzten: https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs_without_Examples.ts . Das vorhandene bereits TS-Script sollte deaktiviert werden, dienst als Fallbacklösung und zum kopieren der Mirationsanteile:
+* Zeile 213: NEU: bevorzugte Tasmota-Version auswählen  
+* Zeile 217: NSPanel- Pfad anpassen  
+* Zeile 618: MQTT-Pfad anpassen  
+* Zeile 619: MQTT-Pfad anpassen  
+* Zeile 658: MQTT-Pfad anpassen  
+* Zeile 666: MQTT-Pfad anpassen  
+
+TS-Script starten
+
+Wenn keine Fehler vorhanden sein sollten, dann danach die vorhandenen Seiten-Variablen und benutzerspezifische Farbkonstanten nachziehen.
+
 # v3.8.3
 
 ![image](https://user-images.githubusercontent.com/102996011/212193107-c2e88e5d-43d0-4727-bacf-38d13d9e2dcd.png)
