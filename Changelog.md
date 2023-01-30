@@ -22,6 +22,8 @@ TS-Script starten
 
 Wenn keine Fehler vorhanden sein sollten, dann danach die vorhandenen Seiten-Variablen und benutzerspezifische Farbkonstanten nachziehen.
 
+Zum Schluss Anpassungen in den neuen Parametern der Screensaver-Entities im Config-Teil vornehmen.
+
 # v3.8.3
 
 ![image](https://user-images.githubusercontent.com/102996011/212193107-c2e88e5d-43d0-4727-bacf-38d13d9e2dcd.png)
