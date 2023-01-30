@@ -578,7 +578,7 @@ Zu definieren ist der Pfad für den Datenpunkt (im Beispiel 0.userdata.0.NSPanel
 **Bei Bedarf kann das Query angepasst werden:**  
 Es ist darauf zu achten, die Anzahl an Werten aus der Datenbank möglichst gering zu halten. Im nachfolgenden Beispiel wurden diese nochmals aggregiert. Die Summe an Zeichen für das Payload an die HMI des NSPanels ist begrenzt. Falls zu viele Werte verarbeitet werden, wird der Payload von der HMI gekürzt und die folge wäre eine schwarze Seite resultierend aus einem Fehlerzustand.
 
-**Javascript für Influx2**
+## **Javascript für Influx2**
 ```  
 const Debug = true;
 
@@ -676,7 +676,7 @@ on({ id: Sensor, change: 'any' }, async function (obj) {
 });
 ```  
 
-**Javascript für History adapter**
+## **Javascript für History adapter**
 ```  
 const sourceDP = 'alias.0.Wohnzimmer.Heizung.ACTUAL';
 const targetDP = '0_userdata.0.Test.chartTest';
