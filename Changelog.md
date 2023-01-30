@@ -10,19 +10,26 @@ ioBroker Changelog (TypeScript)
 FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.9.0.tft
 ```
 
-Im oberen Konfigurationsbereich sind diverse Änderungen entstanden. Die einfachste Methode für ein Upgrade ist auf ein TS-Script ohne Beispiele aufzusetzten: https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs_without_Examples.ts . Das vorhandene bereits TS-Script sollte deaktiviert werden, dienst als Fallbacklösung und zum kopieren der Mirationsanteile:
-* Zeile 213: NEU: bevorzugte Tasmota-Version auswählen  
-* Zeile 217: NSPanel- Pfad anpassen  
-* Zeile 618: MQTT-Pfad anpassen  
-* Zeile 619: MQTT-Pfad anpassen  
-* Zeile 658: MQTT-Pfad anpassen  
-* Zeile 666: MQTT-Pfad anpassen  
+Im oberen Konfigurationsbereich sind diverse Änderungen entstanden. Die einfachste Methode für ein Upgrade ist auf ein TS-Script ohne Beispiele aufzusetzten: https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs_without_Examples.ts .
 
-TS-Script starten
+Das vorhandene bereits TS-Script sollte deaktiviert werden, dienst als Fallbacklösung und zum kopieren der Migrationsanteile (vorhandene Seitendefinitionen, etc.):
 
-Wenn keine Fehler vorhanden sein sollten, dann danach die vorhandenen Seiten-Variablen und benutzerspezifische Farbkonstanten nachziehen.
+* Benutzer- /Panelspezifische Anpassungen vornehmen
 
-Zum Schluss Anpassungen in den neuen Parametern der Screensaver-Entities im Config-Teil vornehmen.
+    * Zeile 213: NEU: bevorzugte Tasmota-Version auswählen
+    * Zeile 217: NSPanel- Pfad anpassen
+    * Zeile 618: MQTT-Pfad anpassen
+    * Zeile 619: MQTT-Pfad anpassen
+    * Zeile 658: MQTT-Pfad anpassen
+    * Zeile 666: MQTT-Pfad anpassen
+
+* TS-Script aktivieren und starten (Neue Datenpunkte und Aliase werden erstellt)
+
+* Wenn keine Fehler vorhanden sein sollten, dann danach die vorhandenen Seiten-Variablen und benutzerspezifische Farbkonstanten nachziehen.  
+
+* Zum Schluss Anpassungen in den neuen Parametern der Screensaver-Entities im Config-Teil vornehmen.  
+
+***
 
 # v3.8.3
 
