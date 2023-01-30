@@ -90,12 +90,12 @@ f) Speichern klicken und Einstellungen verlassen
 
 ## **5.) TFT-Firmware flashen**
 Tasmota „Konsolen/Konsole“ öffnen und in die Kommandozeile  
-`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.8.3.tft`  
+`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.9.0.tft`  
 eingeben, mit Enter bestätigen. Das Panel installiert jetzt die TFT-Firmware (Kann beim ersten Mal ein paar Minuten dauern – Fortschritt beobachten – am Ende erfolgt ein Reboot und das Panel wechselt in einen Screen – „Waiting for Content“
 
 ![image](https://user-images.githubusercontent.com/102996011/189360485-1941baa7-c10a-4fb3-9dad-9c91124c47ad.png)
 
-> **Achtung !!! Die aktuellsten Versionen (3.8.3 könnte nicht mehr aktuell sein) befinden sich "immer" im ioBroker TypeScript Header (TS-Skript) unter:**
+> **Achtung !!! Die aktuellsten Versionen (3.9.0 könnte nicht mehr aktuell sein) befinden sich "immer" im ioBroker TypeScript Header (TS-Skript) unter:**
 > https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs.ts
 
 ***
@@ -173,7 +173,7 @@ Unter dem regulären Vezeichnisbaum „common“ im ioBroker-Menüpunkt Skripte 
 
 > **Falls du das Skript in der Version ab 3.5.0.5 benutzt, muss der JavaScript-Adapter ab v6.1.3 installiert sein**. Das TS-Script kann mittlerweile eine Vielzahl an Aliasen selbstständig erzeugen und benötigt die dort enthaltenen Funktionen. 
   
-Für jedes einzelne NSPanel das du konfigurieren möchtest, musst du dieses Skript anlegen und speziell für dieses jeweilige NSPanel entsprechende Einstellungen vornehmen. Für den Skriptnamen verwende ich in der Regel eine Kombination aus Panel und Skriptversion, wie z.B.: NSPANEL_1_3.4.0
+Für jedes einzelne NSPanel das du konfigurieren möchtest, musst du dieses Skript anlegen und speziell für dieses jeweilige NSPanel entsprechende Einstellungen vornehmen. Für den Skriptnamen verwende ich in der Regel eine Kombination aus Panel und Skriptversion, wie z.B.: NSPANEL_1_3.9.0
 
 (Es kommen in regelmäßigen Abständen weitere NSPanel-Features und Bug-Fixes in das GitHub-Skript in denen dann nur noch der untere Teil (--- ab hier keine Konfiguration mehr ---) ausgetauscht werden muss und die NSPanel-Parameter erhalten bleiben)
 
