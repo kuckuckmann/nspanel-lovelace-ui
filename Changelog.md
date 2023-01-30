@@ -4,6 +4,11 @@ ioBroker Changelog (TypeScript)
 
 ![image](https://user-images.githubusercontent.com/102996011/215470528-f4a9581a-9973-49a9-b472-3153d91f2c89.png)
 
+**Achtung Breaking Changes:**
+
+```
+FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.9.0.tft
+```
 
 # v3.8.3
 
