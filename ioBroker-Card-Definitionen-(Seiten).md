@@ -686,8 +686,8 @@ const xAxisLabelEveryM = 240;  // Time after x axis is labeled  in minutes
 const historyInstance = 'history.0';
 
 const Debug = false;
-const maxX = 1432;
-const limitMeasurements = 40;
+const maxX = 1420;
+const limitMeasurements = 35;
 
 createState(targetDP, "", {
         name: 'SensorGrid',
