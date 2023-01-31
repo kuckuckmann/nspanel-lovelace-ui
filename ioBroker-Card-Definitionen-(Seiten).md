@@ -478,12 +478,12 @@ let CardChartExample = <PageChart>
 
 ![image](https://user-images.githubusercontent.com/102996011/209009144-1b82e7df-1a58-412a-a304-14a5cf987a4c.png)  
 
-**Blockly für Influx 2.0**
+## **Blockly für Influx 2.0**
 ![image](https://user-images.githubusercontent.com/102996011/209006326-c8036709-2235-4ef8-aa14-00798e09fce7.png)  
 
 [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/CardChart.xml)
 
-**Javascript für History Adapter**
+## **Javascript für History Adapter**
 ```
 var sourceDP = 'alias.0.Wohnzimmer.Heizung.ACTUAL';
 var targetDP = '0_userdata.0.Test.chartTest';
