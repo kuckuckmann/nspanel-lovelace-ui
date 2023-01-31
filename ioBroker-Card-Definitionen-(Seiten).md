@@ -753,7 +753,7 @@ on({id: sourceDP, change: "any"}, async function (obj) {
         cardLChartString = ticksAndLabels + '~' + coordinates
         setState(targetDP, cardLChartString, true);
         
-        if (Debug) console.info(cardLChartString);
+        if (Debug) console.log(cardLChartString);
     });    
 });
 ```  
