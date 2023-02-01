@@ -261,7 +261,7 @@ Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lo
 ***
 
 ### Klimaanlage - cardThermo - (channel airCondition)
-![image](https://user-images.githubusercontent.com/102996011/189401952-86b47d90-69f2-4229-909c-8d4c2ee84d20.png)
+![image](https://user-images.githubusercontent.com/102996011/216003949-fe66b68d-5ede-4a1a-b0d9-440cd13c45e4.png)  
 ***
 
 ### Lautstärke (channel volume)
