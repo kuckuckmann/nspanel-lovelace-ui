@@ -312,7 +312,7 @@ Der Alias-Medien für die cardMedia lässt sich mit dem Geräte-Manager nicht er
 
 Der Alias gibt aktuell nur einen .ACTUAL her. Das ist jedoch für einen Media-Player definitiv zu wenig.  
 
-> **Daher bitte eines der nachfolgenden Skripte (je eingesetzten Adaptertyp) nutzen. In der Javascript Instanz muss "Kommando SetObject erlauben" aktiviert werden. Die Struktur sieht im Gerätemanager danach etwa so aus und sollte vernachlässigt werden, da der ALIAS dennoch funktioniert!**  
+> **Es wird bis auf die Aliase für die Squeezebox kein manuell erstellter Alias mehr benötigt. In der Javascript Instanz muss "Kommando SetObject erlauben" aktiviert werden!**  
 
 ![image](https://user-images.githubusercontent.com/102996011/189842715-75f9d554-3395-42f6-903b-b92b0828143c.png)
 Obwohl das alles Aliase vom Typ Medien sind, sehen bis auf zwei alle anderen nicht korrekt aus, sind aber in der Objektstruktur korrekt und funktionieren auch mit dem NSPanel
@@ -322,69 +322,9 @@ Obwohl das alles Aliase vom Typ Medien sind, sehen bis auf zwei alle anderen nic
 
 ![image](https://user-images.githubusercontent.com/102996011/189699416-70ca5726-5bd5-49ca-9771-d9d0f41fb414.png)
 
-<details>
-  <summary><b>Spoiler:</b> JavaScript Code für Erstellung eines Spotify-Premium-Alias</summary>
-
-```
-const aliasPath = 'alias.0.NSPanel_1.Media';
-const aliasDevice = 'PlayerSpotifyPremium';
-//Ergibt alias.0.NSPanel_1.Media.PlayerSpotifyPremium.
-
-const spotifyPremiumInstanz = 'spotify-premium.0.'; //Falls abweichende Instanznummer, bitte ändern
-
-
-var typeAlias, read, write, nameAlias, role, desc, min, max, unit, states, custom;
-
-function createAlias(idDst, idName,idSrc, idRd, idType, idRole, idAliasType) {
-  if(existsState(idDst)) log(idDst + ' schon vorhanden !', 'warn');
-  else {
-     var obj = {};
-     obj.type = idType;
-     obj.common = getObject(idSrc).common;
-     obj.common.alias = {};
-     if(idRd) {
-         obj.common.alias.id = {};
-         obj.common.alias.id.read = idRd;
-         obj.common.alias.id.write = idSrc;
-         obj.common.read = true;
-     } else obj.common.alias.id = idSrc;
-     obj.common.type = idAliasType;
-     if(obj.common.read !== false && read) obj.common.alias.read = read;
-     if(obj.common.write !== false && write) obj.common.alias.write = write;
-     obj.common.name = idName;
-     obj.common.role = idRole;
-     obj.common.desc = idDst;
-     if(min !== undefined) obj.common.min = min;
-     if(max !== undefined) obj.common.max = max;
-     if(unit) obj.common.unit = unit;
-     obj.common.states = states;
-     if(custom && obj.common.custom) obj.common.custom = custom;
-     obj.native = {};
-     setObject(idDst, obj);
-  } 
-}
-
-createAlias(aliasPath + '.' + aliasDevice, '', spotifyPremiumInstanz + 'player', '', 'channel', 'media', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.ALBUM', 'ALBUM',  spotifyPremiumInstanz + 'player.album', '', 'state', 'media.album', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.ARTIST', 'ARTIST', spotifyPremiumInstanz + 'player.artistName', '', 'state', 'media.artist', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.TITLE', 'TITLE', spotifyPremiumInstanz + 'player.trackName', '', 'state', 'media.title', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.CONTEXT_DESCRIPTION', 'CONTEXT_DESCRIPTION', spotifyPremiumInstanz + 'player.contextDescription', '', 'state', 'media.station', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.NEXT', 'NEXT', spotifyPremiumInstanz + 'player.skipPlus', '', 'state', 'button.next', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PREV', 'PREV', spotifyPremiumInstanz + 'player.skipMinus', '', 'state', 'button.prev', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PLAY', 'PLAY', spotifyPremiumInstanz + 'player.play', '', 'state', 'button.play', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PAUSE', 'PAUSE', spotifyPremiumInstanz + 'player.pause', '', 'state', 'button.pause', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.STOP', 'STOP', spotifyPremiumInstanz + 'player.pause', '', 'state', 'button.stop', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.STATE', 'STATE', spotifyPremiumInstanz + 'player.isPlaying', '', 'state', 'media.state', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.VOLUME', 'VOLUME', spotifyPremiumInstanz + 'player.volume', '', 'state', 'level.volume', 'number');
-createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', spotifyPremiumInstanz + 'player.volume', '', 'state', 'value.volume', 'number');
-```
-</details> 
-
 > Anleitung:  
-> * Neues Skript (JavaScript JS) anlegen   
-> * Code kopieren und einfügen  
-> * Skript aktivieren und ausführen  
-> * Danach wieder Deaktivieren  
+> * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
+> * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.  
 
 ![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png)  
 #### Alexa2-Adapter
@@ -392,68 +332,9 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', s
 
 ![image](https://user-images.githubusercontent.com/102996011/189757236-0106ed14-d634-4f64-bb07-697ae4d70188.png)
 
-<details>
-  <summary><b>Spoiler:</b> JavaScript Code für Erstellung eines Alexa2-Alias</summary>
-
-```
-const aliasPath = 'alias.0.NSPanel_1.Media';
-const aliasDevice = 'PlayerAlexa2';
-//Ergibt alias.0.NSPanel_1.Media.PlayerAlexa2.
-
-const alexaInstanz = 'alexa2.0.Echo-Devices.';
-const alexaDevice = 'G0XXXXXXXXXXXXXXXX'; //!!! Anpassen !!! Seriennummer des Primär Device (Kann auch Gruppe sein)
-
-var typeAlias, read, write, nameAlias, role, desc, min, max, unit, states, custom;
-
-function createAlias(idDst, idName,idSrc, idRd, idType, idRole, idAliasType) {
-  if(existsState(idDst)) log(idDst + ' schon vorhanden !', 'warn');
-  else {
-     var obj = {};
-     obj.type = idType;
-     obj.common = getObject(idSrc).common;
-     obj.common.alias = {};
-     if(idRd) {
-         obj.common.alias.id = {};
-         obj.common.alias.id.read = idRd;
-         obj.common.alias.id.write = idSrc;
-         obj.common.read = true;
-     } else obj.common.alias.id = idSrc;
-     obj.common.type = idAliasType;
-     if(obj.common.read !== false && read) obj.common.alias.read = read;
-     if(obj.common.write !== false && write) obj.common.alias.write = write;
-     obj.common.name = idName;
-     obj.common.role = idRole;
-     obj.common.desc = idDst;
-     if(min !== undefined) obj.common.min = min;
-     if(max !== undefined) obj.common.max = max;
-     if(unit) obj.common.unit = unit;
-     obj.common.states = states;
-     if(custom && obj.common.custom) obj.common.custom = custom;
-     obj.native = {};
-     setObject(idDst, obj);
-  } 
-}
-
-createAlias(aliasPath + '.' + aliasDevice, '', alexaInstanz + alexaDevice, '', 'channel', 'media', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.ALBUM', 'ALBUM',  alexaInstanz + alexaDevice + '.Player.currentAlbum', '', 'state', 'media.album', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.ARTIST', 'ARTIST', alexaInstanz + alexaDevice + '.Player.currentArtist', '', 'state', 'media.artist', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.TITLE', 'TITLE', alexaInstanz + alexaDevice + '.Player.currentTitle', '', 'state', 'media.title', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.NEXT', 'NEXT', alexaInstanz + alexaDevice + '.Player.controlNext', '', 'state', 'button.next', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PREV', 'PREV', alexaInstanz + alexaDevice + '.Player.controlPrevious', '', 'state', 'button.prev', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PLAY', 'PLAY', alexaInstanz + alexaDevice + '.Player.controlPlay', '', 'state', 'button.play', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PAUSE', 'PAUSE', alexaInstanz + alexaDevice + '.Player.controlPause', '', 'state', 'button.pause', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.STOP', 'STOP', alexaInstanz + alexaDevice + '.Commands.deviceStop', '', 'state', 'button.stop', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.STATE', 'STATE', alexaInstanz + alexaDevice + '.Player.currentState', '', 'state', 'media.state', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.VOLUME', 'VOLUME', alexaInstanz + alexaDevice + '.Player.volume', '', 'state', 'level.volume', 'number');
-createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', alexaInstanz + alexaDevice + '.Player.volume', '', 'state', 'value.volume', 'number');
-```
-</details> 
-
 > Anleitung:  
-> * Neues Skript (JavaScript JS) anlegen   
-> * Code kopieren und einfügen  
-> * Skript aktivieren und ausführen  
-> * Danach wieder Deaktivieren  
+> * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
+> * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.  
 
 ![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png)  
 
@@ -463,137 +344,17 @@ createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', a
 
 ![image](https://user-images.githubusercontent.com/102996011/189748619-02961946-c9e1-42d4-90fc-54d8344b87e3.png)
 
-
-<details>
-  <summary><b>Spoiler:</b> JavaScript Code für Erstellung eines Sonos-Alias</summary>
-
-```
-const aliasPath = 'alias.0.NSPanel_1.Media';
-const aliasDevice = 'PlayerSonos';
-//Ergibt alias.0.NSPanel_1.Media.PlayerSonos.
-
-const sonosInstanz = 'sonos.0.root.';
-const sonosIP = '192_168_1_212';
-
-var typeAlias, read, write, nameAlias, role, desc, min, max, unit, states, custom;
-
-function createAlias(idDst, idName,idSrc, idRd, idType, idRole, idAliasType) {
-  if(existsState(idDst)) log(idDst + ' schon vorhanden !', 'warn');
-  else {
-     var obj = {};
-     obj.type = idType;
-     obj.common = getObject(idSrc).common;
-     obj.common.alias = {};
-     if(idRd) {
-         obj.common.alias.id = {};
-         obj.common.alias.id.read = idRd;
-         obj.common.alias.id.write = idSrc;
-         obj.common.read = true;
-     } else obj.common.alias.id = idSrc;
-     obj.common.type = idAliasType;
-     if(obj.common.read !== false && read) obj.common.alias.read = read;
-     if(obj.common.write !== false && write) obj.common.alias.write = write;
-     obj.common.name = idName;
-     obj.common.role = idRole;
-     obj.common.desc = idDst;
-     if(min !== undefined) obj.common.min = min;
-     if(max !== undefined) obj.common.max = max;
-     if(unit) obj.common.unit = unit;
-     obj.common.states = states;
-     if(custom && obj.common.custom) obj.common.custom = custom;
-     obj.native = {};
-     setObject(idDst, obj);
-  } 
-}
-
-createAlias(aliasPath + '.' + aliasDevice, '', sonosInstanz + sonosIP, '', 'channel', 'media', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.ALBUM', 'ALBUM',  sonosInstanz + sonosIP + '.current_album', '', 'state', 'media.album', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.ARTIST', 'ARTIST', sonosInstanz + sonosIP + '.current_artist', '', 'state', 'media.artist', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.TITLE', 'TITLE', sonosInstanz + sonosIP + '.current_title', '', 'state', 'media.title', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.CONTEXT_DESCRIPTION', 'CONTEXT_DESCRIPTION', sonosInstanz + sonosIP + '.current_station', '', 'state', 'media.station', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.NEXT', 'NEXT', sonosInstanz + sonosIP + '.next', '', 'state', 'button.next', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PREV', 'PREV', sonosInstanz + sonosIP + '.prev', '', 'state', 'button.prev', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PLAY', 'PLAY', sonosInstanz + sonosIP + '.play', '', 'state', 'button.play', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PAUSE', 'PAUSE', sonosInstanz + sonosIP + '.pause', '', 'state', 'button.pause', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.STOP', 'STOP', sonosInstanz + sonosIP + '.stop', '', 'state', 'button.stop', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.STATE', 'STATE', sonosInstanz + sonosIP + '.state_simple', '', 'state', 'media.state', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.VOLUME', 'VOLUME', sonosInstanz + sonosIP + '.volume', '', 'state', 'level.volume', 'number');
-createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', sonosInstanz + sonosIP + '.volume', '', 'state', 'value.volume', 'number');
-```
-</details> 
-
 > Anleitung:  
-> * Neues Skript (JavaScript JS) anlegen   
-> * Code kopieren und einfügen  
-> * Skript aktivieren und ausführen  
-> * Danach wieder Deaktivieren  
+> * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
+> * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.  
  
 ![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png)  
 #### Chromecast-Adpter (Google home)
 **Skript zum Anlegen eines Chromecast - media-Alias (ab Version 3.3.2)**
 
-<details>
-  <summary><b>Spoiler:</b> JavaScript Code für Erstellung eines Chrome-Alias</summary>
-
-```
-const aliasPath = 'alias.0.NSPanel_1.Media';  // ggfs. Anpassen
-const aliasDevice = 'PlayerChromecast';       // ggfs. Anpassen
-//Ergibt alias.0.NSPanel_1.Media.PlayerChromecast.
-
-const chromecastInstanz = 'chromecast.0.'; // Anpasssen, wenn nicht Instanz 0
-const chromecastDevice = 'GoogleHome3224'; // Anpassen an dein eigenes Devoice
-
-var typeAlias, read, write, nameAlias, role, desc, min, max, unit, states, custom;
-
-function createAlias(idDst, idName,idSrc, idRd, idType, idRole, idAliasType) {
-  if(existsState(idDst)) log(idDst + ' schon vorhanden !', 'warn');
-  else {
-     var obj = {};
-     obj.type = idType;
-     obj.common = getObject(idSrc).common;
-     obj.common.alias = {};
-     if(idRd) {
-         obj.common.alias.id = {};
-         obj.common.alias.id.read = idRd;
-         obj.common.alias.id.write = idSrc;
-         obj.common.read = true;
-     } else obj.common.alias.id = idSrc;
-     obj.common.type = idAliasType;
-     if(obj.common.read !== false && read) obj.common.alias.read = read;
-     if(obj.common.write !== false && write) obj.common.alias.write = write;
-     obj.common.name = idName;
-     obj.common.role = idRole;
-     obj.common.desc = idDst;
-     if(min !== undefined) obj.common.min = min;
-     if(max !== undefined) obj.common.max = max;
-     if(unit) obj.common.unit = unit;
-     obj.common.states = states;
-     if(custom && obj.common.custom) obj.common.custom = custom;
-     obj.native = {};
-     setObject(idDst, obj);
-  } 
-}
-
-createAlias(aliasPath + '.' + aliasDevice, '', chromecastInstanz + chromecastDevice, '', 'channel', 'media', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.ALBUM', 'ALBUM',  chromecastInstanz + chromecastDevice + '.album', '', 'state', 'media.album', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.ARTIST', 'ARTIST', chromecastInstanz + chromecastDevice + '.artist', '', 'state', 'media.artist', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.TITLE', 'TITLE', chromecastInstanz + chromecastDevice + '.title', '', 'state', 'media.title', 'string');
-createAlias(aliasPath + '.' + aliasDevice + '.NEXT', 'NEXT', chromecastInstanz + chromecastDevice + '.next', '', 'state', 'button.next', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PREV', 'PREV', chromecastInstanz + chromecastDevice + '.prev', '', 'state', 'button.prev', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PLAY', 'PLAY', chromecastInstanz + chromecastDevice + '.play', '', 'state', 'button.play', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.PAUSE', 'PAUSE', chromecastInstanz + chromecastDevice + '.pause', '', 'state', 'button.pause', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.STOP', 'STOP', chromecastInstanz + chromecastDevice + '.stop', '', 'state', 'button.stop', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.STATE', 'STATE', chromecastInstanz + chromecastDevice + '.state', '', 'state', 'media.state', 'boolean');
-createAlias(aliasPath + '.' + aliasDevice + '.VOLUME', 'VOLUME', chromecastInstanz + chromecastDevice + '.volume', '', 'state', 'level.volume', 'number');
-createAlias(aliasPath + '.' + aliasDevice + '.VOLUME_ACTUAL', 'VOLUME_ACTUAL', chromecastInstanz + chromecastDevice + '.volume', '', 'state', 'value.volume', 'number');
-```
-</details> 
-
 > Anleitung:  
-> * Neues Skript (JavaScript JS) anlegen   
-> * Code kopieren und einfügen  
-> * Skript aktivieren und ausführen  
-> * Danach wieder Deaktivieren  
+> * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
+> * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.    
 
 ***
 
