@@ -63,7 +63,7 @@ var Sprechender_eindeutiger_Seitenname = <PageAlarm>
     ]
 };
 ```
-# cardMedia v2.0 (ab Release v3.7.0)
+# cardMedia v2.0 (ab Release v3.9.0)
 ![image](https://user-images.githubusercontent.com/102996011/209344233-c7d700c4-eb87-4c51-9441-b51368c88096.png)
 
 **Neue Elemente**
@@ -88,7 +88,7 @@ var Sprechender_eindeutiger_Seitenname = <PageAlarm>
 
 (Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))   
 
-> **Definition ab TS-Version 3.7.0** (Breaking Changes)  
+> **Definition ab TS-Version 3.9.0** (Breaking Changes)  
 
 **alexa2-Adapter**
 ```
@@ -170,67 +170,6 @@ let VolumioBoss = <PageMedia>
                 colorMediaIcon: colorSpotify,
                 colorMediaTitle: colorSpotify,
                 colorMediaArtist: Yellow,
-                autoCreateALias : true
-             }]
-};
-```  
-  
-# cardMedia v1.0 (bis Release v3.6.0)
-![image](https://user-images.githubusercontent.com/102996011/204136831-afe5bde8-5046-495b-8ea7-68bc91e3a57c.png)  
-
-(Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
-
-> **Definition ab TS-Version 3.9.0** (Breaking Changes)
-```
-let Alexa = <PageMedia> 
-{
-    'type': 'cardMedia',
-    'heading': 'Alexa',
-    'useColor': true,
-    'items': [<PageItem>{   
-                id: AliasPath + 'Media.PlayerAlexa', 
-                adapterPlayerInstance: 'alexa2.0.',
-                mediaDevice: 'G0XXXXXXXXXXXXXX', 
-                speakerList: ['Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche','Echo Spot Buero'],
-                //analog alexa2 Music-Provider
-                playList: ['Spotify-Playlist.PartyPlaylist',
-                           'Amazon-Music-Playlist.Mein Discovery Mix',
-                           'My-Library-Playlist.2020',
-                           'My-Library-Playlist.2021',
-                           'TuneIn.Radio Bob Rock',
-                           'TuneIn.NDR2',
-                           'Spotify-Playlist.Sabaton Radio',
-                           'Spotify-Playlist.Rock Party',
-                           'Spotify-Playlist.This Is Nightwish',
-                           'Spotify-Playlist.Metal Christmas'],
-                equalizerList: ['Bassboost','Klassik','Dance', 'Deep', 'Electronic', 'Flat', 'Hip-Hop', 'Rock', 
-                                'Metal', 'Jazz', 'Latin', 'Tonstärke', 'Lounge', 'Piano'],
-                colorMediaIcon: colorAlexa,
-                colorMediaArtist: Yellow,
-                colorMediaTitle: Yellow,
-                autoCreateALias : true
-             }]
-};
-```  
-oder
-```  
-let SpotifyPremium = <PageMedia>
-{
-    "type": "cardMedia",
-    "heading": "Spotify-Premium",
-    "useColor": true,
-    "items": [<PageItem>{ 
-                id: AliasPath + 'Media.PlayerSpotifyPremium', 
-                adapterPlayerInstance: "spotify-premium.0.",
-                speakerList: ['LENOVO-W11-01', 'Terrasse','Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche',
-                              'Echo Spot Buero'],
-                playList: ['PartyPlaylist','Sabaton Radio','Rock Party','This Is Nightwish','Metal Christmas'],
-                repeatList: ['off','context','track'],
-                equalizerList: ['Bassboost','Klassik','Dance', 'Deep', 'Electronic', 'Flat', 'Hip-Hop', 'Rock', 
-                                'Metal', 'Jazz', 'Latin', 'Tonstärke', 'Lounge', 'Piano'],
-                colorMediaIcon: colorSpotify,
-                colorMediaArtist: Yellow,
-                colorMediaTitle: Yellow,
                 autoCreateALias : true
              }]
 };
