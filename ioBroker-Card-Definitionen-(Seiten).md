@@ -22,7 +22,9 @@ var Sprechender_eindeutiger_Seitenname = <PageEntities>
 
 
 # cardGrid
-![image](https://user-images.githubusercontent.com/102996011/190120023-c9e0477c-0d06-4484-af27-be2f6fe810d3.png)
+![image](https://user-images.githubusercontent.com/102996011/216006497-24b09a3c-28a9-41f0-b822-2b8e56491703.png)   
+ 
+![image](https://user-images.githubusercontent.com/102996011/216006611-32155c9c-84ba-48eb-8b07-2485d80eb99b.png)  
 
 6 horizontal angeordnete Steuerelemente (in 2 Reihen je 3 Steuerelemente) (Erstellung der "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
