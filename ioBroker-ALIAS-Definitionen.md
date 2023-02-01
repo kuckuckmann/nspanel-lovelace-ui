@@ -318,29 +318,24 @@ Der Alias gibt aktuell nur einen .ACTUAL her. Das ist jedoch für einen Media-Pl
 Obwohl das alles Aliase vom Typ Medien sind, sehen bis auf zwei alle anderen nicht korrekt aus, sind aber in der Objektstruktur korrekt und funktionieren auch mit dem NSPanel
 
 #### Spotify-Premium-Adapter  
-**Skript zum Anlegen eines Spotify-Premium - media-Alias (ab Version 3.3.2)**
 
-![image](https://user-images.githubusercontent.com/102996011/189699416-70ca5726-5bd5-49ca-9771-d9d0f41fb414.png)
+![image](https://user-images.githubusercontent.com/102996011/215999625-4a47c059-9752-46ee-a4c5-2f4b8f94cb59.png)  
 
 > Anleitung:  
 > * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
 > * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.  
 
-![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png)  
+![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png) 
+ 
 #### Alexa2-Adapter
-**Skript zum Anlegen eines Alexa2 - media-Alias**
 
-![image](https://user-images.githubusercontent.com/102996011/189757236-0106ed14-d634-4f64-bb07-697ae4d70188.png)
+![image](https://user-images.githubusercontent.com/102996011/215999962-3f225ef8-be5a-4a83-9ac7-5d71612c7d1e.png)  
 
 > Anleitung:  
 > * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
 > * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.  
-
-![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png)  
-
 
 #### Sonos-Adpter
-**Skript zum Anlegen eines Sonos - media-Alias (ab Version 3.3.2)**
 
 ![image](https://user-images.githubusercontent.com/102996011/189748619-02961946-c9e1-42d4-90fc-54d8344b87e3.png)
 
@@ -348,17 +343,13 @@ Obwohl das alles Aliase vom Typ Medien sind, sehen bis auf zwei alle anderen nic
 > * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
 > * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.  
  
-![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png)  
 #### Chromecast-Adpter (Google home)
-**Skript zum Anlegen eines Chromecast - media-Alias (ab Version 3.3.2)**
 
 > Anleitung:  
 > * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
 > * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.    
 
 ***
-
-![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png)  
 
 #### Logitech SqueezeBoxRPC-Adapter
 **Skript zum Anlegen eines SqueezeBoxRPC - media-Alias (ab Version 3.4.0.6)**
