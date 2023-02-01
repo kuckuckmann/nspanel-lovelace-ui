@@ -335,21 +335,31 @@ Obwohl das alles Aliase vom Typ Medien sind, sehen bis auf zwei alle anderen nic
 > * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
 > * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.  
 
-#### Sonos-Adpter
+![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png) 
 
-![image](https://user-images.githubusercontent.com/102996011/189748619-02961946-c9e1-42d4-90fc-54d8344b87e3.png)
+#### Sonos-Adapter
+
+> Anleitung:  
+> * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
+> * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.  
+
+![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png) 
+
+#### Volumio-Player
 
 > Anleitung:  
 > * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
 > * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.  
  
+![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png) 
+
 #### Chromecast-Adpter (Google home)
 
 > Anleitung:  
 > * Wenn das erste mal die Seite aufgerufen wird, wird der Alias automatisch erzeugt. Die Seite ist zu diesem Zeitpunkt schwarz.   
 > * Sobald der Screensaver aufgeschaltet und wieder entfernt wird, ist der Player einsatzbereit.    
 
-***
+![image](https://user-images.githubusercontent.com/102996011/189696453-9b04a453-24c1-4ad1-9224-3dc1f214b0a5.png) 
 
 #### Logitech SqueezeBoxRPC-Adapter
 **Skript zum Anlegen eines SqueezeBoxRPC - media-Alias (ab Version 3.4.0.6)**
