@@ -180,41 +180,59 @@ let VolumioBoss = <PageMedia>
 
 (Erstellung des "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
-> **Definition ab TS-Version 3.1.1.3** (Breaking Changes)
+> **Definition ab TS-Version 3.9.0** (Breaking Changes)
 ```
-var Sprechender_eindeutiger_Seitenname = <PageMedia> 
+let Alexa = <PageMedia> 
 {
-    "type": "cardMedia",
-    "heading": "Deine Überschrift",
-    "useColor": true,
-    "subPage": false,
-    "parent": undefined,
-    "items": [<PageItem>{   
-                id: "alias.0.NSPanel_X.Media.PlayerAlexa", 
-                adapterPlayerInstance: "alexa2.0.",
-                mediaDevice: "G0XXXXXXXXXXXXXXXX", 
-                speakerList: ['Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche','Echo Spot Buero']
+    'type': 'cardMedia',
+    'heading': 'Alexa',
+    'useColor': true,
+    'items': [<PageItem>{   
+                id: AliasPath + 'Media.PlayerAlexa', 
+                adapterPlayerInstance: 'alexa2.0.',
+                mediaDevice: 'G0XXXXXXXXXXXXXX', 
+                speakerList: ['Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche','Echo Spot Buero'],
+                //analog alexa2 Music-Provider
+                playList: ['Spotify-Playlist.PartyPlaylist',
+                           'Amazon-Music-Playlist.Mein Discovery Mix',
+                           'My-Library-Playlist.2020',
+                           'My-Library-Playlist.2021',
+                           'TuneIn.Radio Bob Rock',
+                           'TuneIn.NDR2',
+                           'Spotify-Playlist.Sabaton Radio',
+                           'Spotify-Playlist.Rock Party',
+                           'Spotify-Playlist.This Is Nightwish',
+                           'Spotify-Playlist.Metal Christmas'],
+                equalizerList: ['Bassboost','Klassik','Dance', 'Deep', 'Electronic', 'Flat', 'Hip-Hop', 'Rock', 
+                                'Metal', 'Jazz', 'Latin', 'Tonstärke', 'Lounge', 'Piano'],
+                colorMediaIcon: colorAlexa,
+                colorMediaArtist: Yellow,
+                colorMediaTitle: Yellow,
+                autoCreateALias : true
              }]
 };
 ```  
 oder
 ```  
-let SpotifyPremium = <PageMedia> 
+let SpotifyPremium = <PageMedia>
 {
     "type": "cardMedia",
     "heading": "Spotify-Premium",
     "useColor": true,
-    "subPage": false,
-    "parent": undefined,
     "items": [<PageItem>{ 
                 id: AliasPath + 'Media.PlayerSpotifyPremium', 
                 adapterPlayerInstance: "spotify-premium.0.",
-                speakerList: ['LENOVO-W11-JB','Terrasse','Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche','Echo Spot Buero'],
+                speakerList: ['LENOVO-W11-01', 'Terrasse','Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche',
+                              'Echo Spot Buero'],
+                playList: ['PartyPlaylist','Sabaton Radio','Rock Party','This Is Nightwish','Metal Christmas'],
+                repeatList: ['off','context','track'],
+                equalizerList: ['Bassboost','Klassik','Dance', 'Deep', 'Electronic', 'Flat', 'Hip-Hop', 'Rock', 
+                                'Metal', 'Jazz', 'Latin', 'Tonstärke', 'Lounge', 'Piano'],
                 colorMediaIcon: colorSpotify,
                 colorMediaArtist: Yellow,
                 colorMediaTitle: Yellow,
                 autoCreateALias : true
-             }] 
+             }]
 };
 ```  
 
@@ -235,19 +253,6 @@ let SpotifyPremium = <PageMedia>
 * für "spotify-premium.0.": Alle SmartDevice-Namen aus Spotify möglich (Im Gegensatz zu Alexa auch Smartphones und Rechner)
 * für "chromecast.0.": Zeile kann gelöscht werden, da GoogleHome keine Funktionalitäten zum Wechseln von Lautsprechern zur Verfügung stellt 
 * für "squeezeboxrpc.0.": "Bekannte Player unter Players (aktuell keine Funktion)
-
-> **Definition bis TS-Version 3.1.1.3**
-```
-var Sprechender_eindeutiger_Seitenname = <PageMedia> 
-{
-    "type": "cardMedia",
-    "heading": "Deine Überschrift",
-    "useColor": true,
-    "subPage": false,
-    "parent": undefined,
-    "items": [<PageItem>{ id: "alias.0.NSPanel_X.Media.PlayerAlexa" }]
-};
-```
 
 # cardQR
 ![image](https://user-images.githubusercontent.com/102996011/190121115-436dc34d-3a89-4809-a3c6-2c6132938fd1.png)
