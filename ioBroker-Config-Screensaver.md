@@ -3,12 +3,8 @@ Der überarbeitete Screensaver **ab v3.4.0**
 
 # Screensaver Layout (Standard)  
 
-```
-export const config: Config = {
-    ...
-    alternativeScreensaverLayout: false,
-    autoWeatherColorScreensaverLayout: true,
-```
+![image](https://user-images.githubusercontent.com/102996011/217248632-ac7394ec-26d3-47d3-8d2b-fd547955220b.png)   
+Das alternative Screensaver-Layout lässt sich im Servicemenü aktivieren.  
 
 Ansicht Weather-Forecast:  
 ![image](https://user-images.githubusercontent.com/102996011/215202503-b4a407a9-c44e-4c05-8bb5-e4525db48ae3.png)  
