@@ -6,6 +6,9 @@ Wenn man sein NSPanel schon fest verbaut hat und dann z.B. eine neue Seite konfi
 Auch nach einem Update des ioBroker Skripts kann man mit dieser Lösung einfach im Emulator testen, ob noch alles klappt, bevor man das Skript in seiner Live-Instanz aktualisiert.
 Und Last but not least ist diese Möglichkeit auch für all diejenigen Interessant, die noch kein NSPanel haben, aber selbiges vor dem Kauf einmal testen möchten.
 
+![image](https://user-images.githubusercontent.com/102996011/217221513-8fd9bb71-f54f-43d9-bdc1-48df30918387.png)  
+
+
 ## Voraussetzungen
 
 Ihr braucht einen PC (ich habe es mit Windows 11 bei mir aktuell vertestet), einen ESP32 mit Tasmota, den Nextion Editor und eine ioBroker-Installation.
