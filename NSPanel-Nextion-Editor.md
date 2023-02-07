@@ -201,7 +201,8 @@ Das Skript nun speichern aber noch nicht ausführen.
 
 
 Zunächst braucht man noch den Nextion Editor: 
-> ~~https://nextion.tech/nextion-editor/~~  (Nextion-Editor-Version aktuell defekt)
+> ~~https://nextion.tech/nextion-editor/~~  (Nextion-Editor-Version aktuell defekt)  
+>  
 > https://nextion.tech/download/nextion-setup-v1-63-3.exe oder https://nextion.tech/download/nextion-setup-v1-63-3.zip  
 > **Bitte älter Version 1.63.3 benutzen und keine Updates durchführen!**
 
