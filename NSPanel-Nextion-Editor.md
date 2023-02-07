@@ -13,6 +13,11 @@ Und Last but not least ist diese Möglichkeit auch für all diejenigen Interessa
 
 Ihr braucht einen PC (ich habe es mit Windows 11 bei mir aktuell vertestet), einen ESP32 mit Tasmota, den Nextion Editor und eine ioBroker-Installation.
 
+![image](https://user-images.githubusercontent.com/102996011/217230894-09253765-c5d7-47a2-9040-19fe00c6b061.png)  
+
+> Der ESP32 bleibt mit einem Datenkabel mit dem USB-Port des PC's verbunden.
+
+
 ## Vorbereitungen
 
 Nachdem Euer ESP32 angekommen ist, müsst Ihr diesen via USB an den PC anschließen. Ich musste mir für meinen ESP32 noch den passenden Treiber installieren (CP210x_Universal_Windows_Driver). Nachdem ich den Treiber installiert hatte, taucht im Gerätemanager unter Anschlüsse bei mir ein _Silicon Labs CP210x USB to UART Bridge_ an _COM3_ auf.
