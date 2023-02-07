@@ -11,7 +11,11 @@ Und Last but not least ist diese Möglichkeit auch für all diejenigen Interessa
 
 ## Voraussetzungen
 
-Ihr braucht einen PC (ich habe es mit Windows 11 bei mir aktuell vertestet), einen ESP32 mit Tasmota, den Nextion Editor und eine ioBroker-Installation.
+Ihr braucht:  
+* einen PC (ich habe es mit Windows 11 bei mir aktuell vertestet)  
+* einen ESP32 mit Tasmota32  
+* den Nextion Editor  
+* und eine ioBroker-Installation.  
 
 ![image](https://user-images.githubusercontent.com/102996011/217230894-09253765-c5d7-47a2-9040-19fe00c6b061.png)  
 
