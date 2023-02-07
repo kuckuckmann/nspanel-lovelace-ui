@@ -193,8 +193,9 @@ Das Skript nun speichern aber noch nicht ausführen.
 
 
 Zunächst braucht man noch den Nextion Editor: 
-> ~~https://nextion.tech/nextion-editor/~~ 
+> ~~https://nextion.tech/nextion-editor/~~  (Nextion-Editor-Version aktuell defekt)
 > https://nextion.tech/download/nextion-setup-v1-63-3.exe oder https://nextion.tech/download/nextion-setup-v1-63-3.zip
+> Bitte älter Version 1.63.3 benutzen und keine Updates durchführen.
 
 sowie die HMI-Datei hier aus dem Repository (liegt im Verzeichnis HMI). Nachdem der Editor installiert ist, diesen Starten und die Datei nspanel.hmi im Nextion Editor öffnen. Anschließend im Editor oben auf Debug klicken. Es öffnet sich ein neues Fenster. Dort unten links von _Keyboard Input_ auf _User MCU Input_ umstellen, den COM-Port des ESP auswählen und die Baud-Rate auf 115200 stellen. Mit Start verbindet man sich nun zum ESP.
 
@@ -208,14 +209,12 @@ Dazu im ioBroker den DP 0_userdata.0.NSPanel.DEV.NSPanel_Dimmode_brightnessDay a
 Nun hab Ihr ein vollständig klickbares, emuliertes NSPanel, in welchem Ihr eure neuen Seiten ohne Zugriff auf Euer echtes Panel bequem entwerfen und vertesten könnt. Wenn man dann mit seinen Änderungen zufrieden ist, kann man die Änderungen vom Skript nun in das Produktionsskript eintragen!
 
 **Noch ein paar Hinweise**:  
-Die ESP32 Temperatur mit setOptions146 1 einschalten.  
+* Die ESP32 Temperatur mit setOptions146 1 einschalten.  
   
-Im Gengensatz zum "echten" NSPanel hat der Emulator-ESP32 keinen eingebauten Temperatursensor und auch keine eingebauten Buttons/Relais. Es kann somit keine Daten hierfür in die Datenpunkte transportieren. Um Fehler zu vermeiden, sollte im Datenpunkt:
-
+* Im Gengensatz zum "echten" NSPanel hat der Emulator-ESP32 keinen eingebauten Temperatursensor und auch keine eingebauten Buttons/Relais. Es kann somit keine Daten hierfür in die Datenpunkte transportieren. Um Fehler zu vermeiden, sollte im Datenpunkt:
 `0_userdate.0.NSPanel.Dev.Sensor.ANALOG.Temperature`
-
 ein Temperaturwert für die Raumtemperatur (z.B. 21) eingetragen werden.
 
-Ebenfalls sind die Werte für die Status Icons im Screensaver nicht vorhanden. Da der Emulator in der Regel ein bereits  vorhandenes physisches NSPanel emuliert, können die MQTT-Pfade für die Relais-Icons auch auf das physische NSPanel verweisen.
+* Ebenfalls sind die Werte für die Status Icons im Screensaver nicht vorhanden. Da der Emulator in der Regel ein bereits  vorhandenes physisches NSPanel emuliert, können die MQTT-Pfade für die Relais-Icons auch auf das physische NSPanel verweisen.
 
 Viel Spaß mit dem Emulator!
