@@ -178,10 +178,38 @@ In Beispiel 2 wird statt des Relais, ein Fenstersensor (open = true/false) als I
 ```
 export const config: Config = {
     ...
-    firstScreensaverEntity: { ScreensaverEntity: "accuweather.0.Daily.Day1.Day.PrecipitationProbability", ScreensaverEntityIcon: "weather-pouring", ScreensaverEntityText: "Regen", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100} },
-    secondScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.WindSpeed", ScreensaverEntityIcon: "weather-windy", ScreensaverEntityText: "Wind", ScreensaverEntityUnitText: "km/h", ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 180}},
-    thirdScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.UVIndex", ScreensaverEntityIcon: "solar-power", ScreensaverEntityText: "UV", ScreensaverEntityUnitText: "", ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 9} },
-    fourthScreensaverEntity: { ScreensaverEntity: "accuweather.0.Current.RelativeHumidity", ScreensaverEntityIcon: "water-percent", ScreensaverEntityText: "Luft", ScreensaverEntityUnitText: "%", ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100} },
+    firstScreensaverEntity:   { ScreensaverEntity: 'accuweather.0.Hourly.h0.PrecipitationProbability',
+                                ScreensaverEntityFactor: 1,                                 //New
+                                ScreensaverEntityDecimalPlaces: 0,                          //New 
+                                ScreensaverEntityIcon: 'weather-pouring', 
+                                ScreensaverEntityText: 'Regen', 
+                                ScreensaverEntityUnitText: '%', 
+                                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100} 
+                              },
+    secondScreensaverEntity:  { ScreensaverEntity: 'accuweather.0.Current.WindSpeed', 
+                                ScreensaverEntityFactor: (1000/3600),                       //New
+                                ScreensaverEntityDecimalPlaces: 1,                          //New 
+                                ScreensaverEntityIcon: 'weather-windy', 
+                                ScreensaverEntityText: "Wind", 
+                                ScreensaverEntityUnitText: 'm/s', 
+                                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 35} 
+                              },
+    thirdScreensaverEntity:   { ScreensaverEntity: 'accuweather.0.Current.UVIndex',
+                                ScreensaverEntityFactor: 1,                                 //New
+                                ScreensaverEntityDecimalPlaces: 0,                          //New  
+                                ScreensaverEntityIcon: 'solar-power', 
+                                ScreensaverEntityText: 'UV', 
+                                ScreensaverEntityUnitText: '', 
+                                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 9} 
+                              },//
+    fourthScreensaverEntity:  { ScreensaverEntity: 'accuweather.0.Current.RelativeHumidity',
+                                ScreensaverEntityFactor: 1,                                 //New
+                                ScreensaverEntityDecimalPlaces: 0,                          //New 
+                                ScreensaverEntityIcon: 'water-percent', 
+                                ScreensaverEntityText: 'Luft', 
+                                ScreensaverEntityUnitText: '%', 
+                                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100, 'val_best': 65} 
+                              },
 ```  
 
 Der letzte Parameter **ScreensaverEntityIconColor** der first- fourthScreensaverEntity
