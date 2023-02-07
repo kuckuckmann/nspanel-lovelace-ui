@@ -3,9 +3,6 @@ Der überarbeitete Screensaver **ab v3.4.0**
 
 # Screensaver Layout (Standard)  
 
-![image](https://user-images.githubusercontent.com/102996011/217248632-ac7394ec-26d3-47d3-8d2b-fd547955220b.png)   
-Das alternative Screensaver-Layout lässt sich im Servicemenü aktivieren.  
-
 Ansicht Weather-Forecast:  
 ![image](https://user-images.githubusercontent.com/102996011/215202503-b4a407a9-c44e-4c05-8bb5-e4525db48ae3.png)  
 
@@ -13,13 +10,6 @@ Ansicht Screensaver-Entities:
 ![image](https://user-images.githubusercontent.com/102996011/190849281-0ef61e4f-3d92-4959-a66b-92dd292ec407.png)  
   
 # Screensaver Layout (Alternativ)
-
-```
-export const config: Config = {
-    ...
-    alternativeScreensaverLayout: true,
-    autoWeatherColorScreensaverLayout: true,
-```
   
 Ansicht Weather-Forecast:  
 ![image](https://user-images.githubusercontent.com/102996011/190611272-c3bf9f34-c9c0-400d-ae03-c05bdfa8071b.png)  
@@ -27,6 +17,8 @@ Ansicht Weather-Forecast:
 Ansicht Screensaver-Entities:  
 ![image](https://user-images.githubusercontent.com/102996011/190849999-48ed259b-7c1b-4a4f-887d-f354d7bab07d.png)  
 
+![image](https://user-images.githubusercontent.com/102996011/217248632-ac7394ec-26d3-47d3-8d2b-fd547955220b.png)   
+Das alternative Screensaver-Layout lässt sich im Servicemenü aktivieren.  
 
 # Screensaver Colors
 ```
