@@ -21,6 +21,8 @@ Nachdem die Verbindung hergestellt wurde, installiert ihr Tasmota auf dem EPS32.
 Nachdem die WLAN-Daten hinterlegt sind, gelangt Ihr mit einem weiteren Klick direkt auf die Tasmota Seite vom Gerät. War dies Erfolgreich, schließen wir die Tasmota Installation Seite und trennen kurz die USB Verbindung.
 Nachdem nun der ESP wieder erreichbar ist, prüft man in den Einstellungen unter _Gerät konfigurieren_, ob RX und TX auf none stehen.
 
+![image](https://user-images.githubusercontent.com/102996011/217224220-78b859d6-a4ca-4217-ba15-c1ab6b0d8f23.png)  
+
 Anschließend installiert man den Berry-Treiber und konfiguriert MQTT (nach der Anleitung hier im Wiki: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---Basisinstallation#3-berry-treiber-installieren).
 
 **ACHTUNG:** Nicht den Berry Treiber hier aus dem Wiki nehmen, sondern hier aus dem nachfolgenden Code-Block
