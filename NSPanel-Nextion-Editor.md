@@ -31,9 +31,11 @@ Nachdem nun der ESP wieder erreichbar ist, prüft man in den Einstellungen unter
 
 ![image](https://user-images.githubusercontent.com/102996011/217224220-78b859d6-a4ca-4217-ba15-c1ab6b0d8f23.png)  
 
-Anschließend installiert man den Berry-Treiber und konfiguriert MQTT (nach der Anleitung hier im Wiki: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---Basisinstallation#3-berry-treiber-installieren).
+Anschließend installiert man den Berry-Treiber und konfiguriert MQTT (nach der Anleitung hier im Wiki: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---Basisinstallation#3-berry-treiber-installieren).  
 
-**ACHTUNG:** Nicht den Berry Treiber hier aus dem Wiki nehmen, sondern hier aus dem nachfolgenden Code-Block
+## Berry-Driver für Emulation  
+
+**ACHTUNG:** Nicht den Berry Treiber hier aus dem Wiki nehmen, sondern hier aus dem nachfolgenden Code-Block  
 
 ```
 # Nextion Serial Protocol driver by joBr99 + nextion upload protocol 1.2 (the fast one yay) implementation using http range and tcpclient
@@ -198,7 +200,7 @@ _panelRecvTopic_, _panelSendTopic_, _mrIcon1ScreensaverEntity_, _mrIcon2Screensa
 
 Das Skript nun speichern aber noch nicht ausführen.
 
-
+## Installation des Nextion Editor
 
 Zunächst braucht man noch den Nextion Editor: 
 > ~~https://nextion.tech/nextion-editor/~~  (Nextion-Editor-Version aktuell defekt)  
@@ -216,6 +218,8 @@ Abschließend sollte man der noch den Kontrast für das DEV-Panel erhöhen:
 Dazu im ioBroker den DP 0_userdata.0.NSPanel.DEV.NSPanel_Dimmode_brightnessDay auf 80 stellen (und ggf auch die brightnessNight). Ansonsten ist der Screensaver im Editor zu dunkel.
 
 Nun hab Ihr ein vollständig klickbares, emuliertes NSPanel, in welchem Ihr eure neuen Seiten ohne Zugriff auf Euer echtes Panel bequem entwerfen und vertesten könnt. Wenn man dann mit seinen Änderungen zufrieden ist, kann man die Änderungen vom Skript nun in das Produktionsskript eintragen!
+
+## Hinweise
 
 **Noch ein paar Hinweise**:  
 * Die ESP32 Temperatur mit setOptions146 1 einschalten.  
