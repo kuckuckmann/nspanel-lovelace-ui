@@ -180,7 +180,7 @@ tasmota.add_cmd('CustomSend', send_cmd2)
 
 Nachdem die autoexec.be erstellt wurde, den ESP32 einmal rebooten und nun MQTT einrichten. Ich habe hierbei anstelle der Nummerierung der NSPanels DEV geschrieben, also NSPanel_DEV als client und topic.
 
-Den Schritt 5 der Anleitung (TFT-Flashen) benötigt man nicht. Ab hier geht es dann mit Schritt 6 der normalen Anleitung weiter.
+> **Den Schritt 5 der Anleitung (TFT-Flashen mit FlashNextion...) benötigt man nicht, da der ESP32 nicht mit einem Nextion-Display ausgestattet ist. Ab hier geht es dann mit Schritt 6 der normalen Anleitung weiter.**
 
 Ich habe bei mir, um das ganze voneinander zu trennen, eine zweite JavaScript Instanz im ioBroker installiert. In diese zweite Instanz habe ich bei mir das NSPanel.TS Skript hinterlegt (Mit DEV im Dateinamen, damit man es sofort als DEV-Skript erkennt). In dem DEV-Skript müssen nun noch die folgenden Änderungen vorgenommen werden:
 
