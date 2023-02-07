@@ -24,6 +24,9 @@ Das alternative Screensaver-Layout lässt sich im Servicemenü aktivieren.
 
 > ab v4.0.0
   
+![image](https://user-images.githubusercontent.com/102996011/217376872-f0dbc4f8-d7ed-4d21-9bdc-63b0f54e4e15.png)  
+
+
 
 # Screensaver Colors
 ```
