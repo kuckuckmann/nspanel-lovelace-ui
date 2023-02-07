@@ -31,7 +31,7 @@ Nun installieren wir Tasmota über den Webinstaller auf dem ESP: Dazu ruft Ihr d
 Nachdem die Verbindung hergestellt wurde, installiert ihr Tasmota auf dem EPS32. War die Installation erfolgreich, könnt Ihr im nächsten Schritt Eure WLAN-Daten eintragen.  
 Nachdem die WLAN-Daten hinterlegt sind, gelangt Ihr mit einem weiteren Klick direkt auf die Tasmota Seite vom Gerät. War dies Erfolgreich, schließen wir die Tasmota Installation Seite und trennen kurz die USB Verbindung.  
 
-Nachdem nun der ESP wieder erreichbar ist, prüft man in den Einstellungen unter _Gerät konfigurieren_, ob RX und TX auf none stehen.
+Nachdem nun der ESP wieder erreichbar ist, prüft man in den Einstellungen unter _Gerät konfigurieren_, ob RX (GPIO3) und TX (GPIO1) auf none stehen.
 
 ![image](https://user-images.githubusercontent.com/102996011/217224220-78b859d6-a4ca-4217-ba15-c1ab6b0d8f23.png)  
 
