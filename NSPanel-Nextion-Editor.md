@@ -20,10 +20,13 @@ Ihr braucht einen PC (ich habe es mit Windows 11 bei mir aktuell vertestet), ein
 
 ## Vorbereitungen
 
-Nachdem Euer ESP32 angekommen ist, müsst Ihr diesen via USB an den PC anschließen. Ich musste mir für meinen ESP32 noch den passenden Treiber installieren (CP210x_Universal_Windows_Driver). Nachdem ich den Treiber installiert hatte, taucht im Gerätemanager unter Anschlüsse bei mir ein _Silicon Labs CP210x USB to UART Bridge_ an _COM3_ auf.
-Nun installieren wir Tasmota über den Webinstaller auf dem ESP: Dazu ruft Ihr die Seite https://tasmota.github.io/install/ im Browser auf. Lt. Dokumentation von Tasmota müsst Ihr hierfür den Browser Edge oder Chrome nehmen. Dort wählt Ihr rechts im Auswahlmenü _ESP32_ und links im Auswahlmenü _Tasmota DE_. Anschließend klickt Ihr auf _CONNECT_ und wählt den COM-Port von Eurer CP210x USB to UART Bridge aus.
-Nachdem die Verbindung hergestellt wurde, installiert ihr Tasmota auf dem EPS32. War die Installation erfolgreich, könnt Ihr im nächsten Schritt Eure WLAN-Daten eintragen.
-Nachdem die WLAN-Daten hinterlegt sind, gelangt Ihr mit einem weiteren Klick direkt auf die Tasmota Seite vom Gerät. War dies Erfolgreich, schließen wir die Tasmota Installation Seite und trennen kurz die USB Verbindung.
+Nachdem Euer ESP32 angekommen ist, müsst Ihr diesen via USB an den PC anschließen. Ich musste mir für meinen ESP32 noch den passenden Treiber installieren (CP210x_Universal_Windows_Driver). Nachdem ich den Treiber installiert hatte, taucht im Gerätemanager unter Anschlüsse bei mir ein _Silicon Labs CP210x USB to UART Bridge_ an _COM3_ auf.  
+
+Nun installieren wir Tasmota über den Webinstaller auf dem ESP: Dazu ruft Ihr die Seite https://tasmota.github.io/install/ im Browser auf. Lt. Dokumentation von Tasmota müsst Ihr hierfür den Browser Edge oder Chrome nehmen. Dort wählt Ihr rechts im Auswahlmenü _ESP32_ und links im Auswahlmenü _Tasmota DE_. Anschließend klickt Ihr auf _CONNECT_ und wählt den COM-Port von Eurer CP210x USB to UART Bridge aus.  
+
+Nachdem die Verbindung hergestellt wurde, installiert ihr Tasmota auf dem EPS32. War die Installation erfolgreich, könnt Ihr im nächsten Schritt Eure WLAN-Daten eintragen.  
+Nachdem die WLAN-Daten hinterlegt sind, gelangt Ihr mit einem weiteren Klick direkt auf die Tasmota Seite vom Gerät. War dies Erfolgreich, schließen wir die Tasmota Installation Seite und trennen kurz die USB Verbindung.  
+
 Nachdem nun der ESP wieder erreichbar ist, prüft man in den Einstellungen unter _Gerät konfigurieren_, ob RX und TX auf none stehen.
 
 ![image](https://user-images.githubusercontent.com/102996011/217224220-78b859d6-a4ca-4217-ba15-c1ab6b0d8f23.png)  
