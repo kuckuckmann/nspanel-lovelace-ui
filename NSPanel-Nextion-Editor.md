@@ -226,4 +226,4 @@ ein Temperaturwert für die Raumtemperatur (z.B. 21) eingetragen werden.
 
 * Ebenfalls sind die Werte für die Status Icons im Screensaver nicht vorhanden. Da der Emulator in der Regel ein bereits  vorhandenes physisches NSPanel emuliert, können die MQTT-Pfade für die Relais-Icons auch auf das physische NSPanel verweisen.
 
-Viel Spaß mit dem Emulator!
+**Viel Spaß mit dem Emulator!**
