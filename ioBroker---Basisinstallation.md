@@ -154,12 +154,6 @@ Unter dem grünen Vezeichnisbaum „global“ im ioBroker-Menüpunkt Skripte erz
 **https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.ts**  
 ein und startest das Skript.
 
-> **Achtung:**  
-> **In speziellen Konstellationen zwischen JS-Adapter und js-Controller kann es zu Fehlern in der Ausführung von globalem TypeScript kommen!**  
-> Für diesem Fall die:  
-> **https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.js**  
-> in ein globales "JavaScript" (nicht TS) einfügen
-
 **Nur zur Info:**  
 Du kannst die einzelnen Icon-Symbolnamen (aktuell 6896 unterschiedliche Icon-Symbole) auf  
 **https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html**  
