@@ -295,55 +295,49 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
     "id": 1,
     "value": 3,
     "unit": "kW",
-    "direction": "in",
     "icon": "battery-charging-60",
     "iconColor": 10,
-    "speed": -3
+    "speed": 30
   },
   {
     "id": 2,
     "value": 4.7,
     "unit": "kW",
-    "direction": "in",
     "icon": "solar-power-variant",
     "iconColor": 3,
-    "speed": 2
+    "speed": -20
   },
   {
     "id": 3,
     "value": 4.3,
     "unit": "kW",
-    "direction": "in",
     "icon": "wind-turbine",
     "iconColor": 1,
-    "speed": 3
+    "speed": -30
   },
   {
     "id": 4,
     "value": 3.4,
     "unit": "kW",
-    "direction": "in",
     "icon": "shape",
     "iconColor": 10,
-    "speed": 3
+    "speed": 30
   },
   {
     "id": 5,
     "value": 0.1,
     "unit": "kW",
-    "direction": "in",
     "icon": "transmission-tower",
     "iconColor": 0,
-    "speed": 2
+    "speed": 20
   },
   {
     "id": 6,
     "value": 2.5,
     "unit": "kW",
-    "direction": "in",
     "icon": "car",
     "iconColor": 5,
-    "speed": 2
+    "speed": 20
   }
 ]
 ```  
@@ -380,7 +374,6 @@ Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn e
     "id": 3,
     "value": "",
     "unit": "",
-    "direction": "",
     "icon": "",
     "iconColor": "",
     "speed": ""
@@ -389,6 +382,8 @@ Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn e
 
 > Das Skript stellt nur eine exemplarische Möglichkeit der Befüllung dar. Es kann frei definiert und auf eigene Bedürfnisse angepasst werden, soll aber keine finale Lösung für jede Smart Home Situation abbilden!
 > Ebenso kann die Erstellung des JSON natürlich auch über JavaScript oder TypeScript erfolgen.
+
+**Hinweis:** Aktuell erfolgt die Animation gleicher Speed Werte bei der US-P Firmware durch die geänderte Orientierung in umgekehrter Reihenfolge.
 
 # cardChart (ab TS-Script v.3.7.0)  
 
