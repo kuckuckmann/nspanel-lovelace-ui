@@ -493,7 +493,7 @@ on({id: sourceDP, change: "any"}, async function (obj) {
 * type: Für Liniendiagramme muss der Seiten-Typ "cardLChart" sein.  
 * id: Es wird ein Alias vom Gerätetyp "Info" erstellt, der auf den erzeugenden Datenpunkt des unten aufgeführten Beispiel-Scriptes zeigt.  
 * yAxis: Bezeichner der Y-Achse  
-* yAxisTicks: Skala des Wertebereiches der Y-Achse  
+* yAxisTicks: Skala des Wertebereiches der Y-Achse als Array oder ObjektId zu einem Datenpunkt welcher die Skala enthält
 * onColor: Farbe des Graphen  
 
 ``` 
