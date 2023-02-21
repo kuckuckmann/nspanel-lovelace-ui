@@ -243,6 +243,7 @@ var Sprechender_eindeutiger_Seitenname = <PageThermo>
                 id: "alias.0.NSPanel_1.TestKlimaanlage", 
                 minValue: 50, 
                 maxValue: 250,
+                stepValue: 5,
                 popupThermoMode1: ['Auto','0','1','2','3'],
                 popupThermoMode2: ['Auto','0','1','2','3','4','5'],
                 popupThermoMode3: ['Auto','Manual','Boost',],
@@ -256,7 +257,8 @@ var Sprechender_eindeutiger_Seitenname = <PageThermo>
 
 **Parameter:**  
 minValue: Minimale einzustellende Temperatur (Beispiel: 17°C entspricht 170)  
-maxValue: Maximale einzustellende Temperatur (Beispiel: 30,5°C entspricht 305)  
+maxValue: Maximale einzustellende Temperatur (Beispiel: 30,5°C entspricht 305)
+stepValue: Schrittgröße der Temperaturänderungen (Beispiel: 0,5°C Schritte entspricht 5)
 
 # cardPower (ab TS-Script v.3.4.1) 
   
