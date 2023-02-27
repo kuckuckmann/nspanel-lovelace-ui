@@ -59,9 +59,7 @@ const sctTimeAdd:       RGB = { red: 255, green:  255, blue: 255};
 ```
 Wenn die automatischen Farben der Weather-Forcast nicht verwendet werden sollen:
 ```
-export const config: Config = {
-    ...
-    autoWeatherColorScreensaverLayout: false,
+0_userdata.0.NSPanel.1.Config.Screensaver.autoWeatherColorScreensaverLayout = false
 ```
 
 ![image](https://user-images.githubusercontent.com/102996011/190623367-70ebe988-f467-49cf-8e81-2275a8db259b.png)
