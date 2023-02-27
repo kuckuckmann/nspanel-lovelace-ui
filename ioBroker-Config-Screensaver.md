@@ -26,7 +26,7 @@ Das alternative Screensaver-Layout lässt sich im Servicemenü aktivieren.
   
 ![image](https://user-images.githubusercontent.com/102996011/221548005-f95c0949-2f51-4fca-8c31-08ec9083096c.png)  
 
-![image](https://user-images.githubusercontent.com/102996011/221548102-eab59b18-8ed3-44ef-a7d7-afe20fdcbe22.png)  
+![image](https://user-images.githubusercontent.com/102996011/221548499-c50d1101-a6a3-468f-82e9-ae83fb870655.png)  
 
 
 
