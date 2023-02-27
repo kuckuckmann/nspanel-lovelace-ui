@@ -183,13 +183,13 @@ export const config: Config = {
         [
             // bottomScreensaverEntity 1
             {
-                ScreensaverEntity: 'accuweather.0.Daily.Day1.Sunrise', //'accuweather.0.Hourly.h0.PrecipitationProbability',
+                ScreensaverEntity: 'accuweather.0.Daily.Day1.Sunrise',
                 ScreensaverEntityFactor: 1,
                 ScreensaverEntityDecimalPlaces: 0,
                 ScreensaverEntityDateFormat: 'hh:mm',   // like DD.MM or DD.MM.YY or YYYY/MM/DD or hh:mm
-                ScreensaverEntityIconOn: 'weather-pouring',
+                ScreensaverEntityIconOn: 'weather-sunset-up',
                 ScreensaverEntityIconOff: null,
-                ScreensaverEntityText: 'Regen',
+                ScreensaverEntityText: 'Sonne',
                 ScreensaverEntityUnitText: '%',
                 ScreensaverEntityIconColor: MSYellow //{'val_min': 0, 'val_max': 100}
             },
