@@ -170,11 +170,10 @@ In Beispiel 2 wird statt des Relais, ein Fenstersensor (open = true/false) als I
 
 ## Entity-Status Icons (ab v4.0.0) 
 
-Einfacher Screensaver:
-![image](https://user-images.githubusercontent.com/102996011/190727328-175a5a2d-48ba-4370-911e-c6e2029ef9cc.png)  
+### Einfacher Screensaver:  
+![image](https://user-images.githubusercontent.com/102996011/221557849-6caa1fce-b4a1-432f-b4e1-d862dbccb04e.png)  
 
-Erweiterter Screensaver:
-
+### Erweiterter Screensaver:  
 ![image](https://user-images.githubusercontent.com/102996011/221555760-4805cc37-30ae-4485-a219-bdbe75f78c05.png)
   
 ```
