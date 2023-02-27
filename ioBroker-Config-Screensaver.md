@@ -24,7 +24,10 @@ Das alternative Screensaver-Layout lässt sich im Servicemenü aktivieren.
 
 > ab v4.0.0
   
-![image](https://user-images.githubusercontent.com/102996011/217376872-f0dbc4f8-d7ed-4d21-9bdc-63b0f54e4e15.png)  
+![image](https://user-images.githubusercontent.com/102996011/221548005-f95c0949-2f51-4fca-8c31-08ec9083096c.png)  
+
+![image](https://user-images.githubusercontent.com/102996011/221548102-eab59b18-8ed3-44ef-a7d7-afe20fdcbe22.png)  
+
 
 
 
