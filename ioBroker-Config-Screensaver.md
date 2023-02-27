@@ -173,6 +173,8 @@ In Beispiel 2 wird statt des Relais, ein Fenstersensor (open = true/false) als I
 ### Einfacher Screensaver:  
 ![image](https://user-images.githubusercontent.com/102996011/221557849-6caa1fce-b4a1-432f-b4e1-d862dbccb04e.png)  
 
+
+**Beispiel:**  
 ```
 export const config: Config = {
     ...
@@ -191,7 +193,7 @@ export const config: Config = {
                 ScreensaverEntityIconOff: null,
                 ScreensaverEntityText: 'Sonne',
                 ScreensaverEntityUnitText: '%',
-                ScreensaverEntityIconColor: MSYellow //{'val_min': 0, 'val_max': 100}
+                ScreensaverEntityIconColor: MSYellow
             },
             // bottomScreensaverEntity 2
             {
@@ -235,6 +237,7 @@ export const config: Config = {
 ### Erweiterter Screensaver:  
 ![image](https://user-images.githubusercontent.com/102996011/221555760-4805cc37-30ae-4485-a219-bdbe75f78c05.png)
   
+**Beispiel:**  
 ```
 export const config: Config = {
     ...
@@ -279,15 +282,14 @@ export const config: Config = {
         [
             // bottomScreensaverEntity 1
             {
-                ScreensaverEntity: 'accuweather.0.Daily.Day1.Sunrise', //'accuweather.0.Hourly.h0.PrecipitationProbability',
+                ScreensaverEntity: 'accuweather.0.Hourly.h0.PrecipitationProbability',
                 ScreensaverEntityFactor: 1,
                 ScreensaverEntityDecimalPlaces: 0,
-                ScreensaverEntityDateFormat: 'hh:mm',   // like DD.MM or DD.MM.YY or YYYY/MM/DD or hh:mm
                 ScreensaverEntityIconOn: 'weather-pouring',
                 ScreensaverEntityIconOff: null,
                 ScreensaverEntityText: 'Regen',
                 ScreensaverEntityUnitText: '%',
-                ScreensaverEntityIconColor: MSYellow //{'val_min': 0, 'val_max': 100}
+                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100}
             },
             // bottomScreensaverEntity 2
             {
