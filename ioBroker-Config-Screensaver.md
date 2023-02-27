@@ -173,6 +173,65 @@ In Beispiel 2 wird statt des Relais, ein Fenstersensor (open = true/false) als I
 ### Einfacher Screensaver:  
 ![image](https://user-images.githubusercontent.com/102996011/221557849-6caa1fce-b4a1-432f-b4e1-d862dbccb04e.png)  
 
+```
+export const config: Config = {
+    ...
+    leftScreensaverEntity:
+        [],
+
+    bottomScreensaverEntity :  
+        [
+            // bottomScreensaverEntity 1
+            {
+                ScreensaverEntity: 'accuweather.0.Daily.Day1.Sunrise', //'accuweather.0.Hourly.h0.PrecipitationProbability',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 0,
+                ScreensaverEntityDateFormat: 'hh:mm',   // like DD.MM or DD.MM.YY or YYYY/MM/DD or hh:mm
+                ScreensaverEntityIconOn: 'weather-pouring',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Regen',
+                ScreensaverEntityUnitText: '%',
+                ScreensaverEntityIconColor: MSYellow //{'val_min': 0, 'val_max': 100}
+            },
+            // bottomScreensaverEntity 2
+            {
+                ScreensaverEntity: 'accuweather.0.Current.WindSpeed',
+                ScreensaverEntityFactor: (1000/3600),
+                ScreensaverEntityDecimalPlaces: 1,
+                ScreensaverEntityIconOn: 'weather-windy',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: "Wind",
+                ScreensaverEntityUnitText: 'm/s',
+                ScreensaverEntityIconColor: { 'val_min': 0, 'val_max': 120 }
+            },
+            // bottomScreensaverEntity 3
+            {
+                ScreensaverEntity: 'accuweather.0.Current.WindGust',
+                ScreensaverEntityFactor: (1000/3600),
+                ScreensaverEntityDecimalPlaces: 1,
+                ScreensaverEntityIconOn: 'weather-tornado',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Böen',
+                ScreensaverEntityUnitText: 'm/s',
+                ScreensaverEntityIconColor: { 'val_min': 0, 'val_max': 120 }
+            },
+            // bottomScreensaverEntity 4
+            {
+                ScreensaverEntity: '0_userdata.0.wetter.Windrichtung',
+                ScreensaverEntityFactor: 0,
+                ScreensaverEntityDecimalPlaces: 0,
+                ScreensaverEntityIconOn: 'windsock',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Windr.',
+                ScreensaverEntityUnitText: '°',
+                ScreensaverEntityIconColor: White
+            }
+        ],
+
+    indicatorScreensaverEntity:
+        [],
+```  
+
 ### Erweiterter Screensaver:  
 ![image](https://user-images.githubusercontent.com/102996011/221555760-4805cc37-30ae-4485-a219-bdbe75f78c05.png)
   
