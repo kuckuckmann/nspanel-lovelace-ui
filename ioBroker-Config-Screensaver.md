@@ -465,20 +465,19 @@ Wenn die 4 Entity Icons sichtbar sein sollen (Timer für Wechsel deaktiviert)
 
 # Screensaver Dimmode  
 
-## Automatischer Dimmode:
+## Automatischer Dimmode:  
 
-Über die Parameter (auch im Servicemenü verfügbar), lassen sich die Helligkeit des Screensavers zur Uhrzeit einstellen.
+Über die Parameter (auch im Servicemenü verfügbar), lassen sich die Helligkeit des Screensavers zur Uhrzeit einstellen.  
 
-> 0_userdata.0.NSPanel.1.NSPanel_Dimmode_brightnessDay  - Die Helligkeit (0-100) in der der Screensaver tagsüber gedimmt wird
-> 0_userdata.0.NSPanel.1.NSPanel_Dimmode_brightnessNight - Die Helligkeit (0-100) in der der Screensaver nachts gedimmt wird
+* 0_userdata.0.NSPanel.1.NSPanel_Dimmode_brightnessDay  - Die Helligkeit (0-100) in der der Screensaver tagsüber gedimmt wird  
+* 0_userdata.0.NSPanel.1.NSPanel_Dimmode_brightnessNight - Die Helligkeit (0-100) in der der Screensaver nachts gedimmt wird  
+* 0_userdata.0.NSPanel.1.NSPanel_Dimmode_hourDay - Die Stunde in der der Tag Dimm-Modus aktiv werden soll  
+* 0_userdata.0.NSPanel.1.NSPanel_Dimmode_hourNight - Die Stunde in der der Nacht Dimm-Modus aktiv werden soll    
 
-> 0_userdata.0.NSPanel.1.NSPanel_Dimmode_hourDay - Die Stunde in der der Tag Dimm-Modus aktiv werden soll
-> 0_userdata.0.NSPanel.1.NSPanel_Dimmode_hourNight - Die Stunde in der der Nacht Dimm-Modus aktiv werden soll  
+## Manueller Dimmode:  
 
-## Manueller Dimmode:
+0_userdata.0.NSPanel.1.ScreensaverInfo.activeDimmodeBrightness  
 
-> 0_userdata.0.NSPanel.1.ScreensaverInfo.activeDimmodeBrightness
-
-null = automatischer Dimmode aktiv
-0-100 = manuelle Dimmstufe (automatischer Dimmode inaktiv)
+* null = automatischer Dimmode aktiv  
+* 0-100 = manuelle Dimmstufe (automatischer Dimmode inaktiv)  
 
