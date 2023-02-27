@@ -49,6 +49,7 @@ var Sprechender_eindeutiger_Seitenname = <PageGrid>
 
 # cardUnlock (ab v4.0.0)  
 
+Die cardUnlock dient der Absicherung spezieller Seiten, die vor unbefugtem Zugriff (ggfs. Service Pages) geschützt werden sollen:
 ![image](https://user-images.githubusercontent.com/102996011/221621287-55987efd-143b-4ad0-b7bb-d35d58436b12.png)  
 
 > Bei Benutzung der cardUnlock wird die Zielseite aus dem Page-Array herausgenommen. Die Target-Page sollte als nicht als Top-Level-Page, sondern als Subpage definiert sein.  
