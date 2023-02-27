@@ -168,12 +168,14 @@ Ab v3.9.0 ist es möglich auch Werte (z.B. Temoperatur-Sensor) in den Status-Ico
 In Beispiel 2 wird statt des Relais, ein Fenstersensor (open = true/false) als Indikator verwendet. Der Wert kann über `ScreensaverEntityValue` eingeblendet werden. Darüber hinaus ist es möglich, die Nachkommastelle mit `ScreensaverEntityValueDecimalPlace` anzugeben und eine Einheit des Wertes mit `ScreensaverEntityValueUnit` zu visualisieren.  
 
 
-## Entity-Status Icons  
+## Entity-Status Icons (ab v4.0.0) 
 
+Einfacher Screensaver:
 ![image](https://user-images.githubusercontent.com/102996011/190727328-175a5a2d-48ba-4370-911e-c6e2029ef9cc.png)  
 
+Erweiterter Screensaver:
 
-> **Achtung: neuer Parameter "ScreensaverEntityIconColor"**. Bei Bestehenden Skripten (Migration) **unbedingt analog der nachfolgenden Zeilen erweitern!**
+![image](https://user-images.githubusercontent.com/102996011/221555760-4805cc37-30ae-4485-a219-bdbe75f78c05.png)
   
 ```
 export const config: Config = {
