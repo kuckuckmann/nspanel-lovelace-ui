@@ -47,6 +47,29 @@ var Sprechender_eindeutiger_Seitenname = <PageGrid>
 };
 ```
 
+# cardUnlock (ab v4.0.0)  
+
+![image](https://user-images.githubusercontent.com/102996011/221621287-55987efd-143b-4ad0-b7bb-d35d58436b12.png)  
+
+> Bei Benutzung der cardUnlock wird die Zielseite aus dem Page-Array herausgenommen. Die Target-Page sollte als nicht als Top-Level-Page, sondern als Subpage definiert sein.  
+
+im Datenpunkt **0_userdata.0.NSPanel.X.Unlock.UnlockPin** kann eine PIN vergeben werden. Default wird diese PIN als **0000** definiert.  
+
+Erstellung des Alias:  
+Es wird muss ein Alias vom Gerätetyp "Feueralarm" wie folgt erstellt werden:  
+![image](https://user-images.githubusercontent.com/102996011/221623196-979596f5-ba5d-4268-870a-cef2d5616bad.png)  
+
+**Beispiel der Seitenerstellung:**  
+```
+let Unlock_Service = <PageUnlock>
+{
+    'type': 'cardUnlock',
+    'heading': 'Service Pages',
+    'useColor': true,
+    'items': [<PageItem>{ id: 'alias.0.Unlock', targetPage: 'NSPanel_Service' }]
+};
+```
+
 # cardAlarm
 ![image](https://user-images.githubusercontent.com/102996011/190120272-82c6b418-c9dc-4338-a0a3-53da8bec0bac.png)
 
