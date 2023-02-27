@@ -23,6 +23,9 @@ Das alternative Screensaver-Layout lässt sich im Servicemenü aktivieren.
 # Screensaver 2 Layout
 
 > ab v4.0.0
+
+> **Aktivierung:**  
+> 0_userdata.0.NSPanel.1.Config.Screensaver.ScreensaverAdvanced = true  
   
 ![image](https://user-images.githubusercontent.com/102996011/221548005-f95c0949-2f51-4fca-8c31-08ec9083096c.png)  
 
