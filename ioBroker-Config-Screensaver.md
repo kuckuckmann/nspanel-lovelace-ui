@@ -178,38 +178,172 @@ In Beispiel 2 wird statt des Relais, ein Fenstersensor (open = true/false) als I
 ```
 export const config: Config = {
     ...
-    firstScreensaverEntity:   { ScreensaverEntity: 'accuweather.0.Hourly.h0.PrecipitationProbability',
-                                ScreensaverEntityFactor: 1,                                 //New
-                                ScreensaverEntityDecimalPlaces: 0,                          //New 
-                                ScreensaverEntityIcon: 'weather-pouring', 
-                                ScreensaverEntityText: 'Regen', 
-                                ScreensaverEntityUnitText: '%', 
-                                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100} 
-                              },
-    secondScreensaverEntity:  { ScreensaverEntity: 'accuweather.0.Current.WindSpeed', 
-                                ScreensaverEntityFactor: (1000/3600),                       //New
-                                ScreensaverEntityDecimalPlaces: 1,                          //New 
-                                ScreensaverEntityIcon: 'weather-windy', 
-                                ScreensaverEntityText: "Wind", 
-                                ScreensaverEntityUnitText: 'm/s', 
-                                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 35} 
-                              },
-    thirdScreensaverEntity:   { ScreensaverEntity: 'accuweather.0.Current.UVIndex',
-                                ScreensaverEntityFactor: 1,                                 //New
-                                ScreensaverEntityDecimalPlaces: 0,                          //New  
-                                ScreensaverEntityIcon: 'solar-power', 
-                                ScreensaverEntityText: 'UV', 
-                                ScreensaverEntityUnitText: '', 
-                                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 9} 
-                              },//
-    fourthScreensaverEntity:  { ScreensaverEntity: 'accuweather.0.Current.RelativeHumidity',
-                                ScreensaverEntityFactor: 1,                                 //New
-                                ScreensaverEntityDecimalPlaces: 0,                          //New 
-                                ScreensaverEntityIcon: 'water-percent', 
-                                ScreensaverEntityText: 'Luft', 
-                                ScreensaverEntityUnitText: '%', 
-                                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100, 'val_best': 65} 
-                              },
+    leftScreensaverEntity:
+        [
+            // leftScreensaverEntity 1 (only Advanced Screensaver)
+            {
+                ScreensaverEntity: NSPanel_Path + 'Sensor.ANALOG.Temperature',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 1,
+                ScreensaverEntityIconOn: 'thermometer',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Temperatur',
+                ScreensaverEntityUnitText: '°C',
+                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 35, 'val_best': 22}
+            },
+            // leftScreensaverEntity 2 (only Advanced Screensaver)
+            {
+                ScreensaverEntity: 'sonoff.0.DZG_DWSB20_2H.DZG_Leistung_Aktuell',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 0,
+                ScreensaverEntityIconOn: 'counter',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'L1-L3',
+                ScreensaverEntityUnitText: ' W',
+                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 5000}
+            },
+            // leftScreensaverEntity 3 (only Advanced Screensaver)
+        	{
+                ScreensaverEntity: '0_userdata.0.Abfallkalender.1.date',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 0,
+                ScreensaverEntityIconOn: 'trash-can',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Abfall',
+                ScreensaverEntityUnitText: '',
+                ScreensaverEntityIconColor: '0_userdata.0.Abfallkalender.1.color'
+            },
+        ],
+
+    bottomScreensaverEntity :  
+        [
+            // bottomScreensaverEntity 1
+            {
+                ScreensaverEntity: 'accuweather.0.Daily.Day1.Sunrise', //'accuweather.0.Hourly.h0.PrecipitationProbability',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 0,
+                ScreensaverEntityDateFormat: 'hh:mm',   // like DD.MM or DD.MM.YY or YYYY/MM/DD or hh:mm
+                ScreensaverEntityIconOn: 'weather-pouring',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Regen',
+                ScreensaverEntityUnitText: '%',
+                ScreensaverEntityIconColor: MSYellow //{'val_min': 0, 'val_max': 100}
+            },
+            // bottomScreensaverEntity 2
+            {
+                ScreensaverEntity: 'accuweather.0.Current.WindSpeed',
+                ScreensaverEntityFactor: (1000/3600),
+                ScreensaverEntityDecimalPlaces: 1,
+                ScreensaverEntityIconOn: 'weather-windy',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: "Wind",
+                ScreensaverEntityUnitText: 'm/s',
+                ScreensaverEntityIconColor: { 'val_min': 0, 'val_max': 120 }
+            },
+            // bottomScreensaverEntity 3
+            {
+                ScreensaverEntity: 'accuweather.0.Current.WindGust',
+                ScreensaverEntityFactor: (1000/3600),
+                ScreensaverEntityDecimalPlaces: 1,
+                ScreensaverEntityIconOn: 'weather-tornado',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Böen',
+                ScreensaverEntityUnitText: 'm/s',
+                ScreensaverEntityIconColor: { 'val_min': 0, 'val_max': 120 }
+            },
+            // bottomScreensaverEntity 4
+            {
+                ScreensaverEntity: '0_userdata.0.wetter.Windrichtung',
+                ScreensaverEntityFactor: 0,
+                ScreensaverEntityDecimalPlaces: 0,
+                ScreensaverEntityIconOn: 'windsock',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Windr.',
+                ScreensaverEntityUnitText: '°',
+                ScreensaverEntityIconColor: White
+            },
+            // bottomScreensaverEntity 5 (only Advanced Screensaver)
+            {
+                ScreensaverEntity: 'accuweather.0.Current.RelativeHumidity',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 1,
+                ScreensaverEntityIconOn: 'water-percent',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Feuchte',
+                ScreensaverEntityUnitText: '%',
+                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100, 'val_best': 65}
+            },
+            // bottomScreensaverEntity 6 (only Advanced Screensaver)
+            {
+                ScreensaverEntity: 'accuweather.0.Current.UVIndex',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 0,
+                ScreensaverEntityIconOn: 'solar-power',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'UV',
+                ScreensaverEntityUnitText: '',
+                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 9}
+            }
+        ],
+
+    indicatorScreensaverEntity:
+        [
+            // indicatorScreensaverEntity 1 (only Advanced Screensaver)
+            { 
+                ScreensaverEntity: '0_userdata.0.NSPanel.Indicators.Haus',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 0,
+                ScreensaverEntityIconOn: 'window-closed-variant',
+                ScreensaverEntityIconOff: 'window-open-variant',
+                ScreensaverEntityText: 'Fenster',
+                ScreensaverEntityUnitText: '%',
+                ScreensaverEntityIconColor: { 'val_min': 0, 'val_max': 1 }
+            },
+            // indicatorScreensaverEntity 2 (only Advanced Screensaver)
+            { 
+                ScreensaverEntity: 'alias.0.Haus.Erdgeschoss.Buero.Sensoren.Bewegung.ACTUAL',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 0,
+                ScreensaverEntityIconOn: 'motion-sensor',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Bewegung',
+                ScreensaverEntityUnitText: '',
+                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 1}
+            },
+            // indicatorScreensaverEntity 3 (only Advanced Screensaver)
+            { 
+                ScreensaverEntity: '0_userdata.0.NSPanel.Indicators.Garage',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 0,
+                ScreensaverEntityIconOn: 'garage-variant-lock',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Garage',
+                ScreensaverEntityUnitText: '',
+                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 1}
+            },
+            // indicatorScreensaverEntity 4 (only Advanced Screensaver)
+            { 
+                ScreensaverEntity: 'worx.0.202130267302000866BF.mower.state',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 0,
+                ScreensaverEntityIconOn: 'robot-mower-outline',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Mäher',
+                ScreensaverEntityUnitText: '%',
+                ScreensaverEntityIconColor: { 'val_min': 0, 'val_max': 1 }
+            },
+            // indicatorScreensaverEntity 5 (only Advanced Screensaver)
+            { 
+                ScreensaverEntity: '0_userdata.0.Wasserstand.KNOCK.Wert',
+                ScreensaverEntityFactor: 1,
+                ScreensaverEntityDecimalPlaces: 1,
+                ScreensaverEntityIconOn: 'waves-arrow-up',
+                ScreensaverEntityIconOff: null,
+                ScreensaverEntityText: 'Feuchte',
+                ScreensaverEntityUnitText: '%',
+                ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 985, 'val_best': 500}
+            }
+        ],
 ```  
 
 Der letzte Parameter **ScreensaverEntityIconColor** der first- fourthScreensaverEntity
