@@ -176,7 +176,7 @@ In Beispiel 2 wird statt des Relais, ein Fenstersensor (open = true/false) als I
 
 **Beispiel:**  
 ```
-export const config: Config = {
+export const config = <Config> {
     ...
     leftScreensaverEntity:
         [],
