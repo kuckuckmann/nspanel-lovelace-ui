@@ -118,7 +118,7 @@ var Sprechender_eindeutiger_Seitenname = <PageAlarm>
 
 **alexa2-Adapter**
 ```
-let Alexa = <PageMedia> = 
+let Alexa = <PageMedia> 
 {
     'type': 'cardMedia',
     'heading': 'Alexa',
