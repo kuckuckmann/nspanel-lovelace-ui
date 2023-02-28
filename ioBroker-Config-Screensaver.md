@@ -239,7 +239,7 @@ export const config = <Config> {
   
 **Beispiel:**  
 ```
-export const config: Config = {
+export const config = <Config> {
     ...
     leftScreensaverEntity:
         [
