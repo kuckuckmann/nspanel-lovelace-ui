@@ -60,7 +60,8 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 01.01.2023 - Tasmota Datenpunkte im ioBroker werden nicht gefüllt - Erstellt  
 01.01.2023 - Abweichende Uhrzeit - Erstellt  
 03.01.2023 - Homatic nonIP Thermostate mit der CardThermo - Erstellt  
-04.03.2023 - WLED Konfiguration - Erstellt   
+04.03.2023 - WLED Konfiguration - Erstellt  
+12.03.2023 - Anpassung Hardwarebutton Rule2  
 </details>  
 
 
@@ -81,24 +82,27 @@ Tasmota konsole:
 --> öffnen der Tasmota Konfigurationsoberfläche des Panels, dann auf Konsole und noch einmal auf Konsole  
 --> Rule definieren   
 
-  ```
-  Rule2 on Button1#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish %topic%/%prefix%/RESULT {"CustomRecv":"event,button2"} endon
-  ```
-  Dies ist die Rule für beide Buttons. Möchte man nur einen entkoppeln muss man "**on Button......**" bis zum nächsten "**...endon**" entfernen. **Button1 = der linke Button, Button2 = der rechte Button**.  
-  **Wichtig:** **%topic%**/**%prefix%**/RESULT gilt es dabei so anzupassen, dass der Struktur in Eurem MQTT Adapter entspricht:  
+**Beide Hardware-Buttons als Dialog - Die internen Relais werden dabei nicht geschaltet**  
+```
+Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon
+```  
 
-  mqtt.0.SmartHome.nspanel_7C14FC.tele.RESULT  
+**Rechter Button Dialog - Linker Button Schalter**  
+```
+Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon
+``` 
 
-  **%topic%** entspricht hier **nspanel_7C14FC** und **%prefix%**  entspricht **tele**  
+**Rechter Button Schalter - Linker Button Dialog**  
+```
+Rule2 on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon
+```  
 
-  --> Rule aktivieren: 
-  ```
-  Rule2 1
-  ```
-  --> Rule deaktivieren: 
-  ```
-  Rule2 0
-   ```
+Zum Anschalten der Rule  
+`Rule2` 1 oder `Rule2 On`  
+
+Zum Ausschalten der Rule  
+`Rule2` 0 oder `Rule2 Off`  
+
 
 * **Konfigurationsskript**:  
 **Bis Version 4.0.4:**  
