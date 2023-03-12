@@ -19,7 +19,7 @@ Rule1 on Button1#state do Publish %topic%/tele/RESULT {"CustomRecv":"event,butto
 Rule1 1
 ``` 
 
-#### 1.1.2    Rule2 - Favoriten Seiten
+#### 1.1.2    Rule2 - Button universell nutzen
 
 **Beide Hardware-Buttons als Dialog - Die internen Relais werden dabei nicht geschaltet**  
 `Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon`  
