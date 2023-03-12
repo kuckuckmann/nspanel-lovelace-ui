@@ -49,7 +49,7 @@ Der Modus **"set"** benötigt ebenfalls eine Zielentity im Feld **"entity"**, we
 Bsp: 
   ```
   button1: {
-      mode: 'toggle',                    // Mögliche Werte wenn Rule2 definiert: page, toggle, set - Wenn nicht definiert --> mode: null
+      mode: 'toggle',                    // Mögliche Werte wenn Rule2 definiert: 'page', 'toggle', 'set' - Wenn nicht definiert --> mode: null
       page: null,                        // Zielpage - Verwendet wenn mode = page (bisher button1Page)
       entity: '0_userdata.0.zielobjekt', // Zielentity - Verwendet wenn mode = set oder toggle
       setValue: null                     // Zielwert - Verwendet wenn mode = set
