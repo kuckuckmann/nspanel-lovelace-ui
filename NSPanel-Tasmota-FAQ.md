@@ -37,7 +37,26 @@ Zum Ausschalten der Rule
 `Rule2` 0 oder `Rule2 Off`  
 
 **Nutzung in ioBroker:**  
-Die Seiten können über die button1Page und/oder button2Page definiert werden (Hier im Beispiel eine Schnell-Auswahl an Radiosendern oder Playlists):  
+**Bis Version 4.0.4:**  
+Im Konfigurationsskript benötigt Ihr nun unter der **pages** Definition **buttonxPage**: (x=Nummer des Buttons).
+Entweder gebt Ihr hier nun den var/const Name eines bestehenden Grid mit, damit kann man einen Button quasi als Home-Button nutzen, oder man legt einen eigenen Grid auf den Button, welcher dann zuvor definiert werden muss. 
+ 
+**Ab Version 4.0.4.1:**  
+Im Konfigurationsskript benötigt man in der **Config** Definition die Objekte **button1/button2**.
+Der Button kann nun über die Eigenschaft **mode** mit drei verschiedenen Funktionen belegt werden. Der Modus **"page"** entspricht dem Verhalten in der Version 4.0.4 und früher. Der Button ruft dann die entsprechende Page oder SubPage auf welche hier angegeben wird.
+Im Modus **"toggle"** muss ein Boolean Entity im Feld **"entity"** angegeben werden. Der Button wird dann automatisch den aktuellen Zustand umkehren.
+Der Modus **"set"** benötigt ebenfalls eine Zielentity im Feld **"entity"**, welche dann immer beim drücken des Buttons auf den Wert aus dem Feld **"setValue"** gesetzt wird.  
+Bsp: 
+  ```
+  button1: {
+      mode: 'toggle',                    // Mögliche Werte wenn Rule2 definiert: page, toggle, set - Wenn nicht definiert --> mode: null
+      page: null,                        // Zielpage - Verwendet wenn mode = page (bisher button1Page)
+      entity: '0_userdata.0.zielobjekt', // Zielentity - Verwendet wenn mode = set oder toggle
+      setValue: null                     // Zielwert - Verwendet wenn mode = set
+  }
+  ```
+
+  
  
 ![image](https://user-images.githubusercontent.com/102996011/189394576-f470cba5-0fe6-4a46-97f6-0cd6c48a613b.png)
 
