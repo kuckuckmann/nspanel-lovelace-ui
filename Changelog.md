@@ -1,4 +1,47 @@
-ioBroker Changelog (TypeScript)
+# ioBroker Changelog (TypeScript)  
+
+# v4.0.3  
+
+![1677525629878-9b7597a5-3d3d-43d5-b0c7-a4d42d8eac7f-image](https://user-images.githubusercontent.com/101348966/224631987-e3808582-0de8-4baf-a548-5d595dd47b5f.png)  
+
+Änderungen in der Config  
+
+aus 
+
+`export const config: Config = {`
+
+wird  
+
+`export const config = <Config> {`
+
+
+und die **firstScreensaverEntity - fourthScreensaverentity** existieren nicht mehr. Erstatz dafür ist das Array **bottomScreensaverEntity**. Die ersten 4 bottomScreensaverEntity werden auch im Standard-Screensaver genutzt.  
+
+Des weiteren ist der Erweiterte Screensaver enthalten:  
+
+![1677526152660-837094a5-44e0-4c7c-9251-9e02dc80346c-image](https://user-images.githubusercontent.com/101348966/224631169-f4bb07c2-3d8a-4341-8f0d-8e5e5394abd7.png)  
+
+Zur Konfiguration des Screensavers bitte die Wiki berücksichtigen:
+[Screensaver Wiki](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver#entity-status-icons-ab-v400)   
+
+Für alle User mit kleinen Hackern zuhause gibt es jetzt die cardUnlock:  
+![1677526345821-df037f8b-91cd-418e-aeac-6a54e4e16915-image](https://user-images.githubusercontent.com/101348966/224632179-f73b2526-df53-4f52-b71b-be155b874bf8.png)  
+Siehe auch: [CradUnlock Wiki](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Card-Definitionen-(Seiten)#cardunlock-ab-v400)  
+  
+Ansonsen gab es diverse Erweiterungen und Minor-Bugfixes:  
+* Eine überarbeitete und erweiterte **Squeezebox** und diverse Optimierungen von [@bembelstemmer](https://forum.iobroker.net/uid/55112)  
+* Ein Mode - Fix für die cardThermo und dynamische Icons im Advanced Screensaver von [@Gargano](https://forum.iobroker.net/uid/2916)  
+  
+**Kurze Upgrade Empfehlung:**  
+* TypeScript anlegen und die Version https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs_without_Examples.ts hinein kopieren  
+* altes Script deaktivieren (Fallback)  
+* Konfiguration anhand der Variablen aus dem anderen Script übernehmen (Achtung Config hat einen veränderten Aufbau und kann nicht 1:1 übernommen werden, siehe oben!)  
+* Erweiterungen für Advanced Screensaver aus Wiki oder NSPanel.ts (Script mit Beispielen) migrieren  
+* FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v4.0.3.tft in der Tasmota Console ausführen  
+  
+**Hinweis**  
+Es erforderlich sein kann, die vom TS-Script automatisch angelegten 0_userdata.0.NSPanel.X Verzeichnisse und Auto-Aliase zu löschen und neu anlegen zu lassen.
+
 
 # v3.9.0  
 
