@@ -1,4 +1,4 @@
-# ioBroker Changelog (TypeScript)  
+**ioBroker Changelog (TypeScript)**  
 
 # v4.0.3  
 
