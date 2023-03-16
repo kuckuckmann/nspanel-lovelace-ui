@@ -481,3 +481,7 @@ Wenn die 4 Entity Icons sichtbar sein sollen (Timer für Wechsel deaktiviert)
 * null = automatischer Dimmode aktiv  
 * 0-100 = manuelle Dimmstufe (automatischer Dimmode inaktiv)  
 
+## bestimme Seite nach den Aufwecken  
+unter 0_userdata.0.NSPanel.ScreensaverInfo.bExitPage könnt ihr eine Seite festlegen die nach dem tippen auf das Panel geöffnet werden soll.  
+Der Wert 'null' öffnet wieder die letzte offene Seite. Wenn ihr eine Bestimmte Seite öffnen wollt müsst ihr den Index der Seite eingeben ( Beginn bei 0). Diesen bekommt ihr aus der Pageauflistung in der Config raus.
+
