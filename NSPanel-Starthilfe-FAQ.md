@@ -9,6 +9,14 @@ folgende Zeilen im Script müssen definitiv angepasst werden:
 `panelRecvTopic: 'mqtt.0.SmartHome.NSPanel_1.tele.RESULT',       // Bitte anpassen`  
 `panelSendTopic: 'mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend',   // Bitte anpassen`  
 
+Für User die den Wetter - Adapter "DasWetter.0." nutzen, müssen im in der Config im Bereich  
+`bottomScreensaverEntity :  
+        [
+            // bottomScreensaverEntity 1
+            {
+                ScreensaverEntity: 'accuweather.0.Daily.Day1.Sunrise',`  
+alle 4 Datenpunkte auf den Adapter umstellen.  
+  
 
 Seht in den [Changelogs](https://github.com/joBr99/nspanel-lovelace-ui/wiki/Changelog) nach, ob es Änderungen im Config-Teil gegeben hat, ggf. müsst ihr eure Pages oder sonstigen Einstellungen anpassen. Prüft, ob das neue Script eine andere TFT-Firmware benötig bzw. einen anderen Berry-Treiber. Diese Info findet ihr in der zweiten Zeile des Scripts.  
  
@@ -18,7 +26,8 @@ Beim Start des neuen Script kann es eventuell zu Warnungen im Log kommen, wenn n
 
 Eine neue TFT-Firmware installiert ihr über die Console in Tasmota  
 `FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-vX.X.X.tft `  
-  
+Welche Version grade aktuell zum Script passt, findet ihr im Script.  
+   
 ## "Waiting for Content" - es geht nicht weiter  
 ## Berry-Driver nicht oder falsch installiert
 
