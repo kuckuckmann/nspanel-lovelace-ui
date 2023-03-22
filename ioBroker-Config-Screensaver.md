@@ -134,7 +134,7 @@ export const config: Config = {
 ```
 
 **4. Beliebig im Mix der 3 Varianten**   
-> ScreensaverEntityIcon kann für alle 4 Varianten frei gewählt werden: siehe https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html
+> ScreensaverEntityIcon kann für alle 3 Varianten frei gewählt werden: siehe https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html
 ---
 
 ## Erweiterung der Relay/Status Icons (ab v3.9.0)  
