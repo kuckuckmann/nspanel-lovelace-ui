@@ -1,6 +1,6 @@
 > **Seite befindet sich noch im Aufbau  
 > Sollte aktuell ein Alias nicht vollständig beschrieben werden, dann gerne eine Frage am Ende des nachfolgenden Thread stellen:**
-> https://forum.iobroker.net/topic/50888/sonoff-nspanel
+> https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui
 
 # Einleitung: 
 
