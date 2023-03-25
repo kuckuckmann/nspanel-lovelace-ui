@@ -492,6 +492,8 @@ Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 > Der Alias RGB-Licht wird verwendet, wenn als **Color Datenpunkt (RGB) im Hexadezimal-Format (z.B. #7dff7e)** vorliegt.
 
 Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ **RGB-Licht** an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
+Der Datenpunkt **TEMPERATURE** ist nicht mehr zwingen erforderlich ab Version 4.0.4.5  
+
 ![image](https://user-images.githubusercontent.com/102996011/191098059-280232ca-5d69-432e-a32d-f85984ce68f7.png)  
 > Für das Beispiel standen leider keine echten Adapter-Datenpunkte zur Verfügung, daher die Darstellung in 0_userdata.0...
 
