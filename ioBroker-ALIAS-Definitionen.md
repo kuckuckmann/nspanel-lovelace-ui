@@ -8,6 +8,7 @@
 **Welche Hilfsmittel werden zur Erstellung eines Alias benötigt?:**  
 
 Der "Geräte verwalten"-Adapter für die meisten Alias-Typen:  
+**Achtung zur Zeit ist die Version 1.1.2 fehlerhaft, bitte bei 1.1.1 bleiben**  
 ![image](https://user-images.githubusercontent.com/102996011/189475521-07d78146-e49d-406a-95bc-804b3302caa2.png)
 
 Der "Alias-Manager"-Adapter für spezielle Alias-Typen, wie dem Alias "Media":  
