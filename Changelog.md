@@ -1,5 +1,21 @@
 **ioBroker Changelog (TypeScript)**  
 
+# v4.0.5.1 
+  
+![228012141-a440d45b-d9ab-422d-8c61-68a4c8826914](https://user-images.githubusercontent.com/101348966/228247263-426bcd08-f65a-48f1-aac9-2a87c6f5f308.png)
+
+[Erweiterte Konfigurationsmöglichkeiten der Hardwaretasten](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#anleitungen) - von bembelstemmer  
+Fix iconColor by 100% Brightness  
+Fix Funktion GeneratePowerPage inkl. DemoModus [Powercard](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Card-Definitionen-(Seiten)#cardpower-ab-ts-script-v341) (einfach leeres pageItem übergeben)  
+Fix colorTempSlider Arbeitsweise(seitenverkehrt) korrigiert  
+Debug - Error - Log - Meldungen angepasst   
+  
+Eine Licht von Typ **rgbSingle** benötigt nicht mehr den Datenpunkt **.TEMPERATURE** im Alias.  
+
+Upgrade TFT 50 / 4.0.5  
+Die [Status Icon](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver#erweiterung-der-relaystatus-icons-ab-v390) über den Hardware
+
+
 # v4.0.3  
 
 ![1677525629878-9b7597a5-3d3d-43d5-b0c7-a4d42d8eac7f-image](https://user-images.githubusercontent.com/101348966/224631987-e3808582-0de8-4baf-a548-5d595dd47b5f.png)  
