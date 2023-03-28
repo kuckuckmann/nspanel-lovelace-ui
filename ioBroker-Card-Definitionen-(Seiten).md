@@ -299,6 +299,7 @@ var CardPowerExample = <PagePower>
     "subPage": false,
     "parent": undefined,
     "items": [
+//        <PageItem>{  }, //Demomode
         <PageItem>{ id: "alias.0.NSPanel_1.Power.PowerCard" },
     ]
 };
