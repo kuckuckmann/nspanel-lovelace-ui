@@ -163,7 +163,7 @@ In Beispiel 2 wird statt des Relais, ein Fenstersensor (open = true/false) als I
 
 **Erweiterung ab Version 4.0.5**  
 es besteht jetzt die Möglichkeit bis zu 10 Zeichen zu visualisieren und auch die Steuerung der Visualisierung hat sich erweitert.  
-Die 10 Zeichen werden über `ScreensaverEntityValue` übergeben. Wenn der Datenpunkt von `ScreensaverEntity` vom Typ _**String**_ ist, dann besteht die Möglichkeit mit einem "Leerstring" den Zustand _OFF_ und mit "Text" den Zustand _ON_ zu erzeugen. Dadurch wird das entsprechende **ICON** für ON und OFF gesetzt, wenn es definiert ist. Zusätzlich kann man mit dem Text "ON" die Farbe der Visualisierung von `ScreensaverEntityOffColor` auf `ScreensaverEntityOnColor` wechseln.  
+Die 10 Zeichen werden über `ScreensaverEntityValue` übergeben. Wenn der Datenpunkt von `ScreensaverEntity` vom Typ _**String**_ ist, dann besteht die Möglichkeit mit einem "Leerstring" den Zustand _OFF_ und mit "Text" den Zustand _ON_ zu erzeugen. Dadurch wird das entsprechende **ICON** für ON oder OFF gesetzt, wenn sie definiert sind. Zusätzlich kann man mit dem Text "ON" die Farbe der Visualisierung von `ScreensaverEntityOffColor` auf `ScreensaverEntityOnColor` wechseln.  
 `ScreensaverEntityValue` und `ScreensaverEntity` müssen nicht der selbe Datenpunkt sein.  
   
 Des Weiteren gibt es noch die Variante `ScreensaverEntity` vom Typ _**boolean**_ (True/False). Es ist auch möglich `ScreensaverEntity` auf null zu setzen, dann wird nur `ScreensaverEntityValue` ausgewertet. Wenn `ScreensaverEntityOnColor` und `ScreensaverEntityIconOn` definiert sind, werden diese angezeigt.
