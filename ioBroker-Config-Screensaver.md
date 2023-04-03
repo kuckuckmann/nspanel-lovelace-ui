@@ -440,6 +440,21 @@ ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100, 'val_best': 65}
 //Berechnung einer Farbe über über Skala mit Idealwert
 ```  
 z.B. für Luftfeuchte: Der Idealwert liegt zwischen 0 und 100 hier im Beispiel bei 65% (also grün). Die Abschwächung geht zu beiden Seiten (65 zu 0) und (65 zu 100) über gelb nach rot.  
+    
+```
+//Dynamische Indikatoren (Abstufung grün nach gelb nach rot)
+const colorScale0:      RGB = { red:  99, green: 190, blue: 123 };
+const colorScale1:      RGB = { red: 129, green: 199, blue: 126 };
+const colorScale2:      RGB = { red: 161, green: 208, blue: 127 };
+const colorScale3:      RGB = { red: 129, green: 217, blue: 126 };
+const colorScale4:      RGB = { red: 222, green: 226, blue: 131 };
+const colorScale5:      RGB = { red: 254, green: 235, blue: 132 };
+const colorScale6:      RGB = { red: 255, green: 210, blue: 129 };
+const colorScale7:      RGB = { red: 251, green: 185, blue: 124 };
+const colorScale8:      RGB = { red: 251, green: 158, blue: 117 };
+const colorScale9:      RGB = { red: 248, green: 131, blue: 111 };
+const colorScale10:     RGB = { red: 248, green: 105, blue: 107 };
+``` 
   
 Für Alias-Punkte vom Type boolean, wählt man mit val_best ob Rot oder Grün bei True kommen soll.
 ```
