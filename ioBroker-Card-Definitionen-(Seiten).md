@@ -368,7 +368,8 @@ Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**),
   }
 ]
 ```  
-
+_iconColor_ kann einen Wert von 0-10 annehmen und entspricht der ColorScale Grün -> Gelb -> Rot  
+_speed_ kann positive und negative Werte annehmen, wobei positive Werte den Punkt vom Haus weggehen lassen und negative Werte zum Haus  
 **cardPower Emulator (Blockly)**  
 
 [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/CardPower_Emulator_Skript.xml) 
