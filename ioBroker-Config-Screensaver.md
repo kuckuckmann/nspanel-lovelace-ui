@@ -109,8 +109,6 @@ Die Dargestellten Wetter-Icons (groß und klein) werden im NSPanel TS-Script erm
 
 **1. Die Icons visualisieren den Relais-Zustand der Hardware-Buttons:**  
 ```
-export const config: Config = {
-    ...
     mrIcon1ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER1', ScreensaverEntityIcon: 'light-switch', ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
     mrIcon2ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER2', ScreensaverEntityIcon: 'lightbulb', ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
 ```
@@ -118,8 +116,6 @@ Die mqtt.0. Datenpunkte entsprechend deiner mqtt-Komfiguration anpassen
   
 **2. Die Icons sind nicht sichtbar:**  
 ```
-export const config: Config = {
-    ...
     mrIcon1ScreensaverEntity: { ScreensaverEntity: null, ScreensaverEntityIcon: null, ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
     mrIcon2ScreensaverEntity: { ScreensaverEntity: null, ScreensaverEntityIcon: null, ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
 ```
@@ -127,8 +123,6 @@ export const config: Config = {
 
 **3. Die Icons werden mit anderen Datenpunkten vom Typ "boolean" (true/false) belegt:**  
 ```
-export const config: Config = {
-    ...
     mrIcon1ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN1", ScreensaverEntityIcon: "light-switch", ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
     mrIcon2ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN2", ScreensaverEntityIcon: "lightbulb", ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
 ```
@@ -142,8 +136,8 @@ export const config: Config = {
 ![image](https://user-images.githubusercontent.com/102996011/215198305-3c1d7b6d-18bc-481c-86ed-c30eabb46f23.png)  
 
 Ab v3.9.0 ist es möglich auch Werte (z.B. Temoperatur-Sensor) in den Status-Icons anzuzeigen Nachfolgende Beispiele zeigen:
-1. eine Einstellung zur Nutzung der Relais
-2. eine Einstellung zur Nutzung individueller Datenpunkte mit Nachkommastelle und Einheit des Wertes
+1. Icon (mrIcon1ScreensaverEntity) eine Einstellung zur Nutzung der Relais
+2. Icon (mrIcon2ScreensaverEntity) eine Einstellung zur Nutzung individueller Datenpunkte mit Nachkommastelle und Einheit des Wertes
 
 ```  
     // Indikator Icons im oberen Teil des Screensavers
@@ -166,6 +160,13 @@ Ab v3.9.0 ist es möglich auch Werte (z.B. Temoperatur-Sensor) in den Status-Ico
                                 ScreensaverEntityOffColor: Yellow },
 ```  
 In Beispiel 2 wird statt des Relais, ein Fenstersensor (open = true/false) als Indikator verwendet. Der Wert kann über `ScreensaverEntityValue` eingeblendet werden. Darüber hinaus ist es möglich, die Nachkommastelle mit `ScreensaverEntityValueDecimalPlace` anzugeben und eine Einheit des Wertes mit `ScreensaverEntityValueUnit` zu visualisieren.  
+
+**Erweiterung ab Version 4.0.5**  
+es besteht jetzt die Möglichkeit bis zu 10 Zeichen zu visualisieren und auch die Steuerung der Visualisierung hat sich erweitert.  
+Die 10 Zeichen werden über `ScreensaverEntityValue` übergeben. Wenn der Datenpunkt von `ScreensaverEntity` vom Typ _**String**_ ist, dann besteht die Möglichkeit mit einem "Leerstring" den Zustand _OFF_ und mit "Text" den Zustand _ON_ zu erzeugen. Dadurch wird das entsprechende **ICON** für ON und OFF gesetzt, wenn es definiert ist. Zusätzlich kann man mit dem Text "ON" die Farbe der Visualisierung von `ScreensaverEntityOffColor` auf `ScreensaverEntityOnColor` wechseln.  
+`ScreensaverEntityValue` und `ScreensaverEntity` müssen nicht der selbe Datenpunkt sein.  
+  
+Des Weiteren gibt es noch die Variante `ScreensaverEntity` vom Typ _**boolean**_ (True/False). Es ist auch möglich `ScreensaverEntity` auf null zu setzen, dann wird nur `ScreensaverEntityValue` ausgewertet. Wenn `ScreensaverEntityOnColor` und `ScreensaverEntityIconOn` definiert sind, werden diese angezeigt.
 
 
 ## Entity-Status Icons (ab v4.0.0) 
