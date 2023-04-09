@@ -1019,7 +1019,7 @@ WLED bietet eine Vielzahl an Konfigurations- und Einstellungsmöglichkeiten. Vie
     
 ***
   
-## **22. Fahrplananzeiger**  
+## **22.) Fahrplananzeiger**  
   
 * **Beschreibung:**  
 Der Fahrplananzeiger kann 4 aktuelle Abfahrten vom Adapter Fahrplan (Abfahrtstafel) anzeigen. Angezeigt wird das Icon je nach Fahrzeugtyp, das Ziel und die Abfahrtzeit. Zusätzlich kann eine PopupNotifypage bei Verspätung aktiviert werden.  
@@ -1048,5 +1048,5 @@ let FahrplanEntities = <PageEntities>
     ]  
 };
 ```
-
+  
 ***  
