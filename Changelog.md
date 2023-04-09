@@ -1,5 +1,9 @@
 **ioBroker Changelog (TypeScript)**  
 
+# v4.0.5.5  
+  
+Die Funktion CreateEntity wurde erweitert um die Rolle "timeTable", damit besteht die Möglichkeit Daten vom [Adapter "Fahrplan"](https://github.com/gaudes/ioBroker.fahrplan) zu visualisieren. Zusätzlich wird dieses [externe Script](https://github.com/tt-tom17/MyScripts/tree/main/Sonoff_NSPanel) benötigt. Weitere Infos hier.
+
 # v4.0.5.1 
   
 ![228012141-a440d45b-d9ab-422d-8c61-68a4c8826914](https://user-images.githubusercontent.com/101348966/228247263-426bcd08-f65a-48f1-aac9-2a87c6f5f308.png)
