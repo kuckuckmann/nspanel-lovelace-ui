@@ -1032,7 +1032,7 @@ Der Fahrplananzeiger kann 4 aktuelle Abfahrten vom Adapter Fahrplan (Abfahrtstaf
 Werden durch das externe Script angelegt.  
   
 * **PageConfig:**  
-`
+```
 let FahrplanEntities = <PageEntities>  
 {  
     'type': 'cardEntities',  
@@ -1047,6 +1047,6 @@ let FahrplanEntities = <PageEntities>
         <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt5'}  
     ]  
 };
-`
+```
 
 ***  
