@@ -25,6 +25,8 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **19.)** Abweichende Uhrzeit  
 **20.)** Homatic nonIP Thermostate mit der CardThermo  
 **21.)** WLED  
+**22.)** Fahrplananzeiger  
+
   
 # **Changelog**
 <details>
@@ -62,6 +64,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 03.01.2023 - Homatic nonIP Thermostate mit der CardThermo - Erstellt  
 04.03.2023 - WLED Konfiguration - Erstellt  
 12.03.2023 - Anpassung Hardwarebutton Rule2  
+09.04.2023 - Fahrplananzeiger  
 </details>  
 
 
@@ -1016,5 +1019,34 @@ WLED bietet eine Vielzahl an Konfigurations- und Einstellungsmöglichkeiten. Vie
     
 ***
   
+## **22. Fahrplananzeiger**  
   
+* **Beschreibung:**  
+Der Fahrplananzeiger kann 4 aktuelle Abfahrten vom Adapter Fahrplan (Abfahrtstafel) anzeigen. Angezeigt wird das Icon je nach Fahrzeugtyp, das Ziel und die Abfahrtzeit. Zusätzlich kann eine PopupNotifypage bei Verspätung aktiviert werden.  
+  
+* **Voraussetzungen:**  
+ * Fahrplan Adapter
+ * externe TS-Script von [tt-tom17/myScript](https://github.com/tt-tom17/MyScripts/tree/main/Sonoff_NSPanel)
+  
+* **Datenpunkte:**  
+Werden durch das externe Script angelegt.  
+  
+* **PageConfig:**  
+`
+let FahrplanEntities = <PageEntities>  
+{  
+    'type': 'cardEntities',  
+    'heading': 'Zepernick',  
+    'useColor': true,  
+    'items': [  
+        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt0'},  
+        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt1'},  
+        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt2'},  
+        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt3'},  
+        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt4'},  
+        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt5'}  
+    ]  
+};
+`
 
+***  
