@@ -1025,8 +1025,8 @@ WLED bietet eine Vielzahl an Konfigurations- und Einstellungsmöglichkeiten. Vie
 Der Fahrplananzeiger kann 4 aktuelle Abfahrten vom Adapter Fahrplan (Abfahrtstafel) anzeigen. Angezeigt wird das Icon je nach Fahrzeugtyp, das Ziel und die Abfahrtzeit. Zusätzlich kann eine PopupNotifypage bei Verspätung aktiviert werden.  
   
 * **Voraussetzungen:**  
-* Fahrplan Adapter
-* externe TS-Script von [tt-tom17/myScript](https://github.com/tt-tom17/MyScripts/tree/main/Sonoff_NSPanel)
+  * Fahrplan Adapter
+  * externe TS-Script von [tt-tom17/myScript](https://github.com/tt-tom17/MyScripts/tree/main/Sonoff_NSPanel)
   
 * **Datenpunkte:**  
 Werden durch das externe Script angelegt.  
@@ -1036,15 +1036,15 @@ Werden durch das externe Script angelegt.
 let FahrplanEntities = <PageEntities>  
 {  
     'type': 'cardEntities',  
-    'heading': 'Zepernick',  
+    'heading': 'Haltestelle',  
     'useColor': true,  
     'items': [  
-        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt0'},  
-        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt1'},  
-        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt2'},  
-        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt3'},  
-        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt4'},  
-        <PageItem>{ id: AliasAllgPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt5'}  
+        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt0'},  
+        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt1'},  
+        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt2'},  
+        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt3'},  
+        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt4'},  
+        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt5'}  
     ]  
 };
 ```
