@@ -1025,8 +1025,8 @@ WLED bietet eine Vielzahl an Konfigurations- und Einstellungsmöglichkeiten. Vie
 Der Fahrplananzeiger kann 4 aktuelle Abfahrten vom Adapter Fahrplan (Abfahrtstafel) anzeigen. Angezeigt wird das Icon je nach Fahrzeugtyp, das Ziel und die Abfahrtzeit. Zusätzlich kann eine PopupNotifypage bei Verspätung aktiviert werden.  
   
 * **Voraussetzungen:**  
- * Fahrplan Adapter
- * externe TS-Script von [tt-tom17/myScript](https://github.com/tt-tom17/MyScripts/tree/main/Sonoff_NSPanel)
+* Fahrplan Adapter
+* externe TS-Script von [tt-tom17/myScript](https://github.com/tt-tom17/MyScripts/tree/main/Sonoff_NSPanel)
   
 * **Datenpunkte:**  
 Werden durch das externe Script angelegt.  
