@@ -2,7 +2,7 @@
 
 # v4.0.5.5  
   
-Die Funktion CreateEntity wurde erweitert um die Rolle "timeTable", damit besteht die Möglichkeit Daten vom [Adapter "Fahrplan"](https://github.com/gaudes/ioBroker.fahrplan) zu visualisieren. Zusätzlich wird dieses [externe Script](https://github.com/tt-tom17/MyScripts/tree/main/Sonoff_NSPanel) benötigt. Weitere Infos hier.
+Die Funktion CreateEntity wurde erweitert um die Rolle "timeTable", damit besteht die Möglichkeit Daten vom [Adapter "Fahrplan"](https://github.com/gaudes/ioBroker.fahrplan) zu visualisieren. Zusätzlich wird dieses [externe Script](https://github.com/tt-tom17/MyScripts/tree/main/Sonoff_NSPanel) benötigt. Weitere Infos [hier](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#22-fahrplananzeiger).
 
 # v4.0.5.1 
   
