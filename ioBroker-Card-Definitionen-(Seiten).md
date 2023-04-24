@@ -77,7 +77,7 @@ let Unlock_Service = <PageUnlock>
 (Erstellung des alias.0.Alarm siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
 ```
-var Sprechender_eindeutiger_Seitenname = <PageAlarm>
+let Sprechender_eindeutiger_Seitenname = <PageAlarm>
 {
     "type": "cardAlarm",
     "heading": "Deine Überschrift",
