@@ -145,9 +145,9 @@ Konfigurationsskript **NsPanelTs.ts** mindestens in der Version: _04.09.2022 - V
 * **Im IoBroker**  
 Im IoBroker wird unter **0_userdata.0.NSPanel.Alarm** die Datenpunkte **AlarmPin**, **AlarmState**, **AlarmType**, **PANEL** und **PIN_Failed** benötigt. Diese werden i.d.R. generisch erzeugt (Typ String), sobald der Code der Alarm Page das erste Mal geladen wird.
 
-  ![image](https://user-images.githubusercontent.com/99131208/188733210-7bb901dd-0246-4c3b-b5b9-5d02deb6a00c.png)  
-  
-  **Wichtig**: Mit der Version v3.3.1 hat sich der Default-Pfad von der Ebene **0_userdata.0.NSPanel.1.Alarm** nach **0_userdata.0.NSPanel.Alarm** geändert. Da wir im Alarmverhalten / Informations-Popup unterscheiden wollen zwischen Meldung an alle NSPanel oder nur an ein speziefisches, ist es logisch den Alarm Ordner aus dem Ordner des NSPanel Nr. 1 auf die nächst höhere globalere Ebene darüber zu verschieben.
+   
+![Bildschirmfoto 2023-04-25 um 10 06 27](https://user-images.githubusercontent.com/101348966/234214452-6278a583-a954-49b6-93f1-c32172f4d6b0.png)
+
 
   Bei Aktivierung oder Deaktivierung der Alarmanlage wechselt der Status in **arming** oder **pending**. Im Falle einer PIN Falscheingabe gibt es nun auch **triggered**. Da die Verarbeitung der Alarmlogik außerhalb des Skriptes stattfindet, müssen die Datenpunkte auch entsprechend durch das externe Skript weiter getaktet werden
 
@@ -161,7 +161,8 @@ Die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** werden in ei
   ACTUAL = 0_userdata.0.NSXXXX.Alarm.AlarmState  
   PIN = 0_userdata.0.NSXXXX.Alarm.PIN  
   TYPE = 0_userdata.0.NSXXXX.Alarm.AlarmType  
-
+  PANEL = 0_userdata.0.NSXXXX.Alarm.PANEL  
+  
   Falls ein Wert im Alias nicht vorhanden ist, dann separat hinzufügen
 
 * **Konfigurationsskript**  
