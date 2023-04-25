@@ -146,8 +146,7 @@ Konfigurationsskript **NsPanelTs.ts** mindestens in der Version: _04.09.2022 - V
 Im IoBroker wird unter **0_userdata.0.NSPanel.Alarm** die Datenpunkte **AlarmPin**, **AlarmState**, **AlarmType**, **PANEL** und **PIN_Failed** benötigt. Diese werden i.d.R. generisch erzeugt (Typ String), sobald der Code der Alarm Page das erste Mal geladen wird.
 
    
-![Bildschirmfoto 2023-04-25 um 10 06 27](https://user-images.githubusercontent.com/101348966/234214452-6278a583-a954-49b6-93f1-c32172f4d6b0.png)
-
+![Bildschirmfoto 2023-04-25 um 10 11 30](https://user-images.githubusercontent.com/101348966/234215552-92739704-bf84-4792-bccb-f130ec111fd4.png)
 
   Bei Aktivierung oder Deaktivierung der Alarmanlage wechselt der Status in **arming** oder **pending**. Im Falle einer PIN Falscheingabe gibt es nun auch **triggered**. Da die Verarbeitung der Alarmlogik außerhalb des Skriptes stattfindet, müssen die Datenpunkte auch entsprechend durch das externe Skript weiter getaktet werden
 
