@@ -77,17 +77,16 @@ let Unlock_Service = <PageUnlock>
 (Erstellung des alias.0.Alarm siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
 ```
-let Sprechender_eindeutiger_Seitenname = <PageAlarm>
-{
-    "type": "cardAlarm",
-    "heading": "Deine Überschrift",
-    "useColor": true,
-    "subPage": false,
-    "parent": undefined,
-    "items": [
-        <PageItem>{ id: alias.0.Alarm}
-    ]
-};
+let Alarmseite = <PageAlarm>
+    {
+        "type": "cardAlarm",
+        "heading": "Alarm",
+        "useColor": true,
+        "subPage": false,
+        "items": [
+            <PageItem>{ id: 'alias.0.NSPanel.Alarm' }
+        ]
+    };
 ```
 # cardMedia v2.0 (ab Release v3.9.0)
 ![image](https://user-images.githubusercontent.com/102996011/209344233-c7d700c4-eb87-4c51-9441-b51368c88096.png)
