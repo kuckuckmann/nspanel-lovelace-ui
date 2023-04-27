@@ -177,15 +177,14 @@ const NSPanel_Alarm_Path = '0_userdata.0.NSPanel.';
 
 **Beispiel**:  
   ```
-  let Sprechender_eindeutiger_Seitenname = <PageAlarm>
+  let Alarmseite = <PageAlarm>
     {
-    "type": "cardAlarm",
-    "heading": "Deine Überschrift",
-    "useColor": true,
-    "subPage": false,
-    "parent": undefined,
-    "items": [
-        <PageItem>{ id: alias.0.Alarm}
+        "type": "cardAlarm",
+        "heading": "Alarm",
+        "useColor": true,
+        "subPage": false,
+        "items": [
+            <PageItem>{ id: 'alias.0.NSPanel.Alarm' }
         ]
     };
   ``` 
