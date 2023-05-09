@@ -266,6 +266,9 @@ Definieren der Basiseinstellungen in der gleichnamigen Funktion:
 
 [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/Alarm_Page_Erweitertes_Skript_mit_PopupNotifyPage.xml)
 
+**Hinweis Verknüpfung mit Alarm - Adapter**:  
+es gibt im Forum ein [Post](https://forum.iobroker.net/post/987357) @danny_v1, wo ein Blockly vorgestellt wird, welches eine Verbindung zum Alarm-Adapter herstellt. 
+
 ***
 
 ## **3.) Info Screensaver-Info auf Request**  
