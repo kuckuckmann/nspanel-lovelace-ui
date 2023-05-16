@@ -296,7 +296,9 @@ Das Skript füttert die beiden Datenpunkte für die NotifyPopupPage im ordner **
   **Wichtig:**  
   Die Info wird nur angezeigt, wenn der Screensaver wieder aktiv ist. Deshalb muss das erste Timeout im Skript etwas größer sein als **timeoutScreensaver** im Konfigurationsskript.  
 
-  ![image](https://user-images.githubusercontent.com/99131208/188515089-64d9a284-65bf-4561-91bf-47ecc215f2d9.png) 
+   
+  ![Bildschirmfoto 2023-05-16 um 21 40 06](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/d32f11d3-dcca-4433-a957-d899a2ca0cad)
+
 
   [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/Screensaver-Info_auf_Request.xml)
 
