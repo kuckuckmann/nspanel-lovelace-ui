@@ -688,4 +688,17 @@ Um diese Temperatur mit den Sensordaten zu übertragen ist jetzt eine zusätzlic
 
 ***  
 
+## 3. Tasmota Update Probleme
 
+### 3.1. Fehler -> Updatedatei größer als Speicherplatz  
+  
+Wenn Tasmota in einer Version installiert wurde, bevor es im Tasmota "Safeboot" gab, dann haben die Devices zwei gleich große Partitionen (keine kleinere Safeboot). In diesem Fall kann die Partition mit dem Partition Wizard Tool korrigiert werden.  
+  
+Vorher  
+![Speicher ESP32 vorher](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/47cd1923-a0a5-4795-b287-b6cd3839e2b5)  
+  
+Nachher  
+![Speicher ESP32 danach](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/bca6254c-b240-4d01-9d0b-3b2e0fa5e58f)  
+  
+Auf der [Tasmota Seite](https://tasmota.github.io/docs/Tasmota-Application/#partition-management) ist eine Kurzbeschreibung und ihr könnt dort den Wizards downloaden. 
+Direkt Link zum Download [Partition Wizard Tool](https://raw.githubusercontent.com/arendst/Tasmota/development/tasmota/berry/modules/Partition_Wizard.tapp)
