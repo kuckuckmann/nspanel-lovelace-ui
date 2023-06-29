@@ -700,5 +700,5 @@ Vorher
 Nachher  
 ![Speicher ESP32 danach](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/bca6254c-b240-4d01-9d0b-3b2e0fa5e58f)  
   
-Auf der [Tasmota Seite](https://tasmota.github.io/docs/Tasmota-Application/#partition-management) ist eine Kurzbeschreibung und ihr könnt dort den Wizards downloaden. 
+Auf der [Tasmota Seite](https://tasmota.github.io/docs/Tasmota-Application/#partition-management) ist eine Kurzbeschreibung und ihr könnt dort den Wizards downloaden.  
 Direkt Link zum Download [Partition Wizard Tool](https://raw.githubusercontent.com/arendst/Tasmota/development/tasmota/berry/modules/Partition_Wizard.tapp)
