@@ -694,7 +694,7 @@ Um diese Temperatur mit den Sensordaten zu übertragen ist jetzt eine zusätzlic
 
 Wenn Tasmota in einer Version installiert wurde, bevor es im Tasmota "Safeboot" gab, dann haben die Devices zwei gleich große Partitionen (keine kleinere Safeboot). In diesem Fall kann die Partition mit dem Partition Wizard Tool korrigiert werden und es ist keine Neuinstallation erforderlich
 
-> **Warum tritt dieser Fehler auf: **
+> **Warum tritt dieser Fehler auf: **  
 > Mit Tasmota 13.0 ist die Unterstützung für Matter nun standardmäßig enthalten, was bedeutet, dass die Tasmota-Binärdateien nun die Größe der beiden gleich großen Partitionen vor dem Safeboot-Partitionierungsschema überschreiten. Daher muss zunächst das Setup auf das Safeboot-Layout aktualisieren werden.
   
 Vorher  
