@@ -22,13 +22,19 @@ Rule1 1
 #### 1.1.2    Rule2 - Button universell nutzen
 
 **Beide Hardware-Buttons als Dialog - Die internen Relais werden dabei nicht geschaltet**  
-`Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon`  
+```
+Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon
+```  
 
 **Rechter Button Dialog - Linker Button Schalter**  
-`Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon`  
+```
+Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon
+```  
 
 **Rechter Button Schalter - Linker Button Dialog**  
-`Rule2 on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon`  
+```
+Rule2 on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon
+```  
 
 Zum Anschalten der Rule  
 `Rule2` 1 oder `Rule2 On`  
