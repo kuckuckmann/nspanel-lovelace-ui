@@ -163,27 +163,25 @@ einsehen und später (kommen wir bei der Alias-Erstellung noch zu) auch jedes Ic
 
 ## **9.)  „NSPanelTs.ts“ anlegen**
 Unter dem regulären Vezeichnisbaum „common“ im ioBroker-Menüpunkt Skripte erzeugst du (gerne auch in weiteren Unterverzeichnissen) ein weiteres TypeScript mit dem Inhalt:  
-**https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts**  
-
-> **Falls du das Skript in der Version ab 3.5.0.5 benutzt, muss der JavaScript-Adapter ab v6.1.3 installiert sein**. Das TS-Script kann mittlerweile eine Vielzahl an Aliasen selbstständig erzeugen und benötigt die dort enthaltenen Funktionen. 
+**https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs_without_Examples.ts**  
+  
+Dieses Script enthält nur die Grundstruktur und ist nach der Parametereinstellung lauffähig. 
   
 Für jedes einzelne NSPanel das du konfigurieren möchtest, musst du dieses Skript anlegen und speziell für dieses jeweilige NSPanel entsprechende Einstellungen vornehmen. Für den Skriptnamen verwende ich in der Regel eine Kombination aus Panel und Skriptversion, wie z.B.: NSPANEL_1_3.9.0
 
 (Es kommen in regelmäßigen Abständen weitere NSPanel-Features und Bug-Fixes in das GitHub-Skript in denen dann nur noch der untere Teil (--- ab hier keine Konfiguration mehr ---) ausgetauscht werden muss und die NSPanel-Parameter erhalten bleiben)
 
-Im oberen Teil des Skripts sind die grundsätzlichen Teile der zu erstellenden Aliase, Konstanten und Variablen (auch Seiten) enthalten. An dieser Stelle ist zunächst wichtig, die Kommunikationsparameter für die MQTT-Kommunikation zu parametrieren (ab ca. Zeile 400) beginnend mit
+Im oberen Teil des Skripts sind die grundsätzlichen Teile der zu erstellenden Aliase, Konstanten und Variablen (auch Seiten) enthalten. An dieser Stelle ist zunächst wichtig, die Kommunikationsparameter für die MQTT-Kommunikation anzupassen, beginnend mit
 
-`export const config: Config = {`
+```
+const NSPanel_Path = '0_userdata.0.NSPanel.1.';       // Anpassen an das jeweilige NSPanel
+const NSPanel_Alarm_Path = '0_userdata.0.NSPanel.';     // Pfad für gemeinsame Nutzung durch mehrere Panels (bei Nutzung der cardAlarm)
 
-Hier musst du die nachfolgenden Kommunikations-Datenpunkte aus dem MQTT-Adapter eintragen:  
 
-`panelRecvTopic: "mqtt.0.SmartHome.NSPanel_1.tele.RESULT",       //bitte anpassen`  
-`panelSendTopic: "mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend",   //bitte anpassen` 
-   
-`mrIcon1ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER1', ScreensaverEntityIcon: .....},`  
-`mrIcon2ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER2', ScreensaverEntityIcon: .....},`  
-
-Falls abweichend, dann am besten direkt unter Objekte herauskopieren  
+export const config = <Config> {
+     panelRecvTopic: 'mqtt.0.SmartHome.NSPanel_1.tele.RESULT',       // Bitte anpassen
+     panelSendTopic: 'mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend',   // Bitte anpassen
+```  
 
 Bitte starte das Skript. Alle weiteren Parameter stellen wir später ein. Ab jetzt sollte der Startup-Screen „Waiting for Connection“ in den Sreensaver wechseln und minütlich die Uhrzeit an den Screensaver übertragen und das Datum aktualisiert werden.
 
