@@ -41,6 +41,13 @@ Zur Visualisierung des Media-Player‘s sollte der Alexa2-Adapter installiert se
 ***
 
 ## **2.) Panel mit Tasmota flashen**
+  
+**Zur Zeit gibt es ein Problem mit dem Flashen der Tasmotaversion ab 13.0. Zuerst sollte die [Version 12.5](https://github.com/arendst/Tasmota/releases/tag/v12.5.0) installiert werden. Danach muss die Partition angepasst werden, weil ab Tasmotaversion 13.0, die Binary - Dateien zu groß sind und nicht mehr in die alte Aufteilung passen.  
+Dazu gibt es eine Anleitung hier im Wiki unter [Tasmota FAQ](https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Tasmota-FAQ).  
+Danach kann man auf Version 13.0 und höher updaten.**
+
+
+
 Hierzu eignet sich für den "Hardwareteil" die Anleitung von [haus-automatisierung.com](http://haus-automatisierung.com/)
 
 (https://www.youtube.com/watch?v=uqPz08ZpFW8). Video bis 11 Minuten und 30 Sekunden befolgen!
