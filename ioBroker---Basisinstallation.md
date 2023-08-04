@@ -1,8 +1,5 @@
-Matthias Kleine hat ein neues Video zum ganzen Installationsprozzes, vom flashen bis zum Anpassen der NSPanel-Script Datei, erstellt. 
   
-**Neues Video Tutorial** von [haus-automatisierung.com](http://haus-automatisierung.com/)
-https://www.youtube.com/watch?v=ZPLJk2ZLo_8 - NSPanel mit Lovelace UI - so habe ich mir das vorgestellt!
-
+  
 ## Step für Step - Anleitung 
 Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker  
   
@@ -49,15 +46,13 @@ Dazu gibt es eine Anleitung hier im Wiki unter [Tasmota FAQ](https://github.com/
 Danach kann man auf Version 13.0 und höher updaten.**
 
 
-
-Hierzu eignet sich für den "Hardwareteil" die Anleitung von [haus-automatisierung.com](http://haus-automatisierung.com/)
-
-(https://www.youtube.com/watch?v=uqPz08ZpFW8). Video bis 11 Minuten und 30 Sekunden befolgen!
-
-Die Beschreibung, wie man das Panel mit Tasmota flashen kann, ohne einen Kurzschluss zu erzeugen, ist schon sehr gut erklärt.
-Du installierst gleich einen „abweichenden“ Berry-Treiber ([autoexec.be](https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/tasmota/autoexec.be)) als in der Video-Beschreibung genannt. Wenn du Tasmota und „noch nicht der Berry-Treiber“ installiert hast, bitte mit der Youtube-Video-Anleitung von Matthias ab Zeit=11:30 aufhören. Ich verwende in meinen Panels die Version „tasmota32-DE.bin“. Du kannst aber auch die „tasmota32-nspanel.bin“ verwenden.
-Zur MQTT-Konfiguration kommen wir im Punkt 4
-An dieser Stelle solltest du aber bereits die grundsätzliche Tasmota Konfiguration vornehmen:
+Matthias Kleine hat ein neues Video zum ganzen Installationsprozzes, vom flashen bis zum Anpassen der NSPanel-Script Datei, erstellt. 
+  
+**Neues Video Tutorial** von [haus-automatisierung.com](http://haus-automatisierung.com/)
+https://www.youtube.com/watch?v=ZPLJk2ZLo_8 - NSPanel mit Lovelace UI - so habe ich mir das vorgestellt!
+  
+  
+Nach dem flashen solltest du bereits die grundsätzliche Tasmota Konfiguration vornehmen:
 
 a) Unter „Sonstige Einstellungen“ trägst du im Feld Vorlage  
 `{"NAME":"NSPanel","GPIO":[0,0,0,0,3872,0,0,0,0,0,32,0,0,0,0,225,0,480,224,1,0,0,0,33,0,0,0,0,0,0,0,0,0,0,4736,0],"FLAG":0,"BASE":1}`  
@@ -98,14 +93,17 @@ f) Speichern klicken und Einstellungen verlassen
 ***
 
 ## **5.) TFT-Firmware flashen**
+  
+> **Achtung !!! Die aktuellsten Versionen (4.0.5 könnte nicht mehr aktuell sein) befinden sich "immer" am Ende des ioBroker TypeScript Header (TS-Skript) unter:**
+> https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs_without_Examples.ts  
+  
+
 Tasmota „Konsolen/Konsole“ öffnen und in die Kommandozeile  
-`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v3.9.0.tft`  
+`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v4.0.5.tft`  
 eingeben, mit Enter bestätigen. Das Panel installiert jetzt die TFT-Firmware (Kann beim ersten Mal ein paar Minuten dauern – Fortschritt beobachten – am Ende erfolgt ein Reboot und das Panel wechselt in einen Screen – „Waiting for Content“
 
 ![image](https://user-images.githubusercontent.com/102996011/189360485-1941baa7-c10a-4fb3-9dad-9c91124c47ad.png)
-
-> **Achtung !!! Die aktuellsten Versionen (3.9.0 könnte nicht mehr aktuell sein) befinden sich "immer" im ioBroker TypeScript Header (TS-Skript) unter:**
-> https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs.ts
+  
 
 ***
 
