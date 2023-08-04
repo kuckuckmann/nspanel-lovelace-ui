@@ -1,3 +1,5 @@
+Matthias Kleine hat ein neues Video zum ganzen Installationsprozzes, vom flashen bis zum Anpassen der NSPanel-Script Datei, erstellt. 
+  
 **Neues Video Tutorial** von [haus-automatisierung.com](http://haus-automatisierung.com/)
 https://www.youtube.com/watch?v=ZPLJk2ZLo_8 - NSPanel mit Lovelace UI - so habe ich mir das vorgestellt!
 
