@@ -50,6 +50,8 @@ Matthias Kleine hat ein neues Video zum ganzen Installationsprozzes, vom flashen
   
 **Neues Video Tutorial** von [haus-automatisierung.com](http://haus-automatisierung.com/)
 https://www.youtube.com/watch?v=ZPLJk2ZLo_8 - NSPanel mit Lovelace UI - so habe ich mir das vorgestellt!
+
+[Altes Video mit der Beschreibung zum Flashen](https://www.youtube.com/watch?v=uqPz08ZpFW8)
   
   
 Nach dem flashen solltest du bereits die grundsätzliche Tasmota Konfiguration vornehmen:
