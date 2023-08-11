@@ -57,7 +57,7 @@ https://www.youtube.com/watch?v=ZPLJk2ZLo_8 - NSPanel mit Lovelace UI - so habe 
 Nach dem flashen solltest du bereits die grundsätzliche Tasmota Konfiguration vornehmen:
 
 a) Unter „Sonstige Einstellungen“ trägst du im Feld Vorlage  
-`{"NAME":"NSPanel","GPIO":[0,0,0,0,3872,0,0,0,0,0,32,0,0,0,0,225,0,480,224,1,0,0,0,33,0,0,0,0,0,0,0,0,0,0,4736,0],"FLAG":0,"BASE":1}`  
+```{"NAME":"NSPanel","GPIO":[0,0,0,0,3872,0,0,0,0,0,32,0,0,0,0,225,0,480,224,1,0,0,0,33,0,0,0,0,0,0,0,0,0,0,4736,0],"FLAG":0,"BASE":1}```   
 ein, hakst Aktivieren "an" und klickst auf Speichern. Du kannst natürlich auch noch Device und Friendly Name vergeben
 ![image](https://user-images.githubusercontent.com/102996011/189354526-51aa1b0d-43d5-4c0d-8cc7-bdff0de29e24.png)
 
