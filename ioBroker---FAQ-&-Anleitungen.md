@@ -1065,6 +1065,10 @@ let FahrplanEntities = <PageEntities>
   
 * **Voraussetzung**  
   * Das [NsPanelTs.ts Skript](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs.ts) in mindestens der Version 4.1.4.4  
+  * Einen neuen manuellen Datenpunkt für das **inSelpopup**  
+  * Ein blockly für die Steuerung des inSelPopups und den Switch zwischen Color und White  
+  * Ein Alias für RGBW-Einzel  
+  * Schalterkonfiguration im TS-Skript  
 
 * **Konfiguration**  
   
