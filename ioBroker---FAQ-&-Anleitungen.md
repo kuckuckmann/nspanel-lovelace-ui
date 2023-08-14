@@ -26,6 +26,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **20.)** Homatic nonIP Thermostate mit der CardThermo  
 **21.)** WLED  
 **22.)** Fahrplananzeiger  
+**23.)** Shelly DUO Lampen  
 
   
 # **Changelog**
@@ -65,6 +66,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 04.03.2023 - WLED Konfiguration - Erstellt  
 12.03.2023 - Anpassung Hardwarebutton Rule2  
 09.04.2023 - Fahrplananzeiger  
+14.08.2023 - Shelly DUO lampen  
 </details>  
 
 
@@ -1053,6 +1055,20 @@ let FahrplanEntities = <PageEntities>
         <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt5'}  
     ]  
 };
-```
+```  
+  
+## **22.) Shelly DUO Lampen (@Work)**  
+  
+* **Beschreibung:**  
+  Shelly DUO RGBW Lampen bringen eine Eigenschaft mit, dass man mit einem separaten Schalter zwischen Color und White hin- und her-schalten muss.  
+  Diese Funktion wurde bisher über das popupLight nicht abgedeckt. Um dies möglich zu machen wurden Anpassungen vorgenommen. So kann man nun in der popupLight auch ein inSel Popup nutzen, in dem man beispielsweise zwischen den Modi schalten kann, aber auch um beispielsweise Presets zu definieren und via weiterer Skripte zu laden.  
+  
+* **Voraussetzung**  
+  * Das [NsPanelTs.ts Skript](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs.ts) in mindestens der Version 4.1.4.4  
+
+* **Konfiguration**  
+  
+
+
   
 ***  
