@@ -369,7 +369,7 @@ Java Skript (by @TT-Tom):
 4 = Zeichen links vom String abziehen, wenn vor dem Eventname noch Text steht z.B. Strassenname; Standard = 0.  
   
 ![image](https://user-images.githubusercontent.com/99131208/188730795-357f1a2d-3bf6-4808-b394-093d3f4015a8.png)  
-[Zum JS-Skript](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/Abfallkalender.js)
+zum Script von @TT-Tom [tt-tom17/myScript](https://github.com/tt-tom17/MyScripts/tree/main/Sonoff_NSPanel)
 
 Blockly Skript (by @Armilar):  
   
@@ -1081,7 +1081,7 @@ let FahrplanEntities = <PageEntities>
   Wir benötigen einen Alias vom Typ **RGB-Licht einzeln**. Vergib einen sinnvollen Namen und verlinke folgende Zustände:  
   * **RGB** --> ID **rgbw** aus den Shelly Duo Datenpunkten
   * **DIMMER** --> ID **brightness** aus den Shelly Duo Datenpunkten (bitte nicht mit **gain** verwechseln)
-  * **TEMPERATURE** --> ID *temp* aus den Shelly Duo Datenpunkten
+  * **TEMPERATURE** --> ID **temp** aus den Shelly Duo Datenpunkten
   * **ON_ACTUAL** --> ID **switch** aus den Shelly Duo Datenpunkten
   * Über das weiße Plussymbol legen wir einen weiteren manuellen Zustand an mit dem Typ **VALUE**. Diesen verlinken wir mit dem Hilfs-Datenpunkt aus dem vorherigen Schritt.
  
