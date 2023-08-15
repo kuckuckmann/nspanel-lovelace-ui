@@ -1072,7 +1072,28 @@ let FahrplanEntities = <PageEntities>
 
 * **Konfiguration**  
   
-
-
+  **Hilfs-Datenpunkt**  
+  Zum Umschalten zwischen Color und White benötigen wir innerhalb der **popupLight** ein **inSelpopup**. Hierfür ist es erforderlich, dass wir einen Hilfs-Datenpunkt anlegen. In unserem Beispiel hier unter **0_userdata.0.NSPanelOwn.ShellyDuo01** ein neuer Datenpunkt vom Zustandstyp **Zahl** mit dem autom. gesetzen Wert 0.  
   
+  ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/0efad775-d06b-46e6-86d2-97f682aaf37b)  
+  
+  **Alias**  
+  Wir benötigen einen Alias vom Typ **RGB-Licht einzeln**. Vergib einen sinnvollen Namen und verlinke folgende Zustände:  
+  * RGB --> ID **rgbw** aus den Shelly Duo Datenpunkten
+  * DIMMER --> ID **brightness** aus den Shelly Duo Datenpunkten (bitte nicht mit **gain** verwechseln)
+  * TEMPERATURE --> ID *temp* aus den Shelly Duo Datenpunkten
+  * ON_ACTUAL --> ID **switch** aus den Shelly Duo Datenpunkten
+  * Über das weiße Plussymbol legen wir einen weiteren manuellen Zustand an mit dem Typ **VALUE**. Diesen verlinken wir mit dem Hilfs-Datenpunkt aus dem vorherigen Schritt.
+ 
+  **Blockly**  
+  Wir benötigen ein Skript, hier mit einem Blockly umgesetzt, welches zwei Funktionen erfüllen muss:  
+  1. Umschalten des Zahlenwertes im Hilfs-Datenpunkt je nach Auswahl im inSelpopup. Vornehmlich hier das Umschalten zwischen Color und White.  
+  2. Shelly Duo haben für Color und White getrennte Datenpunkte für die Brightness. Dies sind **brightness** und **gain**. Mit dem zweiten Teil des Blocklys werden beide Datenpunkte synchron gehalten. Bedeutet aber auch, dass Color und White beim Umschalten immer die selbe Helligkeit haben.  
+  
+   ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/cd2f4568-ef5d-47eb-b116-e113fb2bb332)  
+  
+  [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/ShellyDuo_inkl_InSel.xml)  
+  
+  
+ 
 ***  
