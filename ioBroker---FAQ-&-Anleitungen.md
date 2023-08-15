@@ -1090,10 +1090,16 @@ let FahrplanEntities = <PageEntities>
   1. Umschalten des Zahlenwertes im Hilfs-Datenpunkt je nach Auswahl im inSelpopup. Vornehmlich hier das Umschalten zwischen Color und White.  
   2. Shelly Duo haben für Color und White getrennte Datenpunkte für die Brightness. Dies sind **brightness** und **gain**. Mit dem zweiten Teil des Blocklys werden beide Datenpunkte synchron gehalten. Bedeutet aber auch, dass Color und White beim Umschalten immer die selbe Helligkeit haben.  
   
-   ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/cd2f4568-ef5d-47eb-b116-e113fb2bb332)  
+     ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/cd2f4568-ef5d-47eb-b116-e113fb2bb332)  
   
-  [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/ShellyDuo_inkl_InSel.xml)  
+     [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/ShellyDuo_inkl_InSel.xml)  
   
+  **TS-Skript**  
+    Im TS-Skript müssen wir nun noch ein PageItem für den Aufruf des **popupLight** erstellen:  
+  
+    ```
+    <PageItem>{ id: 'alias.0.Shelly.ShellyDUO01', name: 'Shelly Duo GU10', minValueBrightness: 0, maxValueBrightness: 100, minValueColorTemp: 3000, maxValueColorTemp: 6465, interpolateColor: true, modeList: ['Color','White'], inSel_ChoiceState: true}
+    ```  
   
  
 ***  
