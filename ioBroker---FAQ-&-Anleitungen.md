@@ -1057,11 +1057,11 @@ let FahrplanEntities = <PageEntities>
 };
 ```  
   
-## **22.) Shelly DUO Lampen (@Work)**  
+## **22.) Shelly DUO Lampen**  
   
 * **Beschreibung:**  
-  Shelly DUO RGBW Lampen bringen eine Eigenschaft mit, dass man mit einem separaten Schalter zwischen Color und White hin- und her-schalten muss.  
-  Diese Funktion wurde bisher über das popupLight nicht abgedeckt. Um dies möglich zu machen wurden Anpassungen vorgenommen. So kann man nun in der popupLight auch ein inSel Popup nutzen, in dem man beispielsweise zwischen den Modi schalten kann, aber auch um beispielsweise Presets zu definieren und via weiterer Skripte zu laden.  
+  Shelly DUO RGBW Lampen bringen eine Eigenschaft mit, dass man mit einem separaten Schalter zwischen Color und White umschalten muss.  
+  Diese Funktion wurde bisher über das **popupLight** nicht abgedeckt. Um dies möglich zu machen wurden Anpassungen vorgenommen. So kann man nun in der **popupLight** auch ein **inSelpopup** nutzen, in dem man beispielsweise zwischen den Modi schalten kann, aber auch um beispielsweise Presets zu definieren und via weiterer Skripte zu laden.  
   
 * **Voraussetzung**  
   * Das [NsPanelTs.ts Skript](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs.ts) in mindestens der Version 4.1.4.4  
@@ -1079,10 +1079,10 @@ let FahrplanEntities = <PageEntities>
   
   **Alias**  
   Wir benötigen einen Alias vom Typ **RGB-Licht einzeln**. Vergib einen sinnvollen Namen und verlinke folgende Zustände:  
-  * RGB --> ID **rgbw** aus den Shelly Duo Datenpunkten
-  * DIMMER --> ID **brightness** aus den Shelly Duo Datenpunkten (bitte nicht mit **gain** verwechseln)
-  * TEMPERATURE --> ID *temp* aus den Shelly Duo Datenpunkten
-  * ON_ACTUAL --> ID **switch** aus den Shelly Duo Datenpunkten
+  * **RGB** --> ID **rgbw** aus den Shelly Duo Datenpunkten
+  * **DIMMER** --> ID **brightness** aus den Shelly Duo Datenpunkten (bitte nicht mit **gain** verwechseln)
+  * **TEMPERATURE** --> ID *temp* aus den Shelly Duo Datenpunkten
+  * **ON_ACTUAL** --> ID **switch** aus den Shelly Duo Datenpunkten
   * Über das weiße Plussymbol legen wir einen weiteren manuellen Zustand an mit dem Typ **VALUE**. Diesen verlinken wir mit dem Hilfs-Datenpunkt aus dem vorherigen Schritt.
  
   **Blockly**  
