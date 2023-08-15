@@ -65,8 +65,9 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 03.01.2023 - Homatic nonIP Thermostate mit der CardThermo - Erstellt  
 04.03.2023 - WLED Konfiguration - Erstellt  
 12.03.2023 - Anpassung Hardwarebutton Rule2  
-09.04.2023 - Fahrplananzeiger  
-14.08.2023 - Shelly DUO lampen  
+09.04.2023 - Fahrplananzeiger - Erstellt  
+14.08.2023 - Shelly DUO lampen - Erstellt  
+15.08.2023 - Index Jump Menü - Erstellt  
 </details>  
 
 
@@ -754,7 +755,22 @@ Wenn der Screensaver nach einer bestimmten Zeit aus geht oder durch eine Aktion 
 * **Lösung:**
 Im Datenpunkt **0_userdata.0.NSPanel.1.ScreensaverInfo.bExitPage** die Seiten ID der gewünschten Seite angeben.  
 Die Ermittlung der Seiten ID ist in Artikel [13b](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#13b-seitenaufruf-im-alarmfall) beschrieben.  
+  
+***
+  
+### **13f) Index Jump Menü**  
+  
+* **Beschreibung**  
+Eine Ergänzung zu den multiplen Möglichkeiten die es aktuell schon gibt, zwischen den verschiedenen Seiten umzuschalten. Nachteil bei dieser Möglichkeit, man verliert auf der Card jeweils einen Button und auf einigen Cards ist es nicht anwendbar. Jedoch kann man so schnell, gezielt von Seite zu Seite springen.
 
+* **Umsetzung**  
+Mit der Hilfe des **inSelpopup** erstellen wir uns eine Index-Tabelle, bei der wir die unter [13b](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#13b-seitenaufruf-im-alarmfall) beschriebene Nummerierung nutzen. Ein Alias vom Typ Button öffnet uns das **inSelpopup** und hilft uns gezielt durch die Seiten zu navigieren.
+    
+* **Voraussetzungen**  
+  * Ein manueller Hilfs-Datenpunkt  
+  * Ein Alias zum Schalten  
+  * Ein Blockly-Skript  
+  
   
 ***
     
@@ -1057,6 +1073,8 @@ let FahrplanEntities = <PageEntities>
 };
 ```  
   
+***
+    
 ## **22.) Shelly DUO Lampen**  
   
 * **Beschreibung:**  
@@ -1100,6 +1118,5 @@ let FahrplanEntities = <PageEntities>
     ```
     <PageItem>{ id: 'alias.0.Shelly.ShellyDUO01', name: 'Shelly Duo GU10', minValueBrightness: 0, maxValueBrightness: 100, minValueColorTemp: 3000, maxValueColorTemp: 6465, interpolateColor: true, modeList: ['Color','White'], inSel_ChoiceState: true}
     ```  
-  
- 
+   
 ***  
