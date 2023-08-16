@@ -788,8 +788,9 @@ Mit der Hilfe des **inSelpopup** erstellen wir uns eine Index-Tabelle, bei der w
     für das PageItem im TS-Skript benötigen wir natürlich den Pfad zu einem Alias. In diesem Beispiel wird ein Alias vom Typ Button benötigt. 
     * Über das weiße Plus-Symbol fügen wir einen neuen Zustand **VALUE** hinzu, welcher auf den zuvor angelegten Hilfs-Datenpunkt verlinkt wird.  
     Das pageItem kann dann beispielswise so aussehen:  
-    ``` <PageItem>{ id: "alias.0.Index_P0", icon: "file-tree-outline", offColor: White, onColor: White, name: "Index Räume", 
-		modeList: [ 'Seite1', 'Seite2', 'Seite3', 'Seite4', 'Seite5', 'Abfallkalender', 'Seite7', 'Seite8', 'Seite9', 'Temp1', 'WLAN', 'TestLicht1', 'WLED'],inSel_ChoiceState: false} ```  
+    ```
+    <PageItem>{ id: "alias.0.Index_P0", icon: "file-tree-outline", offColor: White, onColor: White, name: "Index Räume", modeList: [ 'Seite1', 'Seite2', 'Seite3', 'Seite4', 'Seite5', 'Abfallkalender', 'Seite7', 'Seite8', 'Seite9', 'Temp1', 'WLAN', 'TestLicht1', 'WLED'],inSel_ChoiceState: false}  
+    ```  
   
   **Hinweis zum inSelpoup**  
     Klickt man einen Wert in einem **inSelpopup**, so wird der gedrückte Wert blau markiert und bleibt dies, bis ein neuer Wert ausgewählt wird. Dies macht Sinn bei einer Farbwahl beim WLED, oder einer Senderauswahl beim Radio/Multimedia Card.  
