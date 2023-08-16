@@ -758,7 +758,7 @@ Die Ermittlung der Seiten ID ist in Artikel [13b](https://github.com/joBr99/nspa
   
 ***
   
-### **13f) Index Jump Menü **  
+### **13f) Index Jump Menü**  
   
   **HINWEIS**: An diesem Beitrag wird aktuell gearbeitet - In Erstellung
   
