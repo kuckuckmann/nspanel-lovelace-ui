@@ -773,6 +773,27 @@ Mit der Hilfe des **inSelpopup** erstellen wir uns eine Index-Tabelle, bei der w
   * Ein Alias zum Schalten  
   * Ein Blockly-Skript  
   
+* **Konfiguration**  
+  **Hilfs-Datenpunkt**  
+    Für das **inSelpopup** benötigen wir einen Hilfs-Datenpunkt vom Zustandstyp Zahl: **0_userdata.0.NSPanelOwn.Index_Panel_0**  
+    ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/823b6405-1c19-4162-957e-56addd2bad81)  
+  
+  **Blockly**  
+    Für die Umsetzung der ID aus dem inSelpopup benötigen wir ein Blockly, welches den Payload mit der korrekten ID zurück an das Panel sendet.  
+    ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/215583ce-24e1-4bdd-a91e-5de83bb51ec0)  
+  
+    Zum Blockly  
+  
+  **Alias**  
+    für das PageItem im TS-Skript benötigen wir natürlich den Pfad zu einem Alias. In diesem Beispiel wird ein Alias vom Typ Button benötigt. 
+    * Über das weiße Plus-Symbol fügen wir einen neuen Zustand **VALUE** hinzu, welcher auf den zuvor angelegten Hilfs-Datenpunkt verlinkt wird.  
+    Das pageItem kann dann beispielswise so aussehen:  
+    ``` <PageItem>{ id: "alias.0.Index_P0", icon: "file-tree-outline", offColor: White, onColor: White, name: "Index Räume", 
+		modeList: [ 'Seite1', 'Seite2', 'Seite3', 'Seite4', 'Seite5', 'Abfallkalender', 'Seite7', 'Seite8', 'Seite9', 'Temp1', 'WLAN', 'TestLicht1', 'WLED'],inSel_ChoiceState: false} ```  
+  
+  **Hinweis zum inSelpoup**  
+    Klickt man einen Wert in einem **inSelpopup**, so wird der gedrückte Wert blau markiert und bleibt dies, bis ein neuer Wert ausgewählt wird. Dies macht Sinn bei einer Farbwahl beim WLED, oder einer Senderauswahl beim Radio/Multimedia Card.  
+    In einem Jump-Menü allerdings wünscht man sich, dass nach der Auswahl keine Markierung bleibt. Hier für wurde der neue inSel-Parameter **inSel_ChoiceState** ab der TS-Skript Version 4.1.4.4 eingeführt. Setzt man den Parameter auf den Wert **false**, wird genau der gewünschte Effekt erzielt.  Mit dem Wert **true** oder auch ohne den Paramter **inSel_ChoiceState**, bleibt alles wie gehabt.  
   
 ***
     
