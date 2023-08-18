@@ -207,10 +207,7 @@ Das Skript nun speichern aber noch nicht ausführen.
 ## Installation des Nextion Editor
 
 Zunächst braucht man noch den Nextion Editor: 
-> ~~https://nextion.tech/nextion-editor/~~  (Nextion-Editor-Version aktuell defekt)  
->  
-> https://nextion.tech/download/nextion-setup-v1-63-3.exe oder https://nextion.tech/download/nextion-setup-v1-63-3.zip  
-> **Bitte ältere Version des Nextion-Editor 1.63.3 benutzen und keine Updates durchführen!**
+> https://nextion.tech/nextion-editor/  
 
 sowie die HMI-Datei hier aus dem Repository (liegt im Verzeichnis HMI). Nachdem der Editor installiert ist, diesen Starten und die Datei nspanel.hmi im Nextion Editor öffnen. Anschließend im Editor oben auf Debug klicken. Es öffnet sich ein neues Fenster. Dort unten links von _Keyboard Input_ auf _User MCU Input_ umstellen, den COM-Port des ESP auswählen und die Baud-Rate auf 115200 stellen. Mit Start verbindet man sich nun zum ESP.
 
