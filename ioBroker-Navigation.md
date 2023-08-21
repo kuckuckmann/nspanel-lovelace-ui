@@ -149,7 +149,27 @@ Hier ein Beispiel als Blockly, welches alle Fenster in einem Aliasordner überwa
 ![Blockly_dynamische _Srungmarke](https://user-images.githubusercontent.com/101348966/210888849-35b34ea7-86b1-4c3f-814a-b98873d6d158.png)
   
   
-Wie Ihr den Datenpunkt unter 0_userdata.0. setzen wollt, könnt ihr selbst entscheiden und ist auch ganz von der Anzahl der Kontakte abhängig. Auf einer cardGrid könnt ihr maximal 6 Icon / Kontakte darstellen. Deshalb kann es notwendig sein, noch eine Subpage dazwischen zu setzen und diese nach Stockwerken aufzuteilen.
+Wie Ihr den Datenpunkt unter 0_userdata.0. setzen wollt, könnt ihr selbst entscheiden und ist auch ganz von der Anzahl der Kontakte abhängig. Auf einer cardGrid könnt ihr maximal 8 Icon / Kontakte darstellen. Deshalb kann es notwendig sein, noch eine Subpage dazwischen zu setzen und diese nach Stockwerken aufzuteilen.
+
+**Erweiterung ab Version 4.2**  
+  
+die Flexibilität der Icon wurde um die Farbe und dem Buttontext(CardEntities) erweitert.  
+Dazu müssen zwei Datenpunkte im Alias angelegt werden.  
+**COLORDEC** (Typ Zahl) beinhaltet die Farbzahl entsprechend DEC565.  
+[Hier gibt es ein Nextion-HMI-Color-Converter](https://nodtem66.github.io/nextion-hmi-color-convert/index.html)  
+**BUTTONTEXT** (Typ String) statt PRESS kann der Text freigewählt werden.  
+  
+<img width="331" alt="Bildschirmfoto 2023-08-21 um 16 10 40" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/5edbb8b0-ead3-4c69-9a9a-479eb2cb6e16">
+
+Mindest Schreibweise, wenn DatenPunkte angelegt sind.  
+```
+<PageItem>{ navigate: true, id: AliasPath + 'Status_offene_Tuer', targetPage:'Tuer', name: 'Türen'},
+```
+  
+Wenn einer oder beide Datenpunkte nicht vorhanden sind, wird die altbekannt Schreibweise heran gezogen, wie z.B.  
+```
+<PageItem>{ navigate: true, id: AliasPath + 'Status_offene_Tuer', targetPage:'Tuer', useColor:true, onColor: Green, offColor: Red, name: 'Türen', buttonText: 'hier drücken'},
+```
 
 ## Navigation mit den Hardware-Buttons  
 
