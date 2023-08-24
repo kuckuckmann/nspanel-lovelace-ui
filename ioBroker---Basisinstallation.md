@@ -51,10 +51,12 @@ Matthias Kleine hat ein neues Video zum ganzen Installationsprozzes, vom flashen
 **Neues Video Tutorial** von [haus-automatisierung.com](http://haus-automatisierung.com/)
 https://www.youtube.com/watch?v=ZPLJk2ZLo_8 - NSPanel mit Lovelace UI - so habe ich mir das vorgestellt!
 
-[Altes Video mit der Beschreibung zum Flashen](https://www.youtube.com/watch?v=uqPz08ZpFW8)
+[Altes Video mit der Beschreibung zum Flashen](https://www.youtube.com/watch?v=uqPz08ZpFW8)  
+  
+Als Alternative zu den von Matthias gezeigten Tools zum Flashen des ESP32 kann man mittlerweile auch den [Tasmota WebInstaller](https://tasmota.github.io/install/) nutzen. Die Nutzung ist relativ selbsterklärend.  
   
   
-Nach dem flashen solltest du bereits die grundsätzliche Tasmota Konfiguration vornehmen:
+Nach dem Flashen solltest du bereits die grundsätzliche Tasmota Konfiguration vornehmen:
 
 a) Unter „Sonstige Einstellungen“ trägst du im Feld Vorlage  
 ```{"NAME":"NSPanel","GPIO":[0,0,0,0,3872,0,0,0,0,0,32,0,0,0,0,225,0,480,224,1,0,0,0,33,0,0,0,0,0,0,0,0,0,0,4736,0],"FLAG":0,"BASE":1}```   
@@ -63,8 +65,10 @@ ein, hakst Aktivieren "an" und klickst auf Speichern. Du kannst natürlich auch 
 
 b) Unter Logging fügst du die IP von deinem ioBroker unter Sys-Log Host () ein und klickst auf Speichern.
 
-c) Unter Konsolen/Konsole kannst du natürlich auch noch weitere Einstellungen vornehmen (ipaddress1 192.168.X.X für statische IP’s, setOption’s, etc.)
-
+c) Unter Konsolen/Konsole kannst du natürlich auch noch weitere Einstellungen vornehmen (ipaddress1 192.168.X.X für statische IP’s, setOption’s, etc.)  
+  
+d) **Hinweis**: Unter Umständen macht es Sinn, die NSPanel Temperatursensoren noch zu konfiguirieren/kalibrieren. Wir haben dies in einer eignen [FAQ](https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Tasmota-FAQ#2-sensoren) bereits erklärt.  
+  
 ***
 
 ## **3.) Berry-Treiber installieren**
