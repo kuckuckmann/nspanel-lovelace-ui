@@ -748,7 +748,7 @@ Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovela
 
 ![Bildschirmfoto 2023-08-29 um 20 37 25](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/75928732-021e-4e61-9269-8360daa251d6)  
   
-.SET steuert das Schloss auf/zu  
+.SET steuert das Schloss auf/zu  mittels true/false ggf. muss im Alias die Schreibkonvertirung genutzt werden. val ? open : close
 .ACTUAL Rückmeldung des Schlosses
 
 ***
