@@ -8,7 +8,7 @@
 **Welche Hilfsmittel werden zur Erstellung eines Alias benötigt?:**  
 
 Der "Geräte verwalten"-Adapter für die meisten Alias-Typen:  
-**Achtung zur Zeit ist die Version 1.1.2 fehlerhaft, bitte bei 1.1.1 bleiben**  
+ 
 ![image](https://user-images.githubusercontent.com/102996011/189475521-07d78146-e49d-406a-95bc-804b3302caa2.png)
 
 Der "Alias-Manager"-Adapter für spezielle Alias-Typen, wie dem Alias "Media":  
@@ -42,7 +42,7 @@ Also immer der Wunsch, einen Zustand eines Aktors mit true/false zu verändern.
 Der Alias benötigt also anstatt **.Power** oder **.Switch** oder **.On** immer nur ein **.SET**, damit der Zustand des Schalt-Aktor's unabhängig vom installierten Adapter geschaltet werden kann. In diesem Fall meldet der im Skript eingebundene Alias ein true oder false in den Alias-Datenpunkt .SET und reicht den Zustandswert an den zugewiesenen spezifischen Adapter-Datenpunkt (ganz egal welcher Typ erwartet wird) weiter.
 
 # "Geräte verwalten"-Adapter
-**Achtung zur Zeit ist die Version 1.1.2 fehlerhaft, bitte bei 1.1.1 bleiben**  
+ 
   
 Zunächst sollt man sich überlegen, welche Aliase nur für ein bestimmtes NSPanel gelten sollen oder für mehrere NSPanels oder sogar innerhalb anderer Visualisierungsarten z.B. ioBroker VIS mitverwendet werden sollen. Dann kann man die Alias Struktur entsprechend mit Ordnern und Unterordnern verfeinern. Das Bürolicht soll z.B. nur über NSPanel_1 geschaltet werden, aber nicht über NS_Panel_2. Das Wetter hingegen ist für alle NSPanel gleich.  
 ![image](https://user-images.githubusercontent.com/102996011/189477432-2c814d56-7c37-41c2-b371-31b06e6fe2aa.png)
@@ -744,7 +744,10 @@ modeList enthält die Werte des Datenpunktes (im Beispiel nur exemplarisch) zum 
 
 ![image](https://user-images.githubusercontent.com/102996011/189404088-9a2cd3ea-5c43-4c3f-9bd9-e58eac2e6fd6.png)
 
-> Beschreibung für den Alias Verschluss folgt...
+![Bildschirmfoto 2023-08-29 um 20 37 25](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/75928732-021e-4e61-9269-8360daa251d6)  
+  
+.SET steuert das Schloss auf/zu
+.ACTUAL Rückmeldung des Schlosses
 
 ***
 
