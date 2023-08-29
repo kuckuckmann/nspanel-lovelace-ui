@@ -743,10 +743,12 @@ modeList enthält die Werte des Datenpunktes (im Beispiel nur exemplarisch) zum 
 ### Verschluss (channel lock)
 
 ![image](https://user-images.githubusercontent.com/102996011/189404088-9a2cd3ea-5c43-4c3f-9bd9-e58eac2e6fd6.png)
+  
+Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen#alias-erzeugen---schritt-1---tab-allgemein)" (Tab Allgemein) einen Alias vom Typ Steckdose an. Im "Schritt 2" (Tab Zustände) weisen wir jetzt die Datenpunkte des Adapters zu:  
 
 ![Bildschirmfoto 2023-08-29 um 20 37 25](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/75928732-021e-4e61-9269-8360daa251d6)  
   
-.SET steuert das Schloss auf/zu
+.SET steuert das Schloss auf/zu  
 .ACTUAL Rückmeldung des Schlosses
 
 ***
