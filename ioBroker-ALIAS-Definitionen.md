@@ -192,7 +192,9 @@ Folgende Parameter können verwendet werden:
 * unit: Einheit der Luftfeuchte  
 * onColor: Farbe des Icons  
 
-`<PageItem>{ id: "alias.0.NSPanel_1.TestFeuchtigkeit", name: "Luftfeuchte außen", icon: "water-percent", unit: "%H", onColor: White}`  
+```
+<PageItem>{ id: "alias.0.NSPanel_1.TestFeuchtigkeit", name: "Luftfeuchte außen", icon: "water-percent", unit: "%H", onColor: White},
+```  
 
 > **Hinweis**  
 > **Alternativ kann auch der Alias-Typ "Info" verwendet werden.**  
@@ -229,7 +231,9 @@ Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichni
 ![image](https://user-images.githubusercontent.com/102996011/191102721-3a6a5ab6-792c-4274-8ff3-227c61d4a949.png)
 
 Beispiel für das PageItem  
-`<PageItem>{ id: "alias.0.NSPanel_1.TestInfo", name: "Windstärke", icon: "wind-power-outline", offColor: MSRed, onColor: MSGreen, unit: "bft", minValue: 0, maxValue: 12, interpolateColor: true, useColor: true }`
+```
+<PageItem>{ id: "alias.0.NSPanel_1.TestInfo", name: "Windstärke", icon: "wind-power-outline", offColor: MSRed, onColor: MSGreen, unit: "bft", minValue: 0, maxValue: 12, interpolateColor: true, useColor: true }
+```
 
 **Parameter**
 name:
@@ -257,7 +261,9 @@ Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichni
 ![image](https://user-images.githubusercontent.com/102996011/194716899-3064db6c-8516-46c0-857a-1126cae78783.png)  
 
 Beispiel für das PageItem:  
-`<PageItem>{ id: "alias.0.NSPanel_1.TestBlind", onColor: White, name: "IKEA Fyrtur", secondRow: "Hier Text für 2. Zeile"},`  
+```
+<PageItem>{ id: "alias.0.NSPanel_1.TestBlind", onColor: White, name: "IKEA Fyrtur", secondRow: "Hier Text für 2. Zeile"},
+```  
 
 Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#8-rolladen--jalousie--shutter
 
@@ -534,7 +540,9 @@ Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichni
 ![image](https://user-images.githubusercontent.com/102996011/191345261-2f138190-2de3-4bef-80ba-d1c24833619b.png)  
 
 Das zugehörige PageItem im TypeScript:  
-`<PageItem>{ id: "alias.0.NSPanel_1.Dimmode_BrightnessDay", name: "Brightness Tag", icon: "brightness-5", offColor: MSYellow, onColor: MSYellow, useColor: true, minValue: 5, maxValue: 10}`  
+```
+<PageItem>{ id: "alias.0.NSPanel_1.Dimmode_BrightnessDay", name: "Brightness Tag", icon: "brightness-5", offColor: MSYellow, onColor: MSYellow, useColor: true, minValue: 5, maxValue: 10},
+```  
 
 **Parameter:**  
 name: Vom Alias abweichender Name  
@@ -560,7 +568,9 @@ Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichni
 ![image](https://user-images.githubusercontent.com/102996011/191347855-92667d50-93ce-46fe-9d4a-3fb26bc99db2.png)  
 
 Das zugehörige PageItem im TypeScript:  
-`<PageItem>{ id: "alias.0.NSPanel_1.Luftreiniger", icon: "power", icon2: "power",offColor: MSRed, onColor: MSGreen}`  
+```
+<PageItem>{ id: "alias.0.NSPanel_1.Luftreiniger", icon: "power", icon2: "power",offColor: MSRed, onColor: MSGreen},
+```  
 
 **Parameter:**  
 name: Vom Alias abweichender Name  
@@ -695,7 +705,9 @@ und die States für STATE anlegen:
 ![image](https://user-images.githubusercontent.com/102996011/208925863-93b631b9-abd6-45ee-b488-d33a2291b4a1.png)  
   
 PageItem zum Beispiel:  
-<PageItem>{ id: "alias.0.NSPanel_1.Countdown", icon: "timer-outline", name: "Timer", onColor: White}  
+```
+<PageItem>{ id: "alias.0.NSPanel_1.Countdown", icon: "timer-outline", name: "Timer", onColor: White},
+```  
   
 
 **Blockly**  
@@ -734,7 +746,9 @@ Danach folgende States unter dem Kanal (channel) anlegen:
 ![image](https://user-images.githubusercontent.com/102996011/209000232-4f326a18-3b8f-4129-a9fa-4b338b32561a.png)  
 
 **Das PageItem:**  
-<PageItem>{ id: "alias.0.NSPanel_1.Ventilator.Fan_1",name: "Ventilator", icon: "fan", onColor: On, offColor: HMIOff, modeList: ['Low', 'Medium', 'High', 'Move', 'Sleep', 'Auto', 'Manual']}  
+```
+<PageItem>{ id: "alias.0.NSPanel_1.Ventilator.Fan_1",name: "Ventilator", icon: "fan", onColor: On, offColor: HMIOff, modeList: ['Low', 'Medium', 'High', 'Move', 'Sleep', 'Auto', 'Manual']},
+```   
 
 modeList enthält die Werte des Datenpunktes (im Beispiel nur exemplarisch) zum Schalten der Modes.
 
