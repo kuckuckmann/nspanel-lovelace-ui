@@ -236,15 +236,17 @@ Beispiel für das PageItem
 ```
 
 **Parameter**
-name:
-icon:
-offcolor:
-oncolor:
-unit:
-minValue:
-maxValue:
-interpolateColor:
-useColor:
+* name: 
+* icon: 
+* offcolor:
+* oncolor:
+* unit:
+* minValue:
+* maxValue:
+* interpolateColor:
+* colorScale:
+* useValue:
+* useColor:
 
 ***
 
@@ -260,9 +262,21 @@ Zunächst legen wir analog "[Schritt 1](https://github.com/joBr99/nspanel-lovela
 Jetzt speicherst du den neu erstellten Alias. Unter ioBroker Objekte (Verzeichnisbaum alias.0.NSPanel.X...) siehst du jetzt folgende Darstellung: 
 ![image](https://user-images.githubusercontent.com/102996011/194716899-3064db6c-8516-46c0-857a-1126cae78783.png)  
 
+Die Konfiguration für Rollo / Jalousie / Markise wurde um die Parameter minValueLevel, maxValueLevel, minValueTilt und maxValueTilt erweitert. Damit können jetzt die Standardwerte überschrieben werden.
+Es muss immer min und max angegeben werden.
+
+**Parameter**
+* name:
+* icon:
+* minValueLevel: -> Postion unten -> Standard 0%
+* maxValueLevel: -> Position oben -> Standard 100%
+* minValueTilt: -> verdrehen der Lamellen linksrum -> Standard 0%
+* maxValueTilt: ->verdrehen der Lamellen rechtsrum -> Standard 100%
+* secondRow: im Detailbild die Zeile unter dem Namen
+
 Beispiel für das PageItem:  
 ```
-<PageItem>{ id: "alias.0.NSPanel_1.TestBlind", onColor: White, name: "IKEA Fyrtur", secondRow: "Hier Text für 2. Zeile"},
+<PageItem>{ id: 'alias.0.NSPanel.allgemein.Rollo', name: "Test Rollo", secondRow: "Hier Text für 2. Zeile", minValueLevel: 100, maxValueLevel: 0, minValueTilt: 100, maxValueTilt: 0},
 ```  
 
 Bereits in der FAQ & Anleitung beschrieben: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#8-rolladen--jalousie--shutter
