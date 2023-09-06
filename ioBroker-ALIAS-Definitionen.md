@@ -489,14 +489,14 @@ Das zugehörige PageItem im TypeScript:
 ![image](https://user-images.githubusercontent.com/102996011/191095621-cb705027-32ae-4443-b21a-913dfcd9663b.png)  
 
 **Parameter:**  
-name: Vom Alias abweichender Name  
-offColor: abweichende Farbe für aus  
-onColor: abweichende Farbe für an  
-minValueBrightness: Minimale Helligkeit (Default 0)  
-maxValueBrightness: Minimale Maxiamale Helligkeit (Default 100)
-minValueColorTemp: Minimale Farbtemperatur je nach Leuchtmittel/Adapter (z.B. 500K) 
-maxValueColorTemp: Maximale Farbtemperatur je nach Leuchtmittel/Adapter (z.B. 6500K)
-interpolateColor: Errechnet den Farbton und weist diesen dem Icon zu (Beispiel Pink)
+* name: Vom Alias abweichender Name  
+* offColor: abweichende Farbe für aus  
+* onColor: abweichende Farbe für an  
+* minValueBrightness: Minimale Helligkeit (Default 0)  
+* maxValueBrightness: Minimale Maxiamale Helligkeit (Default 100)
+* minValueColorTemp: Minimale Farbtemperatur je nach Leuchtmittel/Adapter (z.B. 500K) 
+* maxValueColorTemp: Maximale Farbtemperatur je nach Leuchtmittel/Adapter (z.B. 6500K)
+* interpolateColor: Errechnet den Farbton und weist diesen dem Icon zu (Beispiel Pink)
 
 Mit klick auf den Bezeichner wird das popUpLight aufgeschaltet:
 ![image](https://user-images.githubusercontent.com/102996011/191096635-91bdab6c-e88f-459a-9699-9d2e6804c86a.png)  
