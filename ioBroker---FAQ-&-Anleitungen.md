@@ -27,6 +27,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 **21.)** WLED  
 **22.)** Fahrplananzeiger  
 **23.)** Shelly DUO Lampen  
+**24.)** Dynamisches Icon (CardGrid)  
 
   
 # **Changelog**
@@ -68,6 +69,7 @@ In diesem Thread möchte ich damit beginnen, Einstellungen und Konfigurationen a
 09.04.2023 - Fahrplananzeiger - Erstellt  
 14.08.2023 - Shelly DUO lampen - Erstellt  
 15.08.2023 - Index Jump Menü - Erstellt  
+06.09.2023 - Dynamisches Icon (CardGrid) - Erstellt  
 </details>  
 
 
@@ -1144,3 +1146,50 @@ let FahrplanEntities = <PageEntities>
     ```  
    
 ***  
+  
+## **23.) Dynamisches Icon** (CardGrid)    
+  
+* **Beschreibung:**  
+  Auf der CardGrid kann man nun das Icon dynamisch austauschen lassen. Im Gegensatz zum Statewechsel bei Aliasen wie **Light**, **Door** oder **Window** wo man im PageItem **icon** und **icon2** vergeben kann, bietet sich mit dieser neuen die Funktion die Möglichkeit das Icon nach Belieben zu ändern. 
+  
+* **Voraussetzung**  
+  * TS-Skript in der Version 4.2.1.4
+  * Ein definiertes Skript welches Hilft das Icon zu tauschen
+  * Einen Alias vom Typ Info
+  * Einen Hilfs-Datenpunkt
+  * Einen Satz an Icons, die in Abhängigkeit vom Satus angezeigt werden sollen
+  
+* **Konfiguration**  
+  
+  **Hilfs-Datenpunkt**  
+  Es wird ein Hilfs-Datenpunkt vom Typ String benötigt, in dem der Icon-Name geschrieben wird
+  
+  **Alias**  
+  Es wird ein Alias vom Typ **Info** benötigt. Der State **ACTUAL** (meist vom Typ Number) wird auf den Datenpunkt verlinkt, welcher den Wert enthält, anhand dessen das Skript auswerten kann, welches Icon zu welchem Status gesetzt werden soll.  
+  Zusätzlich muss ein manueller State **USERICON** vom Typ String angelegt werden, welcher auf den Hilfs-Datenpunkt gelinkt wird.  
+  
+  **Skript**  
+  
+  Wie beschrieben wird ein Skript benötigt, welches einen Wert auswertet und anhand einer zu überlegenden Definition ein entsprechendes Icon in den Hilfs-Datenpunkt schreibt. Nachfolgend ein Screenshot von einem Beispiel Blockly welches für den Batteriestatus den Prozentwert auswertet und je nach Wert ein Icon setzt:  
+  
+  ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/b120d3b7-2cbb-4688-a5fc-b1893afa0371)  
+  ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/63e008ba-cf48-4cd6-a32c-0898fc88ea3c)  
+  
+  Das Blockly an sich wird hier nicht zur Verfügung gestellt.
+
+  **TS-Skript**  
+  
+  Im TS-Skript bedarf es auf einer CardGrid ein Pageitem. Es muss dabei kein Icon definiert werden, da dieses über den Alias kommt.  
+  
+    ```
+    <PageItem>{ id: 'alias.0.TestCard.BatteryCharge', prefixName: 'Batterie: ', name: "getState('state.batteryCharge').val", suffixName: '%', offColor: White , onColor: White, },
+    ```  
+  
+  **Anwedungsbeispiele**  
+  
+  * WLAN Signalstärke darstellen
+  * Batterie/Akku Stand darstellen
+  
+  
+***  
+  
