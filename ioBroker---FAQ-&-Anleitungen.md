@@ -1172,8 +1172,7 @@ let FahrplanEntities = <PageEntities>
   
   Wie beschrieben wird ein Skript benötigt, welches einen Wert auswertet und anhand einer zu überlegenden Definition ein entsprechendes Icon in den Hilfs-Datenpunkt schreibt. Nachfolgend ein Screenshot von einem Beispiel Blockly welches für den Batteriestatus den Prozentwert auswertet und je nach Wert ein Icon setzt:  
   
-  ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/b120d3b7-2cbb-4688-a5fc-b1893afa0371)  
-  ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/63e008ba-cf48-4cd6-a32c-0898fc88ea3c)  
+  ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/e2871d71-2324-4cf4-9555-6ceda1c57d44)  
   
   Das Blockly an sich wird hier nicht zur Verfügung gestellt.
 
