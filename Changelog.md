@@ -2,7 +2,23 @@
 # v4.2.1.5  
 <img width="920" alt="image" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/0cecfad4-5478-4765-8e1a-848759f95e5e">
   
-<img width="920" alt="image" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/73d8bce3-fb67-42ee-9760-ecb9302cb632">
+# v4.2.1.4
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/24d81ccf-60eb-40c3-93e6-2cecd8e3f69c)
+
+# v4.2.1.3  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/67f9935a-801d-4dd4-9fbf-c2eaa058fe1f)
+  
+# v4.2.1.2  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/ef1ef63d-b1a6-48ae-a053-5b5e063011e7)
+  
+# v4.2.1.1  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/937d19f2-b0cc-4d4d-95d3-6a2d476d443a)
+  
+# v4.2.0.2  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/2b915899-d1da-4dc8-aaba-d8683079dcfb)
+  
+# v4.2.0  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/124a9d8f-0f49-4bfe-9fe5-bb94be5242d3)
 
 # v4.1.4
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d46d49e5-748a-4708-a971-581effb86bf1)
