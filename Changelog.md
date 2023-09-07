@@ -1,4 +1,8 @@
 **ioBroker Changelog (TypeScript)**  
+# v4.2.1.5  
+<img width="920" alt="image" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/0cecfad4-5478-4765-8e1a-848759f95e5e">
+  
+<img width="920" alt="image" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/73d8bce3-fb67-42ee-9760-ecb9302cb632">
 
 # v4.1.4
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d46d49e5-748a-4708-a971-581effb86bf1)
