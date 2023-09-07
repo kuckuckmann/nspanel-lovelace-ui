@@ -23,6 +23,9 @@
 
 # v4.2.0  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/124a9d8f-0f49-4bfe-9fe5-bb94be5242d3)
+  
+# v4.1.4.1  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/ab396fcc-7c74-45be-ab46-4198265f81fc)
 
 # v4.1.4
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d46d49e5-748a-4708-a971-581effb86bf1)
