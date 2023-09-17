@@ -41,7 +41,7 @@ Zur Visualisierung des Media-Player‘s sollte der Alexa2-Adapter installiert se
 
 ## **2.) Panel mit Tasmota flashen**
   
-**Zur Zeit gibt es ein Problem mit dem Flashen der Tasmotaversion ab 13.0. Zuerst sollte die [Version 12.5](https://github.com/arendst/Tasmota/releases/tag/v12.5.0) installiert werden. Danach muss die Partition angepasst werden, weil ab Tasmotaversion 13.0, die Binary - Dateien zu groß sind und nicht mehr in die alte Aufteilung passen.  
+**Sollte das NSPanel bereits vor der Bereitstellung der Tasmota v13.0.X initial geflashed worden sein, kann es zu Partitionierungs-Problemen mit einer Version >= 13.0.X kommen. In diesem Fall muss das Partitionsschema geändert werden. Ein neues NSPanel kann mit der neuesten Tasmota-Version geflashed werden.
 Dazu gibt es eine Anleitung hier im Wiki unter [Tasmota FAQ](https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Tasmota-FAQ).  
 Danach kann man auf Version 13.0 und höher updaten.**
 
@@ -100,12 +100,12 @@ f) Speichern klicken und Einstellungen verlassen
 
 ## **5.) TFT-Firmware flashen**
   
-> **Achtung !!! Die aktuellsten Versionen (4.1.4 könnte nicht mehr aktuell sein) befinden sich "immer" am Ende des ioBroker TypeScript Header (TS-Skript) unter:**
+> **Achtung !!! Die aktuellsten Versionen (4.3.1 könnte nicht mehr aktuell sein) befinden sich "immer" am Ende des ioBroker TypeScript Header (TS-Skript) unter:**
 > https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs_without_Examples.ts  
   
 
 Tasmota „Konsolen/Konsole“ öffnen und in die Kommandozeile  
-`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v4.1.4.tft`  
+`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v4.3.1.tft`  
 eingeben, mit Enter bestätigen. Das Panel installiert jetzt die TFT-Firmware (Kann beim ersten Mal ein paar Minuten dauern – Fortschritt beobachten – am Ende erfolgt ein Reboot und das Panel wechselt in einen Screen – „Waiting for Content“
 
 ![image](https://user-images.githubusercontent.com/102996011/189360485-1941baa7-c10a-4fb3-9dad-9c91124c47ad.png)
