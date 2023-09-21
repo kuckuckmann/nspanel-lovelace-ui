@@ -16,8 +16,7 @@ Ansicht Weather-Forecast:
 
 Ansicht Screensaver-Entities:  
 ![image](https://user-images.githubusercontent.com/102996011/190849999-48ed259b-7c1b-4a4f-887d-f354d7bab07d.png)  
-
-![image](https://user-images.githubusercontent.com/102996011/217248632-ac7394ec-26d3-47d3-8d2b-fd547955220b.png)   
+  
 Das alternative Screensaver-Layout lässt sich im Servicemenü aktivieren.  
 
 # Screensaver 2 Layout
