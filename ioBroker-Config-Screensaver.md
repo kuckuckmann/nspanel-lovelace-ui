@@ -17,7 +17,7 @@ Ansicht Weather-Forecast:
 Ansicht Screensaver-Entities:  
 ![image](https://user-images.githubusercontent.com/102996011/190849999-48ed259b-7c1b-4a4f-887d-f354d7bab07d.png)  
   
-# Screensaver 2 Layout
+# Screensaver 2 Layout (Advanced)
 
 > ab v4.0.0  
   
