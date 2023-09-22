@@ -17,22 +17,20 @@ Ansicht Weather-Forecast:
 Ansicht Screensaver-Entities:  
 ![image](https://user-images.githubusercontent.com/102996011/190849999-48ed259b-7c1b-4a4f-887d-f354d7bab07d.png)  
   
-Das alternative Screensaver-Layout lässt sich im Servicemenü aktivieren.  
-
 # Screensaver 2 Layout
 
-> ab v4.0.0
-
-> **Aktivierung:**  
-> 0_userdata.0.NSPanel.1.Config.Screensaver.ScreensaverAdvanced = true  
+> ab v4.0.0  
   
 ![image](https://user-images.githubusercontent.com/102996011/221548005-f95c0949-2f51-4fca-8c31-08ec9083096c.png)  
 
 ![image](https://user-images.githubusercontent.com/102996011/221548499-c50d1101-a6a3-468f-82e9-ae83fb870655.png)  
 
-
-
-
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/7c5d28bd-08ce-44f9-aab1-55430890099f)  
+  
+Das Screensaver-Layout lässt sich im Servicemenü Einstellungen -> Screensaver -> Layout aktivieren.  
+Es darf nur ein Layout aktiviert sein, sonst kommt es zu unerwünschten Effekten.  
+Wenn kein Layout aktiv ist, wird das Layout 1 Standard genutzt.  
+    
 # Screensaver Colors
 ```
 //Screensaver Default Theme Colors
