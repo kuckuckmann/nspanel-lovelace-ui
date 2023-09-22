@@ -9,9 +9,9 @@ Im Zuge der weiteren Releases wird es sukzessive um künftige Funktionalitäten 
 ![Nextion_Editor_jc3M2TasjY](https://user-images.githubusercontent.com/102996011/215077776-20e7a3f8-3a87-43c4-ae24-7e237e0a9646.gif) 
 
 ## Aufbau des Service-Menüs  
-
-![image](https://user-images.githubusercontent.com/102996011/213807909-c7d3ce47-4f0d-48af-b3e9-437c44b2f95b.png)  
-
+ 
+<img width="763" alt="Bildschirmfoto 2023-09-22 um 11 53 08" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/edc6157c-3b70-4e1c-b544-d5e3d4c60fcf">
+  
 ## TypeScript (NSPanel.ts) Konstanten  
 
 nachfolgende Konstante ist für die Menüfarbe reserviert und kann individuell durch eigene RGB-Farbwerte angepasst werden.
@@ -42,7 +42,7 @@ weiter Beispiele:
 
 ## TypeScript (NSPanel.ts) Variablendefinition
 
-nachfolgend die Seiten- und Menüdefinition aus dem TS-Script ab v3.9.0 
+nachfolgend die Seiten- und Menüdefinition aus dem TS-Script ab v4.3.1 
 ```
 /***********************************************************************************************
  **  Service Pages mit Auto-Alias (Nachfolgende Seiten werden mit Alias automatisch angelegt) **
@@ -159,24 +159,26 @@ let NSPanel_Service = <PageEntities>
                     modeList: ['en-US', 'de-DE', 'nl-NL', 'da-DK', 'es-ES', 'fr-FR', 'it-IT', 'ru-RU', 'nb-NO', 'nn-NO', 'pl-PL', 'pt-PT', 'af-ZA', 'ar-SY', 
                                'bg-BG', 'ca-ES', 'cs-CZ', 'el-GR', 'et-EE', 'fa-IR', 'fi-FI', 'he-IL', 'hr-xx', 'hu-HU', 'hy-AM', 'id-ID', 'is-IS', 'lb-xx', 
                                'lt-LT', 'ro-RO', 'sk-SK', 'sl-SI', 'sv-SE', 'th-TH', 'tr-TR', 'uk-UA', 'vi-VN', 'zh-CN', 'zh-TW']},
-                                
+                   <PageItem>{ navigate: true, id: 'NSPanel_Script', icon: 'code-json',offColor: Menu, onColor: Menu, name: 'Script', buttonText: 'mehr...'},            
                 ]
             };
 
                 //Level_2
-                let NSPanel_Screensaver = <PageEntities>
+                let NSPanel_Screensaver = <PageGrid>
                 {
-                    'type': 'cardEntities',
+                    'type': 'cardGrid',
                     'heading': 'Einstellungen',
                     'useColor': true,
                     'subPage': true,
                     'parent': NSPanel_Einstellungen,
                     'home': 'NSPanel_Service',
                     'items': [
-                        <PageItem>{ navigate: true, id: 'NSPanel_ScreensaverDimmode', icon: 'wifi', offColor: Menu, onColor: Menu, name: 'Dimmode/Sonstige', buttonText: 'mehr...'},
-                        <PageItem>{ navigate: true, id: 'NSPanel_Weather', icon: 'weather-partly-rainy', offColor: Menu, onColor: Menu, name: 'Wetter', buttonText: 'mehr...'},
-                        <PageItem>{ navigate: true, id: 'NSPanel_Dateformat', icon: 'calendar-expand-horizontal', offColor: Menu, onColor: Menu, name: 'Datumsformat', buttonText: 'mehr...'},
-                        <PageItem>{ navigate: true, id: 'NSPanel_Indicators', icon: 'monitor-edit', offColor: Menu, onColor: Menu, name: 'Indikatoren', buttonText: 'mehr...'}
+                        <PageItem>{ navigate: true, id: 'NSPanel_ScreensaverDimmode', icon: 'sun-clock', offColor: Menu, onColor: Menu, name: 'Dimmode'},
+                        <PageItem>{ navigate: true, id: 'NSPanel_ScreensaverBrightness', icon: 'brightness-5', offColor: Menu, onColor: Menu, name: 'Brightness'},
+                        <PageItem>{ navigate: true, id: 'NSPanel_ScreensaverLayout', icon: 'page-next-outline', offColor: Menu, onColor: Menu, name: 'Layout'},
+                        <PageItem>{ navigate: true, id: 'NSPanel_ScreensaverWeather', icon: 'weather-partly-rainy', offColor: Menu, onColor: Menu, name: 'Wetter'},
+                        <PageItem>{ navigate: true, id: 'NSPanel_ScreensaverDateformat', icon: 'calendar-expand-horizontal', offColor: Menu, onColor: Menu, name: 'Datumsformat'},
+                        <PageItem>{ navigate: true, id: 'NSPanel_ScreensaverIndicators', icon: 'monitor-edit', offColor: Menu, onColor: Menu, name: 'Indikatoren'}
                     ]
                 };
                             
@@ -184,11 +186,11 @@ let NSPanel_Service = <PageEntities>
                         let NSPanel_ScreensaverDimmode = <PageEntities>
                         {
                             'type': 'cardEntities',
-                            'heading': 'Dimmode (1)',
+                            'heading': 'Dimmode',
                             'useColor': true,
                             'subPage': true,
                             'parent': NSPanel_Screensaver,
-                            'next': 'NSPanel_ScreensaverOther',
+                            'home': 'NSPanel_Service',
                             'items': [
                                 <PageItem>{ id: AliasPath + 'Dimmode.brightnessDay', name: 'Brightness Tag', icon: 'brightness-5', offColor: Menu, onColor: Menu, minValue: 5, maxValue: 10},
                                 <PageItem>{ id: AliasPath + 'Dimmode.brightnessNight', name: 'Brightness Nacht', icon: 'brightness-4', offColor: Menu, onColor: Menu, minValue: 0, maxValue: 4},
@@ -198,24 +200,38 @@ let NSPanel_Service = <PageEntities>
                         };
 
                         //Level_3
-                        let NSPanel_ScreensaverOther = <PageEntities>
+                        let NSPanel_ScreensaverBrightness = <PageEntities>
                         {
                             'type': 'cardEntities',
-                            'heading': 'Sonstige (2)',
+                            'heading': 'Brightness',
                             'useColor': true,
                             'subPage': true,
-                            'prev': 'NSPanel_ScreensaverDimmode',
+                            'parent': NSPanel_Screensaver,
                             'home': 'NSPanel_Service',
                             'items': [
                                 <PageItem>{ id: AliasPath + 'ScreensaverInfo.activeBrightness', name: 'Helligkeit Aktiv', icon: 'brightness-5', offColor: Menu, onColor: Menu, minValue: 20, maxValue: 100},
                                 <PageItem>{ id: AliasPath + 'Config.Screensaver.timeoutScreensaver', name: 'Screensaver Timeout', icon: 'clock-end', offColor: Menu, onColor: Menu, minValue: 0, maxValue: 60},
-                                <PageItem>{ id: AliasPath + 'Config.Screensaver.screenSaverDoubleClick', name: 'Doppelklick Weakup' ,icon: 'gesture-two-double-tap', offColor: HMIOff, onColor: HMIOn},                                            
-                                <PageItem>{ id: AliasPath + 'Config.Screensaver.alternativeScreensaverLayout', name: 'Alternativ Layout' ,icon: 'page-previous-outline', offColor: HMIOff, onColor: HMIOn},            
+                                <PageItem>{ id: AliasPath + 'Config.Screensaver.screenSaverDoubleClick', name: 'Doppelklick Weakup' ,icon: 'gesture-two-double-tap', offColor: HMIOff, onColor: HMIOn}
                             ]
                         };
 
                         //Level_3
-                        let NSPanel_Weather = <PageEntities>
+                        let NSPanel_ScreensaverLayout = <PageEntities>
+                        {
+                            'type': 'cardEntities',
+                            'heading': 'Layout',
+                            'useColor': true,
+                            'subPage': true,
+                            'parent': NSPanel_Screensaver,
+                            'home': 'NSPanel_Service',
+                            'items': [
+                                <PageItem>{ id: AliasPath + 'Config.Screensaver.alternativeScreensaverLayout', name: 'Alternativ Layout' ,icon: 'page-previous-outline', offColor: HMIOff, onColor: HMIOn},
+                                <PageItem>{ id: AliasPath + 'Config.Screensaver.ScreensaverAdvanced', name: 'Advanced Layout' ,icon: 'page-next-outline', offColor: HMIOff, onColor: HMIOn},
+                            ]
+                        };
+
+                        //Level_3
+                        let NSPanel_ScreensaverWeather = <PageEntities>
                         {
                             'type': 'cardEntities',
                             'heading': 'Wetter Parameter',
@@ -232,7 +248,7 @@ let NSPanel_Service = <PageEntities>
                         };
 
                         //Level_3
-                        let NSPanel_Dateformat = <PageEntities>
+                        let NSPanel_ScreensaverDateformat = <PageEntities>
                         {
                             'type': 'cardEntities',
                             'heading': 'Datumsformat',
@@ -247,7 +263,7 @@ let NSPanel_Service = <PageEntities>
                         };
 
                         //Level_3
-                        let NSPanel_Indicators = <PageEntities>
+                        let NSPanel_ScreensaverIndicators = <PageEntities>
                         {
                             'type': 'cardEntities',
                             'heading': 'Indikatoren',
@@ -273,6 +289,21 @@ let NSPanel_Service = <PageEntities>
                     'items': [
                         <PageItem>{ id: AliasPath + 'Relay.1', name: 'Relais 1 (aus/an)' ,icon: 'power', offColor: HMIOff, onColor: HMIOn},
                         <PageItem>{ id: AliasPath + 'Relay.2', name: 'Relais 2 (aus/an)' ,icon: 'power', offColor: HMIOff, onColor: HMIOn},
+                    ]
+                };
+
+                //Level_2
+                let NSPanel_Script = <PageEntities>
+                {
+                    'type': 'cardEntities',
+                    'heading': 'Script',
+                    'useColor': true,
+                    'subPage': true,
+                    'parent': NSPanel_Einstellungen,
+                    'home': 'NSPanel_Service',
+                    'items': [
+                        <PageItem>{ id: AliasPath + 'Config.ScripgtDebugStatus', name: 'Debugmode (aus/an)' ,icon: 'code-tags-check', offColor: HMIOff, onColor: HMIOn},
+                        <PageItem>{ id: AliasPath + 'Config.MQTT.portCheck', name: 'Port-Check (aus/an)' ,icon: 'check-network', offColor: HMIOff, onColor: HMIOn},
                     ]
                 };
 
@@ -342,11 +373,12 @@ let NSPanel_Service = <PageEntities>
                 };
 
 // Ende der Service Pages
+
 ```
 
 ## TypeScript (NSPanel.ts) Config  
 ```
-export const config: Config = {
+export const config = <Config> {
     
     ...
     Config Parameter
@@ -372,17 +404,30 @@ export const config: Config = {
                 NSPanel_Einstellungen,                  //Auto-Alias Service Page
                     NSPanel_Screensaver,                //Auto-Alias Service Page
                         NSPanel_ScreensaverDimmode,     //Auto-Alias Service Page
-                        NSPanel_ScreensaverOther,       //Auto-Alias Service Page
-                        NSPanel_Weather,                //Auto-Alias Service Page
-                        NSPanel_Dateformat,             //Auto-Alias Service Page
-                        NSPanel_Indicators,             //Auto-Alias Service Page
-                        NSPanel_Relays,                 //Auto-Alias Service Page
+                        NSPanel_ScreensaverBrightness,  //Auto-Alias Service Page
+                        NSPanel_ScreensaverLayout,      //Auto-Alias Service Page
+                        NSPanel_ScreensaverWeather,     //Auto-Alias Service Page
+                        NSPanel_ScreensaverDateformat,  //Auto-Alias Service Page
+                        NSPanel_ScreensaverIndicators,  //Auto-Alias Service Page
+                    NSPanel_Relays,                     //Auto-Alias Service Page
+                    NSPanel_Script,                     //Auto-Alias Service Page
                 NSPanel_Firmware,                       //Auto-Alias Service Page
                     NSPanel_FirmwareTasmota,            //Auto-Alias Service Page
                     NSPanel_FirmwareBerry,              //Auto-Alias Service Page
                     NSPanel_FirmwareNextion,            //Auto-Alias Service Page
     ],
-    button1Page: button1Page,   //Beispiel-Seite auf Button 1, wenn Rule2 definiert - Wenn nicht definiert --> button1Page: null, 
-    button2Page: button2Page    //Beispiel-Seite auf Button 2, wenn Rule2 definiert - Wenn nicht definiert --> button1Page: null,
+    button1: {
+        mode: null,     // Mögliche Werte wenn Rule2 definiert: 'page', 'toggle', 'set' - Wenn nicht definiert --> mode: null
+        page: null,     // Zielpage - Verwendet wenn mode = page (bisher button1Page)
+        entity: null,   // Zielentity - Verwendet wenn mode = set oder toggle
+        setValue: null  // Zielwert - Verwendet wenn mode = set
+    },
+    button2: {
+        mode: null,     // Mögliche Werte wenn Rule2 definiert: 'page', 'toggle', 'set' - Wenn nicht definiert --> mode: null
+        page: null,     // Zielpage - Verwendet wenn mode = page (bisher button2Page)
+        entity: null,   // Zielentity - Verwendet wenn mode = set oder toggle
+        setValue: null  // Zielwert - Verwendet wenn mode = set
+    }
 };
+
 ```
