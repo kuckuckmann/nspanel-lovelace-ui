@@ -46,6 +46,9 @@ Zum Ausschalten der Rule
 **Bis Version 4.0.4:**  
 Im Konfigurationsskript benötigt Ihr nun unter der **pages** Definition **buttonxPage**: (x=Nummer des Buttons).
 Entweder gebt Ihr hier nun den var/const Name eines bestehenden Grid mit, damit kann man einen Button quasi als Home-Button nutzen, oder man legt einen eigenen Grid auf den Button, welcher dann zuvor definiert werden muss. 
+  
+!w[image](https://user-images.githubusercontent.com/102996011/189394576-f470cba5-0fe6-4a46-97f6-0cd6c48a613b.png)  
+
  
 **Ab Version 4.0.4.1:**  
 Im Konfigurationsskript benötigt man in der **Config** Definition die Objekte **button1/button2**.
@@ -63,9 +66,6 @@ Bsp:
   ```
 
   
- 
-![image](https://user-images.githubusercontent.com/102996011/189394576-f470cba5-0fe6-4a46-97f6-0cd6c48a613b.png)
-
 #### 1.1.3    Rule3 - ESP-Buzzer 
 
 Der eingebaute Buzzer des ESP32 kann auch Geräusche zur Unterstützung der Tastenbetätigung erzeugen Hierzu muss folgende Rule angelegt und aktiviert werden:  
