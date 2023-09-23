@@ -57,31 +57,6 @@ const sctMainIconAlt:   RGB = { red: 255, green:  255, blue: 255};
 const sctMainTextAlt:   RGB = { red: 255, green:  255, blue: 255};
 const sctTimeAdd:       RGB = { red: 255, green:  255, blue: 255};
 ```
-Wenn die automatischen Farben der Weather-Forcast nicht verwendet werden sollen:
-```
-0_userdata.0.NSPanel.1.Config.Screensaver.autoWeatherColorScreensaverLayout = false
-```
-
-![image](https://user-images.githubusercontent.com/102996011/190623367-70ebe988-f467-49cf-8e81-2275a8db259b.png)
-
-Ansonsten greifen diese Farben
-```
-//Auto-Weather-Colors
-const swClearNight:     RGB = { red: 150, green: 150, blue: 100};
-const swCloudy:         RGB = { red:  75, green:  75, blue:  75};
-const swExceptional:    RGB = { red: 255, green:  50, blue:  50};
-const swFog:            RGB = { red: 150, green: 150, blue: 150};
-const swHail:           RGB = { red: 200, green: 200, blue: 200};
-const swLightning:      RGB = { red: 200, green: 200, blue:  0};
-const swLightningRainy: RGB = { red: 200, green: 200, blue: 150};
-const swPartlycloudy:   RGB = { red: 150, green: 150, blue: 150};
-const swPouring:        RGB = { red:  50, green:  50, blue: 255};
-const swRainy:          RGB = { red: 100, green: 100, blue: 255};
-const swSnowy:          RGB = { red: 150, green: 150, blue: 150};
-const swSnowyRainy:     RGB = { red: 150, green: 150, blue: 255};
-const swSunny:          RGB = { red: 255, green: 255, blue:   0};
-const swWindy:          RGB = { red: 150, green: 150, blue: 150};
-```
 
 # Screensaver Icons
 
@@ -462,37 +437,72 @@ ScreensaverEntityIconColor: {'val_best': 1}
 
 > **Im Alternativen Layout können nur 3 Entities visualisiert werden. Für die Darstellung  der Luftfeuchte wird die fourthScreensaverEntity verwendet!**
 
-## Wechsel zwischen Entity-Status-Icons und WeatherForecast  
-
-Es lässt sich über 2 Datenpunkte in 0_userdata.0. steuern ob:  
-* nur die 4 Entity-Status-Icons visualisiert wird  
+## Entity-Status-Icons und WeatherForecast  
+  
+Es lässt sich über Datenpunkte in 0_userdata.0. steuern ob:  
+* nur die Entity-Status-Icons visualisiert wird  
 * nur die Wettervorhersage visualisiert wird  
-* die 4 Entity-Status-Icons und die Wettervorhersage (60 Sekunden abwechselnd) visualisiert wird  
+* die Entity-Status-Icons und die Wettervorhersage abwechselnd visualisiert wird und in welcher Zeit der Wechsel stattfinden soll 
 
-Wenn ein Wechsel stattfinden soll, dann muss:  
-**0_userdata.0.NSPanel.X.ScreensaverInfo.weatherForecastTimer** den Wert **true** haben  
-
-In diesem Fall ist keine weitere Einstellung erforderlich. Es wird ein Wechsel über das TS-Skript initiiert.  
-
-Wenn kein Wechsel stattfinden soll, dann muss:  
-**0_userdata.0.NSPanel.X.ScreensaverInfo.weatherForecastTimer** den Wert **false** haben  
-
-Wenn die 4 Wetter Icons sichtbar sein sollen (Timer für Wechsel deaktiviert)  
+Wenn die **Wetter Icons** sichtbar sein sollen (Timer für Wechsel deaktiviert)  
 **0_userdata.0.NSPanel.X.ScreensaverInfo.weatherForecast** den Wert **true** haben  
 
-Wenn die 4 Entity Icons sichtbar sein sollen (Timer für Wechsel deaktiviert)  
+Wenn die **Entity Icons** sichtbar sein sollen (Timer für Wechsel deaktiviert)  
 **0_userdata.0.NSPanel.X.ScreensaverInfo.weatherForecast** den Wert **false** haben  
+  
+Wenn ein Wechsel stattfinden soll, dann muss:  
+**0_userdata.0.NSPanel.X.ScreensaverInfo.weatherForecastTimer** den Wert **true** haben  
+  
+Wenn kein Wechsel stattfinden soll, dann muss:  
+**0_userdata.0.NSPanel.X.ScreensaverInfo.weatherForecastTimer** den Wert **false** haben  
+  
+In wieviel **Sekunden** soll der Wechsel stattfinden  
+**0_userdata.0.NSPanel.Büro.ScreensaverInfo.entityChangeTime** ein Wert zwischen **15 - 60** Sekunden  
+    
+Wenn die automatischen Farben der Weather-Forcast **nicht** verwendet werden sollen:
+**0_userdata.0.NSPanel.1.Config.Screensaver.autoWeatherColorScreensaverLayout** den Wert **false** haben  
+  
+Die Einstellungen lassen sich auch am Panel einstellen unter "Einstellungen -> Screensaver -> Wetter"  
+  
+![Wetter](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/9f9b7f69-e23d-4768-b768-4293766ad84f)  
+    
+### Weather-Forcast-Farben
 
+![image](https://user-images.githubusercontent.com/102996011/190623367-70ebe988-f467-49cf-8e81-2275a8db259b.png)  
+  
+```
+//Auto-Weather-Colors
+const swClearNight:     RGB = { red: 150, green: 150, blue: 100};
+const swCloudy:         RGB = { red:  75, green:  75, blue:  75};
+const swExceptional:    RGB = { red: 255, green:  50, blue:  50};
+const swFog:            RGB = { red: 150, green: 150, blue: 150};
+const swHail:           RGB = { red: 200, green: 200, blue: 200};
+const swLightning:      RGB = { red: 200, green: 200, blue:  0};
+const swLightningRainy: RGB = { red: 200, green: 200, blue: 150};
+const swPartlycloudy:   RGB = { red: 150, green: 150, blue: 150};
+const swPouring:        RGB = { red:  50, green:  50, blue: 255};
+const swRainy:          RGB = { red: 100, green: 100, blue: 255};
+const swSnowy:          RGB = { red: 150, green: 150, blue: 150};
+const swSnowyRainy:     RGB = { red: 150, green: 150, blue: 255};
+const swSunny:          RGB = { red: 255, green: 255, blue:   0};
+const swWindy:          RGB = { red: 150, green: 150, blue: 150};
+```
+  
+  
 # Screensaver Dimmode  
 
 ## Automatischer Dimmode:  
 
 Über die Parameter (auch im Servicemenü verfügbar), lassen sich die Helligkeit des Screensavers zur Uhrzeit einstellen.  
 
-* 0_userdata.0.NSPanel.1.NSPanel_Dimmode_brightnessDay  - Die Helligkeit (0-100) in der der Screensaver tagsüber gedimmt wird  
-* 0_userdata.0.NSPanel.1.NSPanel_Dimmode_brightnessNight - Die Helligkeit (0-100) in der der Screensaver nachts gedimmt wird  
+* 0_userdata.0.NSPanel.1.NSPanel_Dimmode_brightnessDay  - Die Helligkeit (0-100) in der der Screensaver tagsüber gedimmt wird (im Menü 0-10)  
+* 0_userdata.0.NSPanel.1.NSPanel_Dimmode_brightnessNight - Die Helligkeit (0-100) in der der Screensaver nachts gedimmt wird (im Menü 0-10)  
 * 0_userdata.0.NSPanel.1.NSPanel_Dimmode_hourDay - Die Stunde in der der Tag Dimm-Modus aktiv werden soll  
-* 0_userdata.0.NSPanel.1.NSPanel_Dimmode_hourNight - Die Stunde in der der Nacht Dimm-Modus aktiv werden soll    
+* 0_userdata.0.NSPanel.1.NSPanel_Dimmode_hourNight - Die Stunde in der der Nacht Dimm-Modus aktiv werden soll   
+  
+ 
+![Dimmode](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/192f8d01-83b1-4457-98b4-d83620a9a934)
+
 
 ## Manueller Dimmode:  
 
