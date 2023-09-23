@@ -6,11 +6,8 @@
 Im Zuge der weiteren Releases wird es sukzessive um künftige Funktionalitäten erweitert
 
 ## Service-Menü-Beispiel aus dem TypeScript (NSPanel.ts)   
-![Nextion_Editor_jc3M2TasjY](https://user-images.githubusercontent.com/102996011/215077776-20e7a3f8-3a87-43c4-ae24-7e237e0a9646.gif) 
 
 ![Nextion_Editor_4keKWucXc4](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/09eb0cca-5d15-48a5-a522-6d7eceaae42d)
-
-
 
 ## Aufbau des Service-Menüs  
  
