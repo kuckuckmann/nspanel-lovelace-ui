@@ -103,7 +103,7 @@ let NSPanel_Service = <PageEntities>
                     'prev': 'NSPanel_Wifi_Info_1',
                     'home': 'NSPanel_Service',
                     'items': [
-                        <PageItem>{ id: 'alias.0.Test.Wiki_SSID', name: 'SSId', icon: 'signal-distance-variant', offColor: Menu, onColor: Menu },
+                        <PageItem>{ id: AliasPath + 'Tasmota.Wifi.SSId', name: 'SSId', icon: 'signal-distance-variant', offColor: Menu, onColor: Menu },
                         <PageItem>{ id: AliasPath + 'Tasmota.Wifi.Mode', name: 'Modus', icon: 'signal-distance-variant', offColor: Menu, onColor: Menu },
                         <PageItem>{ id: AliasPath + 'Tasmota.Wifi.Channel', name: 'Kanal', icon: 'timeline-clock-outline', offColor: Menu, onColor: Menu },
                         <PageItem>{ id: AliasPath + 'Tasmota.Wifi.AP', name: 'AP', icon: 'router-wireless-settings', offColor: Menu, onColor: Menu },
