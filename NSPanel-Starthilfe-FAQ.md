@@ -31,9 +31,33 @@ Welche Version grade aktuell zum Script passt, findet ihr im Script.
 ## "Waiting for Content" - es geht nicht weiter  
 ## Berry-Driver nicht oder falsch installiert
 
-## MQTT-Adapter Einstellungen
+## MQTT-Adapter Einstellungen  
+Bilder sagen meistens mehr als Worte. Wichtig ist, wenn User und Passwort vergeben worden sind, diese auch in Tasmota eingetragen werden müssen.  
+  
+<img width="1186" alt="Bildschirmfoto 2023-09-26 um 18 08 54" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/70d8d600-d385-412d-8db2-17206509be55">
+  
+<img width="1186" alt="Bildschirmfoto 2023-09-26 um 18 09 05" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/bdc61937-2ea8-4dbf-9fad-472c893c0a77">
+  
+<img width="1186" alt="Bildschirmfoto 2023-09-26 um 18 09 22" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/f2c4e065-8c46-44d5-9aa7-a79096a3fc15">
+  
+## MQTT-Tasmota Einstellungen  
+  
+<img width="402" alt="Bildschirmfoto 2023-09-26 um 18 10 44" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/6b67720c-eeaa-43db-84b6-05f953aba6e1">
+  
+* Host -> IP-Adresse vom ioBroker
+* Port -> der Port welcher im MQTT-Adapter eingestellt wurde
+* Client -> Name der in der Connect Meldung Von MQTT-Adapter angezeigt wird (mqtt.0.info.connection)  
+* User, Password -> siehe MQTT-Adapter  
+* topic -> Name für die Variable, diese wird für die Hierarchie im MQTT genutzt 
+* full topic -> für eine sinnvolle Hierarchie sollte nicht laut Vorgabe %prefix%/%topic% sondern umgekehrt.  
 
-## MQTT-Tasmota Einstellungen
+***
+
+Hierarchie mit **Smarthome/%topic%/%prefix%**   
+<img width="402" alt="Bildschirmfoto 2023-09-26 um 18 38 06" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/7597c582-200f-4ace-baca-4acc5eff53cd">
+
+Hierarchie mit **Smarthome/%prefix%/%topic%**  
+<img width="414" alt="Bildschirmfoto 2023-09-26 um 18 39 40" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/213d3d4a-0f72-423e-b5ff-273ed85d220a">
 
 ## "CustomSend" fehlt
 
