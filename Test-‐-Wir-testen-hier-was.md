@@ -64,6 +64,7 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 <details>
   <summary>PageEntities</summary> 
+  
 ## Card
   
 <PLATZHALTER PICTURE>
@@ -170,7 +171,7 @@ let SensorGrid = <PageGrid>{
     ]};
 ```
   
-## Card
+## Card  
   
 <PLATZHALTER PICTURE>
   
@@ -178,7 +179,7 @@ let SensorGrid = <PageGrid>{
 
 ```  
   
-## Card
+## Card  
   
 <PLATZHALTER PICTURE>
   
@@ -207,6 +208,7 @@ let SensorGrid = <PageGrid>{
     
 <details>
   <summary>PageMedia</summary> 
+  
 ## Card
   
 <PLATZHALTER PICTURE>
@@ -244,6 +246,7 @@ let SensorGrid = <PageGrid>{
   
 <details>
   <summary>PageThermo</summary> 
+  
 ## Card
   
 <PLATZHALTER PICTURE>
@@ -273,6 +276,7 @@ let SensorGrid = <PageGrid>{
     
 <details>
   <summary>PageAlarm & PageUnlock</summary> 
+  
 ## Card
   
 <PLATZHALTER PICTURE>
@@ -294,6 +298,7 @@ let SensorGrid = <PageGrid>{
   
 <details>
   <summary>PageChart</summary> 
+  
 ## Card
   
 <PLATZHALTER PICTURE>
@@ -315,6 +320,7 @@ let SensorGrid = <PageGrid>{
   
 <details>
   <summary>PagePower</summary> 
+  
 ## Card
   
 <PLATZHALTER PICTURE>
@@ -328,6 +334,7 @@ let SensorGrid = <PageGrid>{
   
 <details>
   <summary>PageQR</summary> 
+  
 ## Card
   
 <PLATZHALTER PICTURE>
