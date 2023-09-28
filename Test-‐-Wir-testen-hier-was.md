@@ -57,6 +57,18 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   * **cardQR:** Gäste WLAN 
   
   
+***  
+  
+  
+# Page Beispiele  
+  
+<details>
+  <summary>PageEntities</summary> 
+
+</details>
+***  
+<details>
+  <summary>PageGrid(2)</summary> 
 ## CardGrid für Sensorwerte  
   
 ![](https://user-images.githubusercontent.com/102996011/216006611-32155c9c-84ba-48eb-8b07-2485d80eb99b.png)  
@@ -75,7 +87,36 @@ let SensorGrid = <PageGrid>{
         <PageItem>{ id: 'alias.0.NSPanel_1.Luftdruck', name: 'Luftdruck hPa', offColor: White , onColor: White, useValue: true, colorScale: {'val_min': 950, 'val_max': 1050, 'val_best': 1013} },
     ]};
 ```
-  
-  
+</details>
+***  
+<details>
+  <summary>PageMedia</summary> 
+
+</details>
+***  
+<details>
+  <summary>PageThermo</summary> 
+
+</details>
+***  
+<details>
+  <summary>PageAlarm & PageUnlock</summary> 
+
+</details>
+***  
+<details>
+  <summary>PageChart</summary> 
+
+</details>
+***  
+<details>
+  <summary>PagePower</summary> 
+
+</details>
+***  
+<details>
+  <summary>PageQR</summary> 
+
+</details>
 ***
 
