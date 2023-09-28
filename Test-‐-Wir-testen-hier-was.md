@@ -65,7 +65,43 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
 <details>
   <summary>PageEntities</summary> 
   
-## Card
+## CardEntities 
+  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+  
+``` 
+let button2Page = <PageEntities>
+{
+    'type': 'cardEntities',
+    'heading': 'Büro',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.Schreibtischlampe'},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Deckenbeleuchtung'}
+    ]
+};
+```  
+  
+## CardEntities - Color Aliase 1
+  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+  
+``` 
+let Test_Licht1 = <PageEntities>
+{
+    'type': 'cardEntities',
+    'heading': 'Color Aliase 1',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestRGBLichteinzeln', name: 'RGB-Licht Hex-Color', interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestRGBLicht', name: 'RGB-Licht', minValueBrightness: 0, maxValueBrightness: 100, interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestCTmitHUE', name: 'HUE-Licht-CT', minValueBrightness: 0, maxValueBrightness: 70, minValueColorTemp: 500, maxValueColorTemp: 6500, interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestHUELicht', name: 'HUE-Licht-Color', minValueColorTemp: 500, maxValueColorTemp: 6500, interpolateColor: true}
+    ]
+};
+```  
+  
+## CardEntities 
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
@@ -73,76 +109,139 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
 
 ```  
   
-## Card
+## CardEntities - Color Aliase 2
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Test_Licht2 = <PageEntities>
+{
+    'type': 'cardEntities',
+    'heading': 'Color Aliase 2',
+    'useColor': true,
+    'items': [
+        //Beispiel für RGB Light mit neuem PageItem-Parameter colormode: "xy" alternativ colormode: "rgb" oder weglassen
+        //Steuert im z.B. DeConz Adapter unter Lampen die Farben per CIE (XY)
+        <PageItem>{ id: "alias.0.NSPanel_2.WZ_E14_Fenster_rechts", name: 'Fensterbank rechts', minValueBrightness: 0, maxValueBrightness: 100, minValueColorTemp: 500, maxValueColorTemp: 150, interpolateColor: true, colormode: 'xy'},
+        <PageItem>{ id: "alias.0.NSPanel_1.TestFarbtemperatur", name: 'Farbtemperatur', interpolateColor: true},
+        <PageItem>{ id: "alias.0.NSPanel_1.TestFarbtemperatur", prefixName: 'Büro: ', name: "getState('0_userdata.0.Test.Wiki_Router').val", suffixName: '%', interpolateColor: true},
+    ]
+};
 ```  
   
-## Card
+## CardEntities - Sonstige Aliase
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Test_Funktionen = <PageEntities>
+{
+    'type': 'cardEntities',
+    'heading': 'Sonstige Aliase',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestLautstärke', offColor: MSRed, onColor: MSGreen, name: 'Echo Spot Büro', minValue: 0, maxValue: 100 },
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestTemperatur',name: 'Temperatur außen', icon: 'thermometer', onColor: White , colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestFeuchtigkeit', name: 'Luftfeuchte außen', icon: 'water-percent', unit: '%H', onColor: White, colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 65} },
+        //<PageItem>{ id: 'alias.0.NSPanel_1.TestInfo', name: 'Windstärke', icon: 'wind-power-outline', offColor: MSRed, onColor: MSGreen, unit: 'bft', minValue: 0, maxValue: 12, interpolateColor: true, useColor: true },
+        <PageItem>{ id: 'alias.0.NSPanel_1.Ventilator.Fan_1',name: 'Ventilator', icon: 'fan', onColor: On, offColor: HMIOff, modeList: ['Low', 'Medium', 'High', 'Move', 'Sleep', 'Auto', 'Manual']},
+    ]
+};
 ```  
   
-## Card
+## CardEntities - Diverses
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Buero_Seite_1 = <PageEntities>
+{
+    'type': 'cardEntities',
+    'heading': 'Büro',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.Schreibtischlampe', interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Deckenbeleuchtung', interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Testlampe2', name: 'Filamentlampe', minValueBrightness: 0, maxValueBrightness: 70, interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen}
+    ]
+};
 ```  
   
-## Card
+## CardEntities - Fenster und Türen
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Fenster_1 = <PageEntities>
+{
+    'type': 'cardEntities',
+    'heading': 'Fenster und Türen',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestFenster', offColor: MSRed, onColor: MSGreen, name: 'Büro Fenster'},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Haustuer', offColor: MSRed, onColor: MSGreen, name: 'Haustür'},
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestBlind', icon: "blinds-horizontal", offColor: White, onColor: Yellow, name: 'Büro', secondRow: 'Hier Text für 2. Zeile'},
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestDoorlock', offColor: MSRed, onColor: MSGreen, name: 'Türschloss'},
+    ]
+};
 ```  
   
-## Card
+## CardEntities - Button Aliase
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Button_1 = <PageEntities>
+{
+    'type': 'cardEntities',
+    'heading': 'Button Aliase',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestTastensensor', name: 'Tastensensor (FFN)'},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Radio.NDR2', icon: 'radio', name: 'Taste (NDR2)', onColor: colorRadio, buttonText: 'starten'},
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestVentil1', icon: 'valve-open', icon2: 'valve-closed',offColor: MSRed, onColor: MSGreen, name: 'Test-Ventil 1'},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Radio.NDR2', icon: 'alarm-light', name: 'Alert mit Zielseite', offColor: MSGreen, onColor: MSRed, targetPage: 'Abfall', buttonText: 'Popup'},
+    ]
+};
 ```  
   
-## Card
+## CardEntities - Navigate für Subpages
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Subpages_1 = <PageEntities>
+{
+    'type': 'cardEntities',
+    'heading': 'Test Subpages',
+    'useColor': true,
+    'items': [
+        <PageItem>{ navigate: true, id: 'alias.0.NSPanel_1.Abfall.event1', targetPage: 'Abfall', name: 'Abfallkalender'},
+        <PageItem>{ navigate: true, id: null, targetPage: 'WLAN', onColor: White, name: 'Gäste WLAN'},
+    ]
+};
 ```  
   
-## Card
+## CardEntities - Abfallkalender
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
-```  
-  
-## Card
-  
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
-  
-``` 
-
-```  
-  
-## Card
-  
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
-  
-``` 
-
+let Abfall = <PageEntities>
+{
+	'type': 'cardEntities',
+	'heading': 'Abfallkalender',
+	'useColor': true,
+	'subPage': true,
+	'parent': Subpages_1,
+	'items': [
+		<PageItem>{ id: 'alias.0.NSPanel_1.Abfall.event1',icon: 'trash-can'},
+		<PageItem>{ id: 'alias.0.NSPanel_1.Abfall.event2',icon: 'trash-can'},
+		<PageItem>{ id: 'alias.0.NSPanel_1.Abfall.event3',icon: 'trash-can'},
+		<PageItem>{ id: 'alias.0.NSPanel_1.Abfall.event4',icon: 'trash-can'}
+	]
+};
 ```  
 
 </details>  
@@ -171,36 +270,72 @@ let SensorGrid = <PageGrid>{
     ]};
 ```
   
-## Card  
+## CardCrid2 - 8 statt 6 PageItems  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Buero_Seite_2 = <PageGrid2>
+{
+    'type': 'cardGrid2',
+    'heading': 'Büro 2',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.Schreibtischlampe', name: 'Schreibtisch'},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Deckenbeleuchtung', name: 'Deckenlampe'},
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestFenster', offColor: MSRed, onColor: MSGreen, name: 'Büro Fenster'},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', icon: 'power', offColor: MSRed, onColor: MSGreen},
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestBlind', icon: 'projector-screen', onColor: White, name: 'Beamer', secondRow: 'auch Text'},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Kippfenster', useValue: true },
+        <PageItem>{ id: 'alias.0.NSPanel_1.Radio.Bob', icon: 'play', onColor: White, name: 'TuneIn'}
+    ]
+};
 ```  
   
-## Card  
+## CardGrid - Radiosender
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Radiosender = <PageGrid>
+{
+    'type': 'cardGrid',
+    'heading': 'Büro 2',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.Radio.Bob', icon: 'radio', name: 'Radio BOB', onColor: colorRadio},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Countdown', icon: 'timer-outline', name: 'Timer', onColor: White}
+    ]
+};
 ```  
   
-## Card
+## CardCrid - WLED
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
-```  
-  
-## Card
-  
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
-  
-``` 
-
+let WLED = <PageGrid>
+{
+    'type': 'cardGrid',
+    'heading': 'WLED Stripes WZ',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.On', name: 'Power', icon: 'power', onColor: HMIOn, offColor: HMIOff},
+        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.Sync', name: 'Sync', icon: 'sync', onColor: HMIOn, offColor: White},
+        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.Presets', icon: 'heart-outline', name: 'Presets', onColor: White, modeList: ['Preset 0', 'Add Preset']},
+        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.Colors', icon: 'palette', name: 'Colors', onColor: White, 
+                    modeList: ['Default', '* Color 1', '* Color Gradient', '* Colors 1&2', '* Colors Only', '* Random Cycle', 'Analogus','April Night', 'Aqua Flash', 'Atlantica', 'Aurora', 
+                               'Beach', 'Beech', 'Blink Red', 'Breeze', 'C9', 'C9 New', 'Candy', 'Candy2', 'Cloud', 
+                               'Cyane', 'Departure', 'Drywet', 'Fairy Reaf', 'Fire', 'Forest', 'etc'
+                              ]},
+        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.Effects', icon: 'emoticon-outline', name: 'Effects', onColor: White, 
+                    modeList: ['Solid', 'Android', 'Aurora', 'Blends', 'Blink', 'Blink Rainbow', 'Bouncing Balls','Bpm', 'Breathe', 'Candle', 'Candle Multi', 
+                               'Candy Cane', 'Chase', 'Chase 1', 'Chase 2', 'Chase 3', 'Chase Flash', 'Chase Flash Rnd', 'Chase Rainbow', 'Chase Random', 
+                               'Chunchun', 'Colorful', 'Colorloop', 'Colortwinkles', 'Colorwaves', 'Dancing Shadows', 'etc'
+                              ]},
+        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.Segments', icon: 'layers', name: 'Segments', onColor: White, modeList: ['Segment 0', 'Add Segment']},
+    ]
+};
 ```  
 </details>  
   
@@ -209,36 +344,113 @@ let SensorGrid = <PageGrid>{
 <details>
   <summary>PageMedia</summary> 
   
-## Card
+## CardMedia - Alexa
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+// NEW: Neue Definition von Medien-Aliasen
+// adapterPlayerInstance = alexa2.0. or spotify-premium.0. or sonos.0. or chromecast.0.
+let Alexa = <PageMedia> 
+{
+    'type': 'cardMedia',
+    'heading': 'Alexa',
+    'useColor': true,
+    'items': [<PageItem>{   
+                id: AliasPath + 'Media.PlayerAlexa', 
+                adapterPlayerInstance: 'alexa2.0.',
+                mediaDevice: 'G0XXXXXXXXXXXXXX', 
+                speakerList: ['Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche','Echo Spot Buero'],
+                //analog alexa2 Music-Provider
+                playList: ['Spotify-Playlist.PartyPlaylist',
+                           'Amazon-Music-Playlist.Mein Discovery Mix',
+                           'My-Library-Playlist.2020',
+                           'My-Library-Playlist.2021',
+                           'TuneIn.Radio Bob Rock',
+                           'TuneIn.NDR2',
+                           'Spotify-Playlist.Sabaton Radio',
+                           'Spotify-Playlist.Rock Party',
+                           'Spotify-Playlist.This Is Nightwish',
+                           'Spotify-Playlist.Metal Christmas'],
+                equalizerList: ['Bassboost','Klassik','Dance', 'Deep', 'Electronic', 'Flat', 'Hip-Hop', 'Rock', 
+                                'Metal', 'Jazz', 'Latin', 'Tonstärke', 'Lounge', 'Piano'],
+                colorMediaIcon: colorAlexa,
+                colorMediaArtist: Yellow,
+                colorMediaTitle: Yellow,
+                autoCreateALias : true
+             }]
+};
 ```  
   
-## Card
+## CardMedia - Sonos
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Sonos = <PageMedia>
+{
+    'type': 'cardMedia',
+    'heading': 'Sonos',
+    'useColor': true,
+    'items': [<PageItem>{   
+                id: AliasPath + 'Media.PlayerSonos', 
+                adapterPlayerInstance: 'sonos.0.',
+                mediaDevice: '192_168_1_212',
+                speakerList: ['Terrasse'],
+                colorMediaIcon: colorSpotify,
+                colorMediaArtist: Yellow,
+                colorMediaTitle: Yellow,
+                autoCreateALias : true
+             }]
+};
 ```  
   
-## Card
+## CardMedia - Spotify-Premium
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let SpotifyPremium = <PageMedia>
+{
+    'type': 'cardMedia',
+    'heading': 'Spotify-Premium',
+    'useColor': true,
+    'items': [<PageItem>{ 
+                id: AliasPath + 'Media.PlayerSpotifyPremium', 
+                adapterPlayerInstance: "spotify-premium.0.",
+                speakerList: ['LENOVO-W11-01', 'Terrasse','Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche',
+                              'Echo Spot Buero'],
+                playList: ['PartyPlaylist','Sabaton Radio','Rock Party','This Is Nightwish','Metal Christmas'],
+                repeatList: ['off','context','track'],
+                equalizerList: ['Bassboost','Klassik','Dance', 'Deep', 'Electronic', 'Flat', 'Hip-Hop', 'Rock', 
+                                'Metal', 'Jazz', 'Latin', 'Tonstärke', 'Lounge', 'Piano'],
+                colorMediaIcon: colorSpotify,
+                colorMediaArtist: Yellow,
+                colorMediaTitle: Yellow,
+                autoCreateALias : true
+             }]
+};
 ```  
   
-## Card
+## CardMedia - SqueezeboxRPC
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let SqueezeboxRPC = <PageMedia>
+{
+    'type': 'cardMedia',
+    'heading': 'SqueezeboxRPC',
+    'useColor': true,
+    'items': [<PageItem>{ 
+                id: 'alias.0.Media.LMS', 
+                adapterPlayerInstance: 'squeezeboxrpc.0',
+                speakerList: ['SqueezePlay'],
+                mediaDevice: 'SqueezePlay',
+                playList: ['Playlist'],
+                autoCreateALias : true
+             }]
+};
 ```  
 </details>  
   
@@ -247,28 +459,71 @@ let SensorGrid = <PageGrid>{
 <details>
   <summary>PageThermo</summary> 
   
-## Card
+## CardThermo - Thermostat
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Buero_Themostat = <PageThermo>
+{
+    'type': 'cardThermo',
+    'heading': 'Test Thermostat',
+    'useColor': true,
+    'items': [<PageItem>{ 
+                id: 'alias.0.NSPanel_1.Thermostat_Buero', 
+                minValue: 50, 
+                maxValue: 300,
+                stepValue: 5
+             }]
+};
 ```  
   
-## Card
+## CardThermo - Klimaanlage
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Buero_Klimaanlage = <PageThermo>
+{
+    'type': 'cardThermo',
+    'heading': 'Test Klimaanlage',
+    'useColor': true,
+    'items': [<PageItem>{   
+                id: 'alias.0.NSPanel_1.TestKlimaanlage', 
+                minValue: 50, 
+                maxValue: 250,
+                stepValue: 5,
+                iconArray: ['power-standby','air-conditioner','snowflake','fire','alpha-e-circle-outline','fan','water-percent','swap-vertical-bold'],
+                popupThermoMode1: ['Auto','0','1','2','3'],
+                popupThermoMode2: ['Auto','0','1','2','3','4','5'],
+                popupThermoMode3: ['Auto','Manual','Boost',],
+                popUpThermoName: ['Schwenk-Modus', 'Speed', 'Temperatur'],
+                icon: 'fan',
+                setThermoAlias: ['MODE1','MODE2','MODE3'],
+                //setThermoDestTemp2: 'ACTUAL2'
+             }]
+};
 ```  
   
-## Card
+## CardThermo - Wärmepumpe
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Pool_Waermepumpe = <PageThermo>
+{
+    'type': 'cardThermo',
+    'heading': 'Pool Wärmepumpe',
+    'useColor': true,
+    'items': [<PageItem>{   
+                id: 'alias.0.NSPanel_1.Pool_Waermepumpe', 
+                minValue: 100, 
+                maxValue: 300,
+                stepValue: 5,
+                iconArray: ['power-standby','alpha-a-circle-outline','snowflake','fire'],
+                //iconArray: ['power-standby','air-conditioner','snowflake','fire','alpha-e-circle-outline','fan','water-percent','swap-vertical-bold'],
+             }]
+};
 ```  
 </details>  
   
@@ -277,20 +532,32 @@ let SensorGrid = <PageGrid>{
 <details>
   <summary>PageAlarm & PageUnlock</summary> 
   
-## Card
+## CardAlarm
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Buero_Alarm = <PageAlarm>
+{
+    'type': 'cardAlarm',
+    'heading': 'Alarmanlage',
+    'useColor': true,
+    'items': [<PageItem>{ id: 'alias.0.Alarm' }]
+};
 ```  
   
-## Card
+## CardUnlock
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let Unlock_Service = <PageUnlock>
+{
+    'type': 'cardUnlock',
+    'heading': 'Service Pages',
+    'useColor': true,
+    'items': [<PageItem>{ id: 'alias.0.Unlock', targetPage: 'NSPanel_Service' }]
+};
 ```  
 </details>  
   
