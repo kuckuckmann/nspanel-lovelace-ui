@@ -35,10 +35,10 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
 * Alarmanlage
 * Service Pages
 * Radio
-* Büro  
+* Büro 
   
   
-##CardGrid für Sensorwerte  
+## CardGrid für Sensorwerte  
   
 ![](https://user-images.githubusercontent.com/102996011/216006611-32155c9c-84ba-48eb-8b07-2485d80eb99b.png)  
   
