@@ -64,11 +64,93 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 <details>
   <summary>PageEntities</summary> 
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
 
-</details>
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+
+</details>  
+  
 ***  
+  
 <details>
   <summary>PageGrid(2)</summary> 
+  
 ## CardGrid für Sensorwerte  
   
 ![](https://user-images.githubusercontent.com/102996011/216006611-32155c9c-84ba-48eb-8b07-2485d80eb99b.png)  
@@ -87,36 +169,173 @@ let SensorGrid = <PageGrid>{
         <PageItem>{ id: 'alias.0.NSPanel_1.Luftdruck', name: 'Luftdruck hPa', offColor: White , onColor: White, useValue: true, colorScale: {'val_min': 950, 'val_max': 1050, 'val_best': 1013} },
     ]};
 ```
-</details>
-***  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+</details>  
+  
+***
+    
 <details>
   <summary>PageMedia</summary> 
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
 
-</details>
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+</details>  
+  
 ***  
+  
 <details>
   <summary>PageThermo</summary> 
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
 
-</details>
-***  
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+</details>  
+  
+***
+    
 <details>
   <summary>PageAlarm & PageUnlock</summary> 
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
 
-</details>
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+</details>  
+  
 ***  
+  
 <details>
   <summary>PageChart</summary> 
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
 
-</details>
+```  
+  
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
+
+```  
+</details>  
+  
 ***  
+  
 <details>
   <summary>PagePower</summary> 
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
 
-</details>
+```  
+</details>  
+  
 ***  
+  
 <details>
   <summary>PageQR</summary> 
+## Card
+  
+<PLATZHALTER PICTURE>
+  
+``` 
 
-</details>
+```  
+</details>  
+  
 ***
 
