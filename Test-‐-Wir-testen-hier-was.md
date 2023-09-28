@@ -67,7 +67,7 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -75,7 +75,7 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -83,7 +83,7 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -91,7 +91,7 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -99,7 +99,7 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -107,7 +107,7 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -115,7 +115,7 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -123,7 +123,7 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -131,7 +131,7 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -139,7 +139,7 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -173,7 +173,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card  
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -181,7 +181,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card  
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -189,7 +189,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -197,7 +197,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -211,7 +211,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -219,7 +219,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -227,7 +227,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -235,7 +235,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -249,7 +249,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -257,7 +257,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -265,7 +265,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -279,7 +279,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -287,29 +287,7 @@ let SensorGrid = <PageGrid>{
   
 ## Card
   
-<PLATZHALTER PICTURE>
-  
-``` 
-
-```  
-</details>  
-  
-***  
-  
-<details>
-  <summary>PageChart</summary> 
-  
-## Card
-  
-<PLATZHALTER PICTURE>
-  
-``` 
-
-```  
-  
-## Card
-  
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
 
@@ -319,14 +297,62 @@ let SensorGrid = <PageGrid>{
 ***  
   
 <details>
-  <summary>PagePower</summary> 
+  <summary>PageChart & Power</summary> 
   
-## Card
+## CardChart
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let CardChartExample = <PageChart>
+{
+    'type': 'cardChart',
+    'heading': 'Stromzähler L1+L2+L3',
+    'useColor': true,
+    'items': [<PageItem>{ 
+                id: 'alias.0.NSPanel_1.cardChart', 
+                yAxis: 'Leistung [kW]', 
+                yAxisTicks: [2,4,6,8,10,2,4,6,8,20,2], 
+                onColor: Yellow
+             }]
+};
+```  
+  
+## CardLChart
+  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+  
+``` 
+let CardLChartExample = <PageChart>
+{
+    'type': 'cardLChart',
+    'heading': 'Büro Temperatur',
+    'useColor': true,
+    'items': [<PageItem>{ 
+                id: 'alias.0.Haus.Erdgeschoss.Buero.Charts.Temperatur',
+                yAxis: 'Temperatur [°C]',
+                yAxisTicks: [-250, -200, -150, -100,-50, 0, 50, 100, 150, 200, 250, 300],
+                onColor: Yellow
+             }]
+};
+```  
+  
+  
+## CardPower
+  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+  
+``` 
+let CardPowerExample = <PagePower>
+{
+    'type': 'cardPower',
+    'heading': 'cardPower Emulator',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.Power.PowerCard' },
+//      <PageItem>{ }  // aktivieren für Demomodus der PowerCard, dafür ersten PageItem auskommentieren
+    ]
+};
 ```  
 </details>  
   
@@ -335,12 +361,20 @@ let SensorGrid = <PageGrid>{
 <details>
   <summary>PageQR</summary> 
   
-## Card
+## CardQR
   
-<PLATZHALTER PICTURE>
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
 ``` 
-
+let WLAN = <PageQR> 
+{
+     'type': 'cardQR',
+     'heading': 'Gäste WLAN',
+     'useColor': true,
+     'subPage': true,
+     'parent': Subpages_1,
+     'items': [<PageItem>{ id: 'alias.0.NSPanel_1.Guest_Wifi', hidePassword: false }]
+};
 ```  
 </details>  
   
