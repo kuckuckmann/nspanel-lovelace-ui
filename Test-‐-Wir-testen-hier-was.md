@@ -265,7 +265,7 @@ let Test_Licht1 = <PageEntities>
   
 ## CardEntities - Color Aliase 2
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d5cb9173-042c-4ef1-89de-a84b3a646b3f)
   
 ``` 
 let Test_Licht2 = <PageEntities>
