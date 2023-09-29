@@ -113,10 +113,24 @@ let name = <PageType>
 };  
 ```  
   
-* let name = : Das Wort name ist hier ein Platzhalter. Man gibt der Seite hier einen eindeutigen Namen, allerdings bitte ohne Leerzeichen bei mehreren Worten und vermeide Sonderzeichen. Dieser Name muss im weiteren Verlauf des Skriptes noch einmal aufgeführt werden (Wichtig für die Darstellung und Navigation)  
-* <PageType> : Type muss durch den richtigen Seiten Typ (Entities, Chart, Power, Grid, etc.) ersetzt werden. Page davor bleibt bestehen, so dass man dann zum Beispiel ein <PageEntities> oder <PageGrid> erhält. Wichtig, PageType ist immer von einer Spitzen Klammer eingefasst.  
-* type : Der Typ der Seite, wie zuvor schon beschrieben. PageType und type haben immer den gleichen Postfix. Bei type ist es aber CardType stattPageType. Folglich haben wir hier in Hochkomma eingefasst 'cardEntities' oder 'cardGrid', etc.  
-
+* `let name =` : Das Wort name ist hier ein Platzhalter. Man gibt der Seite hier einen eindeutigen Namen, allerdings bitte ohne Leerzeichen bei mehreren Worten und vermeide Sonderzeichen. Dieser Name muss im weiteren Verlauf des Skriptes noch einmal aufgeführt werden (Wichtig für die Darstellung und Navigation)  
+* `<PageType>` : Type muss durch den richtigen Seiten Typ (Entities, Chart, Power, Grid, etc.) ersetzt werden. Page davor bleibt bestehen, so dass man dann zum Beispiel ein <PageEntities> oder <PageGrid> erhält. Wichtig, PageType ist immer von einer Spitzen Klammer eingefasst.  
+* `type` : Der Typ der Seite, wie zuvor schon beschrieben. PageType und type haben immer den gleichen Postfix. Bei type ist es aber CardType stattPageType. Folglich haben wir hier in Hochkomma eingefasst 'cardEntities' oder 'cardGrid', etc.  
+* `heading` :  Der Seitenname oder auch Überschrift, der auf der Seite auf dem NSPanel oben in der Mitte dargestellt wird. er ist in Hochkommas zu fassen.  
+* `useColor` :  Wird in der Regel mit `true` angegeben  
+* `items` :  Hier wird der eigentliche Inhalt der Seite eingetragen. Pro dazustellendem Element erfasst man hier ein sogenanntes `<PageItem>` welches dann die darzustellenden Parameter erhält.  
+  
+Bis hier her haben wir eine leere Seite erstellt. Wenn ich meinen Page/Card Type festgelegt habe, der Seite einen Namen gegeben, eine Überschrift definiert habe, kann ich mich nun daran machen den Inhalt der Seite aufzubauen.  
+Als Zwischen-Test kann man den definierten `name` im Skript unter **pages** hinzufügen, das Skript neu starten und dann auf dem NSPanel schauen, ob die neue Seite (ohne Inhalt) schon angezeigt wird.  
+  
+Bevor wir aber zur Erstellung der **PageItem** kommen, noch optionale Parameter, die man hier setzen kann:  
+* `subPage` :  
+* `parent` :  
+  
+Es gibt noch weitere optionale Parameter, jedoch gehören Die alle zum Thema Navigation. Hierzu gibt es [hier](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation) in der Wiki eine Beschreibung, so dass wir an dieser Stelle nicht noch einmal darauf eingehen möchten.
+  
+  
+  
 ***  
   
   
