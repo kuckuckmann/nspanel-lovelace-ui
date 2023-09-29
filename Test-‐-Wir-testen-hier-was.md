@@ -132,7 +132,62 @@ Bevor wir aber zur Erstellung der **PageItem** kommen, noch optionale Parameter,
 Es gibt noch weitere optionale Parameter, jedoch gehören Die alle zum Thema Navigation. Hierzu gibt es [hier](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation) in der Wiki eine Beschreibung, so dass wir an dieser Stelle nicht noch einmal darauf eingehen möchten.
   
 ### Seiteninhalt - PageItem - definieren  
+Das `<PageItem>` -  wenn man es mal frei übersetzt , das Seiten-Gegenstand definiert einen auf der Seite Sichtbaren Wert / Schalter. Was ein **PageItem** relativ immer mit sich bringt, ist eine **ID**, ein **Name** und eine **Farbdefinition**.  
+```
+<PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', name: 'Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen},
+```
+Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern folgt die weitere Konfiguration:  
  
+Mindestangabe:   
+* `id` :  
+* `name` :  
+* `offColor` :  
+* `onColor` :  
+Optionale / speziefische Angaben:  
+* `interpolateColor` :  `true`
+* `useColor` :  `true`
+* `colorScale` :  `{'val_min': -20, 'val_max': 40, 'val_best': 20}`
+* `prefixName` : 
+* `suffixName` :  
+* `secondRow` :   
+* `buttonText` :  
+* `fontSize` :  
+* `icon` :  
+* `icon2` :  
+* `unit` :  
+* `minValue` :  
+* `maxValue` :  
+* `modeList` :  `[]` 
+* `minValueBrightness` :  
+* `maxValueBrightness` :  
+* `minValueColorTemp` :  
+* `maxValueColorTemp` :  
+* `yAxis` :  
+* `yAxisTicks` :  
+* `navigate` :  `true`
+* `targetPage` :    
+* `hidePassword` :  
+* `useValue` :  
+CardMedia speziefische Konfiguration:
+* `adapterPlayerInstance` :  
+* `mediaDevice` :  
+* `speakerList` :  
+* `playList` :  
+* `equalizerList` :  
+* `colorMediaIcon` :  
+* `colorMediaArtist` :  
+* `colorMediaTitle` :  
+* `autoCreateALias` :  
+CardThermo speziefische Konfiguration
+* `stepValue` :  
+* `iconArray` :  
+* `popupThermoMode1` :  
+* `popupThermoMode2` :  
+* `popupThermoMode3` :  
+* `popUpThermoName` :  
+* `setThermoAlias` :  
+  
+
   
 ***  
   
