@@ -100,7 +100,23 @@ Sie haben eine PV-Anlage und möchten den Stromfluss darstellen? Dafür haben wi
 ### PageQR:
 Gäste sollen einfach und easy ins Gäste-WLAN rein kommen? Am besten mit dem Scann eines QR-Codes? Voila, dafür haben wir die PageQR.
   
+## How 2 Page:
   
+Der Rahmen einer Seite  besteht aus einem Frame wie folgend:  
+```
+let name = <PageType>
+{
+    'type': 'cardType',
+    'heading': 'Seiten Überschrift',
+    'useColor': true,
+    'items': []
+};  
+```  
+  
+* let name = : Das Wort name ist hier ein Platzhalter. Man gibt der Seite hier einen eindeutigen Namen, allerdings bitte ohne Leerzeichen bei mehreren Worten und vermeide Sonderzeichen. Dieser Name muss im weiteren Verlauf des Skriptes noch einmal aufgeführt werden (Wichtig für die Darstellung und Navigation)  
+* <PageType> : Type muss durch den richtigen Seiten Typ (Entities, Chart, Power, Grid, etc.) ersetzt werden. Page davor bleibt bestehen, so dass man dann zum Beispiel ein <PageEntities> oder <PageGrid> erhält. Wichtig, PageType ist immer von einer Spitzen Klammer eingefasst.  
+* type : Der Typ der Seite, wie zuvor schon beschrieben. PageType und type haben immer den gleichen Postfix. Bei type ist es aber CardType stattPageType. Folglich haben wir hier in Hochkomma eingefasst 'cardEntities' oder 'cardGrid', etc.  
+
 ***  
   
   
