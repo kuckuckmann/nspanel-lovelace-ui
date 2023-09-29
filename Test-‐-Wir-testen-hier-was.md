@@ -219,17 +219,19 @@ Angaben für Navigation und Subpages:
   
 ## CardEntities 
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/16930a8e-88cd-468d-9502-4c6c51293434)
   
 ``` 
-let button2Page = <PageEntities>
+let Buero_Seite_1 = <PageEntities>
 {
     'type': 'cardEntities',
     'heading': 'Büro',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.Schreibtischlampe'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Deckenbeleuchtung'}
+        <PageItem>{ id: 'alias.0.NSPanel_1.Schreibtischlampe', interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Deckenbeleuchtung', interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.ShellyDuoTest', name: 'Shelly Duo GU10', minValueBrightness: 0, maxValueBrightness: 100, minValueColorTemp: 6465, maxValueColorTemp: 3000, interpolateColor: true, modeList: ['Color','White'], inSel_ChoiceState: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen}
     ]
 };
 ```  
