@@ -102,6 +102,7 @@ Gäste sollen einfach und easy ins Gäste-WLAN rein kommen? Am besten mit dem Sc
   
 ## How 2 Page:
   
+### Basisseite
 Der Rahmen einer Seite  besteht aus einem Frame wie folgend:  
 ```
 let name = <PageType>
@@ -123,13 +124,15 @@ let name = <PageType>
 Bis hier her haben wir eine leere Seite erstellt. Wenn ich meinen Page/Card Type festgelegt habe, der Seite einen Namen gegeben, eine Überschrift definiert habe, kann ich mich nun daran machen den Inhalt der Seite aufzubauen.  
 Als Zwischen-Test kann man den definierten `name` im Skript unter **pages** hinzufügen, das Skript neu starten und dann auf dem NSPanel schauen, ob die neue Seite (ohne Inhalt) schon angezeigt wird.  
   
+### Optionale Parameter  
 Bevor wir aber zur Erstellung der **PageItem** kommen, noch optionale Parameter, die man hier setzen kann:  
-* `subPage` :  
-* `parent` :  
+* `subPage` :  Wird, sofern man mit Unterseite arbeiten möchte, mit `true` gefasst in Hochkommas gesetzt. Der Parameter `subPage = true` definiert diese Seite als eine Unterseite von XY
+* `parent` :  Wird `subPage = true` definiert, dann kann man mit **parent** den Namen der höher gelegenen Seite definieren. Dies hat Auswirkung auf die Steuerung und die Blätterpfeile oben auf der Seite. Der Name der höher gelegenen Seite ist in Hochkommas zu fassen  
   
 Es gibt noch weitere optionale Parameter, jedoch gehören Die alle zum Thema Navigation. Hierzu gibt es [hier](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation) in der Wiki eine Beschreibung, so dass wir an dieser Stelle nicht noch einmal darauf eingehen möchten.
   
-  
+### Seiteninhalt - PageItem - definieren  
+ 
   
 ***  
   
