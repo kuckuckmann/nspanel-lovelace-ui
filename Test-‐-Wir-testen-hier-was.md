@@ -143,32 +143,51 @@ Mindestangabe:
 * `name` :  
 * `offColor` :  
 * `onColor` :  
+  
 Optionale / speziefische Angaben:  
+  
+Angaben für Licht/Farbe:  
 * `interpolateColor` :  `true`
 * `useColor` :  `true`
 * `colorScale` :  `{'val_min': -20, 'val_max': 40, 'val_best': 20}`
+  
+Angaben für Label:
 * `prefixName` : 
 * `suffixName` :  
 * `secondRow` :   
 * `buttonText` :  
 * `fontSize` :  
+  
+Definition icons:
 * `icon` :  
 * `icon2` :  
+  
+Einheiten und Werte:
 * `unit` :  
+* `useValue` :  
 * `minValue` :  
 * `maxValue` :  
 * `modeList` :  `[]` 
+  
+Angaben für Licht:  
 * `minValueBrightness` :  
 * `maxValueBrightness` :  
 * `minValueColorTemp` :  
 * `maxValueColorTemp` :  
-* `yAxis` :  
-* `yAxisTicks` :  
+  
+Angaben für Navigation und Subpages:  
 * `navigate` :  `true`
 * `targetPage` :    
+
+  
+**CardChart** speziefische Angabe:  
+* `yAxis` :  
+* `yAxisTicks` :  
+  
+**CardQR** speziefische Angabe:  
 * `hidePassword` :  
-* `useValue` :  
-CardMedia speziefische Konfiguration:
+  
+**CardMedia** speziefische Konfiguration:
 * `adapterPlayerInstance` :  
 * `mediaDevice` :  
 * `speakerList` :  
@@ -178,7 +197,8 @@ CardMedia speziefische Konfiguration:
 * `colorMediaArtist` :  
 * `colorMediaTitle` :  
 * `autoCreateALias` :  
-CardThermo speziefische Konfiguration
+  
+**CardThermo** speziefische Konfiguration
 * `stepValue` :  
 * `iconArray` :  
 * `popupThermoMode1` :  
