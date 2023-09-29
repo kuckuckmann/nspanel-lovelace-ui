@@ -446,6 +446,27 @@ let Buero_Seite_2 = <PageGrid2>
 };
 ```  
   
+## CardCrid2 - 8 statt 6 PageItems  
+  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/f1d2c2dd-01f6-4b68-a14e-0d774bcc49a7)
+  
+``` 
+let Sensor_FontSize = <PageGrid2>
+{
+    'type': 'cardGrid2',
+    'heading': 'Sensorwerte und FontSize',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestTemperatur', name: 'Außentemp. °C', offColor: MSRed, onColor: MSGreen, useValue: true, fontSize: 0, colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
+        <PageItem>{ id: 'alias.0.NSPanel_1.TestFeuchtigkeit', name: 'Luftfeuchte %', offColor: MSYellow, onColor: MSYellow , useValue: true, fontSize: 1, colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 65} },
+        <PageItem>{ id: 'alias.0.NSPanel_1.Taupunkt', name: 'Taupunkt °C', offColor: MSRed, onColor: MSGreen, useValue: true, fontSize: 2, colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
+        <PageItem>{ id: 'alias.0.NSPanel_1.UV_Index', name: 'UV Index', offColor: White , onColor: White, useValue: true, fontSize: 3,colorScale: {'val_min': 0, 'val_max': 12} },
+        <PageItem>{ id: 'alias.0.NSPanel_1.Windstaerke', name: 'Windstärke bft', offColor: White , onColor: White, useValue: true, fontSize: 4, colorScale: {'val_min': 0, 'val_max': 9} },
+        <PageItem>{ id: 'alias.0.NSPanel_1.Luftdruck', name: 'Luftdruck hPa', offColor: White , onColor: White, useValue: true, colorScale: {'val_min': 950, 'val_max': 1050, 'val_best': 1013} },
+    ]
+};
+``` 
+  
 ## CardGrid - Radiosender
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
