@@ -285,7 +285,7 @@ let Test_Licht2 = <PageEntities>
   
 ## CardEntities - Sonstige Aliase
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/09ddd04f-24af-40b4-9960-882576464c1f)
   
 ``` 
 let Test_Funktionen = <PageEntities>
@@ -324,7 +324,7 @@ let Buero_Seite_1 = <PageEntities>
   
 ## CardEntities - Fenster und Türen
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7893e23e-b9cc-437b-8690-48fb5813cca3)
   
 ``` 
 let Fenster_1 = <PageEntities>
