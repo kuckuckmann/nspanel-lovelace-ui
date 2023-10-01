@@ -654,7 +654,60 @@ let SqueezeboxRPC = <PageMedia>
                 autoCreateALias : true
              }]
 };
-```  
+```
+
+## CardMedia - Volumio
+  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3b72ecfa-07ef-42e4-88b7-b5846a6a91a2)
+  
+```
+let VolumioBoss: PageMedia = 
+{
+    'type': 'cardMedia',
+    'heading': 'Volumio-Büro',
+    'useColor': true,
+    'subPage': false,
+    'parent': undefined,
+    'prev': undefined,
+    'next': undefined,
+    'home': undefined,
+    'items': [<PageItem>{   
+                id: 'alias.0.NSPanel.Volumio-Boss', 
+                adapterPlayerInstance: 'volumio.0.',
+                speakerList: [], /* this must, no function */
+                playList: [],    /* empty for dynamic reading */
+                colorMediaIcon: colorSpotify,
+                colorMediaTitle: colorSpotify,
+                colorMediaArtist: Yellow,
+                autoCreateALias : true
+             }]
+};
+```
+
+```
+let VolumioMobil: PageMedia = 
+{
+    'type': 'cardMedia',
+    'heading': 'Volumio-Mobil',
+    'useColor': true,
+    'subPage': false,
+    'parent': undefined,
+    'prev': undefined,
+    'next': undefined,
+    'home': undefined,
+    'items': [<PageItem>{   
+                id: 'alias.0.NSPanel.Volumio-Mobil', 
+                adapterPlayerInstance: 'volumio.1.',
+                speakerList: [], /* this must, no function */
+                playList: [],    /* empty for dynamic reading */
+                colorMediaIcon: Yellow,
+                colorMediaTitle: Yellow,
+                colorMediaArtist: Gray,
+                autoCreateALias : true
+             }]
+};
+```
+  
 </details>  
   
 ***  
