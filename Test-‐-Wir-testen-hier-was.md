@@ -584,8 +584,23 @@ let Sonos = <PageMedia>
   
 ## CardMedia - Spotify-Premium
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/908dad3c-0758-4439-940b-43f87a33a4b0)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3154c022-c5c5-4640-8b6f-e9826b289edf)
   
+**Button-Menü**
+  
+SpeakerList
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e599d18b-1387-4839-bdec-5499475f02ff)  
+  
+PlayList  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a254be7a-510a-47e7-b405-07ba54745473)  
+  
+TrackList  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/c1d67362-570f-4235-9778-3bac3d492796)  
+  
+Equalizer  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3ccb9714-fd0c-4162-b595-3761c27f99bf)  
+  
+
 ``` 
 let SpotifyPremium = <PageMedia>
 {
