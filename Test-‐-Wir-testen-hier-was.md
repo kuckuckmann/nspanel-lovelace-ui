@@ -87,16 +87,16 @@ Das `<PageItem>` -  wenn man es mal frei übersetzt , das Seiten-Gegenstand defi
 ```
 Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern folgt die weitere Konfiguration:  
  
-**Mindestangabe**:   
+#### Mindestangaben:
 * `id` :  Pfad zum Alias, der verwendet wird, in Hochkomma eingefasst
 * `name` :  Text der als Label auf dem Display zu einem PageItem dargestellt wird
   
 > [!IMPORTANT]  
 > `name` ist kein muss, wenn der Alias richtig konfiguriert ist. Dann wird der Name aus dem `common.name.de` gezogen.  
   
-Optionale / spezifische Angaben:  
+#### **Optionale / spezifische Angaben**:  
   
-**Angaben für icon-Farbe**:  
+#### Angaben für icon-Farbe:  
 * `offColor` :  Farbe für ausgeschaltet
 * `onColor` :  Farbe für eingeschaltet
 * `useColor` :  wird mit  `true` oder `false` angegeben und verwendet bei `true` die definierten Config-Parameter **defaultOnColor** und **defaultOffColor**, sofern keine `onColor` oder `offColor` im `<PageItem>` als Parameter definiert sind  
@@ -108,64 +108,63 @@ Optionale / spezifische Angaben:
 > [!IMPORTANT]  
 > Sofern keine icon-Farbe definiert wird, gibt es eine Default Farbkombination. Kann unter **defaultColor** (**defaultOnColor** & **defaultOffColor**) in der Konfiguration festgelegt werden.  
   
-**Angaben für Label**:
+#### Angaben für Label:
 * `prefixName` : Erweiterung für `name`. Setzt einen Text als Prefix vor  `name`
 * `suffixName` : Erweiterung für `name`. Setzt einen Text als Postfix nach  `name` 
 * `buttonText` : ersetzt den Standard Text “PRESS” auf der cardEntities 
-* `fontSize` : Auf der **cardGrid(2)** kann man mit diesem Attribut die Schriftgröße auf  einen Wert zw. **0** und **5** gesetzt werden.  
-  * Font 0 - Default - Size 24 (No Icons, Support for various special chars from different langs)
-  * Font 1 - Size 32 (Icons and limited chars)  
-  * Font 2 - Size 32 (No Icons, Support for various special chars from different langs)  
-  * Font 3 - Size 48 (Icons and limited chars)  
-  * Font 4 - Size 80 (Icons and limited chars)  
-  * Font 5 - Size 128 (ascii only)  
+* `fontSize` : Auf der **cardGrid(2)** kann man mit diesem Attribut die Schriftgröße auf  einen Wert zw. **0** und **5** gesetzt werden. Wird begleitet vom Attribut `useValue` mit dem Wert `true`:    
+  * **Font 0** - Default - Size 24 (No Icons, Support for various special chars from different langs)
+  * **Font 1** - Size 32 (Icons and limited chars)  
+  * **Font 2** - Size 32 (No Icons, Support for various special chars from different langs)  
+  * **Font 3** - Size 48 (Icons and limited chars)  
+  * **Font 4** - Size 80 (Icons and limited chars)  
+  * **Font 5** - Size 128 (ascii only)  
   
-**Definition Icons**:
+#### Definition Icons:
 * `icon` : Ein Icon für den An-Status
 * `icon2` : Ein Icon für den Aus-Status. `icon2` wird nicht bei allen Alias unterstützt
  
 > [!NOTE]  
 > Die Icon-Namen müssen aus der [Icondatei](https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html) stammen. `icon` bzw. `icon2` übersteuern ein Icon welches per Default vom Alias kommt. Bei vielen Alias ist es nicht notwendig ein `icon(2)` zu definieren. Die Option steht einem aber jederzeit zur Verfügung.  
   
-**Einheiten und Werte**:
+#### Einheiten und Werte:
 * `unit` :  in Hochkomma gesetzte Einheit (z.B. °C) gilt nicht für alle Rollen
-* `useValue` :  muss auf ‘true’, wenn fontSize genutzt wird
+* `useValue` :  muss auf `true`, wenn `fontSize` genutzt wird
 * `minValue` :  legt den Startwert für den Slider fest
 * `maxValue` :  legt den Endwert für den Slider fest
 * `modeList` :  Ermöglicht ein **InSelPopup** für die Auswahl weiterer Werte. Wird in `[``, ``, ``]` gefasst und enthält eine Kommaseparierte Liste an Werten 
 * `inSel_ChoiceState` : definiert, ob ein ausgewählter Wert auf einem **InSelPopup** einen Fokus erhält. Wird mit `true` oder `false`angegeben
   
-**Angaben für Licht**:  
+#### Angaben für Licht:  
 * `interpolateColor` :  wird mit  `true` oder `false` angegeben und errechnet bei `true` die aktuelle Farbe des Leuchtmittels  
 * `colormode` :  wird bei ALIAS RBG verwendet, um XY-Farbwerte zu errechnen und zu benutzen. Wert ist per default “rgb” und bei Verwendung von XY Farbübersetzungen: “xy”
   
-  **Angaben für PopupLight**  
+  #### Angaben für PopupLight  
   * `minValueBrightness` :  legt den Startwert für den Slider Helligkeit fest
   * `maxValueBrightness` :  legt den Endwert für den Slider Helligkeit fest
   * `minValueColorTemp` :  legt den Startwert für den Slider Farbtemperatur fest
   * `maxValueColorTemp` :  legt den Endwert für den Slider Farbtemperatur fest
   
-**Angabe für Rolladen (PopupShutter)**
+#### Angabe für Rolladen (PopupShutter)
 * `secondRow` : gehört zur popupPage Shutter (Text für die zweite Zeile)  
 * `minValueLevel` : definiert die kleinste Position (Up)
 * `maxValueLevel` : definiert die größte Position (Up)
 * `minValueTilt` :  definiert die - kleinste Lamellenposition-Stellung
 * `maxValueTilt` :  definiert die - größte Lamellenposition-Stellung (Up)
-
   
-Angaben für Navigation und Subpages:  
+#### Angaben für Navigation und Subpages:  
 * `navigate` :  Ersetzt `id` und wird mit `true` gesetzt und benötigt **targetPage**. Öffnet eine Subpage
 * `targetPage` :  Zielseite die geöffnet wird, wenn man eine in navigate definierte SubPage öffnen will  
   
-**CardChart** speziefische Angabe:  
+#### **CardChart** spezifische Angabe:  
 * `yAxis` :  name der y-Achse
 * `yAxisTicks` :  Werte-Skala der yAchse Wird in `[``, ``, ``]` gefasst und enthält eine Kommaseparierte Liste an Werten
 * `onColor` : Farbe der Balken
   
-**CardQR** speziefische Angabe:  
+#### **CardQR** spezifische Angabe:  
 * `hidePassword` :  versteckt das WLAN Passwort auf der **PageQR**
   
-**CardMedia** spezifische Konfiguration:
+#### **CardMedia** spezifische Konfiguration:
 * `adapterPlayerInstance` :  legt die Adapter-Instanz für die Adapter alexa2, spotify-premium, sonos, squeezeboxrpc, chromecast oder volumio fest
 * `mediaDevice` :  bei alexa2 die Seriennummer des Echos, bei sonos die IP, bei squeezeboxrpc der erstellte Devicename
 * `speakerList` :  bei alexa2 schaltbare Device-Namen, bei spotify-premium auswählbare Device-Namen
@@ -176,13 +175,13 @@ Angaben für Navigation und Subpages:
 * `colorMediaArtist` :  Farbe für Song-Interpreten
 * `colorMediaTitle` :  Farbe für Song-Titel (Track)
 * `autoCreateALias` :  NSPanel-Script erstellt den Alias automatisch unter **alias.0** , wenn Wert = `true`
-* `globalTracklist:  wird verwendet vom Volumio-Playermonobutton wenn als Schalter ein echter Hardware-Taster verbaut ist der immer true/false für einen Umschaltvorgang sendet, wird ein Taster emuliert, ansonsten ein Schalter
+* `globalTracklist` :  wird verwendet vom Volumio-Playermonobutton wenn als Schalter ein echter Hardware-Taster verbaut ist der immer true/false für einen Umschaltvorgang sendet, wird ein Taster emuliert, ansonsten ein Schalter
   
-**CardThermo** spezifische Konfiguration:  
+#### **CardThermo** spezifische Konfiguration:  
 * `stepValue` :  Schrittweite für die Veränderung der Solltemperatur. Wird mit zusätzlich `minValue` und `maxValue` konfiguriert
 * `iconArray` :  Wenn die Standard Icon im unteren Teil der PageThermo ersetzt werden sollen. Schreibweise wie bei `modeList`  
   
-  **Angaben für PopupThermo**  
+  #### Angaben für PopupThermo  
    * `popupThermoMode1` :  Popup, falls definiert, wird mit Hilfe der 3 Punkte unter der Setpoint-Temperaturein Popup (oberste Zeile) eingeblendet, welches Werte zur Steuerung von zusätzlichen Zuständen annehmen kann
    * `popupThermoMode2` : Popup, falls definiert, wird mit Hilfe der 3 Punkte unter der Setpoint-Temperaturein Popup (mittlere Zeile) eingeblendet, welches Werte zur Steuerung von zusätzlichen Zuständen annehmen kann 
    * `popupThermoMode3` :  Popup, falls definiert, wird mit Hilfe der 3 Punkte unter der Setpoint-Temperaturein Popup (unterste Zeile) eingeblendet, welches Werte zur Steuerung von zusätzlichen Zuständen annehmen kann
