@@ -588,7 +588,7 @@ let Sonos = <PageMedia>
   
 **Button-Menü**
   
-SpeakerList
+SpeakerList  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e599d18b-1387-4839-bdec-5499475f02ff)  
   
 PlayList  
