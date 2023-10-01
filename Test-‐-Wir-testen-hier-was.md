@@ -91,8 +91,8 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 * `id` :  Pfad zum Alias, der verwendet wird, in Hochkomma eingefasst
 * `name` :  Text der als Label auf dem Display zu einem PageItem dargestellt wird
   
->[!IMPORTANT]
->`name` ist kein muss, wenn der Alias richtig konfiguriert ist. Dann wird der Name aus dem `common.name.de` gezogen.
+> [!IMPORTANT]  
+> `name` ist kein muss, wenn der Alias richtig konfiguriert ist. Dann wird der Name aus dem `common.name.de` gezogen.  
   
 Optionale / spezifische Angaben:  
   
@@ -101,12 +101,12 @@ Optionale / spezifische Angaben:
 * `onColor` :  Farbe für eingeschaltet
 * `useColor` :  wird mit  `true` oder `false` angegeben und verwendet bei `true` die definierten Config-Parameter **defaultOnColor** und **defaultOffColor**, sofern keine `onColor` oder `offColor` im `<PageItem>` als Parameter definiert sind  
 * `colorScale` :  Colorscale ist ein Farbverlauf von Rot über Gelb nach Grün mit einem Bereich von 0 bis 10.
-  * val_min -> Rot
-  * val_max -> Grün
-  * in Verbindung mit val_best, ist val_best Grün und val_min und val_max Rot  
+  * `val_min` -> Rot
+  * `val_max` -> Grün
+  * in Verbindung mit `val_best`, ist `val_best` Grün und `val_min` und `val_max` Rot  
   
->[!IMPORTANT]  
->Sofern keine icon-Farbe definiert wird, gibt es eine Default Farbkombination. Kann unter **defaultColor** (**defaultOnColor** & **defaultOffColor**) in der Konfiguration festgelegt werden.  
+> [!IMPORTANT]  
+> Sofern keine icon-Farbe definiert wird, gibt es eine Default Farbkombination. Kann unter **defaultColor** (**defaultOnColor** & **defaultOffColor**) in der Konfiguration festgelegt werden.  
   
 **Angaben für Label**:
 * `prefixName` : Erweiterung für `name`. Setzt einen Text als Prefix vor  `name`
@@ -133,9 +133,11 @@ Optionale / spezifische Angaben:
 * `minValue` :  legt den Startwert für den Slider fest
 * `maxValue` :  legt den Endwert für den Slider fest
 * `modeList` :  Ermöglicht ein **InSelPopup** für die Auswahl weiterer Werte. Wird in `[``, ``, ``]` gefasst und enthält eine Kommaseparierte Liste an Werten 
+* `inSel_ChoiceState` : definiert, ob ein ausgewählter Wert auf einem **InSelPopup** einen Fokus erhält. Wird mit `true` oder `false`angegeben
   
 **Angaben für Licht**:  
 * `interpolateColor` :  wird mit  `true` oder `false` angegeben und errechnet bei `true` die aktuelle Farbe des Leuchtmittels  
+* `colormode` :  wird bei ALIAS RBG verwendet, um XY-Farbwerte zu errechnen und zu benutzen. Wert ist per default “rgb” und bei Verwendung von XY Farbübersetzungen: “xy”
   
   **Angaben für PopupLight**  
   * `minValueBrightness` :  legt den Startwert für den Slider Helligkeit fest
@@ -145,6 +147,11 @@ Optionale / spezifische Angaben:
   
 **Angabe für Rolladen (PopupShutter)**
 * `secondRow` : gehört zur popupPage Shutter (Text für die zweite Zeile)  
+* `minValueLevel` : definiert die kleinste Position (Up)
+* `maxValueLevel` : definiert die größte Position (Up)
+* `minValueTilt` :  definiert die - kleinste Lamellenposition-Stellung
+* `maxValueTilt` :  definiert die - größte Lamellenposition-Stellung (Up)
+
   
 Angaben für Navigation und Subpages:  
 * `navigate` :  Ersetzt `id` und wird mit `true` gesetzt und benötigt **targetPage**. Öffnet eine Subpage
@@ -156,29 +163,34 @@ Angaben für Navigation und Subpages:
 * `onColor` : Farbe der Balken
   
 **CardQR** speziefische Angabe:  
-* `hidePassword` :  
+* `hidePassword` :  versteckt das WLAN Passwort auf der **PageQR**
   
-**CardMedia** speziefische Konfiguration:
-* `adapterPlayerInstance` :  
-* `mediaDevice` :  
-* `speakerList` :  
-* `playList` :  
-* `equalizerList` :  
-* `colorMediaIcon` :  
-* `colorMediaArtist` :  
-* `colorMediaTitle` :  
-* `autoCreateALias` :  
+**CardMedia** spezifische Konfiguration:
+* `adapterPlayerInstance` :  legt die Adapter-Instanz für die Adapter alexa2, spotify-premium, sonos, squeezeboxrpc, chromecast oder volumio fest
+* `mediaDevice` :  bei alexa2 die Seriennummer des Echos, bei sonos die IP, bei squeezeboxrpc der erstellte Devicename
+* `speakerList` :  bei alexa2 schaltbare Device-Namen, bei spotify-premium auswählbare Device-Namen
+* `playList` :  nur für alexa2 und spotify-premium
+* `equalizerList` :  kann verwendet werden, wenn Das Device (z.B. Amazon Echo) und der Adapter des Devices eine Equalizer-Funktionalität bereit stellt
+* `repeatList` : `['off','context','track']` bei spotify-premium Instanz
+* `colorMediaIcon` :  Farbe für Player-Icon
+* `colorMediaArtist` :  Farbe für Song-Interpreten
+* `colorMediaTitle` :  Farbe für Song-Titel (Track)
+* `autoCreateALias` :  NSPanel-Script erstellt den Alias automatisch unter **alias.0** , wenn Wert = `true`
+* `globalTracklist:  wird verwendet vom Volumio-Playermonobutton wenn als Schalter ein echter Hardware-Taster verbaut ist der immer true/false für einen Umschaltvorgang sendet, wird ein Taster emuliert, ansonsten ein Schalter
   
-**CardThermo** speziefische Konfiguration
-* `stepValue` :  
-* `iconArray` :  
-* `popupThermoMode1` :  
-* `popupThermoMode2` :  
-* `popupThermoMode3` :  
-* `popUpThermoName` :  
-* `setThermoAlias` :  
+**CardThermo** spezifische Konfiguration:  
+* `stepValue` :  Schrittweite für die Veränderung der Solltemperatur. Wird mit zusätzlich `minValue` und `maxValue` konfiguriert
+* `iconArray` :  Wenn die Standard Icon im unteren Teil der PageThermo ersetzt werden sollen. Schreibweise wie bei `modeList`  
   
-
+  **Angaben für PopupThermo**  
+   * `popupThermoMode1` :  Popup, falls definiert, wird mit Hilfe der 3 Punkte unter der Setpoint-Temperaturein Popup (oberste Zeile) eingeblendet, welches Werte zur Steuerung von zusätzlichen Zuständen annehmen kann
+   * `popupThermoMode2` : Popup, falls definiert, wird mit Hilfe der 3 Punkte unter der Setpoint-Temperaturein Popup (mittlere Zeile) eingeblendet, welches Werte zur Steuerung von zusätzlichen Zuständen annehmen kann 
+   * `popupThermoMode3` :  Popup, falls definiert, wird mit Hilfe der 3 Punkte unter der Setpoint-Temperaturein Popup (unterste Zeile) eingeblendet, welches Werte zur Steuerung von zusätzlichen Zuständen annehmen kann
+   * `popUpThermoName` :  Überschriften-Liste (Array) der in dem cardThermo
+   * `setThermoAlias` :  ALIAS Liste (Array) welches die gewählten Zustände zurückgibt (numerisch)
+  
+* `icon` : definiert das Icon des Popup-Fensters
+* `setThermoDestTemp2` : mit einem zusätzlichen ALIAS-Datenpunkt (ACTUAL2) kann eine 2. Setpoint-Temperatur visualisiert werden.  
   
 ***  
   
