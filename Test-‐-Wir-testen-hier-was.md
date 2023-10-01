@@ -530,7 +530,7 @@ let WLED = <PageGrid>
 SpeakerList:  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/33a8d3da-1624-4e87-9b5c-2b1fb1d86e1a)  
   
-PlayList:
+PlayList:  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/85174456-9a8e-43f1-bb1b-551714b4e7a7)  
   
 Equalizer:  
