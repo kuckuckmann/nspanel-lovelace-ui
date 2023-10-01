@@ -657,7 +657,10 @@ let Buero_Themostat = <PageThermo>
   
 ## CardThermo - Klimaanlage
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2c5b634d-eef4-4333-8a9e-9264c1b10a21)
+oder 
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/aeacd803-4114-441f-9882-2c1714b42d13)
+
   
 ``` 
 let Buero_Klimaanlage = <PageThermo>
@@ -684,7 +687,7 @@ let Buero_Klimaanlage = <PageThermo>
   
 ## CardThermo - Wärmepumpe
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/69e577bd-e56d-4411-9af0-a0dd19ba030f)
   
 ``` 
 let Pool_Waermepumpe = <PageThermo>
