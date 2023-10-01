@@ -87,51 +87,73 @@ Das `<PageItem>` -  wenn man es mal frei übersetzt , das Seiten-Gegenstand defi
 ```
 Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern folgt die weitere Konfiguration:  
  
-Mindestangabe:   
-* `id` :  
-* `name` :  
-* `offColor` :  
-* `onColor` :  
+**Mindestangabe**:   
+* `id` :  Pfad zum Alias, der verwendet wird, in Hochkomma eingefasst
+* `name` :  Text der als Label auf dem Display zu einem PageItem dargestellt wird
   
-Optionale / speziefische Angaben:  
+>[!IMPORTANT]
+>`name` ist kein muss, wenn der Alias richtig konfiguriert ist. Dann wird der Name aus dem `common.name.de` gezogen.
   
-Angaben für Licht/Farbe:  
-* `interpolateColor` :  `true`
-* `useColor` :  `true`
-* `colorScale` :  `{'val_min': -20, 'val_max': 40, 'val_best': 20}`
+Optionale / spezifische Angaben:  
   
-Angaben für Label:
-* `prefixName` : 
-* `suffixName` :  
-* `secondRow` :   
-* `buttonText` :  
-* `fontSize` :  
+**Angaben für icon-Farbe**:  
+* `offColor` :  Farbe für ausgeschaltet
+* `onColor` :  Farbe für eingeschaltet
+* `useColor` :  wird mit  `true` oder `false` angegeben und verwendet bei `true` die definierten Config-Parameter **defaultOnColor** und **defaultOffColor**, sofern keine `onColor` oder `offColor` im `<PageItem>` als Parameter definiert sind  
+* `colorScale` :  Colorscale ist ein Farbverlauf von Rot über Gelb nach Grün mit einem Bereich von 0 bis 10.
+  * val_min -> Rot
+  * val_max -> Grün
+  * in Verbindung mit val_best, ist val_best Grün und val_min und val_max Rot  
   
-Definition icons:
-* `icon` :  
-* `icon2` :  
+>[!IMPORTANT]
+>Sofern keine icon-Farbe definiert wird, gibt es eine Default Farbkombination. Kann unter **defaultColor** (**defaultOnColor** & **defaultOffColor**) in der Konfiguration festgelegt werden.  
   
-Einheiten und Werte:
-* `unit` :  
-* `useValue` :  
-* `minValue` :  
-* `maxValue` :  
-* `modeList` :  `[]` 
+**Angaben für Label**:
+* `prefixName` : Erweiterung für `name`. Setzt einen Text als Prefix vor  `name`
+* `suffixName` : Erweiterung für `name`. Setzt einen Text als Postfix nach  `name` 
+* `buttonText` : ersetzt den Standard Text “PRESS” auf der cardEntities 
+* `fontSize` : Auf der **cardGrid(2)** kann man mit diesem Attribut die Schriftgröße auf  einen Wert zw. **0** und **5** gesetzt werden.  
+  * Font 0 - Default - Size 24 (No Icons, Support for various special chars from different langs)
+  * Font 1 - Size 32 (Icons and limited chars)  
+  * Font 2 - Size 32 (No Icons, Support for various special chars from different langs)  
+  * Font 3 - Size 48 (Icons and limited chars)  
+  * Font 4 - Size 80 (Icons and limited chars)  
+  * Font 5 - Size 128 (ascii only)  
   
-Angaben für Licht:  
-* `minValueBrightness` :  
-* `maxValueBrightness` :  
-* `minValueColorTemp` :  
-* `maxValueColorTemp` :  
+**Definition Icons**:
+* `icon` : Ein Icon für den An-Status
+* `icon2` : Ein Icon für den Aus-Status. `icon2` wird nicht bei allen Alias unterstützt
+ 
+> [!NOTE]
+> Die Icon-Namen müssen aus der [Icondatei](https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html) stammen. `icon` bzw. `icon2` übersteuern ein Icon welches per Default vom Alias kommt. Bei vielen Alias ist es nicht notwendig ein `icon(2)` zu definieren. Die Option steht einem aber jederzeit zur Verfügung.  
+  
+**Einheiten und Werte**:
+* `unit` :  in Hochkomma gesetzte Einheit (z.B. °C) gilt nicht für alle Rollen
+* `useValue` :  muss auf ‘true’, wenn fontSize genutzt wird
+* `minValue` :  legt den Startwert für den Slider fest
+* `maxValue` :  legt den Endwert für den Slider fest
+* `modeList` :  Ermöglicht ein **InSelPopup** für die Auswahl weiterer Werte. Wird in `[``, ``, ``]` gefasst und enthält eine Kommaseparierte Liste an Werten 
+  
+**Angaben für Licht**:  
+* `interpolateColor` :  wird mit  `true` oder `false` angegeben und errechnet bei `true` die aktuelle Farbe des Leuchtmittels  
+  
+  **Angaben für PopupLight**  
+  * `minValueBrightness` :  legt den Startwert für den Slider Helligkeit fest
+  * `maxValueBrightness` :  legt den Endwert für den Slider Helligkeit fest
+  * `minValueColorTemp` :  legt den Startwert für den Slider Farbtemperatur fest
+  * `maxValueColorTemp` :  legt den Endwert für den Slider Farbtemperatur fest
+  
+**Angabe für Rolladen (PopupShutter)**
+* `secondRow` : gehört zur popupPage Shutter (Text für die zweite Zeile)  
   
 Angaben für Navigation und Subpages:  
-* `navigate` :  `true`
-* `targetPage` :    
-
+* `navigate` :  Ersetzt `id` und wird mit `true` gesetzt und benötigt **targetPage**. Öffnet eine Subpage
+* `targetPage` :  Zielseite die geöffnet wird, wenn man eine in navigate definierte SubPage öffnen will  
   
 **CardChart** speziefische Angabe:  
-* `yAxis` :  
-* `yAxisTicks` :  
+* `yAxis` :  name der y-Achse
+* `yAxisTicks` :  Werte-Skala der yAchse Wird in `[``, ``, ``]` gefasst und enthält eine Kommaseparierte Liste an Werten
+* `onColor` : Farbe der Balken
   
 **CardQR** speziefische Angabe:  
 * `hidePassword` :  
