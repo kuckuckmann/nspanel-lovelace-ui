@@ -5,59 +5,8 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
   
   
 # Geblubber
-
-
-# **Index**  
-  
-* PageEntities:
-  * **cardEntities:** Color Aliase 1
-  * **cardEntities:** Color Aliase 2
-  * **cardEntities:** Sonstige Aliase
-  * **cardEntities:** Büro
-  * **cardEntities:** Fenster und Türen
-  * **cardEntities:** Button Aliase
-  * **cardEntities:** Test Subpages
-  * **cardEntities:** Abfallkalender
-  * **cardEntities:** Büro  
-
-* PageGrid2:
-  * **cardGrid2:** Büro 2
-
-* PageGrid:
-  * **cardGrid:** Radiosender
-  * **cardGrid:** WLED Stripes WZ
-  * **cardGrid:** Sensor Werte
-  * **cardGrid:** Radio
-
-* PageMedia:
-  * **cardMedia:** Alexa
-  * **cardMedia:** Sonos
-  * **cardMedia:** Spotify-Premium
-  * **cardMedia:** SqueezeboxRPC
-
-* PageThermo:
-  * **cardThermo:** Test Thermostat
-  * **cardThermo:** Test Klimaanlage
-  * **cardThermo:** Pool Wärmepumpe
-
-* PageAlarm:
-  * **cardAlarm:** Alarmanlage  
-
-* PageUnlock:
-  * **cardUnlock:** Service Pages
-
-* PageChart:
-  * **cardChart:** Stromzähler L1+L2+L3
-  * **cardLChart:** Büro Temperatur
-
-* PagePower:
-  * **cardPower:** cardPower Emulator
-  
-* PageQR:  
-  * **cardQR:** Gäste WLAN 
   
   
-***
 # Page Aufbau
   
 Eine Page, also eine Seite des NSPanles hat einen bestimmten Aufbau.  
@@ -213,7 +162,60 @@ Angaben für Navigation und Subpages:
   
   
 # Page Beispiele  
+ 
+<details>
+  <summary>Übersicht der Beispiele</summary>  
   
+* PageEntities:  
+  * **cardEntities:** Color Aliase 1
+  * **cardEntities:** Color Aliase 2
+  * **cardEntities:** Sonstige Aliase
+  * **cardEntities:** Büro
+  * **cardEntities:** Fenster und Türen
+  * **cardEntities:** Button Aliase
+  * **cardEntities:** Test Subpages
+  * **cardEntities:** Abfallkalender
+  * **cardEntities:** Büro  
+
+* PageGrid2:
+  * **cardGrid2:** Büro 2
+
+* PageGrid:
+  * **cardGrid:** Radiosender
+  * **cardGrid:** WLED Stripes WZ
+  * **cardGrid:** Sensor Werte
+  * **cardGrid:** Radio
+
+* PageMedia:
+  * **cardMedia:** Alexa
+  * **cardMedia:** Sonos
+  * **cardMedia:** Spotify-Premium
+  * **cardMedia:** SqueezeboxRPC
+
+* PageThermo:
+  * **cardThermo:** Test Thermostat
+  * **cardThermo:** Test Klimaanlage
+  * **cardThermo:** Pool Wärmepumpe
+
+* PageAlarm:
+  * **cardAlarm:** Alarmanlage  
+
+* PageUnlock:
+  * **cardUnlock:** Service Pages
+
+* PageChart:
+  * **cardChart:** Stromzähler L1+L2+L3
+  * **cardLChart:** Büro Temperatur
+
+* PagePower:
+  * **cardPower:** cardPower Emulator
+  
+* PageQR:  
+  * **cardQR:** Gäste WLAN 
+</details>  
+  
+***
+   
 <details>
   <summary>PageEntities</summary> 
   
