@@ -807,7 +807,7 @@ let CardPowerExample = <PagePower>
   
 ## CardQR
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/b855ff4a-fcf9-4c67-a45e-822cd9487437)
   
 ``` 
 let WLAN = <PageQR> 
