@@ -711,7 +711,7 @@ let Pool_Waermepumpe = <PageThermo>
   
 ## CardAlarm
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8e8e353c-ca6a-43d3-85b2-ff6532283e2c)
   
 ``` 
 let Buero_Alarm = <PageAlarm>
@@ -725,7 +725,7 @@ let Buero_Alarm = <PageAlarm>
   
 ## CardUnlock
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8f18098b-96e5-4e88-a86d-4824cc2b6299)
   
 ``` 
 let Unlock_Service = <PageUnlock>
