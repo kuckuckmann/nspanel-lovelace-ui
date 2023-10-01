@@ -105,7 +105,7 @@ Optionale / spezifische Angaben:
   * val_max -> Grün
   * in Verbindung mit val_best, ist val_best Grün und val_min und val_max Rot  
   
->[!IMPORTANT]
+>[!IMPORTANT]  
 >Sofern keine icon-Farbe definiert wird, gibt es eine Default Farbkombination. Kann unter **defaultColor** (**defaultOnColor** & **defaultOffColor**) in der Konfiguration festgelegt werden.  
   
 **Angaben für Label**:
@@ -124,7 +124,7 @@ Optionale / spezifische Angaben:
 * `icon` : Ein Icon für den An-Status
 * `icon2` : Ein Icon für den Aus-Status. `icon2` wird nicht bei allen Alias unterstützt
  
-> [!NOTE]
+> [!NOTE]  
 > Die Icon-Namen müssen aus der [Icondatei](https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html) stammen. `icon` bzw. `icon2` übersteuern ein Icon welches per Default vom Alias kommt. Bei vielen Alias ist es nicht notwendig ein `icon(2)` zu definieren. Die Option steht einem aber jederzeit zur Verfügung.  
   
 **Einheiten und Werte**:
