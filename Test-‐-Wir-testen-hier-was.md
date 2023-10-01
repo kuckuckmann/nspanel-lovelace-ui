@@ -784,7 +784,7 @@ let CardLChartExample = <PageChart>
   
 ## CardPower
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e4a4a619-4069-4c64-8c34-20511edc750d)
   
 ``` 
 let CardPowerExample = <PagePower>
