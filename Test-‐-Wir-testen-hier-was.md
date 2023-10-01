@@ -745,7 +745,7 @@ let Unlock_Service = <PageUnlock>
   
 ## CardChart
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/274f5742-f491-4522-ac6f-7db3661dd5e2)
   
 ``` 
 let CardChartExample = <PageChart>
@@ -764,7 +764,7 @@ let CardChartExample = <PageChart>
   
 ## CardLChart
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7c99fa26-9383-45f7-a913-48ea23fb0baf)
   
 ``` 
 let CardLChartExample = <PageChart>
