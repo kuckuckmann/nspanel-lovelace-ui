@@ -523,7 +523,7 @@ let WLED = <PageGrid>
   
 ## CardMedia - Alexa
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/9f02d436-e2ce-4e28-956b-a521330e1747)
   
 ``` 
 // NEW: Neue Definition von Medien-Aliasen
@@ -584,7 +584,7 @@ let Sonos = <PageMedia>
   
 ## CardMedia - Spotify-Premium
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/908dad3c-0758-4439-940b-43f87a33a4b0)
   
 ``` 
 let SpotifyPremium = <PageMedia>
