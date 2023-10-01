@@ -486,7 +486,7 @@ let Radiosender = <PageGrid>
 };
 ```  
   
-## CardCrid - WLED
+## CardGrid - WLED
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
@@ -657,11 +657,15 @@ let Buero_Themostat = <PageThermo>
   
 ## CardThermo - Klimaanlage
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2c5b634d-eef4-4333-8a9e-9264c1b10a21)
-oder 
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/aeacd803-4114-441f-9882-2c1714b42d13)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2c5b634d-eef4-4333-8a9e-9264c1b10a21)  
 
-  
+oder 
+
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/aeacd803-4114-441f-9882-2c1714b42d13)  
+
+popupThermo:  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/775e6fee-e06a-4a1c-8f9d-695a8624da86)
+
 ``` 
 let Buero_Klimaanlage = <PageThermo>
 {
