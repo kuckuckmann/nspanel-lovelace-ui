@@ -381,7 +381,7 @@ let Subpages_1 = <PageEntities>
   
 ## CardEntities - Abfallkalender
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/124622d2-1b02-4ced-8045-62ba04c62c95)
   
 ``` 
 let Abfall = <PageEntities>
