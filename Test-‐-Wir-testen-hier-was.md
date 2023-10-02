@@ -387,7 +387,7 @@ let Fenster_1 = <PageEntities>
   
 ## CardEntities - Button Aliase
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/0cd4c9d5-88b8-4e30-b3cd-44b3b237c58d)
   
 ``` 
 let Button_1 = <PageEntities>
@@ -398,7 +398,6 @@ let Button_1 = <PageEntities>
     'items': [
         <PageItem>{ id: 'alias.0.NSPanel_1.TestTastensensor', name: 'Tastensensor (FFN)'},
         <PageItem>{ id: 'alias.0.NSPanel_1.Radio.NDR2', icon: 'radio', name: 'Taste (NDR2)', onColor: colorRadio, buttonText: 'starten'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestVentil1', icon: 'valve-open', icon2: 'valve-closed',offColor: MSRed, onColor: MSGreen, name: 'Test-Ventil 1'},
         <PageItem>{ id: 'alias.0.NSPanel_1.Radio.NDR2', icon: 'alarm-light', name: 'Alert mit Zielseite', offColor: MSGreen, onColor: MSRed, targetPage: 'Abfall', buttonText: 'Popup'},
     ]
 };
