@@ -683,7 +683,7 @@ let SpotifyPremium = <PageMedia>
   
 ## CardMedia - SqueezeboxRPC
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://user-images.githubusercontent.com/102996011/194286414-a1635626-d33b-4cc6-b8e6-1c1749636900.png)
   
 ``` 
 let SqueezeboxRPC = <PageMedia>
