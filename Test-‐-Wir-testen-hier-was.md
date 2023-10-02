@@ -931,9 +931,9 @@ let CardPowerExample = <PagePower>
 ***  
   
 <details>
-  <summary>PageQR</summary> 
+  <summary>## PageQR</summary> 
   
-## CardQR
+### CardQR
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/b855ff4a-fcf9-4c67-a45e-822cd9487437)
   
