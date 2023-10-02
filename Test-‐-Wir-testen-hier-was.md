@@ -19,27 +19,27 @@ Auf dieser Seite testen wir was für die zukünftige Wiki
 # Page Aufbau
   
 Eine Page, also eine Seite des NSPanles hat einen bestimmten Aufbau.  
-Es gibt Teile, die sind bei jeder Seite gleich, es gibt Teile die immer da sein müssen, es gibt Teile die sind optional und je nach Typ der Seite variiert der Aufbau ein wenig.
+Es gibt Teile, die sind bei jeder Seite gleich, es gibt Teile, die immer da sein müssen, es gibt Teile, die sind optional und je nach Typ der Seite variiert der Aufbau ein wenig.
 
 ## Page Typ  
-Beginnen wir damit, dass man sich, bevor man eine Seite "zusammenstellet" / programmiert darüber Gedanken machen muss, wie die Seite aussehen soll. In den allermeisten Fällen wird es auf eine Seite vom Typ **PageEntities** oder **PageGrid(2)** hinauslaufen.  
-gegenwärtig haben wir folgende Page Typen zur Auswahl:  
+Beginnen wir damit, dass man sich, bevor man eine Seite "zusammenstellt" / programmiert darüber Gedanken machen muss, wie die Seite aussehen soll. In den allermeisten Fällen wird es auf eine Seite vom Typ **PageEntities** oder **PageGrid(2)** hinauslaufen.  
+Gegenwärtig haben wir folgende Page Typen zur Auswahl:  
   
 ### PageEntities:
 Auf dieser Seite hat man bis zu 4 Zeilen zur Verfügung.  
-Links kann man ein Icon platzieren, in der Mitte folgt ein Text/Beschreibung und rechts folgt ein Switch, Ein Wert, ein Regler oder ein Button (PRESS).  
-Je nach Alias, kann man über den Touch/Klick auf den Eintrag zu einer Unterseite, einem sogenannten Popup gelangen.
+Links kann man ein Icon platzieren, in der Mitte folgt ein Text/Beschreibung und rechts folgt ein Switch, ein Wert, ein Regler oder ein Button (PRESS).  
+Je nach Alias (Rolle), kann man über den Touch/Klick auf den Eintrag zu einer Unterseite, einem sogenannten Popup gelangen.
   
 ### PageGrid(2):
-Beim PageGrid steht das Icon im Vordergrund. Man hat hier ein Raster, man kann es sich auch wie eine Tabelle vorstellen. Diese hat zwei Zeilen und entweder 3 Spalten (bei der CardGrid) oder 4Spalten (bei der CardGrid2).  
-In jeder Zelle der Tabelle kann man ein Icon platzieren mit einer Beschriftung.
+Beim PageGrid steht das Icon im Vordergrund. Man hat hier ein Raster mit zwei Zeilen und entweder 3 Spalten (bei der CardGrid) oder 4 Spalten (bei der CardGrid2).  
+In jedem Feld kann man ein Icon platzieren mit einer Beschriftung. Diese Beschriftung kann ein Text sein, aber auch ein Wert eines Datenpunktes.
   
 ### PageMedia:
-PageMedia ist letztlich ein Player, der es ermöglicht Streams auf spezifischen Geräten abzuspielen. Der Umfang ist hier stark vom Service abhängig.  
+PageMedia ist letztlich eine Bedienoberfläche eines Players, der es ermöglicht Streams auf spezifischen Geräten abzuspielen. Der Umfang ist hier stark vom Adapter abhängig, welcher im ioBroker installiert ist. (Sono, Alexa, ...)  
 Auf der pageMedia lassen sich an bestimmten Stellen das sogenannte **InSelPopup** integrieren, um beispielsweise Abspielgeräte, Playlists oder Senderlisten, etc. aufzulisten.  
   
 ### PageThermo:
-Egal ob Thermostate, Klimaanlagen, Wärmepumpen, Smarte Ventilatoren, etc. - mit der CardThermo lässt sich vieles Steuern was eine Temperaturregelung hat. je nach Alias-Einstellungen können die Unterschiedlichsten MODE und Informationen abgebildet werden.  
+Egal ob Thermostate, Klimaanlagen, Wärmepumpen, Smarte Ventilatoren, etc. - mit der CardThermo lässt sich vieles Steuern was eine Temperaturregelung hat. Je nach Alias-Einstellungen können die Unterschiedlichsten MODE und Informationen abgebildet werden.  
   
 ### PageAlarm:
 Die Alarmanlage über das NSPanel steuern?  
@@ -47,13 +47,13 @@ Mit der PageAlarm kann man sie zumindest ein- und ausschalten und unterschiedlic
   
 ### PageUnlock:
 Man möchte den Zugriff auf das NSPanel kontrollieren / limitieren?  
-Kein Problem mit der PageUnlock bestimmen sie, wer das smarte Zuahause steuern darf ;-)  
+Kein Problem, mit der PageUnlock bestimmen sie, wer das smarte Zuahause steuern darf ;-)  
   
 ### PageChart:
-Für alle die Diagramme und Statistiken lieben und auch auf diese nicht auf dem 4" großen Display verzichten möchten, gibt es die **CardChart** und **CardLChart** zur Darstellunf von Säulen- und Linien-Diagramm.  
+Für alle die Diagramme und Statistiken lieben und auch auf diese nicht auf dem 4" großen Display verzichten möchten, gibt es die **CardChart** und **CardLChart** zur Darstellung von Säulen- und Linien-Diagramm.  
   
 ### PagePower:
-Sie haben eine PV-Anlage und möchten den Stromfluss darstellen? Dafür haben wir die PagePower.  
+Sie haben eine PV-Anlage und/oder mehrere Verbraucher mit Messwerten und möchten den Stromfluss darstellen? Dafür haben wir die PagePower.  
   
 ### PageQR:
 Gäste sollen einfach und easy ins Gäste-WLAN rein kommen? Am besten mit dem Scann eines QR-Codes? Voila, dafür haben wir die PageQR.
@@ -72,10 +72,10 @@ let name = <PageType>
 };  
 ```  
   
-* `let name =` : Das Wort name ist hier ein Platzhalter. Man gibt der Seite hier einen eindeutigen Namen, allerdings bitte ohne Leerzeichen bei mehreren Worten und vermeide Sonderzeichen. Dieser Name muss im weiteren Verlauf des Skriptes noch einmal aufgeführt werden (Wichtig für die Darstellung und Navigation)  
+* `let name =` : Das Wort _name_ ist hier ein Platzhalter. Man gibt der Seite hier einen eindeutigen Namen, allerdings bitte ohne Leerzeichen bei mehreren Worten und vermeide Sonderzeichen. Dieser Name muss im weiteren Verlauf des Skriptes noch einmal aufgeführt werden (Wichtig für die Darstellung und Navigation).  
 * `<PageType>` : Type muss durch den richtigen Seiten Typ (Entities, Chart, Power, Grid, etc.) ersetzt werden. Page davor bleibt bestehen, so dass man dann zum Beispiel ein <PageEntities> oder <PageGrid> erhält. Wichtig, PageType ist immer von einer Spitzen Klammer eingefasst.  
-* `type` : Der Typ der Seite, wie zuvor schon beschrieben. PageType und type haben immer den gleichen Postfix. Bei type ist es aber CardType stattPageType. Folglich haben wir hier in Hochkomma eingefasst 'cardEntities' oder 'cardGrid', etc.  
-* `heading` :  Der Seitenname oder auch Überschrift, der auf der Seite auf dem NSPanel oben in der Mitte dargestellt wird. er ist in Hochkommas zu fassen.  
+* `type` : Der Typ der Seite, wie zuvor schon beschrieben. PageType und type haben immer den gleichen Postfix. Bei type ist es aber CardType statt PageType. Folglich haben wir hier in Hochkomma eingefasst 'cardEntities' oder 'cardGrid', etc.  
+* `heading` :  Der Seitenname oder auch Überschrift, der auf der Seite auf dem NSPanel oben in der Mitte dargestellt wird. Er ist in Hochkommas zu fassen.  
 * `useColor` :  Wird in der Regel mit `true` angegeben  
 * `items` :  Hier wird der eigentliche Inhalt der Seite eingetragen. Pro dazustellendem Element erfasst man hier ein sogenanntes `<PageItem>` welches dann die darzustellenden Parameter erhält.  
   
