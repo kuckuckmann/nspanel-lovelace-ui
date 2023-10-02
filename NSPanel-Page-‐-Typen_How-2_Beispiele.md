@@ -1,3 +1,5 @@
+_Stand: 03.10.2023 / v1.0_
+  
 # Einleitung
   
 In diesem Kapitel geht es um die Seite, die sogenannte Page des NSPanels.  
