@@ -136,13 +136,14 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 > [!NOTE]  
 > Die Icon-Namen müssen aus der [Icondatei](https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html) stammen. `icon` bzw. `icon2` übersteuern ein Icon welches per Default vom Alias kommt. Bei vielen Alias ist es nicht notwendig ein `icon(2)` zu definieren. Die Option steht einem aber jederzeit zur Verfügung.  
   
-#### Einheiten und Werte:
+#### Einheiten - Werte - Diverses:
 * `unit` :  in Hochkomma gesetzte Einheit (z.B. °C) gilt nicht für alle Rollen
 * `useValue` :  muss auf `true`, wenn `fontSize` genutzt wird
 * `minValue` :  legt den Startwert für den Slider fest
 * `maxValue` :  legt den Endwert für den Slider fest
 * `modeList` :  Ermöglicht ein **InSelPopup** für die Auswahl weiterer Werte. Wird in `[``, ``, ``]` gefasst und enthält eine Kommaseparierte Liste an Werten 
 * `inSel_ChoiceState` : definiert, ob ein ausgewählter Wert auf einem **InSelPopup** einen Fokus erhält. Wird mit `true` oder `false`angegeben
+* `monobutton` : wenn als Schalter ein echter Hardware-Taster verbaut ist, wird immer _true/false_ für einen Umschaltvorgang gesendet. In dem Fall wird ein Taster emuliert und es ist `true` zu setzen. Andernfalls wird ein Schalter emuliert nud es ist `false` zu setzen. 
   
 #### Angaben für Licht:  
 * `interpolateColor` :  wird mit  `true` oder `false` angegeben und errechnet bei `true` die aktuelle Farbe des Leuchtmittels  
@@ -184,7 +185,6 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 * `colorMediaArtist` :  Farbe für Song-Interpreten
 * `colorMediaTitle` :  Farbe für Song-Titel (Track)
 * `autoCreateALias` :  NSPanel-Script erstellt den Alias automatisch unter **alias.0** , wenn Wert = `true`
-* `globalTracklist` :  wird verwendet vom Volumio-Playermonobutton wenn als Schalter ein echter Hardware-Taster verbaut ist der immer true/false für einen Umschaltvorgang sendet, wird ein Taster emuliert, ansonsten ein Schalter
   
 #### **CardThermo** spezifische Konfiguration:  
 * `stepValue` :  Schrittweite für die Veränderung der Solltemperatur. Wird mit zusätzlich `minValue` und `maxValue` konfiguriert
