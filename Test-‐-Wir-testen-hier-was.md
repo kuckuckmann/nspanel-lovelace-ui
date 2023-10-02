@@ -467,14 +467,14 @@ let SensorGrid = <PageGrid>{
     ]};
 ```
   
-## CardCrid2 - 8 statt 6 PageItems  
+## CardGrid - 6 PageItems  
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/140e99b2-802f-42e1-bee5-8f86515c74db)
   
 ``` 
-let Buero_Seite_2 = <PageGrid2>
+let Buero_Seite_2 = <PageGrid>
 {
-    'type': 'cardGrid2',
+    'type': 'cardGrid',
     'heading': 'Büro 2',
     'useColor': true,
     'items': [
@@ -483,13 +483,12 @@ let Buero_Seite_2 = <PageGrid2>
         <PageItem>{ id: 'alias.0.NSPanel_1.TestFenster', offColor: MSRed, onColor: MSGreen, name: 'Büro Fenster'},
         <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', icon: 'power', offColor: MSRed, onColor: MSGreen},
         <PageItem>{ id: 'alias.0.NSPanel_1.TestBlind', icon: 'projector-screen', onColor: White, name: 'Beamer', secondRow: 'auch Text'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Kippfenster', useValue: true },
-        <PageItem>{ id: 'alias.0.NSPanel_1.Radio.Bob', icon: 'play', onColor: White, name: 'TuneIn'}
+        <PageItem>{ id: 'alias.0.NSPanel_1.Kippfenster', useValue: true }
     ]
 };
 ```  
   
-## CardCrid2 - 8 statt 6 PageItems  
+## CardGrid2 - 8 statt 6 PageItems  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/f1d2c2dd-01f6-4b68-a14e-0d774bcc49a7)
   
