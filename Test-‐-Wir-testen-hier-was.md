@@ -1,66 +1,58 @@
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
-
-Auf dieser Seite testen wir was für die zukünftige Wiki
-
 # Einleitung
   
-  
-  
-# Geblubber
-   
+In diesem Kapitel geht es um die Seite, die sogenannte Page des NSPanels.  
+Wir wollen uns hier  
+  --> den Aufbau der Page ansehen  
+  --> welche Page Typen gibt es
+  --> Wie man eine Page aufbaut und welche Dinge man beachten aber auch mindestens einfügen muss  
+  --> und welche Beispiele gibt es zu den einzelnen Page Typen die beim eigenen bauen hilfreich sein können
   
 # Page Aufbau
   
-Eine Page, also eine Seite des NSPanles hat einen bestimmten Aufbau.  
-Es gibt Teile, die sind bei jeder Seite gleich, es gibt Teile, die immer da sein müssen, es gibt Teile, die sind optional und je nach Typ der Seite variiert der Aufbau ein wenig.
-
-## Page Typ  
+Eine Page, also eine Seite des NSPanels hat einen bestimmten Aufbau.  
+Es gibt Teile, die sind bei jeder Seite gleich, es gibt Teile, die immer da sein müssen, es gibt Teile, die sind optional und je nach Typ der Seite variiert der Aufbau ein wenig.  
+Zum ersten besseren verständnis schaue wir uns nachfolgend die Page Typen an.    
+  
+# Page Typ  
 Beginnen wir damit, dass man sich, bevor man eine Seite "zusammenstellt" / programmiert darüber Gedanken machen muss, wie die Seite aussehen soll. In den allermeisten Fällen wird es auf eine Seite vom Typ **PageEntities** oder **PageGrid(2)** hinauslaufen.  
 Gegenwärtig haben wir folgende Page Typen zur Auswahl:  
   
-### PageEntities:
+## PageEntities:
 Auf dieser Seite hat man bis zu 4 Zeilen zur Verfügung.  
 Links kann man ein Icon platzieren, in der Mitte folgt ein Text/Beschreibung und rechts folgt ein Switch, ein Wert, ein Regler oder ein Button (PRESS).  
 Je nach Alias (Rolle), kann man über den Touch/Klick auf den Eintrag zu einer Unterseite, einem sogenannten Popup gelangen.
   
-### PageGrid(2):
+## PageGrid(2):
 Beim PageGrid steht das Icon im Vordergrund. Man hat hier ein Raster mit zwei Zeilen und entweder 3 Spalten (bei der CardGrid) oder 4 Spalten (bei der CardGrid2).  
 In jedem Feld kann man ein Icon platzieren mit einer Beschriftung. Diese Beschriftung kann ein Text sein, aber auch ein Wert eines Datenpunktes.
   
-### PageMedia:
+## PageMedia:
 PageMedia ist letztlich eine Bedienoberfläche eines Players, der es ermöglicht Streams auf spezifischen Geräten abzuspielen. Der Umfang ist hier stark vom Adapter abhängig, welcher im ioBroker installiert ist. (Sono, Alexa, ...)  
 Auf der pageMedia lassen sich an bestimmten Stellen das sogenannte **InSelPopup** integrieren, um beispielsweise Abspielgeräte, Playlists oder Senderlisten, etc. aufzulisten.  
   
-### PageThermo:
+## PageThermo:
 Egal ob Thermostate, Klimaanlagen, Wärmepumpen, Smarte Ventilatoren, etc. - mit der CardThermo lässt sich vieles Steuern was eine Temperaturregelung hat. Je nach Alias-Einstellungen können die Unterschiedlichsten MODE und Informationen abgebildet werden.  
   
-### PageAlarm:
+## PageAlarm:
 Die Alarmanlage über das NSPanel steuern?  
 Mit der PageAlarm kann man sie zumindest ein- und ausschalten und unterschiedliche Level schalten.  
   
-### PageUnlock:
+## PageUnlock:
 Man möchte den Zugriff auf das NSPanel kontrollieren / limitieren?  
 Kein Problem, mit der PageUnlock bestimmen sie, wer das smarte Zuahause steuern darf ;-)  
   
-### PageChart:
+## PageChart:
 Für alle die Diagramme und Statistiken lieben und auch auf diese nicht auf dem 4" großen Display verzichten möchten, gibt es die **CardChart** und **CardLChart** zur Darstellung von Säulen- und Linien-Diagramm.  
   
-### PagePower:
+## PagePower:
 Sie haben eine PV-Anlage und/oder mehrere Verbraucher mit Messwerten und möchten den Stromfluss darstellen? Dafür haben wir die PagePower.  
   
-### PageQR:
+## PageQR:
 Gäste sollen einfach und easy ins Gäste-WLAN rein kommen? Am besten mit dem Scann eines QR-Codes? Voila, dafür haben wir die PageQR.
   
-## How 2 Page:
+# How 2 Page:
   
-### Basisseite
+## Basisseite
 Der Rahmen einer Seite  besteht aus einem Frame wie folgend:  
 ```
 let name = <PageType>
@@ -82,28 +74,28 @@ let name = <PageType>
 Bis hier her haben wir eine leere Seite erstellt. Wenn ich meinen Page/Card Type festgelegt habe, der Seite einen Namen gegeben, eine Überschrift definiert habe, kann ich mich nun daran machen den Inhalt der Seite aufzubauen.  
 Als Zwischen-Test kann man den definierten `name` im Skript unter **pages** hinzufügen, das Skript neu starten und dann auf dem NSPanel schauen, ob die neue Seite (ohne Inhalt) schon angezeigt wird.  
   
-### Optionale Parameter  
+## Optionale Parameter  
 Bevor wir aber zur Erstellung der **PageItem** kommen, noch optionale Parameter, die man hier setzen kann:  
 * `subPage` :  Wird, sofern man mit Unterseite arbeiten möchte, mit `true` gefasst in Hochkommas gesetzt. Der Parameter `subPage = true` definiert diese Seite als eine Unterseite von XY
 * `parent` :  Wird `subPage = true` definiert, dann kann man mit **parent** den Namen der höher gelegenen Seite definieren. Dies hat Auswirkung auf die Steuerung und die Blätterpfeile oben auf der Seite. Der Name der höher gelegenen Seite ist in Hochkommas zu fassen  
   
 Es gibt noch weitere optionale Parameter, jedoch gehören Die alle zum Thema Navigation. Hierzu gibt es [hier](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation) in der Wiki eine Beschreibung, so dass wir an dieser Stelle nicht noch einmal darauf eingehen möchten.
   
-### Seiteninhalt - PageItem - definieren  
+## Seiteninhalt - PageItem - definieren  
 Das `<PageItem>` -  wenn man es mal frei übersetzt , das Seiten-Gegenstand definiert einen auf der Seite Sichtbaren Wert / Schalter. Was ein **PageItem** relativ immer mit sich bringt, ist eine **ID**, ein **Name** und eine **Farbdefinition**.  
 ```
 <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', name: 'Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen},
 ```
 Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern folgt die weitere Konfiguration:  
  
-#### Mindestangaben:
+### Mindestangaben:
 * `id` :  Pfad zum Alias, der verwendet wird, in Hochkomma eingefasst
 * `name` :  Text der als Label auf dem Display zu einem PageItem dargestellt wird
   
 > [!IMPORTANT]  
 > `name` ist kein muss, wenn der Alias richtig konfiguriert ist. Dann wird der Name aus dem `common.name.de` gezogen.  
   
-#### **Optionale / spezifische Angaben**:  
+### **Optionale / spezifische Angaben**:  
   
 #### Angaben für icon-Farbe:  
 * `offColor` :  Farbe für ausgeschaltet
