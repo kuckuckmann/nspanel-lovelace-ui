@@ -2,10 +2,10 @@
   
 In diesem Kapitel geht es um die Seite, die sogenannte Page des NSPanels.  
 Wir wollen uns hier  
-  --> den Aufbau der Page ansehen  
-  --> welche Page Typen gibt es
-  --> Wie man eine Page aufbaut und welche Dinge man beachten aber auch mindestens einfügen muss  
-  --> und welche Beispiele gibt es zu den einzelnen Page Typen die beim eigenen bauen hilfreich sein können
+  **-->** den Aufbau der Page ansehen  
+  **-->** welche Page Typen gibt es  
+  **-->** Wie man eine Page aufbaut und welche Dinge man beachten aber auch mindestens einfügen muss  
+  **-->** und welche Beispiele gibt es zu den einzelnen Page Typen die beim eigenen bauen hilfreich sein können  
   
 # Page Aufbau
   
