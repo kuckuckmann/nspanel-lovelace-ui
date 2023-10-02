@@ -534,7 +534,7 @@ let Radiosender = <PageGrid>
   
 ## CardGrid - WLED
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/11543b7e-bd79-4b74-8589-2475a41ae552)
   
 ``` 
 let WLED = <PageGrid>
