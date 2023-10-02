@@ -405,7 +405,7 @@ let Button_1 = <PageEntities>
   
 ## CardEntities - Navigate für Subpages
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f20cdc59-5cf8-470c-bc45-73b1c0427be3)
   
 ``` 
 let Subpages_1 = <PageEntities>
