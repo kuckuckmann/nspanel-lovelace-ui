@@ -645,7 +645,8 @@ let Sonos = <PageMedia>
 };
 ```  
   
-## CardMedia - Spotify-Premium
+  
+**CardMedia - Spotify-Premium**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3154c022-c5c5-4640-8b6f-e9826b289edf)
   
