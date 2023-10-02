@@ -512,9 +512,12 @@ let Sensor_FontSize = <PageGrid2>
 };
 ``` 
   
-## CardGrid - Radiosender
+## CardGrid - Radiosender / Timer
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/20f75fdc-40b4-41f0-9a70-84da9a338a16)
+
+popupTimer  
+![Nextion_Editor_DyyGoz044r](https://user-images.githubusercontent.com/102996011/208929333-0be6783c-aca8-453c-92fb-5d83861da21a.gif)  
   
 ``` 
 let Radiosender = <PageGrid>
