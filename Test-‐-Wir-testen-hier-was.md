@@ -469,8 +469,11 @@ let SensorGrid = <PageGrid>{
   
 ## CardGrid - 6 PageItems  
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/140e99b2-802f-42e1-bee5-8f86515c74db)
-  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/140e99b2-802f-42e1-bee5-8f86515c74db)  
+
+Popup für Shutter  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/785416ec-e542-4c01-8afb-80ca4967ecef)  
+
 ``` 
 let Buero_Seite_2 = <PageGrid>
 {
