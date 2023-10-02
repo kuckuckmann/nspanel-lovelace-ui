@@ -349,7 +349,7 @@ let Test_Funktionen = <PageEntities>
   
 ## CardEntities - Diverses
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ecb15b38-b98b-4c85-b1a0-e0aeb9134fa3)
   
 ``` 
 let Buero_Seite_1 = <PageEntities>
@@ -360,7 +360,7 @@ let Buero_Seite_1 = <PageEntities>
     'items': [
         <PageItem>{ id: 'alias.0.NSPanel_1.Schreibtischlampe', interpolateColor: true},
         <PageItem>{ id: 'alias.0.NSPanel_1.Deckenbeleuchtung', interpolateColor: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Testlampe2', name: 'Filamentlampe', minValueBrightness: 0, maxValueBrightness: 70, interpolateColor: true},
+        <PageItem>{ id: 'alias.0.NSPanel_1.ShellyDuoTest', name: 'Shelly Duo GU10', minValueBrightness: 0, maxValueBrightness: 100, minValueColorTemp: 6465, maxValueColorTemp: 3000, interpolateColor: true, modeList: ['Color','White'], inSel_ChoiceState: true},
         <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen}
     ]
 };
