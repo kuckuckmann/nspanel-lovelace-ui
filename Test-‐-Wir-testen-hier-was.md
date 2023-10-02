@@ -253,7 +253,7 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 <details>
   <summary>PageEntities</summary> 
   
-## CardEntities 
+**CardEntities**   
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/16930a8e-88cd-468d-9502-4c6c51293434)
   
@@ -272,7 +272,8 @@ let Buero_Seite_1 = <PageEntities>
 };
 ```  
   
-## CardEntities - Color Aliase 1
+  
+**CardEntities - Color Aliase 1**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/bc21c636-d12f-4a5b-8c75-ac1483fa5ead)
   
@@ -291,7 +292,8 @@ let Test_Licht1 = <PageEntities>
 };
 ```  
   
-## CardEntities 
+  
+**CardEntities**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/4071b1ba-688e-4fa0-be47-d551141b7964)
   
@@ -299,7 +301,8 @@ let Test_Licht1 = <PageEntities>
 
 ```  
   
-## CardEntities - Color Aliase 2
+  
+**CardEntities - Color Aliase 2**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d5cb9173-042c-4ef1-89de-a84b3a646b3f)
   
@@ -319,7 +322,8 @@ let Test_Licht2 = <PageEntities>
 };
 ```  
   
-## CardEntities - Sonstige Aliase
+  
+**CardEntities - Sonstige Aliase**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/09ddd04f-24af-40b4-9960-882576464c1f)
   
@@ -339,7 +343,8 @@ let Test_Funktionen = <PageEntities>
 };
 ```  
   
-## CardEntities - Diverses
+  
+**CardEntities - Diverses**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ecb15b38-b98b-4c85-b1a0-e0aeb9134fa3)
   
@@ -358,7 +363,8 @@ let Buero_Seite_1 = <PageEntities>
 };
 ```  
   
-## CardEntities - Fenster und Türen
+  
+**CardEntities - Fenster und Türen**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7893e23e-b9cc-437b-8690-48fb5813cca3)
   
@@ -377,7 +383,8 @@ let Fenster_1 = <PageEntities>
 };
 ```  
   
-## CardEntities - Button Aliase
+  
+**CardEntities - Button Aliase**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/0cd4c9d5-88b8-4e30-b3cd-44b3b237c58d)
   
@@ -395,7 +402,8 @@ let Button_1 = <PageEntities>
 };
 ```  
   
-## CardEntities - Navigate für Subpages
+  
+**CardEntities - Navigate für Subpages**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f20cdc59-5cf8-470c-bc45-73b1c0427be3)
   
@@ -412,7 +420,8 @@ let Subpages_1 = <PageEntities>
 };
 ```  
   
-## CardEntities - Abfallkalender
+  
+**CardEntities - Abfallkalender**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/124622d2-1b02-4ced-8045-62ba04c62c95)
   
@@ -440,7 +449,7 @@ let Abfall = <PageEntities>
 <details>
   <summary>PageGrid(2)</summary> 
   
-## CardGrid für Sensorwerte  
+**CardGrid für Sensorwerte**  
   
 ![](https://user-images.githubusercontent.com/102996011/216006611-32155c9c-84ba-48eb-8b07-2485d80eb99b.png)  
   
@@ -459,7 +468,8 @@ let SensorGrid = <PageGrid>{
     ]};
 ```
   
-## CardGrid - 6 PageItems  
+  
+**CardGrid - 6 PageItems**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/140e99b2-802f-42e1-bee5-8f86515c74db)  
 
@@ -483,7 +493,8 @@ let Buero_Seite_2 = <PageGrid>
 };
 ```  
   
-## CardGrid2 - 8 statt 6 PageItems  
+  
+**CardGrid2 - 8 statt 6 PageItems**   
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/f1d2c2dd-01f6-4b68-a14e-0d774bcc49a7)
   
@@ -504,7 +515,8 @@ let Sensor_FontSize = <PageGrid2>
 };
 ``` 
   
-## CardGrid - Radiosender / Timer
+  
+**CardGrid - Radiosender / Timer**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/20f75fdc-40b4-41f0-9a70-84da9a338a16)
 
@@ -524,7 +536,8 @@ let Radiosender = <PageGrid>
 };
 ```  
   
-## CardGrid - WLED
+  
+**CardGrid - WLED**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/11543b7e-bd79-4b74-8589-2475a41ae552)
   
@@ -559,7 +572,7 @@ let WLED = <PageGrid>
 <details>
   <summary>PageMedia</summary> 
   
-## CardMedia - Alexa
+**CardMedia - Alexa**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/9f02d436-e2ce-4e28-956b-a521330e1747)
 
@@ -608,7 +621,8 @@ let Alexa = <PageMedia>
 };
 ```  
   
-## CardMedia - Sonos
+  
+**CardMedia - Sonos**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3bf458ac-5a0d-44dc-83fe-5feb37d33697)
   
@@ -635,7 +649,8 @@ let Sonos = <PageMedia>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3154c022-c5c5-4640-8b6f-e9826b289edf)
   
-**Button-Menü**
+  
+**Button-Menü**  
   
 SpeakerList  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e599d18b-1387-4839-bdec-5499475f02ff)  
@@ -673,7 +688,8 @@ let SpotifyPremium = <PageMedia>
 };
 ```  
   
-## CardMedia - SqueezeboxRPC
+  
+**CardMedia - SqueezeboxRPC**  
   
 ![image](https://user-images.githubusercontent.com/102996011/194286414-a1635626-d33b-4cc6-b8e6-1c1749636900.png)
   
@@ -694,7 +710,8 @@ let SqueezeboxRPC = <PageMedia>
 };
 ```
 
-## CardMedia - Volumio
+  
+**CardMedia - Volumio**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3b72ecfa-07ef-42e4-88b7-b5846a6a91a2)
   
@@ -753,7 +770,7 @@ let VolumioMobil: PageMedia =
 <details>
   <summary>PageThermo</summary> 
   
-## CardThermo - Thermostat
+**CardThermo - Thermostat**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a7426ca1-600b-456e-a8a4-11f6b5c6fb11)
   
@@ -772,7 +789,8 @@ let Buero_Themostat = <PageThermo>
 };
 ```  
   
-## CardThermo - Klimaanlage
+  
+**CardThermo - Klimaanlage**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2c5b634d-eef4-4333-8a9e-9264c1b10a21)  
 
@@ -806,7 +824,8 @@ let Buero_Klimaanlage = <PageThermo>
 };
 ```  
   
-## CardThermo - Wärmepumpe
+  
+**CardThermo - Wärmepumpe**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/69e577bd-e56d-4411-9af0-a0dd19ba030f)
   
@@ -833,7 +852,8 @@ let Pool_Waermepumpe = <PageThermo>
 <details>
   <summary>PageAlarm & PageUnlock</summary> 
   
-## CardAlarm
+  
+**CardAlarm**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8e8e353c-ca6a-43d3-85b2-ff6532283e2c)
   
@@ -847,7 +867,8 @@ let Buero_Alarm = <PageAlarm>
 };
 ```  
   
-## CardUnlock
+  
+**CardUnlock**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8f18098b-96e5-4e88-a86d-4824cc2b6299)
   
@@ -867,7 +888,7 @@ let Unlock_Service = <PageUnlock>
 <details>
   <summary>PageChart & Power</summary> 
   
-## CardChart
+**CardChart**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/274f5742-f491-4522-ac6f-7db3661dd5e2)
   
@@ -886,7 +907,8 @@ let CardChartExample = <PageChart>
 };
 ```  
   
-## CardLChart
+ 
+**CardLChart**  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7c99fa26-9383-45f7-a913-48ea23fb0baf)
   
@@ -906,7 +928,7 @@ let CardLChartExample = <PageChart>
 ```  
   
   
-## CardPower
+**CardPower**  
   
 ![Nextion_Editor_9AYbpowjZS](https://user-images.githubusercontent.com/102996011/194641145-660e1218-f559-4f25-83ca-984cc677e0d8.gif)  
   
@@ -928,7 +950,6 @@ let CardPowerExample = <PagePower>
   
 <details>
   <summary>PageQR</summary>  
-'
   
   * **CardQR**  
   
