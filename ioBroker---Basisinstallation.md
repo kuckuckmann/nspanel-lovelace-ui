@@ -175,7 +175,7 @@ einsehen und später (kommen wir bei der Alias-Erstellung noch zu) auch jedes Ic
 
 ## **9.)  „NSPanelTs.ts“ anlegen**
 Unter dem regulären Vezeichnisbaum „common“ im ioBroker-Menüpunkt Skripte erzeugst du (gerne auch in weiteren Unterverzeichnissen) ein weiteres TypeScript mit dem Inhalt:  
-**https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs_without_Examples.ts**  
+**https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts**  
   
 Dieses Script enthält nur die Grundstruktur und ist nach der Parametereinstellung lauffähig. 
   
