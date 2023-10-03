@@ -1,9 +1,9 @@
-# ioBroker Wiki
+# SONOFF NSPanel Wiki für den ioBroker (LoveLace-UI)
 ## Herzlich willkommen!
 
 ![image](https://user-images.githubusercontent.com/102996011/215601019-1e10bacd-8f7f-49a0-8bbf-ab7a38b58743.png)
 
-Hier findest Du die Dokumentation des lovelace-ui für das NSPanel, wenn Du als Hausautomatisierungssystem den ioBroker verwendest.
+Hier findest Du die Dokumentation des lovelace-ui für das Sonoff NSPanel, wenn Du als Hausautomatisierungssystem den ioBroker verwendest.
 Die Wiki ist untergliedert in verschiedene Bereiche und sie erfüllt nicht den Anspruch der Vollständigkeit.
 
 Ergänzungen sind jederzeit willkommen.
