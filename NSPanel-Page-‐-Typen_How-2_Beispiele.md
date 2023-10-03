@@ -13,7 +13,7 @@ Wir wollen uns hier
   
 Eine Page, also eine Seite des NSPanels hat einen bestimmten Aufbau.  
 Es gibt Teile, die sind bei jeder Seite gleich, es gibt Teile, die immer da sein müssen, es gibt Teile, die sind optional und je nach Typ der Seite variiert der Aufbau ein wenig.  
-Zum ersten besseren verständnis schaue wir uns nachfolgend die Page Typen an.    
+Zum ersten besseren Verständnis schauen wir uns nachfolgend die Page Typen an.    
   
 # Page Typ  
 Beginnen wir damit, dass man sich, bevor man eine Seite "zusammenstellt" / programmiert darüber Gedanken machen muss, wie die Seite aussehen soll. In den allermeisten Fällen wird es auf eine Seite vom Typ **PageEntities** oder **PageGrid(2)** hinauslaufen.  
@@ -66,25 +66,25 @@ let name = <PageType>
 };  
 ```  
   
-* `let name =` : Das Wort _name_ ist hier ein Platzhalter. Man gibt der Seite hier einen eindeutigen Namen, allerdings bitte ohne Leerzeichen bei mehreren Worten und vermeide Sonderzeichen. Dieser Name muss im weiteren Verlauf des Skriptes noch einmal aufgeführt werden (Wichtig für die Darstellung und Navigation).  
-* `<PageType>` : Type muss durch den richtigen Seiten Typ (Entities, Chart, Power, Grid, etc.) ersetzt werden. Page davor bleibt bestehen, so dass man dann zum Beispiel ein <PageEntities> oder <PageGrid> erhält. Wichtig, PageType ist immer von einer Spitzen Klammer eingefasst.  
-* `type` : Der Typ der Seite, wie zuvor schon beschrieben. PageType und type haben immer den gleichen Postfix. Bei type ist es aber CardType statt PageType. Folglich haben wir hier in Hochkomma eingefasst 'cardEntities' oder 'cardGrid', etc.  
-* `heading` :  Der Seitenname oder auch Überschrift, der auf der Seite auf dem NSPanel oben in der Mitte dargestellt wird. Er ist in Hochkommas zu fassen.  
-* `useColor` :  Wird in der Regel mit `true` angegeben  
-* `items` :  Hier wird der eigentliche Inhalt der Seite eingetragen. Pro dazustellendem Element erfasst man hier ein sogenanntes `<PageItem>` welches dann die darzustellenden Parameter erhält.  
+* `let name =` -> Das Wort _name_ ist hier ein Platzhalter. Man gibt der Seite hier einen eindeutigen Namen, allerdings bitte ohne Leerzeichen bei mehreren Worten und vermeide Sonderzeichen. Dieser Name muss im weiteren Verlauf des Skriptes noch einmal aufgeführt werden (Wichtig für die Darstellung und Navigation).  
+* `<PageType>` -> Type muss durch den richtigen Seiten Typ (Entities, Chart, Power, Grid, etc.) ersetzt werden. Page davor bleibt bestehen, so dass man dann zum Beispiel ein <PageEntities> oder <PageGrid> erhält. Wichtig, PageType ist immer von einer Spitzen Klammer eingefasst.  
+* `'type':` -> Der Typ der Seite, wie zuvor schon beschrieben. PageType und type haben immer den gleichen Postfix. Bei type ist es aber CardType statt PageType. Folglich haben wir hier in Hochkomma eingefasst 'cardEntities' oder 'cardGrid', etc.  
+* `'heading':` -> Der Seitenname oder auch Überschrift, der auf der Seite auf dem NSPanel oben in der Mitte dargestellt wird. Er ist in Hochkommas zu fassen.  
+* `'useColor':` -> Wird in der Regel mit `true` angegeben  
+* `'items':` ->  Hier wird der eigentliche Inhalt der Seite eingetragen. Pro dazustellendem Element erfasst man hier ein sogenanntes `<PageItem>` welches dann die darzustellenden Parameter erhält.  
   
 Bis hier her haben wir eine leere Seite erstellt. Wenn ich meinen Page/Card Type festgelegt habe, der Seite einen Namen gegeben, eine Überschrift definiert habe, kann ich mich nun daran machen den Inhalt der Seite aufzubauen.  
 Als Zwischen-Test kann man den definierten `name` im Skript unter **pages** hinzufügen, das Skript neu starten und dann auf dem NSPanel schauen, ob die neue Seite (ohne Inhalt) schon angezeigt wird.  
   
 ## Optionale Parameter  
 Bevor wir aber zur Erstellung der **PageItem** kommen, noch optionale Parameter, die man hier setzen kann:  
-* `subPage` :  Wird, sofern man mit Unterseite arbeiten möchte, mit `true` gefasst in Hochkommas gesetzt. Der Parameter `subPage = true` definiert diese Seite als eine Unterseite von XY
-* `parent` :  Wird `subPage = true` definiert, dann kann man mit **parent** den Namen der höher gelegenen Seite definieren. Dies hat Auswirkung auf die Steuerung und die Blätterpfeile oben auf der Seite. Der Name der höher gelegenen Seite ist in Hochkommas zu fassen  
+* `'subPage':` -> Wird, sofern man mit Unterseite arbeiten möchte, auf `true` gesetzt.  
+* `'parent':` -> Wird `'subPage': true` definiert, dann kann man mit **parent** den Namen der höher gelegenen Seite definieren. Dies hat Auswirkung auf die Steuerung und die Blätterpfeile oben auf der Seite.  
   
 Es gibt noch weitere optionale Parameter, jedoch gehören Die alle zum Thema Navigation. Hierzu gibt es [hier](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation) in der Wiki eine Beschreibung, so dass wir an dieser Stelle nicht noch einmal darauf eingehen möchten.
   
 ## Seiteninhalt - PageItem - definieren  
-Das `<PageItem>` -  wenn man es mal frei übersetzt , das Seiten-Gegenstand definiert einen auf der Seite Sichtbaren Wert / Schalter. Was ein **PageItem** relativ immer mit sich bringt, ist eine **ID**, ein **Name** und eine **Farbdefinition**.  
+Das `<PageItem>` -  wenn man es mal frei übersetzt , das Seiten-Gegenstand definiert einen auf der Seite sichtbaren Wert / Schalter. Was ein **PageItem** relativ immer mit sich bringt, ist eine **ID**, ein **Name** und eine **Farbdefinition**.  
 ```
 <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', name: 'Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen},
 ```
@@ -92,7 +92,7 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
  
 ### Mindestangaben:
 * `id` :  Pfad zum Alias, der verwendet wird, in Hochkomma eingefasst
-* `name` :  Text der als Label auf dem Display zu einem PageItem dargestellt wird
+* `name` :  Text der als Label auf dem Display zu einem PageItem dargestellt wird, in Hochkomma eingefasst
   
 > [!IMPORTANT]  
 > `name` ist kein muss, wenn der Alias richtig konfiguriert ist. Dann wird der Name aus dem `common.name.de` gezogen.  
@@ -131,11 +131,11 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 > Die Icon-Namen müssen aus der [Icondatei](https://htmlpreview.github.io/?https://github.com/jobr99/Generate-HASP-Fonts/blob/master/cheatsheet.html) stammen. `icon` bzw. `icon2` übersteuern ein Icon welches per Default vom Alias kommt. Bei vielen Alias ist es nicht notwendig ein `icon(2)` zu definieren. Die Option steht einem aber jederzeit zur Verfügung.  
   
 #### Einheiten - Werte - Diverses:
-* `unit` :  in Hochkomma gesetzte Einheit (z.B. °C) gilt nicht für alle Rollen
+* `unit` :  in Hochkomma gesetzte Einheit (z.B. °C) gilt nicht für alle Alias Rollen
 * `useValue` :  muss auf `true`, wenn `fontSize` genutzt wird
 * `minValue` :  legt den Startwert für den Slider fest
 * `maxValue` :  legt den Endwert für den Slider fest
-* `modeList` :  Ermöglicht ein **InSelPopup** für die Auswahl weiterer Werte. Wird in `[``, ``, ``]` gefasst und enthält eine Kommaseparierte Liste an Werten 
+* `modeList` :  Ermöglicht ein **InSelPopup** für die Auswahl weiterer Werte. Wird in `[``, ``, ``]` gefasst und enthält eine kommaseparierte Liste an Werten 
 * `inSel_ChoiceState` : definiert, ob ein ausgewählter Wert auf einem **InSelPopup** einen Fokus erhält. Wird mit `true` oder `false`angegeben
 * `monobutton` : wenn als Schalter ein echter Hardware-Taster verbaut ist, wird immer _true/false_ für einen Umschaltvorgang gesendet. In dem Fall wird ein Taster emuliert und es ist `true` zu setzen. Andernfalls wird ein Schalter emuliert nud es ist `false` zu setzen. 
   
@@ -151,18 +151,18 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
   
 #### Angabe für Rolladen (PopupShutter)
 * `secondRow` : gehört zur popupPage Shutter (Text für die zweite Zeile)  
-* `minValueLevel` : definiert die kleinste Position (Up)
+* `minValueLevel` : definiert die kleinste Position (Down)
 * `maxValueLevel` : definiert die größte Position (Up)
 * `minValueTilt` :  definiert die - kleinste Lamellenposition-Stellung
-* `maxValueTilt` :  definiert die - größte Lamellenposition-Stellung (Up)
+* `maxValueTilt` :  definiert die - größte Lamellenposition-Stellung  
   
 #### Angaben für Navigation und Subpages:  
-* `navigate` :  Ersetzt `id` und wird mit `true` gesetzt und benötigt **targetPage**. Öffnet eine Subpage
+* `navigate` :  Ersetzt `id` und wird mit `true` gesetzt und benötigt den Parameter **targetPage**. Öffnet eine Subpage
 * `targetPage` :  Zielseite die geöffnet wird, wenn man eine in navigate definierte SubPage öffnen will  
   
 #### **CardChart** spezifische Angabe:  
 * `yAxis` :  name der y-Achse
-* `yAxisTicks` :  Werte-Skala der yAchse Wird in `[``, ``, ``]` gefasst und enthält eine Kommaseparierte Liste an Werten
+* `yAxisTicks` :  Werte-Skala der yAchse Wird in `[``, ``, ``]` gefasst und enthält eine kommaseparierte Liste an Werten
 * `onColor` : Farbe der Balken
   
 #### **CardQR** spezifische Angabe:  
