@@ -28,7 +28,7 @@
 </details>
 <details open>
    <summary>
-      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/aa4f6d0e-2489-400a-a2bf-2e87a737796d"> hÃ¤ufig gestellte Fragen</h3>
+      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/aa4f6d0e-2489-400a-a2bf-2e87a737796d"> häufig gestellte Fragen</h3>
    </summary>
    <ul>
       <li><a href="">Scripte und Anleitungen</a></li>
