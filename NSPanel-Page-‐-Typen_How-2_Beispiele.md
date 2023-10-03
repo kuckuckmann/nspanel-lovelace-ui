@@ -20,13 +20,13 @@ Beginnen wir damit, dass man sich, bevor man eine Seite "zusammenstellt" / progr
 Gegenwärtig haben wir folgende Page Typen zur Auswahl:  
   
 ## PageEntities:
-Auf dieser Seite hat man bis zu 4 Zeilen zur Verfügung.  
+Auf dieser Seite hat man bis zu 4 Zeilen für vertikal angeordnete Steuerelemente zur Verfügung.  
 Links kann man ein Icon platzieren, in der Mitte folgt ein Text/Beschreibung und rechts folgt ein Switch, ein Wert, ein Regler oder ein Button (PRESS).  
 Je nach Alias (Rolle), kann man über den Touch/Klick auf den Eintrag zu einer Unterseite, einem sogenannten Popup gelangen.
   
 ## PageGrid(2):
 Beim PageGrid steht das Icon im Vordergrund. Man hat hier ein Raster mit zwei Zeilen und entweder 3 Spalten (bei der CardGrid) oder 4 Spalten (bei der CardGrid2).  
-In jedem Feld kann man ein Icon platzieren mit einer Beschriftung. Diese Beschriftung kann ein Text sein, aber auch ein Wert eines Datenpunktes.
+In jedem Feld kann man ein Icon platzieren mit einer Beschriftung (also ein Steuerelement). Diese Beschriftung kann ein Text sein, aber auch ein Wert eines Datenpunktes.
   
 ## PageMedia:
 PageMedia ist letztlich eine Bedienoberfläche eines Players, der es ermöglicht Streams auf spezifischen Geräten abzuspielen. Der Umfang ist hier stark vom Adapter abhängig, welcher im ioBroker installiert ist. (Sono, Alexa, ...)  
