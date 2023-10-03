@@ -1,4 +1,4 @@
-# SONOFF NSPanel Wiki für den ioBroker (LoveLace-UI)
+# SONOFF NSPanel Wiki für den ioBroker (Lovelace-UI)
 ## Herzlich willkommen!
 
 ![image](https://user-images.githubusercontent.com/102996011/215601019-1e10bacd-8f7f-49a0-8bbf-ab7a38b58743.png)
