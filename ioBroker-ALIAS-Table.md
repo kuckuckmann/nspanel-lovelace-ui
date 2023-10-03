@@ -1,4 +1,3 @@
-
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2006c203-e88c-4d76-8fbf-6e7cd1d0bc78)
 
 
