@@ -101,8 +101,7 @@ f) Speichern klicken und Einstellungen verlassen
 ## **5.) TFT-Firmware flashen**
   
 > **Achtung !!! Die aktuellsten Versionen (4.3.1 könnte nicht mehr aktuell sein) befinden sich "immer" am Ende des ioBroker TypeScript Header (TS-Skript) unter:**
-> https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs_without_Examples.ts  
-  
+> https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs.ts  
 
 Tasmota „Konsolen/Konsole“ öffnen und in die Kommandozeile  
 `FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-v4.3.1.tft`  
