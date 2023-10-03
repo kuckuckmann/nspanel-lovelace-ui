@@ -194,6 +194,26 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 * `icon` : definiert das Icon des Popup-Fensters
 * `setThermoDestTemp2` : mit einem zusätzlichen ALIAS-Datenpunkt (ACTUAL2) kann eine 2. Setpoint-Temperatur visualisiert werden.  
   
+## Basisseite mit PageItem
+  
+Wenn man nun ein oder je nach gewähltem Page Type mehrere `<PageItems>` aufgebaut hat und diese dem Punkte `items : []` hinzugefügt hat, erhält man eine Seite mit - nennen wir es etwas sichtbares.  
+```  
+let name = <PageType>  
+{
+    'type': 'cardType',
+    'heading': 'Seiten Überschrift',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', name: 'Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen},
+    ]
+}; 
+```  
+Wir haben weiter oben ja den Test mit der Basisseite gemacht, welche uns eine leere Seite auf dem NSPanel dargestellt hat. Nun, mit einem `<PageItem>` erhält man eine Anzeige.  
+  
+> Testet Eure `<PageItem>` Eintrag für Eintrag. Dies macht es bei der eventuellen Fehlersuche einfacher.
+  
+Bedient Euch gerne an den nachfolgend aufgelisteten Beispielen aus unserer Entwicklung. Mit den vorgefertigten `<PageItem>` aus den Beispielen habt Ihr es mit unter einfacher eure eigenen Seiten zu bauen. Mit der Zeit wird es dann immer mehr an eigenem, was man den Pages des NSPanels hinzufügt.
+  
 ***  
   
   
