@@ -5,7 +5,7 @@
 **Das Menü ist in den Variablendefinitionen des TS-Script v3.9.0 enthalten, dient als Beispiel für eine Subpage-Gestaltung und kann beliebig angepasst werden. Die Aliase für dieses Beispiel legt das TS-Script, sofern setOption in der JavaScript-Adapter-Instanz angehakt ist, automatisch an.**  
 Im Zuge der weiteren Releases wird es sukzessive um künftige Funktionalitäten erweitert
 
-## Service-Menü-Beispiel aus dem TypeScript (NSPanel.ts)   
+## Service-Menü-Beispiel aus dem TypeScript (NSPanelTs.ts)   
 
 ![Nextion_Editor_4keKWucXc4](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/09eb0cca-5d15-48a5-a522-6d7eceaae42d)
 
