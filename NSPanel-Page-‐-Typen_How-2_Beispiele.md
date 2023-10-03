@@ -95,7 +95,8 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 * `name` :  Text der als Label auf dem Display zu einem PageItem dargestellt wird, in Hochkomma eingefasst
   
 > [!IMPORTANT]  
-> `name` ist kein muss, wenn der Alias richtig konfiguriert ist. Dann wird der Name aus dem `common.name.de` gezogen.  
+> * `name` ist kein muss, wenn der Alias richtig konfiguriert ist. Dann wird der Name aus dem `common.name.de` gezogen.  
+> * Wie man Aliase definiert und welche Möglichkeiten es gibt, dafür haben wir hier in der Wiki seperate Kapitel, schaut da einfach mal rein
   
 ### **Optionale / spezifische Angaben**:  
   
