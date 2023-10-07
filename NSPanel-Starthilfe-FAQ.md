@@ -60,5 +60,5 @@ Hierarchie mit **Smarthome/%prefix%/%topic%**
 <img width="414" alt="Bildschirmfoto 2023-09-26 um 18 39 40" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/213d3d4a-0f72-423e-b5ff-273ed85d220a">
 
 ## "CustomSend" fehlt
-[Hier in der BasisInsatlation gibt es Drei Möglichkeiten](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---Basisinstallation#7-customsend-anlegen)
+[In der Basisinstallation gibt es drei Möglichkeiten](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---Basisinstallation#7-customsend-anlegen)
 ***
