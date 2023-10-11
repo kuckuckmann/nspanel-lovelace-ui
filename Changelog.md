@@ -35,29 +35,62 @@
 ***
 
 # v4.2.1.3  
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/67f9935a-801d-4dd4-9fbf-c2eaa058fe1f)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/67f9935a-801d-4dd4-9fbf-c2eaa058fe1f)  
+  
+[Forum Link](https://forum.iobroker.net/post/1035344)
+***
   
 # v4.2.1.2  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/ef1ef63d-b1a6-48ae-a053-5b5e063011e7)
   
+[Forum Link](https://forum.iobroker.net/post/1034341)
+***
+  
 # v4.2.1.1  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/937d19f2-b0cc-4d4d-95d3-6a2d476d443a)
+  
+[Forum Link](https://forum.iobroker.net/post/1033818)  
+***
   
 # v4.2.0.2  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/2b915899-d1da-4dc8-aaba-d8683079dcfb)
   
+[Forum Link](https://forum.iobroker.net/post/1033498)  
+***
+
 # v4.2.0.1  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/decce552-f2cd-4e1a-bd22-fb8c2fb3e7b1)
-
+  
+[Forum Link](https://forum.iobroker.net/post/1033227)  
+***
 
 # v4.2.0  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/124a9d8f-0f49-4bfe-9fe5-bb94be5242d3)
   
-# v4.1.4.1  
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/ab396fcc-7c74-45be-ab46-4198265f81fc)
+[Forum Link](https://forum.iobroker.net/post/1033017)  
+***
+    
+# v4.1.4.4  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/48c51925-565c-4ddd-9388-1623e250bb4a)  
+  
+[Forum Link](https://forum.iobroker.net/post/1029669)  
+***
+  
+# v4.1.4.2  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/bbdd17b3-16a2-4dad-ba28-b303a0a9540d)  
+  
+[Forum Link](https://forum.iobroker.net/post/1028914)  
+***
 
+# v4.1.4.1  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/ab396fcc-7c74-45be-ab46-4198265f81fc)  
+  
+[Forum Link](https://forum.iobroker.net/post/1028713)  
+***
+  
 # v4.1.4
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d46d49e5-748a-4708-a971-581effb86bf1)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d46d49e5-748a-4708-a971-581effb86bf1)  
+  
 
 # v4.0.5.5  
   
