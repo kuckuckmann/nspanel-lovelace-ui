@@ -1,3 +1,9 @@
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+
 <table border="1">
 	<thead>
 		<tr>
