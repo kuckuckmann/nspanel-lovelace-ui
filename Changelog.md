@@ -1,4 +1,9 @@
 **ioBroker Changelog (TypeScript)**  
+  
+# v4.3.1.4
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/f7db2ef3-3fe7-4ed6-af54-8a70c5bf7569)
+
+***
 
 # v4.3.1.2/v4.3.1.3  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/09dcf039-fbd1-494d-9c90-93d682ba2a31)
@@ -6,15 +11,28 @@
 [Forum Link](https://forum.iobroker.net/post/1049432)  
 ***
 
-
 # v4.3.1.1
 ![1694951180030-bce68a5b-3f4f-451c-a64c-351743ed1645-image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/d47e165a-60fc-4623-aac3-b4f320728b51)
   
+[Forum Link](https://forum.iobroker.net/post/1045086)  
+***
+
+# v4.2.1.6
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/37ec01be-060d-4d0b-b86c-71cb7098faf2)
+  
+***
+
 # v4.2.1.5  
 <img width="920" alt="image" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/0cecfad4-5478-4765-8e1a-848759f95e5e">
   
+[Forum Link](https://forum.iobroker.net/post/1039117)  
+***
+
 # v4.2.1.4
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/24d81ccf-60eb-40c3-93e6-2cecd8e3f69c)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/24d81ccf-60eb-40c3-93e6-2cecd8e3f69c)  
+  
+[Forum Link](https://forum.iobroker.net/post/1038290)  
+***
 
 # v4.2.1.3  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/67f9935a-801d-4dd4-9fbf-c2eaa058fe1f)
