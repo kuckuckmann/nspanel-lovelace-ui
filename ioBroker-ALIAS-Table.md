@@ -1,5 +1,4 @@
-<font size="2" face="Courier New" >
-<table border="1" width="80%">
+<table border="1" width="60%" style="color:blue;font-size:12px>
 	<thead>
 		<tr>
 			<th>Nr.</th>
@@ -1115,4 +1114,3 @@
 		</tr>
 	</tbody>
 </table>
-</font>
