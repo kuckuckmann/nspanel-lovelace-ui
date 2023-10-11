@@ -1,10 +1,4 @@
-<style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
-</style>
-
-<table border="1">
+<table border="1" style="color:blue;">
 	<thead>
 		<tr>
 			<th>Nr.</th>
