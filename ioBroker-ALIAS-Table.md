@@ -1,6 +1,3 @@
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2006c203-e88c-4d76-8fbf-6e7cd1d0bc78)
-
-
 <table border="1">
 	<thead>
 		<tr>
@@ -160,17 +157,17 @@
 			<td style="text-align:center">X</td>
 		</tr>
 		<tr>
-			<td rowspan="5">7</td>
-			<td rowspan="5">Jalousien</td>
-			<td rowspan="5">blind</td>
+			<td rowspan="10">7</td>
+			<td rowspan="10">Jalousien</td>
+			<td rowspan="10">blind</td>
 			<td>ACTUAL</td>
 			<td>X</td>
 			<td>number</td>
 			<td>value.blind</td>
 			<td>&nbsp;</td>
-			<td colspan="1" rowspan="5">window-open</td>
-			<td colspan="1" rowspan="5">&nbsp;</td>
-			<td colspan="1" rowspan="5">&nbsp;</td>
+			<td colspan="1" rowspan="10">window-open</td>
+			<td colspan="1" rowspan="10">&nbsp;</td>
+			<td colspan="1" rowspan="10">&nbsp;</td>
 		</tr>
 		<tr>
 			<td>CLOSE</td>
@@ -201,13 +198,58 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="11">8</td>
-			<td rowspan="11">Klimaanlage</td>
-			<td rowspan="11">airCondition</td>
+			<td>TILT_ACTUAL</td>
+			<td></td>
+			<td>number</td>
+			<td>value.blind</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>TILT_CLOSE</td>
+			<td></td>
+			<td>boolean</td>
+			<td>button.close.blind</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>TILT_OPEN</td>
+			<td></td>
+			<td>boolean</td>
+			<td>button.open.blind</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>TILT_SET</td>
+			<td></td>
+			<td>number</td>
+			<td>level.blind</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>TILT_STOP</td>
+			<td></td>
+			<td>boolean</td>
+			<td>button.stop.blind</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="15">8</td>
+			<td rowspan="15">Klimaanlage</td>
+			<td rowspan="15">airCondition</td>
 			<td>ACTUAL</td>
 			<td>X</td>
 			<td>number</td>
 			<td>value.temperature</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>AUTO</td>
+			<td>&nbsp;</td>
+			<td>boolean</td>
+			<td>state</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -224,10 +266,30 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
+			<td>COOL</td>
+			<td>&nbsp;</td>
+			<td>boolean</td>
+			<td>state</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
 			<td>ERROR</td>
 			<td>&nbsp;</td>
 			<td>boolean</td>
 			<td>indicator.error</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>HEAT</td>
+			<td>&nbsp;</td>
+			<td>boolean</td>
+			<td>state</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -258,6 +320,16 @@
 			<td>X</td>
 			<td>number</td>
 			<td>level.mode.aircondition</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>OFF</td>
+			<td>X</td>
+			<td>boolean</td>
+			<td>state</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -381,14 +453,40 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="11">12</td>
-			<td rowspan="11">Medien</td>
-			<td rowspan="11">media</td>
+			<td rowspan="16">12</td>
+			<td rowspan="16">Medien</td>
+			<td rowspan="16">media</td>
+			<td>ACTUAL</td>
+			<td>X</td>
+			<td>number</td>
+			<td>value.volume</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
 			<td>ALBUM</td>
 			<td>X</td>
 			<td>string</td>
 			<td>media.album</td>
-			<td>alexa2.0.Player.currentAlbum</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -398,7 +496,33 @@
 			<td>X</td>
 			<td>string</td>
 			<td>media.artist</td>
-			<td>alexa2.0.Player.currentArtist</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>CONTENT_DESCRIPTION</td>
+			<td>X</td>
+			<td>string</td>
+			<td>media.station</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -408,7 +532,15 @@
 			<td>X</td>
 			<td>boolean</td>
 			<td>button.next</td>
-			<td>alexa2.0.Player.controlNext</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -418,7 +550,15 @@
 			<td>X</td>
 			<td>boolean</td>
 			<td>button.pause</td>
-			<td>alexa2.0.Player.controlPause</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -428,7 +568,15 @@
 			<td>X</td>
 			<td>boolean</td>
 			<td>button.play</td>
-			<td>alexa2.0.Player.controlPlay</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -438,7 +586,51 @@
 			<td>X</td>
 			<td>boolean</td>
 			<td>button.prev</td>
-			<td>alexa2.0.Player.controlPrevious</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>SHUFFLE</td>
+			<td>X</td>
+			<td>boolean</td>
+			<td>media.mode.shuffle</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>REPEAT</td>
+			<td>X</td>
+			<td>boolean</td>
+			<td>media.mode.repeat</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -448,7 +640,29 @@
 			<td>X</td>
 			<td>boolean</td>
 			<td>media.state</td>
-			<td>alexa2.0.Player.currentState</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>status</td>
+			<td>X</td>
+			<td>string</td>
+			<td>media.state</td>
+			<td>
+            	<ul>
+                    <li>volumio</li>
+                </ul>
+            </td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -458,7 +672,15 @@
 			<td>X</td>
 			<td>boolean</td>
 			<td>button.stop</td>
-			<td>alexa2.0.Commands.deviceStop</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -468,7 +690,15 @@
 			<td>X</td>
 			<td>string</td>
 			<td>media.title</td>
-			<td>alexa2.0.Player.currentTitle</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -478,7 +708,15 @@
 			<td>X</td>
 			<td>number</td>
 			<td>level.volume</td>
-			<td>alexa2.0.Player.volume</td>
+			<td>
+            	<ul>
+                	<li>alexa2</li>
+                    <li>spotify-premium</li>
+                    <li>sonos</li>
+                    <li>squeezeboxrpc</li>
+                    <li>volumio</li>
+                </ul>
+            </td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -488,7 +726,11 @@
 			<td>X</td>
 			<td>number</td>
 			<td>value.volume</td>
-			<td>alexa2.0.Player.volume</td>
+			<td>
+            	<ul>
+                    <li>squeezeboxrpc</li>
+                </ul>
+            </td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
@@ -683,17 +925,38 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="7">20</td>
-			<td rowspan="7">Thermostat</td>
-			<td rowspan="7">thermostat</td>
+			<td rowspan="15">20</td>
+			<td rowspan="15">Thermostat</td>
+			<td rowspan="15">thermostat</td>
 			<td>ACTUAL</td>
 			<td>X</td>
 			<td>number</td>
 			<td>value.temperature</td>
 			<td>&nbsp;</td>
-			<td colspan="1" rowspan="7">thermometer</td>
-			<td colspan="1" rowspan="7">&nbsp;</td>
-			<td colspan="1" rowspan="7" style="text-align:center">X</td>
+			<td colspan="1" rowspan="15">thermometer</td>
+			<td colspan="1" rowspan="15">&nbsp;</td>
+			<td colspan="1" rowspan="15" style="text-align:center">X</td>
+		</tr>
+		<tr>
+			<td>AUTOMATIC</td>
+			<td>X</td>
+			<td>boolean</td>
+			<td>state</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>BOOST</td>
+			<td>&nbsp;</td>
+			<td>boolean</td>
+			<td>state</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>ERROR</td>
+			<td>&nbsp;</td>
+			<td>boolean</td>
+			<td>state</td>
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td>HUMIDITY</td>
@@ -710,10 +973,31 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
+			<td>MANUAL</td>
+			<td>&nbsp;</td>
+			<td>boolean</td>
+			<td>state</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
 			<td>MODE</td>
 			<td>X</td>
 			<td>number</td>
 			<td>level.mode.thermostat</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>PARTY</td>
+			<td>&nbsp;</td>
+			<td>boolean</td>
+			<td>state</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>POWER</td>
+			<td>&nbsp;</td>
+			<td>boolean</td>
+			<td>state</td>
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
@@ -731,10 +1015,24 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>Weitere Indikatoren</td>
+			<td>VACATION</td>
 			<td>&nbsp;</td>
 			<td>boolean</td>
+			<td>state</td>
 			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>WINDOWOPEN</td>
+			<td>&nbsp;</td>
+			<td>boolean</td>
+			<td>state</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>WORKING</td>
+			<td>&nbsp;</td>
+			<td>boolean</td>
+			<td>state</td>
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
@@ -816,4 +1114,5 @@
 		</tr>
 	</tbody>
 </table>
+
 
