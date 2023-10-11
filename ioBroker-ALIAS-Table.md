@@ -104,7 +104,41 @@
 			<td>On/Switch/Power (Tasmota)</td>
 		</tr>
 		<tr>
-			<td rowspan="3">4</td>
+			<td rowspan="4">4</td>
+			<td rowspan="4">Fahrplan</td>
+			<td rowspan="4">timeTable</td>
+			<td>ACTUAL</td>
+			<td>X</td>
+			<td>string</td>
+			<td>state</td>
+			<td>&nbsp;</td>
+			<td rowspan="4">&nbsp;</td>
+			<td rowspan="4">&nbsp;</td>
+			<td rowspan="4">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Fahrzeug</td>
+			<td>X</td>
+			<td>string</td>
+			<td>state</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Richtung</td>
+			<td>X</td>
+			<td>boolean</td>
+			<td>state</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Verspätung</td>
+			<td>X</td>
+			<td>string</td>
+			<td>state</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3">5</td>
 			<td rowspan="3">Farbtemperatur</td>
 			<td rowspan="3">ct</td>
 			<td>DIMMER</td>
@@ -131,7 +165,7 @@
 			<td>Level/Color</td>
 		</tr>
 		<tr>
-			<td>5</td>
+			<td>6</td>
 			<td>Fenster</td>
 			<td>window</td>
 			<td>ACTUAL</td>
@@ -144,7 +178,7 @@
 			<td style="text-align:center">X</td>
 		</tr>
 		<tr>
-			<td>6</td>
+			<td>7</td>
 			<td>Feuchtigkeit</td>
 			<td>humidity</td>
 			<td>ACTUAL</td>
@@ -157,7 +191,7 @@
 			<td style="text-align:center">X</td>
 		</tr>
 		<tr>
-			<td rowspan="5">7</td>
+			<td rowspan="5">8</td>
 			<td rowspan="5">HUE-Licht</td>
 			<td rowspan="5">hue</td>
 			<td>DIMMER</td>
@@ -198,7 +232,7 @@
 			<td>Level/Color</td>
 		</tr>
 		<tr>
-			<td>8</td>
+			<td>9</td>
 			<td>Info</td>
 			<td>info</td>
 			<td>ACTUAL</td>
@@ -211,7 +245,7 @@
 			<td style="text-align:center">X</td>
 		</tr>
 		<tr>
-			<td rowspan="10">9</td>
+			<td rowspan="10">10</td>
 			<td rowspan="10">Jalousien</td>
 			<td rowspan="10">blind</td>
 			<td>ACTUAL</td>
@@ -287,7 +321,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="15">10</td>
+			<td rowspan="15">11</td>
 			<td rowspan="15">Klimaanlage</td>
 			<td rowspan="15">airCondition</td>
 			<td>ACTUAL</td>
@@ -350,7 +384,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>HUMIDU&Yacute;TY</td>
+			<td>HUMIDITY</td>
 			<td>&nbsp;</td>
 			<td>number</td>
 			<td>value.humidity</td>
@@ -440,7 +474,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="3">11</td>
+			<td rowspan="3">12</td>
 			<td rowspan="3">Lautst&auml;rke</td>
 			<td rowspan="3">volume</td>
 			<td>ACTUAL</td>
@@ -467,7 +501,7 @@
 			<td>alexa2.0.Player.volume</td>
 		</tr>
 		<tr>
-			<td rowspan="3">12</td>
+			<td rowspan="3">13</td>
 			<td rowspan="3">Lautst&auml;rkegruppe</td>
 			<td rowspan="3">volumeGroup</td>
 			<td>ACTUAL</td>
@@ -494,7 +528,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>13</td>
+			<td>14</td>
 			<td>Licht</td>
 			<td>light</td>
 			<td>SET</td>
@@ -507,7 +541,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="16">14</td>
+			<td rowspan="16">15</td>
 			<td rowspan="16">Medien</td>
 			<td rowspan="16">media</td>
 			<td>ACTUAL</td>
@@ -790,7 +824,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="8">15</td>
+			<td rowspan="8">16</td>
 			<td rowspan="8">RGB-Licht</td>
 			<td rowspan="8">rgb</td>
 			<td>BLUE</td>
@@ -852,7 +886,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="5">16</td>
+			<td rowspan="5">17</td>
 			<td rowspan="5">RGB-Licht-einzeln</td>
 			<td rowspan="5">rgbSingle</td>
 			<td>DIMMER</td>
@@ -893,7 +927,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="2">17</td>
+			<td rowspan="2">18</td>
 			<td rowspan="2">Schieberegler</td>
 			<td rowspan="2">slider</td>
 			<td>ACTUAL</td>
@@ -913,7 +947,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="2">18</td>
+			<td rowspan="2">19</td>
 			<td rowspan="2">Steckdose</td>
 			<td rowspan="2">socket</td>
 			<td>ACTUAL</td>
@@ -933,7 +967,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>19</td>
+			<td>20</td>
 			<td>Taste</td>
 			<td>button</td>
 			<td>SET</td>
@@ -946,7 +980,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>20</td>
+			<td>21</td>
 			<td>Tastensensor</td>
 			<td>buttonSensor</td>
 			<td>ACTUAL</td>
@@ -959,7 +993,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="2">21</td>
+			<td rowspan="2">22</td>
 			<td rowspan="2">Temperatur</td>
 			<td rowspan="2">temperature oder value.temperature</td>
 			<td>ACTUAL</td>
@@ -979,7 +1013,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="15">22</td>
+			<td rowspan="15">23</td>
 			<td rowspan="15">Thermostat</td>
 			<td rowspan="15">thermostat</td>
 			<td>ACTUAL</td>
@@ -1090,7 +1124,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="2">23</td>
+			<td rowspan="2">24</td>
 			<td rowspan="2">Timer</td>
 			<td rowspan="2">level.timer</td>
 			<td>ACTUAL</td>
@@ -1110,7 +1144,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="3">24</td>
+			<td rowspan="3">25</td>
 			<td rowspan="3">Tor</td>
 			<td rowspan="3">gate</td>
 			<td>ACTUAL</td>
@@ -1137,7 +1171,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>25</td>
+			<td>26</td>
 			<td>T&uuml;r</td>
 			<td>door</td>
 			<td>ACTUAL</td>
@@ -1150,7 +1184,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="4">26</td>
+			<td rowspan="4">27</td>
 			<td rowspan="4">Ventilator</td>
 			<td rowspan="4">level.mode.fan</td>
 			<td>ACTUAL</td>
@@ -1184,7 +1218,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="3">27</td>
+			<td rowspan="3">28</td>
 			<td rowspan="3">Verschluss</td>
 			<td rowspan="3">lock</td>
 			<td>ACTUAL</td>
@@ -1211,7 +1245,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="2">28</td>
+			<td rowspan="2">29</td>
 			<td rowspan="2">Wettervorhersage</td>
 			<td rowspan="2">weatherforecast</td>
 			<td>ICON</td>
@@ -1234,7 +1268,7 @@
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>29</td>
+			<td>30</td>
 			<td>Wifi</td>
 			<td>info</td>
 			<td>ACTUAL</td>
