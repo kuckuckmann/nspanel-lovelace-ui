@@ -135,7 +135,7 @@ Tabelle nach rechts scrollen!!!
 		<tr>
 			<td>Verspätung</td>
 			<td>X</td>
-			<td>string</td>
+			<td>boolean</td>
 			<td>state</td>
 			<td>&nbsp;</td>
 		</tr>
