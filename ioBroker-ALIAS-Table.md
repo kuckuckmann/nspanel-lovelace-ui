@@ -1247,7 +1247,34 @@ Tabelle nach rechts scrollen!!!
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td rowspan="2">29</td>
+			<td rowspan="3">29</td>
+			<td rowspan="3">Warnung</td>
+			<td rowspan="3">warning</td>
+			<td>INFO</td>
+			<td>X</td>
+			<td>string</td>
+			<td>weather.title</td>
+			<td>&nbsp;</td>
+			<td colspan="1" rowspan="3">&nbsp;</td>
+			<td colspan="1" rowspan="3">&nbsp;</td>
+			<td colspan="1" rowspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>LEVEL</td>
+			<td>X</td>
+			<td>number</td>
+			<td>value.warning</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>TITLE</td>
+			<td>X</td>
+			<td>string</td>
+			<td>weather.title.short</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="2">30</td>
 			<td rowspan="2">Wettervorhersage</td>
 			<td rowspan="2">weatherforecast</td>
 			<td>ICON</td>
@@ -1270,7 +1297,7 @@ Tabelle nach rechts scrollen!!!
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>30</td>
+			<td>31</td>
 			<td>Wifi</td>
 			<td>info</td>
 			<td>ACTUAL</td>
