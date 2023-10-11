@@ -128,7 +128,7 @@ Tabelle nach rechts scrollen!!!
 		<tr>
 			<td>Richtung</td>
 			<td>X</td>
-			<td>boolean</td>
+			<td>string</td>
 			<td>state</td>
 			<td>&nbsp;</td>
 		</tr>
