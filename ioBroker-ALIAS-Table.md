@@ -119,21 +119,21 @@ Tabelle nach rechts scrollen!!!
 			<td rowspan="4">&nbsp;</td>
 		</tr>
 		<tr>
-			<td>Fahrzeug</td>
+			<td>VEHICLE</td>
 			<td>X</td>
 			<td>string</td>
 			<td>state</td>
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>Richtung</td>
+			<td>DIRECTION</td>
 			<td>X</td>
 			<td>string</td>
 			<td>state</td>
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>Verspätung</td>
+			<td>DELAY</td>
 			<td>X</td>
 			<td>boolean</td>
 			<td>state</td>
