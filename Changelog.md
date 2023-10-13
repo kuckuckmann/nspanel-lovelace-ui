@@ -1,5 +1,11 @@
 **ioBroker Changelog (TypeScript)**  
   
+# v4.3.1.5
+<img width="763" alt="Bildschirmfoto 2023-10-13 um 12 06 32" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/459c0e8c-2a56-4c61-b68d-97bd90216c68">
+  
+[Forum Link](https://forum.iobroker.net/post/1059690)  
+****
+
 # v4.3.1.4
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/f7db2ef3-3fe7-4ed6-af54-8a70c5bf7569)
 
