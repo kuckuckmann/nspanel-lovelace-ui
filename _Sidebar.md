@@ -1,4 +1,3 @@
-<!--
 <h2><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e407be69-9634-4cf2-9dcc-d6432a2a274d"><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki"> Home</a></h2>
 <h2>Step by Step - Anleitung</h2>
 <details open>
@@ -6,13 +5,9 @@
       <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2a669df0-2bd2-43b1-9c09-8898e379f096"><a href="ioBroker---Basisinstallation"> Basisinstallation</a></h3>
    </summary>
    <ul>
-      <li><a href="ioBroker---Basisinstallation#1-iobroker-voraussetzungen">Voraussetzungen</a></li>
-      <ul>
-         <li><a href="ioBroker---Basisinstallation#1-iobroker-voraussetzungen">ioBroker Adapter</a></li>
-      </ul>
-      <li><a href="iobroker---Basisinstallation#2-panel-mit-tasmota-flashen">NSPanel mit Tasmota flashen</a></li>
-      <li><a href="iobroker---Basisinstallation#3-berry-treiber-installieren">Berry-Treiber installieren</a></li>
-      <li><a href="ioBroker---Basisinstallation#4-mqtt-tasmota-config">MQTT (Tasmota) Config</a></li>
+		<li><a href="ioBroker---Basisinstallation#step-f%C3%BCr-step---anleitung">Step für Step - Anleitung</a></li>
+		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Starthilfe-FAQ">NSPanel Starthilfe FAQ</a></li>
+		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Nextion-Editor">NSPanel Emulator</a></li>
    </ul>
 </details>
 <details open>
@@ -20,31 +15,42 @@
       <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/022423cf-ee72-427c-bc92-7d66e12e62e7"> Definitionen</h3>
    </summary>
    <ul>
-      <li><a href="">Aliase</a></li>
-      <li><a href="">Cards und Variablen</a></li>
-      <li><a href="">Screensaver</a></li>
-      <li><a href="">Navigation</a></li>
+      <li><a href="#">Aliase</a></li>
+		<ul>
+		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Table">Aliase Tabelle</a></li>
+		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen">Aliase Definition</a></li>
+		</ul>
+	  <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#page-beispiele">Card Beispiele</a></li>
+	  <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#page-aufbau">Card Aufbau</a></li>
+	  <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#how-2-page">How to Card bauen</a></li>
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Card-Definitionen-(Seiten)">Cards und Variablen</a></li>	  
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver">Screensaver</a></li>
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC">Service Men&uuml;</a></li>	  
    </ul>
 </details>
 <details open>
    <summary>
-      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/aa4f6d0e-2489-400a-a2bf-2e87a737796d"> häufig gestellte Fragen</h3>
+      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/aa4f6d0e-2489-400a-a2bf-2e87a737796d"> h&auml;ufig gestellte Fragen</h3>
    </summary>
    <ul>
-      <li><a href="">Scripte und Anleitungen</a></li>
-      <li><a href="">Starthilfe</a></li>
-      <li><a href="">Tasmota</a></li>
-      <li><a href="">Feature Request</a></li>
-      <li><a href="">NSPanel Emulator</a></li>
+		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation">Navigation</a></li>
+		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen">Scripte und Anleitungen</a></li>
+		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Tasmota-FAQ">Tasmota</a></li>
+		<li><a href="">Feature Request</a></li>
    </ul>
 </details>
 <details open>
    <summary>
       <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a0de9a06-1b9f-4e4e-96eb-c30e84899ee3" width="24" height="24"> Community</h3>
    </summary>
-   <ul>
-      <li><a href="">NSPanel im ioBroker Forum</a></li>
-      <li><a href="">Zeigt her eure Cards</a></li>
+   <ul>      
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Pages-%E2%80%90-Zeigt-her-Eure-Cards">Zeigt her eure Cards</a></li>
+	  <li><a href="">NSPanel im ioBroker Forum</a>
+		<ul>
+			<li><a href="https://forum.iobroker.net/topic/50888/sonoff-nspanel/1542">Support Thread No#01</a>
+			<li><a href="https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/3962">Support Thread No#02</a>
+		</ul>
+	  </li>
    </ul>
 </details>
 <details>
@@ -52,7 +58,6 @@
       <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/22d294a8-a0e3-476e-a281-d91c001de25d" width="24" height="24"> History</h3>
    </summary>
    <ul>
-      <li><a href="Changelog">Changelog</a></li>
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/Changelog">Changelog</a></li>
    </ul>
 </details>
--->
