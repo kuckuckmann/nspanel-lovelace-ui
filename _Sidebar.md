@@ -66,7 +66,7 @@
 </details>
 <details>
    <summary>
-      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/22d294a8-a0e3-476e-a281-d91c001de25d" width="24" height="24"> History</h3>
+      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/22d294a8-a0e3-476e-a281-d91c001de25d" width="24" height="24"> Archiv</h3>
    </summary>
    <ul>
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">Archiv</a></li>
