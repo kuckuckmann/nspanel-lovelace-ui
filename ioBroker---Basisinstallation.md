@@ -231,6 +231,14 @@ Ich habe im Verlauf diverse Aliase erzeugt und auch in den ChangeLogs der jeweil
 ***
 
 ## **12.)  Seitengestaltung**
+Die Seitengestaltung ist nun in einen eigenen Bereich hier in der Wiki gewandert.  
+Die unten aufgeführten Beispiele sind **nicht** mehr im Skript enthalten.
+
+[Bitte hier klicken](https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele)
+  
+  
+***  
+**Der Folgende bereich stammt aus einer früheren Version der Wiki, bitte den Link oben beachten!**
 Am Besten benutzt ihr die Beispiele im Skript und legt entsprechende Aliase hierzu an, die auch in diesem ioBroker-Community-Topic innerhalb der letzten Wochen beschrieben wurden.
 
 cardEntities mit Alias Lampe/Dimmer/Switch  
