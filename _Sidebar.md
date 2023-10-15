@@ -15,17 +15,20 @@
       <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/022423cf-ee72-427c-bc92-7d66e12e62e7"> Definitionen</h3>
    </summary>
    <ul>
-      <li>Aliase</li>
+		<li>Aliase</li>
 		<ul>
-		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Table">Aliase Tabelle</a></li>
-		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen">Aliase Definition</a></li>
+			<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Table">Aliase Tabelle</a></li>
+			<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen">Aliase Definition</a></li>
 		</ul>
-	  <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#page-beispiele">Card Beispiele</a></li>
-	  <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#page-aufbau">Card Aufbau</a></li>
-	  <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#how-2-page">How to Card bauen</a></li>
-      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Card-Definitionen-(Seiten)">Cards und Variablen</a></li>	  
-      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver">Screensaver</a></li>
-      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC">Service Men&uuml;</a></li>	  
+		<li>Cards</li>	
+		<ul>
+			<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#page-beispiele">Card Beispiele</a></li>
+			<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#page-aufbau">Card Aufbau</a></li>
+			<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#how-2-page">How to Card bauen</a></li>
+			<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Card-Definitionen-(Seiten)">Cards und Variablen</a></li>		
+		</ul>	  
+		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver">Screensaver</a></li>
+		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC">Service Men&uuml;</a></li>	  
    </ul>
 </details>
 <details open>
