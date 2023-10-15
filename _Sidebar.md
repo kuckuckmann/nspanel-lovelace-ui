@@ -1,5 +1,5 @@
 <h2><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e407be69-9634-4cf2-9dcc-d6432a2a274d"><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki"> Home</a></h2>
-<h2>Step by Step - Anleitung</h2>
+<!--<h2>Step by Step - Anleitung</h2>-->
 <details open>
    <summary>
       <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2a669df0-2bd2-43b1-9c09-8898e379f096"><a href="ioBroker---Basisinstallation"> Basisinstallation</a></h3>
