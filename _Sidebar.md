@@ -15,7 +15,7 @@
       <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/022423cf-ee72-427c-bc92-7d66e12e62e7"> Definitionen</h3>
    </summary>
    <ul>
-      <li><a href="#">Aliase</a></li>
+      <li>Aliase</li>
 		<ul>
 		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Table">Aliase Tabelle</a></li>
 		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen">Aliase Definition</a></li>
