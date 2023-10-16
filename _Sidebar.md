@@ -75,3 +75,5 @@
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">Archiv</a></li>
    </ul>
 </details>
+
+![icons8-release-24](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/c2b9aa31-0255-4727-9b21-96d7d92ff652)
