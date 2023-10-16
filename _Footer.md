@@ -1,1 +1,1 @@
-<a href="{{env::request}}#top">Nach oben</a>
+<a href="#top">Nach oben</a>
