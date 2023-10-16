@@ -2,10 +2,9 @@
 <img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/5cc6a801-6d9e-4f77-bb9d-413a140a361e" width="75%" height="75%">
 
 <!--ioBroker Icon-->
-<!--img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/1b882559-97d8-416e-b65a-2a433ba15461"-->
+<!--img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/1b882559-97d8-416e-b65a-2a433ba15461" width="24" height="24"-->
 <!--Shelly Icon-->
-<!--img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f43d302e-7530-42c8-8d31-fdd3366c7442"-->
-![shelly_logo_icon_249635](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f43d302e-7530-42c8-8d31-fdd3366c7442)
+<!--img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f43d302e-7530-42c8-8d31-fdd3366c7442" width="24" height="24-->
 
 <h2><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e407be69-9634-4cf2-9dcc-d6432a2a274d"><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki"> Home</a></h2>
 <!--<h2>Step by Step - Anleitung</h2>-->
