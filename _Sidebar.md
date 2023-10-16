@@ -79,9 +79,9 @@
 
 <details>
    <summary>
-      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/c2b9aa31-0255-4727-9b21-96d7d92ff652" width="24" height="24"> Archiv</h3>
+      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/c2b9aa31-0255-4727-9b21-96d7d92ff652" width="26" height="26">Aktuelle Versionen</h3>
    </summary>
    <ul>
-      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">Release</a></li>
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">NSPanelTS.ts</a></li>
    </ul>
 </details>
