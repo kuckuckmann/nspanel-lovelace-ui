@@ -1,3 +1,4 @@
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/5cc6a801-6d9e-4f77-bb9d-413a140a361e)
 <img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/79e40616-d95e-4919-9a80-e4c1cca1bb7f" width="75%" height="75%"> 
 
 <h2><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e407be69-9634-4cf2-9dcc-d6432a2a274d"><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki"> Home</a></h2>
