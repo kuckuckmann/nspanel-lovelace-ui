@@ -79,7 +79,7 @@
 
 <details>
    <summary>
-      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/be8a11a2-06fc-4a3d-ad36-4fd42c141ccc" width="24" height="24">Aktuelle Versionen</h3>
+      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/be8a11a2-06fc-4a3d-ad36-4fd42c141ccc" width="24" height="24">Aktuelle Skript Versionen</h3>
    </summary>
    <ul>
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">NSPanelTS.ts</a></li>
