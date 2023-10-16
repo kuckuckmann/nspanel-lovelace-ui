@@ -92,5 +92,3 @@
       <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/tasmota/autoexec.be">autoexec.be</a></li>
    </ul>
 </details>
-
-gh release view [<tag>] [flags]
