@@ -82,7 +82,7 @@
       <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/be8a11a2-06fc-4a3d-ad36-4fd42c141ccc" width="24" height="24"><a href="https://github.com/joBr99/nspanel-lovelace-ui/tree/main/ioBroker">Aktuelle Skript Versionen</a></h3>
    </summary>
    <ul>
-      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">NSPanelTS.ts</a></li>
+      <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts">NSPanelTS.ts</a></li>
    </ul>
 </details>
 
