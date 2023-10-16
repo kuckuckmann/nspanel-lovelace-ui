@@ -67,6 +67,7 @@
 	  </li>
    </ul>
 </details>
+
 <details>
    <summary>
       <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/81bce1f0-50c9-4192-90f0-4314734164a6" width="24" height="24"> Archiv</h3>
@@ -76,4 +77,11 @@
    </ul>
 </details>
 
-![icons8-release-24](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/c2b9aa31-0255-4727-9b21-96d7d92ff652)
+<details>
+   <summary>
+      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/c2b9aa31-0255-4727-9b21-96d7d92ff652" width="24" height="24"> Archiv</h3>
+   </summary>
+   <ul>
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">Release</a></li>
+   </ul>
+</details>
