@@ -16,7 +16,13 @@
 <!--<h2>Step by Step - Anleitung</h2>-->
 <details>
    <summary>
-      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/22d294a8-a0e3-476e-a281-d91c001de25d" width="24" height="24"> History / Changelog</h3>
+      <h3>
+         <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/98462fba-87d9-4573-a403-82d21c6a60a6">
+            <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a4fd59d9-d8cb-409e-9d56-1bde3ee5316f"> 
+         </picture> 
+         History / Changelog
+      </h3>
    </summary>
    <ul>
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/Changelog">Changelog</a></li>
