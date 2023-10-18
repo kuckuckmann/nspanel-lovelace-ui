@@ -49,7 +49,11 @@
 </details>
 <details open>
    <summary>
-      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/aa4f6d0e-2489-400a-a2bf-2e87a737796d"> h&auml;ufig gestellte Fragen</h3>
+      <h3>
+         <picture>
+             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/0b5651a7-3fc2-4f83-8dc9-b58b57e7b940">
+             <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/6a57a176-ac5d-47e6-babf-2ec86db1c53d"> 
+         </picture>
    </summary>
    <ul>
 		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation">Navigation</a></li>
@@ -58,6 +62,7 @@
 		<li><a href="">Feature Request</a></li>
    </ul>
 </details>
+
 <details open>
    <summary>
       <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a0de9a06-1b9f-4e4e-96eb-c30e84899ee3" width="24" height="24"> Community</h3>
@@ -86,6 +91,7 @@
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">Archiv</a></li>
    </ul>
 </details>
+
 <details open>
    <summary>
        <h3>
