@@ -6,7 +6,13 @@
 <!--Shelly Icon-->
 <!--img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f43d302e-7530-42c8-8d31-fdd3366c7442" width="24" height="24-->
 
-<h2><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e407be69-9634-4cf2-9dcc-d6432a2a274d"><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki"> Home</a></h2>
+<h2>
+   <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/582650a0-d959-4955-9598-13a045d07070">
+      <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/04018f69-28ce-4e2e-861e-13dbe5ef88db"> 
+   </picture>
+   <a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki">Home</a>
+</h2>
 <!--<h2>Step by Step - Anleitung</h2>-->
 <details>
    <summary>
