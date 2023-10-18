@@ -53,7 +53,8 @@
          <picture>
              <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/0b5651a7-3fc2-4f83-8dc9-b58b57e7b940">
              <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/6a57a176-ac5d-47e6-babf-2ec86db1c53d"> 
-         </picture>
+         </picture>h&auml;ufig gestellte Fragen
+      </h3>
    </summary>
    <ul>
 		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation">Navigation</a></li>
