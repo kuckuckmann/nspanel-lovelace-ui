@@ -84,7 +84,7 @@
 
 <details open>
    <summary>
-      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/be8a11a2-06fc-4a3d-ad36-4fd42c141ccc" width="24" height="24"><a href="https://github.com/joBr99/nspanel-lovelace-ui/tree/main/ioBroker">Aktuelle Skript Versionen</a></h3>
+      <h3><picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3bcd710e-f126-4521-848e-c81ca29813cb"><img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f5457a7b-864d-4ebb-a0a0-941e2117b791"></picture><a href="https://github.com/joBr99/nspanel-lovelace-ui/tree/main/ioBroker">Aktuelle Skript Versionen</a></h3>
    </summary>
    <ul>
       <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts">NsPanelTs.ts</a></li>
