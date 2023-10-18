@@ -30,7 +30,13 @@
 </details>
 <details open>
    <summary>
-      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2a669df0-2bd2-43b1-9c09-8898e379f096"><a href="ioBroker---Basisinstallation"> Basisinstallation</a></h3>
+      <h3>
+         <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a2745ac7-6bed-4acb-b52e-c34f6f65cfa8">
+            <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/691c8db6-e3b0-45e7-9c63-f3c2a3993a6a"> 
+         </picture> 
+         <a href="ioBroker---Basisinstallation">Basisinstallation</a>
+      </h3>
    </summary>
    <ul>
 		<li><a href="ioBroker---Basisinstallation#step-f%C3%BCr-step---anleitung">Step für Step - Anleitung</a></li>
