@@ -77,8 +77,8 @@
    <summary>
       <h3>
          <picture>
-             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/dbf2d64e-ef48-4177-ad99-f1941da1ecbb">
-             <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7c40fead-cd45-4d1b-a97f-34ea61e4ba87"> 
+             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7c40fead-cd45-4d1b-a97f-34ea61e4ba87">
+             <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/dbf2d64e-ef48-4177-ad99-f1941da1ecbb"> 
          </picture>
  Archiv</h3>
    </summary>
