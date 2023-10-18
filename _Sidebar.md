@@ -34,7 +34,14 @@
 </details>
 <details open>
    <summary>
-      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/022423cf-ee72-427c-bc92-7d66e12e62e7"> Definitionen</h3>
+      <h3>
+         <img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/022423cf-ee72-427c-bc92-7d66e12e62e7">
+         <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/20efe14d-7c1b-4602-8b9c-3540d0c0ec87">
+            <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/06babe1d-3a18-4a09-ab65-e566814d9e69"> 
+         </picture>
+         Definitionen
+      </h3>
    </summary>
    <ul>
 		<li>Aliase</li>
