@@ -66,7 +66,13 @@
 
 <details open>
    <summary>
-      <h3><img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a0de9a06-1b9f-4e4e-96eb-c30e84899ee3" width="24" height="24"> Community</h3>
+      <h3>
+         <picture>
+             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/9a31b6a4-1c05-4e93-8670-c2df30dc0ed9">
+             <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/848df350-bc37-4298-9098-20980b619ba3"> 
+         </picture>
+         Community
+      </h3>
    </summary>
    <ul>      
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Pages-%E2%80%90-Zeigt-her-Eure-Cards">Zeigt her eure Cards</a></li>
