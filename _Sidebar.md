@@ -13,7 +13,7 @@
    </picture>
    <a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki">Home</a>
 </h1>
-![GitHub Release](https://img.shields.io/github/release/joBr99/nspanel-lovelace-ui.svg)](https://github.com/joBr99/nspanel-lovelace-ui/releases)
+<img src="https://img.shields.io/github/release/joBr99/nspanel-lovelace-ui.svg">
 <details>
    <summary>
       <h3>
