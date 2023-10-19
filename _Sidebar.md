@@ -13,8 +13,8 @@
    </picture>
    <a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki">Home</a>
 </h1>
-<p><img src="https://img.shields.io/github/release/joBr99/nspanel-lovelace-ui.svg">TypeScript</p>
-<img src="https://img.shields.io/github/release/arendst/Tasmota.svg">Tasmota
+<h3><img src="https://img.shields.io/github/release/joBr99/nspanel-lovelace-ui.svg"> TypeScript</h3>
+<h3><img src="https://img.shields.io/github/release/arendst/Tasmota.svg"> Tasmota</h3>
 <details>
    <summary>
       <h3>
