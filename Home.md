@@ -9,7 +9,7 @@ Die Wiki ist untergliedert in verschiedene Bereiche und sie erfüllt nicht den A
 Ergänzungen sind jederzeit willkommen.
 
 
-The main documentation for NSPanel Lovelace UI is here: https://docs.nspanel.pky.eu/
+The main documentation for NSPanel Lovelace UI (only Home Assistant) is here: https://docs.nspanel.pky.eu/
 
 LG  
 Die Crew
