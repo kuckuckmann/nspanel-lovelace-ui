@@ -185,7 +185,7 @@ Für jedes einzelne NSPanel das du konfigurieren möchtest, musst du dieses Skri
 
 Im oberen Teil des Skripts sind die grundsätzlichen Teile der zu erstellenden Aliase, Konstanten und Variablen (auch Seiten) enthalten. An dieser Stelle ist zunächst wichtig, die Kommunikationsparameter für die MQTT-Kommunikation anzupassen, beginnend mit
 
-```
+```ruby
 const NSPanel_Path = '0_userdata.0.NSPanel.1.';       // Anpassen an das jeweilige NSPanel
 const NSPanel_Alarm_Path = '0_userdata.0.NSPanel.';     // Pfad für gemeinsame Nutzung durch mehrere Panels (bei Nutzung der cardAlarm)
 
