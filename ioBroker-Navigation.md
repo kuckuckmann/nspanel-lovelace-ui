@@ -8,14 +8,14 @@ by TT-Tom
 
 > ab TS-Script v3.8.3  
 **Die Definition der Seiten hat sich geändert.**  
-```
+```typescript  
 let Variablenname = <Seitentyp>
 ```
 
 Daraus ergeben sich folgende Vorteile:  
 
 Es müssen nicht mehr alle Seitenparameter angegeben werden, wie z.B  
-```
+```typescript  
 let CardPowerExample = <PagePower>  
   {
   'type': 'cardPower',
@@ -27,7 +27,7 @@ let CardPowerExample = <PagePower>
 d.h. alle optionalen Seitenparameter mit undefined oder false können entfallen.  
 Zusätzlich können weitere Typen verwendet werden, diese werden [hier](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation#subpages) beschrieben.
 
-```
+```typescript  
 let CardPowerExample = <PagePower>
    {
    'type': 'cardPower',
@@ -83,8 +83,8 @@ Subpages haben verschiedene Navigationsmöglichkeiten, diese definiert Ihr im Be
 > **Wichtig!**  
 > Wenn **'prev'** eine Seite zugewiesen wurde, wird **'parent'** nicht ausgewertet. Das gleiche gilt auch für **'next'** und **'home'**. 
  
-```
-et Level_2_Erdgeschoss_2 = <PageGrid>
+```typescript  
+let Level_2_Erdgeschoss_2 = <PageGrid>
                 {
                     'type': 'cardGrid',
                     'heading': 'Erdgeschoss (2)',
@@ -139,7 +139,7 @@ Ich nutze es für meine Fenster- und Türkontakte, die ich in Subpages gebündel
 Um dieses Verhalten zu nutzen, benötigt ihr ein Alias vom **Typ "Info"**, einen Datenpunkt unter "0_userdata.0." welcher mit dem Alias verknüpft ist und ein kleines Skript, welches eure Kontakte überwacht und den Datenpunkt unter 0_userdata.0. auf true bzw. false setzt.
 
 * Die neue Variante mit dynamischem Icon und dynamischer Farbe:
-  ```
+  ```typescript  
   <PageItem>{ navigate: true, id: alias.0.haus.fenster, targetPage: 'Fenster', onColor: MSGreen, offColor: MSRed, name: 'Fenster'}
   ```
 
@@ -162,12 +162,12 @@ Dazu müssen zwei Datenpunkte im Alias angelegt werden.
 <img width="331" alt="Bildschirmfoto 2023-08-21 um 16 10 40" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/5edbb8b0-ead3-4c69-9a9a-479eb2cb6e16">
 
 Mindest Schreibweise, wenn DatenPunkte angelegt sind.  
-```
+```typescript  
 <PageItem>{ navigate: true, id: AliasPath + 'Status_offene_Tuer', targetPage:'Tuer', name: 'Türen'},
 ```
   
 Wenn einer oder beide Datenpunkte nicht vorhanden sind, wird die altbekannt Schreibweise heran gezogen, wie z.B.  
-```
+```typescript  
 <PageItem>{ navigate: true, id: AliasPath + 'Status_offene_Tuer', targetPage:'Tuer', useColor:true, onColor: Green, offColor: Red, name: 'Türen', buttonText: 'hier drücken'},
 ```
 
