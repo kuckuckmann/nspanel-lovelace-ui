@@ -16,7 +16,7 @@ Im Zuge der weiteren Releases wird es sukzessive um künftige Funktionalitäten 
 ## TypeScript (NSPanel.ts) Konstanten  
 
 nachfolgende Konstante ist für die Menüfarbe reserviert und kann individuell durch eigene RGB-Farbwerte angepasst werden.
-```
+```typescript  
 //Menu Icon Colors
 const Menu:             RGB = { red: 150, green: 150, blue: 100 };
 ```
@@ -28,13 +28,13 @@ const Menu:             RGB = { red: 150, green: 150, blue: 100 };
  
 innerhalb des PageItems kann das Icon im Alias des Gerätetypen "info" ebenfalls einen Indikatorwert annehmen:  
 > _**Wenn colorScale im PageItem vorhanden ist, werden gesetzte `offColor` und `onColor` dabei ignoriert. Es wird dann auschließlich der Parameter colorScale ausgewertet.**_
-```
+```typescript  
 colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 50 }  
 ```
 > _**val_best ist hierbei Optional und stellt den Idealwert dar!**_ 
 
 weiter Beispiele:
-```
+```typescript  
 <PageItem>{ id: AliasPath + 'Tasmota.Wifi.RSSI', name: 'RSSI', icon: 'signal', unit: '%', colorScale: {'val_min': 100, 'val_max': 0} },
 <PageItem>{ id: AliasPath + 'Tasmota.Wifi.Signal', name: 'Wifi-Signal', icon: 'signal-distance-variant', unit: 'dBm', colorScale: {'val_min': 0, 'val_max': -100} },
 <PageItem>{ id: AliasPath + 'Sensor.ANALOG.Temperature', name: 'Raum Temperatur', icon: 'home-thermometer-outline', unit: '°C', colorScale: {'val_min': 0, 'val_max': 40, 'val_best': 22 } },
@@ -44,7 +44,7 @@ weiter Beispiele:
 ## TypeScript (NSPanel.ts) Variablendefinition
 
 nachfolgend die Seiten- und Menüdefinition aus dem TS-Script ab v4.3.1 
-```
+```typescript  
 /***********************************************************************************************
  **  Service Pages mit Auto-Alias (Nachfolgende Seiten werden mit Alias automatisch angelegt) **
  **  https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC             **
@@ -378,7 +378,7 @@ let NSPanel_Service = <PageEntities>
 ```
 
 ## TypeScript (NSPanel.ts) Config  
-```
+```typescript  
 export const config = <Config> {
     
     ...
