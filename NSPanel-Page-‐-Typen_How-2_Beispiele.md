@@ -56,7 +56,7 @@ Gäste sollen einfach und easy ins Gäste-WLAN rein kommen? Am besten mit dem Sc
   
 ## Basisseite
 Der Rahmen einer Seite  besteht aus einem Frame wie folgend:  
-```
+```ruby  
 let name = <PageType>
 {
     'type': 'cardType',
@@ -85,7 +85,7 @@ Es gibt noch weitere optionale Parameter, jedoch gehören Die alle zum Thema Nav
   
 ## Seiteninhalt - PageItem - definieren  
 Das `<PageItem>` -  wenn man es mal frei übersetzt , das Seiten-Gegenstand definiert einen auf der Seite sichtbaren Wert / Schalter. Was ein **PageItem** relativ immer mit sich bringt, ist eine **ID**, ein **Name** und eine **Farbdefinition**.  
-```
+```ruby  
 <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', name: 'Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen},
 ```
 Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern folgt die weitere Konfiguration:  
