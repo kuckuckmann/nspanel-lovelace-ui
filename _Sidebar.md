@@ -135,7 +135,6 @@
       </h3>
    </summary>
    <ul>
-      * [NSPanelTS.ts](https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts)
       <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts">NsPanelTs.ts</a></li>
       <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.ts">icon_mapping.ts</a></li>
       <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/tasmota/autoexec.be">autoexec.be</a></li>
