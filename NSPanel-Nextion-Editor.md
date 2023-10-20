@@ -41,7 +41,7 @@ Anschließend installiert man den Berry-Treiber und konfiguriert MQTT (nach der 
 
 **ACHTUNG:** Nicht den Berry Treiber hier aus dem Wiki nehmen, sondern hier aus dem nachfolgenden Code-Block  
 
-```
+```ruby
 # Nextion Serial Protocol driver by joBr99 + nextion upload protocol 1.2 (the fast one yay) implementation using http range and tcpclient
 # based on;
 # Sonoff NSPanel Tasmota driver v0.47 | code by blakadder and s-hadinger
