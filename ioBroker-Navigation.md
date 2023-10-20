@@ -114,14 +114,14 @@ Es gibt jetzt 3 Varianten, um ein Icon für Subpages anzulegen.
 
 ##### Variante 1 (ursprüngliche Notation)  
 * Die ursprüngliche Variante mit festem Icon und fester Farbe:
-  ```
+  ```typescript  
   <PageItem>{ navigate: true, id: 'NSPanel_Einstellungen', icon: 'wrench-outline', onColor: White, name: 'Screensaver'}  
   ```  
   Die Eigenschaft **navigate: true** macht aus einem normalen Steuerelement, ein Icon, um eine Subpage zu öffnen. Des Weiteren wird die Eigenschaft **id:** benötigt. Sie enthält den Namen der Subpage. Diese beiden Angaben **sind Pflicht**, mit **icon:** und **onColor:** kann man von dem Standardicon und Farbe abweichen und Eigene definieren.  
 
 ##### Variante 2 (neue Notation)  
 * Die neue Variante:
-  ```
+  ```typescript  
   <PageItem>{ navigate: true, id: null, targetPage: 'WlanDaten', onColor: White, name: 'Gäste WLAN Daten'}
   ```
   Bei der neuen Schreibweise bleibt das Verhalten zu der Alten gleich. Hier ist nur die Schreibweise für das Ziel (Subpage) angepasst. Wobei meiner Meinung nach es die richtige Schreibweise ist. Pflicht sind folgende Eigenschaften: **naigate: true, id: null**, und (neu) **tagetPage:**. Hier kommt jetzt der Name der Subpage ran, der bei der alten Schreibweise hinter **id:** stand.
