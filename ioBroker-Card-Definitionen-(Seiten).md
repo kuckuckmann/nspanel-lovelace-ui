@@ -3,7 +3,7 @@
 
 4 vertikal angeordnete Steuerelemente (Erstellung der "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
-```ruby  
+```typescript  
 var Sprechender_eindeutiger_Seitenname = <PageEntities>
 {
     "type": "cardEntities",
@@ -28,7 +28,7 @@ var Sprechender_eindeutiger_Seitenname = <PageEntities>
 
 6 horizontal angeordnete Steuerelemente (in 2 Reihen je 3 Steuerelemente) (Erstellung der "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
-```ruby  
+```typescript  
 var Sprechender_eindeutiger_Seitenname = <PageGrid>
 {
     "type": "cardGrid",
@@ -61,7 +61,7 @@ Es wird muss ein Alias vom Gerätetyp "Feueralarm" wie folgt erstellt werden:
 ![image](https://user-images.githubusercontent.com/102996011/221623196-979596f5-ba5d-4268-870a-cef2d5616bad.png)  
 
 **Beispiel der Seitenerstellung:**  
-```ruby  
+```typescript  
 let Unlock_Service = <PageUnlock>
 {
     'type': 'cardUnlock',
@@ -76,7 +76,7 @@ let Unlock_Service = <PageUnlock>
 
 (Erstellung des alias.0.Alarm siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
-```ruby  
+```typescript  
 let Alarmseite = <PageAlarm>
     {
         "type": "cardAlarm",
@@ -116,7 +116,7 @@ let Alarmseite = <PageAlarm>
 > **Definition ab TS-Version 3.9.0** (Breaking Changes)  
 
 **alexa2-Adapter**
-```ruby  
+```typescript  
 let Alexa = <PageMedia> 
 {
     'type': 'cardMedia',
@@ -152,7 +152,7 @@ let Alexa = <PageMedia>
 ```
 
 **spotify-premium Adapter**
-```ruby  
+```typescript  
 let SpotifyPremium = <PageMedia> 
 {
     "type": "cardMedia",
@@ -179,7 +179,7 @@ let SpotifyPremium = <PageMedia>
 ```  
 **Volumio-Player**  
   
-```ruby  
+```typescript  
 let VolumioBoss = <PageMedia> 
 {
     'type': 'cardMedia',
@@ -222,7 +222,7 @@ let VolumioBoss = <PageMedia>
 ![image](https://user-images.githubusercontent.com/102996011/190121115-436dc34d-3a89-4809-a3c6-2c6132938fd1.png)
 
 > Beispiel: Erstellung des "PageItem" und Alias vom Typ "Info" siehe (https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#5-qr-code-page) by Kuckuckmann
-```ruby  
+```typescript  
 var Sprechender_eindeutiger_Seitenname = <PageQR> 
 {
     "type": "cardQR",
@@ -235,7 +235,7 @@ var Sprechender_eindeutiger_Seitenname = <PageQR>
 ```  
   
 **Parameter:**  
-```ruby   
+```
 hidePassword: true/false
 ``` 
 
@@ -254,7 +254,7 @@ hidePassword: true/false
   
 ![image](https://user-images.githubusercontent.com/102996011/204627014-03173d87-22ba-44fb-b07c-40b7be6366ac.png)  
   
-```ruby    
+```typescript  
 var Sprechender_eindeutiger_Seitenname = <PageThermo> 
 {
     "type": "cardThermo",
@@ -289,7 +289,7 @@ stepValue: Schrittgröße der Temperaturänderungen (Beispiel: 0,5°C Schritte e
 
 Beispiel: Erstellung des "PageItem" und Alias vom Typ "Info"
 
-```ruby    
+```typescript  
 var CardPowerExample = <PagePower>
 {
     "type": "cardPower",
@@ -308,7 +308,7 @@ var CardPowerExample = <PagePower>
 **Parameter:**  
 Es gibt nur einen einzigen externen Datenpunkt (anzulegen in **0_userdata.0.**), auf den ein Alias vom Typ "**Info**" zugreift. Dieser muss mit einem JSON-Objekt in nachfolgender Struktur befüllt werden. Der Alias-Datenpunkt "**ACTUAL**" sollte hierbei auf diesen neuen Datenpunkt in "**0_userdata.0.**) gebunden sein.  
   
-```ruby    
+```json  
 [
   {
     "id": 0,
@@ -396,7 +396,7 @@ Die Datenpunkte zu den entsprechenden Piktogrammen (id's) sollten mit den jeweil
   
 Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn eine Entität nicht visualisiert werden soll, so sollte in allen Werten zur id ein leerer String **""** übergeben werden. Beispiel:
 
-```ruby  
+```json  
   {
     "id": 3,
     "value": "",
@@ -412,7 +412,7 @@ Für eine abweichende Darstellung ist das JSON entsprechend zu befüllen. Wenn e
   
 Ein kleines einfaches Javascript von @l4rs, für die erzeugung des JSON-String.
 
-```ruby  
+```typescript  
 /**
 * generate an JSON for display Power-Card on NSPanel
 * Source: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Card-Definitionen-(Seiten)#cardpower-ab-ts-script-v341
@@ -486,7 +486,7 @@ Es wird lediglich ein Alias vom Gerätetyp "Info" benötigt:
 ![image](https://user-images.githubusercontent.com/102996011/209008594-36da27fb-cde2-4964-bcd8-3b406f4656cb.png)
 
 **PageItem Beispiel:**
-```ruby  
+```typescript  
 let CardChartExample = <PageChart>
 {
     "type": "cardChart",
@@ -511,7 +511,7 @@ let CardChartExample = <PageChart>
 [Zum Blockly](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/Blockly/CardChart.xml)
 
 ## **Javascript für History Adapter**
-```ruby  
+```typescript  
 var sourceDP = 'alias.0.Wohnzimmer.Heizung.ACTUAL';
 var targetDP = '0_userdata.0.Test.chartTest';
 var rangeHours = 24;
@@ -580,7 +580,7 @@ on({id: sourceDP, change: "any"}, async function (obj) {
 * yAxisTicks: Skala des Wertebereiches der Y-Achse als Array oder ObjektId zu einem Datenpunkt welcher die Skala enthält
 * onColor: Farbe des Graphen  
 
-```ruby   
+```typescript  
 let CardLChartExample = <PageChart>
 {
     "type": "cardLChart",
@@ -606,7 +606,7 @@ Zu definieren ist der Pfad für den Datenpunkt (im Beispiel 0.userdata.0.NSPanel
 Es ist darauf zu achten, die Anzahl an Werten aus der Datenbank möglichst gering zu halten. Im nachfolgenden Beispiel wurden diese nochmals aggregiert. Die Summe an Zeichen für das Payload an die HMI des NSPanels ist begrenzt. Falls zu viele Werte verarbeitet werden, wird der Payload von der HMI gekürzt und die folge wäre eine schwarze Seite resultierend aus einem Fehlerzustand.
 
 ## **Javascript für Influx2**
-```ruby    
+```javascript  
 const Debug = true;
 
 const NSPanel_Path = '0_userdata.0.NSPanel.';
@@ -704,7 +704,7 @@ on({ id: Sensor, change: 'any' }, async function (obj) {
 ```  
 
 ## **Javascript für History adapter**
-```ruby    
+```javascript  
 const sourceDP = 'alias.0.Wohnzimmer.Heizung.ACTUAL';
 const targetDP = '0_userdata.0.Test.chartTest';
 const numberOfHoursAgo = 24;   // Period of time in hours which shall be visualized
