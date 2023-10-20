@@ -198,7 +198,7 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 ## Basisseite mit PageItem
   
 Wenn man nun ein oder je nach gewähltem Page Type mehrere `<PageItems>` aufgebaut hat und diese dem Punkte `items : []` hinzugefügt hat, erhält man eine Seite mit - nennen wir es etwas sichtbares.  
-```  
+```ruby  
 let name = <PageType>  
 {
     'type': 'cardType',
@@ -280,7 +280,7 @@ Bedient Euch gerne an den nachfolgend aufgelisteten Beispielen aus unserer Entwi
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/16930a8e-88cd-468d-9502-4c6c51293434)
   
-``` 
+```ruby   
 let Buero_Seite_1 = <PageEntities>
 {
     'type': 'cardEntities',
@@ -300,7 +300,7 @@ let Buero_Seite_1 = <PageEntities>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/bc21c636-d12f-4a5b-8c75-ac1483fa5ead)
   
-``` 
+```ruby   
 let Test_Licht1 = <PageEntities>
 {
     'type': 'cardEntities',
@@ -320,7 +320,7 @@ let Test_Licht1 = <PageEntities>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d5cb9173-042c-4ef1-89de-a84b3a646b3f)
   
-``` 
+```ruby   
 let Test_Licht2 = <PageEntities>
 {
     'type': 'cardEntities',
@@ -341,7 +341,7 @@ let Test_Licht2 = <PageEntities>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/09ddd04f-24af-40b4-9960-882576464c1f)
   
-``` 
+```ruby   
 let Test_Funktionen = <PageEntities>
 {
     'type': 'cardEntities',
@@ -362,7 +362,7 @@ let Test_Funktionen = <PageEntities>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ecb15b38-b98b-4c85-b1a0-e0aeb9134fa3)
   
-``` 
+```ruby   
 let Buero_Seite_1 = <PageEntities>
 {
     'type': 'cardEntities',
@@ -382,7 +382,7 @@ let Buero_Seite_1 = <PageEntities>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7893e23e-b9cc-437b-8690-48fb5813cca3)
   
-``` 
+```ruby   
 let Fenster_1 = <PageEntities>
 {
     'type': 'cardEntities',
@@ -402,7 +402,7 @@ let Fenster_1 = <PageEntities>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/0cd4c9d5-88b8-4e30-b3cd-44b3b237c58d)
   
-``` 
+```ruby   
 let Button_1 = <PageEntities>
 {
     'type': 'cardEntities',
@@ -421,7 +421,7 @@ let Button_1 = <PageEntities>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f20cdc59-5cf8-470c-bc45-73b1c0427be3)
   
-``` 
+```ruby   
 let Subpages_1 = <PageEntities>
 {
     'type': 'cardEntities',
@@ -439,7 +439,7 @@ let Subpages_1 = <PageEntities>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/124622d2-1b02-4ced-8045-62ba04c62c95)
   
-``` 
+```ruby   
 let Abfall = <PageEntities>
 {
 	'type': 'cardEntities',
@@ -467,7 +467,7 @@ let Abfall = <PageEntities>
   
 ![](https://user-images.githubusercontent.com/102996011/216006611-32155c9c-84ba-48eb-8b07-2485d80eb99b.png)  
   
-``` 
+```ruby   
 let SensorGrid = <PageGrid>{
     'type': 'cardGrid',
     'heading': 'Sensor Werte',
@@ -490,7 +490,7 @@ let SensorGrid = <PageGrid>{
 Popup für Shutter  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/785416ec-e542-4c01-8afb-80ca4967ecef)  
 
-``` 
+```ruby   
 let Buero_Seite_2 = <PageGrid>
 {
     'type': 'cardGrid',
@@ -512,7 +512,7 @@ let Buero_Seite_2 = <PageGrid>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/f1d2c2dd-01f6-4b68-a14e-0d774bcc49a7)
   
-``` 
+```ruby   
 let Sensor_FontSize = <PageGrid2>
 {
     'type': 'cardGrid2',
@@ -537,7 +537,7 @@ let Sensor_FontSize = <PageGrid2>
 popupTimer  
 ![Nextion_Editor_DyyGoz044r](https://user-images.githubusercontent.com/102996011/208929333-0be6783c-aca8-453c-92fb-5d83861da21a.gif)  
   
-``` 
+```ruby   
 let Radiosender = <PageGrid>
 {
     'type': 'cardGrid',
@@ -555,7 +555,7 @@ let Radiosender = <PageGrid>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/11543b7e-bd79-4b74-8589-2475a41ae552)
   
-``` 
+```ruby   
 let WLED = <PageGrid>
 {
     'type': 'cardGrid',
@@ -601,7 +601,7 @@ PlayList:
 Equalizer:  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f5033d44-bf2f-4cb3-bf12-77b43b58623d)  
 
-``` 
+```ruby   
 // NEW: Neue Definition von Medien-Aliasen
 // adapterPlayerInstance = alexa2.0. or spotify-premium.0. or sonos.0. or chromecast.0.
 let Alexa = <PageMedia> 
@@ -640,7 +640,7 @@ let Alexa = <PageMedia>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3bf458ac-5a0d-44dc-83fe-5feb37d33697)
   
-``` 
+```ruby   
 let Sonos = <PageMedia>
 {
     'type': 'cardMedia',
@@ -680,7 +680,7 @@ Equalizer
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3ccb9714-fd0c-4162-b595-3761c27f99bf)  
   
 
-``` 
+```ruby   
 let SpotifyPremium = <PageMedia>
 {
     'type': 'cardMedia',
@@ -708,7 +708,7 @@ let SpotifyPremium = <PageMedia>
   
 ![image](https://user-images.githubusercontent.com/102996011/194286414-a1635626-d33b-4cc6-b8e6-1c1749636900.png)
   
-``` 
+```ruby   
 let SqueezeboxRPC = <PageMedia>
 {
     'type': 'cardMedia',
@@ -730,7 +730,7 @@ let SqueezeboxRPC = <PageMedia>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3b72ecfa-07ef-42e4-88b7-b5846a6a91a2)
   
-```
+```ruby  
 let VolumioBoss: PageMedia = 
 {
     'type': 'cardMedia',
@@ -754,7 +754,7 @@ let VolumioBoss: PageMedia =
 };
 ```
 
-```
+```ruby  
 let VolumioMobil: PageMedia = 
 {
     'type': 'cardMedia',
@@ -789,7 +789,7 @@ let VolumioMobil: PageMedia =
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a7426ca1-600b-456e-a8a4-11f6b5c6fb11)
   
-``` 
+```ruby   
 let Buero_Themostat = <PageThermo>
 {
     'type': 'cardThermo',
@@ -816,7 +816,7 @@ oder
 popupThermo:  
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/775e6fee-e06a-4a1c-8f9d-695a8624da86)
 
-``` 
+```ruby   
 let Buero_Klimaanlage = <PageThermo>
 {
     'type': 'cardThermo',
@@ -844,7 +844,7 @@ let Buero_Klimaanlage = <PageThermo>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/69e577bd-e56d-4411-9af0-a0dd19ba030f)
   
-``` 
+```ruby   
 let Pool_Waermepumpe = <PageThermo>
 {
     'type': 'cardThermo',
@@ -872,7 +872,7 @@ let Pool_Waermepumpe = <PageThermo>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8e8e353c-ca6a-43d3-85b2-ff6532283e2c)
   
-``` 
+```ruby   
 let Buero_Alarm = <PageAlarm>
 {
     'type': 'cardAlarm',
@@ -887,7 +887,7 @@ let Buero_Alarm = <PageAlarm>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8f18098b-96e5-4e88-a86d-4824cc2b6299)
   
-``` 
+```ruby   
 let Unlock_Service = <PageUnlock>
 {
     'type': 'cardUnlock',
@@ -907,7 +907,7 @@ let Unlock_Service = <PageUnlock>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/274f5742-f491-4522-ac6f-7db3661dd5e2)
   
-``` 
+```ruby   
 let CardChartExample = <PageChart>
 {
     'type': 'cardChart',
@@ -927,7 +927,7 @@ let CardChartExample = <PageChart>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7c99fa26-9383-45f7-a913-48ea23fb0baf)
   
-``` 
+```ruby   
 let CardLChartExample = <PageChart>
 {
     'type': 'cardLChart',
@@ -947,7 +947,7 @@ let CardLChartExample = <PageChart>
   
 ![Nextion_Editor_9AYbpowjZS](https://user-images.githubusercontent.com/102996011/194641145-660e1218-f559-4f25-83ca-984cc677e0d8.gif)  
   
-``` 
+```ruby   
 let CardPowerExample = <PagePower>
 {
     'type': 'cardPower',
@@ -970,7 +970,7 @@ let CardPowerExample = <PagePower>
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/b855ff4a-fcf9-4c67-a45e-822cd9487437)
   
-``` 
+```ruby   
 let WLAN = <PageQR> 
 {
      'type': 'cardQR',
