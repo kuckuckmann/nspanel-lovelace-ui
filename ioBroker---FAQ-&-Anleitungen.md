@@ -91,17 +91,17 @@ Tasmota konsole:
 --> Rule definieren   
 
 **Beide Hardware-Buttons als Dialog - Die internen Relais werden dabei nicht geschaltet**  
-```
+```ruby  
 Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon
 ```  
 
 **Rechter Button Dialog - Linker Button Schalter**  
-```
+```ruby  
 Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon
 ``` 
 
 **Rechter Button Schalter - Linker Button Dialog**  
-```
+```ruby  
 Rule2 on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon
 ```  
 
@@ -122,7 +122,7 @@ Der Button kann nun über die Eigenschaft **mode** mit drei verschiedenen Funkti
 Im Modus **"toggle"** muss ein Boolean Entity im Feld **"entity"** angegeben werden. Der Button wird dann automatisch den aktuellen Zustand umkehren.
 Der Modus **"set"** benötigt ebenfalls eine Zielentity im Feld **"entity"**, welche dann immer beim drücken des Buttons auf den Wert aus dem Feld **"setValue"** gesetzt wird.  
 Bsp: 
-  ```
+  ```typescript  
   button1: {
       mode: 'toggle',                    // Mögliche Werte wenn Rule2 definiert: 'page', 'toggle', 'set' - Wenn nicht definiert --> mode: null
       page: null,                        // Zielpage - Verwendet wenn mode = page (bisher button1Page)
@@ -181,7 +181,7 @@ const NSPanel_Alarm_Path = '0_userdata.0.NSPanel.';
 **Page Type**: Die Alarmfunktion kann nur auf einer **PageAlarm** verwendet werden  
 
 **Beispiel**:  
-  ```
+  ```typescript  
   let Alarmseite = <PageAlarm>
     {
         "type": "cardAlarm",
@@ -388,7 +388,7 @@ Blockly Skript (by @Armilar):
 
 * **Konfigurationsskript**
 Im Konfigurationsskript muss ein Grid passend zu den Aliasen angelegt werden. Hier das Bsp. aus dem Default:
-```
+```typescript  
 let Abfall = <PageEntities>
 {
     "type": "cardEntities",
@@ -437,7 +437,7 @@ Für den erstellten Datenpunkt nun einen Alias vom Typ Info anlegen.
 * **Konfigurationsskript:**
 Im Script müsst ihr im Konfigurationsbereich nun eine PageQR hinzufügen. 
 
-```
+```typescript  
 var WLAN = <PageQR> 
 {
     "type": "cardQR",
@@ -452,7 +452,7 @@ var WLAN = <PageQR>
 };
 ```
 Zusätzlich muss im Script im Bereich des Page Arrays bzw. Subpage Arrays die Page mit ihrem Namen eintragen.
-```
+```typescript  
     pages: [
               Buero_Seite_2,
               Buero_Seite_1,
@@ -641,7 +641,7 @@ Für jeden Wert, der auf der Card angezeigt werden soll muss ein Alias vom Typ I
 * **Konfigurationsskript:**  
 Hier das beispiel, wie die Card dann im Konfigurationsskript hinzugefügt werden muss. Man beachte hier die Besonderheit "**unit: "Wert der Einheit"**", welche dann am Ende der zeile angezeigt wird:  
   
-``` 
+```typescript  
 var PV_Anlage = <PageEntities>
 {
     "type": "cardEntities",
@@ -1042,7 +1042,7 @@ WLED bietet eine Vielzahl an Konfigurations- und Einstellungsmöglichkeiten. Vie
   
   * **TS-Skript**  
   Im NSPanelTS.ts ist eine Beispielseite für WLED enthalten. Diese haben wir in unserer Konfiguration geringfügig abgeändert. Das Beispiel beinhaltet eine Konfiguration für verschiedene Segmente, diese haben wir erstmal durch den Timer ersetzt. Segmente folgt in einem weiteren Schritt und wird dann auch hier in der Wiki hinzugefügt. Aus dem Grund geht es mit der Konfiguration aus dem Beispiel hier weiter:  
-  ```
+  ```typescript  
   let WLED = <PageGrid>
   {
       "type": "cardGrid",
@@ -1082,7 +1082,7 @@ Der Fahrplananzeiger kann 4 aktuelle Abfahrten vom Adapter Fahrplan (Abfahrtstaf
 Werden durch das externe Script angelegt.  
   
 * **PageConfig:**  
-```
+```typescript  
 let FahrplanEntities = <PageEntities>  
 {  
     'type': 'cardEntities',  
