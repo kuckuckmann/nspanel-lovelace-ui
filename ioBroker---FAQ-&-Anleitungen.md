@@ -95,12 +95,12 @@ Tasmota konsole:
 Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon
 ```  
 
-**Rechter Button Dialog - Linker Button Schalter**  
+**Linker Button Dialog - Rechter Button Schalter**  
 ```  
 Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon
 ``` 
 
-**Rechter Button Schalter - Linker Button Dialog**  
+**Linker Button Schalter - Rechter Button Dialog**  
 ```  
 Rule2 on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon
 ```  
