@@ -103,8 +103,8 @@
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Pages-%E2%80%90-Zeigt-her-Eure-Cards">Zeigt her eure Cards</a></li>
 	  <li><a href="">NSPanel im ioBroker Forum</a>
 		<ul>
-			<li><a href="https://forum.iobroker.net/topic/50888/sonoff-nspanel/1542">Support Thread No#01 (inaktiv)</a>
-			<li><a href="https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/10000">Support Thread No#02 (aktiv)</a>
+			<li><a href="https://forum.iobroker.net/topic/50888/sonoff-nspanel/1542" target="_blank">Support Thread No#01 (inaktiv)</a>
+			<li><a href="https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/10000" target="_blank">Support Thread No#02 (aktiv)</a>
 		</ul>
 	  </li>
    </ul>
@@ -135,9 +135,9 @@
       </h3>
    </summary>
    <ul>
-      <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts">NsPanelTs.ts</a></li>
-      <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.ts">icon_mapping.ts</a></li>
-      <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/tasmota/autoexec.be">autoexec.be</a></li>
+      <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts" target="_blank">NsPanelTs.ts</a></li>
+      <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/icon_mapping.ts" target="_blank">icon_mapping.ts</a></li>
+      <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/tasmota/autoexec.be" target="_blank">autoexec.be</a></li>
    </ul>
 </details>
 
