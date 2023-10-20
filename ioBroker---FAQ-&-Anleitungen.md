@@ -984,7 +984,8 @@ Weiterhin im ALIAS unter ![image](https://user-images.githubusercontent.com/9913
   
 * **TS-Skript:**  
   
-`let WZ_Heizung = <PageThermo>   
+```typescript
+let WZ_Heizung = <PageThermo>   
 {  
     "type": "cardThermo",  
     "heading": "WZ Thermostat",  
@@ -992,7 +993,8 @@ Weiterhin im ALIAS unter ![image](https://user-images.githubusercontent.com/9913
     "subPage": false,  
     "parent": undefined,  
     "items": [<PageItem>{ id: "alias.0.NSPanel1.HeizungWZ", minValue: 50, maxValue: 300 }]  
-};`  
+};
+```  
     
 * **Blocky Skript:**  
   
