@@ -91,17 +91,17 @@ Tasmota konsole:
 --> Rule definieren   
 
 **Beide Hardware-Buttons als Dialog - Die internen Relais werden dabei nicht geschaltet**  
-```python
+```
 Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon
 ```  
 
 **Rechter Button Dialog - Linker Button Schalter**  
-```ruby  
+```  
 Rule2 on Button1#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button1"} endon
 ``` 
 
 **Rechter Button Schalter - Linker Button Dialog**  
-```ruby  
+```  
 Rule2 on Button2#state do Publish SmartHome/%topic%/tele/RESULT {"CustomRecv":"event,button2"} endon
 ```  
 
