@@ -32,7 +32,7 @@ Es darf nur ein Layout aktiviert sein, sonst kommt es zu unerwünschten Effekten
 Wenn kein Layout aktiv ist, wird das Layout 1 Standard genutzt.  
     
 # Screensaver Colors
-```ruby  
+```typescript  
 //Screensaver Default Theme Colors
 const scbackground:     RGB = { red:   0, green:    0, blue:   0};
 const sctime:           RGB = { red: 255, green:  255, blue: 255};
@@ -80,21 +80,21 @@ Die Dargestellten Wetter-Icons (groß und klein) werden im NSPanel TS-Script erm
 **Folgende 4 Einstellungs-Varianten sind möglich:**
 
 **1. Die Icons visualisieren den Relais-Zustand der Hardware-Buttons:**  
-```ruby  
+```typescript  
     mrIcon1ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER1', ScreensaverEntityIcon: 'light-switch', ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
     mrIcon2ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER2', ScreensaverEntityIcon: 'lightbulb', ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
 ```
 Die mqtt.0. Datenpunkte entsprechend deiner mqtt-Komfiguration anpassen  
   
 **2. Die Icons sind nicht sichtbar:**  
-```ruby  
+```typescript  
     mrIcon1ScreensaverEntity: { ScreensaverEntity: null, ScreensaverEntityIcon: null, ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
     mrIcon2ScreensaverEntity: { ScreensaverEntity: null, ScreensaverEntityIcon: null, ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
 ```
 
 
 **3. Die Icons werden mit anderen Datenpunkten vom Typ "boolean" (true/false) belegt:**  
-```ruby  
+```typescript  
     mrIcon1ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN1", ScreensaverEntityIcon: "light-switch", ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
     mrIcon2ScreensaverEntity: { ScreensaverEntity: "0_userdata.0.NSPanel.1.Buttons.MRHWBTN2", ScreensaverEntityIcon: "lightbulb", ScreensaverEntityOnColor: On, ScreensaverEntityOffColor: Off  },
 ```
@@ -111,7 +111,7 @@ Ab v3.9.0 ist es möglich auch Werte (z.B. Temoperatur-Sensor) in den Status-Ico
 1. Icon (mrIcon1ScreensaverEntity) eine Einstellung zur Nutzung der Relais
 2. Icon (mrIcon2ScreensaverEntity) eine Einstellung zur Nutzung individueller Datenpunkte mit Nachkommastelle und Einheit des Wertes
 
-```ruby    
+```typescript  
     // Indikator Icons im oberen Teil des Screensavers
     // Mit 3.9.0 neue Parameter - Bitte anpassen - siehe auch Wiki
     mrIcon1ScreensaverEntity: { ScreensaverEntity: 'mqtt.0.SmartHome.NSPanel_1.stat.POWER1', 
@@ -149,7 +149,7 @@ Es ist auch möglich `ScreensaverEntity` auf null zu setzen, dann wird nur `Scre
 
 
 **Beispiel:**  
-```ruby  
+```typescript  
 export const config = <Config> {
     ...
     leftScreensaverEntity:
@@ -212,7 +212,7 @@ export const config = <Config> {
 ![image](https://user-images.githubusercontent.com/102996011/221555760-4805cc37-30ae-4485-a219-bdbe75f78c05.png)
   
 **Beispiel:**  
-```ruby  
+```typescript  
 export const config = <Config> {
     ...
     leftScreensaverEntity:
@@ -413,7 +413,7 @@ ScreensaverEntityIconColor: {'val_min': 0, 'val_max': 100, 'val_best': 65}
 ```  
 z.B. für Luftfeuchte: Der Idealwert liegt zwischen 0 und 100 hier im Beispiel bei 65% (also grün). Die Abschwächung geht zu beiden Seiten (65 zu 0) und (65 zu 100) über gelb nach rot.  
     
-```ruby  
+```typescript  
 //Dynamische Indikatoren (Abstufung grün nach gelb nach rot)
 const colorScale0:      RGB = { red:  99, green: 190, blue: 123 };
 const colorScale1:      RGB = { red: 129, green: 199, blue: 126 };
@@ -470,7 +470,7 @@ Die Einstellungen lassen sich auch am Panel einstellen unter "Einstellungen -> S
 
 ![image](https://user-images.githubusercontent.com/102996011/190623367-70ebe988-f467-49cf-8e81-2275a8db259b.png)  
   
-```ruby  
+```typescript  
 //Auto-Weather-Colors
 const swClearNight:     RGB = { red: 150, green: 150, blue: 100};
 const swCloudy:         RGB = { red:  75, green:  75, blue:  75};
