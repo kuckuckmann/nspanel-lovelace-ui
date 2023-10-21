@@ -158,8 +158,10 @@
 
 ****
 
-<h3><a href="https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/10000"><img align="left" alt="iobroker" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d28ae3e3-7934-4f99-9979-68e8fe1a779e" height="90%" width="90%"></a></h3>
+Finde uns unter:
 
-<h3><a href="https://discord.com/channels/1035264777288695889/1057356154457567242"><img align="left" alt="discord" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/5b2087b6-3bcb-4b28-a7a1-81a433c82362" height="90%" width="90%"></a></h3>
+<h3><a href="https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/10000"><img align="left" alt="iobroker" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d28ae3e3-7934-4f99-9979-68e8fe1a779e" height="95%" width="95%"></a></h3>
+
+<h3><a href="https://discord.com/channels/1035264777288695889/1057356154457567242"><img align="left" alt="discord" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/5b2087b6-3bcb-4b28-a7a1-81a433c82362" height="95%" width="95%"></a></h3>
 
 
