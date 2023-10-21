@@ -158,7 +158,7 @@
 
 ****
 
-<h2>Finde uns unter:</h2>
+<h3>Finde uns unter:</h3>
 
 <h3><a href="https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/10000"><img align="left" alt="iobroker" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d28ae3e3-7934-4f99-9979-68e8fe1a779e" height="98%" width="98%"></a></h3>
 
