@@ -110,7 +110,7 @@
    </ul>
 </details>
 
-<details>
+<!--details>
    <summary>
       <h3>
          <picture>
@@ -122,7 +122,7 @@
    <ul>
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">Archiv</a></li>
    </ul>
-</details>
+</details-->
 
 <details open>
    <summary>
@@ -140,5 +140,21 @@
       <li><a href="https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/tasmota/autoexec.be">autoexec.be</a></li>
    </ul>
 </details>
+
+<details>
+   <summary>
+      <h3>
+         <picture>
+             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a03ea406-d8de-4dec-bd45-b1a8997031ca">
+             <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a03ea406-d8de-4dec-bd45-b1a8997031ca"> 
+         </picture>
+ Developer-Board</h3>
+   </summary>
+   <ul>
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">Archiv</a></li>
+   </ul>
+</details>
+
+
 
 
