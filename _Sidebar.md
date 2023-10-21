@@ -155,6 +155,6 @@
    </ul>
 </details>
 
-
+<h3><a href="https://discord.com/channels/1035264777288695889/1057356154457567242"><img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/5b2087b6-3bcb-4b28-a7a1-81a433c82362"></a></h3>
 
 
