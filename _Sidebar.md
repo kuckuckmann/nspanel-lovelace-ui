@@ -151,6 +151,7 @@
  Developer-Board</h3>
    </summary>
    <ul>
+      <li><a href="">Team</a></li>
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">Archiv</a></li>
    </ul>
 </details>
