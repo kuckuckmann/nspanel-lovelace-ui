@@ -36,12 +36,16 @@ let CardPowerExample = <PagePower>
    'subPage': true oder false
    'parent': undefined oder Page
    'parentIcon': undefined oder Icon als String, z.B. 'alert'
+   'parentIconColor': undefined oder Farbkonstante vom Script
    'prev': undefined oder 'Page'
    'prevIcon': undefined oder Icon als String
+   'prevIconColor': undefined oder Farbkonstante vom Script
    'next': undefined oder 'Page'
    'nextIcon': undefined oder Icon als String
+   'nextIconColor': undefined oder Farbkonstante vom Script
    'home': undefined oder 'Page'
    'homeIcon': undefined oder Icon als String
+   'homeIconColor': undefined oder Farbkonstante vom Script
    'items': [
    <PageItem>{ id: 'alias.0.NSPanel_1.Power.PowerCard' },
    ]
@@ -79,6 +83,7 @@ Subpages haben verschiedene Navigationsmöglichkeiten, diese definiert Ihr im Be
 * **'home'**: (Seitenname der Übersichtsseite) -> definiert welche Seite aufgerufen wird beim Drücken auf das Haus-Symbol
 
 * **'parentIcon', 'prevIcon', 'nextIcon' und 'homeIcon'**: als Parameter gelten ->  undefined oder Icon als String, z.B. 'alert'
+* **'parentIconColor', 'prevIconColor', 'nextIconColor', 'homeIconColor'**: -> undefined oder Farbkonstante vom Script z.B. Yellow
 
 > **Wichtig!**  
 > Wenn **'prev'** eine Seite zugewiesen wurde, wird **'parent'** nicht ausgewertet. Das gleiche gilt auch für **'next'** und **'home'**. 
