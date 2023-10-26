@@ -73,10 +73,10 @@ Um durch die Hauptseiten / Pages zu blättern, habt Ihr oben links und rechts je
 Subpages haben verschiedene Navigationsmöglichkeiten, diese definiert Ihr im Bereich der Page-Definition. Damit definiert ihr auch, welche der vier Navi-Symbole in den oberen Ecken angezeigt werden. Zusätzlich könnt ihr ab **Version 3.8.3** auch optional Icon definieren.
 
 * **'subPage'**: true -> Seite wird als Unterseite definiert
-* **'parent'**: <Seitenname der übergeordneten Seite> -> definiert welche Seite aufgerufen wird beim Drücken auf den Pfeil nach oben
-* **'prev'**: <Seitenname der vorhergehenden Seite> -> definiert welche Seite aufgerufen wird beim Drücken auf den Pfeil nach links
-* **'next'**: <Seitenname der nächsten Seite> -> definiert welche Seite aufgerufen wird beim Drücken auf den Pfeil nach rechts
-* **'home'**: <Seitenname der Übersichtsseite> -> definiert welche Seite aufgerufen wird beim Drücken auf das Haus-Symbol
+* **'parent'**: (Seitenname der übergeordneten Seite) -> definiert welche Seite aufgerufen wird beim Drücken auf den Pfeil nach oben
+* **'prev'**: (Seitenname der vorhergehenden Seite) -> definiert welche Seite aufgerufen wird beim Drücken auf den Pfeil nach links
+* **'next'**: (Seitenname der nächsten Seite) -> definiert welche Seite aufgerufen wird beim Drücken auf den Pfeil nach rechts
+* **'home'**: (Seitenname der Übersichtsseite) -> definiert welche Seite aufgerufen wird beim Drücken auf das Haus-Symbol
 
 * **'parentIcon', 'prevIcon', 'nextIcon' und 'homeIcon'**: als Parameter gelten ->  undefined oder Icon als String, z.B. 'alert'
 
