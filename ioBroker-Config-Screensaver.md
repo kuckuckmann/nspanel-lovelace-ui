@@ -211,6 +211,93 @@ export const config = <Config> {
 
 Es wird **ab der v4.3.2.** jetzt die toLocalString() Methode im TS-Script verwendet. **Folgende Parameter sind möglich:**
 
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-fymr">narrow</th>
+    <th class="tg-fymr">numeric</th>
+    <th class="tg-fymr">2-digit</th>
+    <th class="tg-fymr">short</th>
+    <th class="tg-1wig">long</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-fymr">weekday</td>
+    <td class="tg-c3ow">M</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-c3ow">Mo</td>
+    <td class="tg-baqh">Montag</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">era</td>
+    <td class="tg-c3ow">n. Chr.</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-c3ow">n. Chr.</td>
+    <td class="tg-baqh">n. Chr.</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">year</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-c3ow">2023</td>
+    <td class="tg-c3ow">23</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">month</td>
+    <td class="tg-baqh">A</td>
+    <td class="tg-baqh">8</td>
+    <td class="tg-baqh">08</td>
+    <td class="tg-baqh">Aug.</td>
+    <td class="tg-baqh">August</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">day</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-baqh">4</td>
+    <td class="tg-baqh">04</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">hour</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-baqh">5</td>
+    <td class="tg-baqh">05</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">minute</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-baqh">9</td>
+    <td class="tg-baqh">09</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">second</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-baqh">2</td>
+    <td class="tg-baqh">02</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">timeZoneName</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">MESZ</td>
+    <td class="tg-0lax">Mitteleuropäische <br>Sommerzeit</td>
+  </tr>
+</tbody>
+</table>
+
 * **weekday**      - "narrow", "short", "long"
 * **era**          - "narrow", "short", "long"
 * **year**         - "numeric", "2-digit"
