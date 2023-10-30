@@ -207,6 +207,23 @@ export const config = <Config> {
         [],
 ```  
 
+**Wie kann ich das Format eines Datums oder einer Uhrzeit ändern?**  
+  
+Beispiel 1: Uhrzeit  
+```typescript  
+ScreensaverEntityDateFormat: { hour: '2-digit', minute: '2-digit' },
+```  
+  
+Beispiel 2: Datum  
+```typescript  
+ScreensaverEntityDateFormat: { year: 'numeric', month: '2-digit', day: '2-digit' },
+```  
+  
+Beispiel 3: Datum/Uhrzeit  
+```typescript  
+ScreensaverEntityDateFormat: { weekday: 'long', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' },
+```    
+
 ### Erweiterter Screensaver:  
 ![image](https://user-images.githubusercontent.com/102996011/221555760-4805cc37-30ae-4485-a219-bdbe75f78c05.png)
   
