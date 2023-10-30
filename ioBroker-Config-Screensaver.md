@@ -213,89 +213,89 @@ Es wird **ab der v4.3.2.** jetzt die toLocalString() Methode im TS-Script verwen
 
 In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr. 
 
-<table class="tg">
+<table>
 <thead>
   <tr>
-    <th class="tg-0pky"></th>
-    <th class="tg-fymr">narrow</th>
-    <th class="tg-fymr">numeric</th>
-    <th class="tg-fymr">2-digit</th>
-    <th class="tg-fymr">short</th>
-    <th class="tg-1wig">long</th>
+    <th></th>
+    <th>narrow</th>
+    <th>numeric</th>
+    <th>2-digit</th>
+    <th>short</th>
+    <th>long</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-fymr">weekday</td>
-    <td class="tg-c3ow">M</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-c3ow">Mo</td>
-    <td class="tg-baqh">Montag</td>
+    <td>weekday</td>
+    <td>M</td>
+    <td></td>
+    <td></td>
+    <td>Mo</td>
+    <td>Montag</td>
   </tr>
   <tr>
-    <td class="tg-fymr">era</td>
-    <td class="tg-c3ow">n. Chr.</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-c3ow">n. Chr.</td>
-    <td class="tg-baqh">n. Chr.</td>
+    <td>era</td>
+    <td>n. Chr.</td>
+    <td></td>
+    <td></td>
+    <td>n. Chr.</td>
+    <td>n. Chr.</td>
   </tr>
   <tr>
-    <td class="tg-fymr">year</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-c3ow">2023</td>
-    <td class="tg-c3ow">23</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0lax"></td>
+    <td>year</td>
+    <td></td>
+    <td>2023</td>
+    <td>23</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-1wig">month</td>
-    <td class="tg-baqh">A</td>
-    <td class="tg-baqh">8</td>
-    <td class="tg-baqh">08</td>
-    <td class="tg-baqh">Aug.</td>
-    <td class="tg-baqh">August</td>
+    <td>month</td>
+    <td>A</td>
+    <td>8</td>
+    <td>08</td>
+    <td>Aug.</td>
+    <td>August</td>
   </tr>
   <tr>
-    <td class="tg-1wig">day</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-baqh">4</td>
-    <td class="tg-baqh">04</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td>day</td>
+    <td></td>
+    <td>4</td>
+    <td>04</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-1wig">hour</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-baqh">5</td>
-    <td class="tg-baqh">05</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td>hour</td>
+    <td></td>
+    <td>5</td>
+    <td>05</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-1wig">minute</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-baqh">9</td>
-    <td class="tg-baqh">09</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td>minute</td>
+    <td></td>
+    <td>9</td>
+    <td>09</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-1wig">second</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-baqh">2</td>
-    <td class="tg-baqh">02</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td>second</td>
+    <td></td>
+    <td>2</td>
+    <td>02</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-1wig">timeZoneName</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">MESZ</td>
-    <td class="tg-0lax">Mitteleuropäische <br>Sommerzeit</td>
+    <td>timeZoneName</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MESZ</td>
+    <td>Mitteleuropäische <br>Sommerzeit</td>
   </tr>
 </tbody>
 </table>
