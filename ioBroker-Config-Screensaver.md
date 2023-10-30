@@ -213,8 +213,8 @@ Es wird **ab der v4.3.2.** jetzt die toLocalString() Methode im TS-Script verwen
 
 In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr. 
 
-<table align="center">
-<thead>
+<table>
+<thead align="center">
   <tr>
     <th></th>
     <th>narrow</th>
@@ -224,7 +224,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <th>long</th>
   </tr>
 </thead>
-<tbody>
+<tbody align="center">
   <tr>
     <td><b>weekday</b></td>
     <td>M</td>
