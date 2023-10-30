@@ -15,11 +15,12 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **5.)** [TFT-Firmware flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#5-tft-firmware-flashen)  
  **6.)** [MQTT (ioBroker) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#6-mqtt-iobroker-config)  
  **7.)** [CustomSend anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#7-customsend-anlegen)  
- **8.)** [Icon "TypeSkript" anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#8--icon-typescript-anlegen)  
- **9.)** [„NSPanelTs.ts“ anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-anlegen)  
-**10.)** [„NSPanelTs.ts“ konfigurieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-konfigurieren)  
-**11.)** [Aliase anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#11--aliase-anlegen)  
-**12.)** [Seitengestaltung](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#12--seitengestaltung) 
+ **8.)** [Einstellungen in JS-Adapter Instanz](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#8--icon-typescript-anlegen) 
+ **9.)** [Icon "TypeScript" anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#8--icon-typescript-anlegen)  
+ **10.)** [„NSPanelTs.ts“ anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-anlegen)  
+**11.)** [„NSPanelTs.ts“ konfigurieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-konfigurieren)  
+**12.)** [Aliase anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#11--aliase-anlegen)  
+**13.)** [Seitengestaltung](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#12--seitengestaltung) 
 
 ## **1.) ioBroker Voraussetzungen**
 
@@ -161,7 +162,9 @@ Danach sollte im MQTT-Adapter unter Objekte ein Datenpunkt: „SmartHome/NSPanel
 
 ***
 
-## **8.)  Icon „TypeScript“ anlegen**
+## **8.)  Einstellungen in JS-Adapter Instanz**
+
+## **9.)  Icon „TypeScript“ anlegen**
 
 Wie bereits in der Einleitung erwähnt, werden zwei TypeScripts (TS) benötigt. Das erste ist das Icon-Skript. Das Icon-Skript dient zur Übersetzung von Schriftzeichensymbolen zwischen dem Skript und der TFT-Firmware.  
 Unter dem grünen Vezeichnisbaum „global“ im ioBroker-Menüpunkt Skripte erzeugst du ein Skript mit dem Namen „IconsSelector“ vom Typ: TypeScript (TS). Dort fügst du den Inhalt der Datei:  
@@ -175,7 +178,7 @@ einsehen und später (kommen wir bei der Alias-Erstellung noch zu) auch jedes Ic
 
 ***
 
-## **9.)  „NSPanelTs.ts“ anlegen**
+## **10.)  „NSPanelTs.ts“ anlegen**
 Unter dem regulären Vezeichnisbaum „common“ im ioBroker-Menüpunkt Skripte erzeugst du (gerne auch in weiteren Unterverzeichnissen) ein weiteres TypeScript mit dem Inhalt:  
 **https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts**  
   
@@ -201,7 +204,7 @@ Bitte starte das Skript. Alle weiteren Parameter stellen wir später ein. Ab jet
 
 ***
 
-## **10.)  „NSPanelTs.ts“ konfigurieren**
+## **11.)  „NSPanelTs.ts“ konfigurieren**
 
 Im Punkt 9 haben wir zunächst die nur Kommunikation zwischen Panel und Skript über MQTT hergestellt. Jetzt kommen wir zum Inhalt des Panels:  
 
@@ -223,7 +226,7 @@ Ebenso kannst du unter alexaSpeakerList eine Liste mit vorhandenen Alexa-Devices
 
 ***
 
-## **11.)  Aliase Anlegen**
+## **12.)  Aliase Anlegen**
 Jetzt kommt der eigentliche Teil der Seitengestaltung. Es werden keine Datenpunkte benötigt, sondern Aliase.  
 Ein Alias ist „kein“ Datenpunkt, sondern ein Objekt mit mehreren Datenpunkten.  
 Das Skript setzt entsprechende Trigger auf die Alias-Datenpunkte .SET, .GET, .ACTUAL usw. Deshalb werden deine Steuerelemente im Panel nicht greifen, wenn du mit einzelnen Datenpunkten aus den verschiedenen Adaptern arbeitest.  
@@ -232,7 +235,7 @@ Ich habe im Verlauf diverse Aliase erzeugt und auch in den ChangeLogs der jeweil
 
 ***
 
-## **12.)  Seitengestaltung**
+## **13.)  Seitengestaltung**
 Die Seitengestaltung ist nun in einen eigenen Bereich hier in der Wiki gewandert.  
 Die unten aufgeführten Beispiele sind **nicht** mehr im Skript enthalten.
 
