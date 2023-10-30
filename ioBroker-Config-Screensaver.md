@@ -317,7 +317,7 @@ ScreensaverEntityDateFormat: { weekday: 'long', year: 'numeric', month: '2-digit
 
 Beispiel 4: Alle Parameter in langer Variante  
 ```typescript  
-ScreensaverEntityDateFormat: weekday: 'long', era: 'long', year: 'numeric', month: 'long', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZoneName: 'long',
+ScreensaverEntityDateFormat: { weekday: 'long', era: 'long', year: 'numeric', month: 'long', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZoneName: 'long' },
 ```    
 Output: `Mittwoch, 02. August 2023 n. Chr. um 04:12 Mitteleuropäische Sommerzeit`  
 
