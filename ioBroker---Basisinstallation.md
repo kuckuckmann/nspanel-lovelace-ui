@@ -15,7 +15,7 @@ Anleitung zur Einrichtung eines Sonoff NSPanel mit Lovelace UI unter ioBroker
  **5.)** [TFT-Firmware flashen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#5-tft-firmware-flashen)  
  **6.)** [MQTT (ioBroker) Config](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#6-mqtt-iobroker-config)  
  **7.)** [CustomSend anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#7-customsend-anlegen)  
- **8.)** [Einstellungen in JS-Adapter Instanz](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#8--icon-typescript-anlegen) 
+ **8.)** [Einstellungen in JS-Adapter Instanz](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#8--einstellungen-in-js-adapter-instanz) 
  **9.)** [Icon "TypeScript" anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#8--icon-typescript-anlegen)  
  **10.)** [„NSPanelTs.ts“ anlegen](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-anlegen)  
 **11.)** [„NSPanelTs.ts“ konfigurieren](https://github.com/joBr99/nspanel-lovelace-ui/wiki/iobroker---Basisinstallation#9--nspaneltsts-konfigurieren)  
@@ -162,8 +162,16 @@ Danach sollte im MQTT-Adapter unter Objekte ein Datenpunkt: „SmartHome/NSPanel
 
 ***
 
-## **8.)  Einstellungen in JS-Adapter Instanz**
+## **8.)  Einstellungen in JS-Adapter Instanz**  
 
+Für den erfolgreichen Start des NSPanelTs.ts (siehe Punkt 10) TypeScript sind noch nachfolgende Einstellungen in der JavaScript-Adapter-Instanz erforderlich:  
+  
+* Hinzufügen der npm Module: `moment` und `moment-parseformat`
+* Aktivierung der Option `Kommando "setObject" erlauben`
+* Aktivierung der Option `Kommando "exec" erlauben`
+  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e6477540-3330-49e6-b019-1960b2e39aab)  
+  
 ## **9.)  Icon „TypeScript“ anlegen**
 
 Wie bereits in der Einleitung erwähnt, werden zwei TypeScripts (TS) benötigt. Das erste ist das Icon-Skript. Das Icon-Skript dient zur Übersetzung von Schriftzeichensymbolen zwischen dem Skript und der TFT-Firmware.  
