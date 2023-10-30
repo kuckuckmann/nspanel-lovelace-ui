@@ -215,7 +215,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
 
 <table>
 <thead align="center">
-  <tr backgroundcolor="#ccc">
+  <tr bgcolor="#ccc">
     <th></th>
     <th>narrow</th>
     <th>numeric</th>
