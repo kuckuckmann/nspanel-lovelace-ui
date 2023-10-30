@@ -234,7 +234,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td>Montag</td>
   </tr>
   <tr>
-    <td>era</td>
+    <td><b>era</b></td>
     <td>n. Chr.</td>
     <td></td>
     <td></td>
@@ -242,7 +242,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td>n. Chr.</td>
   </tr>
   <tr>
-    <td>year</td>
+    <td><b>year</b></td>
     <td></td>
     <td>2023</td>
     <td>23</td>
@@ -250,7 +250,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td></td>
   </tr>
   <tr>
-    <td>month</td>
+    <td><b>month</b></td>
     <td>A</td>
     <td>8</td>
     <td>08</td>
@@ -258,7 +258,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td>August</td>
   </tr>
   <tr>
-    <td>day</td>
+    <td><b>day</b></td>
     <td></td>
     <td>4</td>
     <td>04</td>
@@ -266,7 +266,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td></td>
   </tr>
   <tr>
-    <td>hour</td>
+    <td><b>hour</b></td>
     <td></td>
     <td>5</td>
     <td>05</td>
@@ -274,7 +274,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td></td>
   </tr>
   <tr>
-    <td>minute</td>
+    <td><b>minute</b></td>
     <td></td>
     <td>9</td>
     <td>09</td>
@@ -282,7 +282,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td></td>
   </tr>
   <tr>
-    <td>second</td>
+    <td><b>second</b></td>
     <td></td>
     <td>2</td>
     <td>02</td>
@@ -290,7 +290,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td></td>
   </tr>
   <tr>
-    <td>timeZoneName</td>
+    <td><b>timeZoneName</b></td>
     <td></td>
     <td></td>
     <td></td>
