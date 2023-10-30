@@ -162,11 +162,10 @@ export const config = <Config> {
                 ScreensaverEntity: 'accuweather.0.Daily.Day1.Sunrise',
                 ScreensaverEntityFactor: 1,
                 ScreensaverEntityDecimalPlaces: 0,
-                ScreensaverEntityDateFormat: 'hh:mm',   // like DD.MM or DD.MM.YY or YYYY/MM/DD or hh:mm
+                ScreensaverEntityDateFormat: { hour: '2-digit', minute: '2-digit' }, // Description at Wiki-Pages
                 ScreensaverEntityIconOn: 'weather-sunset-up',
                 ScreensaverEntityIconOff: null,
                 ScreensaverEntityText: 'Sonne',
-                ScreensaverEntityUnitText: '%',
                 ScreensaverEntityIconColor: MSYellow
             },
             // bottomScreensaverEntity 2
