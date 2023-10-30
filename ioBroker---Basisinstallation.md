@@ -172,6 +172,8 @@ Für den erfolgreichen Start des NSPanelTs.ts (siehe Punkt 10) TypeScript sind n
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e6477540-3330-49e6-b019-1960b2e39aab)  
   
+***  
+
 ## **9.)  Icon „TypeScript“ anlegen**
 
 Wie bereits in der Einleitung erwähnt, werden zwei TypeScripts (TS) benötigt. Das erste ist das Icon-Skript. Das Icon-Skript dient zur Übersetzung von Schriftzeichensymbolen zwischen dem Skript und der TFT-Firmware.  
