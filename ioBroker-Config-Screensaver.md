@@ -226,7 +226,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
 </thead>
 <tbody align="center">
   <tr>
-    <td><b>weekday</b></td>
+    <td align="left"><b>weekday</b></td>
     <td>M</td>
     <td></td>
     <td></td>
@@ -234,7 +234,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td>Montag</td>
   </tr>
   <tr>
-    <td><b>era</b></td>
+    <td align="left"><b>era</b></td>
     <td>n. Chr.</td>
     <td></td>
     <td></td>
@@ -242,7 +242,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td>n. Chr.</td>
   </tr>
   <tr>
-    <td><b>year</b></td>
+    <td align="left"><b>year</b></td>
     <td></td>
     <td>2023</td>
     <td>23</td>
@@ -250,7 +250,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td></td>
   </tr>
   <tr>
-    <td><b>month</b></td>
+    <td align="left"><b>month</b></td>
     <td>A</td>
     <td>8</td>
     <td>08</td>
@@ -258,7 +258,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td>August</td>
   </tr>
   <tr>
-    <td><b>day</b></td>
+    <td align="left"><b>day</b></td>
     <td></td>
     <td>4</td>
     <td>04</td>
@@ -266,7 +266,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td></td>
   </tr>
   <tr>
-    <td><b>hour</b></td>
+    <td align="left"><b>hour</b></td>
     <td></td>
     <td>5</td>
     <td>05</td>
@@ -274,7 +274,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td></td>
   </tr>
   <tr>
-    <td><b>minute</b></td>
+    <td align="left"><b>minute</b></td>
     <td></td>
     <td>9</td>
     <td>09</td>
@@ -282,7 +282,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td></td>
   </tr>
   <tr>
-    <td><b>second</b></td>
+    <td align="left"><b>second</b></td>
     <td></td>
     <td>2</td>
     <td>02</td>
@@ -290,7 +290,7 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
     <td></td>
   </tr>
   <tr>
-    <td><b>timeZoneName</b></td>
+    <td align="left"><b>timeZoneName</b></td>
     <td></td>
     <td></td>
     <td></td>
@@ -299,16 +299,6 @@ In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr.
   </tr>
 </tbody>
 </table>
-
-* **weekday**      - "narrow", "short", "long"
-* **era**          - "narrow", "short", "long"
-* **year**         - "numeric", "2-digit"
-* **month**        - "numeric", "2-digit", "narrow", "short", "long"
-* **day**          - "numeric", "2-digit"
-* **hour**         - "numeric", "2-digit"
-* **minute**       - "numeric", "2-digit"
-* **second**       - "numeric", "2-digit"
-* **timeZoneName** - "short", "long"
   
 Beispiel 1: Uhrzeit  
 ```typescript  
