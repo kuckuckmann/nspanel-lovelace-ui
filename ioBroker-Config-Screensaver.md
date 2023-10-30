@@ -209,17 +209,17 @@ export const config = <Config> {
 
 **Wie kann ich das Format eines Datums oder einer Uhrzeit ändern? (ab v4.3.2)**  
 
-Es wird ab der v4.3.2. jetzt die toLocalString() Methode im TS-Script verwendet. Folgende Parameter sind möglich:
+Es wird **ab der v4.3.2.** jetzt die toLocalString() Methode im TS-Script verwendet. **Folgende Parameter sind möglich:**
 
-* weekday      - "narrow", "short", "long"
-* era          - "narrow", "short", "long"
-* year         - "numeric", "2-digit"
-* month        - "numeric", "2-digit", "narrow", "short", "long"
-* day          - "numeric", "2-digit"
-* hour         - "numeric", "2-digit"
-* minute       - "numeric", "2-digit"
-* second       - "numeric", "2-digit"
-* timeZoneName - "short", "long"
+* **weekday**      - "narrow", "short", "long"
+* **era**          - "narrow", "short", "long"
+* **year**         - "numeric", "2-digit"
+* **month**        - "numeric", "2-digit", "narrow", "short", "long"
+* **day**          - "numeric", "2-digit"
+* **hour**         - "numeric", "2-digit"
+* **minute**       - "numeric", "2-digit"
+* **second**       - "numeric", "2-digit"
+* **timeZoneName** - "short", "long"
   
 Beispiel 1: Uhrzeit  
 ```typescript  
