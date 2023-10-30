@@ -211,6 +211,8 @@ export const config = <Config> {
 
 Es wird **ab der v4.3.2.** jetzt die toLocalString() Methode im TS-Script verwendet. **Folgende Parameter sind möglich:**
 
+In der nachfolgenden Tabelle exemplarisch für den 04.08.2023 05:09:02 Uhr. 
+
 <table class="tg">
 <thead>
   <tr>
