@@ -101,7 +101,7 @@
    </summary>
    <ul>      
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Pages-%E2%80%90-Zeigt-her-Eure-Cards">Zeigt her eure Cards</a></li>
-	  <li><a href="">NSPanel im ioBroker Forum</a>
+	  <li><a href="https://forum.iobroker.net/topic/69942/sonoff-nspanel-mit-lovelace-ui-zeigt-her-eure-cards">NSPanel im ioBroker Forum</a>
 		<ul>
 			<li><a href="https://forum.iobroker.net/topic/50888/sonoff-nspanel/1542" target="_blank">Support Thread No#01 (inaktiv)</a>
 			<li><a href="https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/10000" target="_blank">Support Thread No#02 (aktiv)</a>
