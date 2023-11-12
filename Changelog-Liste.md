@@ -1,6 +1,4 @@
-### Hier erfolgt eine chronologische Auflistung aller Versionen vom NSPanel Script  
-  
-***
+**Hier erfolgt eine chronologische Auflistung aller Versionen vom NSPanel Script**
   
         - 07.10.2022 - v3.5.0   Upgrade TFT 43
         - 07.10.2022 - v3.5.0   Add Backgroundcolor to Pages
