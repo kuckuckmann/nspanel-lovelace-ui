@@ -3,7 +3,7 @@
 # v4.3.3.1  
 <img width="616" alt="Bildschirmfoto 2023-11-12 um 15 49 46" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/d55a044c-5661-4c78-a9c1-63d308f72021">
 
-[Forum Link]()
+[Forum Link](https://forum.iobroker.net/post/1079227)
 ****
 
 # v4.3.2.1  
