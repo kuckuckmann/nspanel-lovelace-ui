@@ -26,6 +26,7 @@
    </summary>
    <ul>
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/Changelog">Changelog</a></li>
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/Changelog-Liste">Changelog Liste</a></li>
    </ul>
 </details>
 <details open>
