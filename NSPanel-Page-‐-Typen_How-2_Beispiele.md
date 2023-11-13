@@ -884,16 +884,45 @@ let Buero_Alarm = <PageAlarm>
   
   
 **CardUnlock**  
-  
+
+ab Version **4.3.3.2 ** fester Bestandteil des Service-Menüs (Alias wird automatisch erstellt).
+
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8f18098b-96e5-4e88-a86d-4824cc2b6299)
   
 ```typescript  
+/* Wenn das Service Menü abgesichert werden soll, kann eine cardUnlock vorgeschaltet werden. 
+   Für diesen Fall ist folgende Vorgehensweise erforderlich:
+   - cardUnlock Seite "Unlock_Service" in der Config unter pages auskommentieren ("//" entfernen)
+   - Servicemenü aus pages "NSPanel_Service" unter pages kommentieren ("//" hinzufügen)
+*/ 
+
+//Level 0 (if service pages are used with cardUnlock)
 let Unlock_Service = <PageUnlock>
 {
     'type': 'cardUnlock',
     'heading': 'Service Pages',
     'useColor': true,
-    'items': [<PageItem>{ id: 'alias.0.Unlock', targetPage: 'NSPanel_Service' }]
+    'items': [<PageItem>{ id: 'alias.0.NSPanel.Unlock',
+                          targetPage: 'NSPanel_Service_SubPage',
+                          autoCreateALias: true }
+    ]
+};
+
+//Level_0 (if service pages are used with cardUnlock)
+let NSPanel_Service_SubPage = <PageEntities>
+{
+    'type': 'cardEntities',
+    'heading': 'NSPanel Service',
+    'useColor': true,
+    'subPage': true,
+    'parent': Unlock_Service,
+    'home': 'Unlock_Service', 
+    'items': [
+        <PageItem>{ navigate: true, id: 'NSPanel_Infos', icon: 'information-outline', offColor: Menu, onColor: Menu, name: 'Infos', buttonText: 'mehr...'},
+        <PageItem>{ navigate: true, id: 'NSPanel_Einstellungen', icon: 'monitor-edit', offColor: Menu, onColor: Menu, name: 'Einstellungen', buttonText: 'mehr...'},
+        <PageItem>{ navigate: true, id: 'NSPanel_Firmware', icon: 'update', offColor: Menu, onColor: Menu, name: 'Firmware', buttonText: 'mehr...'},
+        <PageItem>{ id: AliasPath + 'Config.rebootNSPanel', name: 'Reboot NSPanel' ,icon: 'refresh', offColor: MSRed, onColor: MSGreen, buttonText: 'Start'},
+    ]
 };
 ```  
 </details>  
