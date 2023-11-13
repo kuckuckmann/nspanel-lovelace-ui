@@ -57,7 +57,7 @@ Die cardUnlock dient der Absicherung spezieller Seiten, die vor unbefugtem Zugri
 im Datenpunkt **0_userdata.0.NSPanel.Unlock.UnlockPin** kann eine PIN vergeben werden. Default wird diese PIN als **0000** definiert.  
 
 Erstellung des Alias:  
-Die cardUnlock wird ab Version 4.3.3.3 mit einem Alias vom Gerätetyp "Feueralarm" automatisch erstellt. Die Erstellung des Alias und der zugehörigen Datenpunkte erfolgt, sobald die cardUnlock erstmals eingebunden und aufgerufen wird.  
+Die cardUnlock wird ab Version `4.3.3.3` mit einem Alias vom Gerätetyp `Feueralarm` automatisch erstellt. Die Erstellung des Alias und der zugehörigen Datenpunkte erfolgt, `sobald die cardUnlock erstmals eingebunden und aufgerufen` wird.  
 
 Unter 0_userdata.0... werden folgende Datenpunkte angelegt:
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/46f63c7c-154e-4c47-8caa-41bed30bcf70)
@@ -81,13 +81,13 @@ let Unlock_Service = <PageUnlock>
 };
 ```
 
-siehe auch:
-https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC und 
-https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#page-beispiele
+siehe auch:  
+* https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC und 
+* https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#page-beispiele
 
-Da die cardUnlock innerhalb eines "Smart Home" nur einmal erforderlich sein sollte, teilt sie die Datenpunkte mit allen weiteren NSPanels im Haus. Es ist darüber Hinaus jedoch auch möglich weitere Seiten über die cardUnlock nach dem gleichen Schema vor unbefugten Zugriffen zu schützen.
+Da die cardUnlock innerhalb eines "Smart Home" nur einmal erforderlich sein sollte, teilt sie die Datenpunkte mit allen weiteren NSPanels im Haus. Es ist darüber hinaus jedoch auch möglich, `weitere Seiten` über die `cardUnlock` nach dem gleichen Schema vor unbefugten Zugriffen mit dem vergebenen `PIN` zu schützen.
 
-Hierzu muss lediglich eine weitere "Page" vom Typ "cardUnlock" definiert werden und das Ziel (targetPage) auf eine "vorhandene subPage" zeigen:  
+Hierzu muss lediglich eine weitere `Page` vom Typ `cardUnlock` definiert werden und das Ziel `targetPage` auf eine `vorhandene subPage` zeigen:  
 ```
 let Unlock_PageXYZ = <PageUnlock>
 {
