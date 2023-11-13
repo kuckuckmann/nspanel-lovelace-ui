@@ -926,6 +926,11 @@ let NSPanel_Service_SubPage = <PageEntities>
 };
 ```  
 Analog der page `Unlock_Service` können bei Bedarf weitere Unlock-Seiten: `Unlock_PageXYZ` erstellt werden.  
+
+Die Standard PIN wird durch das TS-Script angelegt und lautet "0000". Sie kann unter 0_userdata.0. geändert werden:
+
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/b0aa7031-c93a-4473-934e-6565d429a17c)
+
 </details>  
   
 ***  
