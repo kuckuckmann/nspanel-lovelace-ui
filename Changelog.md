@@ -1,5 +1,15 @@
 **ioBroker Changelog (TypeScript)**  
   
+# v4.3.3.3  
+![1699866147196-24b160ce-2408-490d-abb3-13bf895fdbf9-image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/c1f6bc9c-0dfd-4cd7-9ea2-994f949dfa04)
+  
+* v4.3.3.2 Add autoCreateALias to cardUnlock
+* v4.3.3.2 Change NodeJS to at least v18.X.X
+* v4.3.3.3 if setOption = false, do not create autoAlias (Functional/Servicemenu) and Datapoints  
+
+[Forum Link](https://forum.iobroker.net/post/1079701)
+****
+
 # v4.3.3.1  
 <img width="616" alt="Bildschirmfoto 2023-11-12 um 15 49 46" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/d55a044c-5661-4c78-a9c1-63d308f72021">
 
