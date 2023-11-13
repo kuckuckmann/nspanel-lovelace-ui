@@ -1,4 +1,5 @@
-**Hier erfolgt eine chronologische Auflistung aller Versionen vom NSPanel Script**
+**Hier erfolgt eine chronologische Auflistung aller Versionen vom NSPanel Script**  
+
         - 08.05.2022 - v2.9.0 - cardQR (für Gäste WLAN)
         - 08.05.2022 - v2.9.0 - cardThermo (Neues Design für Alias Thermostat und zusätzlich für Alias Klimaanlage)
         - 08.05.2022 - v2.9.0 - Menüpfeile bei HardwareButtons (button1Page; button2Page) mit Navigation auf Page 0
