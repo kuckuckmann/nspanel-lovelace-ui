@@ -59,7 +59,7 @@ im Datenpunkt **0_userdata.0.NSPanel.Unlock.UnlockPin** kann eine PIN vergeben w
 Erstellung des Alias:  
 Die cardUnlock wird ab Version `4.3.3.3` mit einem Alias vom Gerätetyp `Feueralarm` automatisch erstellt. Die Erstellung des Alias und der zugehörigen Datenpunkte erfolgt, `sobald die cardUnlock erstmals eingebunden und aufgerufen` wird.  
 
-Unter 0_userdata.0... werden folgende Datenpunkte angelegt:
+Unter 0_userdata.0... werden folgende Datenpunkte automatisch angelegt:
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/46f63c7c-154e-4c47-8caa-41bed30bcf70)
 Die angelegte PIN-Nummer lässt sich unter "Wert" von "0000" in (siehe Beispiel) z.B. "1234" ändern.
 
