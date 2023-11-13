@@ -43,7 +43,7 @@ weiter Beispiele:
 
 ## TypeScript (NSPanel.ts) Variablendefinition
 
-nachfolgend die Seiten- und Menüdefinition aus dem TS-Script ab v4.3.1 
+nachfolgend die Seiten- und Menüdefinition aus dem TS-Script ab v4.3.3 
 ```typescript  
 /***********************************************************************************************
  **  Service Pages mit Auto-Alias (Nachfolgende Seiten werden mit Alias automatisch angelegt) **
