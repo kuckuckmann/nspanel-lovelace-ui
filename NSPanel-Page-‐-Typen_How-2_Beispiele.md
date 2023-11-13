@@ -885,7 +885,7 @@ let Buero_Alarm = <PageAlarm>
   
 **CardUnlock**  
 
-ab Version **4.3.3.2 ** fester Bestandteil des Service-Menüs (Alias wird automatisch erstellt).
+ab Version **4.3.3.2** fester Bestandteil des Service-Menüs (Alias wird automatisch erstellt).
 
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8f18098b-96e5-4e88-a86d-4824cc2b6299)
   
