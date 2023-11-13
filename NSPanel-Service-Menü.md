@@ -50,7 +50,25 @@ nachfolgend die Seiten- und Menüdefinition aus dem TS-Script ab v4.3.1
  **  https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC             **
  ***********************************************************************************************/
 
-//Level_0 
+/* Wenn das Service Menü abgesichert werden soll, kann eine cardUnlock vorgeschaltet werden. 
+   Für diesen Fall ist folgende Vorgehensweise erforderlich:
+   - cardUnlock Seite "Unlock_Service" in der Config unter pages auskommentieren ("//" entfernen)
+   - Servicemenü aus pages "NSPanel_Service" unter pages kommentieren ("//" hinzufügen)
+*/ 
+
+//Level 0 (if service pages are used with cardUnlock)
+let Unlock_Service = <PageUnlock>
+{
+    'type': 'cardUnlock',
+    'heading': 'Service Pages',
+    'useColor': true,
+    'items': [<PageItem>{ id: 'alias.0.NSPanel.Unlock',
+                          targetPage: 'NSPanel_Service_SubPage',
+                          autoCreateALias: true }
+    ]
+};
+
+//Level_0 (if service pages are used without cardUnlock)
 let NSPanel_Service = <PageEntities>
 {
     'type': 'cardEntities',
@@ -63,6 +81,24 @@ let NSPanel_Service = <PageEntities>
         <PageItem>{ id: AliasPath + 'Config.rebootNSPanel', name: 'Reboot NSPanel' ,icon: 'refresh', offColor: MSRed, onColor: MSGreen, buttonText: 'Start'},
     ]
 };
+
+//Level_0 (if service pages are used with cardUnlock)
+let NSPanel_Service_SubPage = <PageEntities>
+{
+    'type': 'cardEntities',
+    'heading': 'NSPanel Service',
+    'useColor': true,
+    'subPage': true,
+    'parent': Unlock_Service,
+    'home': 'Unlock_Service', 
+    'items': [
+        <PageItem>{ navigate: true, id: 'NSPanel_Infos', icon: 'information-outline', offColor: Menu, onColor: Menu, name: 'Infos', buttonText: 'mehr...'},
+        <PageItem>{ navigate: true, id: 'NSPanel_Einstellungen', icon: 'monitor-edit', offColor: Menu, onColor: Menu, name: 'Einstellungen', buttonText: 'mehr...'},
+        <PageItem>{ navigate: true, id: 'NSPanel_Firmware', icon: 'update', offColor: Menu, onColor: Menu, name: 'Firmware', buttonText: 'mehr...'},
+        <PageItem>{ id: AliasPath + 'Config.rebootNSPanel', name: 'Reboot NSPanel' ,icon: 'refresh', offColor: MSRed, onColor: MSGreen, buttonText: 'Start'},
+    ]
+};
+
         //Level_1
         let NSPanel_Infos = <PageEntities>
         {
@@ -103,7 +139,7 @@ let NSPanel_Service = <PageEntities>
                     'prev': 'NSPanel_Wifi_Info_1',
                     'home': 'NSPanel_Service',
                     'items': [
-                        <PageItem>{ id: AliasPath + 'Tasmota.Wifi.SSId', name: 'SSId', icon: 'signal-distance-variant', offColor: Menu, onColor: Menu },
+                        <PageItem>{ id: 'alias.0.Test.Wiki_SSID', name: 'SSId', icon: 'signal-distance-variant', offColor: Menu, onColor: Menu },
                         <PageItem>{ id: AliasPath + 'Tasmota.Wifi.Mode', name: 'Modus', icon: 'signal-distance-variant', offColor: Menu, onColor: Menu },
                         <PageItem>{ id: AliasPath + 'Tasmota.Wifi.Channel', name: 'Kanal', icon: 'timeline-clock-outline', offColor: Menu, onColor: Menu },
                         <PageItem>{ id: AliasPath + 'Tasmota.Wifi.AP', name: 'AP', icon: 'router-wireless-settings', offColor: Menu, onColor: Menu },
@@ -389,14 +425,16 @@ export const config = <Config> {
             ...
             Diverse Top Level Pages
             ...
-            
-            NSPanel_Service         //Auto-Alias Service Page
+
+            //Unlock_Service,         //Servicemenü mit cardUnlock
+            NSPanel_Service         //Servicemenü ohne cardUnlock
     ],
     subPages: [
                 ...
                 Diverse Subpages
                 ...
 
+                NSPanel_Service_SubPage,                //Auto-Alias Service Page (used with cardUnlock)
                 NSPanel_Infos,                          //Auto-Alias Service Page
                     NSPanel_Wifi_Info_1,                //Auto-Alias Service Page
                     NSPanel_Wifi_Info_2,                //Auto-Alias Service Page
