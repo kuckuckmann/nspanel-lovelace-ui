@@ -202,6 +202,7 @@
         - 08.11.2023 - v4.3.3    Upgrade TFT 53 / 4.3.3
         - 11.11.2023 - v4.3.3.1  Fix for Issues #1020 HandleHardwareButton buttonConfig.mode -> 'toggle' and 'set'
         - 12.11.2023 - v4.3.3.2  Add autoCreateALias to cardUnlock
+        - 12.11.2023 - v4.3.3.2  Change NodeJS to at least v18.X.X
         - 13.11.2023 - v4.3.3.3  if setOption = false, do not create autoAlias (Functional/Servicemenu) and Datapoints
         
 
