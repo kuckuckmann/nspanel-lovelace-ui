@@ -931,6 +931,8 @@ Die Standard PIN wird durch das TS-Script angelegt und lautet "0000". Sie kann u
 
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/b0aa7031-c93a-4473-934e-6565d429a17c)
 
+siehe auch: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Card-Definitionen-(Seiten)#cardunlock-ab-v433
+
 </details>  
   
 ***  
