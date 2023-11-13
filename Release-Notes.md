@@ -1,5 +1,47 @@
 **Hier erfolgt eine chronologische Auflistung aller Versionen vom NSPanel Script**
-  
+        - 08.05.2022 - v2.9.0 - cardQR (für Gäste WLAN)
+        - 08.05.2022 - v2.9.0 - cardThermo (Neues Design für Alias Thermostat und zusätzlich für Alias Klimaanlage)
+        - 08.05.2022 - v2.9.0 - Menüpfeile bei HardwareButtons (button1Page; button2Page) mit Navigation auf Page 0
+        - 08.05.2022 - v2.9.0 - Standard-Brightness über neuen Parameter active einstellbar (Test mit 2.9.3)
+        - 08.05.2022 - v2.9.0 - Schalter (Licht, Dimmer, Hue, etc) in cardGrid lassen sich wieder schalten
+        - 14.06.2022 - v2.9.0 - Aktion auf Submenüs schaltet unmittelbar auf vorheriges Mainmenu (Many thanks to Grrzzz)
+        - 14.06.2022 - v2.9.0 - Menü-Pfeile in Subpages (z.B. card QR, cardMedia, etc) (Many thanks to Grrzzz)
+        - 15.06.2022 - v3.0.0 - Date/Time im Screensaver auf Basis localString (de-DE/en-EN/nl-NL/etc.)
+        - 16.06.2022 - v3.0.0 - Multilingual - config.locale (en-EN, de-DE, nl-NL, da-DK, es-ES, fr-FR, it-IT, ru-RU, etc.)
+        - 16.06.2022 - v3.0.0 - Bugfix by Grrzzz - Subpages
+        - 18.06.2022 - v3.1.0 - Längere Textfelder in cardEntities
+        - 18.06.2022 - V3.1.0 - Detail-Page Lights/Shutter hat neuen Parameter "id"
+        - 19.06.2022 - v3.1.0 - Bugfix toLocalTimeString in en-EN/en-US
+        - 19.06.2022 - v3.1.0 - Fehler in findLocale abgefangen
+        - 19.06.2022 - v3.1.0 - Umstellung auf "Home Assistant" Sprachfile
+        - 19.06.2022 - v3.1.0 - Alias "light" und "socket" haben optionalen Parameter icon2 für negative Zustände
+        - 29.06.2022 - v3.1.1 - Bugfix Github #286 (Active Page) + Bugfix pageThermo, pageMedia, pageAlarm as first Page
+        - 25.08.2022 - v3.1.0 - Code-Verbesserungen (klein0r)
+        - 26.08.2022 - v3.2.0 - pageItem mit CIE (XY) Parameter für ColorWheel (Steuerung für z.B Deconz-Farben bei denen Hue nicht greift)
+        - 28.08.2022 - v3.2.0 - Wechsel zwischen Weather-Forecast und eigenen Datenpunkten im Screensaver (minütlich)
+        - 28.08.2022 - v3.2.0 - Bugfix für 3.2.0 in GenerateDetailPage: Color-Language nicht über findLocales, da nicht in Sprachfile enthalten
+        - 29.08.2022 - v3.3.0 - Upgrade TFT 40
+        - 29.08.2022 - v3.3.1 - Upgrade TFT 41
+        - 04.09.2022 - v3.3.1 - Überarbeitung und BugFix für cardAlarm
+        - 13.09.2022 - v3.3.1.3 BugFix Screensaver Toggle
+        - 13.09.2022 - v3.3.1.3 Überarbeitung und BugFix und Refresh Features für cardMedia (Breaking Changes)
+        - 13.09.2022 - v3.3.1.3 Hinzufügen von SpotifyPremium, Sonos und Chromecast (Google home) zur cardMedia-Logik
+        - 15.09.2022 - V3.4.0 - BugFix Dimmode
+        - 15.09.2022 - V3.4.0 - Colormode für Screensaver + AutoColor WeatherForecast
+        - 16.09.2022 - v3.4.0.1 Visualisierung der Relay Zustände (MRIcons) im Screensaver + Bugfix Screensaver MRIcon2
+        - 17.09.2022 - v3.4.0.2 Bugfix for screensaver icons with scaled colors
+        - 17.09.2022 - v3.4.0.3 Bugfix bNext / bPrev by joBr99
+        - 18.09.2022 - v3.4.0.4 Add On/Off Colors in config.mrIcon1ScreensaverEntity and config.mrIcon2ScreensaverEntity
+        - 19.09.2022 - v3.4.0.5 Add Mode to cardThermo (Alias Thermostat)
+        - 03.10.2022 - v3.4.0.6 Add 5 Entities in US Panel Version to cardEntities
+        - 03.10.2022 - v3.4.0.6 Fix screenSaverDoubleClick
+        - 03.10.2022 - v3.4.0.6 Add cardPower (experimental)
+        - 05.10.2022 - v3.4.0.6 Add sueezeboxrpc to cardMedia
+        - 07.10.2022 - v3.4.0.6 Time-configurable change for screensaver icons
+        - 07.10.2022 - v3.4.0.7 Add Backgroundcolor to Pages
+        - 08.10.2022 - v3.4.0.7 Add Tilt-Slider and TILT_Fucntions (Open/Stop/Close) to Blinds/Cover/Shutter popUp
+        - 12.10.2022 - v3.4.0.7 Add PageNavigation via Datapoint
+        - 25.10.2022 - v3.5.0   Add New Parameters to popUpNotify  
         - 07.10.2022 - v3.5.0   Upgrade TFT 43
         - 07.10.2022 - v3.5.0   Add Backgroundcolor to Pages
         - 08.10.2022 - v3.5.0   Add Tilt-Slider and TILT_Functions (Open/Stop/Close) to Blinds/Cover/Shutter popUp
@@ -158,6 +200,8 @@
         - 08.11.2023 - v4.3.2.3  Fix Issues #1013 by laluz742 -> Parameter count mismatch: screensaver color
         - 08.11.2023 - v4.3.3    Upgrade TFT 53 / 4.3.3
         - 11.11.2023 - v4.3.3.1  Fix for Issues #1020 HandleHardwareButton buttonConfig.mode -> 'toggle' and 'set'
+        - 12.11.2023 - v4.3.3.2  Add autoCreateALias to cardUnlock
+        - 13.11.2023 - v4.3.3.3  if setOption = false, do not create autoAlias (Functional/Servicemenu) and Datapoints
         
 
         Todo:
