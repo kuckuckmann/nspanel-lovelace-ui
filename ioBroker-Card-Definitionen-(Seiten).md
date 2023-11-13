@@ -47,27 +47,57 @@ var Sprechender_eindeutiger_Seitenname = <PageGrid>
 };
 ```
 
-# cardUnlock (ab v4.0.0)  
+# cardUnlock (ab v4.3.3)  
 
 Die cardUnlock dient der Absicherung spezieller Seiten, die vor unbefugtem Zugriff (ggfs. Service Pages) geschützt werden sollen:  
 ![image](https://user-images.githubusercontent.com/102996011/221621287-55987efd-143b-4ad0-b7bb-d35d58436b12.png)  
 
 > Bei Benutzung der cardUnlock wird die Zielseite aus dem Page-Array herausgenommen. Die Target-Page sollte nicht als Top-Level-Page, sondern als Subpage definiert sein.  
 
-im Datenpunkt **0_userdata.0.NSPanel.X.Unlock.UnlockPin** kann eine PIN vergeben werden. Default wird diese PIN als **0000** definiert.  
+im Datenpunkt **0_userdata.0.NSPanel.Unlock.UnlockPin** kann eine PIN vergeben werden. Default wird diese PIN als **0000** definiert.  
 
 Erstellung des Alias:  
-Es wird muss ein Alias vom Gerätetyp "Feueralarm" wie folgt erstellt werden:  
-![image](https://user-images.githubusercontent.com/102996011/221623196-979596f5-ba5d-4268-870a-cef2d5616bad.png)  
+Die cardUnlock wird ab Version 4.3.3.3 mit einem Alias vom Gerätetyp "Feueralarm" automatisch erstellt. Die Erstellung des Alias und der zugehörigen Datenpunkte erfolgt, sobald die cardUnlock erstmals eingebunden und aufgerufen wird.  
 
-**Beispiel der Seitenerstellung:**  
+Unter 0_userdata.0... werden folgende Datenpunkte angelegt:
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/46f63c7c-154e-4c47-8caa-41bed30bcf70)
+Die angelegte PIN-Nummer lässt sich unter "Wert" von "0000" in (siehe Beispiel) z.B. "1234" ändern.
+
+Unter alias.0... wird folgender Alias automatisch angelegt:
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/39313dbb-3561-4f73-8352-63995ae7b8be)
+
+**Beispiel der Seitenerstellung:** (im Service-Menü enthalten)  
 ```typescript  
+//Level 0 (if service pages are used with cardUnlock)
 let Unlock_Service = <PageUnlock>
 {
     'type': 'cardUnlock',
     'heading': 'Service Pages',
     'useColor': true,
-    'items': [<PageItem>{ id: 'alias.0.Unlock', targetPage: 'NSPanel_Service' }]
+    'items': [<PageItem>{ id: 'alias.0.NSPanel.Unlock',
+                          targetPage: 'NSPanel_Service_SubPage',
+                          autoCreateALias: true }
+    ]
+};
+```
+
+siehe auch:
+https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC und 
+https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#page-beispiele
+
+Da die cardUnlock innerhalb eines "Smart Home" nur einmal erforderlich sein sollte, teilt sie die Datenpunkte mit allen weiteren NSPanels im Haus. Es ist darüber Hinaus jedoch auch möglich weitere Seiten über die cardUnlock nach dem gleichen Schema vor unbefugten Zugriffen zu schützen.
+
+Hierzu muss lediglich eine weitere "Page" vom Typ "cardUnlock" definiert werden und das Ziel (targetPage) auf eine "vorhandene subPage" zeigen:  
+```
+let Unlock_PageXYZ = <PageUnlock>
+{
+    'type': 'cardUnlock',
+    'heading': 'Titel der Page',
+    'useColor': true,
+    'items': [<PageItem>{ id: 'alias.0.NSPanel.Unlock',
+                          targetPage: 'Eine_weitere_Subpage',
+                          autoCreateALias: true }
+    ]
 };
 ```
 
