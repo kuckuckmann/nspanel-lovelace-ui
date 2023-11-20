@@ -166,11 +166,13 @@ Danach sollte im MQTT-Adapter unter Objekte ein Datenpunkt: „SmartHome/NSPanel
 
 Für den erfolgreichen Start des NSPanelTs.ts (siehe Punkt 10) TypeScript sind noch nachfolgende Einstellungen in der JavaScript-Adapter-Instanz erforderlich:  
   
-* Hinzufügen der npm Module: `moment` und `moment-parseformat`
+* Hinzufügen der npm Module: `moment` und `moment-parseformat` (Wird in nächststen Versionen durch dayjs ersetzt, ist aktuell aber noch erforderlich!)
+* Hinzufügen des npm Moduls: `dayjs`
 * Aktivierung der Option `Kommando "setObject" erlauben`
 * Aktivierung der Option `Kommando "exec" erlauben`
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e6477540-3330-49e6-b019-1960b2e39aab)  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/01c9bc15-f644-44e2-8c7e-b288bc68987b)
+
   
 ***  
 
