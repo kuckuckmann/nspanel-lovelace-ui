@@ -742,46 +742,46 @@ Mögliche Formatierungsoptionen (Link: [siehe auch dayjs](https://day.js.org/doc
       <td>The minute, 2-digits</td>
     </tr>
     <tr>
-       <td><code>s</code></td>
-       <td>0-59</td>
-       <td>The second</td>
+      <td><code>s</code></td>
+      <td>0-59</td>
+      <td>The second</td>
     </tr>
     <tr>
-       <td><code>ss</code></td>
-       <td>00-59</td>
-       <td>The second, 2-digits</td>
+      <td><code>ss</code></td>
+      <td>00-59</td>
+      <td>The second, 2-digits</td>
     </tr>
     <tr>
-  <td><code>SSS</code></td>
-  <td>000-999</td>
-  <td>The millisecond, 3-digits</td>
-  </tr>
-  <tr>
-  <td><code>Z</code></td>
-  <td>+05:00</td>
-  <td>The offset from UTC, ±HH:mm</td>
-  </tr>
-  <tr>
-  <td><code>ZZ</code></td>
-  <td>+0500</td>
-  <td>The offset from UTC, ±HHmm</td>
-  </tr>
-  <tr>
-  <td><code>A</code></td>
-  <td>AM PM</td>
-  <td></td>
-  </tr>
-  <tr>
-  <td><code>a</code></td>
-  <td>am pm</td>
-  <td></td>
-  </tr>
-  <tr>
-  <td>...</td>
-  <td>...</td>
-  <td>Other formats @&gt;&gt;AdvancedFormat</td>
-  </tr>
-</tbody>
+      <td><code>SSS</code></td>
+      <td>000-999</td>
+      <td>The millisecond, 3-digits</td>
+    </tr>
+    <tr>
+      <td><code>Z</code></td>
+      <td>+05:00</td>
+      <td>The offset from UTC, ±HH:mm</td>
+    </tr>
+    <tr>
+      <td><code>ZZ</code></td>
+      <td>+0500</td>
+      <td>The offset from UTC, ±HHmm</td>
+    </tr>
+    <tr>
+      <td><code>A</code></td>
+      <td>AM PM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>a</code></td>
+      <td>am pm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>Other formats @&gt;&gt;AdvancedFormat</td>
+    </tr>
+  </tbody>
 </table>
 
 
