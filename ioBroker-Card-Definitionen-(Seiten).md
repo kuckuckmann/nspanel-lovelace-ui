@@ -108,15 +108,17 @@ let Unlock_PageXYZ = <PageUnlock>
 
 ```typescript  
 let Alarmseite = <PageAlarm>
-    {
-        "type": "cardAlarm",
-        "heading": "Alarm",
-        "useColor": true,
-        "subPage": false,
-        "items": [
-            <PageItem>{ id: 'alias.0.NSPanel.Alarm' }
-        ]
-    };
+{
+    "type": "cardAlarm",
+    "heading": "Alarm",
+    "useColor": true,
+    "subPage": false,
+    "items": [
+         <PageItem>{ id: 'alias.0.NSPanel.Alarm' }
+                     actionStringArray: ['Vollschhutz','Zuhause','Nacht','Besuch','Ausschalten'], // Optional - ansonsten aus Sprachdatei
+                     autoCreateALias: true }
+         ]
+};
 ```
 # cardMedia v2.0 (ab Release v3.9.0)
 ![image](https://user-images.githubusercontent.com/102996011/209344233-c7d700c4-eb87-4c51-9441-b51368c88096.png)
