@@ -206,7 +206,13 @@
         - 13.11.2023 - v4.3.3.3  if setOption = false, do not create autoAlias (Functional/Servicemenu) and Datapoints
         - 15.11.2023 - v4.3.3.4  New Service Page -> ioBroker Info 
         - 16.11.2023 - v4.3.3.5  Add Multilingualism to Service Menu (39 languages)  
-        - 17.11.2023 - v4.3.3.5  Add Multilingualism to cardQR, popupFan, popupTimer (39 languages)  
+        - 17.11.2023 - v4.3.3.5  Add Multilingualism to cardQR, popupFan, popupTimer (39 languages) 
+        - 18.11.2023 - v4.3.3.6  Add autoCreateALias to PageAlarm  
+        - 20.11.2023 - v4.3.3.6  Add actionStringArray to PageAlarm
+        - 20.11.2023 - v4.3.3.6  Add Multilingualism to cardAlarm (39 languages)
+        - 20.11.2023 - v4.3.3.7  Add Multilingualism to cardMedia (39 languages)
+        - 20.11.2023 - v4.3.3.8  Add Method dayjs (Multilingualism)
+        - 20.11.2023 - v4.3.3.9  Add ScreensaverEntityOnColor, ...OffColor, ...OnText, ...OffText
 
         Todo:
         - XX.XX.XXXX - v4.4.0    Change the bottomScreensaverEntity (rolling) if more than 6 entries are defined	
