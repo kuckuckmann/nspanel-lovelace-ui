@@ -1,5 +1,17 @@
 **ioBroker Changelog (TypeScript)**  
   
+# v4.3.3.9. 
+
+  | - 18.11.2023 - v4.3.3.6  Add autoCreateALias to PageAlarm  
+  | - 20.11.2023 - v4.3.3.6  Add actionStringArray to PageAlarm  
+  | - 20.11.2023 - v4.3.3.6  Add Multilingualism to cardAlarm (39 languages)  
+  | - 20.11.2023 - v4.3.3.7  Add Multilingualism to cardMedia (39 languages)  
+  | - 20.11.2023 - v4.3.3.8  Add Method dayjs (Multilingualism)  
+  | - 20.11.2023 - v4.3.3.9  Add ScreensaverEntityOnColor, ...OffColor, ...OnText, ...OffText  
+  
+[Forum Link](https://forum.iobroker.net/post/1083729)  
+****
+
 # v4.3.3.5
 ![1700223821684-0fe40ec2-e9e4-4505-855f-6684703d9885-image](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/65c4b641-3775-4f7c-a591-d1bd16dfe316)
 
