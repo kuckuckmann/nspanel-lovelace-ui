@@ -148,7 +148,7 @@ Post [1087](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1087), [1265](
 Konfigurationsskript **NsPanelTs.ts** mindestens in der Version: _04.09.2022 - V3.3.1 - Überarbeitung und BugFix für cardAlarm_
 
 * **Im IoBroker**  
-Im IoBroker wird unter **0_userdata.0.NSPanel.Alarm** die Datenpunkte **AlarmPin**, **AlarmState**, **AlarmType**, **PANEL** und **PIN_Failed** benötigt. Diese werden i.d.R. generisch erzeugt (Typ String), sobald der Code der Alarm Page das erste Mal geladen wird.
+Im IoBroker wird unter **0_userdata.0.NSPanel.Alarm** die Datenpunkte **AlarmPin**, **AlarmState**, **AlarmType**, **PANEL** und **PIN_Failed** benötigt. Diese werden i.d.R. generisch erzeugt, wenn im PageItem der Parameter 'autoCreateALias: true' gesetzt ist. Sobald der Code der Alarm Page das erste Mal geladen wird, werden die Datenpunkte angelegt.
 
    
 ![Bildschirmfoto 2023-04-25 um 10 11 30](https://user-images.githubusercontent.com/101348966/234215552-92739704-bf84-4792-bccb-f130ec111fd4.png)
@@ -157,7 +157,7 @@ Im IoBroker wird unter **0_userdata.0.NSPanel.Alarm** die Datenpunkte **AlarmPin
 
 
 * **Aliase**:  
-Die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** werden in einem Alias vom Typ Feueralarm im Gerätemanager oder Alias Adapter angelegt und dieser Alias wird dann im Konfigurationsskript auf der Alarm-Page verwendet.
+Die vier Datenpunkte **AlarmPin**, **AlarmState**, **AlarmType** und **Pin_Failed** werden in einem Alias vom Typ Feueralarm im Gerätemanager oder Alias Adapter angelegt und dieser Alias wird dann im Konfigurationsskript auf der Alarm-Page verwendet.
 
   ![image](https://user-images.githubusercontent.com/99131208/188514578-43f08178-b8f0-4d09-8e76-02cbe55d5557.png)
 
@@ -166,6 +166,7 @@ Die drei Datenpunkte **AlarmPin**, **AlarmState** und **AlarmType** werden in ei
   PIN = 0_userdata.0.NSXXXX.Alarm.PIN  
   TYPE = 0_userdata.0.NSXXXX.Alarm.AlarmType  
   PANEL = 0_userdata.0.NSXXXX.Alarm.PANEL  
+  PIN_Failed = 0_userdata.0.NSXXXX.Alarm.PIN_Failed
   
   Falls ein Wert im Alias nicht vorhanden ist, dann separat hinzufügen
 
@@ -183,19 +184,27 @@ const NSPanel_Alarm_Path = '0_userdata.0.NSPanel.';
 **Beispiel**:  
   ```typescript  
   let Alarmseite = <PageAlarm>
-    {
+        {
         "type": "cardAlarm",
         "heading": "Alarm",
         "useColor": true,
         "subPage": false,
         "items": [
-            <PageItem>{ id: 'alias.0.NSPanel.Alarm' }
-        ]
-    };
+            <PageItem>{ id: 'alias.0.NSPanel.Alarm',
+                        actionStringArray: ['Vollschutz','Zuhause','Nacht','Besuch','Ausschalten'],
+                        autoCreateALias: true }
+                 ]
+       }
   ``` 
-
-
-* **Blockly Testskript**  
+  
+**Parameter:** 
+* id -> Pfad zum Alias Datenpunkt  
+* actionStringArray -> Möglichkeit eigene Texte zu definieren für die Schutzzustände A1 bis A4 und Text für Deaktivierung  
+                                Wenn das Array nicht definiert wird, ziehen die Standardtexte in der eingestellten Sprache.  
+* autoCreateALias -> bei True werden alle Datenpunkte durch das Script angelegt               
+  
+  
+**Blockly Testskript**  
 Nachfolgend ein kurzes Emulationsskript für die Weiterverarbeitung. Diese Logik sollte auch in dein eigenes externes Alarm-Skript übernommen werden.
 
   ![image](https://user-images.githubusercontent.com/99131208/188735860-880e0a81-407e-454e-b7d2-05cf8f57acfb.png)  
