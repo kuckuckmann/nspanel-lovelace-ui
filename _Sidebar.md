@@ -42,7 +42,7 @@
    <ul>
 		<li><a href="ioBroker---Basisinstallation#step-f%C3%BCr-step---anleitung">Step für Step - Anleitung</a></li>
 		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Starthilfe-FAQ">NSPanel Starthilfe FAQ</a></li>
-                <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Starthilfe-FAQ">NSPanelTS.ts Update</a></li>
+                <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Starthilfe-FAQ#hilfe-bei-update--upgrade">NSPanelTS.ts Update</a></li>
 		<li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Nextion-Editor">NSPanel Emulator</a></li>
    </ul>
 </details>
