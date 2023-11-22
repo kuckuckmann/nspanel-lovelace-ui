@@ -6,8 +6,9 @@ Variante für ein Update der NSPanelTS.ts
 
 1. aktuelle Script anhalten
 2. unter [diesen Link](https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts) das aktuelle Script kopieren
-3. ein neues TS Script anlegen, als Name nutze ich immer NsPanel+Version z.B. NSPanel43310
-4. diese Parameter müssen als erstes angepasst werden 
+3. ein neues TS Script anlegen, als Name nutze ich immer NSPanel+Version z.B. NSPanel43310
+4. diese Parameter müssen als erstes angepasst werden  
+```typescript
 /***** 1. Tasmota-Config *****/
 
     // Anpassen an die Verzeichnisse der MQTT-Adapter-Instanz
@@ -18,21 +19,23 @@ Variante für ein Update der NSPanelTS.ts
 
     // Anpassen an das jeweilige NSPanel
     const NSPanel_Path = '0_userdata.0.NSPanel.1.';
-
+```
 
 5. jetzt starten wir zum erstenmal die neue Script Version, sie sollte ohne Fehlermeldung starten.
-6. jetzt kopieren wir die eigenen Seiten aus den alten Script, vorher wird das neue Script gestopt
-    Die eigenen Seiten werden zwischen diesen zwei Zeilen eingefügt.    
-    
-    //-- Anfang für eigene Seiten -- z.T. selbstdefinierte Aliase erforderlich ----------------
+6. jetzt kopieren wir die eigenen Seiten aus den alten Script, vorher wird das neue Script gestoppt  
+    Die eigenen Seiten werden zwischen diesen zwei Zeilen eingefügt.      
+```typescript    
+//-- Anfang für eigene Seiten -- z.T. selbstdefinierte Aliase erforderlich ----------------
   //-- siehe https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele
 
 
 
 //-- ENDE für eigene Seiten -- z.T. selbstdefinierte Aliase erforderlich -------------------------
+```  
     
-    dann müssen die Pages auch in diesen Bereich eingefügt werden. Hauptseiten kommen zu den pages und die Unterseiten zu den subPages
+dann müssen die Pages auch in diesen Bereich eingefügt werden. Hauptseiten kommen zu den pages und die Unterseiten zu den subPages
     
+```typescript
     // Seiteneinteilung / Page division
     // Hauptseiten / Mainpages
     pages: [
@@ -46,19 +49,19 @@ Variante für ein Update der NSPanelTS.ts
 	    
                 NSPanel_Service_SubPage,                //Auto-Alias Service Page (only used with cardUnlock)
                 NSPanel_Infos,                          //Auto-Alias Service Page
-
+```
 
 7. das Script starten und prüfen auf Fehlermeldungen, danach wird es wieder gestop.
 8. jetzt kopieren wir noch die ScreensaverEntity und erstzen die im neuen Script
 
 9. das Script wieder starten und es sollte jetzt wieder wie früher sein.
-
   
-
+****  
+   
 Seht in den [Changelogs](https://github.com/joBr99/nspanel-lovelace-ui/wiki/Changelog) nach, ob es Änderungen im Config-Teil gegeben hat, ggf. müsst ihr eure Pages oder sonstigen Einstellungen anpassen. Prüft, ob das neue Script eine andere TFT-Firmware benötig bzw. einen anderen Berry-Treiber. Diese Info findet ihr in der zweiten Zeile des Scripts.  
- 
+  
 Deaktiviert das alte Script und behaltet es als Fallback.  
-
+  
 Beim Start des neuen Script kann es eventuell zu Warnungen im Log kommen, wenn neue Datenpunkte angelegt werden. Startet das Script nochmal neu, dann sollte es ohne Warnungen starten.  
 
 Eine neue TFT-Firmware installiert ihr über die Console in Tasmota  
