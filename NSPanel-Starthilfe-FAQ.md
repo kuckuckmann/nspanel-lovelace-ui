@@ -5,7 +5,7 @@ Starthilfe - Die häufigsten User-Fehler
 Variante für ein Update der NSPanelTS.ts  
 
 1. aktuelle Script anhalten
-2. unter diesen Link das aktuelle Script kopieren
+2. unter [diesen Link](https://raw.githubusercontent.com/joBr99/nspanel-lovelace-ui/main/ioBroker/NsPanelTs.ts) das aktuelle Script kopieren
 3. ein neues TS Script anlegen, als Name nutze ich immer NsPanel+Version z.B. NSPanel43310
 4. diese Parameter müssen als erstes angepasst werden 
 /***** 1. Tasmota-Config *****/
