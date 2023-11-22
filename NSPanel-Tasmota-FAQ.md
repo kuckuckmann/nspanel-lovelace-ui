@@ -714,10 +714,10 @@ Direkt Link zum Download [Partition Wizard Tool](https://raw.githubusercontent.c
 
 ### 3.2. Fehler bei FlashNextion -> Type-Error unsupported operand type(s) 
 
-BRY: Exception> 'type_error' - unsupported operand type(s) for <: 'nil' and 'int'
+`BRY: Exception> 'type_error' - unsupported operand type(s) for <: 'nil' and 'int'`
 
 Tritt selten auf wenn eine feste IP vergeben wurde. Lässt sich lösen in dem die IP kurzeitig über den DHCP bezogen wird: 
 
-backlog savedata 1; ipaddress1 0.0.0.0; savedata 0; restart 1
+`backlog savedata 1; ipaddress1 0.0.0.0; savedata 0; restart 1`
 
 Danach kann die IP wieder fest vergeben werden.
