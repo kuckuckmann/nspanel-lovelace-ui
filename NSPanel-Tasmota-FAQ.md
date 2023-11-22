@@ -711,3 +711,13 @@ Nachher
   
 Auf der [Tasmota Seite](https://tasmota.github.io/docs/Tasmota-Application/#partition-management) ist eine Kurzbeschreibung und ihr könnt dort den Wizards downloaden.  
 Direkt Link zum Download [Partition Wizard Tool](https://raw.githubusercontent.com/arendst/Tasmota/development/tasmota/berry/modules/Partition_Wizard.tapp)
+
+### 3.2. Fehler bei FlashNextion -> Type-Error unsupported operand type(s) 
+
+BRY: Exception> 'type_error' - unsupported operand type(s) for <: 'nil' and 'int'
+
+Tritt selten auf wenn eine feste IP vergeben wurde. Lässt sich lösen in dem die IP kurzeitig über den DHCP bezogen wird: 
+
+backlog savedata 1; ipaddress1 0.0.0.0; savedata 0; restart 1
+
+Danach kann die IP wieder fest vergeben werden.
