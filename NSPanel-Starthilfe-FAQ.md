@@ -2,20 +2,57 @@ Starthilfe - Die häufigsten User-Fehler
   
 ## Hilfe bei Update / Upgrade   
 
-Bei einer neuen Version des Scripts solltet ihr euch die Datei [NsPanelTs_without_Examples.ts](https://github.com/joBr99/nspanel-lovelace-ui/blob/main/ioBroker/NsPanelTs_without_Examples.ts) als RAW runterladen. Erstellt ein neues Typescript und kopiert das RAW dort hinein.  
+Variante für ein Update der NSPanelTS.ts  
 
-folgende Zeilen im Script müssen definitiv angepasst werden:  
-`const NSPanel_Path = '0_userdata.0.NSPanel.1.';       // Anpassen an das jewilige NSPanel`  
-`panelRecvTopic: 'mqtt.0.SmartHome.NSPanel_1.tele.RESULT',       // Bitte anpassen`  
-`panelSendTopic: 'mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend',   // Bitte anpassen`  
+1. aktuelle Script anhalten
+2. unter diesen Link das aktuelle Script kopieren
+3. ein neues TS Script anlegen, als Name nutze ich immer NsPanel+Version z.B. NSPanel43310
+4. diese Parameter müssen als erstes angepasst werden 
+/***** 1. Tasmota-Config *****/
 
-Für User die den Wetter - Adapter "DasWetter.0." nutzen, müssen im in der Config im Bereich  
-`bottomScreensaverEntity :  
-        [
-            // bottomScreensaverEntity 1
-            {
-                ScreensaverEntity: 'accuweather.0.Daily.Day1.Sunrise',`  
-alle 4 Datenpunkte auf den Adapter umstellen.  
+    // Anpassen an die Verzeichnisse der MQTT-Adapter-Instanz
+    const NSPanelReceiveTopic: string = 'mqtt.0.SmartHome.NSPanel_1.tele.RESULT';
+    const NSPanelSendTopic: string = 'mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend';
+
+/***** 2. Verzeichnisse in 0_userdata.0... *****/
+
+    // Anpassen an das jeweilige NSPanel
+    const NSPanel_Path = '0_userdata.0.NSPanel.1.';
+
+
+5. jetzt starten wir zum erstenmal die neue Script Version, sie sollte ohne Fehlermeldung starten.
+6. jetzt kopieren wir die eigenen Seiten aus den alten Script, vorher wird das neue Script gestopt
+    Die eigenen Seiten werden zwischen diesen zwei Zeilen eingefügt.    
+    
+    //-- Anfang für eigene Seiten -- z.T. selbstdefinierte Aliase erforderlich ----------------
+  //-- siehe https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele
+
+
+
+//-- ENDE für eigene Seiten -- z.T. selbstdefinierte Aliase erforderlich -------------------------
+    
+    dann müssen die Pages auch in diesen Bereich eingefügt werden. Hauptseiten kommen zu den pages und die Unterseiten zu den subPages
+    
+    // Seiteneinteilung / Page division
+    // Hauptseiten / Mainpages
+    pages: [
+ 
+        NSPanel_Service         	//Auto-Alias Service Page
+	    //Unlock_Service            //Auto-Alias Service Page (Service Pages used with cardUnlock)
+    ],
+
+    // Unterseiten / Subpages
+    subPages: [
+	    
+                NSPanel_Service_SubPage,                //Auto-Alias Service Page (only used with cardUnlock)
+                NSPanel_Infos,                          //Auto-Alias Service Page
+
+
+7. das Script starten und prüfen auf Fehlermeldungen, danach wird es wieder gestop.
+8. jetzt kopieren wir noch die ScreensaverEntity und erstzen die im neuen Script
+
+9. das Script wieder starten und es sollte jetzt wieder wie früher sein.
+
   
 
 Seht in den [Changelogs](https://github.com/joBr99/nspanel-lovelace-ui/wiki/Changelog) nach, ob es Änderungen im Config-Teil gegeben hat, ggf. müsst ihr eure Pages oder sonstigen Einstellungen anpassen. Prüft, ob das neue Script eine andere TFT-Firmware benötig bzw. einen anderen Berry-Treiber. Diese Info findet ihr in der zweiten Zeile des Scripts.  
