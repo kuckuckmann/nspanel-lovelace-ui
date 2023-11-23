@@ -372,16 +372,24 @@ Darunter dann 4 generische Einträge event1 - event4 vom **Typ Warnung**.
 * JS / Blockly:
 Es steht für die Umsetzung / Aufbereitung der Kalenderdaten nach NSPanel ein JS und ein Blockly zur Verfügung. Man benötigt nur eines davon. Es spricht aber nichts dagegen, beide mal zu testen ;-)
 
-Java Skript (by @TT-Tom):
-
-1 = Hier muss der Pfad zum ICal Adapter zum Punkt **ical.0.data.table** eigestellt werden. Achtet auf die Instanznummer beim Adapter  
-2 = Muss nur angepasst werden, wenn Eure Datenpunkte nicht unter **0_userdata.0.Abfallkalender.** liegen (jede Stelle im Skript)  
-2.1 = Script prüft die Existenz der Datenpunkte unter **0_userdata.0** und legt sie ggf. selber an    
-3 = Die Bezeichnungen der Abfallbehälter in Eurem Kalender. Die Namen müssen passen, das mit das Parsen funktioniert. Tipp: Die Ziffern bei "setze Color auf ....." sind die Farbcodierungen im Dezimalsystem.  
-4 = Zeichen links vom String abziehen, wenn vor dem Eventname noch Text steht z.B. Strassenname; Standard = 0.  
+Typesript (by @TT-Tom):
   
-![image](https://user-images.githubusercontent.com/99131208/188730795-357f1a2d-3bf6-4808-b394-093d3f4015a8.png)  
-zum Script von @TT-Tom [tt-tom17/myScript](https://github.com/tt-tom17/MyScripts/tree/main/Sonoff_NSPanel)
+Wenn das Script die Events trotz richten Pfadeinstellungen nicht findet, setzt den Parameter DEBUG auf True, dann bekommt ihr mehr Infos vom Script und könnt die Fehler besser erkennen. Meistens liegt es an der Schreibweise vom Event (Leerzeichen oder zu viele Zeichen).  
+```typescrpit
+const idAbfalliCal: string = 'ical.0'; // iCal Instanz zum Abfallkalender
+const idUserdataAbfallVerzeichnis: string = '0_userdata.0.Abfallkalender'; // Name des Datenpunktverzeichnis unter 0_userdata.0 -> Strandard = 0_userdata.0.Abfallkalender
+const idAliasPanelVerzeichnis: string = 'alias.0.NSPanel'; //Name PanelVerzeichnis unter alias.0. Standard = alias.0.NSPanel.1
+const idAliasAbfallVerzeichnis: string = 'Abfall'; //Name Verzeichnis unterhalb der idPanelverzeichnis  Standard = Abfall
+
+const idZeichenLoeschen: number = 14; // x Zeichen links vom String abziehen, wenn vor dem Eventname noch Text steht z.B. Strassenname; Standard = 0
+const idRestmuellName: string = 'Hausmüll'; // Schwarze Tonne
+const idWertstoffName: string = 'Gelber Sack'; // Gelbe Tonne / Sack
+const idPappePapierName: string = 'Papier';  // Blaue Tonne
+const idBioabfaelleName: string = 'Biomüll'; // Braune Tonne
+
+const Debug: boolean = false;
+
+```
 
 Blockly Skript (by @Armilar):  
   
@@ -455,7 +463,7 @@ var WLAN = <PageQR>
     "subPage": false,
     "parent": WLAN,
     "items": [
-		<PageItem>{ id: "alias.0.NPanel_EMU.TestGuestWifi" }
+		<PageItem>{ id: "alias.0.NPanel_1.TestGuestWifi" }
 	
 	]
 };
