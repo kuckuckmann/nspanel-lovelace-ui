@@ -339,7 +339,7 @@ Die Basis für meine Dokumentation ist ein Google Kalender, der dann via einem I
 * **Voraussetzungen**
 --> Abfallkalender des Entsorgers / der Entsorger  
 --> ICal Adapter  
---> @Armilar s Skript zur Verarbeitung  
+--> Skript oder Blockly zur Verarbeitung der Kalenderdaten  
 --> Datenpunkte  
 
 
@@ -369,13 +369,14 @@ Darunter dann 4 generische Einträge event1 - event4 vom **Typ Warnung**.
 
 
 
-* JS / Blockly:
-Es steht für die Umsetzung / Aufbereitung der Kalenderdaten nach NSPanel ein JS und ein Blockly zur Verfügung. Man benötigt nur eines davon. Es spricht aber nichts dagegen, beide mal zu testen ;-)
+* Script / Blockly:
+Es steht für die Umsetzung / Aufbereitung der Kalenderdaten nach NSPanel ein Typescript und ein Blockly zur Verfügung. Man benötigt nur eines davon. Es spricht aber nichts dagegen, beide mal zu testen ;-)
 
 Typesript (by @TT-Tom):
   
+Das Script legt alle benötigten Datenpunkte und Alias automatisch an.  
 Wenn das Script die Events trotz richten Pfadeinstellungen nicht findet, setzt den Parameter DEBUG auf True, dann bekommt ihr mehr Infos vom Script und könnt die Fehler besser erkennen. Meistens liegt es an der Schreibweise vom Event (Leerzeichen oder zu viele Zeichen).  
-```typescrpit
+```typescript
 const idAbfalliCal: string = 'ical.0'; // iCal Instanz zum Abfallkalender
 const idUserdataAbfallVerzeichnis: string = '0_userdata.0.Abfallkalender'; // Name des Datenpunktverzeichnis unter 0_userdata.0 -> Strandard = 0_userdata.0.Abfallkalender
 const idAliasPanelVerzeichnis: string = 'alias.0.NSPanel'; //Name PanelVerzeichnis unter alias.0. Standard = alias.0.NSPanel.1
@@ -390,7 +391,9 @@ const idBioabfaelleName: string = 'Biomüll'; // Braune Tonne
 const Debug: boolean = false;
 
 ```
-
+[Zum Script](https://github.com/tt-tom17/MyScripts/blob/main/Sonoff_NSPanel/Abfall_to%20NSPanel.ts)  
+  
+  
 Blockly Skript (by @Armilar):  
   
 1 = Hier muss der Pfad zum ICal Adapter zum Punkt **ical.0.data.table** eigestellt werden. Achtet auf die Instanznummer beim Adapter  
@@ -419,7 +422,7 @@ let Abfall = <PageEntities>
         <PageItem>{ id: AliasPath + 'Abfall.event3',icon: 'trash-can'},  
         <PageItem>{ id: AliasPath + 'Abfall.event4',icon: 'trash-can'}  
     ]
-};
+}
 ```
 
 * **Fazit**:
