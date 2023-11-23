@@ -59,16 +59,23 @@ dann müssen die Pages auch in diesen Bereich eingefügt werden. Hauptseiten kom
 ****  
    
 Seht in den [Changelogs](https://github.com/joBr99/nspanel-lovelace-ui/wiki/Changelog) nach, ob es Änderungen im Config-Teil gegeben hat, ggf. müsst ihr eure Pages oder sonstigen Einstellungen anpassen. Prüft, ob das neue Script eine andere TFT-Firmware benötig bzw. einen anderen Berry-Treiber. Diese Info findet ihr in der zweiten Zeile des Scripts.  
-  
+Wenn es zu diesen Änderungen kommt, weisen wir im Forum auch explizit darauf hin.  
+    
 Deaktiviert das alte Script und behaltet es als Fallback.  
   
-Beim Start des neuen Script kann es eventuell zu Warnungen im Log kommen, wenn neue Datenpunkte angelegt werden. Startet das Script nochmal neu, dann sollte es ohne Warnungen starten.  
-
-Eine neue TFT-Firmware installiert ihr über die Console in Tasmota  
-`FlashNextion http://nspanel.pky.eu/lovelace-ui/github/nspanel-vX.X.X.tft `  
-Welche Version grade aktuell zum Script passt, findet ihr im Script.  
+Beim Start des neuen Script kann es eventuell zu Warnungen im Log kommen, wenn neue Datenpunkte angelegt werden. Startet das Script nochmal neu, dann sollte es ohne Warnungen starten.   
    
-## "Waiting for Content" - es geht nicht weiter  
+## "Waiting for Content" - es geht nicht weiter 
+  
+Hier liegt der Fehler sehr oft in den Einstellungen zur MQTT - Verbindung.  
+* Prüft als erstes die Einstellungen im MQTT - Adapter, vor allem der Port, dieser darf nicht doppelt genutzt werden, z.B. durch einen zweiten Adapter. Dazu gibt es im Script auch eine Funktion, die ein Portscan durchführt und das Ergebnis im Log ausgibt. Diesen Scan könnt ihr über das Servicemenü am Panel aktivieren (Einstellungen -> Script -> Port-Check) oder direkt im ioBroker unter 0_userdata.0.NSPanel.X.Config.MQTT.portCheck auf True setzen. Danach das Script neu starten und das Log auswerten.  
+* Vergleicht die Pfade im ioBroker vom MQTT - Adapter mit den Einstellungen im Script unter.  
+```typescript
+    const NSPanelReceiveTopic: string = 'mqtt.0.SmartHome.NSPanel_1.tele.RESULT';
+    const NSPanelSendTopic: string = 'mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend';
+```  
+Weiter unten findet ihr nochmal die Einstellung vom MQTT-Adapter und Tasmota.  
+  
 ## Berry-Driver nicht oder falsch installiert
 
 ## MQTT-Adapter Einstellungen  
@@ -86,10 +93,10 @@ Bilder sagen meistens mehr als Worte. Wichtig ist, wenn User und Passwort vergeb
   
 * Host -> IP-Adresse vom ioBroker
 * Port -> der Port welcher im MQTT-Adapter eingestellt wurde
-* Client -> Name der in der Connect Meldung Von MQTT-Adapter angezeigt wird (mqtt.0.info.connection)  
+* Client -> Name der in der Connect Meldung vom MQTT-Adapter angezeigt wird (mqtt.0.info.connection)  
 * User, Password -> siehe MQTT-Adapter  
 * topic -> Name für die Variable, diese wird für die Hierarchie im MQTT genutzt 
-* full topic -> für eine sinnvolle Hierarchie sollte nicht laut Vorgabe %prefix%/%topic% sondern umgekehrt.  
+* full topic -> für eine sinnvolle Hierarchie sollte nicht die Vorgabe %prefix%/%topic% nutzen, sondern umgekehrt. Seht euch die beiden Bilder unten an.  
 
 ***
 
