@@ -213,6 +213,7 @@
         - 20.11.2023 - v4.3.3.7  Add Multilingualism to cardMedia (39 languages)
         - 20.11.2023 - v4.3.3.8  Add Method dayjs (Multilingualism)
         - 20.11.2023 - v4.3.3.9  Add ScreensaverEntityOnColor, ...OffColor, ...OnText, ...OffText
+        - 21.11.2023 - v4.3.3.10 Code optimization
 
         Todo:
         - XX.XX.XXXX - v4.4.0    Change the bottomScreensaverEntity (rolling) if more than 6 entries are defined	
