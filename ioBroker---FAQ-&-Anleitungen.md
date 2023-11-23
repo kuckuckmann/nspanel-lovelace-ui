@@ -145,7 +145,7 @@ Hintergrund: Die Buttons geben keinen definierten Page-Index zurück, daher werd
 Post [1087](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1087), [1265](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1265)+[1270](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1270) im ioBroker Forum.  
 
 * **Voraussetzung**:  
-Konfigurationsskript **NsPanelTs.ts** mindestens in der Version: _04.09.2022 - V3.3.1 - Überarbeitung und BugFix für cardAlarm_
+Konfigurationsskript **NsPanelTs.ts** mindestens in der Version: _Version 4.3.3.9_   
 
 * **Im IoBroker**  
 Im IoBroker wird unter **0_userdata.0.NSPanel.Alarm** die Datenpunkte **AlarmPin**, **AlarmState**, **AlarmType**, **PANEL** und **PIN_Failed** benötigt. Diese werden i.d.R. generisch erzeugt, wenn im PageItem der Parameter 'autoCreateALias: true' gesetzt ist. Sobald der Code der Alarm Page das erste Mal geladen wird, werden die Datenpunkte angelegt.
