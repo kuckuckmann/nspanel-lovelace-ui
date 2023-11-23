@@ -465,7 +465,7 @@ let WLAN = <PageQR>
     "useColor": true,
     "subPage": false,
     "items": [
-		<PageItem>{ id: "alias.0.NPanel_1.TestGuestWifi" }
+		<PageItem>{ id: "alias.0.NPanel.1.GuestWifi" }
 	
 	]
 };
