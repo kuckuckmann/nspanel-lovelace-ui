@@ -458,13 +458,12 @@ Für den erstellten Datenpunkt nun einen Alias vom Typ Info anlegen.
 Im Script müsst ihr im Konfigurationsbereich nun eine PageQR hinzufügen. 
 
 ```typescript  
-var WLAN = <PageQR> 
+let WLAN = <PageQR> 
 {
     "type": "cardQR",
     "heading": "Gäste WLAN",
     "useColor": true,
     "subPage": false,
-    "parent": WLAN,
     "items": [
 		<PageItem>{ id: "alias.0.NPanel_1.TestGuestWifi" }
 	
