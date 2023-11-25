@@ -983,7 +983,22 @@ let CardLChartExample = <PageChart>
 **CardPower**  
   
 ![Nextion_Editor_9AYbpowjZS](https://user-images.githubusercontent.com/102996011/194641145-660e1218-f559-4f25-83ca-984cc677e0d8.gif)  
-  
+
+**Seiten-Variable für die cardPower:**
+```typescript  
+let CardPower = <PagePower>
+{
+    'type': 'cardPower',
+    'heading': 'Energiefluss',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel.cardPower',
+                    alwaysOnDisplay: true }
+     ]
+};
+```  
+
+**cardPower im Demomodus**
 ```typescript  
 let CardPowerExample = <PagePower>
 {
@@ -991,12 +1006,10 @@ let CardPowerExample = <PagePower>
     'heading': 'cardPower Emulator',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel.cardPower',
-      //<PageItem>{ ,  // aktivieren für Demomodus der PowerCard, dafür ersten PageItem auskommentieren
-                    alwaysOnDisplay: true }
+         <PageItem>{  } 
      ]
 };
-```  
+``` 
 </details>  
   
 ***  
