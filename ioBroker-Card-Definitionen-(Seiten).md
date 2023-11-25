@@ -322,19 +322,30 @@ stepValue: Schrittgröße der Temperaturänderungen (Beispiel: 0,5°C Schritte e
 Beispiel: Erstellung des "PageItem" und Alias vom Typ "Info"
 
 ```typescript  
-var CardPowerExample = <PagePower>
+let CardPower = <PagePower>
 {
-    "type": "cardPower",
-    "heading": "cardPower Emulator",
-    "useColor": true,
-    "subPage": false,
-    "parent": undefined,
-    "items": [
-//        <PageItem>{  }, //Demomode
-        <PageItem>{ id: "alias.0.NSPanel_1.Power.PowerCard" },
+    'type': 'cardPower',
+    'heading': 'Energiefluss',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel.cardPower', 
+                    alwaysOnDisplay: true }
     ]
 };
 ```  
+
+Oder im Demo-Modus ohne Alias
+```typescript  
+let CardPowerExample = <PagePower>
+{
+    'type': 'cardPower',
+    'heading': 'Energiefluss',
+    'useColor': true,
+    'items': [
+        <PageItem>{  }
+    ]
+};
+```
 
 
 **Parameter:**  
