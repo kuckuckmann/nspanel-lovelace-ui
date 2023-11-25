@@ -320,7 +320,21 @@ stepValue: Schrittgröße der Temperaturänderungen (Beispiel: 0,5°C Schritte e
 ![Nextion_Editor_9AYbpowjZS](https://user-images.githubusercontent.com/102996011/194641145-660e1218-f559-4f25-83ca-984cc677e0d8.gif)  
 
 Beispiel: Erstellung des "PageItem" und Alias vom Typ "Info"
-
+  
+ohne `alwaysOnDisplay` Parameter (Nach dem Öffnen wird der Screensaver nach eingestellter Zeit aufgeschaltet):
+```typescript  
+let CardPower = <PagePower>
+{
+    'type': 'cardPower',
+    'heading': 'Energiefluss',
+    'useColor': true,
+    'items': [
+        <PageItem>{ id: 'alias.0.NSPanel.cardPower' }
+    ]
+};
+``` 
+  
+mit `alwaysOnDisplay` Parameter (Die Seite fällt nicht in den Screensaver-Mode, bis auf eine andere Seite navigiert wird)
 ```typescript  
 let CardPower = <PagePower>
 {
