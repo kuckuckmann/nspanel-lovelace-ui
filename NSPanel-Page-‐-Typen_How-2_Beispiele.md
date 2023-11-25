@@ -991,9 +991,10 @@ let CardPowerExample = <PagePower>
     'heading': 'cardPower Emulator',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.Power.PowerCard' },
-//      <PageItem>{ }  // aktivieren für Demomodus der PowerCard, dafür ersten PageItem auskommentieren
-    ]
+        <PageItem>{ id: 'alias.0.NSPanel.cardPower',
+      //<PageItem>{ ,  // aktivieren für Demomodus der PowerCard, dafür ersten PageItem auskommentieren
+                    alwaysOnDisplay: true }
+     ]
 };
 ```  
 </details>  
