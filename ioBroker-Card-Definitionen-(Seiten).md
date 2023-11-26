@@ -104,7 +104,7 @@ let Unlock_PageXYZ = <PageUnlock>
 # cardAlarm
 ![image](https://user-images.githubusercontent.com/102996011/190120272-82c6b418-c9dc-4338-a0a3-53da8bec0bac.png)
 
-(Erstellung des alias.0.Alarm siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
+(Erstellung des cardAlarm siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#2-alarm-page))  
 
 ```typescript  
 let Alarmseite = <PageAlarm>
