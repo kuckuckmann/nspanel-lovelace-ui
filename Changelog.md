@@ -1,6 +1,28 @@
 **ioBroker Changelog (TypeScript)**  
+
+# v4.3.3.13 
+
+![V43313](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/89251a3d-e53c-44f2-8c9d-266e0818c976)
+
   
-# v4.3.3.9. 
+[Forum Link](https://forum.iobroker.net/post/1086744)  
+****
+
+# v4.3.3.12 
+
+![V43312](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/8712797e-f437-4e6b-a221-8bde555a9167)
+  
+[Forum Link](https://forum.iobroker.net/post/1086380)  
+****
+ 
+# v4.3.3.11 
+
+![V43311](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/7b330c91-b629-4480-aaac-3f2e8c60452e)
+  
+[Forum Link](https://forum.iobroker.net/post/1086380)  
+****
+  
+# v4.3.3.9 
 
   | - 18.11.2023 - v4.3.3.6  Add autoCreateALias to PageAlarm  
   | - 20.11.2023 - v4.3.3.6  Add actionStringArray to PageAlarm  
