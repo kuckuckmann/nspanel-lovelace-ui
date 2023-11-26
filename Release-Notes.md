@@ -214,6 +214,12 @@
         - 20.11.2023 - v4.3.3.8  Add Method dayjs (Multilingualism)
         - 20.11.2023 - v4.3.3.9  Add ScreensaverEntityOnColor, ...OffColor, ...OnText, ...OffText
         - 21.11.2023 - v4.3.3.10 Code optimization
+        - 24.11.2023 - v4.3.3.11 Add autoCreateALias to PageQR
+        - 24.11.2023 - v4.3.3.12 Separation of page creation and page updates in cardPower
+        - 24.11.2023 - v4.3.3.12 Add alwaysOnDisplay to cardPower - Leave display on if the alwaysOnDisplay parameter is "true"
+        - 25.11.2023 - v4.3.3.13 Separation of page creation and page updates in cardMedia
+        - 25.11.2023 - v4.3.3.13 Add alwaysOnDisplay to cardMedia - Leave display on if the alwaysOnDisplay parameter is "true"
+        - 25.11.2023 - v4.3.3.13 Fix Sonos Repeat/Shuffle
 
         Todo:
         - XX.XX.XXXX - v4.4.0    Change the bottomScreensaverEntity (rolling) if more than 6 entries are defined	
