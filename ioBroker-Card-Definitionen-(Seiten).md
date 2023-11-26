@@ -178,7 +178,8 @@ let Alexa = <PageMedia>
                 colorMediaIcon: colorAlexa,
                 colorMediaArtist: Yellow,
                 colorMediaTitle: Yellow,
-                autoCreateALias : true
+                alwaysOnDisplay: true,
+                autoCreateALias: true
              }]
 };
 ```
@@ -205,7 +206,8 @@ let SpotifyPremium = <PageMedia>
                 colorMediaIcon: colorSpotify,
                 colorMediaArtist: Yellow,
                 colorMediaTitle: Yellow,
-                autoCreateALias : true
+                alwaysOnDisplay: true,
+                autoCreateALias: true
              }]
 };
 ```  
@@ -227,7 +229,8 @@ let VolumioBoss = <PageMedia>
                 colorMediaIcon: colorSpotify,
                 colorMediaTitle: colorSpotify,
                 colorMediaArtist: Yellow,
-                autoCreateALias : true
+                alwaysOnDisplay: true,
+                autoCreateALias: true
              }]
 };
 ```  
