@@ -435,6 +435,11 @@ Eine vermeintlich einfache Sache, die aber ziemlich knifflig werden kann.
 ## **5.) QR-Code Page**
 * **Quelle:**
 Die Anleitung kommt aus dem Post [620](https://forum.iobroker.net/topic/50888/sonoff-nspanel/620) hier im Forum.
+ 
+* **Wichtiger Hinweis**  
+Ab Version v4.3.3.11 können die Datenpunkte in 0_userdata.0. und alias.0. automatisch vom Script erstellt werden. Dazu muss dem PageItem zusätzlich der Parameter **autoCreateALias: true** mitgegeben werden. Dann wird beim ersten Aufruf die Datenpunkte erstellt und ihr müsst nur noch die Daten vom WLAN unter 0_userdata.0.... anpassen.  
+  
+Ihr könnt den Weg auch selber gehen und macht hier einfach weiter.   
 
 * **ioBroker:**
 Legt Euch unter **0_userdata.0.** einen neuen Datenpunkt vom Typ String an. Dieser Datenpunkt erhält die Daten aus dem sich der QR Code erstellt. Außerdem werden SSID und das Passwort separat auf der Page angezeigt.  
