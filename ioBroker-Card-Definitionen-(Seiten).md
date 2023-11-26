@@ -265,13 +265,14 @@ var Sprechender_eindeutiger_Seitenname = <PageQR>
     "useColor": true,
     "subPage": false,
     "parent": undefined,
-    "items": [<PageItem>{ id: "alias.0.NSPanel_1.Guest_Wifi" }] // Beispiel
+    "items": [<PageItem>{ id: "alias.0.NSPanel.Guest_Wifi" }] // Beispiel
 };
 ```  
   
 **Parameter:**  
-```
-hidePassword: true/false
+```typescript
+hidePassword: true,
+autoCreateALias: true
 ``` 
 
 # cardThermo  
