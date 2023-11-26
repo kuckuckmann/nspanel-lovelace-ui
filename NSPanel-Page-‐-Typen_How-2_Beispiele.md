@@ -179,6 +179,7 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 * `colorMediaIcon` :  Farbe für Player-Icon
 * `colorMediaArtist` :  Farbe für Song-Interpreten
 * `colorMediaTitle` :  Farbe für Song-Titel (Track)
+* `alwaysOnDisplay` : Lässt den Media-Player geöffnet, bis eine weitere Seite navigiert wird
 * `autoCreateALias` :  NSPanel-Script erstellt den Alias automatisch unter **alias.0** , wenn Wert = `true`
   
 #### **CardThermo** spezifische Konfiguration:  
@@ -602,8 +603,6 @@ Equalizer:
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f5033d44-bf2f-4cb3-bf12-77b43b58623d)  
 
 ```typescript  
-// NEW: Neue Definition von Medien-Aliasen
-// adapterPlayerInstance = alexa2.0. or spotify-premium.0. or sonos.0. or chromecast.0.
 let Alexa = <PageMedia> 
 {
     'type': 'cardMedia',
@@ -630,7 +629,8 @@ let Alexa = <PageMedia>
                 colorMediaIcon: colorAlexa,
                 colorMediaArtist: Yellow,
                 colorMediaTitle: Yellow,
-                autoCreateALias : true
+                alwaysOnDisplay: true,
+                autoCreateALias: true
              }]
 };
 ```  
@@ -654,7 +654,8 @@ let Sonos = <PageMedia>
                 colorMediaIcon: colorSpotify,
                 colorMediaArtist: Yellow,
                 colorMediaTitle: Yellow,
-                autoCreateALias : true
+                alwaysOnDisplay: true,
+                autoCreateALias: true
              }]
 };
 ```  
@@ -698,7 +699,8 @@ let SpotifyPremium = <PageMedia>
                 colorMediaIcon: colorSpotify,
                 colorMediaArtist: Yellow,
                 colorMediaTitle: Yellow,
-                autoCreateALias : true
+                alwaysOnDisplay: true,
+                autoCreateALias: true
              }]
 };
 ```  
@@ -720,7 +722,8 @@ let SqueezeboxRPC = <PageMedia>
                 speakerList: ['SqueezePlay'],
                 mediaDevice: 'SqueezePlay',
                 playList: ['Playlist'],
-                autoCreateALias : true
+                alwaysOnDisplay: true,
+                autoCreateALias: true
              }]
 };
 ```
@@ -749,7 +752,8 @@ let VolumioBoss: PageMedia =
                 colorMediaIcon: colorSpotify,
                 colorMediaTitle: colorSpotify,
                 colorMediaArtist: Yellow,
-                autoCreateALias : true
+                alwaysOnDisplay: true,
+                autoCreateALias: true
              }]
 };
 ```
@@ -773,7 +777,8 @@ let VolumioMobil: PageMedia =
                 colorMediaIcon: Yellow,
                 colorMediaTitle: Yellow,
                 colorMediaArtist: Gray,
-                autoCreateALias : true
+                alwaysOnDisplay: true,
+                autoCreateALias: true
              }]
 };
 ```
