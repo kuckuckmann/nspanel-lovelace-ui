@@ -28,11 +28,12 @@ Variante für ein Update der NSPanelTS.ts
     Die eigenen Seiten werden zwischen diesen zwei Zeilen eingefügt.      
 ```typescript    
 //-- Anfang für eigene Seiten -- z.T. selbstdefinierte Aliase erforderlich ----------------
-  //-- siehe https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele
-
-
+//-- Start for your own pages -- some self-defined aliases required ----------------
+  
+	//-- https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele
 
 //-- ENDE für eigene Seiten -- z.T. selbstdefinierte Aliase erforderlich -------------------------
+//-- END for your own pages -- some self-defined aliases required ------------------------
 ```  
     
 dann müssen die Pages auch in diesen Bereich eingefügt werden. Hauptseiten kommen zu den pages und die Unterseiten zu den subPages
