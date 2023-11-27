@@ -166,6 +166,9 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 * `yAxisTicks` :  Werte-Skala der yAchse Wird in `[``, ``, ``]` gefasst und enthält eine kommaseparierte Liste an Werten
 * `onColor` : Farbe der Balken
   
+#### **CardAlarm** spezifische Angabe:  
+* `autoCreateALias` :  NSPanel-Script erstellt die Datenpunkte unter 0_userdata.0 und alias.0 automatisch, wenn Wert = `true`
+  
 #### **CardUnlock** spezifische Angabe:  
 * `autoCreateALias` :  NSPanel-Script erstellt die Datenpunkte unter 0_userdata.0 und alias.0 automatisch, wenn Wert = `true`
   
