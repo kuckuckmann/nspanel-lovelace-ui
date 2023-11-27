@@ -148,7 +148,7 @@ Post [1087](https://forum.iobroker.net/topic/50888/sonoff-nspanel/1087), [1265](
 Konfigurationsskript **NsPanelTs.ts** mindestens in der Version: _Version 4.3.3.9_   
 
 * **Im IoBroker**  
-Im IoBroker wird unter **0_userdata.0.NSPanel.Alarm** die Datenpunkte **AlarmPin**, **AlarmState**, **AlarmType**, **PANEL** und **PIN_Failed** benötigt. Diese werden i.d.R. generisch erzeugt, wenn im PageItem der Parameter 'autoCreateALias: true' gesetzt ist. Sobald der Code der Alarm Page das erste Mal geladen wird, werden die Datenpunkte angelegt.
+Im IoBroker wird unter **0_userdata.0.NSPanel.Alarm** die Datenpunkte **AlarmPin**, **AlarmState**, **AlarmType**, **PANEL** und **PIN_Failed** benötigt. Diese werden i.d.R. generisch erzeugt, wenn im PageItem der Parameter `autoCreateALias: true` gesetzt ist. Sobald der Code der Alarm Page das erste Mal geladen wird, werden die Datenpunkte angelegt.
 
    
 ![Bildschirmfoto 2023-04-25 um 10 11 30](https://user-images.githubusercontent.com/101348966/234215552-92739704-bf84-4792-bccb-f130ec111fd4.png)
@@ -157,7 +157,8 @@ Im IoBroker wird unter **0_userdata.0.NSPanel.Alarm** die Datenpunkte **AlarmPin
 
 
 * **Aliase**:  
-Die vier Datenpunkte **AlarmPin**, **AlarmState**, **AlarmType** und **Pin_Failed** werden in einem Alias vom Typ Feueralarm im Gerätemanager oder Alias Adapter angelegt und dieser Alias wird dann im Konfigurationsskript auf der Alarm-Page verwendet.
+Die vier Datenpunkte **AlarmPin**, **AlarmState**, **AlarmType** und **Pin_Failed** werden in einem Alias vom Typ Feueralarm im Gerätemanager oder Alias Adapter angelegt und dieser Alias wird dann im Konfigurationsskript auf der Alarm-Page verwendet.  
+Diese werden, mit dem Parameter `autoCreateALias: true` auch automatisch angelegt.  
 
   ![image](https://user-images.githubusercontent.com/99131208/188514578-43f08178-b8f0-4d09-8e76-02cbe55d5557.png)
 
