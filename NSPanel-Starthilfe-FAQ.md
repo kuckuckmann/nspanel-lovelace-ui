@@ -11,13 +11,15 @@ Variante für ein Update der NSPanelTS.ts
 ```typescript
 /***** 1. Tasmota-Config *****/
 
-    // Anpassen an die Verzeichnisse der MQTT-Adapter-Instanz
+    // DE: Anpassen an die Verzeichnisse der MQTT-Adapter-Instanz
+    // EN: Adapt to the MQTT adapter instance directories
     const NSPanelReceiveTopic: string = 'mqtt.0.SmartHome.NSPanel_1.tele.RESULT';
     const NSPanelSendTopic: string = 'mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend';
 
-/***** 2. Verzeichnisse in 0_userdata.0... *****/
+/***** 2. Directories in 0_userdata.0... *****/
 
-    // Anpassen an das jeweilige NSPanel
+    // DE: Anpassen an das jeweilige NSPanel
+    // EN: Adapt to the respective NSPanel
     const NSPanel_Path = '0_userdata.0.NSPanel.1.';
 ```
 
