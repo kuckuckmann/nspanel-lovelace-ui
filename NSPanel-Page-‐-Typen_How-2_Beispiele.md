@@ -166,8 +166,12 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 * `yAxisTicks` :  Werte-Skala der yAchse Wird in `[``, ``, ``]` gefasst und enthält eine kommaseparierte Liste an Werten
 * `onColor` : Farbe der Balken
   
+#### **CardUnlock** spezifische Angabe:  
+* `autoCreateALias` :  NSPanel-Script erstellt die Datenpunkte unter 0_userdata.0 und alias.0 automatisch, wenn Wert = `true`
+  
 #### **CardQR** spezifische Angabe:  
 * `hidePassword` :  versteckt das WLAN Passwort auf der **PageQR**
+* `autoCreateALias` :  NSPanel-Script erstellt die Datenpunkte unter 0_userdata.0 und alias.0 automatisch, wenn Wert = `true`
   
 #### **CardMedia** spezifische Konfiguration:
 * `adapterPlayerInstance` :  legt die Adapter-Instanz für die Adapter alexa2, spotify-premium, sonos, squeezeboxrpc, chromecast oder volumio fest
@@ -1032,9 +1036,9 @@ let WLAN = <PageQR>
      'type': 'cardQR',
      'heading': 'Gäste WLAN',
      'useColor': true,
-     'subPage': true,
-     'parent': Subpages_1,
-     'items': [<PageItem>{ id: 'alias.0.NSPanel_1.Guest_Wifi', hidePassword: false }]
+     'items': [<PageItem>{ id: 'alias.0.NSPanel_1.Guest_Wifi', 
+                           hidePassword: false, 
+                           autoCreateALias: true }]
 };
 ```  
 </details>  
