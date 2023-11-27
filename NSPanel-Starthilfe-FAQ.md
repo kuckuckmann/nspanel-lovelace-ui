@@ -55,9 +55,16 @@ dann müssen die Pages auch in diesen Bereich eingefügt werden. Hauptseiten kom
 ```
 
 7. das Script starten und prüfen auf Fehlermeldungen, danach wird es wieder gestop.
-8. jetzt kopieren wir noch die ScreensaverEntity und erstzen die im neuen Script
+8. jetzt kopieren wir noch die ScreensaverEntity, die Einstellungen für die Hardwarebutton und erstezen die im neuen Script
+```typescript
+/***********************************************************************
+ **                                                                   **
+ **                    Screensaver Configuration                      **
+ **                                                                   **
+ ***********************************************************************/
 
-9. das Script wieder starten und es sollte jetzt wieder wie früher sein.
+```
+9. das Script wieder starten und es sollte jetzt alles wieder wie früher sein.
   
 ****  
    
