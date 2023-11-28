@@ -1,6 +1,6 @@
 Der überarbeitete Screensaver **ab v3.4.0**  
 
-<img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ae62f7fc-9c99-4495-a078-28557bd0935d" width="40%" height="40%">  
+<img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ae62f7fc-9c99-4495-a078-28557bd0935d" width="60%" height="60%">  
 
 # Screensaver 1 Layout (Standard)  
 
