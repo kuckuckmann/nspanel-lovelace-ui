@@ -34,7 +34,13 @@
 
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/c60b36af-a39f-4f38-911b-80b4225206cd)
 
-[Forum Link]https://forum.iobroker.net/post/1085163)    
+[Forum Link](https://forum.iobroker.net/post/1085163)
+
+### Achtung Breaking Changes.  
+> Konstanten aus dem oberen Teil sind doppelt, wenn ausschließlich nur der untere Teil ausgetauscht wird!     
+**Bitte unbedingt nach der Update-Anleitung vorgehen:**  
+https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Starthilfe-FAQ#hilfe-bei-update--upgrade  
+
 ****
 
 # v4.3.3.9 
