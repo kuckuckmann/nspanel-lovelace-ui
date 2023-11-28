@@ -158,7 +158,7 @@
    </ul>
 </details>
 
-<img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/c1d0473d-4708-47a4-94dd-cb9845cd8c01" width="75%" height="75%">
+<img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/c1d0473d-4708-47a4-94dd-cb9845cd8c01" width="98%" height="98%">
 
 ****
 
