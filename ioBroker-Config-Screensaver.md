@@ -622,13 +622,13 @@ const swWindy:          RGB = { red: 150, green: 150, blue: 150};
 
 0_userdata.0.NSPanel.1.ScreensaverInfo.activeDimmodeBrightness  
 
-* null = automatischer Dimmode aktiv  
+* -1 = automatischer Dimmode aktiv  
 * 0-100 = manuelle Dimmstufe (automatischer Dimmode inaktiv)  
 
 
 ## bestimme Seite nach den Aufwecken  
 unter 0_userdata.0.NSPanel.ScreensaverInfo.bExitPage könnt ihr eine Seite festlegen die nach dem tippen auf das Panel geöffnet werden soll.  
-Der Wert 'null' öffnet wieder die letzte offene Seite. Wenn ihr eine Bestimmte Seite öffnen wollt, müsst ihr den Index der Seite eingeben ( Beginn bei 0). Diesen bekommt ihr aus der Pageauflistung in der Config raus.  
+Der Wert **-1** öffnet wieder die letzte offene Seite. Wenn ihr eine Bestimmte Seite öffnen wollt, müsst ihr den Index der Seite eingeben ( Beginn bei 0). Diesen bekommt ihr aus der Pageauflistung in der Config raus.  
   
 
 ## Individuelles Datumsformat im Screensaver:
