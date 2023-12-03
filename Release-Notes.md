@@ -222,6 +222,9 @@
         - 25.11.2023 - v4.3.3.13 Fix Sonos Repeat/Shuffle
         - 25.11.2023 - v4.3.3.14 Refactoring Sonos-Player (with Playlist, Tracklist, Favorites, Eqalizer (if no Favorites))
         - 29.11.2023 - v4.3.3.15 Fix cardMedia Volume-Slider / Add Init Release to Startup
+        - 30.11.2023 - v4.3.3.16 Beautification of the Sonos player Strings / Add Duration & Elapsed
+        - 01.12.2023 - v4.3.3.16 Fix Datapoints with Value null 
+        - 02.12.2023 - v4.3.3.16 Request replaced by Axios
 
         Todo:
         - XX.XX.XXXX - v4.4.0    Change the bottomScreensaverEntity (rolling) if more than 6 entries are defined	
