@@ -4,7 +4,7 @@
 
 ![v43316](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/dffd837a-59ed-4c0f-a199-e8a088f44b23)
   
-[Forum Link](https://forum.iobroker.net/post/1088675)  
+[Forum Link](https://forum.iobroker.net/post/1089353)  
 ****
 
 # v4.3.3.15 
