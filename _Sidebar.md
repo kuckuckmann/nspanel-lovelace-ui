@@ -71,7 +71,8 @@
 	 </ul>	  
 	 <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver">Screensaver</a></li>
 	 <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC">Service Men&uuml;</a></li>
-         <ul><a href="NSPanel-‐-cardMedia-‐-Der-komplette-Leitfaden">Die cardMedia - kompletter Leitfaden</a>
+         <li><a href="NSPanel-‐-cardMedia-‐-Der-komplette-Leitfaden">Die cardMedia - kompletter Leitfaden</a></li>
+         <ul>
             <li><a href="NSPanel-‐-cardMedia-‐-Der-SONOS-Player">Der SONOS Player</a></li>
          </ul>
       <li><a href="https://docs.nspanel.pky.eu/icon-cheatsheet.html">Material Design Icons</a></li>	  
