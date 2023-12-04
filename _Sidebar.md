@@ -74,6 +74,7 @@
          <li><a href="NSPanel-‐-cardMedia-‐-Der-komplette-Leitfaden">Die cardMedia - kompletter Leitfaden</a></li>
          <ul>
             <li><a href="NSPanel-‐-cardMedia-‐-Der-SONOS-Player">Der SONOS Player</a></li>
+            <li><a href="NSPanel-‐-cardMedia-‐-Der-Amazon-Alexa-Player">Der Amazon Alexa Player</a></li>
          </ul>
       <li><a href="https://docs.nspanel.pky.eu/icon-cheatsheet.html">Material Design Icons</a></li>	  
      </ul>
