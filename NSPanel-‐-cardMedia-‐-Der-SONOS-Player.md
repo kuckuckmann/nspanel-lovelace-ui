@@ -8,6 +8,8 @@ Inhalt:
       * [Standard Beispielvorlage ohne AlwaysOnDisplay](#standard-beispielvorlage-ohne-alwaysondisplay)
 * [Erstellung der Sonos Listen](#erstellung-der-sonos-listen)
 
+* [Der Auto-Alias](#der-auto--alias)
+
 
 
 # Aufbau des SONOS Players 
