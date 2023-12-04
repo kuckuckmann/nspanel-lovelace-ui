@@ -35,6 +35,34 @@ Folgende Datenpunkte der Sonos Adapterinstanz werden berücksichtigt:
 > ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/27165f31-9d25-4921-98b9-1c3a7e46cf82)  
 > ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ca9c5cd2-1fa0-467e-ae01-5dc968b26e63)  
 ### 8. Repeat-Funktion / (Alternativ Equalizer)  
+> [!NOTE]  
+> Dieses Steuerelement kann unterschiedliche Eigenschaften annehmen  
+#### Repeat Funktion:  
+* Es sind keine weiteren Einstellungen zu berücksichtigen. Der Datenpunkt `sonos.0.root.<DEVICE_IP>.repeat` wird genutzt und inkrementiert die Werte `none(0)`, `all(1)` und `one(2)`  
+
+> [!EXAMPLE]  
+```
+let Sonos = <PageMedia>
+{
+    'type': 'cardMedia',
+    'heading': 'Sonos',
+    'useColor': true,
+    'items': [<PageItem>{   
+                id: AliasPath + 'Media.PlayerSonos', 
+                adapterPlayerInstance: 'sonos.0.',
+                mediaDevice: '192_168_1_212',
+                speakerList: ['Terrasse'],
+                playList: ['Hartmann','Armilars Playlist'],
+                colorMediaIcon: colorSonos,
+                colorMediaArtist: Yellow,
+                colorMediaTitle: Yellow,
+                alwaysOnDisplay: true,
+                autoCreateALias: true
+             }]
+};
+```
+#### Equalizer Funktion:
+* Innerhalb des PageItem wird der Equalizer definiert:  
 
 
 
