@@ -173,6 +173,7 @@ Jetzt ist es möglich eine Position des Tracks (Titels) in 10% Schritten zu erre
 > Wird im PageItem der Parameter  
 > `crossfade: true`  
 > verwendet, dann wird statt der Seek-Funktion Crossfade zur Auswahl aktiv  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7d2387fa-b943-4540-ae7e-efbb2c98b763)
 
 ### 19. Navigation zur vorherigen Seite  
 * siehe [Navigation](ioBroker-Navigation)  
