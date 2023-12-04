@@ -102,17 +102,17 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 
 ### 10. Track Liste
 * Das Array playList im PageItem wird genutzt. Die Playlists sind dort manuell einzutragen
-> [!INFO]
+> [!NOTE]
 > siehe auch Erstellung einer Sonos Playlist
 
 ### 11. SONOS Playlist
 * Das Array playList im PageItem wird genutzt. Die Playlists sind dort manuell einzutragen
-> [!INFO]
+> [!NOTE]
 > siehe auch Erstellung einer Sonos Playlist
 
 ### 12. SONOS Speaker Liste
 * Das Array speakerList im PageItem wird genutzt. Die Wiedergabegeräte sind dort manuell einzutragen
-> [!INFO]
+> [!NOTE]
 > siehe auch Erstellung einer speakerList
 
 ### 13. Nächster Track
@@ -126,7 +126,7 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 
 ### 16. Shuffle
 * Umschaltung zwischen den Datenpunkten `sonos.0.root.<DEVICE_IP>.shuffle` als wahr/falsch (true/false)
-> [!INFO]
+> [!NOTE]
 > Diese Funktion ist nicht steuerbar, wenn Radiosender abgespielt werden
 
 ### 17. Vorheriger Track
@@ -137,3 +137,5 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 
 ### 19. Navigation zur vorherigen Seite  
 * siehe [Navigation](ioBroker-Navigation)  
+
+## Erstellen der Seitenvariable
