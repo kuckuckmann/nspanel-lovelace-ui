@@ -2,8 +2,9 @@ Inhalt:
 * [Aufbau des SONOS Players](aufbau-des-sonos-players)   
    * [Player im Live-Betrieb](#player-im-live-betrieb)
    * [Bedienungselemente / Anzeigen](#bedienungselemente--anzeigen)
-* [Erstellung der Seitenvariable für die cardMedia](#erstellung-der-seitenvariable-f%C3%BCr-die-cardmedia))
+* [Erstellung der Seitenvariable für die cardMedia](#erstellung-der-seitenvariable-f%C3%BCr-die-cardmedia)
    * [Variablen Beispiele](#variablen-beispiele)
+      * [Standard Beispielvorlage für AlwaysOnDisplay](#standard-beispielvorlage-f%C3%BCr-alwaysondisplay)
 
 # Aufbau des SONOS Players 
 **(vollständig ab NSPanelTs.ts - Version 4.3.3.17)**
