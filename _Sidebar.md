@@ -69,12 +69,14 @@
 	    <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Page-%E2%80%90-Typen_How-2_Beispiele#how-2-page">How to Card bauen</a></li>
 	    <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Card-Definitionen-(Seiten)">Cards und Variablen</a></li>		
 	 </ul>	  
-	    <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver">Screensaver</a></li>
-	    <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC">Service Men&uuml;</a></li>
-            <li><a href="NSPanel-‐-cardMedia-‐-Der-komplette-Leitfaden">Die cardMedia - kompletter Leitfaden</a></li>
-            <li><a href="https://docs.nspanel.pky.eu/icon-cheatsheet.html">Material Design Icons</a></li>	  
-   </ul>
-</details>
+	 <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver">Screensaver</a></li>
+	 <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC">Service Men&uuml;</a></li>
+         <ul><a href="NSPanel-‐-cardMedia-‐-Der-komplette-Leitfaden">Die cardMedia - kompletter Leitfaden</a>
+            <li><a href="NSPanel-‐-cardMedia-‐-Der-SONOS-Player">Der SONOS Player</a></li>
+         </ul>
+      <li><a href="https://docs.nspanel.pky.eu/icon-cheatsheet.html">Material Design Icons</a></li>	  
+     </ul>
+   </details>
 <details open>
    <summary>
       <h3>
