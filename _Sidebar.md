@@ -1,11 +1,6 @@
 <img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/79e40616-d95e-4919-9a80-e4c1cca1bb7f" width="75%" height="75%"> 
 <img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/5cc6a801-6d9e-4f77-bb9d-413a140a361e" width="75%" height="75%">
 
-<!--ioBroker Icon-->
-<!--img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/1b882559-97d8-416e-b65a-2a433ba15461" width="24" height="24"-->
-<!--Shelly Icon-->
-<!--img src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f43d302e-7530-42c8-8d31-fdd3366c7442" width="24" height="24-->
-
 <h1>
    <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/cfb4a374-5478-4a63-9d33-5a726c40c383">
