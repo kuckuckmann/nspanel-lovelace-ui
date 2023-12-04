@@ -1,4 +1,6 @@
-!!! Diese Seite befindet sich noch im Aufbau !!!
+Inhalt:  
+* [Aufbau des SONOS Players](aufbau-des-sonos-players)   
+** [Player im Live-Betrieb](player-im-live-betrieb)
 
 # Aufbau des SONOS Players 
 **(vollständig ab NSPanelTs.ts - Version 4.3.3.17)**
