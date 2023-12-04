@@ -141,4 +141,7 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 
 # Erstellen der Seitenvariable
 
-# Erstellung der Sonos Favoriten
+# Erstellung der Sonos Listen
+## Favoriten Liste
+
+## Individuelle Wiedergabe Liste (Playlist)
