@@ -17,4 +17,5 @@ Zeigt die folgenden Datenpunkte der aktiven Sonos Adapterinstanz wenn der Wert d
 * Titel --> sonos.0.root.<DEVICE_IP>.current_title 
 * Verstrichene Zeit (Minuten/Sekunden) des aktuell abgespielten Titels (nicht bei Radio) --> `sonos.0.root.<DEVICE_IP>.current_elapsed_s`  
 * Gesamtlänge (Minuten/Sekunden) des aktuell abgespielten Titels (nicht bei Radio) --> `sonos.0.root.<DEVICE_IP>.current_duration_s`  
->
+> Die Aktualisierung in Sekunden steht in Abhängigkeit zur Sonos Adapterinstanz
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/6770fd4c-271f-499e-a935-7e2217631ea9)
