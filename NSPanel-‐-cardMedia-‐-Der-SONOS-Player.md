@@ -200,13 +200,13 @@ mediaDevice ist hierbei die mit '_' getrennte IP des primären Wiedergabegeräte
 Diese List sollte die Wiedergabegeräte des primären Sonos und ggfs. optionale Geräte aus dem Datenpunkt `sonos.0.root.<DEVICE_IP>.members` enthalten.
 
 ## Favoriten Liste
-Die Einstellung erfolgt über die App des Smartphones oder über z.B. dem "Sonos Controller für PC" wie im nachfolgenden Beispiel:
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/9dc179a1-acf4-4e29-b642-171c2f6407a1)
-
-Die Favoriten können unter Sonos-Favoriten eingesehen werden:
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8564c777-f148-475f-be27-228196495183)
-
-Sonos Favoriten hinzufügen:
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/671bbcca-f42a-49ec-9774-3c2f5ffa58c6)
+Die Einstellung erfolgt über die App des Smartphones oder über z.B. dem "Sonos Controller für PC" wie im nachfolgenden Beispiel:  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/9dc179a1-acf4-4e29-b642-171c2f6407a1)  
+  
+Die Favoriten können unter Sonos-Favoriten eingesehen werden:  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8564c777-f148-475f-be27-228196495183)  
+  
+Sonos Favoriten hinzufügen:  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/671bbcca-f42a-49ec-9774-3c2f5ffa58c6)  
 
 ## Individuelle Wiedergabe Liste (Array playList)
