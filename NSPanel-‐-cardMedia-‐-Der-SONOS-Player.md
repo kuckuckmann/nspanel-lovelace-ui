@@ -164,7 +164,7 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 
 ### 18. Player Logo / Seek Funktion (Alternativ Crossfade)
 Per Standard ist der Seek-Modus aktiv. Dieser wird mit Klick auf das Logo des Players aufgerufen:  
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/9f8f2785-00c9-4836-a561-82fda275e871)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ee9ce338-5c0e-465d-935c-df55adf8642c)  
 
 Jetzt ist es möglich eine Position des Tracks (Titels) in 10% Schritten zu erreichen (vor- und zurückspulen).
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a2d55933-d52a-4d1e-a760-75f98a754181)
