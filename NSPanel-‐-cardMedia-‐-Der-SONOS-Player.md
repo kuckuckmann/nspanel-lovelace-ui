@@ -3,7 +3,7 @@
 # Aufbau des SONOS Players 
 **(vollständig ab NSPanelTs.ts - Version 4.3.3.17)**
 
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/47d58044-744d-4de1-a450-d1fdff538527)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/92b349c7-6a85-4903-8911-61000f5144d6)
 
 ## Bedienungselemente / Anzeigen
 ### 1. Seitentitel  
@@ -34,14 +34,15 @@ Folgende Datenpunkte der Sonos Adapterinstanz werden berücksichtigt:
 > Volume zieht das Volumen einer Gruppe beim Einsatz einer Sonos-Box mit. Wenn das Group-Volume (`sonos.0.root.<DEVICE_IP>.group_volume`) benötigt wird, so ist der Datenpunkt nach Erstellung des Auto-Alias entsprechend zu ändern.  
 > ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/27165f31-9d25-4921-98b9-1c3a7e46cf82)  
 > ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ca9c5cd2-1fa0-467e-ae01-5dc968b26e63)  
-### 8. Repeat-Funktion / (Alternativ Equalizer)  
+### 8. Repeat-Funktion  
 > [!NOTE]  
-> Dieses Steuerelement kann unterschiedliche Eigenschaften annehmen  
-#### Repeat Funktion:  
+> Dieses Steuerelement kann unterschiedliche Eigenschaften annehmen    
 * Es sind keine weiteren Einstellungen zu berücksichtigen. Der Datenpunkt `sonos.0.root.<DEVICE_IP>.repeat` wird genutzt und inkrementiert die Werte `none(0)`, `all(1)` und `one(2)`  
-
+### 9. SONOS Favoriten (Alternativ Equalizer)
+Steuerelement als SONOS Favoriten:
+Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisch aus dem Datenpunkt: `sonos.0.root.<DEVICE_IP>.favorites_list_array` extrahiert:
 > [!CAUTION]
-> ```
+> ```typescript
 > let Sonos = <PageMedia>
 > {
 >     'type': 'cardMedia',
@@ -63,9 +64,29 @@ Folgende Datenpunkte der Sonos Adapterinstanz werden berücksichtigt:
 > ```
 #### Equalizer Funktion:
 * Innerhalb des PageItem wird der Equalizer definiert:  
-
-
-
+> [!CAUTION]
+> ```typescript
+> let Sonos = <PageMedia>
+> {
+>     'type': 'cardMedia',
+>     'heading': 'Sonos',
+>     'useColor': true,
+>     'items': [<PageItem>{   
+>                 id: AliasPath + 'Media.PlayerSonos', 
+>                 adapterPlayerInstance: 'sonos.0.',
+>                 mediaDevice: '192_168_1_212',
+>                 speakerList: ['Terrasse'],
+>                 playList: ['Hartmann','Armilars Playlist'],
+>                 equalizerList: ['Bassboost','Klassik','Dance', 'Deep', 'Electronic', 'Flat', 'Hip-Hop', 'Rock', 
+>                                 'Metal', 'Jazz', 'Latin', 'Tonstärke', 'Lounge', 'Piano'],
+>                 colorMediaIcon: colorSonos,
+>                 colorMediaArtist: Yellow,
+>                 colorMediaTitle: Yellow,
+>                 alwaysOnDisplay: true,
+>                 autoCreateALias: true
+>              }]
+> };
+> ```
 
  
   
