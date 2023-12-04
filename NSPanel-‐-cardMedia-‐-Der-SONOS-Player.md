@@ -231,8 +231,8 @@ Dann entweder zu einer besehenden Playlist hinzufügen oder eine neue Playlist m
 
 Die Namen der individuellen Playlisten für diesen Player werden dann in das Array (Beispiel): `playList: ['Hartmann','Armilars Playlist'],` des PageItem eingetragen.
 
-Der Auto-Alias
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/0e2b2dce-fa5c-4f94-aad2-4f7a8914823b)
+# Der Auto-Alias
+Der nachfolgende Alias wird komplett und vollständig angelegt, wenn der Parameter `autoCreateALias: true` im PageItem definiert ist:
 
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/5f51762a-f648-4cdb-9b75-80065019a4a9)
 
