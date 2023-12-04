@@ -76,6 +76,8 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 > };
 > ```
 #### Steuerelement als Equalizer:
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/66ef5685-e7de-43e5-a574-84e15779799f)
+
 * Innerhalb des `PageItem` wird der `Equalizer` und in diesem Beispiel ebenfalls der Parameter `crossfade` definiert:  
 > [!CAUTION]
 > ```typescript
