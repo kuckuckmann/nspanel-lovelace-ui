@@ -5,6 +5,10 @@
 
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/da9d3b70-8ed2-4009-a79d-0df76903f4cf)
 
+## Player im Live-Betrieb:
+
+![Nextion_Editor_fsSVjRpc9f](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2848f8ec-3575-4332-a4ba-be2230cfc856)
+
 ## Bedienungselemente / Anzeigen
 ### 1. Seitentitel  
 Der Seitentitel steht auf:   
