@@ -8,7 +8,7 @@
 
 Die gängigsten Adapter wie z.B. 
 
-* Sonos
+* [SONOS](NSPanel-‐-cardMedia-‐-Der-SONOS-Player)
 * Alexa2
 * Spotify-Premium
 * Squeezebox-RPC
