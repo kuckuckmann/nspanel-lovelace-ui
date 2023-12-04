@@ -5,6 +5,10 @@ Inhalt:
 * [Erstellung der Seitenvariable für die cardMedia](#erstellung-der-seitenvariable-f%C3%BCr-die-cardmedia)
    * [Variablen Beispiele](#variablen-beispiele)
       * [Standard Beispielvorlage für AlwaysOnDisplay](#standard-beispielvorlage-f%C3%BCr-alwaysondisplay)
+      * [Standard Beispielvorlage ohne AlwaysOnDisplay](#standard-beispielvorlage-ohne-alwaysondisplay)
+* [Erstellung der Sonos Listen](#erstellung-der-sonos-listen)
+
+
 
 # Aufbau des SONOS Players 
 **(vollständig ab NSPanelTs.ts - Version 4.3.3.17)**
