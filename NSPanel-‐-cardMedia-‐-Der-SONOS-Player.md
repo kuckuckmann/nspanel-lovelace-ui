@@ -1,4 +1,4 @@
-Inhalt:  
+**Inhalt:**
 * [Aufbau des SONOS Players](aufbau-des-sonos-players)   
    * [Player im Live-Betrieb](#player-im-live-betrieb)
    * [Bedienungselemente / Anzeigen](#bedienungselemente--anzeigen)
