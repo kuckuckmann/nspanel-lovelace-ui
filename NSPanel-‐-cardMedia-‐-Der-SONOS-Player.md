@@ -31,8 +31,13 @@ Folgende Datenpunkte der Sonos Adapterinstanz werden berücksichtigt:
 ### 7. Volume zwischen 0% und 100%
 * Die Feinjustierung der aktuellen Lautstärke erfolgt stufenlos zwischen 0% und 100% --> Datenpunkt: `sonos.0.root.<DEVICE_IP>.volume`
 > [!IMPORTANT]  
-> Volume zieht das Volumen einer Gruppe beim Einsatz einer Sonos-Box mit. Wenn das Group-Volume (`sonos.0.root.<DEVICE_IP>.group_volume`) benötigt wird, so ist der Datenpunkt nach Erstellung des Auto-Alias entsprechend zu ändern.    
-> ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/6770fd4c-271f-499e-a935-7e2217631ea9)
+> Volume zieht das Volumen einer Gruppe beim Einsatz einer Sonos-Box mit. Wenn das Group-Volume (`sonos.0.root.<DEVICE_IP>.group_volume`) benötigt wird, so ist der Datenpunkt nach Erstellung des Auto-Alias entsprechend zu ändern.  
+> ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/27165f31-9d25-4921-98b9-1c3a7e46cf82)  
+> ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ca9c5cd2-1fa0-467e-ae01-5dc968b26e63)  
+### 8. Repeat-Funktion / (Alternativ Equalizer)  
+
+
+
 
  
   
