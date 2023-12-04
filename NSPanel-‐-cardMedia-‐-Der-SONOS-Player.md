@@ -7,8 +7,10 @@ Inhalt:
       * [Standard Beispielvorlage für AlwaysOnDisplay](#standard-beispielvorlage-f%C3%BCr-alwaysondisplay)
       * [Standard Beispielvorlage ohne AlwaysOnDisplay](#standard-beispielvorlage-ohne-alwaysondisplay)
 * [Erstellung der Sonos Listen](#erstellung-der-sonos-listen)
-
-* [Der Auto-Alias](#der-auto--alias)
+   * [Speaker Liste (Array speakerList)](#speaker-liste-array-speakerlist)
+   * [Favoriten Liste](#favoriten-liste)
+   * [Individuelle Wiedergabe Liste (Array playList)](#individuelle-wiedergabe-liste-array-playlist)
+* [Der Auto-Alias](#der-auto-alias)
 
 
 
