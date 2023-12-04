@@ -110,9 +110,14 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 
 ### 10. Track Liste
 * Sofern der Datenpunkt `sonos.0.root.<DEVICE_IP>.queue` Daten enthält und die abspielbaren Medien eine Trackliste enthalten, so wird diese automatisch geladen.
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/44c5b0b6-7bbd-4372-ad8e-244f5e9bb729)
+> [!NOTE]
+> Sollten weitere Tracks vorhanden sein, so können diese über den rechtsangeordneten Pfeil erreicht werden  
 
 ### 11. SONOS Playlist
-* Das Array playList im PageItem wird genutzt. Die Playlists sind dort manuell einzutragen
+* Das Array playList im PageItem wird genutzt. Die Playlists sind dort manuell einzutragen  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7a544d32-7fe1-45f8-b9fb-50ad5a259628)  
+
 > [!NOTE]
 > siehe auch Erstellung einer Sonos Playlist
 
