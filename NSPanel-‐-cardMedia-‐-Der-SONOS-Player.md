@@ -2,8 +2,8 @@ Inhalt:
 * [Aufbau des SONOS Players](aufbau-des-sonos-players)   
    * [Player im Live-Betrieb](player-im-live-betrieb)
    * [Bedienungselemente / Anzeigen](bedienungselemente--anzeigen)
-*[Erstellung der Seitenvariable für die cardMedia](erstellung-der-seitenvariable-fuer-die-cardmedia)
-
+* [Erstellung der Seitenvariable für die cardMedia](erstellung-der-seitenvariable-fuer-die-cardmedia)
+   * [Variablen Beispiele](variablen-beispiele)
 
 # Aufbau des SONOS Players 
 **(vollständig ab NSPanelTs.ts - Version 4.3.3.17)**
@@ -172,7 +172,7 @@ Jetzt ist es möglich eine Position des Tracks (Titels) in 10% Schritten zu erre
 
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e87fd566-af21-475e-80dd-81e6225e52e9)
 
-## Beispiele:
+## Variablen Beispiele:
 ### Standard Beispielvorlage für AlwaysOnDisplay
 In diesem Beispiel wird der Screensaver nach eingestellter nicht aufgeschaltet. Der Player bleibt geöffnet bis zu einer Seite ohne alwaysOnDisplay navigiert wird.
 ```typescript
