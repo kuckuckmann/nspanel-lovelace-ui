@@ -6,17 +6,33 @@
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/47d58044-744d-4de1-a450-d1fdff538527)
 
 ## Bedienungselemente / Anzeigen
-### 1. Seitentitel
-Der Seitentitel steht auf: 
-* Sonos Player, wenn keine Wiedergabe erfolgt oder wenn das Wiedergabegerät über die Sonos-Adapterinstanz (z.B. sonos.0.) im Datenpunkt `sonos.0.root.<DEVICE_IP>.current_type` auf track(0) steht
+### 1. Seitentitel  
+Der Seitentitel steht auf:   
+* Sonos Player, wenn keine Wiedergabe erfolgt oder wenn das Wiedergabegerät über die Sonos-Adapterinstanz (z.B. sonos.0.) im Datenpunkt `sonos.0.root.<DEVICE_IP>.current_type` auf track(0) steht  
 * `sonos.0.root.<DEVICE_IP>.current_station` wenn ein Radiosender gewählt wurde
-### 2. Navigation zur nächsten Seite
-* siehe [Navigation](ioBroker-Navigation)
-### 3. Track (Elapsed|Duration
-Zeigt die folgenden Datenpunkte der aktiven Sonos Adapterinstanz wenn der Wert des Datenpunktes `sonos.0.root.<DEVICE_IP>.current_type` auf track(0) steht:
-* Titel --> sonos.0.root.<DEVICE_IP>.current_title 
+### 2. Navigation zur nächsten Seite  
+* siehe [Navigation](ioBroker-Navigation)  
+### 3. Track (Elapsed|Duration)  
+Zeigt die folgenden Datenpunkte der aktiven Sonos Adapterinstanz wenn der Wert des Datenpunktes `sonos.0.root.<DEVICE_IP>.current_type` auf track(0) steht:  
+* Titel --> sonos.0.root.<DEVICE_IP>.current_title  
 * Verstrichene Zeit (Minuten/Sekunden) des aktuell abgespielten Titels (nicht bei Radio) --> `sonos.0.root.<DEVICE_IP>.current_elapsed_s`  
 * Gesamtlänge (Minuten/Sekunden) des aktuell abgespielten Titels (nicht bei Radio) --> `sonos.0.root.<DEVICE_IP>.current_duration_s`  
-> [!IMPORTANT]
-> Die Aktualisierung in Sekunden steht in Abhängigkeit zur Sonos Adapterinstanz `Aktualisierung des Lied-Timers` und steht per Default auf 2000ms. 
+> [!IMPORTANT]  
+> Die Aktualisierung in Sekunden steht in Abhängigkeit zur Sonos Adapterinstanz `Aktualisierung des Lied-Timers` und steht per Default auf 2000ms.  
 > ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/6770fd4c-271f-499e-a935-7e2217631ea9)
+### 4. Interpret | Album  
+Folgende Datenpunkte der Sonos Adapterinstanz werden berücksichtigt:  
+* Interpret --> `sonos.0.root.<DEVICE_IP>.current_artist` (beim Abspielen von Radiosendern abweichende Informationen zum Sender)  
+* Album --> `sonos.0.root.<DEVICE_IP>.current_album` (beim Abspielen von Radiosendern abweichende Informationen zum Sender)  
+### 5. Player An/Aus (Stop)   
+* Stop (Icon blau) --> `sonos.0.root.<DEVICE_IP>.stop` (beim Abspielen weiß)
+### 6. Volume lauter
+* Die Feinjustierung der aktuellen Lautstärke in Einerschritten (+1) --> Datenpunkt: `sonos.0.root.<DEVICE_IP>.volume`
+### 7. Volume zwischen 0% und 100%
+* Die Feinjustierung der aktuellen Lautstärke erfolgt stufenlos zwischen 0% und 100% --> Datenpunkt: `sonos.0.root.<DEVICE_IP>.volume`
+> [!IMPORTANT]  
+> Volume zieht das Volumen einer Gruppe beim Einsatz einer Sonos-Box mit. Wenn das Group-Volume (`sonos.0.root.<DEVICE_IP>.group_volume`) benötigt wird, so ist der Datenpunkt nach Erstellung des Auto-Alias entsprechend zu ändern.    
+> ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/6770fd4c-271f-499e-a935-7e2217631ea9)
+
+ 
+  
