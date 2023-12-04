@@ -42,25 +42,25 @@ Folgende Datenpunkte der Sonos Adapterinstanz werden berücksichtigt:
 
 > [!CAUTION]
 > ```
-let Sonos = <PageMedia>
-{
-    'type': 'cardMedia',
-    'heading': 'Sonos',
-    'useColor': true,
-    'items': [<PageItem>{   
-                id: AliasPath + 'Media.PlayerSonos', 
-                adapterPlayerInstance: 'sonos.0.',
-                mediaDevice: '192_168_1_212',
-                speakerList: ['Terrasse'],
-                playList: ['Hartmann','Armilars Playlist'],
-                colorMediaIcon: colorSonos,
-                colorMediaArtist: Yellow,
-                colorMediaTitle: Yellow,
-                alwaysOnDisplay: true,
-                autoCreateALias: true
-             }]
-};
-```
+> let Sonos = <PageMedia>
+> {
+>     'type': 'cardMedia',
+>     'heading': 'Sonos',
+>     'useColor': true,
+>     'items': [<PageItem>{   
+>                 id: AliasPath + 'Media.PlayerSonos', 
+>                 adapterPlayerInstance: 'sonos.0.',
+>                 mediaDevice: '192_168_1_212',
+>                 speakerList: ['Terrasse'],
+>                 playList: ['Hartmann','Armilars Playlist'],
+>                 colorMediaIcon: colorSonos,
+>                 colorMediaArtist: Yellow,
+>                 colorMediaTitle: Yellow,
+>                 alwaysOnDisplay: true,
+>                 autoCreateALias: true
+>              }]
+> };
+> ```
 #### Equalizer Funktion:
 * Innerhalb des PageItem wird der Equalizer definiert:  
 
