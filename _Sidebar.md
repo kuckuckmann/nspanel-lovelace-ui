@@ -71,6 +71,7 @@
 	 </ul>	  
 	    <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Config-Screensaver">Screensaver</a></li>
 	    <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Service-Men%C3%BC">Service Men&uuml;</a></li>
+            <li><a href="NSPanel-‐-cardMedia-‐-Der-komplette-Leitfaden">Die cardMedia - kompletter Leitfaden</a></li>
             <li><a href="https://docs.nspanel.pky.eu/icon-cheatsheet.html">Material Design Icons</a></li>	  
    </ul>
 </details>
