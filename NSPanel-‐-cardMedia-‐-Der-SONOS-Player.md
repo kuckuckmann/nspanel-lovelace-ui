@@ -193,8 +193,7 @@ mediaDevice ist hierbei die mit '_' getrennte IP des primären Wiedergabegeräte
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/6de74a6c-0aed-480e-9a07-196148d01a25)
 
 > [!CAUTION]
-> Nicht zu empfehlen!!!: Der Parameter autoCreateALias kann ebenfalls entfernt werden, jedoch muss ein korrekter Media-Alias mit dem Channel "media" und den > erwarteten Datenpunkten dann "per Hand" erstellt werden  
-
+> Nicht zu empfehlen!!!: Der Parameter autoCreateALias kann ebenfalls entfernt werden, jedoch muss ein korrekter Media-Alias mit dem Channel "media" und den vom NSPanelTs.ts - Skript erwarteten Datenpunkten dann "per Hand" erstellt werden. Da es nahezu unmöglich ist unter ioBroker einen korrekten und vollständigen Media-Alias zu erstellen, übernimmt das Skript mit diesem Parameter diese Aufgabe.  
 
 # Erstellung der Sonos Listen
 ## Favoriten Liste
