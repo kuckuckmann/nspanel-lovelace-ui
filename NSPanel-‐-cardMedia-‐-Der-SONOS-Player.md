@@ -100,10 +100,11 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 >
 > Für den Fall, dass der Equalizer zum Einsatz kommt, bitte weiteren Link befolgen: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#12-equalizer-f%C3%BCr-cardmedia
 
+> [!Note]
+> siehe auch Erstellung der Sonos Favoriten
+
 ### 10. Track Liste
-* Das Array playList im PageItem wird genutzt. Die Playlists sind dort manuell einzutragen
-> [!NOTE]
-> siehe auch Erstellung einer Sonos Playlist
+* Sofern der Datenpunkt `sonos.0.root.<DEVICE_IP>.queue` Daten enthält und die abspielbaren Medien eine Trackliste enthalten, so wird diese automatisch geladen.
 
 ### 11. SONOS Playlist
 * Das Array playList im PageItem wird genutzt. Die Playlists sind dort manuell einzutragen
@@ -132,10 +133,12 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 ### 17. Vorheriger Track
 * Sofern ein weiterer Track vor dem aktuell abgespielten Titel in der Track Liste verfügbar ist, so wird dieser ausgewählt --> `sonos.0.root.<DEVICE_IP>.prev`
 
-### 18. Player Logo / Seek Funktion (Alternativ Crossfade
+### 18. Player Logo / Seek Funktion (Alternativ Crossfade)
 !!noch zu beschreiben
 
 ### 19. Navigation zur vorherigen Seite  
 * siehe [Navigation](ioBroker-Navigation)  
 
-## Erstellen der Seitenvariable
+# Erstellen der Seitenvariable
+
+# Erstellung der Sonos Favoriten
