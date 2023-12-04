@@ -138,7 +138,16 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 * Sofern ein weiterer Track vor dem aktuell abgespielten Titel in der Track Liste verfügbar ist, so wird dieser ausgewählt --> `sonos.0.root.<DEVICE_IP>.prev`
 
 ### 18. Player Logo / Seek Funktion (Alternativ Crossfade)
-!!noch zu beschreiben
+Per Standard ist der Seek-Modus aktiv. Dieser wird mit Klick auf das Logo des Players aufgerufen:  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/9f8f2785-00c9-4836-a561-82fda275e871)
+
+Jetzt ist es möglich eine Position des Tracks (Titels) in 10% Schritten zu erreichen (vor- und zurückspulen).
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a2d55933-d52a-4d1e-a760-75f98a754181)
+
+> [!NOTE]
+> Wird im PageItem der Parameter  
+> `crossfade: true`  
+> verwendet, dann wird statt der Seek-Funktion Crossfade zur Auswahl aktiv  
 
 ### 19. Navigation zur vorherigen Seite  
 * siehe [Navigation](ioBroker-Navigation)  
