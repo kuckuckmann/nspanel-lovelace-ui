@@ -144,4 +144,6 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 # Erstellung der Sonos Listen
 ## Favoriten Liste
 
-## Individuelle Wiedergabe Liste (Playlist)
+## Individuelle Wiedergabe Liste (Array playList)
+
+## Speaker Liste (Array speakerList)
