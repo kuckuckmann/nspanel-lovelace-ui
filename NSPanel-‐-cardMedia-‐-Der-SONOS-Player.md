@@ -51,6 +51,8 @@ Folgende Datenpunkte der Sonos Adapterinstanz werden berücksichtigt:
 
 ### 9. SONOS Favoriten (Alternativ Equalizer)
 #### Steuerelement als SONOS Favoriten:
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2cedade5-89ca-46bf-a8d8-5e4e4c2c3573)
+
 Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisch aus dem Datenpunkt: `sonos.0.root.<DEVICE_IP>.favorites_list_array` extrahiert:
 > [!CAUTION]
 > ```typescript
@@ -123,6 +125,7 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 
 ### 12. SONOS Speaker Liste
 * Das Array speakerList im PageItem wird genutzt. Die Wiedergabegeräte sind dort manuell einzutragen
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/da4e95e3-9091-43da-9712-744e85a30c0c)
 > [!NOTE]
 > siehe auch Erstellung einer speakerList
 
