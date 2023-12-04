@@ -12,3 +12,9 @@ Der Seitentitel steht auf:
 * `sonos.0.root.<DEVICE_IP>.current_station` wenn ein Radiosender gewählt wurde
 ### 2. Navigation zur nächsten Seite
 * siehe [Navigation](ioBroker-Navigation)
+### 3. Track (Elapsed|Duration
+Zeigt die folgenden Datenpunkte der aktiven Sonos Adapterinstanz wenn der Wert des Datenpunktes `sonos.0.root.<DEVICE_IP>.current_type` auf track(0) steht:
+* Titel --> sonos.0.root.<DEVICE_IP>.current_title 
+* Verstrichene Zeit (Minuten/Sekunden) des aktuell abgespielten Titels (nicht bei Radio) --> `sonos.0.root.<DEVICE_IP>.current_elapsed_s`  
+* Gesamtlänge (Minuten/Sekunden) des aktuell abgespielten Titels (nicht bei Radio) --> `sonos.0.root.<DEVICE_IP>.current_duration_s`  
+>
