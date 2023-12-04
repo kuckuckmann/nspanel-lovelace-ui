@@ -3,7 +3,7 @@
 # Aufbau des SONOS Players 
 **(vollständig ab NSPanelTs.ts - Version 4.3.3.17)**
 
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/92b349c7-6a85-4903-8911-61000f5144d6)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/da9d3b70-8ed2-4009-a79d-0df76903f4cf)
 
 ## Bedienungselemente / Anzeigen
 ### 1. Seitentitel  
@@ -100,5 +100,40 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 >
 > Für den Fall, dass der Equalizer zum Einsatz kommt, bitte weiteren Link befolgen: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#12-equalizer-f%C3%BCr-cardmedia
 
- 
-  
+### 10. Track Liste
+* Das Array playList im PageItem wird genutzt. Die Playlists sind dort manuell einzutragen
+> [!INFO]
+> siehe auch Erstellung einer Sonos Playlist
+
+### 11. SONOS Playlist
+* Das Array playList im PageItem wird genutzt. Die Playlists sind dort manuell einzutragen
+> [!INFO]
+> siehe auch Erstellung einer Sonos Playlist
+
+### 12. SONOS Speaker Liste
+* Das Array speakerList im PageItem wird genutzt. Die Wiedergabegeräte sind dort manuell einzutragen
+> [!INFO]
+> siehe auch Erstellung einer speakerList
+
+### 13. Nächster Track
+* Sofern ein weiterer Titel in der Track Liste verfügbar ist, so wird dieser ausgewählt --> `sonos.0.root.<DEVICE_IP>.next`
+
+### 14. Play / Pause   
+* Umschaltung zwischen den Datenpunkten `sonos.0.root.<DEVICE_IP>.play` und `sonos.0.root.<DEVICE_IP>.pause`    
+
+### 15. Volume leiser
+* Die Feinjustierung der aktuellen Lautstärke in Einerschritten (-1) --> Datenpunkt: `sonos.0.root.<DEVICE_IP>.volume`  
+
+### 16. Shuffle
+* Umschaltung zwischen den Datenpunkten `sonos.0.root.<DEVICE_IP>.shuffle` als wahr/falsch (true/false)
+> [!INFO]
+> Diese Funktion ist nicht steuerbar, wenn Radiosender abgespielt werden
+
+### 17. Vorheriger Track
+* Sofern ein weiterer Track vor dem aktuell abgespielten Titel in der Track Liste verfügbar ist, so wird dieser ausgewählt --> `sonos.0.root.<DEVICE_IP>.prev`
+
+### 18. Player Logo / Seek Funktion (Alternativ Crossfade
+!!noch zu beschreiben
+
+### 19. Navigation zur vorherigen Seite  
+* siehe [Navigation](ioBroker-Navigation)  
