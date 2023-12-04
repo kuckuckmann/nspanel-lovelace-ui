@@ -1,5 +1,5 @@
 **Inhalt:**
-* [Aufbau des SONOS Players](aufbau-des-sonos-players)   
+* [Aufbau des SONOS Players](#aufbau-des-sonos-players)   
    * [Player im Live-Betrieb](#player-im-live-betrieb)
    * [Bedienungselemente / Anzeigen](#bedienungselemente--anzeigen)
 * [Erstellung der Seitenvariable für die cardMedia](#erstellung-der-seitenvariable-f%C3%BCr-die-cardmedia)
