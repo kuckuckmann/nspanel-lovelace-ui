@@ -9,9 +9,11 @@
 ### 1. Seitentitel  
 Der Seitentitel steht auf:   
 * Sonos Player, wenn keine Wiedergabe erfolgt oder wenn das Wiedergabegerät über die Sonos-Adapterinstanz (z.B. sonos.0.) im Datenpunkt `sonos.0.root.<DEVICE_IP>.current_type` auf track(0) steht  
-* `sonos.0.root.<DEVICE_IP>.current_station` wenn ein Radiosender gewählt wurde
+* `sonos.0.root.<DEVICE_IP>.current_station` wenn ein Radiosender gewählt wurde  
+
 ### 2. Navigation zur nächsten Seite  
 * siehe [Navigation](ioBroker-Navigation)  
+
 ### 3. Track (Elapsed|Duration)  
 Zeigt die folgenden Datenpunkte der aktiven Sonos Adapterinstanz wenn der Wert des Datenpunktes `sonos.0.root.<DEVICE_IP>.current_type` auf track(0) steht:  
 * Titel --> sonos.0.root.<DEVICE_IP>.current_title  
@@ -24,22 +26,27 @@ Zeigt die folgenden Datenpunkte der aktiven Sonos Adapterinstanz wenn der Wert d
 Folgende Datenpunkte der Sonos Adapterinstanz werden berücksichtigt:  
 * Interpret --> `sonos.0.root.<DEVICE_IP>.current_artist` (beim Abspielen von Radiosendern abweichende Informationen zum Sender)  
 * Album --> `sonos.0.root.<DEVICE_IP>.current_album` (beim Abspielen von Radiosendern abweichende Informationen zum Sender)  
+
 ### 5. Player An/Aus (Stop)   
-* Stop (Icon blau) --> `sonos.0.root.<DEVICE_IP>.stop` (beim Abspielen weiß)
+* Stop (Icon blau) --> `sonos.0.root.<DEVICE_IP>.stop` (beim Abspielen weiß)  
+
 ### 6. Volume lauter
-* Die Feinjustierung der aktuellen Lautstärke in Einerschritten (+1) --> Datenpunkt: `sonos.0.root.<DEVICE_IP>.volume`
+* Die Feinjustierung der aktuellen Lautstärke in Einerschritten (+1) --> Datenpunkt: `sonos.0.root.<DEVICE_IP>.volume`  
+
 ### 7. Volume zwischen 0% und 100%
 * Die Feinjustierung der aktuellen Lautstärke erfolgt stufenlos zwischen 0% und 100% --> Datenpunkt: `sonos.0.root.<DEVICE_IP>.volume`
 > [!NOTE]  
 > Volume zieht das Volumen einer Gruppe beim Einsatz einer Sonos-Box mit. Wenn das Group-Volume (`sonos.0.root.<DEVICE_IP>.group_volume`) benötigt wird, so ist der Datenpunkt nach Erstellung des Auto-Alias entsprechend zu ändern.  
 > ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/27165f31-9d25-4921-98b9-1c3a7e46cf82)  
 > ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ca9c5cd2-1fa0-467e-ae01-5dc968b26e63)  
+
 ### 8. Repeat-Funktion  
 > [!NOTE]  
 > Dieses Steuerelement kann unterschiedliche Eigenschaften annehmen    
 * Es sind keine weiteren Einstellungen zu berücksichtigen. Der Datenpunkt `sonos.0.root.<DEVICE_IP>.repeat` wird genutzt und inkrementiert die Werte `none(0)`, `all(1)` und `one(2)`  
+
 ### 9. SONOS Favoriten (Alternativ Equalizer)
-Steuerelement als SONOS Favoriten:
+#### Steuerelement als SONOS Favoriten:
 Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisch aus dem Datenpunkt: `sonos.0.root.<DEVICE_IP>.favorites_list_array` extrahiert:
 > [!CAUTION]
 > ```typescript
@@ -62,7 +69,7 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 >              }]
 > };
 > ```
-#### Equalizer Funktion:
+#### Steuerelement als Equalizer:
 * Innerhalb des PageItem wird der Equalizer definiert:  
 > [!CAUTION]
 > ```typescript
@@ -87,6 +94,11 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 >              }]
 > };
 > ```
+
+> [!IMPORTANT]
+> Die Sonos Adapterinstanz verfügt nicht über Klangsteuerungs-Datenpunkte. Es kann jedoch die SONOS HTTP API https://github.com/jishi/node-sonos-http-api#usage genutzt werden.  
+>
+> Für den Fall, dass der Equalizer zum Einsatz kommt, bitte weiteren Link befolgen: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#12-equalizer-f%C3%BCr-cardmedia
 
  
   
