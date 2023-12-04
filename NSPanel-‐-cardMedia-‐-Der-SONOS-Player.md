@@ -74,7 +74,7 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 > };
 > ```
 #### Steuerelement als Equalizer:
-* Innerhalb des PageItem wird der Equalizer definiert:  
+* Innerhalb des `PageItem` wird der `Equalizer` und in diesem Beispiel ebenfalls der Parameter `crossfade` definiert:  
 > [!CAUTION]
 > ```typescript
 > let Sonos = <PageMedia>
@@ -93,6 +93,7 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 >                 colorMediaIcon: colorSonos,
 >                 colorMediaArtist: Yellow,
 >                 colorMediaTitle: Yellow,
+>                 crossfade:       true,
 >                 alwaysOnDisplay: true,
 >                 autoCreateALias: true
 >              }]
