@@ -41,7 +41,7 @@ Folgende Datenpunkte der Sonos Adapterinstanz werden berücksichtigt:
 * Es sind keine weiteren Einstellungen zu berücksichtigen. Der Datenpunkt `sonos.0.root.<DEVICE_IP>.repeat` wird genutzt und inkrementiert die Werte `none(0)`, `all(1)` und `one(2)`  
 
 > [!CAUTION]
->```
+> ```
 let Sonos = <PageMedia>
 {
     'type': 'cardMedia',
