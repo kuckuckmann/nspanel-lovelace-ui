@@ -139,7 +139,62 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 ### 19. Navigation zur vorherigen Seite  
 * siehe [Navigation](ioBroker-Navigation)  
 
-# Erstellen der Seitenvariable
+# Erstellung der Seitenvariable für die cardMedia
+
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/e87fd566-af21-475e-80dd-81e6225e52e9)
+
+## Beispiele:
+### Standard Beispielvorlage für AlwaysOnDisplay
+In diesem Beispiel wird der Screensaver nach eingestellter nicht aufgeschaltet. Der Player bleibt geöffnet bis zu einer Seite ohne alwaysOnDisplay navigiert wird.
+```typescript
+let Sonos = <PageMedia>
+{
+    'type': 'cardMedia',
+    'heading': 'Sonos Player',
+    'useColor': true,
+    'items': [<PageItem>{   
+                id: AliasPath + 'Media.PlayerSonos', 
+                adapterPlayerInstance: 'sonos.0.',
+                mediaDevice: '192_168_1_212',
+                speakerList: ['Wohnzimmer', 'Küche', Büro],
+                playList: ['Hartmann','Armilars Playlist'],
+                colorMediaIcon: colorSonos,
+                colorMediaArtist: Yellow,
+                colorMediaTitle: Yellow,
+                alwaysOnDisplay: true,
+                autoCreateALias: true
+             }]
+};
+```
+
+### Standard Beispielvorlage ohne AlwaysOnDisplay
+In diesem Beispiel wird der Screensaver nach eingestellter Zeit aufgerufen. Der Player wird geschlossen.
+```typescript
+let Sonos = <PageMedia>
+{
+    'type': 'cardMedia',
+    'heading': 'Sonos Player',
+    'useColor': true,
+    'items': [<PageItem>{   
+                id: AliasPath + 'Media.PlayerSonos', 
+                adapterPlayerInstance: 'sonos.0.',
+                mediaDevice: '192_168_1_212',
+                speakerList: ['Wohnzimmer', 'Küche', Büro],
+                playList: ['Hartmann','Armilars Playlist'],
+                colorMediaIcon: colorSonos,
+                colorMediaArtist: Yellow,
+                colorMediaTitle: Yellow,
+                autoCreateALias: true
+             }]
+};
+```
+
+mediaDevice ist hierbei die mit '_' getrennte IP des primären Wiedergabegerätes und muss angepasst werden. Der Inhalt ist analog des Datenpunktes `sonos.0.root.<DEVICE_IP>.coordinator`
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/6de74a6c-0aed-480e-9a07-196148d01a25)
+
+> [!CAUTION]
+> Nicht zu empfehlen!!!: Der Parameter autoCreateALias kann ebenfalls entfernt werden, jedoch muss ein korrekter Media-Alias mit dem Channel "media" und den > erwarteten Datenpunkten dann "per Hand" erstellt werden  
+
 
 # Erstellung der Sonos Listen
 ## Favoriten Liste
