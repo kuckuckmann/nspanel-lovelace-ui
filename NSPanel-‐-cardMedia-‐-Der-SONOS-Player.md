@@ -210,3 +210,8 @@ Sonos Favoriten hinzufügen:
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/671bbcca-f42a-49ec-9774-3c2f5ffa58c6)  
 
 ## Individuelle Wiedergabe Liste (Array playList)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/10a05428-dac9-4bc9-8ab0-52af9a7fd5bb)  
+  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/607403ee-9f77-409d-895b-d9bf2a7e6a26)  
+
+Die Namen der individuellen Playlisten für diesen Player werden dann in das Array (Beispiel): `playList: ['Hartmann','Armilars Playlist'],` des PageItem eingetragen.
