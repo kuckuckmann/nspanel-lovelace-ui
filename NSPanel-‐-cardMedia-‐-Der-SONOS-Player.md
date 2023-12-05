@@ -22,6 +22,9 @@
 
 ![Nextion_Editor_OU5vhqrVgr](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/6d051f61-bcfb-40ac-84fd-abfcb34f62fe)
 
+und mit den beiden alternativen Einstellungen für den Equalizer und die Crossfade-Funktion
+![Nextion_Editor_UYuOfvSHCY](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/08fb83b9-f4d3-45de-9f53-8bdd616711df)
+
 ## Bedienungselemente / Anzeigen
 ### 1. Seitentitel  
 Der Seitentitel steht auf:   
