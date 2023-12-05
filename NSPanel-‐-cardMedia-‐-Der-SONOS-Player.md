@@ -11,7 +11,7 @@
    * [Favoriten Liste](#favoriten-liste)
    * [Individuelle Wiedergabe Liste (Array playList)](#individuelle-wiedergabe-liste-array-playlist)
 * [Der Auto-Alias](#der-auto-alias)
-
+* [cardMedia Sonos FAQ](#cardmedia-sonos-faq)
 
 # Aufbau des SONOS Players 
 **(vollständig ab NSPanelTs.ts - Version 4.3.3.17)**
