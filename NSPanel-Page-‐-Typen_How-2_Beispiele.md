@@ -664,7 +664,8 @@ let Sonos = <PageMedia>
                 colorMediaIcon: colorSpotify,
                 colorMediaArtist: Yellow,
                 colorMediaTitle: Yellow,
-                //crossfade: true             /* Ersetzt die Seek Funktion durch Crossfade im Logo "//" entfernt werden */
+                //crossfade: true             /* Ersetzt die Seek Funktion durch Crossfade 
+                                                 im Logo wenn "//" entfernt wird */
                 alwaysOnDisplay: true,
                 autoCreateALias: true
              }]
