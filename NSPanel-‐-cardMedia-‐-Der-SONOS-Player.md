@@ -274,11 +274,11 @@ Die Datenpunkte der Adapter-Instanz des Sonos-Adapters werden teils nur träge a
 Der Datenpunkt "queue" ist nicht wie in anderen Player-Adaptern ein Datentyp JSON-Objekt, sondern ein Datentyp String. Beim Aufbau der Playlist wird aus dem String ein JSON-Objekt. Bei der Umwandlung kann es vorkommen, dass der String des Titels aufgrund von Sonderzeichen nicht importiert werden kann oder das eine falsche Trennung stattfindet. 
 
 ### In der Favoriten-Liste steht z.B. nur "Hits"
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a392aa37-42ae-4836-8db9-bb6ee2f3068b)
-In der Sonos App umbenennen:
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/21615199-bc35-4e9b-90d0-b44fbcf01998)
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/340bb96e-5860-4a76-ac58-e3c72296bd19)
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/499b0033-90f5-4b6d-b961-eee72a43f6af)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a392aa37-42ae-4836-8db9-bb6ee2f3068b)  
+In der Sonos App umbenennen:  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/21615199-bc35-4e9b-90d0-b44fbcf01998)  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/340bb96e-5860-4a76-ac58-e3c72296bd19)  
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/499b0033-90f5-4b6d-b961-eee72a43f6af)  
 
 
 
