@@ -181,11 +181,12 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
 * `mediaDevice` :  bei alexa2 die Seriennummer des Echos, bei sonos die IP, bei squeezeboxrpc der erstellte Devicename
 * `speakerList` :  bei alexa2 schaltbare Device-Namen, bei spotify-premium auswählbare Device-Namen
 * `playList` :  nur für alexa2 und spotify-premium
-* `equalizerList` :  kann verwendet werden, wenn Das Device (z.B. Amazon Echo) und der Adapter des Devices eine Equalizer-Funktionalität bereit stellt
+* `equalizerList` :  kann verwendet werden, wenn Das Device (z.B. Amazon Echo oder Sonos HTTP API) und der Adapter des Devices eine Equalizer-Funktionalität bereit stellt
 * `repeatList` : `['off','context','track']` bei spotify-premium Instanz
 * `colorMediaIcon` :  Farbe für Player-Icon
 * `colorMediaArtist` :  Farbe für Song-Interpreten
 * `colorMediaTitle` :  Farbe für Song-Titel (Track)
+* `crossfade` : Ersetzt die Seek-Funktion im Logo des Sonos-Players
 * `alwaysOnDisplay` : Lässt den Media-Player geöffnet, bis eine weitere Seite navigiert wird
 * `autoCreateALias` :  NSPanel-Script erstellt den Alias automatisch unter **alias.0** , wenn Wert = `true`
   
