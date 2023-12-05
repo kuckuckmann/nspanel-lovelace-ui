@@ -20,7 +20,7 @@
 
 ## Player im Live-Betrieb:
 
-![Nextion_Editor_fsSVjRpc9f](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2848f8ec-3575-4332-a4ba-be2230cfc856)
+![Nextion_Editor_OU5vhqrVgr](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/6d051f61-bcfb-40ac-84fd-abfcb34f62fe)
 
 ## Bedienungselemente / Anzeigen
 ### 1. Seitentitel  
