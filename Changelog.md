@@ -3,8 +3,8 @@
 
 ![v43317](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/99f3fe78-8425-42ca-b658-93c0b04ff184)
 ![NSPanel](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/15bb9318-5097-4f81-a7b5-6b2431b85f27)
-
   
+[Wiki Link](https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-%E2%80%90-cardMedia-%E2%80%90-Der-SONOS-Player)
 [Forum Link](https://forum.iobroker.net/post/1090546)  
 ****
 
