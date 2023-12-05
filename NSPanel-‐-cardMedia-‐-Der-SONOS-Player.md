@@ -63,12 +63,12 @@ Folgende Datenpunkte der Sonos Adapterinstanz werden berücksichtigt:
 > ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/27165f31-9d25-4921-98b9-1c3a7e46cf82)  
 > ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ca9c5cd2-1fa0-467e-ae01-5dc968b26e63)  
 
-### 8. Repeat-Funktion  
-> [!NOTE]  
-> Dieses Steuerelement kann unterschiedliche Eigenschaften annehmen    
+### 8. Repeat-Funktion      
 * Es sind keine weiteren Einstellungen zu berücksichtigen. Der Datenpunkt `sonos.0.root.<DEVICE_IP>.repeat` wird genutzt und inkrementiert die Werte `none(0)`, `all(1)` und `one(2)`  
 
 ### 9. SONOS Favoriten (Alternativ Equalizer)
+> [!NOTE]  
+> Dieses Steuerelement kann unterschiedliche Eigenschaften annehmen
 #### Steuerelement als SONOS Favoriten:
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2cedade5-89ca-46bf-a8d8-5e4e4c2c3573)
 
