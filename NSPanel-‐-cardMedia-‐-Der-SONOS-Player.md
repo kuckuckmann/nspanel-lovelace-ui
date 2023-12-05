@@ -136,7 +136,7 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7a544d32-7fe1-45f8-b9fb-50ad5a259628)  
 
 > [!NOTE]
-> siehe auch [Erstellung einer Sonos Playlist](#)
+> siehe auch [Erstellung einer Sonos Playlist](#individuelle-wiedergabe-liste-array-playlist)
 
 ### 12. SONOS Speaker Liste
 * Das Array speakerList im PageItem wird genutzt. Die Wiedergabegeräte sind dort manuell einzutragen
