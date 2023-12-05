@@ -645,13 +645,16 @@ let Alexa = <PageMedia>
   
 **CardMedia - Sonos**  
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3bf458ac-5a0d-44dc-83fe-5feb37d33697)
+![Nextion_Editor_OU5vhqrVgr](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8547de8b-1d28-4b76-a5c2-d351cbe6fe1b)
+
+Der komplette Leitfaden für den Sonos-Player ist hier:
+https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-%E2%80%90-cardMedia-%E2%80%90-Der-SONOS-Player
   
 ```typescript  
 let Sonos = <PageMedia>
 {
     'type': 'cardMedia',
-    'heading': 'Sonos',
+    'heading': 'Sonos Player',
     'useColor': true,
     'items': [<PageItem>{   
                 id: AliasPath + 'Media.PlayerSonos', 
@@ -661,6 +664,7 @@ let Sonos = <PageMedia>
                 colorMediaIcon: colorSpotify,
                 colorMediaArtist: Yellow,
                 colorMediaTitle: Yellow,
+                //crossfade: true             /* Ersetzt die Seek Funktion durch Crossfade im Logo "//" entfernt werden */
                 alwaysOnDisplay: true,
                 autoCreateALias: true
              }]
