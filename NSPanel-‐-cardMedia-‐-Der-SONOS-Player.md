@@ -13,7 +13,6 @@
 * [Der Auto-Alias](#der-auto-alias)
 
 
-
 # Aufbau des SONOS Players 
 **(vollständig ab NSPanelTs.ts - Version 4.3.3.17)**
 
@@ -261,4 +260,9 @@ Der nachfolgende Alias wird komplett und vollständig angelegt, wenn der Paramet
 
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/5f51762a-f648-4cdb-9b75-80065019a4a9)
 
+# cardMedia Sonos FAQ
+### Der Player aktualisiert nicht die Informationen?
+Die Datenpunkte der Adapter-Instanz des Sonos-Adapters werden teils nur träge aktualisiert. Der Player kann nur anzeigen, was bereits in der Adapter-Instanz in den Datenpunkten vorhanden ist!
 
+### In der Tracklist steht ab und zu "undefined"?
+Der Datenpunkt "queue" ist nicht wie in anderen Player-Adaptern ein Datentyp JSON-Objekt, sondern ein Datentyp String. Beim Aufbau der Playlist wird aus dem String ein JSON-Objekt. Bei der Umwandlung kann es vorkommen, dass der String des Titels aufgrund von Sonderzeichen nicht importiert werden kann oder das eine falsche Trennung stattfindet. 
