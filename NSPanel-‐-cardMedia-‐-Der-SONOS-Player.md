@@ -123,7 +123,7 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 > Für den Fall, dass der Equalizer zum Einsatz kommt, bitte weiteren Link befolgen: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#12-equalizer-f%C3%BCr-cardmedia
 
 > [!Note]
-> siehe auch Erstellung der Sonos Favoriten
+> siehe auch [Erstellung der Sonos Favoriten](#favoriten-liste)
 
 ### 10. Track Liste
 * Sofern der Datenpunkt `sonos.0.root.<DEVICE_IP>.queue` Daten enthält und die abspielbaren Medien eine Trackliste enthalten, so wird diese automatisch geladen.
