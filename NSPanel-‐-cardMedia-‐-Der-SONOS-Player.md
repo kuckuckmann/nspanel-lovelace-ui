@@ -17,7 +17,7 @@
 # Aufbau des SONOS Players 
 **(vollständig ab NSPanelTs.ts - Version 4.3.3.17)**
 
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/da9d3b70-8ed2-4009-a79d-0df76903f4cf)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/0dfa98e2-ed5a-4dfc-97b8-016779633a9b)
 
 ## Player im Live-Betrieb:
 
