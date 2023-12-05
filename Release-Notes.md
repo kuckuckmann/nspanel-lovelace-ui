@@ -225,6 +225,7 @@
         - 30.11.2023 - v4.3.3.16 Beautification of the Sonos player Strings / Add Duration & Elapsed
         - 01.12.2023 - v4.3.3.16 Fix Datapoints with Value null 
         - 02.12.2023 - v4.3.3.16 Request replaced by Axios
+        - 04.12.2023 - v4.3.3.17 Add SEEK and CROSSFADE to Sonos cardMedia
 
         Todo:
         - XX.XX.XXXX - v4.4.0    Change the bottomScreensaverEntity (rolling) if more than 6 entries are defined	
