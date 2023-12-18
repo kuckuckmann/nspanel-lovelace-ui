@@ -1,4 +1,19 @@
 **ioBroker Changelog (TypeScript)**  
+
+# v4.3.3.24 (Hotfix)
+
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/6d126909-a2ef-4683-8b4a-c850cd2a3335)
+
+[Forum Link](https://forum.iobroker.net/post/1096707)  
+****
+
+# v4.3.3.23
+
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/2ee4cd33-4814-4212-b344-44d3c153ed48)
+
+[Forum Link](https://forum.iobroker.net/post/1096164)  
+****
+
 # v4.3.3.22 
 
 ![v43322](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/5d272138-4d4c-4c44-b118-adf7ff32cceb)
