@@ -12,7 +12,6 @@
 ![v43321](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/db60fa68-9d52-4fa7-aeed-3f7e44a3bdc2)
   
  
-[Forum Link](https://forum.iobroker.net/post/1092494)  
 ****
 
 # v4.3.3.20 
