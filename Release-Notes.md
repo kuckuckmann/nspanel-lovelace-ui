@@ -226,6 +226,16 @@
         - 01.12.2023 - v4.3.3.16 Fix Datapoints with Value null 
         - 02.12.2023 - v4.3.3.16 Request replaced by Axios
         - 04.12.2023 - v4.3.3.17 Add SEEK and CROSSFADE to Sonos cardMedia
+        - 05.12.2023 - v4.3.3.18 Add (ELAPSED/DURATION) to v2Adapter alexa2
+        - 06.12.2023 - v4.3.3.18 Replace missing Type console.log --> log(message, 'serverity')
+        - 07.12.2023 - v4.3.3.19 Fix Trigger activeDimmodeBrightness if Dimmode = -1
+        - 08.12.2023 - v4.3.3.20 add Role AlarmTime for Alarm Clock
+        - 09.12.2023 - v4.3.3.21 Add createAutoAlias to popupTimer only for Time
+        - 14.12.2023 - v4.3.3.22 Add UpdateMessage => disable the update messages
+        - 14.12.2023 - v4.3.3.22 Fix name by static Navi Icon 
+        - 17.12.2023 - v4.3.3.23 Optimization of the blind control (enable or disable Up/Stop/Down)
+        - 18.12.2023 - v4.3.3.24 Hotfix Update Message / Add Icon Colors to Entity Button
+        - 21.12.2023 - v4.3.3.25 Add switch of cardQR by hidePassword: true 
 
         Todo:
-        - XX.XX.XXXX - v4.4.0    Change the bottomScreensaverEntity (rolling) if more than 6 entries are defined	
+        - XX.XX.XXXX - v5.0.0    Change the bottomScreensaverEntity (rolling) if more than 6 entries are defined	
