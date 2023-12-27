@@ -1118,7 +1118,7 @@ let FahrplanEntities = <PageEntities>
   
 ***
     
-## **22.) Shelly DUO Lampen**  
+## **23.) Shelly DUO Lampen**  
   
 * **Beschreibung:**  
   Shelly DUO RGBW Lampen bringen eine Eigenschaft mit, dass man mit einem separaten Schalter zwischen Color und White umschalten muss.  
@@ -1134,7 +1134,7 @@ let FahrplanEntities = <PageEntities>
 * **Konfiguration**  
   
   **Hilfs-Datenpunkt**  
-  Zum Umschalten zwischen Color und White benötigen wir innerhalb der **popupLight** ein **inSelpopup**. Hierfür ist es erforderlich, dass wir einen Hilfs-Datenpunkt anlegen. In unserem Beispiel hier unter **0_userdata.0.NSPanelOwn.ShellyDuo01** ein neuer Datenpunkt vom Zustandstyp **Zahl** mit dem autom. gesetzen Wert 0.  
+  Zum Umschalten zwischen Color und White benötigen wir innerhalb der **popupLight** ein **InSel Popup**. Hierfür ist es erforderlich, dass wir einen Hilfs-Datenpunkt anlegen. In unserem Beispiel hier unter **0_userdata.0.NSPanelOwn.ShellyDuo01** ein neuer Datenpunkt vom Datentyp **Zahl** mit dem autom. gesetzen Wert 0.  
   
   ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/0efad775-d06b-46e6-86d2-97f682aaf37b)  
   
@@ -1144,7 +1144,7 @@ let FahrplanEntities = <PageEntities>
   * **DIMMER** --> ID **brightness** aus den Shelly Duo Datenpunkten (bitte nicht mit **gain** verwechseln)
   * **TEMPERATURE** --> ID **temp** aus den Shelly Duo Datenpunkten
   * **ON_ACTUAL** --> ID **switch** aus den Shelly Duo Datenpunkten
-  * Über das weiße Plussymbol legen wir einen weiteren manuellen Zustand an mit dem Typ **VALUE**. Diesen verlinken wir mit dem Hilfs-Datenpunkt aus dem vorherigen Schritt.
+  * Über das weiße Plussymbol legen wir einen weiteren manuellen Zustand an mit dem Namen **VALUE** (Rolle: state/Datentyp: number). Diesen verlinken wir mit dem Hilfs-Datenpunkt aus dem vorherigen Schritt.
  
   **Blockly**  
   Wir benötigen ein Skript, hier mit einem Blockly umgesetzt, welches zwei Funktionen erfüllen muss:  
@@ -1164,7 +1164,7 @@ let FahrplanEntities = <PageEntities>
    
 ***  
   
-## **23.) Dynamisches Icon** (CardGrid)    
+## **24.) Dynamisches Icon** (CardGrid)    
   
 * **Beschreibung:**  
   Auf der CardGrid kann man nun das Icon dynamisch austauschen lassen. Im Gegensatz zum Statewechsel bei Aliasen wie **Light**, **Door** oder **Window** wo man im PageItem **icon** und **icon2** vergeben kann, bietet sich mit dieser neuen die Funktion die Möglichkeit das Icon nach Belieben zu ändern. 
