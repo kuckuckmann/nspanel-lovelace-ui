@@ -207,8 +207,8 @@ Im oberen Teil des Skripts sind die grundsätzlichen Teile der zu erstellenden A
 
     // DE: Anpassen an die Verzeichnisse der MQTT-Adapter-Instanz
     // EN: Adapt to the MQTT adapter instance directories
-    const NSPanelReceiveTopic: string = 'mqtt.0.SmartHome.NSPanel_EMU.tele.RESULT';
-    const NSPanelSendTopic: string = 'mqtt.0.SmartHome.NSPanel_EMU.cmnd.CustomSend';
+    const NSPanelReceiveTopic: string = 'mqtt.0.SmartHome.NSPanel_1.tele.RESULT';
+    const NSPanelSendTopic: string = 'mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend';
 
 ....
 
@@ -216,7 +216,7 @@ Im oberen Teil des Skripts sind die grundsätzlichen Teile der zu erstellenden A
 
     // DE: Anpassen an das jeweilige NSPanel
     // EN: Adapt to the respective NSPanel
-    const NSPanel_Path = '0_userdata.0.NSPanel.EMU.';
+    const NSPanel_Path = '0_userdata.0.NSPanel.1.';
 ```  
 
 Bitte starte das Skript. Alle weiteren Parameter stellen wir später ein. Ab jetzt sollte der Startup-Screen „Waiting for Connection“ in den Sreensaver wechseln und minütlich die Uhrzeit an den Screensaver übertragen und das Datum aktualisiert werden.
