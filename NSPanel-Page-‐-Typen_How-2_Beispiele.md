@@ -1,4 +1,4 @@
-_Stand: 03.10.2023 / v1.0_
+_Stand: 02.01.2023 / v1.1_
   
 # Einleitung
   
