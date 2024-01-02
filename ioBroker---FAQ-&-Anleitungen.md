@@ -184,17 +184,17 @@ const NSPanel_Alarm_Path = '0_userdata.0.NSPanel.';
 
 **Beispiel**:  
   ```typescript  
-  let Alarmseite = <PageAlarm>
+  let Alarmseite: PageType =
         {
         "type": "cardAlarm",
         "heading": "Alarm",
         "useColor": true,
         "subPage": false,
         "items": [
-            <PageItem>{ id: 'alias.0.NSPanel.Alarm',
-                        actionStringArray: ['Vollschutz','Zuhause','Nacht','Besuch','Ausschalten'],
-                        autoCreateALias: true }
-                 ]
+            { id: 'alias.0.NSPanel.Alarm',
+              actionStringArray: ['Vollschutz','Zuhause','Nacht','Besuch','Ausschalten'],
+              autoCreateALias: true }
+         ]
        }
   ``` 
   
@@ -410,7 +410,7 @@ Blockly Skript (by @Armilar):
 * **Konfigurationsskript**
 Im Konfigurationsskript muss ein Grid passend zu den Aliasen angelegt werden. Hier das Bsp. aus dem Default:
 ```typescript  
-let Abfall = <PageEntities>
+let Abfall: PageType =
 {
     "type": "cardEntities",
     "heading": "Abfallkalender",
@@ -418,10 +418,10 @@ let Abfall = <PageEntities>
     "subPage": false,
     "parent": undefined,
     "items": [
-        <PageItem>{ id: AliasPath + 'Abfall.event1',icon: 'trash-can'},  
-        <PageItem>{ id: AliasPath + 'Abfall.event2',icon: 'trash-can'},  
-        <PageItem>{ id: AliasPath + 'Abfall.event3',icon: 'trash-can'},  
-        <PageItem>{ id: AliasPath + 'Abfall.event4',icon: 'trash-can'}  
+        { id: AliasPath + 'Abfall.event1',icon: 'trash-can'},  
+        { id: AliasPath + 'Abfall.event2',icon: 'trash-can'},  
+        { id: AliasPath + 'Abfall.event3',icon: 'trash-can'},  
+        { id: AliasPath + 'Abfall.event4',icon: 'trash-can'}  
     ]
 }
 ```
@@ -464,14 +464,14 @@ Für den erstellten Datenpunkt nun einen Alias vom Typ Info anlegen.
 Im Script müsst ihr im Konfigurationsbereich nun eine PageQR hinzufügen. 
 
 ```typescript  
-let WLAN = <PageQR> 
+let WLAN: PageType = 
 {
     "type": "cardQR",
     "heading": "Gäste WLAN",
     "useColor": true,
     "subPage": false,
     "items": [
-		<PageItem>{ id: "alias.0.NPanel.1.GuestWifi" }
+		{ id: "alias.0.NPanel.1.GuestWifi" }
 	
 	]
 };
@@ -593,7 +593,7 @@ Wir benötigen einen Alias vom Typ Jalousie mit den Punkten **ACTUAL**, **CLOSE*
 * **Konfigurationsskript**  
 Im Konfigurationsskript kann man ein PageItem auf einer **cardEntities** oder **cardGrid hinzufügen**.  
   
-  `<PageItem>{ id: "alias.0.Shelly.ShellyShutterTest", icon: "window-shutter", name: "Rolladen test", interpolateColor: true},`  
+  `{ id: "alias.0.Shelly.ShellyShutterTest", icon: "window-shutter", name: "Rolladen test", interpolateColor: true},`  
 
   
   Auf einer **cardEntities** hat man dqann direkt links drei Symbole für **OPEN**, **STOP** und **CLOSE**. Mit Klick auf den Text gelangt man in eine Subpage (**popupShutter Page***) die zusätzlich einen Slider hat um eine prozentuale Position zu fahren.  
@@ -667,7 +667,7 @@ Für jeden Wert, der auf der Card angezeigt werden soll muss ein Alias vom Typ I
 Hier das beispiel, wie die Card dann im Konfigurationsskript hinzugefügt werden muss. Man beachte hier die Besonderheit "**unit: "Wert der Einheit"**", welche dann am Ende der zeile angezeigt wird:  
   
 ```typescript  
-var PV_Anlage = <PageEntities>
+var PV_Anlage: PageType =
 {
     "type": "cardEntities",
     "heading": "PV Anlage",
@@ -675,10 +675,10 @@ var PV_Anlage = <PageEntities>
     "subPage": false,
     "parent": undefined,
     "items": [
-        <PageItem>{ id: "alias.0.NSPanel_1.ErsterWertderPVAnlage", name: "aktuelle PV-Leistung", unit: "kWh"},
-        <PageItem>{ id: "alias.0.NSPanel_1.ZweiterWertderPVAnlage"},
-        <PageItem>{ id: "alias.0.NSPanel_1.DritterWertderPVAnlage"},
-        <PageItem>{ id: "alias.0.NSPanel_1.VierterWertderPVAnlage", name: "Mein PV Wert", icon: "solar-power", unit: "W", offColor: MSYellow, onColor: MSYellow, useColor: true}
+        { id: "alias.0.NSPanel_1.ErsterWertderPVAnlage", name: "aktuelle PV-Leistung", unit: "kWh"},
+        { id: "alias.0.NSPanel_1.ZweiterWertderPVAnlage"},
+        { id: "alias.0.NSPanel_1.DritterWertderPVAnlage"},
+        { id: "alias.0.NSPanel_1.VierterWertderPVAnlage", name: "Mein PV Wert", icon: "solar-power", unit: "W", offColor: MSYellow, onColor: MSYellow, useColor: true}
     ]
 };
 ``` 
@@ -816,7 +816,7 @@ Mit der Hilfe des **inSelpopup** erstellen wir uns eine Index-Tabelle, bei der w
     * Über das weiße Plus-Symbol fügen wir einen neuen Zustand **VALUE** hinzu, welcher auf den zuvor angelegten Hilfs-Datenpunkt verlinkt wird.  
     Das pageItem kann dann beispielswise so aussehen:  
     ```
-    <PageItem>{ id: "alias.0.Index_P0", icon: "file-tree-outline", offColor: White, onColor: White, name: "Index Räume", modeList: [ 'Seite1', 'Seite2', 'Seite3', 'Seite4', 'Seite5', 'Abfallkalender', 'Seite7', 'Seite8', 'Seite9', 'Temp1', 'WLAN', 'TestLicht1', 'WLED'],inSel_ChoiceState: false}  
+    { id: "alias.0.Index_P0", icon: "file-tree-outline", offColor: White, onColor: White, name: "Index Räume", modeList: [ 'Seite1', 'Seite2', 'Seite3', 'Seite4', 'Seite5', 'Abfallkalender', 'Seite7', 'Seite8', 'Seite9', 'Temp1', 'WLAN', 'TestLicht1', 'WLED'],inSel_ChoiceState: false}  
     ```  
   
   **Hinweis zum inSelpoup**  
@@ -1000,14 +1000,14 @@ Weiterhin im ALIAS unter ![image](https://user-images.githubusercontent.com/9913
 * **TS-Skript:**  
   
 ```typescript
-let WZ_Heizung = <PageThermo>   
+let WZ_Heizung: PageType =   
 {  
     "type": "cardThermo",  
     "heading": "WZ Thermostat",  
     "useColor": true,  
     "subPage": false,  
     "parent": undefined,  
-    "items": [<PageItem>{ id: "alias.0.NSPanel1.HeizungWZ", minValue: 50, maxValue: 300 }]  
+    "items": [{ id: "alias.0.NSPanel1.HeizungWZ", minValue: 50, maxValue: 300 }]  
 };
 ```  
     
@@ -1060,7 +1060,7 @@ WLED bietet eine Vielzahl an Konfigurations- und Einstellungsmöglichkeiten. Vie
   * **TS-Skript**  
   Im NSPanelTS.ts ist eine Beispielseite für WLED enthalten. Diese haben wir in unserer Konfiguration geringfügig abgeändert. Das Beispiel beinhaltet eine Konfiguration für verschiedene Segmente, diese haben wir erstmal durch den Timer ersetzt. Segmente folgt in einem weiteren Schritt und wird dann auch hier in der Wiki hinzugefügt. Aus dem Grund geht es mit der Konfiguration aus dem Beispiel hier weiter:  
   ```typescript  
-  let WLED = <PageGrid>
+  let WLED: PageType =
   {
       "type": "cardGrid",
         "heading": "WLED",
@@ -1068,15 +1068,15 @@ WLED bietet eine Vielzahl an Konfigurations- und Einstellungsmöglichkeiten. Vie
       "subPage": false,
       "parent": Index01,
       "items": [
-          <PageItem>{ id: "alias.0.WLED.POWER", name: "Power", icon: "power", onColor: Blue, offColor: HMIOff},
-          <PageItem>{ id: "alias.0.WLED.Synch", name: "Sync", icon: "sync", onColor: Blue, offColor: White},
-		<PageItem>{ id: "alias.0.WLED.Timer", name: "Timer", icon: "moon-waxing-crescent", onColor: Blue, offColor: White},
-          <PageItem>{ id: "alias.0.WLED.Presets", icon: "heart-outline", name: "Presets", onColor: White, modeList: ['Preset 0', 'Add Preset']},
-          <PageItem>{ id: "alias.0.WLED.Colors", icon: "palette", name: "Colors", onColor: White, 
+          { id: "alias.0.WLED.POWER", name: "Power", icon: "power", onColor: Blue, offColor: HMIOff},
+          { id: "alias.0.WLED.Synch", name: "Sync", icon: "sync", onColor: Blue, offColor: White},
+	  { id: "alias.0.WLED.Timer", name: "Timer", icon: "moon-waxing-crescent", onColor: Blue, offColor: White},
+          { id: "alias.0.WLED.Presets", icon: "heart-outline", name: "Presets", onColor: White, modeList: ['Preset 0', 'Add Preset']},
+          { id: "alias.0.WLED.Colors", icon: "palette", name: "Colors", onColor: White, 
                       modeList: ['Default', '* Color 1', '* Color Gradient', '* Colors 1&2', '* Colors Only', '* Random Cycle', 'Analogus','April Night', 'Aqua Flash', 'Atlantica', 'Aurora', 'Beach', 'Beech', 'Blink Red', 'Breeze', 'C9', 'C9 New', 'Candy', 'Candy2', 'Cloud', 'Cyane', 'Departure', 'Drywet', 'Fairy Reaf', 'Fire', 'Forest', 'etc']},
-          <PageItem>{ id: "alias.0.WLED.Effects", icon: "emoticon-outline", name: "Effects", onColor: White, 
+          { id: "alias.0.WLED.Effects", icon: "emoticon-outline", name: "Effects", onColor: White, 
                       modeList: ['Solid', 'Android', 'Aurora', 'Blends', 'Blink', 'Blink Rainbow', 'Bouncing Balls','Bpm', 'Breathe', 'Candle', 'Candle Multi', 'Candy Cane', 'Chase', 'Chase 1', 'Chase 2', 'Chase 3', 'Chase Flash', 'Chase Flash Rnd', 'Chase Rainbow', 'Chase Random', 'Chunchun', 'Colorful', 'Colorloop', 'Colortwinkles', 'Colorwaves', 'Dancing Shadows', 'etc']},
-          //<PageItem>{ id: "alias.0.NSPanel_1.WLED.Example.Segments", icon: "layers", name: "Segments", onColor: White, modeList: ['Segment 0', 'Add Segment']},
+          //{ id: "alias.0.NSPanel_1.WLED.Example.Segments", icon: "layers", name: "Segments", onColor: White, modeList: ['Segment 0', 'Add Segment']},
       ]
   };
   ```  
@@ -1100,18 +1100,18 @@ Werden durch das externe Script angelegt.
   
 * **PageConfig:**  
 ```typescript  
-let FahrplanEntities = <PageEntities>  
+let FahrplanEntities: PageType =  
 {  
     'type': 'cardEntities',  
     'heading': 'Haltestelle',  
     'useColor': true,  
     'items': [  
-        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt0'},  
-        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt1'},  
-        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt2'},  
-        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt3'},  
-        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt4'},  
-        <PageItem>{ id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt5'}  
+        { id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt0'},  
+        { id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt1'},  
+        { id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt2'},  
+        { id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt3'},  
+        { id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt4'},  
+        { id: AliasPath + 'FahrplanAnzeiger.Haltestelle0.Abfahrt5'}  
     ]  
 };
 ```  
