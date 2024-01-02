@@ -122,8 +122,28 @@
    </ul>
 </details-->
 
-![youtube_black24](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/607e3bf1-8bbc-41fd-a0b2-5d7d71e5c5d6)
-![youtube_white24](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ea97252b-832d-4a6f-8c8a-865d8c735f76)
+![youtube_black](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f8a810e3-552a-46bf-b8ef-eea0bbcfd71d)
+![youtube_white](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8020e839-36d3-45fe-87af-235088d069b1)
+<details open>
+   <summary>
+      <h3>
+         <picture>
+             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8020e839-36d3-45fe-87af-235088d069b1">
+             <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f8a810e3-552a-46bf-b8ef-eea0bbcfd71d"> 
+         </picture>
+         Youtube
+      </h3>
+   </summary>
+   <ul>      
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-Pages-%E2%80%90-Zeigt-her-Eure-Cards">Zeigt her eure Cards</a></li>
+	  <li><a href="https://forum.iobroker.net/topic/69942/sonoff-nspanel-mit-lovelace-ui-zeigt-her-eure-cards">NSPanel im ioBroker Forum</a>
+		<ul>
+			<li><a href="https://forum.iobroker.net/topic/50888/sonoff-nspanel/1542" target="_blank">Support Thread No#01 (inaktiv)</a>
+			<li><a href="https://forum.iobroker.net/topic/58170/sonoff-nspanel-mit-lovelace-ui/10000" target="_blank">Support Thread No#02 (aktiv)</a>
+		</ul>
+	  </li>
+   </ul>
+</details>
 
 <details open>
    <summary>
