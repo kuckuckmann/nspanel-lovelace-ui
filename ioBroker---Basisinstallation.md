@@ -110,7 +110,7 @@ f) Speichern klicken und Einstellungen verlassen
 
      
   
-Tasmota „Konsolen/Konsole“ öffnen und in die Kommandozeile  
+Zum Flashen müsst Ihr dann die Tasmota „Konsolen/Konsole“ öffnen und in die Kommandozeile  
 `FlashNextion <Hier den Link aus dem NsPanelTS.ts-Skript einfügen, siehe Screenshot>`  
 eingeben, mit Enter bestätigen. Das Panel installiert jetzt die TFT-Firmware (Kann beim ersten Mal ein paar Minuten dauern – Fortschritt beobachten – am Ende erfolgt ein Reboot und das Panel wechselt in einen Screen – „Waiting for Content“
 
