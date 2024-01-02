@@ -125,6 +125,8 @@
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">Archiv</a></li>
    </ul>
 </details-->
+![youtube_black](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/613959ed-c9a9-4daa-ba63-9e80dab81dcf)
+![youtube_white](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a7ddfcaf-9e95-423b-a0e7-57dd5b52dab6)
 
 <details open>
    <summary>
@@ -136,7 +138,7 @@
  Videos</h3>
    </summary>
    <ul>
-      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/Youtube">Youtube</a></li>
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/youtube">Youtube</a></li>
    </ul>
 </details>
 
