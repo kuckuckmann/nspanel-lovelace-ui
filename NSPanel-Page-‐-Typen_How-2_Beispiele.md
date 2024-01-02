@@ -57,7 +57,7 @@ Gäste sollen einfach und easy ins Gäste-WLAN rein kommen? Am besten mit dem Sc
 ## Basisseite
 Der Rahmen einer Seite  besteht aus einem Frame wie folgend:  
 ```typescript  
-let name = <PageType>
+let name: PageType =
 {
     'type': 'cardType',
     'heading': 'Seiten Überschrift',
@@ -66,12 +66,12 @@ let name = <PageType>
 };  
 ```  
   
-* `let name =` -> Das Wort _name_ ist hier ein Platzhalter. Man gibt der Seite hier einen eindeutigen Namen, allerdings bitte ohne Leerzeichen bei mehreren Worten und vermeide Sonderzeichen. Dieser Name muss im weiteren Verlauf des Skriptes noch einmal aufgeführt werden (Wichtig für die Darstellung und Navigation).  
-* `<PageType>` -> Type muss durch den richtigen Seiten Typ (Entities, Chart, Power, Grid, etc.) ersetzt werden. Page davor bleibt bestehen, so dass man dann zum Beispiel ein <PageEntities> oder <PageGrid> erhält. Wichtig, PageType ist immer von einer Spitzen Klammer eingefasst.  
+* `let name:` -> Das Wort _name_ ist hier ein Platzhalter. Man gibt der Seite hier einen eindeutigen Namen, allerdings bitte ohne Leerzeichen bei mehreren Worten und vermeide Sonderzeichen. Dieser Name muss im weiteren Verlauf des Skriptes noch einmal aufgeführt werden (Wichtig für die Darstellung und Navigation).  
+* `PageType = ` -> Der Seitentyp wird durch die Types im Script automatisch gesetzt
 * `'type':` -> Der Typ der Seite, wie zuvor schon beschrieben. PageType und type haben immer den gleichen Postfix. Bei type ist es aber CardType statt PageType. Folglich haben wir hier in Hochkomma eingefasst 'cardEntities' oder 'cardGrid', etc.  
 * `'heading':` -> Der Seitenname oder auch Überschrift, der auf der Seite auf dem NSPanel oben in der Mitte dargestellt wird. Er ist in Hochkommas zu fassen.  
-* `'useColor':` -> Wird in der Regel mit `true` angegeben  
-* `'items':` ->  Hier wird der eigentliche Inhalt der Seite eingetragen. Pro dazustellendem Element erfasst man hier ein sogenanntes `<PageItem>` welches dann die darzustellenden Parameter erhält.  
+* `'useColor':` -> Wird in der Regel mit `true` angegeben, sofern "useColor" durch in der gewünschten Seite unterstützt wird. 
+* `'items':` ->  Hier wird der eigentliche Inhalt der Seite eingetragen. Pro dazustellendem Element erfasst man hier ein sogenanntes `PageItem` welches dann die darzustellenden Parameter erhält.  
   
 Bis hier her haben wir eine leere Seite erstellt. Wenn ich meinen Page/Card Type festgelegt habe, der Seite einen Namen gegeben, eine Überschrift definiert habe, kann ich mich nun daran machen den Inhalt der Seite aufzubauen.  
 Als Zwischen-Test kann man den definierten `name` im Skript unter **pages** hinzufügen, das Skript neu starten und dann auf dem NSPanel schauen, ob die neue Seite (ohne Inhalt) schon angezeigt wird.  
@@ -84,9 +84,9 @@ Bevor wir aber zur Erstellung der **PageItem** kommen, noch optionale Parameter,
 Es gibt noch weitere optionale Parameter, jedoch gehören Die alle zum Thema Navigation. Hierzu gibt es [hier](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation) in der Wiki eine Beschreibung, so dass wir an dieser Stelle nicht noch einmal darauf eingehen möchten.
   
 ## Seiteninhalt - PageItem - definieren  
-Das `<PageItem>` -  wenn man es mal frei übersetzt , das Seiten-Gegenstand definiert einen auf der Seite sichtbaren Wert / Schalter. Was ein **PageItem** relativ immer mit sich bringt, ist eine **ID**, ein **Name** und eine **Farbdefinition**.  
-```ruby  
-<PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', name: 'Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen},
+Das `PageItem` -  wenn man es mal frei übersetzt , das Seiten-Gegenstand definiert einen auf der Seite sichtbaren Wert / Schalter. Was ein **PageItem** relativ immer mit sich bringt, ist eine **ID**, ein **Name** und eine **Farbdefinition**.  
+```typescript  
+{ id: 'alias.0.NSPanel_1.Luftreiniger', name: 'Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen},
 ```
 Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern folgt die weitere Konfiguration:  
  
@@ -208,13 +208,13 @@ Das `<PageItem>` wird gefolgt von `{},`. Innerhalb der geschweiften Klammern fol
   
 Wenn man nun ein oder je nach gewähltem Page Type mehrere `<PageItems>` aufgebaut hat und diese dem Punkte `items : []` hinzugefügt hat, erhält man eine Seite mit - nennen wir es etwas sichtbares.  
 ```typescript  
-let name = <PageType>  
+let name: PageType =  
 {
     'type': 'cardType',
     'heading': 'Seiten Überschrift',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', name: 'Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen},
+        { id: 'alias.0.NSPanel_1.Luftreiniger', name: 'Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen},
     ]
 }; 
 ```  
@@ -290,16 +290,16 @@ Bedient Euch gerne an den nachfolgend aufgelisteten Beispielen aus unserer Entwi
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/16930a8e-88cd-468d-9502-4c6c51293434)
   
 ```typescript  
-let Buero_Seite_1 = <PageEntities>
+let Buero_Seite_1: PageType =
 {
     'type': 'cardEntities',
     'heading': 'Büro',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.Schreibtischlampe', interpolateColor: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Deckenbeleuchtung', interpolateColor: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.ShellyDuoTest', name: 'Shelly Duo GU10', minValueBrightness: 0, maxValueBrightness: 100, minValueColorTemp: 6465, maxValueColorTemp: 3000, interpolateColor: true, modeList: ['Color','White'], inSel_ChoiceState: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen}
+        { id: 'alias.0.NSPanel_1.Schreibtischlampe', interpolateColor: true},
+        { id: 'alias.0.NSPanel_1.Deckenbeleuchtung', interpolateColor: true},
+        { id: 'alias.0.NSPanel_1.ShellyDuoTest', name: 'Shelly Duo GU10', minValueBrightness: 0, maxValueBrightness: 100, minValueColorTemp: 6465, maxValueColorTemp: 3000, interpolateColor: true, modeList: ['Color','White'], inSel_ChoiceState: true},
+        { id: 'alias.0.NSPanel_1.Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen}
     ]
 };
 ```  
@@ -310,16 +310,16 @@ let Buero_Seite_1 = <PageEntities>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/bc21c636-d12f-4a5b-8c75-ac1483fa5ead)
   
 ```typescript  
-let Test_Licht1 = <PageEntities>
+let Test_Licht1: PageType =
 {
     'type': 'cardEntities',
     'heading': 'Color Aliase 1',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestRGBLichteinzeln', name: 'RGB-Licht Hex-Color', interpolateColor: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestRGBLicht', name: 'RGB-Licht', minValueBrightness: 0, maxValueBrightness: 100, interpolateColor: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestCTmitHUE', name: 'HUE-Licht-CT', minValueBrightness: 0, maxValueBrightness: 70, minValueColorTemp: 500, maxValueColorTemp: 6500, interpolateColor: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestHUELicht', name: 'HUE-Licht-Color', minValueColorTemp: 500, maxValueColorTemp: 6500, interpolateColor: true}
+        { id: 'alias.0.NSPanel_1.TestRGBLichteinzeln', name: 'RGB-Licht Hex-Color', interpolateColor: true},
+        { id: 'alias.0.NSPanel_1.TestRGBLicht', name: 'RGB-Licht', minValueBrightness: 0, maxValueBrightness: 100, interpolateColor: true},
+        { id: 'alias.0.NSPanel_1.TestCTmitHUE', name: 'HUE-Licht-CT', minValueBrightness: 0, maxValueBrightness: 70, minValueColorTemp: 500, maxValueColorTemp: 6500, interpolateColor: true},
+        { id: 'alias.0.NSPanel_1.TestHUELicht', name: 'HUE-Licht-Color', minValueColorTemp: 500, maxValueColorTemp: 6500, interpolateColor: true}
     ]
 };
 ```  
@@ -330,7 +330,7 @@ let Test_Licht1 = <PageEntities>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/d5cb9173-042c-4ef1-89de-a84b3a646b3f)
   
 ```typescript  
-let Test_Licht2 = <PageEntities>
+let Test_Licht2: PageType =
 {
     'type': 'cardEntities',
     'heading': 'Color Aliase 2',
@@ -338,9 +338,9 @@ let Test_Licht2 = <PageEntities>
     'items': [
         //Beispiel für RGB Light mit neuem PageItem-Parameter colormode: "xy" alternativ colormode: "rgb" oder weglassen
         //Steuert im z.B. DeConz Adapter unter Lampen die Farben per CIE (XY)
-        <PageItem>{ id: "alias.0.NSPanel_2.WZ_E14_Fenster_rechts", name: 'Fensterbank rechts', minValueBrightness: 0, maxValueBrightness: 100, minValueColorTemp: 500, maxValueColorTemp: 150, interpolateColor: true, colormode: 'xy'},
-        <PageItem>{ id: "alias.0.NSPanel_1.TestFarbtemperatur", name: 'Farbtemperatur', interpolateColor: true},
-        <PageItem>{ id: "alias.0.NSPanel_1.TestFarbtemperatur", prefixName: 'Büro: ', name: "getState('0_userdata.0.Test.Wiki_Router').val", suffixName: '%', interpolateColor: true},
+        { id: "alias.0.NSPanel_2.WZ_E14_Fenster_rechts", name: 'Fensterbank rechts', minValueBrightness: 0, maxValueBrightness: 100, minValueColorTemp: 500, maxValueColorTemp: 150, interpolateColor: true, colormode: 'xy'},
+        { id: "alias.0.NSPanel_1.TestFarbtemperatur", name: 'Farbtemperatur', interpolateColor: true},
+        { id: "alias.0.NSPanel_1.TestFarbtemperatur", prefixName: 'Büro: ', name: "getState('0_userdata.0.Test.Wiki_Router').val", suffixName: '%', interpolateColor: true},
     ]
 };
 ```  
@@ -351,17 +351,17 @@ let Test_Licht2 = <PageEntities>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/09ddd04f-24af-40b4-9960-882576464c1f)
   
 ```typescript  
-let Test_Funktionen = <PageEntities>
+let Test_Funktionen: PageType =
 {
     'type': 'cardEntities',
     'heading': 'Sonstige Aliase',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestLautstärke', offColor: MSRed, onColor: MSGreen, name: 'Echo Spot Büro', minValue: 0, maxValue: 100 },
+        { id: 'alias.0.NSPanel_1.TestLautstärke', offColor: MSRed, onColor: MSGreen, name: 'Echo Spot Büro', minValue: 0, maxValue: 100 },
         <PageItem>{ id: 'alias.0.NSPanel_1.TestTemperatur',name: 'Temperatur außen', icon: 'thermometer', onColor: White , colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestFeuchtigkeit', name: 'Luftfeuchte außen', icon: 'water-percent', unit: '%H', onColor: White, colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 65} },
-        //<PageItem>{ id: 'alias.0.NSPanel_1.TestInfo', name: 'Windstärke', icon: 'wind-power-outline', offColor: MSRed, onColor: MSGreen, unit: 'bft', minValue: 0, maxValue: 12, interpolateColor: true, useColor: true },
-        <PageItem>{ id: 'alias.0.NSPanel_1.Ventilator.Fan_1',name: 'Ventilator', icon: 'fan', onColor: On, offColor: HMIOff, modeList: ['Low', 'Medium', 'High', 'Move', 'Sleep', 'Auto', 'Manual']},
+        { id: 'alias.0.NSPanel_1.TestFeuchtigkeit', name: 'Luftfeuchte außen', icon: 'water-percent', unit: '%H', onColor: White, colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 65} },
+        //{ id: 'alias.0.NSPanel_1.TestInfo', name: 'Windstärke', icon: 'wind-power-outline', offColor: MSRed, onColor: MSGreen, unit: 'bft', minValue: 0, maxValue: 12, interpolateColor: true, useColor: true },
+        { id: 'alias.0.NSPanel_1.Ventilator.Fan_1',name: 'Ventilator', icon: 'fan', onColor: On, offColor: HMIOff, modeList: ['Low', 'Medium', 'High', 'Move', 'Sleep', 'Auto', 'Manual']},
     ]
 };
 ```  
@@ -372,16 +372,16 @@ let Test_Funktionen = <PageEntities>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ecb15b38-b98b-4c85-b1a0-e0aeb9134fa3)
   
 ```typescript  
-let Buero_Seite_1 = <PageEntities>
+let Buero_Seite_1: PageType =
 {
     'type': 'cardEntities',
     'heading': 'Büro',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.Schreibtischlampe', interpolateColor: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Deckenbeleuchtung', interpolateColor: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.ShellyDuoTest', name: 'Shelly Duo GU10', minValueBrightness: 0, maxValueBrightness: 100, minValueColorTemp: 6465, maxValueColorTemp: 3000, interpolateColor: true, modeList: ['Color','White'], inSel_ChoiceState: true},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen}
+        { id: 'alias.0.NSPanel_1.Schreibtischlampe', interpolateColor: true},
+        { id: 'alias.0.NSPanel_1.Deckenbeleuchtung', interpolateColor: true},
+        { id: 'alias.0.NSPanel_1.ShellyDuoTest', name: 'Shelly Duo GU10', minValueBrightness: 0, maxValueBrightness: 100, minValueColorTemp: 6465, maxValueColorTemp: 3000, interpolateColor: true, modeList: ['Color','White'], inSel_ChoiceState: true},
+        { id: 'alias.0.NSPanel_1.Luftreiniger', icon: 'power', icon2: 'power',offColor: MSRed, onColor: MSGreen}
     ]
 };
 ```  
@@ -392,16 +392,16 @@ let Buero_Seite_1 = <PageEntities>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7893e23e-b9cc-437b-8690-48fb5813cca3)
   
 ```typescript  
-let Fenster_1 = <PageEntities>
+let Fenster_1: PageType =
 {
     'type': 'cardEntities',
     'heading': 'Fenster und Türen',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestFenster', offColor: MSRed, onColor: MSGreen, name: 'Büro Fenster'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Haustuer', offColor: MSRed, onColor: MSGreen, name: 'Haustür'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestBlind', icon: "blinds-horizontal", offColor: White, onColor: Yellow, name: 'Büro', secondRow: 'Hier Text für 2. Zeile'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestDoorlock', offColor: MSRed, onColor: MSGreen, name: 'Türschloss'},
+        { id: 'alias.0.NSPanel_1.TestFenster', offColor: MSRed, onColor: MSGreen, name: 'Büro Fenster'},
+        { id: 'alias.0.NSPanel_1.Haustuer', offColor: MSRed, onColor: MSGreen, name: 'Haustür'},
+        { id: 'alias.0.NSPanel_1.TestBlind', icon: "blinds-horizontal", offColor: White, onColor: Yellow, name: 'Büro', secondRow: 'Hier Text für 2. Zeile'},
+        { id: 'alias.0.NSPanel_1.TestDoorlock', offColor: MSRed, onColor: MSGreen, name: 'Türschloss'},
     ]
 };
 ```  
@@ -412,15 +412,15 @@ let Fenster_1 = <PageEntities>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/0cd4c9d5-88b8-4e30-b3cd-44b3b237c58d)
   
 ```typescript  
-let Button_1 = <PageEntities>
+let Button_1: PageType =
 {
     'type': 'cardEntities',
     'heading': 'Button Aliase',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestTastensensor', name: 'Tastensensor (FFN)'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Radio.NDR2', icon: 'radio', name: 'Taste (NDR2)', onColor: colorRadio, buttonText: 'starten'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Radio.NDR2', icon: 'alarm-light', name: 'Alert mit Zielseite', offColor: MSGreen, onColor: MSRed, targetPage: 'Abfall', buttonText: 'Popup'},
+        { id: 'alias.0.NSPanel_1.TestTastensensor', name: 'Tastensensor (FFN)'},
+        { id: 'alias.0.NSPanel_1.Radio.NDR2', icon: 'radio', name: 'Taste (NDR2)', onColor: colorRadio, buttonText: 'starten'},
+        { id: 'alias.0.NSPanel_1.Radio.NDR2', icon: 'alarm-light', name: 'Alert mit Zielseite', offColor: MSGreen, onColor: MSRed, targetPage: 'Abfall', buttonText: 'Popup'},
     ]
 };
 ```  
@@ -431,14 +431,14 @@ let Button_1 = <PageEntities>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f20cdc59-5cf8-470c-bc45-73b1c0427be3)
   
 ```typescript  
-let Subpages_1 = <PageEntities>
+let Subpages_1: PageType =
 {
     'type': 'cardEntities',
     'heading': 'Test Subpages',
     'useColor': true,
     'items': [
-        <PageItem>{ navigate: true, id: 'alias.0.NSPanel_1.Abfall.event1', targetPage: 'Abfall', name: 'Abfallkalender'},
-        <PageItem>{ navigate: true, id: null, targetPage: 'WLAN', onColor: White, name: 'Gäste WLAN'},
+        { navigate: true, id: 'alias.0.NSPanel_1.Abfall.event1', targetPage: 'Abfall', name: 'Abfallkalender'},
+        { navigate: true, id: null, targetPage: 'WLAN', onColor: White, name: 'Gäste WLAN'},
     ]
 };
 ```  
@@ -449,7 +449,7 @@ let Subpages_1 = <PageEntities>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/124622d2-1b02-4ced-8045-62ba04c62c95)
   
 ```typescript  
-let Abfall = <PageEntities>
+let Abfall: PageType =
 {
 	'type': 'cardEntities',
 	'heading': 'Abfallkalender',
@@ -457,10 +457,10 @@ let Abfall = <PageEntities>
 	'subPage': true,
 	'parent': Subpages_1,
 	'items': [
-		<PageItem>{ id: 'alias.0.NSPanel_1.Abfall.event1',icon: 'trash-can'},
-		<PageItem>{ id: 'alias.0.NSPanel_1.Abfall.event2',icon: 'trash-can'},
-		<PageItem>{ id: 'alias.0.NSPanel_1.Abfall.event3',icon: 'trash-can'},
-		<PageItem>{ id: 'alias.0.NSPanel_1.Abfall.event4',icon: 'trash-can'}
+		{ id: 'alias.0.NSPanel_1.Abfall.event1',icon: 'trash-can'},
+		{ id: 'alias.0.NSPanel_1.Abfall.event2',icon: 'trash-can'},
+		{ id: 'alias.0.NSPanel_1.Abfall.event3',icon: 'trash-can'},
+		{ id: 'alias.0.NSPanel_1.Abfall.event4',icon: 'trash-can'}
 	]
 };
 ```  
@@ -477,17 +477,17 @@ let Abfall = <PageEntities>
 ![](https://user-images.githubusercontent.com/102996011/216006611-32155c9c-84ba-48eb-8b07-2485d80eb99b.png)  
   
 ```typescript  
-let SensorGrid = <PageGrid>{
+let SensorGrid: PageType = {
     'type': 'cardGrid',
     'heading': 'Sensor Werte',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestTemperatur', name: 'Außentemp. °C', offColor: MSRed, onColor: MSGreen, useValue: true, colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestFeuchtigkeit', name: 'Luftfeuchte %', offColor: MSYellow, onColor: MSYellow , useValue: true, colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 65} },
-        <PageItem>{ id: 'alias.0.NSPanel_1.Taupunkt', name: 'Taupunkt °C', offColor: MSRed, onColor: MSGreen, useValue: true, colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
-        <PageItem>{ id: 'alias.0.NSPanel_1.UV_Index', name: 'UV Index', offColor: White , onColor: White, useValue: true, colorScale: {'val_min': 0, 'val_max': 12} },
-        <PageItem>{ id: 'alias.0.NSPanel_1.Windstaerke', name: 'Windstärke bft', offColor: White , onColor: White, useValue: true, colorScale: {'val_min': 0, 'val_max': 9} },
-        <PageItem>{ id: 'alias.0.NSPanel_1.Luftdruck', name: 'Luftdruck hPa', offColor: White , onColor: White, useValue: true, colorScale: {'val_min': 950, 'val_max': 1050, 'val_best': 1013} },
+        { id: 'alias.0.NSPanel_1.TestTemperatur', name: 'Außentemp. °C', offColor: MSRed, onColor: MSGreen, useValue: true, colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
+        { id: 'alias.0.NSPanel_1.TestFeuchtigkeit', name: 'Luftfeuchte %', offColor: MSYellow, onColor: MSYellow , useValue: true, colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 65} },
+        { id: 'alias.0.NSPanel_1.Taupunkt', name: 'Taupunkt °C', offColor: MSRed, onColor: MSGreen, useValue: true, colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
+        { id: 'alias.0.NSPanel_1.UV_Index', name: 'UV Index', offColor: White , onColor: White, useValue: true, colorScale: {'val_min': 0, 'val_max': 12} },
+        { id: 'alias.0.NSPanel_1.Windstaerke', name: 'Windstärke bft', offColor: White , onColor: White, useValue: true, colorScale: {'val_min': 0, 'val_max': 9} },
+        { id: 'alias.0.NSPanel_1.Luftdruck', name: 'Luftdruck hPa', offColor: White , onColor: White, useValue: true, colorScale: {'val_min': 950, 'val_max': 1050, 'val_best': 1013} },
     ]};
 ```
   
@@ -500,18 +500,18 @@ Popup für Shutter
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/785416ec-e542-4c01-8afb-80ca4967ecef)  
 
 ```typescript  
-let Buero_Seite_2 = <PageGrid>
+let Buero_Seite_2: PageType =
 {
     'type': 'cardGrid',
     'heading': 'Büro 2',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.Schreibtischlampe', name: 'Schreibtisch'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Deckenbeleuchtung', name: 'Deckenlampe'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestFenster', offColor: MSRed, onColor: MSGreen, name: 'Büro Fenster'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Luftreiniger', icon: 'power', offColor: MSRed, onColor: MSGreen},
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestBlind', icon: 'projector-screen', onColor: White, name: 'Beamer', secondRow: 'auch Text'},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Kippfenster', useValue: true }
+        { id: 'alias.0.NSPanel_1.Schreibtischlampe', name: 'Schreibtisch'},
+        { id: 'alias.0.NSPanel_1.Deckenbeleuchtung', name: 'Deckenlampe'},
+        { id: 'alias.0.NSPanel_1.TestFenster', offColor: MSRed, onColor: MSGreen, name: 'Büro Fenster'},
+        { id: 'alias.0.NSPanel_1.Luftreiniger', icon: 'power', offColor: MSRed, onColor: MSGreen},
+        { id: 'alias.0.NSPanel_1.TestBlind', icon: 'projector-screen', onColor: White, name: 'Beamer', secondRow: 'auch Text'},
+        { id: 'alias.0.NSPanel_1.Kippfenster', useValue: true }
     ]
 };
 ```  
@@ -522,18 +522,18 @@ let Buero_Seite_2 = <PageGrid>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/f1d2c2dd-01f6-4b68-a14e-0d774bcc49a7)
   
 ```typescript  
-let Sensor_FontSize = <PageGrid2>
+let Sensor_FontSize: PageType =
 {
     'type': 'cardGrid2',
     'heading': 'Sensorwerte und FontSize',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestTemperatur', name: 'Außentemp. °C', offColor: MSRed, onColor: MSGreen, useValue: true, fontSize: 0, colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
-        <PageItem>{ id: 'alias.0.NSPanel_1.TestFeuchtigkeit', name: 'Luftfeuchte %', offColor: MSYellow, onColor: MSYellow , useValue: true, fontSize: 1, colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 65} },
-        <PageItem>{ id: 'alias.0.NSPanel_1.Taupunkt', name: 'Taupunkt °C', offColor: MSRed, onColor: MSGreen, useValue: true, fontSize: 2, colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
-        <PageItem>{ id: 'alias.0.NSPanel_1.UV_Index', name: 'UV Index', offColor: White , onColor: White, useValue: true, fontSize: 3,colorScale: {'val_min': 0, 'val_max': 12} },
-        <PageItem>{ id: 'alias.0.NSPanel_1.Windstaerke', name: 'Windstärke bft', offColor: White , onColor: White, useValue: true, fontSize: 4, colorScale: {'val_min': 0, 'val_max': 9} },
-        <PageItem>{ id: 'alias.0.NSPanel_1.Luftdruck', name: 'Luftdruck hPa', offColor: White , onColor: White, useValue: true, colorScale: {'val_min': 950, 'val_max': 1050, 'val_best': 1013} },
+        { id: 'alias.0.NSPanel_1.TestTemperatur', name: 'Außentemp. °C', offColor: MSRed, onColor: MSGreen, useValue: true, fontSize: 0, colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
+        { id: 'alias.0.NSPanel_1.TestFeuchtigkeit', name: 'Luftfeuchte %', offColor: MSYellow, onColor: MSYellow , useValue: true, fontSize: 1, colorScale: {'val_min': 0, 'val_max': 100, 'val_best': 65} },
+        { id: 'alias.0.NSPanel_1.Taupunkt', name: 'Taupunkt °C', offColor: MSRed, onColor: MSGreen, useValue: true, fontSize: 2, colorScale: {'val_min': -20, 'val_max': 40, 'val_best': 20} },
+        { id: 'alias.0.NSPanel_1.UV_Index', name: 'UV Index', offColor: White , onColor: White, useValue: true, fontSize: 3,colorScale: {'val_min': 0, 'val_max': 12} },
+        { id: 'alias.0.NSPanel_1.Windstaerke', name: 'Windstärke bft', offColor: White , onColor: White, useValue: true, fontSize: 4, colorScale: {'val_min': 0, 'val_max': 9} },
+        { id: 'alias.0.NSPanel_1.Luftdruck', name: 'Luftdruck hPa', offColor: White , onColor: White, useValue: true, colorScale: {'val_min': 950, 'val_max': 1050, 'val_best': 1013} },
     ]
 };
 ``` 
@@ -547,14 +547,14 @@ popupTimer
 ![Nextion_Editor_DyyGoz044r](https://user-images.githubusercontent.com/102996011/208929333-0be6783c-aca8-453c-92fb-5d83861da21a.gif)  
   
 ```typescript  
-let Radiosender = <PageGrid>
+let Radiosender: PageType =
 {
     'type': 'cardGrid',
     'heading': 'Büro 2',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.Radio.Bob', icon: 'radio', name: 'Radio BOB', onColor: colorRadio},
-        <PageItem>{ id: 'alias.0.NSPanel_1.Countdown', icon: 'timer-outline', name: 'Timer', onColor: White}
+        { id: 'alias.0.NSPanel_1.Radio.Bob', icon: 'radio', name: 'Radio BOB', onColor: colorRadio},
+        { id: 'alias.0.NSPanel_1.Countdown', icon: 'timer-outline', name: 'Timer', onColor: White}
     ]
 };
 ```  
@@ -565,26 +565,26 @@ let Radiosender = <PageGrid>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/11543b7e-bd79-4b74-8589-2475a41ae552)
   
 ```typescript  
-let WLED = <PageGrid>
+let WLED: PageType =
 {
     'type': 'cardGrid',
     'heading': 'WLED Stripes WZ',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.On', name: 'Power', icon: 'power', onColor: HMIOn, offColor: HMIOff},
-        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.Sync', name: 'Sync', icon: 'sync', onColor: HMIOn, offColor: White},
-        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.Presets', icon: 'heart-outline', name: 'Presets', onColor: White, modeList: ['Preset 0', 'Add Preset']},
-        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.Colors', icon: 'palette', name: 'Colors', onColor: White, 
+        { id: 'alias.0.NSPanel_1.WLED.Example.On', name: 'Power', icon: 'power', onColor: HMIOn, offColor: HMIOff},
+        { id: 'alias.0.NSPanel_1.WLED.Example.Sync', name: 'Sync', icon: 'sync', onColor: HMIOn, offColor: White},
+        { id: 'alias.0.NSPanel_1.WLED.Example.Presets', icon: 'heart-outline', name: 'Presets', onColor: White, modeList: ['Preset 0', 'Add Preset']},
+        { id: 'alias.0.NSPanel_1.WLED.Example.Colors', icon: 'palette', name: 'Colors', onColor: White, 
                     modeList: ['Default', '* Color 1', '* Color Gradient', '* Colors 1&2', '* Colors Only', '* Random Cycle', 'Analogus','April Night', 'Aqua Flash', 'Atlantica', 'Aurora', 
                                'Beach', 'Beech', 'Blink Red', 'Breeze', 'C9', 'C9 New', 'Candy', 'Candy2', 'Cloud', 
                                'Cyane', 'Departure', 'Drywet', 'Fairy Reaf', 'Fire', 'Forest', 'etc'
                               ]},
-        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.Effects', icon: 'emoticon-outline', name: 'Effects', onColor: White, 
+        { id: 'alias.0.NSPanel_1.WLED.Example.Effects', icon: 'emoticon-outline', name: 'Effects', onColor: White, 
                     modeList: ['Solid', 'Android', 'Aurora', 'Blends', 'Blink', 'Blink Rainbow', 'Bouncing Balls','Bpm', 'Breathe', 'Candle', 'Candle Multi', 
                                'Candy Cane', 'Chase', 'Chase 1', 'Chase 2', 'Chase 3', 'Chase Flash', 'Chase Flash Rnd', 'Chase Rainbow', 'Chase Random', 
                                'Chunchun', 'Colorful', 'Colorloop', 'Colortwinkles', 'Colorwaves', 'Dancing Shadows', 'etc'
                               ]},
-        <PageItem>{ id: 'alias.0.NSPanel_1.WLED.Example.Segments', icon: 'layers', name: 'Segments', onColor: White, modeList: ['Segment 0', 'Add Segment']},
+        { id: 'alias.0.NSPanel_1.WLED.Example.Segments', icon: 'layers', name: 'Segments', onColor: White, modeList: ['Segment 0', 'Add Segment']},
     ]
 };
 ```  
@@ -611,12 +611,12 @@ Equalizer:
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f5033d44-bf2f-4cb3-bf12-77b43b58623d)  
 
 ```typescript  
-let Alexa = <PageMedia> 
+let Alexa: PageType = 
 {
     'type': 'cardMedia',
     'heading': 'Alexa',
     'useColor': true,
-    'items': [<PageItem>{   
+    'items': [{   
                 id: AliasPath + 'Media.PlayerAlexa', 
                 adapterPlayerInstance: 'alexa2.0.',
                 mediaDevice: 'G0XXXXXXXXXXXXXX', 
@@ -652,12 +652,12 @@ Der komplette Leitfaden für den Sonos-Player ist hier:
 https://github.com/joBr99/nspanel-lovelace-ui/wiki/NSPanel-%E2%80%90-cardMedia-%E2%80%90-Der-SONOS-Player
   
 ```typescript  
-let Sonos = <PageMedia>
+let Sonos: PageType =
 {
     'type': 'cardMedia',
     'heading': 'Sonos Player',
     'useColor': true,
-    'items': [<PageItem>{   
+    'items': [{   
                 id: AliasPath + 'Media.PlayerSonos', 
                 adapterPlayerInstance: 'sonos.0.',
                 mediaDevice: '192_168_1_212',
@@ -695,12 +695,12 @@ Equalizer
   
 
 ```typescript  
-let SpotifyPremium = <PageMedia>
+let SpotifyPremium: PageType =
 {
     'type': 'cardMedia',
     'heading': 'Spotify-Premium',
     'useColor': true,
-    'items': [<PageItem>{ 
+    'items': [{ 
                 id: AliasPath + 'Media.PlayerSpotifyPremium', 
                 adapterPlayerInstance: "spotify-premium.0.",
                 speakerList: ['LENOVO-W11-01', 'Terrasse','Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche',
@@ -724,12 +724,12 @@ let SpotifyPremium = <PageMedia>
 ![image](https://user-images.githubusercontent.com/102996011/194286414-a1635626-d33b-4cc6-b8e6-1c1749636900.png)
   
 ```typescript  
-let SqueezeboxRPC = <PageMedia>
+let SqueezeboxRPC: PageType =
 {
     'type': 'cardMedia',
     'heading': 'SqueezeboxRPC',
     'useColor': true,
-    'items': [<PageItem>{ 
+    'items': [{ 
                 id: 'alias.0.Media.LMS', 
                 adapterPlayerInstance: 'squeezeboxrpc.0',
                 speakerList: ['SqueezePlay'],
@@ -747,7 +747,7 @@ let SqueezeboxRPC = <PageMedia>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3b72ecfa-07ef-42e4-88b7-b5846a6a91a2)
   
 ```typescript  
-let VolumioBoss: PageMedia = 
+let VolumioBoss: PageType =
 {
     'type': 'cardMedia',
     'heading': 'Volumio-Büro',
@@ -757,7 +757,7 @@ let VolumioBoss: PageMedia =
     'prev': undefined,
     'next': undefined,
     'home': undefined,
-    'items': [<PageItem>{   
+    'items': [{   
                 id: 'alias.0.NSPanel.Volumio-Boss', 
                 adapterPlayerInstance: 'volumio.0.',
                 speakerList: [], /* this must, no function */
@@ -772,7 +772,7 @@ let VolumioBoss: PageMedia =
 ```
 
 ```typescript  
-let VolumioMobil: PageMedia = 
+let VolumioMobil: PageType =
 {
     'type': 'cardMedia',
     'heading': 'Volumio-Mobil',
@@ -782,7 +782,7 @@ let VolumioMobil: PageMedia =
     'prev': undefined,
     'next': undefined,
     'home': undefined,
-    'items': [<PageItem>{   
+    'items': [{   
                 id: 'alias.0.NSPanel.Volumio-Mobil', 
                 adapterPlayerInstance: 'volumio.1.',
                 speakerList: [], /* this must, no function */
@@ -808,12 +808,12 @@ let VolumioMobil: PageMedia =
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a7426ca1-600b-456e-a8a4-11f6b5c6fb11)
   
 ```typescript  
-let Buero_Themostat = <PageThermo>
+let Buero_Themostat: PageType =
 {
     'type': 'cardThermo',
     'heading': 'Test Thermostat',
     'useColor': true,
-    'items': [<PageItem>{ 
+    'items': [{ 
                 id: 'alias.0.NSPanel_1.Thermostat_Buero', 
                 minValue: 50, 
                 maxValue: 300,
@@ -835,12 +835,12 @@ popupThermo:
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/775e6fee-e06a-4a1c-8f9d-695a8624da86)
 
 ```typescript  
-let Buero_Klimaanlage = <PageThermo>
+let Buero_Klimaanlage: PageType =
 {
     'type': 'cardThermo',
     'heading': 'Test Klimaanlage',
     'useColor': true,
-    'items': [<PageItem>{   
+    'items': [{   
                 id: 'alias.0.NSPanel_1.TestKlimaanlage', 
                 minValue: 50, 
                 maxValue: 250,
@@ -863,12 +863,12 @@ let Buero_Klimaanlage = <PageThermo>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/69e577bd-e56d-4411-9af0-a0dd19ba030f)
   
 ```typescript  
-let Pool_Waermepumpe = <PageThermo>
+let Pool_Waermepumpe: PageType =
 {
     'type': 'cardThermo',
     'heading': 'Pool Wärmepumpe',
     'useColor': true,
-    'items': [<PageItem>{   
+    'items': [{   
                 id: 'alias.0.NSPanel_1.Pool_Waermepumpe', 
                 minValue: 100, 
                 maxValue: 300,
@@ -891,12 +891,12 @@ let Pool_Waermepumpe = <PageThermo>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8e8e353c-ca6a-43d3-85b2-ff6532283e2c)
   
 ```typescript  
-let Buero_Alarm = <PageAlarm>
+let Buero_Alarm: PageType =
 {
     'type': 'cardAlarm',
     'heading': 'Alarmanlage',
     'useColor': true,
-    'items': [<PageItem>{ id: 'alias.0.Alarm' }]
+    'items': [{ id: 'alias.0.Alarm' }]
 };
 ```  
   
@@ -915,19 +915,19 @@ ab Version **4.3.3.2** fester Bestandteil des Service-Menüs (Alias wird automat
 */ 
 
 //Level 0 (if service pages are used with cardUnlock)
-let Unlock_Service = <PageUnlock>
+let Unlock_Service: PageType =
 {
     'type': 'cardUnlock',
     'heading': 'Service Pages',
     'useColor': true,
-    'items': [<PageItem>{ id: 'alias.0.NSPanel.Unlock',
-                          targetPage: 'NSPanel_Service_SubPage',
-                          autoCreateALias: true }
+    'items': [{ id: 'alias.0.NSPanel.Unlock',
+                targetPage: 'NSPanel_Service_SubPage',
+                autoCreateALias: true }
     ]
 };
 
 //Level_0 (if service pages are used with cardUnlock)
-let NSPanel_Service_SubPage = <PageEntities>
+let NSPanel_Service_SubPage: PageType =
 {
     'type': 'cardEntities',
     'heading': 'NSPanel Service',
@@ -936,10 +936,10 @@ let NSPanel_Service_SubPage = <PageEntities>
     'parent': Unlock_Service,
     'home': 'Unlock_Service', 
     'items': [
-        <PageItem>{ navigate: true, id: 'NSPanel_Infos', icon: 'information-outline', offColor: Menu, onColor: Menu, name: 'Infos', buttonText: 'mehr...'},
-        <PageItem>{ navigate: true, id: 'NSPanel_Einstellungen', icon: 'monitor-edit', offColor: Menu, onColor: Menu, name: 'Einstellungen', buttonText: 'mehr...'},
-        <PageItem>{ navigate: true, id: 'NSPanel_Firmware', icon: 'update', offColor: Menu, onColor: Menu, name: 'Firmware', buttonText: 'mehr...'},
-        <PageItem>{ id: AliasPath + 'Config.rebootNSPanel', name: 'Reboot NSPanel' ,icon: 'refresh', offColor: MSRed, onColor: MSGreen, buttonText: 'Start'},
+        { navigate: true, id: 'NSPanel_Infos', icon: 'information-outline', offColor: Menu, onColor: Menu, name: 'Infos', buttonText: 'mehr...'},
+        { navigate: true, id: 'NSPanel_Einstellungen', icon: 'monitor-edit', offColor: Menu, onColor: Menu, name: 'Einstellungen', buttonText: 'mehr...'},
+        { navigate: true, id: 'NSPanel_Firmware', icon: 'update', offColor: Menu, onColor: Menu, name: 'Firmware', buttonText: 'mehr...'},
+        { id: AliasPath + 'Config.rebootNSPanel', name: 'Reboot NSPanel' ,icon: 'refresh', offColor: MSRed, onColor: MSGreen, buttonText: 'Start'},
     ]
 };
 ```  
@@ -963,12 +963,12 @@ siehe auch: https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Card-Def
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/274f5742-f491-4522-ac6f-7db3661dd5e2)
   
 ```typescript  
-let CardChartExample = <PageChart>
+let CardChartExample: PageType =
 {
     'type': 'cardChart',
     'heading': 'Stromzähler L1+L2+L3',
     'useColor': true,
-    'items': [<PageItem>{ 
+    'items': [{ 
                 id: 'alias.0.NSPanel_1.cardChart', 
                 yAxis: 'Leistung [kW]', 
                 yAxisTicks: [2,4,6,8,10,2,4,6,8,20,2], 
@@ -983,12 +983,12 @@ let CardChartExample = <PageChart>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7c99fa26-9383-45f7-a913-48ea23fb0baf)
   
 ```typescript  
-let CardLChartExample = <PageChart>
+let CardLChartExample: PageType =
 {
     'type': 'cardLChart',
     'heading': 'Büro Temperatur',
     'useColor': true,
-    'items': [<PageItem>{ 
+    'items': [{ 
                 id: 'alias.0.Haus.Erdgeschoss.Buero.Charts.Temperatur',
                 yAxis: 'Temperatur [°C]',
                 yAxisTicks: [-250, -200, -150, -100,-50, 0, 50, 100, 150, 200, 250, 300],
@@ -1004,27 +1004,27 @@ let CardLChartExample = <PageChart>
 
 **Seiten-Variable für die cardPower:**
 ```typescript  
-let CardPower = <PagePower>
+let CardPower: PageType =
 {
     'type': 'cardPower',
     'heading': 'Energiefluss',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel.cardPower',
-                    alwaysOnDisplay: true }
+        { id: 'alias.0.NSPanel.cardPower',
+          alwaysOnDisplay: true }
      ]
 };
 ```  
 
 **cardPower im Demomodus**
 ```typescript  
-let CardPowerExample = <PagePower>
+let CardPowerExample: PageType =
 {
     'type': 'cardPower',
     'heading': 'cardPower Emulator',
     'useColor': true,
     'items': [
-         <PageItem>{  } 
+         {  } 
      ]
 };
 ``` 
@@ -1040,12 +1040,12 @@ let CardPowerExample = <PagePower>
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/b855ff4a-fcf9-4c67-a45e-822cd9487437)
   
 ```typescript  
-let WLAN = <PageQR> 
+let WLAN: PageType =
 {
      'type': 'cardQR',
      'heading': 'Gäste WLAN',
      'useColor': true,
-     'items': [<PageItem>{ id: 'alias.0.NSPanel_1.Guest_Wifi', 
+     'items': [{ id: 'alias.0.NSPanel_1.Guest_Wifi', 
                            hidePassword: false, 
                            autoCreateALias: true }]
 };
