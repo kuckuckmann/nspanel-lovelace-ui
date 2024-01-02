@@ -126,7 +126,7 @@
    </ul>
 </details-->
 
-<!--details>
+<details open>
    <summary>
       <h3>
          <picture>
@@ -136,9 +136,9 @@
  Archiv</h3>
    </summary>
    <ul>
-      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">Archiv</a></li>
+      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/Youtube">Youtube</a></li>
    </ul>
-</details-->
+</details>
 
 <details open>
    <summary>
