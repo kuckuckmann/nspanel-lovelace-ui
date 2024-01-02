@@ -122,7 +122,7 @@
    </ul>
 </details-->
 
-<details open>
+<details>
    <summary>
       <h3>
          <picture>
@@ -132,6 +132,14 @@
          Youtube
       </h3>
    </summary>
+	<ul>
+		<li><a href="https://www.youtube.com/@haus_automation" target="_blank">haus-automatisierung.com</a></li>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=T2Tk9uQdvO0" target="_blank">Sonoff NSPanel - Technische Details - Bestes DIY-Produkt?</a>
+				<li><a href="https://www.youtube.com/watch?v=uqPz08ZpFW8&t=382s" target="_blank">Sonoff NSPanel - Tasmota flashen + ioBroker-Integration</a>
+				<li><a href="https://www.youtube.com/watch?v=ZPLJk2ZLo_8&t=315s" target="_blank">NSPanel mit Lovelace UI - so habe ich mir das vorgestellt!</a>
+			</ul>
+	</ul>
 </details>
 
 <details open>
