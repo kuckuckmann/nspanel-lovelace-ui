@@ -103,7 +103,7 @@ f) Speichern klicken und Einstellungen verlassen
 
 ## **5.) TFT-Firmware flashen**
   
-> **Achtung !!! Zum Flashen ist es wichtig, dass Ihr die aktuelle Version nutzt, sonst kann es zu ungewoltlen Fehlern kommen und ggf. müsst Ihr den >Flashvorgang dann wiederholen. Ihr findet die aktuelle Version immer im akuellen [NsPanelTS.ts-Skript](https://github.com/joBr99/nspanel-lovelace->ui/blob/main/ioBroker/NsPanelTs.ts) am Ende des ioBroker TypeScript Header:  
+> **Achtung !!! Zum Flashen ist es wichtig, dass Ihr die aktuelle TFT-Firmware-Version nutzt, sonst kann es zu ungewollten Fehlern kommen und ggf. müsst Ihr den >Flashvorgang dann wiederholen. Ihr findet die aktuelle Version immer im aktuellen [NsPanelTS.ts-Skript](https://github.com/joBr99/nspanel-lovelace->ui/blob/main/ioBroker/NsPanelTs.ts) am Ende des ioBroker TypeScript Header:  
   
 ![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/99131208/8aeee1ef-5003-407b-8dc2-3db7840db540)
 
