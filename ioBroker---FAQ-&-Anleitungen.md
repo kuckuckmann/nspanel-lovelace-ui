@@ -1198,7 +1198,7 @@ let FahrplanEntities: PageType =
   Im TS-Skript bedarf es auf einer CardGrid ein Pageitem. Es muss dabei kein Icon definiert werden, da dieses über den Alias kommt.  
   
     ```
-    <PageItem>{ id: 'alias.0.TestCard.BatteryCharge', prefixName: 'Batterie: ', name: "getState('state.batteryCharge').val", suffixName: '%', offColor: White , onColor: White, },
+    { id: 'alias.0.TestCard.BatteryCharge', prefixName: 'Batterie: ', name: "getState('state.batteryCharge').val", suffixName: '%', offColor: White , onColor: White, },
     ```  
   
   **Anwedungsbeispiele**  
