@@ -121,8 +121,9 @@
       <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/ZZZ-Archiv">Archiv</a></li>
    </ul>
 </details-->
-![youtube_black](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/613959ed-c9a9-4daa-ba63-9e80dab81dcf)
-![youtube_white](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/a7ddfcaf-9e95-423b-a0e7-57dd5b52dab6)
+
+![youtube_black24](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/607e3bf1-8bbc-41fd-a0b2-5d7d71e5c5d6)
+![youtube_white24](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/ea97252b-832d-4a6f-8c8a-865d8c735f76)
 
 <details open>
    <summary>
