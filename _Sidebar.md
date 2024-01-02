@@ -122,8 +122,6 @@
    </ul>
 </details-->
 
-![youtube_black](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f8a810e3-552a-46bf-b8ef-eea0bbcfd71d)
-![youtube_white](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8020e839-36d3-45fe-87af-235088d069b1)
 <details open>
    <summary>
       <h3>
