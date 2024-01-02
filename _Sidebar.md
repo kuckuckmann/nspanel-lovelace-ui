@@ -3,8 +3,8 @@
 
 <h1>
    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/cfb4a374-5478-4a63-9d33-5a726c40c383">
-      <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/38e8cb15-8af6-4ad7-bb9c-4b225483b7e1"> 
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/5cc6a801-6d9e-4f77-bb9d-413a140a361e" width="75%" height="75%">
+      <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/79e40616-d95e-4919-9a80-e4c1cca1bb7f"> 
    </picture>
    <a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki">Home</a>
 </h1>
