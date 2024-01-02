@@ -55,9 +55,10 @@ let CardPowerExample = <PagePower>
 
 ## Navigation mit den TFT-Icons (Pfeil rechts, -links, -oben und Haus)  
 
-![Grafik Navi](https://user-images.githubusercontent.com/101348966/212481713-b1122be0-0138-4c30-a41c-69565b258f9d.png)
+![Grafik Navi](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/cd05d3cb-ffb6-4b4e-9dc7-9a7c6e5bda91)
 
 ### Vorbereitung und Gedanken zur Menüstruktur  
+
 
 Bevor Ihr eure Seiten definiert, sollte ihr euch Gedanken über die Menüstruktur eures Panels machen. Hier ein Beispiel wie so etwas aussehen kann. Es ist auch nützlich, seine Alias Struktur genauso anzulegen mit Ordner und Unterordnern, wie sie im Panel existiert. So behaltet ihr den Überblick welcher Alias zu welcher Page gehört.
 
