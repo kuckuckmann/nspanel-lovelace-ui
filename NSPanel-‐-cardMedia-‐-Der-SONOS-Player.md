@@ -75,12 +75,12 @@ Folgende Datenpunkte der Sonos Adapterinstanz werden berücksichtigt:
 Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisch aus dem Datenpunkt: `sonos.0.root.<DEVICE_IP>.favorites_list_array` extrahiert:
 > [!CAUTION]
 > ```typescript
-> let Sonos = <PageMedia>
+> let Sonos: PageType =
 > {
 >     'type': 'cardMedia',
 >     'heading': 'Sonos',
 >     'useColor': true,
->     'items': [<PageItem>{   
+>     'items': [{   
 >                 id: AliasPath + 'Media.PlayerSonos', 
 >                 adapterPlayerInstance: 'sonos.0.',
 >                 mediaDevice: '192_168_1_212',
@@ -100,12 +100,12 @@ Das PageItem enthält keinen equalizerString --> Die Favoriten werden automatisc
 * Innerhalb des `PageItem` wird der `Equalizer` und in diesem Beispiel ebenfalls der Parameter `crossfade` definiert:  
 > [!CAUTION]
 > ```typescript
-> let Sonos = <PageMedia>
+> let Sonos: PageType =
 > {
 >     'type': 'cardMedia',
 >     'heading': 'Sonos',
 >     'useColor': true,
->     'items': [<PageItem>{   
+>     'items': [{   
 >                 id: AliasPath + 'Media.PlayerSonos', 
 >                 adapterPlayerInstance: 'sonos.0.',
 >                 mediaDevice: '192_168_1_212',
@@ -191,12 +191,12 @@ Jetzt ist es möglich eine Position des Tracks (Titels) in 10% Schritten zu erre
 ### Standard Beispielvorlage für AlwaysOnDisplay
 In diesem Beispiel wird der Screensaver nach eingestellter nicht aufgeschaltet. Der Player bleibt geöffnet bis zu einer Seite ohne alwaysOnDisplay navigiert wird.
 ```typescript
-let Sonos = <PageMedia>
+let Sonos: PageType =
 {
     'type': 'cardMedia',
     'heading': 'Sonos Player',
     'useColor': true,
-    'items': [<PageItem>{   
+    'items': [{   
                 id: AliasPath + 'Media.PlayerSonos', 
                 adapterPlayerInstance: 'sonos.0.',
                 mediaDevice: '192_168_1_212',
@@ -214,12 +214,12 @@ let Sonos = <PageMedia>
 ### Standard Beispielvorlage ohne AlwaysOnDisplay
 In diesem Beispiel wird der Screensaver nach eingestellter Zeit aufgerufen. Der Player wird geschlossen.
 ```typescript
-let Sonos = <PageMedia>
+let Sonos: PageType =
 {
     'type': 'cardMedia',
     'heading': 'Sonos Player',
     'useColor': true,
-    'items': [<PageItem>{   
+    'items': [{   
                 id: AliasPath + 'Media.PlayerSonos', 
                 adapterPlayerInstance: 'sonos.0.',
                 mediaDevice: '192_168_1_212',
