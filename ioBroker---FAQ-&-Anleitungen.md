@@ -324,7 +324,7 @@ Das Skript füttert die beiden Datenpunkte für die NotifyPopupPage im ordner **
 Im Konfigurationsskript habe ich mir nun einen Button definiert 
 
   ```
-  <PageItem>{ id: "alias.0.InfoRQ", icon: "comment-question" ,name: "InfoScreen"},
+  { id: "alias.0.InfoRQ", icon: "comment-question" ,name: "InfoScreen"},
   ```
 
 ***  
