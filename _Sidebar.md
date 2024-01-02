@@ -130,20 +130,6 @@
 
 <details open>
    <summary>
-      <h3>
-         <picture>
-             <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/131d7f71-c802-4188-8cb2-76fc52761bac">
-             <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/7bdcc3a7-12ea-41db-a2ed-b0baa12db81db"> 
-         </picture>
- Videos</h3>
-   </summary>
-   <ul>
-      <li><a href="https://github.com/joBr99/nspanel-lovelace-ui/wiki/youtube">Youtube</a></li>
-   </ul>
-</details>
-
-<details open>
-   <summary>
        <h3>
          <picture>
              <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/3bcd710e-f126-4521-848e-c81ca29813cb">
