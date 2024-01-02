@@ -327,7 +327,7 @@ Output: `Mittwoch, 04. August 2023 n. Chr. um 05:09:02 Mitteleuropäische Sommer
   
 **Beispiel:**  
 ```typescript  
-export const config = <Config> {
+export const config: Config = {
     ...
     leftScreensaverEntity:
         [
