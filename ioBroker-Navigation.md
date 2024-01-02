@@ -6,34 +6,35 @@ by TT-Tom
 
 **Es gibt zwei Möglichkeiten durch die Seiten des Panels zu navigieren. Zum einen gibt es die Navigation auf dem Panel mit den Symbolen Pfeil Rechts, Links und Pfeil nach oben und Haus-Symbol. Die Zweite und etwas schwierige Variante ist über die Tasten unter dem Panel, dazu aber später mehr. Zuerst sehen wir uns die Struktur der Seiten und ihre Aufteilung an.**  
 
-> ab TS-Script v3.8.3  
+> ab TS-Script v4.3.3.30  
 **Die Definition der Seiten hat sich geändert.**  
 ```typescript  
-let Variablenname = <Seitentyp>
+let Variablenname: PageType =
 ```
 
 Daraus ergeben sich folgende Vorteile:  
 
 Es müssen nicht mehr alle Seitenparameter angegeben werden, wie z.B  
 ```typescript  
-let CardPowerExample = <PagePower>  
+let CardPowerExample: PageType =  
   {
   'type': 'cardPower',
   'heading': 'cardPower Emulator',
   'items': [
-  <PageItem>{ id: 'alias.0.NSPanel_1.Power.PowerCard' },
+  { id: 'alias.0.NSPanel_1.Power.PowerCard' },
    ]};
 ```
 d.h. alle optionalen Seitenparameter mit undefined oder false können entfallen.  
 Zusätzlich können weitere Typen verwendet werden, diese werden [hier](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-Navigation#subpages) beschrieben.
 
 ```typescript  
-let CardPowerExample = <PagePower>
+let CardExample: PageType =
    {
-   'type': 'cardPower',
-   'heading': 'cardPower Emulator',
+   'type': 'cardGrid',
+   'heading': 'Testpage',
    'useColor': true oder false
    'subPage': true oder false
+   //Navi Parameter für Subpages
    'parent': undefined oder Page
    'parentIcon': undefined oder Icon als String, z.B. 'alert'
    'parentIconColor': undefined oder Farbkonstante vom Script
@@ -47,16 +48,17 @@ let CardPowerExample = <PagePower>
    'homeIcon': undefined oder Icon als String
    'homeIconColor': undefined oder Farbkonstante vom Script
    'items': [
-   <PageItem>{ id: 'alias.0.NSPanel_1.Power.PowerCard' },
+   { id: 'alias.0.NSPanel_1.Power.PowerCard' },
    ]
    };
 ```
 
 
 ## Navigation mit den TFT-Icons (Pfeil rechts, -links, -oben und Haus)  
-
-![Grafik Navi](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/cd05d3cb-ffb6-4b4e-9dc7-9a7c6e5bda91)
-
+  
+![Grafik Navi](https://github.com/joBr99/nspanel-lovelace-ui/assets/101348966/cd8b0b1b-390b-482a-9f99-4dc7a86559e6)
+  
+  
 ### Vorbereitung und Gedanken zur Menüstruktur  
 
 
@@ -90,7 +92,7 @@ Subpages haben verschiedene Navigationsmöglichkeiten, diese definiert Ihr im Be
 > Wenn **'prev'** eine Seite zugewiesen wurde, wird **'parent'** nicht ausgewertet. Das gleiche gilt auch für **'next'** und **'home'**. 
  
 ```typescript  
-let Level_2_Erdgeschoss_2 = <PageGrid>
+let Level_2_Erdgeschoss_2: PageType =
                 {
                     'type': 'cardGrid',
                     'heading': 'Erdgeschoss (2)',
@@ -102,10 +104,10 @@ let Level_2_Erdgeschoss_2 = <PageGrid>
                     'home': 'Level_1_Haus',
                     'homeIcon': 'play-pause',
                     'items': [
-                        <PageItem>{ navigate: true, id: 'alias.0.Haus.Erdgeschoss.Gaeste_WC.Indikator', targetPage: 'Level_3_GaesteWC', name: 'Gäste WC' , icon: 'toilet', offColor: MSGreen, onColor: MSRed},
-                        <PageItem>{ navigate: true, id: 'alias.0.Haus.Erdgeschoss.Hauswirtschaftsraum.Indikator', targetPage: 'Level_3_Hauswirtschaftsraum', name: 'Hauswirtschaft' , icon: 'floor-plan', offColor: MSGreen, onColor: MSRed},
-                        <PageItem>{ navigate: true, id: 'alias.0.Haus.Erdgeschoss.Flur_vorne.Indikator', targetPage: 'Level_3_EG_FlurVorne', name: 'Flur vorne' , icon: 'floor-plan', offColor: MSGreen, onColor: MSRed},
-                        <PageItem>{ navigate: true, id: 'alias.0.Haus.Erdgeschoss.Flur_hinten.Indikator', targetPage: 'Level_3_EG_FlurHinten', name: 'Flur hinten' , icon: 'floor-plan', offColor: MSGreen, onColor: MSRed},
+                        { navigate: true, id: 'alias.0.Haus.Erdgeschoss.Gaeste_WC.Indikator', targetPage: 'Level_3_GaesteWC', name: 'Gäste WC' , icon: 'toilet', offColor: MSGreen, onColor: MSRed},
+                        { navigate: true, id: 'alias.0.Haus.Erdgeschoss.Hauswirtschaftsraum.Indikator', targetPage: 'Level_3_Hauswirtschaftsraum', name: 'Hauswirtschaft' , icon: 'floor-plan', offColor: MSGreen, onColor: MSRed},
+                        { navigate: true, id: 'alias.0.Haus.Erdgeschoss.Flur_vorne.Indikator', targetPage: 'Level_3_EG_FlurVorne', name: 'Flur vorne' , icon: 'floor-plan', offColor: MSGreen, onColor: MSRed},
+                        { navigate: true, id: 'alias.0.Haus.Erdgeschoss.Flur_hinten.Indikator', targetPage: 'Level_3_EG_FlurHinten', name: 'Flur hinten' , icon: 'floor-plan', offColor: MSGreen, onColor: MSRed},
                     ]
                 };
 ```  
@@ -121,14 +123,14 @@ Es gibt jetzt 3 Varianten, um ein Icon für Subpages anzulegen.
 ##### Variante 1 (ursprüngliche Notation)  
 * Die ursprüngliche Variante mit festem Icon und fester Farbe:
   ```typescript  
-  <PageItem>{ navigate: true, id: 'NSPanel_Einstellungen', icon: 'wrench-outline', onColor: White, name: 'Screensaver'}  
+  { navigate: true, id: 'NSPanel_Einstellungen', icon: 'wrench-outline', onColor: White, name: 'Screensaver'}  
   ```  
   Die Eigenschaft **navigate: true** macht aus einem normalen Steuerelement, ein Icon, um eine Subpage zu öffnen. Des Weiteren wird die Eigenschaft **id:** benötigt. Sie enthält den Namen der Subpage. Diese beiden Angaben **sind Pflicht**, mit **icon:** und **onColor:** kann man von dem Standardicon und Farbe abweichen und Eigene definieren.  
 
 ##### Variante 2 (neue Notation)  
 * Die neue Variante:
   ```typescript  
-  <PageItem>{ navigate: true, id: null, targetPage: 'WlanDaten', onColor: White, name: 'Gäste WLAN Daten'}
+  { navigate: true, id: null, targetPage: 'WlanDaten', onColor: White, name: 'Gäste WLAN Daten'}
   ```
   Bei der neuen Schreibweise bleibt das Verhalten zu der Alten gleich. Hier ist nur die Schreibweise für das Ziel (Subpage) angepasst. Wobei meiner Meinung nach es die richtige Schreibweise ist. Pflicht sind folgende Eigenschaften: **naigate: true, id: null**, und (neu) **tagetPage:**. Hier kommt jetzt der Name der Subpage ran, der bei der alten Schreibweise hinter **id:** stand.
 
@@ -146,7 +148,7 @@ Um dieses Verhalten zu nutzen, benötigt ihr ein Alias vom **Typ "Info"**, einen
 
 * Die neue Variante mit dynamischem Icon und dynamischer Farbe:
   ```typescript  
-  <PageItem>{ navigate: true, id: alias.0.haus.fenster, targetPage: 'Fenster', onColor: MSGreen, offColor: MSRed, name: 'Fenster'}
+  { navigate: true, id: alias.0.haus.fenster, targetPage: 'Fenster', onColor: MSGreen, offColor: MSRed, name: 'Fenster'}
   ```
 
 Hier ein Beispiel als Blockly, welches alle Fenster in einem Aliasordner überwacht und den Datenpunkt entsprechend setzt.
@@ -169,12 +171,12 @@ Dazu müssen zwei Datenpunkte im Alias angelegt werden.
 
 Mindest Schreibweise, wenn DatenPunkte angelegt sind.  
 ```typescript  
-<PageItem>{ navigate: true, id: AliasPath + 'Status_offene_Tuer', targetPage:'Tuer', name: 'Türen'},
+{ navigate: true, id: AliasPath + 'Status_offene_Tuer', targetPage:'Tuer', name: 'Türen'},
 ```
   
 Wenn einer oder beide Datenpunkte nicht vorhanden sind, wird die altbekannt Schreibweise heran gezogen, wie z.B.  
 ```typescript  
-<PageItem>{ navigate: true, id: AliasPath + 'Status_offene_Tuer', targetPage:'Tuer', useColor:true, onColor: Green, offColor: Red, name: 'Türen', buttonText: 'hier drücken'},
+{ navigate: true, id: AliasPath + 'Status_offene_Tuer', targetPage:'Tuer', useColor:true, onColor: Green, offColor: Red, name: 'Türen', buttonText: 'hier drücken'},
 ```
 
 ## Navigation mit den Hardware-Buttons  
