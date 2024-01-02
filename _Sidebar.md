@@ -129,16 +129,11 @@
       <h3>
          <picture>
              <source media="(prefers-color-scheme: dark)" srcset="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/8020e839-36d3-45fe-87af-235088d069b1">
-             <img align="left" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f8a810e3-552a-46bf-b8ef-eea0bbcfd71d"> 
+             <img align="left" width="24" alt="i" src="https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/f8a810e3-552a-46bf-b8ef-eea0bbcfd71d"> 
          </picture>
          Youtube
       </h3>
    </summary>
-   <ul>      
-      <li>
-
-      </li>
-   </ul>
 </details>
 
 <details open>
