@@ -171,7 +171,7 @@ Für den erfolgreichen Start des NSPanelTs.ts (siehe Punkt 10) TypeScript sind n
 * Aktivierung der Option `Kommando "setObject" erlauben`
 * Aktivierung der Option `Kommando "exec" erlauben`
   
-![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/01c9bc15-f644-44e2-8c7e-b288bc68987b)
+![image](https://github.com/joBr99/nspanel-lovelace-ui/assets/102996011/00b0f936-ada5-4311-952c-02cc9098a8eb)
 
   
 ***  
