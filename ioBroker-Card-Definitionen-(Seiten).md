@@ -4,7 +4,7 @@
 4 vertikal angeordnete Steuerelemente (Erstellung der "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
 ```typescript  
-var Sprechender_eindeutiger_Seitenname = <PageEntities>
+let Sprechender_eindeutiger_Seitenname: PageType =
 {
     "type": "cardEntities",
     "heading": "Deine Überschrift",
@@ -12,10 +12,10 @@ var Sprechender_eindeutiger_Seitenname = <PageEntities>
     "subPage": false,
     "parent": undefined,
     "items": [
-        <PageItem>{ id: "Dein_Erstellter_Alias_1", Weitere Parameter siehe Alias Definition },
-        <PageItem>{ id: "Dein_Erstellter_Alias_2", Weitere Parameter siehe Alias Definition },
-        <PageItem>{ id: "Dein_Erstellter_Alias_3", Weitere Parameter siehe Alias Definition },
-        <PageItem>{ id: "Dein_Erstellter_Alias_4", Weitere Parameter siehe Alias Definition }
+        { id: "Dein_Erstellter_Alias_1", Weitere Parameter siehe Alias Definition },
+        { id: "Dein_Erstellter_Alias_2", Weitere Parameter siehe Alias Definition },
+        { id: "Dein_Erstellter_Alias_3", Weitere Parameter siehe Alias Definition },
+        { id: "Dein_Erstellter_Alias_4", Weitere Parameter siehe Alias Definition }
     ]
 };
 ```
@@ -29,7 +29,7 @@ var Sprechender_eindeutiger_Seitenname = <PageEntities>
 6 horizontal angeordnete Steuerelemente (in 2 Reihen je 3 Steuerelemente) (Erstellung der "PageItem" siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker-ALIAS-Definitionen))  
 
 ```typescript  
-var Sprechender_eindeutiger_Seitenname = <PageGrid>
+let Sprechender_eindeutiger_Seitenname: PageType =
 {
     "type": "cardGrid",
     "heading": "Deine Überschrift",
@@ -37,12 +37,12 @@ var Sprechender_eindeutiger_Seitenname = <PageGrid>
     "subPage": false,
     "parent": undefined,
     "items": [
-        <PageItem>{ id: "Dein_Erstellter_Alias_1", Weitere Parameter siehe Alias Definition },
-        <PageItem>{ id: "Dein_Erstellter_Alias_2", Weitere Parameter siehe Alias Definition },
-        <PageItem>{ id: "Dein_Erstellter_Alias_3", Weitere Parameter siehe Alias Definition },
-        <PageItem>{ id: "Dein_Erstellter_Alias_4", Weitere Parameter siehe Alias Definition },
-        <PageItem>{ id: "Dein_Erstellter_Alias_5", Weitere Parameter siehe Alias Definition },
-        <PageItem>{ id: "Dein_Erstellter_Alias_6", Weitere Parameter siehe Alias Definition }
+        { id: "Dein_Erstellter_Alias_1", Weitere Parameter siehe Alias Definition },
+        { id: "Dein_Erstellter_Alias_2", Weitere Parameter siehe Alias Definition },
+        { id: "Dein_Erstellter_Alias_3", Weitere Parameter siehe Alias Definition },
+        { id: "Dein_Erstellter_Alias_4", Weitere Parameter siehe Alias Definition },
+        { id: "Dein_Erstellter_Alias_5", Weitere Parameter siehe Alias Definition },
+        { id: "Dein_Erstellter_Alias_6", Weitere Parameter siehe Alias Definition }
     ]
 };
 ```
@@ -69,14 +69,14 @@ Unter alias.0... wird folgender Alias automatisch angelegt:
 **Beispiel der Seitenerstellung:** (im Service-Menü enthalten)  
 ```typescript  
 //Level 0 (if service pages are used with cardUnlock)
-let Unlock_Service = <PageUnlock>
+let Unlock_Service: PageType =
 {
     'type': 'cardUnlock',
     'heading': 'Service Pages',
     'useColor': true,
-    'items': [<PageItem>{ id: 'alias.0.NSPanel.Unlock',
-                          targetPage: 'NSPanel_Service_SubPage',
-                          autoCreateALias: true }
+    'items': [{ id: 'alias.0.NSPanel.Unlock',
+                targetPage: 'NSPanel_Service_SubPage',
+                autoCreateALias: true }
     ]
 };
 ```
@@ -89,12 +89,12 @@ Da die cardUnlock innerhalb eines "Smart Home" nur einmal erforderlich sein soll
 
 Hierzu muss lediglich eine weitere `Page` vom Typ `cardUnlock` definiert werden und das Ziel `targetPage` auf eine `vorhandene subPage` zeigen:  
 ```
-let Unlock_PageXYZ = <PageUnlock>
+let Unlock_PageXYZ: PageType =
 {
     'type': 'cardUnlock',
     'heading': 'Titel der Page',
     'useColor': true,
-    'items': [<PageItem>{ id: 'alias.0.NSPanel.Unlock',
+    'items': [{ id: 'alias.0.NSPanel.Unlock',
                           targetPage: 'Eine_weitere_Subpage',
                           autoCreateALias: true }
     ]
@@ -107,16 +107,16 @@ let Unlock_PageXYZ = <PageUnlock>
 (Erstellung des cardAlarm siehe [ioBroker ALIAS Definition](https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#2-alarm-page))  
 
 ```typescript  
-let Alarmseite = <PageAlarm>
+let Alarmseite: PageType =
 {
     "type": "cardAlarm",
     "heading": "Alarm",
     "useColor": true,
     "subPage": false,
     "items": [
-         <PageItem>{ id: 'alias.0.NSPanel.Alarm' }
-                     actionStringArray: ['Vollschhutz','Zuhause','Nacht','Besuch','Ausschalten'], // Optional - ansonsten aus Sprachdatei
-                     autoCreateALias: true }
+         { id: 'alias.0.NSPanel.Alarm' }
+           actionStringArray: ['Vollschhutz','Zuhause','Nacht','Besuch','Ausschalten'], // Optional - ansonsten aus Sprachdatei
+           autoCreateALias: true }
          ]
 };
 ```
@@ -149,14 +149,14 @@ let Alarmseite = <PageAlarm>
 
 **alexa2-Adapter**
 ```typescript  
-let Alexa = <PageMedia> 
+let Alexa: PageType =
 {
     'type': 'cardMedia',
     'heading': 'Alexa',
     'useColor': true,
     'subPage': false,
     'parent': undefined,
-    'items': [<PageItem>{   
+    'items': [{   
                 id: AliasPath + 'Media.PlayerAlexa', 
                 adapterPlayerInstance: 'alexa2.0.',
                 mediaDevice: 'G0XXXXXXXXXXXXXX', // Eigene Seriennummer des primären Device einstellen
@@ -186,14 +186,14 @@ let Alexa = <PageMedia>
 
 **spotify-premium Adapter**
 ```typescript  
-let SpotifyPremium = <PageMedia> 
+let SpotifyPremium: PageType = 
 {
     "type": "cardMedia",
     "heading": "Spotify-Premium",
     "useColor": true,
     "subPage": false,
     "parent": undefined,
-    "items": [<PageItem>{ 
+    "items": [{ 
                 id: AliasPath + 'Media.PlayerSpotifyPremium', 
                 adapterPlayerInstance: "spotify-premium.0.",
                 speakerList: ['LENOVO-W11-01','Terrasse','Überall','Gartenhaus','Esszimmer','Heimkino','Echo Dot Küche',
@@ -214,14 +214,14 @@ let SpotifyPremium = <PageMedia>
 **Volumio-Player**  
   
 ```typescript  
-let VolumioBoss = <PageMedia> 
+let VolumioBoss: PageType = 
 {
     'type': 'cardMedia',
     'heading': 'Volumio-Büro',
     'useColor': true,
     'subPage': false,
     'parent': undefined,
-    'items': [<PageItem>{   
+    'items': [{   
                 id: 'alias.0.NSPanel.Volumio-Boss', 
                 adapterPlayerInstance: 'volumio.0.',
                 speakerList: [], /* this must, no function */
@@ -259,14 +259,14 @@ let VolumioBoss = <PageMedia>
  Erstellung der cardQR siehe (https://github.com/joBr99/nspanel-lovelace-ui/wiki/ioBroker---FAQ-&-Anleitungen#5-qr-code-page) by Kuckuckmann  
 
 ```typescript  
-var Sprechender_eindeutiger_Seitenname = <PageQR> 
+let Sprechender_eindeutiger_Seitenname: PageType =
 {
     "type": "cardQR",
     "heading": "Deine Überschrift",
     "useColor": true,
     "subPage": false,
     "parent": undefined,
-    "items": [<PageItem>{ id: "alias.0.NSPanel.Guest_Wifi" }] // Beispiel
+    "items": [{ id: "alias.0.NSPanel.Guest_Wifi" }] // Beispiel
 };
 ```  
   
@@ -292,14 +292,14 @@ autoCreateALias: true
 ![image](https://user-images.githubusercontent.com/102996011/204627014-03173d87-22ba-44fb-b07c-40b7be6366ac.png)  
   
 ```typescript  
-var Sprechender_eindeutiger_Seitenname = <PageThermo> 
+let Sprechender_eindeutiger_Seitenname: PageType =
 {
     "type": "cardThermo",
     "heading": "Test Klimaanlage",
     "useColor": true,
     "subPage": false,
     "parent": undefined,
-    "items": [<PageItem>{   
+    "items": [{   
                 id: "alias.0.NSPanel_1.TestKlimaanlage", 
                 minValue: 50, 
                 maxValue: 250,
@@ -328,40 +328,40 @@ Beispiel: Erstellung des "PageItem" und Alias vom Typ "Info"
   
 ohne `alwaysOnDisplay` Parameter (Nach dem Öffnen wird der Screensaver nach eingestellter Zeit aufgeschaltet):
 ```typescript  
-let CardPower = <PagePower>
+let CardPower: PageType =
 {
     'type': 'cardPower',
     'heading': 'Energiefluss',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel.cardPower' }
+        { id: 'alias.0.NSPanel.cardPower' }
     ]
 };
 ``` 
   
 mit `alwaysOnDisplay` Parameter (Die Seite fällt nicht in den Screensaver-Mode, bis auf eine andere Seite navigiert wird)
 ```typescript  
-let CardPower = <PagePower>
+let CardPower: PageType =
 {
     'type': 'cardPower',
     'heading': 'Energiefluss',
     'useColor': true,
     'items': [
-        <PageItem>{ id: 'alias.0.NSPanel.cardPower', 
-                    alwaysOnDisplay: true }
+        { id: 'alias.0.NSPanel.cardPower', 
+          alwaysOnDisplay: true }
     ]
 };
 ```  
 
 Oder im Demo-Modus ohne Alias
 ```typescript  
-let CardPowerExample = <PagePower>
+let CardPowerExample: PageType =
 {
     'type': 'cardPower',
     'heading': 'Energiefluss',
     'useColor': true,
     'items': [
-        <PageItem>{  }
+        {  }
     ]
 };
 ```
@@ -549,14 +549,14 @@ Es wird lediglich ein Alias vom Gerätetyp "Info" benötigt:
 
 **PageItem Beispiel:**
 ```typescript  
-let CardChartExample = <PageChart>
+let CardChartExample: PageType =
 {
     "type": "cardChart",
     "heading": "Stromzähler L1+L2+L3",
     "useColor": true,
     "subPage": false,
     "parent": undefined,
-    "items": [<PageItem>{ 
+    "items": [{ 
                 id: 'alias.0.NSPanel_1.cardChart', 
                 yAxis: 'Leistung [kW]', 
                 yAxisTicks: [2,4,6,8,10,2,4,6,8,20,2], 
@@ -643,12 +643,12 @@ on({id: sourceDP, change: "any"}, async function (obj) {
 * onColor: Farbe des Graphen  
 
 ```typescript  
-let CardLChartExample = <PageChart>
+let CardLChartExample: PageType =
 {
     "type": "cardLChart",
     "heading": "Büro Temperatur",
     "useColor": true,
-    'items': [<PageItem>{ 
+    'items': [{ 
                 id: 'alias.0.Haus.Erdgeschoss.Buero.Charts.Temperatur',
                 yAxis: 'Temperatur [°C]',
                 yAxisTicks: [160,170,180,190,200,210,220,230],
