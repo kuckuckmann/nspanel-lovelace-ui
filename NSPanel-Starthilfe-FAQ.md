@@ -64,8 +64,54 @@ dann müssen die Pages auch in diesen Bereich eingefügt werden. Hauptseiten kom
  ***********************************************************************/
 
 ```
-9. das Script wieder starten und es sollte jetzt alles wieder wie früher sein.
-  
+
+### Type-Änderungen
+mit der v4.3.3.30 gibt es Änderungen in der Syntax der Variablen und Konstanten im oberen Teil. Auch wenn die alte Nomenklatur nicht zu Fehlern führt, wird dennoch empfohlen nachfolgende Schritte durchzuführen:
+
+9. Änderung der Config-Zeile  
+```
+export const config = <Config> {
+```
+
+in
+``` 
+export const config: Config = {
+```
+ändern  
+
+10.  Variablendeklaration im Vergleich
+vorher:
+```typescript
+let Bad_Thermostat = <PageThermo>
+{
+    'type': 'cardThermo',
+    'heading': 'Bad',
+    'items': [<PageItem>{ 
+                id: 'alias.0.NSPanel_1.Thermostat_Buero', 
+                minValue: 50, 
+                maxValue: 300,
+                stepValue: 5
+             }]
+};
+```
+nachher:
+```typescript
+let Bad_Thermostat: PageType =
+{
+    'type': 'cardThermo',
+    'heading': 'Bad',
+    'items': [{ 
+                id: 'alias.0.Haus.Erdgeschoss.Buero.Thermostate.Thermostat',
+                minValue: 50, 
+                maxValue: 300,
+                stepValue: 5
+             }]
+};
+```  
+
+* In der oberen Zeile wird ` = <PageXYZ>` durch `: PageType =` ersetzt
+* Das `<PageItem>` entfällt
+
 ****  
    
 Seht in den [Changelogs](https://github.com/joBr99/nspanel-lovelace-ui/wiki/Changelog) nach, ob es Änderungen im Config-Teil gegeben hat, ggf. müsst ihr eure Pages oder sonstigen Einstellungen anpassen. Prüft, ob das neue Script eine andere TFT-Firmware benötig bzw. einen anderen Berry-Treiber. Diese Info findet ihr in der zweiten Zeile des Scripts.  
