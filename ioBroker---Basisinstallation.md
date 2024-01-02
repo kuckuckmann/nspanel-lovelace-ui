@@ -203,13 +203,20 @@ Für jedes einzelne NSPanel das du konfigurieren möchtest, musst du dieses Skri
 Im oberen Teil des Skripts sind die grundsätzlichen Teile der zu erstellenden Aliase, Konstanten und Variablen (auch Seiten) enthalten. An dieser Stelle ist zunächst wichtig, die Kommunikationsparameter für die MQTT-Kommunikation anzupassen, beginnend mit
 
 ```typescript
-const NSPanel_Path = '0_userdata.0.NSPanel.1.';       // Anpassen an das jeweilige NSPanel
-const NSPanel_Alarm_Path = '0_userdata.0.NSPanel.';     // Pfad für gemeinsame Nutzung durch mehrere Panels (bei Nutzung der cardAlarm)
+/***** 1. Tasmota-Config *****/
 
+    // DE: Anpassen an die Verzeichnisse der MQTT-Adapter-Instanz
+    // EN: Adapt to the MQTT adapter instance directories
+    const NSPanelReceiveTopic: string = 'mqtt.0.SmartHome.NSPanel_EMU.tele.RESULT';
+    const NSPanelSendTopic: string = 'mqtt.0.SmartHome.NSPanel_EMU.cmnd.CustomSend';
 
-export const config = <Config> {
-     panelRecvTopic: 'mqtt.0.SmartHome.NSPanel_1.tele.RESULT',       // Bitte anpassen
-     panelSendTopic: 'mqtt.0.SmartHome.NSPanel_1.cmnd.CustomSend',   // Bitte anpassen
+....
+
+/***** 2. Directories in 0_userdata.0... *****/
+
+    // DE: Anpassen an das jeweilige NSPanel
+    // EN: Adapt to the respective NSPanel
+    const NSPanel_Path = '0_userdata.0.NSPanel.EMU.';
 ```  
 
 Bitte starte das Skript. Alle weiteren Parameter stellen wir später ein. Ab jetzt sollte der Startup-Screen „Waiting for Connection“ in den Sreensaver wechseln und minütlich die Uhrzeit an den Screensaver übertragen und das Datum aktualisiert werden.
